@@ -1,0 +1,194 @@
+
+# Study 1
+
+```{r message=FALSE, warning=FALSE}
+english_sample1 <- read_csv(here("data/predictors","english_sample1_props.csv")) 
+english_sample1 <- english_sample1 %>% filter(!is.na(response)) %>% distinct()
+english_sample1_raw <- read_csv(here("data/predictors","english_sample1_raw.csv")) 
+# Apply the mapping function in helper.R to the response column
+english_sample1$response_numeric <- mapply(map_categories, english_sample1$response, english_sample1$block)
+# more 2 participants -- 21 words less than 8 ratings
+
+correspondence <- english_sample1 |> filter (matching_response %in% c("solid", "count" ,"shape"))
+
+```
+
+```{r , echo=TRUE}
+# how much correspondence there is between the three dimensions 
+correspodence_data <-  english_sample1 %>% select(-c(language)) %>%
+  distinct() %>%
+  filter(response %in% c("solid", "shape", "count noun")) %>%  # Filter only the desired responses
+  select(word, response, proportion) %>%  # Keep only relevant columns
+  pivot_wider(names_from = response, values_from = proportion, values_fill = 0)  # Reshape
+
+correspodence_data %>% select(`count noun`, shape, solid) %>% corr.test()
+
+```
+
+```{r agreement_plot, include=TRUE}
+consensus_data <- english_sample1_raw %>%
+  group_by(block, uni_lemma, word) %>%
+  summarise(
+    mode_rating = get_mode(response_numeric),
+    agreement_score = (mean(response_numeric == mode_rating, na.rm = TRUE) -0.009) * 100,
+    sd_rating = sd(response_numeric, na.rm = TRUE)
+  )
+
+ggplot(consensus_data, aes(x = sd_rating, y = agreement_score, color = block)) +
+  geom_point(size = 3, alpha = 0.7) +
+  labs(title = "Agreement Score vs. Rating Standard Deviation", x = "Standard Deviation of Ratings", y = "Agreement Score (%)") +
+  theme_minimal() +
+  scale_color_brewer(palette = "Set3")
+```
+
+# Study 2
+```{r }
+english_sample2 <- read_csv(here("data/predictors","english_sample2_props.csv"))
+english_sample2 <- english_sample2 %>% filter(!is.na(response)) %>% distinct()
+english_sample2_raw <- read_csv(here("data/predictors","english_sample2_raw.csv"))
+# Apply the mapping function in helper.R to the response column
+english_sample2$response_numeric <- mapply(map_categories, english_sample2$response, english_sample2$block)
+
+# more 1 or 2 participants -- 29 words less than 8 ratings
+
+# english_sample1 %>% filter(totcount < 8, block == "category_organization") %>% select(word) %>% distinct() %>% jsonlite::toJSON()
+
+#english_sample2 %>% filter(totcount < 8, block == "category_organization") %>% select(word) %>% distinct() %>% jsonlite::toJSON()
+
+```
+
+# Reliability analysis 
+
+```{r }
+eng_samp1_shape <- english_sample1 %>% filter(response == "shape") %>% select(word, proportion)
+eng_samp2_shape <- english_sample2 %>% filter(response == "shape") %>% select(word, proportion)
+
+# Merge the data frames based on 'word_id'
+merged_data <- merge(eng_samp1_shape, eng_samp2_shape, by = "word", suffixes = c(".sample1", ".sample2")) %>% distinct()
+```
+
+## split-half estimate of reliability
+through simple pearson correlation 
+```{r}
+# Calculate the correlation between proportion values
+correlation_score <- cor(merged_data$proportion.sample1, merged_data$proportion.sample2, use = "complete.obs") # Handles missing values
+
+# Print the correlation score
+print(paste("correlation between shape proportions in 1A VS 1B is: ", correlation_score))
+
+```
+
+```{r }
+ggplot(merged_data, aes(x = proportion.sample1, y = proportion.sample2)) +
+  geom_point() +
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed") +
+  labs(title = "Item-Level Agreement: Shape Ratings in Study 1A vs 1B")
+```
+
+## overall distribution
+```{r }
+# Load your data (adjust file paths as needed)
+study1a_data <- read_csv(here("data/predictors","study1a_data.csv"))
+
+#fix names of columns
+study1a_data <- study1a_data %>%
+  rename(participant_id = `_id`)
+
+study1b_data <-  read_csv(here("data/predictors","study1b_data.csv"))
+study1b_data <- study1b_data %>%
+  rename(participant_id = `_id`)
+
+
+# 1. DATA PREPARATION
+# ===================
+study1a_data<- study1a_data %>% 
+    select(uni_lemma, language, shape_rating) %>%
+    mutate(study = "1A")
+
+study1b_data <- study1b_data %>% 
+    select(uni_lemma, language, shape_rating) %>%
+    mutate(study = "1B")
+
+# Combine datasets with study identifier
+combined_data <- bind_rows( 
+  study1b_data, study1a_data
+   ) %>%
+  filter(!is.na(shape_rating)) %>%  # Remove missing values
+mutate(shape_rating = as.numeric(shape_rating)) %>%
+  distinct()  # Remove duplicates
+
+combined_data %>% filter(study == "1A")
+combined_data %>% filter(study == "1B")
+
+# Create wide format for reliability analysis
+ratings_wide <- combined_data %>%
+  pivot_wider(names_from = study, 
+              values_from = shape_rating,
+              names_prefix = "Study_") %>%
+  filter(!is.na(Study_1A) & !is.na(Study_1B))  # Only words rated in both studies
+
+```
+
+Use a Kolmogorov–Smirnov (KS) test to see if the two distributions differ significantly.
+```{r }
+ks.test(combined_data$shape_rating[combined_data$study == "1A"],
+        combined_data$shape_rating[combined_data$study == "1B"])
+
+```
+
+A classic example of low item-level agreement but high aggregate-level agreement.
+
+It doesn’t necessarily mean the measure is unreliable — instead, it may suggest:
+
+That there's measurement noise at the item level (e.g., variability in how different raters interpret the words).
+
+Or that your construct is more meaningful at the group level — i.e., shape ratings are better thought of as a property of categories or populations, not precise values for individual words.
+
+In psychometrics, this distinction often arises between individual-level reliability (e.g., inter-rater reliability for specific items) and scale-level consistency (e.g., internal consistency across a battery of items).
+
+## ICC
+
+cor()) tells how well rank order is preserved. Intraclass Correlation Coefficient (ICC) tells how much of the variance in scores is due to between-item differences vs. noise. Useful for assessing rater consistency or measurement reliability.
+```{r }
+library(irr)
+icc_result <- icc(data.frame(merged_data$proportion.sample1, merged_data$proportion.sample2), model = "twoway", type = "consistency", unit = "single")
+print(icc_result)
+
+```
+
+## Bland-Altman Plot
+visualize agreement between two measurements (especially useful when comparing two raters or samples). shows the mean difference between ratings and any bias or systematic shift across rating ranges
+
+```{r }
+if (!requireNamespace("BlandAltmanLeh", quietly = TRUE)) {
+      install.packages("BlandAltmanLeh")
+}
+library(BlandAltmanLeh)
+
+bland.altman.plot(merged_data$proportion.sample1, merged_data$proportion.sample2)
+
+```
+
+## Prophecy: spearman-brown prediction formula 
+``` {r}
+predicted_reliability <- (2 * correlation_score) / (1 + correlation_score)
+```
+we examined the measurement properties by measuring reliability, then examine the 
+
+
+## Using pearson correlation between two halves of the data (split-half reliability)
+
+## Internal consistency (Cronbach's alpha) for each dimension in each study
+
+## Item-Level Error Inspection
+
+```{r}
+merged_data$abs_diff <- abs(merged_data$proportion.sample1 - merged_data$proportion.sample2)
+summary(merged_data$abs_diff)
+# Identify items with the largest discrepancies
+top_discrepancies <- merged_data %>% arrange(desc(abs_diff)) %>%
+  head(15)
+print(top_discrepancies)
+```
+
+

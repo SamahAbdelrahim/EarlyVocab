@@ -1,0 +1,30 @@
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+
+\caption{\label{tab:unnamed-chunk-1}Data summary}
+\centering
+\begin{tabular}[t]{l|l}
+\hline
+Name & Piped data\\
+\hline
+Number of rows & 579\\
+\hline
+Number of columns & 21\\
+\hline
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & \\
+\hline
+Column type frequency: & \\
+\hline
+character & 14\\
+\hline
+numeric & 3\\
+\hline
+POSIXct & 4\\
+\hline
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & \\
+\hline
+Group variables & None\\
+\hline
+\end{tabular}
+\end{table*}

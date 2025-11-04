@@ -1,0 +1,522 @@
+_id,rt,trial_type,trial_index,time_elapsed,internal_node_id,__v,response,theword,block
+688593ed57769462deb206cd,3720,instructions,0,3727,0,0,,,
+688593ed57769462deb206cf,27414,html-button-response,1,31148,0,0,0,,
+688593ed57769462deb206d1,7273,survey-multi-choice,2,38426,0,0,"{""Q0"":""shape""}","In the sentence [this is a square table], a 'square' belongs to a category that is organized by:",practice_category
+688593ed57769462deb206d3,5892,survey-multi-choice,4,56196,0,0,"{""Q0"":""material""}",frost,category_organization
+688593ed57769462deb206d5,6884,survey-multi-choice,3,48166,0,0,"{""Q0"":""color""}","In the sentence [this is a red table], 'red' belongs to a category that is organized by:",practice_category
+688593ed57769462deb206d7,7056,survey-multi-choice,5,63256,0,0,"{""Q0"":""none of these""}",camel,category_organization
+688593ed57769462deb206d9,5372,survey-multi-choice,7,73285,0,0,"{""Q0"":""none of these""}",fish (animal),category_organization
+688593ed57769462deb206db,6721,survey-multi-choice,8,80008,0,0,"{""Q0"":""none of these""}",cat,category_organization
+688593ed57769462deb206dd,7435,survey-multi-choice,9,87446,0,0,"{""Q0"":""material""}",cabbage,category_organization
+688593ed57769462deb206df,9881,survey-multi-choice,10,97330,0,0,"{""Q0"":""material""}",fruit,category_organization
+688593ed57769462deb206e1,4292,survey-multi-choice,11,101624,0,0,"{""Q0"":""material""}",flag,category_organization
+688593ed57769462deb206e3,4653,survey-multi-choice,6,67910,0,0,"{""Q0"":""material""}",bandaid,category_organization
+688593ed57769462deb206e5,4877,survey-multi-choice,12,106502,0,0,"{""Q0"":""shape""}",drum,category_organization
+688593ed57769462deb206e7,6514,survey-multi-choice,13,113019,0,0,"{""Q0"":""material""}",glue (object),category_organization
+688593ed57769462deb206e9,5091,survey-multi-choice,14,118112,0,0,"{""Q0"":""shape""}",cheek,category_organization
+688593ed57769462deb206eb,5509,survey-multi-choice,15,123623,0,0,"{""Q0"":""none of these""}",clam,category_organization
+688593ed57769462deb206ed,6106,survey-multi-choice,16,129732,0,0,"{""Q0"":""none of these""}",ambulance,category_organization
+688593ed57769462deb206ef,4085,survey-multi-choice,18,138321,0,0,"{""Q0"":""none of these""}",bunny,category_organization
+688593ed57769462deb206f1,5038,survey-multi-choice,19,143361,0,0,"{""Q0"":""material""}",dumpling,category_organization
+688593ed57769462deb206f3,7521,survey-multi-choice,20,150883,0,0,"{""Q0"":""shape""}",armchair,category_organization
+688593ed57769462deb206f5,5235,survey-multi-choice,21,156120,0,0,"{""Q0"":""none of these""}",crow,category_organization
+688593ed57769462deb206f7,4068,survey-multi-choice,22,160190,0,0,"{""Q0"":""material""}",coffee,category_organization
+688593ed57769462deb206f9,4500,survey-multi-choice,17,134233,0,0,"{""Q0"":""shape""}",earth,category_organization
+688593ed57769462deb206fb,3541,survey-multi-choice,24,169491,0,0,"{""Q0"":""color""}",lavender,attention_category
+688593ed57769462deb206fd,4204,instructions,25,173696,0,0,,,
+688593ed57769462deb206ff,5756,survey-multi-choice,23,165949,0,0,"{""Q0"":""shape""}",bat (object),category_organization
+6885941d57769462deb20701,3026,instructions,0,3028,0,0,,,
+6885941d57769462deb20703,27434,html-button-response,1,30463,0,0,0,,
+6885941d57769462deb20705,22355,survey-multi-choice,2,52819,0,0,"{""Q0"":""shape""}","In the sentence [this is a square table], a 'square' belongs to a category that is organized by:",practice_category
+6885941d57769462deb20707,6019,survey-multi-choice,3,60969,0,0,"{""Q0"":""color""}","In the sentence [this is a red table], 'red' belongs to a category that is organized by:",practice_category
+6885941d57769462deb20709,8449,survey-multi-choice,5,77449,0,0,"{""Q0"":""none of these""}",mustache,category_organization
+6885941d57769462deb2070b,6033,survey-multi-choice,6,83482,0,0,"{""Q0"":""material""}",nut,category_organization
+6885941d57769462deb2070d,6460,survey-multi-choice,4,68999,0,0,"{""Q0"":""material""}",overalls,category_organization
+6885941d57769462deb2070f,3865,survey-multi-choice,7,87348,0,0,"{""Q0"":""material""}",newspaper,category_organization
+6885941d57769462deb20711,3084,survey-multi-choice,8,90433,0,0,"{""Q0"":""none of these""}",peanut,category_organization
+6885941d57769462deb20713,5381,survey-multi-choice,9,95814,0,0,"{""Q0"":""none of these""}",horse,category_organization
+6885941d57769462deb20715,3913,survey-multi-choice,10,99727,0,0,"{""Q0"":""none of these""}",ladybug,category_organization
+6885941d57769462deb20717,5020,survey-multi-choice,11,104748,0,0,"{""Q0"":""material""}",racket,category_organization
+6885941d57769462deb20719,5464,survey-multi-choice,12,110212,0,0,"{""Q0"":""material""}",lemon,category_organization
+6885941d57769462deb2071b,3098,survey-multi-choice,13,113312,0,0,"{""Q0"":""material""}",ice,category_organization
+6885941d57769462deb2071d,3645,survey-multi-choice,14,116957,0,0,"{""Q0"":""none of these""}",penis,category_organization
+6885941d57769462deb2071f,3275,survey-multi-choice,15,120232,0,0,"{""Q0"":""none of these""}",pork,category_organization
+6885941d57769462deb20721,2178,survey-multi-choice,17,125834,0,0,"{""Q0"":""material""}",ladder,category_organization
+6885941d57769462deb20723,3423,survey-multi-choice,16,123656,0,0,"{""Q0"":""none of these""}",parrot,category_organization
+6885941d57769462deb20725,4469,survey-multi-choice,18,130303,0,0,"{""Q0"":""material""}",milk,category_organization
+6885941d57769462deb20727,2220,survey-multi-choice,19,132523,0,0,"{""Q0"":""none of these""}",puppy,category_organization
+6885941d57769462deb20729,2522,survey-multi-choice,20,135046,0,0,"{""Q0"":""material""}",pencil,category_organization
+6885941d57769462deb2072b,2352,survey-multi-choice,21,137398,0,0,"{""Q0"":""none of these""}",panda,category_organization
+6885941d57769462deb2072d,2503,survey-multi-choice,22,139901,0,0,"{""Q0"":""material""}",radiator,category_organization
+6885941d57769462deb2072f,3342,survey-multi-choice,23,143243,0,0,"{""Q0"":""color""}",jelly,category_organization
+6885941d57769462deb20731,3587,survey-multi-choice,24,146831,0,0,"{""Q0"":""color""}",lavender,attention_category
+6885941d57769462deb20733,1853,instructions,25,148684,0,0,,,
+6885944b57769462deb20735,9113,instructions,0,9115,0,0,,,
+6885944b57769462deb20737,6977,survey-multi-choice,6,100074,0,0,"{""Q0"":""none of these""}",purse,category_organization
+6885944b57769462deb20739,11423,survey-multi-choice,2,70067,0,0,"{""Q0"":""shape""}","In the sentence [this is a square table], a 'square' belongs to a category that is organized by:",practice_category
+6885944b57769462deb2073b,5319,survey-multi-choice,5,93096,0,0,"{""Q0"":""none of these""}",mosquito,category_organization
+6885944b57769462deb2073d,49526,html-button-response,1,58642,0,0,0,,
+6885944b57769462deb2073f,7327,survey-multi-choice,4,87776,0,0,"{""Q0"":""none of these""}",helmet,category_organization
+6885944b57769462deb20743,4671,survey-multi-choice,7,104746,0,0,"{""Q0"":""shape""}",key,category_organization
+6885944b57769462deb20741,6903,survey-multi-choice,3,78962,0,0,"{""Q0"":""color""}","In the sentence [this is a red table], 'red' belongs to a category that is organized by:",practice_category
+6885944b57769462deb20745,3990,survey-multi-choice,8,108737,0,0,"{""Q0"":""none of these""}",papaya,category_organization
+6885944b57769462deb20747,12630,survey-multi-choice,9,121368,0,0,"{""Q0"":""material""}",rain,category_organization
+6885944b57769462deb20749,3857,survey-multi-choice,11,127650,0,0,"{""Q0"":""shape""}",nose,category_organization
+6885944b57769462deb2074b,2423,survey-multi-choice,10,123792,0,0,"{""Q0"":""material""}",jam,category_organization
+6885944b57769462deb2074d,6831,survey-multi-choice,12,134481,0,0,"{""Q0"":""shape""}",horse,category_organization
+6885944b57769462deb2074f,4630,survey-multi-choice,13,139112,0,0,"{""Q0"":""material""}",pastry,category_organization
+6885944b57769462deb20751,6791,survey-multi-choice,15,148938,0,0,"{""Q0"":""material""}",microphone,category_organization
+6885944b57769462deb20753,3616,survey-multi-choice,18,163976,0,0,"{""Q0"":""material""}",milk,category_organization
+6885944b57769462deb20755,4063,survey-multi-choice,16,153002,0,0,"{""Q0"":""material""}",pork,category_organization
+6885944b57769462deb20757,3034,survey-multi-choice,14,142146,0,0,"{""Q0"":""material""}",knee,category_organization
+6885944b57769462deb20759,7357,survey-multi-choice,17,160359,0,0,"{""Q0"":""material""}",lettuce,category_organization
+6885944b57769462deb2075b,2583,survey-multi-choice,19,166560,0,0,"{""Q0"":""material""}",pumpkin,category_organization
+6885944b57769462deb2075d,5713,survey-multi-choice,20,172274,0,0,"{""Q0"":""none of these""}",owl,category_organization
+6885944b57769462deb2075f,2351,survey-multi-choice,22,177304,0,0,"{""Q0"":""material""}",puree,category_organization
+6885944b57769462deb20761,2677,survey-multi-choice,21,174952,0,0,"{""Q0"":""material""}",mustache,category_organization
+6885944b57769462deb20763,7392,survey-multi-choice,24,189922,0,0,"{""Q0"":""color""}",lavender,attention_category
+6885944b57769462deb20765,5225,survey-multi-choice,23,182530,0,0,"{""Q0"":""none of these""}",pig,category_organization
+6885944b57769462deb20767,4191,instructions,25,194113,0,0,,,
+6885947657769462deb20769,2362,instructions,0,2374,0,0,,,
+688594c457769462deb2076b,5160,instructions,0,5166,0,0,,,
+688594c457769462deb2076d,91103,html-button-response,1,96280,0,0,0,,
+688594c457769462deb2076f,9265,survey-multi-choice,2,105555,0,0,"{""Q0"":""shape""}","In the sentence [this is a square table], a 'square' belongs to a category that is organized by:",practice_category
+688594c457769462deb20771,8536,survey-multi-choice,3,117977,0,0,"{""Q0"":""color""}","In the sentence [this is a red table], 'red' belongs to a category that is organized by:",practice_category
+688594c457769462deb20773,8291,survey-multi-choice,5,138011,0,0,"{""Q0"":""material""}",snowman,category_organization
+688594c457769462deb20775,8939,survey-multi-choice,4,129713,0,0,"{""Q0"":""none of these""}",thunder,category_organization
+688594c457769462deb20777,25896,survey-multi-choice,6,163911,0,0,"{""Q0"":""material""}",rice cake,category_organization
+688594c457769462deb20779,5157,survey-multi-choice,7,169073,0,0,"{""Q0"":""material""}",tooth,category_organization
+688594c457769462deb2077b,6448,survey-multi-choice,8,175527,0,0,"{""Q0"":""none of these""}",swallow (animal),category_organization
+688594c457769462deb2077d,5898,survey-multi-choice,9,181430,0,0,"{""Q0"":""none of these""}",shoulder,category_organization
+688594c457769462deb2077f,5518,survey-multi-choice,10,186954,0,0,"{""Q0"":""shape""}",star,category_organization
+688594c457769462deb20781,34232,survey-multi-choice,11,221192,0,0,"{""Q0"":""material""}",wallet,category_organization
+688594c457769462deb20783,6052,survey-multi-choice,12,227250,0,0,"{""Q0"":""material""}",tummy,category_organization
+688594c457769462deb20785,6369,survey-multi-choice,13,233625,0,0,"{""Q0"":""material""}",tape,category_organization
+688594c557769462deb20787,6041,survey-multi-choice,14,239671,0,0,"{""Q0"":""material""}",soy sauce,category_organization
+688594c557769462deb20789,3929,survey-multi-choice,16,247729,0,0,"{""Q0"":""material""}",sausage,category_organization
+688594c557769462deb2078b,4120,survey-multi-choice,15,243795,0,0,"{""Q0"":""none of these""}",traffic,category_organization
+688594c557769462deb2078d,5896,survey-multi-choice,17,253631,0,0,"{""Q0"":""material""}",sand,category_organization
+688594c557769462deb2078f,6267,survey-multi-choice,18,259904,0,0,"{""Q0"":""material""}",shirt,category_organization
+688594c557769462deb20791,7367,survey-multi-choice,19,267277,0,0,"{""Q0"":""material""}",stone,category_organization
+688594c557769462deb20793,4205,survey-multi-choice,20,271487,0,0,"{""Q0"":""material""}",sandwich,category_organization
+688594c557769462deb20795,3403,survey-multi-choice,21,274893,0,0,"{""Q0"":""material""}",tomato,category_organization
+688594c557769462deb20797,21190,survey-multi-choice,22,296089,0,0,"{""Q0"":""material""}",spaghetti,category_organization
+688594c557769462deb20799,5328,survey-multi-choice,23,301422,0,0,"{""Q0"":""material""}",stove,category_organization
+688594c557769462deb2079b,11486,survey-multi-choice,24,312912,0,0,"{""Q0"":""none of these""}",lavender,attention_category
+688594c557769462deb2079d,3736,instructions,25,316650,0,0,,,
+688594d457769462deb2079f,11410,instructions,0,11411,0,0,,,
+688594d457769462deb207a1,35486,html-button-response,1,46898,0,0,0,,
+688594d457769462deb207a3,8058,survey-multi-choice,2,54956,0,0,"{""Q0"":""shape""}","In the sentence [this is a square table], a 'square' belongs to a category that is organized by:",practice_category
+688594d457769462deb207a5,11041,survey-multi-choice,4,79357,0,0,"{""Q0"":""material""}",pumpkin,category_organization
+688594d457769462deb207a7,8870,survey-multi-choice,3,65674,0,0,"{""Q0"":""color""}","In the sentence [this is a red table], 'red' belongs to a category that is organized by:",practice_category
+688594d457769462deb207a9,9243,survey-multi-choice,6,97905,0,0,"{""Q0"":""material""}",ice,category_organization
+688594d457769462deb207ab,9305,survey-multi-choice,5,88662,0,0,"{""Q0"":""none of these""}",hedgehog,category_organization
+688594d457769462deb207ad,15073,survey-multi-choice,7,112978,0,0,"{""Q0"":""shape""}",overalls,category_organization
+688594d457769462deb207af,6717,survey-multi-choice,8,119695,0,0,"{""Q0"":""material""}",newspaper,category_organization
+688594d457769462deb207b1,29338,survey-multi-choice,10,153178,0,0,"{""Q0"":""none of these""}",owl,category_organization
+688594d457769462deb207b3,4144,survey-multi-choice,9,123840,0,0,"{""Q0"":""material""}",jam,category_organization
+688594d457769462deb207b5,4034,survey-multi-choice,11,157212,0,0,"{""Q0"":""material""}",pork,category_organization
+688594d457769462deb207b7,4978,survey-multi-choice,12,162190,0,0,"{""Q0"":""shape""}",mug,category_organization
+688594d457769462deb207b9,2799,survey-multi-choice,13,164989,0,0,"{""Q0"":""material""}",potato,category_organization
+688594d457769462deb207bb,3847,survey-multi-choice,14,168836,0,0,"{""Q0"":""material""}",lemon,category_organization
+688594d457769462deb207bd,4077,survey-multi-choice,16,177862,0,0,"{""Q0"":""shape""}",nose,category_organization
+688594d457769462deb207bf,4949,survey-multi-choice,15,173785,0,0,"{""Q0"":""shape""}",ladder,category_organization
+688594d457769462deb207c1,5184,survey-multi-choice,17,183046,0,0,"{""Q0"":""shape""}",house,category_organization
+688594d457769462deb207c3,8477,survey-multi-choice,18,191524,0,0,"{""Q0"":""material""}",orange (food),category_organization
+688594d457769462deb207c5,14078,survey-multi-choice,19,205602,0,0,"{""Q0"":""none of these""}",ladybug,category_organization
+688594d457769462deb207c7,7574,survey-multi-choice,20,213176,0,0,"{""Q0"":""shape""}",pen/pencil,category_organization
+688594d457769462deb207c9,16843,survey-multi-choice,21,230020,0,0,"{""Q0"":""shape""}",panda,category_organization
+688594d457769462deb207cb,6827,survey-multi-choice,22,236847,0,0,"{""Q0"":""shape""}",horse,category_organization
+688594d457769462deb207cd,5266,survey-multi-choice,24,281891,0,0,"{""Q0"":""color""}",lavender,attention_category
+688594d457769462deb207cf,39778,survey-multi-choice,23,276624,0,0,"{""Q0"":""shape""}",microphone,category_organization
+688594d457769462deb207d1,2224,instructions,25,284115,0,0,,,
+6885950d57769462deb207d3,14197,instructions,0,14200,0,0,,,
+6885950d57769462deb207d5,60072,html-button-response,1,74274,0,0,0,,
+6885950d57769462deb207d7,8610,survey-multi-choice,2,82886,0,0,"{""Q0"":""shape""}","In the sentence [this is a square table], a 'square' belongs to a category that is organized by:",practice_category
+6885950d57769462deb207d9,6734,survey-multi-choice,3,92162,0,0,"{""Q0"":""color""}","In the sentence [this is a red table], 'red' belongs to a category that is organized by:",practice_category
+6885950d57769462deb207db,9658,survey-multi-choice,4,103448,0,0,"{""Q0"":""material""}",pork,category_organization
+6885950d57769462deb207dd,8776,survey-multi-choice,5,112226,0,0,"{""Q0"":""shape""}",ladder,category_organization
+6885950d57769462deb207df,9083,survey-multi-choice,6,121310,0,0,"{""Q0"":""shape""}",orange (food),category_organization
+6885950d57769462deb207e1,6949,survey-multi-choice,7,128260,0,0,"{""Q0"":""shape""}",purse,category_organization
+6885950d57769462deb207e3,5408,survey-multi-choice,8,133669,0,0,"{""Q0"":""shape""}",pumpkin,category_organization
+6885950d57769462deb207e5,8834,survey-multi-choice,9,142504,0,0,"{""Q0"":""shape""}",nose,category_organization
+6885950d57769462deb207e7,5318,survey-multi-choice,10,147823,0,0,"{""Q0"":""shape""}",mustache,category_organization
+6885950d57769462deb207e9,12383,survey-multi-choice,11,160208,0,0,"{""Q0"":""shape""}",play pen,category_organization
+6885950d57769462deb207eb,6751,survey-multi-choice,12,166960,0,0,"{""Q0"":""material""}",mug,category_organization
+6885950d57769462deb207ed,13268,survey-multi-choice,13,180229,0,0,"{""Q0"":""shape""}",racket,category_organization
+6885950d57769462deb207ef,6720,survey-multi-choice,14,186950,0,0,"{""Q0"":""none of these""}",living room,category_organization
+6885950d57769462deb207f1,7224,survey-multi-choice,15,194175,0,0,"{""Q0"":""shape""}",pencil,category_organization
+6885950d57769462deb207f3,8110,survey-multi-choice,16,202285,0,0,"{""Q0"":""none of these""}",puree,category_organization
+6885950d57769462deb207f5,4726,survey-multi-choice,18,217943,0,0,"{""Q0"":""material""}",lemon,category_organization
+6885950d57769462deb207f7,10929,survey-multi-choice,17,213215,0,0,"{""Q0"":""material""}",peanut,category_organization
+6885950d57769462deb207f9,5909,survey-multi-choice,19,223853,0,0,"{""Q0"":""none of these""}",puppy,category_organization
+6885950d57769462deb207fb,6161,survey-multi-choice,20,230015,0,0,"{""Q0"":""material""}",nut,category_organization
+6885950d57769462deb207fd,9211,survey-multi-choice,21,239227,0,0,"{""Q0"":""material""}",papaya,category_organization
+6885950d57769462deb207ff,5732,survey-multi-choice,23,255078,0,0,"{""Q0"":""material""}",mold,category_organization
+6885950d57769462deb20801,10116,survey-multi-choice,22,249344,0,0,"{""Q0"":""shape""}",penis,category_organization
+6885950d57769462deb20803,3685,survey-multi-choice,24,258764,0,0,"{""Q0"":""color""}",lavender,attention_category
+6885950d57769462deb20805,4516,instructions,25,263280,0,0,,,
+6885952857769462deb20807,4174,instructions,0,4175,0,0,,,
+6885952857769462deb20809,27618,html-button-response,1,31796,0,0,0,,
+6885952857769462deb2080b,8097,survey-multi-choice,4,54139,0,0,"{""Q0"":""none of these""}",salami,category_organization
+6885952857769462deb2080d,5003,survey-multi-choice,3,44580,0,0,"{""Q0"":""color""}","In the sentence [this is a red table], 'red' belongs to a category that is organized by:",practice_category
+6885952857769462deb2080f,6162,survey-multi-choice,2,37811,0,0,"{""Q0"":""shape""}","In the sentence [this is a square table], a 'square' belongs to a category that is organized by:",practice_category
+6885952857769462deb20811,4704,survey-multi-choice,5,58843,0,0,"{""Q0"":""none of these""}",stove,category_organization
+6885952857769462deb20813,3862,survey-multi-choice,6,62706,0,0,"{""Q0"":""material""}",wall,category_organization
+6885952857769462deb20815,5636,survey-multi-choice,8,73819,0,0,"{""Q0"":""none of these""}",sandbox,category_organization
+6885952857769462deb20817,2614,survey-multi-choice,9,76433,0,0,"{""Q0"":""none of these""}",thunder,category_organization
+6885952857769462deb20819,2293,survey-multi-choice,10,78727,0,0,"{""Q0"":""none of these""}",wallet,category_organization
+6885952957769462deb2081b,2503,survey-multi-choice,11,81230,0,0,"{""Q0"":""none of these""}",voice recorder,category_organization
+6885952957769462deb2081d,3121,survey-multi-choice,12,84352,0,0,"{""Q0"":""none of these""}",smoothie,category_organization
+6885952957769462deb2081f,2202,survey-multi-choice,13,86555,0,0,"{""Q0"":""material""}",sand,category_organization
+6885952957769462deb20821,2614,survey-multi-choice,14,89169,0,0,"{""Q0"":""none of these""}",sandwich,category_organization
+6885952957769462deb20823,2626,survey-multi-choice,15,91796,0,0,"{""Q0"":""none of these""}",sidewalk,category_organization
+6885952957769462deb20825,5476,survey-multi-choice,7,68182,0,0,"{""Q0"":""material""}",snowman,category_organization
+6885952957769462deb20827,2343,survey-multi-choice,16,94139,0,0,"{""Q0"":""none of these""}",underpants,category_organization
+6885952957769462deb20829,2347,survey-multi-choice,17,96487,0,0,"{""Q0"":""shape""}",star,category_organization
+6885952957769462deb2082b,3328,survey-multi-choice,20,112671,0,0,"{""Q0"":""none of these""}",sprouts,category_organization
+6885952957769462deb2082d,2060,survey-multi-choice,19,109343,0,0,"{""Q0"":""none of these""}",soy sauce,category_organization
+6885952957769462deb2082f,10795,survey-multi-choice,18,107282,0,0,"{""Q0"":""none of these""}",trash can,category_organization
+6885952957769462deb20831,6946,survey-multi-choice,24,125993,0,0,"{""Q0"":""color""}",lavender,attention_category
+6885952957769462deb20833,2220,survey-multi-choice,23,119046,0,0,"{""Q0"":""none of these""}",street,category_organization
+6885952957769462deb20835,2098,survey-multi-choice,21,114770,0,0,"{""Q0"":""none of these""}",shoulder,category_organization
+6885952957769462deb20837,2055,survey-multi-choice,22,116826,0,0,"{""Q0"":""none of these""}",seesaw,category_organization
+6885952957769462deb20839,1548,instructions,25,127541,0,0,,,
+6885958c57769462deb2083b,149043,html-button-response,1,246100,0,0,0,,
+688595d557769462deb2083d,3739,instructions,0,3741,0,0,,,
+688595d557769462deb2083f,19929,html-button-response,1,23672,0,0,0,,
+688595d557769462deb20841,9979,survey-multi-choice,2,33654,0,0,"{""Q0"":""shape""}","In the sentence [this is a square table], a 'square' belongs to a category that is organized by:",practice_category
+688595d557769462deb20843,6124,survey-multi-choice,4,46275,0,0,"{""Q0"":""shape""}",spoon,category_organization
+688595d557769462deb20845,3333,survey-multi-choice,3,38764,0,0,"{""Q0"":""color""}","In the sentence [this is a red table], 'red' belongs to a category that is organized by:",practice_category
+688595d557769462deb20847,7152,survey-multi-choice,6,58188,0,0,"{""Q0"":""none of these""}",sidewalk,category_organization
+688595d557769462deb20849,5741,survey-multi-choice,7,63931,0,0,"{""Q0"":""shape""}",room,category_organization
+688595d557769462deb2084b,4759,survey-multi-choice,5,51035,0,0,"{""Q0"":""material""}",sandbox,category_organization
+688595d557769462deb2084d,3402,survey-multi-choice,8,67334,0,0,"{""Q0"":""material""}",tortilla,category_organization
+688595d557769462deb2084f,3761,survey-multi-choice,9,71097,0,0,"{""Q0"":""material""}",tape,category_organization
+688595d557769462deb20851,4754,survey-multi-choice,10,75852,0,0,"{""Q0"":""none of these""}",zebra,category_organization
+688595d557769462deb20853,7224,survey-multi-choice,11,83077,0,0,"{""Q0"":""material""}",yard,category_organization
+688595d557769462deb20855,6225,survey-multi-choice,12,89303,0,0,"{""Q0"":""none of these""}",rocking chair,category_organization
+688595d557769462deb20857,3547,survey-multi-choice,13,92851,0,0,"{""Q0"":""material""}",strawberry,category_organization
+688595d557769462deb20859,3426,survey-multi-choice,14,96278,0,0,"{""Q0"":""none of these""}",voice recorder,category_organization
+688595d557769462deb2085b,2955,survey-multi-choice,15,99234,0,0,"{""Q0"":""none of these""}",swallow (animal),category_organization
+688595d557769462deb2085d,3105,survey-multi-choice,16,102340,0,0,"{""Q0"":""material""}",stone,category_organization
+688595d557769462deb2085f,2270,survey-multi-choice,17,104610,0,0,"{""Q0"":""material""}",sweet potato,category_organization
+688595d557769462deb20861,3691,survey-multi-choice,18,108302,0,0,"{""Q0"":""none of these""}",teapot,category_organization
+688595d557769462deb20863,3583,survey-multi-choice,19,111885,0,0,"{""Q0"":""shape""}",street,category_organization
+688595d557769462deb20865,3448,survey-multi-choice,20,115334,0,0,"{""Q0"":""shape""}",waist,category_organization
+688595d557769462deb20867,2662,survey-multi-choice,21,117997,0,0,"{""Q0"":""shape""}",tummy,category_organization
+688595d557769462deb20869,3098,survey-multi-choice,22,121096,0,0,"{""Q0"":""material""}",worm,category_organization
+688595d557769462deb2086b,2965,survey-multi-choice,23,124062,0,0,"{""Q0"":""shape""}",seesaw,category_organization
+688595d557769462deb2086d,4711,survey-multi-choice,24,128775,0,0,"{""Q0"":""color""}",lavender,attention_category
+688595d557769462deb2086f,1923,instructions,25,130699,0,0,,,
+6885967857769462deb20871,53463,instructions,0,53465,0,0,,,
+6885967857769462deb20873,61270,html-button-response,1,114737,0,0,0,,
+6885967857769462deb20875,7313,survey-multi-choice,6,178629,0,0,"{""Q0"":""material""}",grass,category_organization
+6885967857769462deb20877,16927,survey-multi-choice,2,131666,0,0,"{""Q0"":""shape""}","In the sentence [this is a square table], a 'square' belongs to a category that is organized by:",practice_category
+6885967857769462deb20879,7624,survey-multi-choice,3,144563,0,0,"{""Q0"":""color""}","In the sentence [this is a red table], 'red' belongs to a category that is organized by:",practice_category
+6885967857769462deb2087b,11459,survey-multi-choice,4,158304,0,0,"{""Q0"":""material""}",armchair,category_organization
+6885967857769462deb2087d,13011,survey-multi-choice,5,171316,0,0,"{""Q0"":""material""}",chips,category_organization
+6885967857769462deb2087f,8623,survey-multi-choice,8,192588,0,0,"{""Q0"":""material""}",cotton,category_organization
+6885967857769462deb20881,5334,survey-multi-choice,7,183964,0,0,"{""Q0"":""material""}",fireplace,category_organization
+6885967857769462deb20883,4513,survey-multi-choice,9,197102,0,0,"{""Q0"":""material""}",bandaid,category_organization
+6885967857769462deb20885,5965,survey-multi-choice,10,203068,0,0,"{""Q0"":""material""}",crow,category_organization
+6885967857769462deb20887,7323,survey-multi-choice,11,210392,0,0,"{""Q0"":""material""}",cabbage,category_organization
+6885967857769462deb20889,5768,survey-multi-choice,12,216161,0,0,"{""Q0"":""material""}",cassava,category_organization
+6885967857769462deb2088b,9118,survey-multi-choice,13,225280,0,0,"{""Q0"":""material""}",cutlet,category_organization
+6885967857769462deb2088d,6497,survey-multi-choice,14,231778,0,0,"{""Q0"":""material""}",air conditioner,category_organization
+6885967857769462deb2088f,7890,survey-multi-choice,15,239669,0,0,"{""Q0"":""material""}",dish,category_organization
+6885967857769462deb20891,6558,survey-multi-choice,16,246228,0,0,"{""Q0"":""material""}",cloud,category_organization
+6885967857769462deb20893,4259,survey-multi-choice,17,250488,0,0,"{""Q0"":""material""}",coin,category_organization
+6885967857769462deb20895,9951,survey-multi-choice,18,260439,0,0,"{""Q0"":""shape""}",forehead,category_organization
+6885967857769462deb20897,5596,survey-multi-choice,19,266036,0,0,"{""Q0"":""material""}",can (object),category_organization
+6885967857769462deb20899,4609,survey-multi-choice,20,270645,0,0,"{""Q0"":""material""}",cup,category_organization
+6885967857769462deb2089b,6444,survey-multi-choice,21,277091,0,0,"{""Q0"":""shape""}",donut,category_organization
+6885967857769462deb2089d,4142,survey-multi-choice,22,281233,0,0,"{""Q0"":""material""}",camel,category_organization
+6885967857769462deb2089f,10040,survey-multi-choice,23,291274,0,0,"{""Q0"":""material""}",clay,category_organization
+6885967857769462deb208a1,5706,survey-multi-choice,24,296980,0,0,"{""Q0"":""color""}",lavender,attention_category
+6885967857769462deb208a3,6482,instructions,25,303463,0,0,,,
+6885968d57769462deb208a5,1712,instructions,0,1714,0,0,,,
+6885968d57769462deb208a7,1495,html-button-response,1,3211,0,0,0,,
+6885968d57769462deb208a9,6162,survey-multi-choice,2,9377,0,0,"{""Q0"":""shape""}","In the sentence [this is a square table], a 'square' belongs to a category that is organized by:",practice_category
+6885968d57769462deb208ab,4013,survey-multi-choice,3,15064,0,0,"{""Q0"":""color""}","In the sentence [this is a red table], 'red' belongs to a category that is organized by:",practice_category
+6885968d57769462deb208ad,3462,survey-multi-choice,7,54340,0,0,"{""Q0"":""material""}",cotton,category_organization
+6885968d57769462deb208af,4439,survey-multi-choice,8,58780,0,0,"{""Q0"":""none of these""}",comb (object),category_organization
+6885968d57769462deb208b1,24616,survey-multi-choice,4,41028,0,0,"{""Q0"":""material""}",cabbage,category_organization
+6885968d57769462deb208b3,5164,survey-multi-choice,6,50876,0,0,"{""Q0"":""none of these""}",french fries,category_organization
+6885968d57769462deb208b5,4678,survey-multi-choice,5,45711,0,0,"{""Q0"":""material""}",glue (object),category_organization
+6885968d57769462deb208b7,3110,survey-multi-choice,9,61891,0,0,"{""Q0"":""none of these""}",dumpling,category_organization
+6885968d57769462deb208b9,2820,survey-multi-choice,10,64712,0,0,"{""Q0"":""none of these""}",ambulance,category_organization
+6885968d57769462deb208bb,5083,survey-multi-choice,11,69795,0,0,"{""Q0"":""none of these""}",fruit,category_organization
+6885968d57769462deb208bd,2096,survey-multi-choice,12,71892,0,0,"{""Q0"":""none of these""}",bracelet,category_organization
+6885968d57769462deb208bf,3778,survey-multi-choice,13,75671,0,0,"{""Q0"":""none of these""}",bull,category_organization
+6885968d57769462deb208c1,5108,survey-multi-choice,14,80779,0,0,"{""Q0"":""material""}",bat (object),category_organization
+6885968d57769462deb208c3,3132,survey-multi-choice,15,83912,0,0,"{""Q0"":""none of these""}",curtain,category_organization
+6885968d57769462deb208c5,2345,survey-multi-choice,17,89612,0,0,"{""Q0"":""none of these""}",cat,category_organization
+6885968d57769462deb208c7,3353,survey-multi-choice,16,87266,0,0,"{""Q0"":""none of these""}",cockroach,category_organization
+6885968d57769462deb208c9,4577,survey-multi-choice,18,94190,0,0,"{""Q0"":""material""}",frost,category_organization
+6885968d57769462deb208cb,2716,survey-multi-choice,19,96907,0,0,"{""Q0"":""none of these""}",forehead,category_organization
+6885968d57769462deb208cd,2954,survey-multi-choice,21,102566,0,0,"{""Q0"":""shape""}",cassava,category_organization
+6885968d57769462deb208cf,2703,survey-multi-choice,20,99612,0,0,"{""Q0"":""none of these""}",bear,category_organization
+6885968d57769462deb208d1,3358,survey-multi-choice,22,105925,0,0,"{""Q0"":""shape""}",drum,category_organization
+6885968d57769462deb208d3,1848,survey-multi-choice,23,107775,0,0,"{""Q0"":""none of these""}",donkey,category_organization
+6885968d57769462deb208d5,3388,survey-multi-choice,24,111164,0,0,"{""Q0"":""color""}",lavender,attention_category
+6885968d57769462deb208d7,1678,instructions,25,112843,0,0,,,
+6885969f57769462deb208d9,4153,instructions,0,4154,0,0,,,
+6885969f57769462deb208db,5514,survey-multi-choice,5,118342,0,0,"{""Q0"":""material""}",potato,category_organization
+6885969f57769462deb208dd,12267,survey-multi-choice,2,89888,0,0,"{""Q0"":""shape""}","In the sentence [this is a square table], a 'square' belongs to a category that is organized by:",practice_category
+6885969f57769462deb208df,73464,html-button-response,1,77619,0,0,0,,
+6885969f57769462deb208e1,9369,survey-multi-choice,4,112827,0,0,"{""Q0"":""shape""}",purse,category_organization
+6885969f57769462deb208e3,9112,survey-multi-choice,6,127455,0,0,"{""Q0"":""material""}",lettuce,category_organization
+6885969f57769462deb208e5,9133,survey-multi-choice,3,101559,0,0,"{""Q0"":""color""}","In the sentence [this is a red table], 'red' belongs to a category that is organized by:",practice_category
+6885969f57769462deb208e7,10698,survey-multi-choice,7,138153,0,0,"{""Q0"":""color""}",pumpkin,category_organization
+6885969f57769462deb208e9,4345,survey-multi-choice,8,142500,0,0,"{""Q0"":""shape""}",ladder,category_organization
+6885969f57769462deb208eb,11015,survey-multi-choice,9,153515,0,0,"{""Q0"":""shape""}",key,category_organization
+6885969f57769462deb208ed,4635,survey-multi-choice,10,158151,0,0,"{""Q0"":""material""}",popcorn,category_organization
+6885969f57769462deb208ef,4929,survey-multi-choice,12,166967,0,0,"{""Q0"":""shape""}",penis,category_organization
+6885969f57769462deb208f1,3886,survey-multi-choice,11,162038,0,0,"{""Q0"":""shape""}",noodles,category_organization
+6885969f57769462deb208f3,6407,survey-multi-choice,13,173375,0,0,"{""Q0"":""shape""}",hat,category_organization
+6885969f57769462deb208f5,15202,survey-multi-choice,14,188578,0,0,"{""Q0"":""shape""}",papaya,category_organization
+6885969f57769462deb208f7,5189,survey-multi-choice,15,193768,0,0,"{""Q0"":""material""}",ice,category_organization
+6885969f57769462deb208f9,4873,survey-multi-choice,17,207691,0,0,"{""Q0"":""shape""}",owl,category_organization
+6885969f57769462deb208fb,9049,survey-multi-choice,16,202818,0,0,"{""Q0"":""material""}",puppy,category_organization
+6885969f57769462deb208fd,5600,survey-multi-choice,18,213292,0,0,"{""Q0"":""shape""}",play pen,category_organization
+6885969f57769462deb208ff,5003,survey-multi-choice,19,218295,0,0,"{""Q0"":""material""}",jelly,category_organization
+6885969f57769462deb20901,4350,survey-multi-choice,20,222646,0,0,"{""Q0"":""material""}",overalls,category_organization
+6885969f57769462deb20903,23764,survey-multi-choice,21,246411,0,0,"{""Q0"":""shape""}",helmet,category_organization
+6885969f57769462deb20905,3801,survey-multi-choice,22,250213,0,0,"{""Q0"":""shape""}",microphone,category_organization
+6885969f57769462deb20907,6294,survey-multi-choice,23,256507,0,0,"{""Q0"":""color""}",orange (food),category_organization
+6885969f57769462deb20909,4121,survey-multi-choice,24,260628,0,0,"{""Q0"":""color""}",lavender,attention_category
+6885969f57769462deb2090b,1770,instructions,25,262400,0,0,,,
+6885974657769462deb2090d,2571,instructions,0,2572,0,0,,,
+6885974657769462deb2090f,459019,html-button-response,1,461593,0,0,0,,
+6885974657769462deb20911,4976,survey-multi-choice,2,466569,0,0,"{""Q0"":""shape""}","In the sentence [this is a square table], a 'square' belongs to a category that is organized by:",practice_category
+6885974657769462deb20913,5719,survey-multi-choice,5,488916,0,0,"{""Q0"":""none of these""}",shoulder,category_organization
+6885974657769462deb20915,4019,survey-multi-choice,3,473006,0,0,"{""Q0"":""color""}","In the sentence [this is a red table], 'red' belongs to a category that is organized by:",practice_category
+6885974657769462deb20917,8720,survey-multi-choice,4,483196,0,0,"{""Q0"":""none of these""}",scarf,category_organization
+6885974657769462deb20919,104313,survey-multi-choice,6,593230,0,0,"{""Q0"":""none of these""}",underpants,category_organization
+6885974657769462deb2091b,51196,survey-multi-choice,7,644427,0,0,"{""Q0"":""none of these""}",salami,category_organization
+6885974657769462deb2091d,4886,survey-multi-choice,9,652515,0,0,"{""Q0"":""none of these""}",waist,category_organization
+6885974657769462deb2091f,3613,survey-multi-choice,12,662156,0,0,"{""Q0"":""none of these""}",street,category_organization
+6885974657769462deb20921,2390,survey-multi-choice,11,658543,0,0,"{""Q0"":""none of these""}",sandwich,category_organization
+6885974657769462deb20923,3637,survey-multi-choice,10,656152,0,0,"{""Q0"":""none of these""}",tea,category_organization
+6885974657769462deb20925,3201,survey-multi-choice,8,647629,0,0,"{""Q0"":""none of these""}",smoothie,category_organization
+6885974657769462deb20927,3974,survey-multi-choice,13,666131,0,0,"{""Q0"":""shape""}",tortilla,category_organization
+6885974657769462deb20929,2440,survey-multi-choice,14,668571,0,0,"{""Q0"":""none of these""}",stove,category_organization
+6885974657769462deb2092b,3544,survey-multi-choice,16,681241,0,0,"{""Q0"":""none of these""}",slipper,category_organization
+6885974657769462deb2092d,9125,survey-multi-choice,15,677697,0,0,"{""Q0"":""none of these""}",tomato,category_organization
+6885974657769462deb2092f,2082,survey-multi-choice,18,685319,0,0,"{""Q0"":""none of these""}",wallet,category_organization
+6885974657769462deb20931,1995,survey-multi-choice,17,683237,0,0,"{""Q0"":""none of these""}",trash can,category_organization
+6885974657769462deb20933,2279,survey-multi-choice,19,687598,0,0,"{""Q0"":""none of these""}",robot,category_organization
+6885974657769462deb20935,2070,survey-multi-choice,20,689669,0,0,"{""Q0"":""none of these""}",wall,category_organization
+6885974657769462deb20937,1955,survey-multi-choice,21,691624,0,0,"{""Q0"":""none of these""}",sprinkler,category_organization
+6885974657769462deb20939,3081,survey-multi-choice,24,701556,0,0,"{""Q0"":""color""}",lavender,attention_category
+6885974657769462deb2093b,3076,survey-multi-choice,22,694701,0,0,"{""Q0"":""shape""}",strawberry,category_organization
+6885974657769462deb2093d,3773,survey-multi-choice,23,698474,0,0,"{""Q0"":""material""}",sand,category_organization
+6885979e57769462deb2093f,3227,instructions,0,3229,0,0,,,
+6885979e57769462deb20941,3991,survey-multi-choice,3,52148,0,0,"{""Q0"":""color""}","In the sentence [this is a red table], 'red' belongs to a category that is organized by:",practice_category
+6885979e57769462deb20943,8863,survey-multi-choice,2,46451,0,0,"{""Q0"":""shape""}","In the sentence [this is a square table], a 'square' belongs to a category that is organized by:",practice_category
+6885979e57769462deb20945,34353,html-button-response,1,37585,0,0,0,,
+6885979e57769462deb20947,6378,survey-multi-choice,4,60030,0,0,"{""Q0"":""material""}",glue (object),category_organization
+6885979e57769462deb20949,11998,survey-multi-choice,5,72031,0,0,"{""Q0"":""material""}",cassava,category_organization
+6885979e57769462deb2094b,4915,survey-multi-choice,6,76949,0,0,"{""Q0"":""material""}",cloud,category_organization
+6885979e57769462deb2094d,3774,survey-multi-choice,7,80724,0,0,"{""Q0"":""shape""}",door,category_organization
+6885979e57769462deb2094f,2272,survey-multi-choice,8,82998,0,0,"{""Q0"":""shape""}",hammer,category_organization
+6885979e57769462deb20951,5186,survey-multi-choice,9,88186,0,0,"{""Q0"":""shape""}",comb (object),category_organization
+6885979e57769462deb20953,3312,survey-multi-choice,10,91500,0,0,"{""Q0"":""material""}",fingernail,category_organization
+6885979e57769462deb20955,52412,survey-multi-choice,12,147555,0,0,"{""Q0"":""material""}",earth,category_organization
+6885979e57769462deb20957,3639,survey-multi-choice,11,95141,0,0,"{""Q0"":""material""}",eyebrow,category_organization
+6885979e57769462deb20959,6917,survey-multi-choice,13,154473,0,0,"{""Q0"":""shape""}",camera,category_organization
+6885979e57769462deb2095b,10337,survey-multi-choice,14,164812,0,0,"{""Q0"":""material""}",bunny,category_organization
+6885979e57769462deb2095d,2399,survey-multi-choice,15,167214,0,0,"{""Q0"":""shape""}",cup,category_organization
+6885979e57769462deb2095f,2599,survey-multi-choice,16,169815,0,0,"{""Q0"":""shape""}",animal,category_organization
+6885979e57769462deb20961,3612,survey-multi-choice,17,173428,0,0,"{""Q0"":""material""}",fire,category_organization
+6885979e57769462deb20963,3633,survey-multi-choice,18,177063,0,0,"{""Q0"":""shape""}",furniture,category_organization
+6885979e57769462deb20965,2536,survey-multi-choice,19,179601,0,0,"{""Q0"":""shape""}",armchair,category_organization
+6885979e57769462deb20967,5621,survey-multi-choice,20,185223,0,0,"{""Q0"":""material""}",fish (animal),category_organization
+6885979e57769462deb20969,2208,survey-multi-choice,22,190362,0,0,"{""Q0"":""shape""}",brush (object),category_organization
+6885979e57769462deb2096b,2928,survey-multi-choice,21,188153,0,0,"{""Q0"":""shape""}",dumpling,category_organization
+6885979e57769462deb2096d,3783,survey-multi-choice,23,194147,0,0,"{""Q0"":""material""}",coffee,category_organization
+6885979e57769462deb2096f,2672,survey-multi-choice,24,196821,0,0,"{""Q0"":""color""}",lavender,attention_category
+6885979e57769462deb20971,1445,instructions,25,198266,0,0,,,
+688597dc57769462deb20973,7652,instructions,0,7660,0,0,,,
+688597dc57769462deb20975,53411,html-button-response,1,61076,0,0,0,,
+688597dc57769462deb20977,16277,survey-multi-choice,2,77358,0,0,"{""Q0"":""shape""}","In the sentence [this is a square table], a 'square' belongs to a category that is organized by:",practice_category
+688597dc57769462deb20979,9379,survey-multi-choice,3,93301,0,0,"{""Q0"":""color""}","In the sentence [this is a red table], 'red' belongs to a category that is organized by:",practice_category
+688597dc57769462deb2097b,15390,survey-multi-choice,6,138515,0,0,"{""Q0"":""shape""}",rice,category_organization
+688597dc57769462deb2097d,18417,survey-multi-choice,4,113961,0,0,"{""Q0"":""shape""}",tooth,category_organization
+688597dc57769462deb2097f,9159,survey-multi-choice,5,123123,0,0,"{""Q0"":""material""}",shorts,category_organization
+688597dc57769462deb20981,8921,survey-multi-choice,7,147438,0,0,"{""Q0"":""material""}",wall,category_organization
+688597dc57769462deb20983,6337,survey-multi-choice,10,179273,0,0,"{""Q0"":""material""}",sandwich,category_organization
+688597dc57769462deb20985,11483,survey-multi-choice,12,200614,0,0,"{""Q0"":""material""}",spoon,category_organization
+688597dc57769462deb20987,7681,survey-multi-choice,13,208296,0,0,"{""Q0"":""material""}",wallet,category_organization
+688597dc57769462deb20989,5441,survey-multi-choice,8,152881,0,0,"{""Q0"":""shape""}",star,category_organization
+688597dc57769462deb2098b,20051,survey-multi-choice,9,172934,0,0,"{""Q0"":""shape""}",spinach,category_organization
+688597dc57769462deb2098d,9854,survey-multi-choice,11,189129,0,0,"{""Q0"":""shape""}",slipper,category_organization
+688597dd57769462deb2098f,8669,survey-multi-choice,14,216967,0,0,"{""Q0"":""shape""}",rock (object),category_organization
+688597dd57769462deb20991,10464,survey-multi-choice,15,227433,0,0,"{""Q0"":""none of these""}",spaghetti,category_organization
+688597dd57769462deb20993,9940,survey-multi-choice,16,237374,0,0,"{""Q0"":""shape""}",stone,category_organization
+688597dd57769462deb20995,8040,survey-multi-choice,17,245416,0,0,"{""Q0"":""material""}",smoothie,category_organization
+688597dd57769462deb20997,13310,survey-multi-choice,18,258729,0,0,"{""Q0"":""color""}",strawberry,category_organization
+688597dd57769462deb20999,9349,survey-multi-choice,19,268080,0,0,"{""Q0"":""shape""}",rocking chair,category_organization
+688597dd57769462deb2099b,9945,survey-multi-choice,20,278027,0,0,"{""Q0"":""shape""}",snowman,category_organization
+688597dd57769462deb2099d,14404,survey-multi-choice,21,292432,0,0,"{""Q0"":""material""}",room,category_organization
+688597dd57769462deb2099f,6279,survey-multi-choice,22,298712,0,0,"{""Q0"":""material""}",shirt,category_organization
+688597dd57769462deb209a1,12222,survey-multi-choice,23,310936,0,0,"{""Q0"":""material""}",sand,category_organization
+688597dd57769462deb209a3,7489,survey-multi-choice,24,318427,0,0,"{""Q0"":""color""}",lavender,attention_category
+688597dd57769462deb209a5,3387,instructions,25,321815,0,0,,,
+688598d557769462deb209a7,1901,instructions,0,1904,0,0,,,
+688598d557769462deb209a9,8214,survey-multi-choice,2,118425,0,0,"{""Q0"":""shape""}","In the sentence [this is a square table], a 'square' belongs to a category that is organized by:",practice_category
+688598d557769462deb209ab,108303,html-button-response,1,110208,0,0,0,,
+688598d557769462deb209ad,3591,survey-multi-choice,3,123292,0,0,"{""Q0"":""color""}","In the sentence [this is a red table], 'red' belongs to a category that is organized by:",practice_category
+688598d557769462deb209af,16881,survey-multi-choice,5,205272,0,0,"{""Q0"":""shape""}",coin,category_organization
+688598d557769462deb209b1,33468,survey-multi-choice,4,188390,0,0,"{""Q0"":""material""}",eyebrow,category_organization
+688598d557769462deb209b3,9516,survey-multi-choice,6,214789,0,0,"{""Q0"":""material""}",glue (object),category_organization
+688598d657769462deb209b5,14088,survey-multi-choice,7,228878,0,0,"{""Q0"":""shape""}",door,category_organization
+688598d657769462deb209b7,4913,survey-multi-choice,8,233792,0,0,"{""Q0"":""none of these""}",animal,category_organization
+688598d657769462deb209b9,2959,survey-multi-choice,9,236752,0,0,"{""Q0"":""material""}",donut,category_organization
+688598d657769462deb209bb,12895,survey-multi-choice,10,249648,0,0,"{""Q0"":""material""}",dish,category_organization
+688598d657769462deb209bd,14994,survey-multi-choice,11,264643,0,0,"{""Q0"":""none of these""}",cloud,category_organization
+688598d657769462deb209bf,18167,survey-multi-choice,12,282811,0,0,"{""Q0"":""shape""}",comb (object),category_organization
+688598d657769462deb209c1,6621,survey-multi-choice,13,289433,0,0,"{""Q0"":""shape""}",brush (object),category_organization
+688598d657769462deb209c3,5328,survey-multi-choice,14,294762,0,0,"{""Q0"":""none of these""}",bull,category_organization
+688598d657769462deb209c5,2358,survey-multi-choice,15,297121,0,0,"{""Q0"":""none of these""}",forehead,category_organization
+688598d657769462deb209c7,2759,survey-multi-choice,16,299881,0,0,"{""Q0"":""color""}",grass,category_organization
+688598d657769462deb209c9,2247,survey-multi-choice,17,302129,0,0,"{""Q0"":""none of these""}",cat,category_organization
+688598d657769462deb209cb,7626,survey-multi-choice,18,309756,0,0,"{""Q0"":""shape""}",can (object),category_organization
+688598d657769462deb209cd,8258,survey-multi-choice,19,318015,0,0,"{""Q0"":""shape""}",cabbage,category_organization
+688598d657769462deb209cf,3128,survey-multi-choice,20,321144,0,0,"{""Q0"":""none of these""}",cotton,category_organization
+688598d657769462deb209d1,3208,survey-multi-choice,21,324353,0,0,"{""Q0"":""none of these""}",fish (animal),category_organization
+688598d657769462deb209d3,2853,survey-multi-choice,22,327207,0,0,"{""Q0"":""none of these""}",dog,category_organization
+688598d657769462deb209d5,2853,survey-multi-choice,24,331609,0,0,"{""Q0"":""color""}",lavender,attention_category
+688598d657769462deb209d7,1649,instructions,25,333259,0,0,,,
+688598d657769462deb209d9,1547,survey-multi-choice,23,328755,0,0,"{""Q0"":""none of these""}",crow,category_organization
+688598e457769462deb209db,7602,instructions,0,7606,0,0,,,
+688598e457769462deb209dd,26758,html-button-response,1,34367,0,0,0,,
+688598e457769462deb209df,8662,survey-multi-choice,2,43031,0,0,"{""Q0"":""shape""}","In the sentence [this is a square table], a 'square' belongs to a category that is organized by:",practice_category
+688598e457769462deb209e1,10032,survey-multi-choice,3,55792,0,0,"{""Q0"":""color""}","In the sentence [this is a red table], 'red' belongs to a category that is organized by:",practice_category
+688598e457769462deb209e3,11168,survey-multi-choice,4,69415,0,0,"{""Q0"":""none of these""}",french fries,category_organization
+688598e457769462deb209e5,6094,survey-multi-choice,5,75511,0,0,"{""Q0"":""material""}",clay,category_organization
+688598e457769462deb209e7,7755,survey-multi-choice,6,83268,0,0,"{""Q0"":""none of these""}",butterfly,category_organization
+688598e457769462deb209e9,8206,survey-multi-choice,7,91475,0,0,"{""Q0"":""shape""}",coin,category_organization
+688598e457769462deb209eb,8714,survey-multi-choice,8,100191,0,0,"{""Q0"":""shape""}",drum,category_organization
+688598e457769462deb209ed,8801,survey-multi-choice,9,108993,0,0,"{""Q0"":""shape""}",cup,category_organization
+688598e457769462deb209ef,8249,survey-multi-choice,10,117244,0,0,"{""Q0"":""none of these""}",bunny,category_organization
+688598e457769462deb209f1,8713,survey-multi-choice,11,125958,0,0,"{""Q0"":""none of these""}",coffee,category_organization
+688598e457769462deb209f3,6997,survey-multi-choice,12,132956,0,0,"{""Q0"":""none of these""}",ambulance,category_organization
+688598e557769462deb209f5,9152,survey-multi-choice,13,142110,0,0,"{""Q0"":""shape""}",can (object),category_organization
+688598e557769462deb209f7,8017,survey-multi-choice,14,150128,0,0,"{""Q0"":""material""}",curtain,category_organization
+688598e557769462deb209f9,9416,survey-multi-choice,15,159545,0,0,"{""Q0"":""none of these""}",cassava,category_organization
+688598e557769462deb209fb,5877,survey-multi-choice,16,165424,0,0,"{""Q0"":""shape""}",camera,category_organization
+688598e557769462deb209fd,7967,survey-multi-choice,17,173392,0,0,"{""Q0"":""shape""}",eyebrow,category_organization
+688598e557769462deb209ff,5726,survey-multi-choice,18,179119,0,0,"{""Q0"":""none of these""}",bracelet,category_organization
+688598e557769462deb20a01,6709,survey-multi-choice,19,185830,0,0,"{""Q0"":""material""}",bandaid,category_organization
+688598e557769462deb20a03,5950,survey-multi-choice,20,191781,0,0,"{""Q0"":""shape""}",door,category_organization
+688598e557769462deb20a05,6736,survey-multi-choice,21,198519,0,0,"{""Q0"":""none of these""}",dish,category_organization
+688598e557769462deb20a07,5644,survey-multi-choice,22,204164,0,0,"{""Q0"":""none of these""}",crow,category_organization
+688598e557769462deb20a09,5570,survey-multi-choice,23,209735,0,0,"{""Q0"":""shape""}",flag,category_organization
+688598e557769462deb20a0b,3380,survey-multi-choice,24,213117,0,0,"{""Q0"":""color""}",lavender,attention_category
+688598e557769462deb20a0d,3080,instructions,25,216198,0,0,,,
+688598ec57769462deb20a0f,15660,instructions,0,15662,0,0,,,
+688598ec57769462deb20a11,28792,html-button-response,1,44456,0,0,0,,
+688598ec57769462deb20a13,8227,survey-multi-choice,2,52685,0,0,"{""Q0"":""shape""}","In the sentence [this is a square table], a 'square' belongs to a category that is organized by:",practice_category
+688598ec57769462deb20a15,8115,survey-multi-choice,3,64275,0,0,"{""Q0"":""color""}","In the sentence [this is a red table], 'red' belongs to a category that is organized by:",practice_category
+688598ec57769462deb20a17,8263,survey-multi-choice,4,76023,0,0,"{""Q0"":""material""}",microphone,category_organization
+688598ec57769462deb20a19,5284,survey-multi-choice,5,81309,0,0,"{""Q0"":""material""}",key,category_organization
+688598ec57769462deb20a1b,8866,survey-multi-choice,6,90177,0,0,"{""Q0"":""material""}",lemon,category_organization
+688598ec57769462deb20a1d,4517,survey-multi-choice,7,94695,0,0,"{""Q0"":""none of these""}",nose,category_organization
+688598ec57769462deb20a1f,9693,survey-multi-choice,8,104389,0,0,"{""Q0"":""material""}",pen/pencil,category_organization
+688598ec57769462deb20a21,5996,survey-multi-choice,9,110386,0,0,"{""Q0"":""shape""}",moon,category_organization
+688598ec57769462deb20a23,3834,survey-multi-choice,10,114221,0,0,"{""Q0"":""none of these""}",pumpkin,category_organization
+688598ec57769462deb20a25,4939,survey-multi-choice,11,119161,0,0,"{""Q0"":""material""}",jam,category_organization
+688598ec57769462deb20a27,8568,survey-multi-choice,12,127730,0,0,"{""Q0"":""material""}",orange (food),category_organization
+688598ec57769462deb20a29,5313,survey-multi-choice,13,133043,0,0,"{""Q0"":""material""}",mold,category_organization
+688598ec57769462deb20a2b,7996,survey-multi-choice,14,141040,0,0,"{""Q0"":""material""}",radiator,category_organization
+688598ec57769462deb20a2d,19181,survey-multi-choice,15,160223,0,0,"{""Q0"":""material""}",noodles,category_organization
+688598ec57769462deb20a2f,8114,survey-multi-choice,16,168338,0,0,"{""Q0"":""material""}",lettuce,category_organization
+688598ec57769462deb20a31,8927,survey-multi-choice,17,177266,0,0,"{""Q0"":""material""}",newspaper,category_organization
+688598ec57769462deb20a33,6944,survey-multi-choice,18,184211,0,0,"{""Q0"":""none of these""}",nut,category_organization
+688598ec57769462deb20a35,38535,survey-multi-choice,19,222746,0,0,"{""Q0"":""none of these""}",panda,category_organization
+688598ec57769462deb20a37,4449,survey-multi-choice,20,227196,0,0,"{""Q0"":""none of these""}",ice,category_organization
+688598ec57769462deb20a39,3407,survey-multi-choice,21,230604,0,0,"{""Q0"":""none of these""}",mosquito,category_organization
+688598ec57769462deb20a3b,9238,survey-multi-choice,22,239843,0,0,"{""Q0"":""none of these""}",penis,category_organization
+688598ec57769462deb20a3d,12373,survey-multi-choice,23,252216,0,0,"{""Q0"":""none of these""}",ladybug,category_organization
+688598ec57769462deb20a3f,4121,survey-multi-choice,24,256338,0,0,"{""Q0"":""color""}",lavender,attention_category
+688598ec57769462deb20a41,4344,instructions,25,260683,0,0,,,
+68859b0157769462deb20a43,138199,instructions,0,138199,0,0,,,
+68859b0157769462deb20a45,3447,survey-multi-choice,3,154847,0,0,"{""Q0"":""color""}","In the sentence [this is a red table], 'red' belongs to a category that is organized by:",practice_category
+68859b0157769462deb20a47,4444,survey-multi-choice,2,149612,0,0,"{""Q0"":""shape""}","In the sentence [this is a square table], a 'square' belongs to a category that is organized by:",practice_category
+68859b0157769462deb20a49,6963,html-button-response,1,145165,0,0,0,,
+68859b0157769462deb20a4b,4498,survey-multi-choice,4,160697,0,0,"{""Q0"":""material""}",spinach,category_organization
+68859b0157769462deb20a4d,2082,survey-multi-choice,5,162780,0,0,"{""Q0"":""material""}",tea,category_organization
+68859b0157769462deb20a4f,1930,survey-multi-choice,6,164712,0,0,"{""Q0"":""material""}",salami,category_organization
+68859b0157769462deb20a51,3049,survey-multi-choice,7,167762,0,0,"{""Q0"":""shape""}",waist,category_organization
+68859b0157769462deb20a53,3549,survey-multi-choice,8,171312,0,0,"{""Q0"":""material""}",sausage,category_organization
+68859b0157769462deb20a55,3332,survey-multi-choice,9,174645,0,0,"{""Q0"":""material""}",smoothie,category_organization
+68859b0157769462deb20a57,7698,survey-multi-choice,10,182344,0,0,"{""Q0"":""material""}",terrace,category_organization
+68859b0157769462deb20a59,10570,survey-multi-choice,11,192915,0,0,"{""Q0"":""material""}",scarf,category_organization
+68859b0157769462deb20a5b,12996,survey-multi-choice,12,205912,0,0,"{""Q0"":""material""}",sidewalk,category_organization
+68859b0157769462deb20a5d,7215,survey-multi-choice,13,213128,0,0,"{""Q0"":""shape""}",tangerine,category_organization
+68859b0157769462deb20a5f,7850,survey-multi-choice,15,223795,0,0,"{""Q0"":""none of these""}",stove,category_organization
+68859b0157769462deb20a61,4966,survey-multi-choice,16,228761,0,0,"{""Q0"":""none of these""}",slipper,category_organization
+68859b0157769462deb20a63,2816,survey-multi-choice,14,215945,0,0,"{""Q0"":""material""}",tooth,category_organization
+68859b0157769462deb20a65,394418,survey-multi-choice,17,623173,0,0,"{""Q0"":""none of these""}",street,category_organization
+68859b0157769462deb20a67,2829,survey-multi-choice,18,626004,0,0,"{""Q0"":""none of these""}",robot,category_organization
+68859b0157769462deb20a69,2417,survey-multi-choice,19,628421,0,0,"{""Q0"":""material""}",sand,category_organization
+68859b0157769462deb20a6b,3038,survey-multi-choice,20,631459,0,0,"{""Q0"":""none of these""}",zebra,category_organization
+68859b0157769462deb20a6d,2044,survey-multi-choice,21,633504,0,0,"{""Q0"":""none of these""}",sandwich,category_organization
+68859b0157769462deb20a6f,2682,survey-multi-choice,22,636187,0,0,"{""Q0"":""material""}",rock (object),category_organization
+68859b0157769462deb20a71,2182,survey-multi-choice,23,638369,0,0,"{""Q0"":""material""}",tomato,category_organization
+68859b0157769462deb20a73,3302,survey-multi-choice,24,641673,0,0,"{""Q0"":""color""}",lavender,attention_category
+68859b0157769462deb20a75,1648,instructions,25,643322,0,0,,,
+68859f8357769462deb20a77,20834,instructions,0,20834,0,0,,,
+68859f8457769462deb20a79,17634,survey-multi-choice,2,92459,0,0,"{""Q0"":""shape""}","In the sentence [this is a square table], a 'square' belongs to a category that is organized by:",practice_category
+68859f8457769462deb20a7b,53989,html-button-response,1,74823,0,0,0,,
+68859f8457769462deb20a7d,7800,survey-multi-choice,3,106992,0,0,"{""Q0"":""color""}","In the sentence [this is a red table], 'red' belongs to a category that is organized by:",practice_category
+68859f8457769462deb20a7f,12351,survey-multi-choice,4,122111,0,0,"{""Q0"":""material""}",key,category_organization
+68859f8457769462deb20a81,8117,survey-multi-choice,6,139746,0,0,"{""Q0"":""material""}",puppet,category_organization
+68859f8457769462deb20a83,9517,survey-multi-choice,5,131629,0,0,"{""Q0"":""none of these""}",pig,category_organization
+68859f8457769462deb20a85,11017,survey-multi-choice,7,150763,0,0,"{""Q0"":""none of these""}",mosquito,category_organization
+68859f8457769462deb20a87,4583,survey-multi-choice,11,182800,0,0,"{""Q0"":""none of these""}",panda,category_organization
+68859f8457769462deb20a89,11750,survey-multi-choice,9,171549,0,0,"{""Q0"":""none of these""}",hedgehog,category_organization
+68859f8457769462deb20a8b,9034,survey-multi-choice,8,159798,0,0,"{""Q0"":""none of these""}",knee,category_organization
+68859f8457769462deb20a8d,10517,survey-multi-choice,12,193317,0,0,"{""Q0"":""shape""}",helmet,category_organization
+68859f8457769462deb20a8f,6666,survey-multi-choice,10,178215,0,0,"{""Q0"":""material""}",jelly,category_organization
+68859f8457769462deb20a91,11251,survey-multi-choice,13,204569,0,0,"{""Q0"":""shape""}",overalls,category_organization
+68859f8457769462deb20a93,15234,survey-multi-choice,14,219803,0,0,"{""Q0"":""none of these""}",leaf,category_organization
+68859f8457769462deb20a95,4617,survey-multi-choice,15,224420,0,0,"{""Q0"":""material""}",house,category_organization
+68859f8457769462deb20a97,12616,survey-multi-choice,17,242821,0,0,"{""Q0"":""material""}",papaya,category_organization
+68859f8457769462deb20a99,5784,survey-multi-choice,16,230205,0,0,"{""Q0"":""material""}",rain,category_organization
+68859f8457769462deb20a9b,5817,survey-multi-choice,18,248638,0,0,"{""Q0"":""material""}",radiator,category_organization
+68859f8457769462deb20a9d,3850,survey-multi-choice,19,252489,0,0,"{""Q0"":""material""}",hat,category_organization
+68859f8457769462deb20a9f,2883,survey-multi-choice,20,255372,0,0,"{""Q0"":""material""}",puree,category_organization
+68859f8457769462deb20aa1,2633,survey-multi-choice,21,258006,0,0,"{""Q0"":""material""}",pastry,category_organization
+68859f8457769462deb20aa3,2985,survey-multi-choice,22,260991,0,0,"{""Q0"":""material""}",ladybug,category_organization
+68859f8457769462deb20aa5,3699,survey-multi-choice,23,264691,0,0,"{""Q0"":""material""}",mug,category_organization
+68859f8457769462deb20aa7,3233,survey-multi-choice,24,267924,0,0,"{""Q0"":""color""}",lavender,attention_category
+68859f8457769462deb20aa9,4650,instructions,25,272574,0,0,,,
+6885a7f657769462deb20aab,7103,instructions,0,7105,0,0,,,
+6885a7f657769462deb20aad,86993,html-button-response,1,94105,0,0,0,,
+6885a7f657769462deb20aaf,15664,survey-multi-choice,2,109773,0,0,"{""Q0"":""shape""}","In the sentence [this is a square table], a 'square' belongs to a category that is organized by:",practice_category
+6885a7f657769462deb20ab1,8457,survey-multi-choice,3,119644,0,0,"{""Q0"":""color""}","In the sentence [this is a red table], 'red' belongs to a category that is organized by:",practice_category
+6885a7f657769462deb20ab3,13421,survey-multi-choice,4,134233,0,0,"{""Q0"":""none of these""}",owl,category_organization
+6885a7f657769462deb20ab5,12789,survey-multi-choice,5,147025,0,0,"{""Q0"":""none of these""}",puppy,category_organization
+6885a7f657769462deb20ab7,9688,survey-multi-choice,6,156715,0,0,"{""Q0"":""none of these""}",peanut,category_organization
+6885a7f657769462deb20ab9,89668,survey-multi-choice,7,246387,0,0,"{""Q0"":""none of these""}",knee,category_organization
+6885a7f657769462deb20abb,10709,survey-multi-choice,8,257099,0,0,"{""Q0"":""none of these""}",panda,category_organization
+6885a7f657769462deb20abd,8637,survey-multi-choice,9,265738,0,0,"{""Q0"":""none of these""}",penis,category_organization
+6885a7f657769462deb20abf,8498,survey-multi-choice,10,274237,0,0,"{""Q0"":""none of these""}",piglet,category_organization
+6885a7f657769462deb20ac1,8766,survey-multi-choice,11,283005,0,0,"{""Q0"":""shape""}",racket,category_organization
+6885a7f657769462deb20ac3,7872,survey-multi-choice,12,290880,0,0,"{""Q0"":""shape""}",hat,category_organization
+6885a7f657769462deb20ac5,39197,survey-multi-choice,13,330080,0,0,"{""Q0"":""none of these""}",moose,category_organization
+6885a7f657769462deb20ac7,8012,survey-multi-choice,14,338094,0,0,"{""Q0"":""shape""}",play pen,category_organization
+6885a7f657769462deb20ac9,8059,survey-multi-choice,15,346156,0,0,"{""Q0"":""shape""}",key,category_organization
+6885a7f657769462deb20acb,11057,survey-multi-choice,16,357215,0,0,"{""Q0"":""shape""}",ladder,category_organization
+6885a7f657769462deb20acd,8931,survey-multi-choice,17,366148,0,0,"{""Q0"":""shape""}",puppet,category_organization
+6885a7f657769462deb20acf,9346,survey-multi-choice,18,375497,0,0,"{""Q0"":""material""}",milk,category_organization
+6885a7f657769462deb20ad1,9474,survey-multi-choice,19,384973,0,0,"{""Q0"":""none of these""}",moon,category_organization
+6885a7f657769462deb20ad3,8426,survey-multi-choice,20,393401,0,0,"{""Q0"":""shape""}",helmet,category_organization
+6885a7f657769462deb20ad5,8525,survey-multi-choice,21,401929,0,0,"{""Q0"":""material""}",popcorn,category_organization
+6885a7f657769462deb20ad7,12758,survey-multi-choice,22,414689,0,0,"{""Q0"":""color""}",orange (food),category_organization
+6885a7f657769462deb20ad9,11336,survey-multi-choice,23,426027,0,0,"{""Q0"":""none of these""}",nose,category_organization
+6885a7f657769462deb20adb,8429,survey-multi-choice,24,434458,0,0,"{""Q0"":""color""}",lavender,attention_category
+6885a7f657769462deb20add,1763,instructions,25,436223,0,0,,,

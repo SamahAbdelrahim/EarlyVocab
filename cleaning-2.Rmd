@@ -1,0 +1,136 @@
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE)
+```
+
+```{r setup, include=FALSE, message=FALSE, warning=FALSE}
+library(jsonlite)
+library(tidyverse)
+library(purrr)
+library(ggrepel)
+library(here)
+library(irr)
+library(ggvenn)
+library(gridExtra)
+library(psych)
+library(lme4)
+library(stringr)
+library(lmerTest)  # For p-values in lme4 models
+library(papaja) # For APA style tables and figures
+source(here("helper.R"))
+```
+
+```{r}
+english_sample1_A <- read_csv(here::here("data/first-sample-english","2ndrun_1group_category.csv")) # all dimensions
+
+english_sample1_B <- read_csv(here("data/first-sample-english", "redo.csv")) # all dimensions
+english_sample1_C <- read_csv(here("data/first-sample-english","samah.varlogs.csv")) # all dimensions
+
+english_sample1_D <- read_csv(here("data/first-sample-english","4thrun_sample1.csv")) # all dimensions
+
+english_sample1 <- english_sample1_A %>% 
+  full_join(english_sample1_B) %>%
+  full_join(english_sample1_C) %>%
+  full_join(english_sample1_D) %>%
+  distinct()
+```
+
+```{r}
+english_sample2_A <- read_csv(here::here("data/second-sample-english","samah.categories.csv")) 
+
+english_sample2_B <- read_csv(here::here("data/second-sample-english","samah.categories2.csv")) 
+
+english_sample2_C <- read_csv(here::here("data/second-sample-english","categoryonly_3rd_run.csv")) 
+
+english_sample2_D <- read_csv(here::here("data/second-sample-english","4thrun_2group_category.csv")) 
+
+english_sample2_E <- read_csv(here::here("data/second-sample-english","5thrun_2ndsample.csv")) 
+
+english_sample2_F <- read_csv(here::here("data/second-sample-english","6thrun_2ndsample.csv")) 
+
+english_sample2 <- english_sample2_A %>% 
+  full_join(english_sample2_B) %>%
+  full_join(english_sample2_C) %>% 
+  full_join(english_sample2_D) %>%
+  full_join(english_sample2_E) %>%
+  full_join(english_sample2_F) %>%
+  distinct()
+
+write_csv(english_sample2, here("data/predictors","english_sample2_raw.csv"))
+
+```
+
+```{r }
+# korean data 
+korean_sample1_A <- read_csv(here::here("data/first-sample-korean","korean_online.csv"))
+korean_sample1_B <- read_csv(here::here("data/first-sample-korean","korean_replication_prolific.csv"))
+
+korean_sample1_C <- read_csv(here::here("data/first-sample-korean","korean_unilemma_firstrun.csv"))
+
+korean_sample1_D <- read_csv(here::here("data/first-sample-korean","koreanvarlogs2.csv"))
+
+korean_sample1 <- korean_sample1_A %>% 
+  full_join(korean_sample1_B) %>%
+  full_join(korean_sample1_C) %>%
+  full_join(korean_sample1_D) %>%
+  distinct()
+
+
+```
+
+# comaprison
+```{r}
+# 1. Keep only the shared columns
+common_cols <- intersect(names(english_sample1), names(english_sample2))
+df1 <- english_sample1[, common_cols]
+df2 <- english_sample2[, common_cols]
+
+# 2. Reorder columns to be in the same order
+df1 <- df1[, common_cols]
+df2 <- df2[, common_cols]
+
+# 3. Arrange both for consistent row order (optional, for cleaner diff)
+df1 <- dplyr::arrange_all(df1)
+df2 <- dplyr::arrange_all(df2)
+
+# Rows present in BOTH
+common_rows <- intersect(df1, df2)
+
+# Rows only in ALL_df_BUCLD
+only_in_sample1 <- anti_join(df1, df2)
+
+# Rows only in english_sample1
+only_in_sample2 <- anti_join(df2, df1)
+
+
+write_csv(english_sample1, here("data/ratings", "correct_english_sample1.csv"))
+write_csv(english_sample2, here("data/ratings", "correct_english_sample2.csv"))
+
+
+```
+
+
+# Demographics
+```{r}
+demo_sample1_A <- read_csv(here::here("data/demographics/first-sample-english","1.csv"))
+demo_sample1_B <- read_csv(here("data/demographics/first-sample-english","2.csv"))
+demo_sample1_C <- read_csv(here("data/demographics/first-sample-english","3.csv"))
+demo_sample1_D <- read_csv(here("data/demographics/first-sample-english","4.csv"))
+demo_sample1_E <- read_csv(here("data/demographics/first-sample-english","5.csv"))
+
+demo_sample1 <- demo_sample1_A %>% 
+  full_join(demo_sample1_B) %>%
+  full_join(demo_sample1_C) %>%
+  full_join(demo_sample1_D) %>%
+  full_join(demo_sample1_E) %>%
+  distinct()
+
+
+
+demo_sample2_A <- read_csv(here::here("data/demographics/second-sample-english","1.csv"))
+demo_sample2_B <- read_csv(here("data/demographics/second-sample-english","2.csv"))
+demo_sample2_C <- read_csv(here("data/demographics/second-sample-english","3.csv"))
+
+
+```
+

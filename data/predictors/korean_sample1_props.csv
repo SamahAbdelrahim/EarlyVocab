@@ -1,0 +1,1330 @@
+word,block,response,totcount,uni_lemma,eng_response,theword,count,proportion,language,matching_response
+가방,category_organization,형태,5,bag,form,가방,5,1,Korean,shape
+가방,count_mass,셀 수 있다,1,bag,countable,가방,1,1,Korean,countable
+가방,solidity,고형물,10,bag,solid,가방,10,1,Korean,solid
+가위,category_organization,물질,3,scissors,substance,가위,3,1,Korean,substance
+가위,count_mass,셀 수 있다,7,scissors,countable,가위,7,1,Korean,countable
+가위,solidity,고형물,2,scissors,solid,가위,2,1,Korean,solid
+감,category_organization,물질,10,Persimmon,substance,감,5,0.5,Korean,substance
+감,category_organization,해당 사항 없음,10,Persimmon,not applicable,감,2,0.2,Korean,not applicable
+감,category_organization,형태,10,Persimmon,form,감,3,0.3,Korean,shape
+감,count_mass,셀 수 있다,4,Persimmon,countable,감,4,1,Korean,countable
+감,solidity,고형물,10,Persimmon,solid,감,7,0.7,Korean,solid
+감,solidity,비고형물,10,Persimmon,non-solid,감,2,0.2,Korean,non-solid
+감,solidity,해당 사항 없음,10,Persimmon,not applicable,감,1,0.1,Korean,not applicable
+감자,category_organization,물질,6,potato,substance,감자,4,0.6666666666666666,Korean,substance
+감자,category_organization,해당 사항 없음,6,potato,not applicable,감자,1,0.16666666666666666,Korean,not applicable
+감자,category_organization,형태,6,potato,form,감자,1,0.16666666666666666,Korean,shape
+감자,count_mass,셀 수 있다,5,potato,countable,감자,5,1,Korean,countable
+감자,solidity,고형물,12,potato,solid,감자,11,0.9166666666666666,Korean,solid
+감자,solidity,비고형물,12,potato,non-solid,감자,1,0.08333333333333333,Korean,non-solid
+개,category_organization,물질,7,dog,substance,개,1,0.14285714285714285,Korean,substance
+개,category_organization,색상,7,dog,color,개,1,0.14285714285714285,Korean,color
+개,category_organization,해당 사항 없음,7,dog,not applicable,개,2,0.2857142857142857,Korean,not applicable
+개,category_organization,형태,7,dog,form,개,3,0.42857142857142855,Korean,shape
+개,count_mass,셀 수 없다,10,dog,uncountable,개,1,0.1,Korean,uncountable
+개,count_mass,셀 수 있다,10,dog,countable,개,9,0.9,Korean,countable
+개,solidity,고형물,8,dog,solid,개,7,0.875,Korean,solid
+개,solidity,해당 사항 없음,8,dog,not applicable,개,1,0.125,Korean,not applicable
+개구리,category_organization,색상,8,frog,color,개구리,2,0.25,Korean,color
+개구리,category_organization,해당 사항 없음,8,frog,not applicable,개구리,2,0.25,Korean,not applicable
+개구리,category_organization,형태,8,frog,form,개구리,4,0.5,Korean,shape
+개구리,count_mass,셀 수 있다,4,frog,countable,개구리,4,1,Korean,countable
+개구리,solidity,고형물,9,frog,solid,개구리,8,0.8888888888888888,Korean,solid
+개구리,solidity,해당 사항 없음,9,frog,not applicable,개구리,1,0.1111111111111111,Korean,not applicable
+개미,category_organization,물질,4,ant,substance,개미,2,0.5,Korean,substance
+개미,category_organization,해당 사항 없음,4,ant,not applicable,개미,1,0.25,Korean,not applicable
+개미,category_organization,형태,4,ant,form,개미,1,0.25,Korean,shape
+개미,count_mass,셀 수 없다,7,ant,uncountable,개미,1,0.14285714285714285,Korean,uncountable
+개미,count_mass,셀 수 있다,7,ant,countable,개미,5,0.7142857142857143,Korean,countable
+개미,count_mass,잘 모르겠다/구분이 어렵다,7,ant,not sure,개미,1,0.14285714285714285,Korean,not sure
+개미,solidity,고형물,4,ant,solid,개미,3,0.75,Korean,solid
+개미,solidity,비고형물,4,ant,non-solid,개미,1,0.25,Korean,non-solid
+거북이,category_organization,형태,2,turtle,form,거북이,2,1,Korean,shape
+거북이,count_mass,셀 수 있다,6,turtle,countable,거북이,6,1,Korean,countable
+거북이,solidity,고형물,10,turtle,solid,거북이,9,0.9,Korean,solid
+거북이,solidity,해당 사항 없음,10,turtle,not applicable,거북이,1,0.1,Korean,not applicable
+걸레,category_organization,물질,5,rag,substance,걸레,3,0.6,Korean,substance
+걸레,category_organization,형태,5,rag,form,걸레,2,0.4,Korean,shape
+걸레,count_mass,셀 수 있다,9,rag,countable,걸레,9,1,Korean,countable
+걸레,solidity,고형물,6,rag,solid,걸레,6,1,Korean,solid
+계단,category_organization,물질,9,stairs,substance,계단,2,0.2222222222222222,Korean,substance
+계단,category_organization,형태,9,stairs,form,계단,7,0.7777777777777778,Korean,shape
+계단,count_mass,셀 수 없다,8,stairs,uncountable,계단,1,0.125,Korean,uncountable
+계단,count_mass,셀 수 있다,8,stairs,countable,계단,7,0.875,Korean,countable
+계단,solidity,고형물,4,stairs,solid,계단,3,0.75,Korean,solid
+계단,solidity,비고형물,4,stairs,non-solid,계단,1,0.25,Korean,non-solid
+계란/달걀,category_organization,물질,5,egg,substance,계란/달걀,5,1,Korean,substance
+계란/달걀,count_mass,셀 수 있다,3,egg,countable,계란/달걀,3,1,Korean,countable
+계란/달걀,solidity,고형물,6,egg,solid,계란/달걀,4,0.6666666666666666,Korean,solid
+계란/달걀,solidity,비고형물,6,egg,non-solid,계란/달걀,2,0.3333333333333333,Korean,non-solid
+고구마,category_organization,물질,2,sweet potato,substance,고구마,1,0.5,Korean,substance
+고구마,category_organization,형태,2,sweet potato,form,고구마,1,0.5,Korean,shape
+고구마,count_mass,셀 수 있다,11,sweet potato,countable,고구마,11,1,Korean,countable
+고구마,solidity,고형물,3,sweet potato,solid,고구마,3,1,Korean,solid
+고기,category_organization,물질,5,meat,substance,고기,5,1,Korean,substance
+고기,count_mass,셀 수 없다,8,meat,uncountable,고기,4,0.5,Korean,uncountable
+고기,count_mass,셀 수 있다,8,meat,countable,고기,4,0.5,Korean,countable
+고기,solidity,고형물,7,meat,solid,고기,7,1,Korean,solid
+고양이,category_organization,물질,9,cat,substance,고양이,3,0.3333333333333333,Korean,substance
+고양이,category_organization,해당 사항 없음,9,cat,not applicable,고양이,3,0.3333333333333333,Korean,not applicable
+고양이,category_organization,형태,9,cat,form,고양이,3,0.3333333333333333,Korean,shape
+고양이,count_mass,셀 수 없다,6,cat,uncountable,고양이,1,0.16666666666666666,Korean,uncountable
+고양이,count_mass,셀 수 있다,6,cat,countable,고양이,5,0.8333333333333334,Korean,countable
+고양이,solidity,고형물,8,cat,solid,고양이,7,0.875,Korean,solid
+고양이,solidity,비고형물,8,cat,non-solid,고양이,1,0.125,Korean,non-solid
+고추,category_organization,물질,10,penis,substance,고추,4,0.4,Korean,substance
+고추,category_organization,색상,10,penis,color,고추,1,0.1,Korean,color
+고추,category_organization,형태,10,penis,form,고추,5,0.5,Korean,shape
+고추,count_mass,셀 수 있다,9,penis,countable,고추,9,1,Korean,countable
+고추,solidity,고형물,6,penis,solid,고추,5,0.8333333333333334,Korean,solid
+고추,solidity,비고형물,6,penis,non-solid,고추,1,0.16666666666666666,Korean,non-solid
+곰,category_organization,물질,3,bear,substance,곰,1,0.3333333333333333,Korean,substance
+곰,category_organization,해당 사항 없음,3,bear,not applicable,곰,1,0.3333333333333333,Korean,not applicable
+곰,category_organization,형태,3,bear,form,곰,1,0.3333333333333333,Korean,shape
+곰,count_mass,셀 수 없다,3,bear,uncountable,곰,1,0.3333333333333333,Korean,uncountable
+곰,count_mass,셀 수 있다,3,bear,countable,곰,2,0.6666666666666666,Korean,countable
+곰,solidity,고형물,5,bear,solid,곰,4,0.8,Korean,solid
+곰,solidity,해당 사항 없음,5,bear,not applicable,곰,1,0.2,Korean,not applicable
+공룡,category_organization,물질,4,dinosaur,substance,공룡,1,0.25,Korean,substance
+공룡,category_organization,해당 사항 없음,4,dinosaur,not applicable,공룡,2,0.5,Korean,not applicable
+공룡,category_organization,형태,4,dinosaur,form,공룡,1,0.25,Korean,shape
+공룡,count_mass,셀 수 있다,9,dinosaur,countable,공룡,9,1,Korean,countable
+공룡,solidity,고형물,10,dinosaur,solid,공룡,9,0.9,Korean,solid
+공룡,solidity,비고형물,10,dinosaur,non-solid,공룡,1,0.1,Korean,non-solid
+과일,category_organization,물질,11,fruit,substance,과일,5,0.45454545454545453,Korean,substance
+과일,category_organization,해당 사항 없음,11,fruit,not applicable,과일,4,0.36363636363636365,Korean,not applicable
+과일,category_organization,형태,11,fruit,form,과일,2,0.18181818181818182,Korean,shape
+과일,count_mass,셀 수 있다,3,fruit,countable,과일,3,1,Korean,countable
+과일,solidity,고형물,5,fruit,solid,과일,5,1,Korean,solid
+구두,category_organization,물질,11,dress shoe,substance,구두,3,0.2727272727272727,Korean,substance
+구두,category_organization,해당 사항 없음,11,dress shoe,not applicable,구두,2,0.18181818181818182,Korean,not applicable
+구두,category_organization,형태,11,dress shoe,form,구두,6,0.5454545454545454,Korean,shape
+구두,count_mass,셀 수 있다,7,dress shoe,countable,구두,7,1,Korean,countable
+구두,solidity,고형물,6,dress shoe,solid,구두,5,0.8333333333333334,Korean,solid
+구두,solidity,비고형물,6,dress shoe,non-solid,구두,1,0.16666666666666666,Korean,non-solid
+구름,category_organization,물질,7,cloud,substance,구름,5,0.7142857142857143,Korean,substance
+구름,category_organization,형태,7,cloud,form,구름,2,0.2857142857142857,Korean,shape
+구름,count_mass,셀 수 없다,5,cloud,uncountable,구름,3,0.6,Korean,uncountable
+구름,count_mass,셀 수 있다,5,cloud,countable,구름,2,0.4,Korean,countable
+구름,solidity,고형물,8,cloud,solid,구름,1,0.125,Korean,solid
+구름,solidity,비고형물,8,cloud,non-solid,구름,5,0.625,Korean,non-solid
+구름,solidity,해당 사항 없음,8,cloud,not applicable,구름,2,0.25,Korean,not applicable
+국,category_organization,물질,4,soup,substance,국,1,0.25,Korean,substance
+국,category_organization,해당 사항 없음,4,soup,not applicable,국,1,0.25,Korean,not applicable
+국,category_organization,형태,4,soup,form,국,2,0.5,Korean,shape
+국,count_mass,셀 수 없다,9,soup,uncountable,국,8,0.8888888888888888,Korean,uncountable
+국,count_mass,셀 수 있다,9,soup,countable,국,1,0.1111111111111111,Korean,countable
+국,solidity,비고형물,5,soup,non-solid,국,5,1,Korean,non-solid
+국수,category_organization,물질,4,pasta,substance,국수,2,0.5,Korean,substance
+국수,category_organization,색상,4,pasta,color,국수,1,0.25,Korean,color
+국수,category_organization,형태,4,pasta,form,국수,1,0.25,Korean,shape
+국수,count_mass,셀 수 없다,8,pasta,uncountable,국수,2,0.25,Korean,uncountable
+국수,count_mass,셀 수 있다,8,pasta,countable,국수,5,0.625,Korean,countable
+국수,count_mass,잘 모르겠다/구분이 어렵다,8,pasta,not sure,국수,1,0.125,Korean,not sure
+국수,solidity,고형물,6,pasta,solid,국수,5,0.8333333333333334,Korean,solid
+국수,solidity,비고형물,6,pasta,non-solid,국수,1,0.16666666666666666,Korean,non-solid
+귀,category_organization,물질,5,ear,substance,귀,1,0.2,Korean,substance
+귀,category_organization,해당 사항 없음,5,ear,not applicable,귀,3,0.6,Korean,not applicable
+귀,category_organization,형태,5,ear,form,귀,1,0.2,Korean,shape
+귀,count_mass,셀 수 있다,7,ear,countable,귀,7,1,Korean,countable
+귀,solidity,고형물,9,ear,solid,귀,8,0.8888888888888888,Korean,solid
+귀,solidity,비고형물,9,ear,non-solid,귀,1,0.1111111111111111,Korean,non-solid
+귤,category_organization,색상,4,tangerine,color,귤,1,0.25,Korean,color
+귤,category_organization,해당 사항 없음,4,tangerine,not applicable,귤,1,0.25,Korean,not applicable
+귤,category_organization,형태,4,tangerine,form,귤,2,0.5,Korean,shape
+귤,count_mass,셀 수 있다,6,tangerine,countable,귤,6,1,Korean,countable
+귤,solidity,고형물,4,tangerine,solid,귤,3,0.75,Korean,solid
+귤,solidity,비고형물,4,tangerine,non-solid,귤,1,0.25,Korean,non-solid
+그네,category_organization,물질,2,swing (object),substance,그네,1,0.5,Korean,substance
+그네,category_organization,형태,2,swing (object),form,그네,1,0.5,Korean,shape
+그네,count_mass,셀 수 있다,3,swing (object),countable,그네,3,1,Korean,countable
+그네,solidity,고형물,4,swing (object),solid,그네,3,0.75,Korean,solid
+그네,solidity,비고형물,4,swing (object),non-solid,그네,1,0.25,Korean,non-solid
+그릇,category_organization,물질,7,bowl,substance,그릇,3,0.42857142857142855,Korean,substance
+그릇,category_organization,해당 사항 없음,7,bowl,not applicable,그릇,1,0.14285714285714285,Korean,not applicable
+그릇,category_organization,형태,7,bowl,form,그릇,3,0.42857142857142855,Korean,shape
+그릇,count_mass,셀 수 있다,6,bowl,countable,그릇,6,1,Korean,countable
+그릇,solidity,고형물,10,bowl,solid,그릇,10,1,Korean,solid
+그림,category_organization,해당 사항 없음,5,picture,not applicable,그림,2,0.4,Korean,not applicable
+그림,category_organization,형태,5,picture,form,그림,3,0.6,Korean,shape
+그림,count_mass,셀 수 있다,4,picture,countable,그림,4,1,Korean,countable
+그림,solidity,고형물,11,picture,solid,그림,10,0.9090909090909091,Korean,solid
+그림,solidity,해당 사항 없음,11,picture,not applicable,그림,1,0.09090909090909091,Korean,not applicable
+기린,category_organization,물질,5,giraffe,substance,기린,2,0.4,Korean,substance
+기린,category_organization,해당 사항 없음,5,giraffe,not applicable,기린,1,0.2,Korean,not applicable
+기린,category_organization,형태,5,giraffe,form,기린,2,0.4,Korean,shape
+기린,count_mass,셀 수 없다,5,giraffe,uncountable,기린,1,0.2,Korean,uncountable
+기린,count_mass,셀 수 있다,5,giraffe,countable,기린,4,0.8,Korean,countable
+기린,solidity,고형물,8,giraffe,solid,기린,8,1,Korean,solid
+기저귀,category_organization,물질,8,diaper,substance,기저귀,6,0.75,Korean,substance
+기저귀,category_organization,형태,8,diaper,form,기저귀,2,0.25,Korean,shape
+기저귀,count_mass,셀 수 있다,3,diaper,countable,기저귀,3,1,Korean,countable
+기저귀,solidity,고형물,9,diaper,solid,기저귀,9,1,Korean,solid
+기차,category_organization,물질,4,train,substance,기차,2,0.5,Korean,substance
+기차,category_organization,해당 사항 없음,4,train,not applicable,기차,1,0.25,Korean,not applicable
+기차,category_organization,형태,4,train,form,기차,1,0.25,Korean,shape
+기차,count_mass,셀 수 없다,9,train,uncountable,기차,1,0.1111111111111111,Korean,uncountable
+기차,count_mass,셀 수 있다,9,train,countable,기차,8,0.8888888888888888,Korean,countable
+기차,solidity,고형물,5,train,solid,기차,4,0.8,Korean,solid
+기차,solidity,비고형물,5,train,non-solid,기차,1,0.2,Korean,non-solid
+길,category_organization,물질,8,street,substance,길,1,0.125,Korean,substance
+길,category_organization,해당 사항 없음,8,street,not applicable,길,1,0.125,Korean,not applicable
+길,category_organization,형태,8,street,form,길,6,0.75,Korean,shape
+길,count_mass,셀 수 있다,5,street,countable,길,4,0.8,Korean,countable
+길,count_mass,잘 모르겠다/구분이 어렵다,5,street,not sure,길,1,0.2,Korean,not sure
+길,solidity,고형물,8,street,solid,길,3,0.375,Korean,solid
+길,solidity,비고형물,8,street,non-solid,길,2,0.25,Korean,non-solid
+길,solidity,해당 사항 없음,8,street,not applicable,길,3,0.375,Korean,not applicable
+김,category_organization,물질,7,dried seaweed,substance,김,7,1,Korean,substance
+김,count_mass,셀 수 있다,7,dried seaweed,countable,김,6,0.8571428571428571,Korean,countable
+김,count_mass,잘 모르겠다/구분이 어렵다,7,dried seaweed,not sure,김,1,0.14285714285714285,Korean,not sure
+김,solidity,고형물,4,dried seaweed,solid,김,4,1,Korean,solid
+김치,category_organization,물질,8,kimchi,substance,김치,3,0.375,Korean,substance
+김치,category_organization,형태,8,kimchi,form,김치,5,0.625,Korean,shape
+김치,count_mass,셀 수 없다,5,kimchi,uncountable,김치,2,0.4,Korean,uncountable
+김치,count_mass,셀 수 있다,5,kimchi,countable,김치,2,0.4,Korean,countable
+김치,count_mass,잘 모르겠다/구분이 어렵다,5,kimchi,not sure,김치,1,0.2,Korean,not sure
+김치,solidity,고형물,6,kimchi,solid,김치,5,0.8333333333333334,Korean,solid
+김치,solidity,해당 사항 없음,6,kimchi,not applicable,김치,1,0.16666666666666666,Korean,not applicable
+껌,category_organization,물질,4,gum,substance,껌,4,1,Korean,substance
+껌,count_mass,셀 수 있다,9,gum,countable,껌,9,1,Korean,countable
+껌,solidity,고형물,6,gum,solid,껌,4,0.6666666666666666,Korean,solid
+껌,solidity,비고형물,6,gum,non-solid,껌,2,0.3333333333333333,Korean,non-solid
+꽃,category_organization,물질,8,flower,substance,꽃,5,0.625,Korean,substance
+꽃,category_organization,색상,8,flower,color,꽃,2,0.25,Korean,color
+꽃,category_organization,형태,8,flower,form,꽃,1,0.125,Korean,shape
+꽃,count_mass,셀 수 있다,5,flower,countable,꽃,5,1,Korean,countable
+꽃,solidity,고형물,4,flower,solid,꽃,4,1,Korean,solid
+나무,category_organization,물질,5,tree,substance,나무,3,0.6,Korean,substance
+나무,category_organization,형태,5,tree,form,나무,2,0.4,Korean,shape
+나무,count_mass,셀 수 없다,3,tree,uncountable,나무,1,0.3333333333333333,Korean,uncountable
+나무,count_mass,셀 수 있다,3,tree,countable,나무,2,0.6666666666666666,Korean,countable
+나무,solidity,고형물,9,tree,solid,나무,9,1,Korean,solid
+나비,category_organization,물질,8,butterfly,substance,나비,2,0.25,Korean,substance
+나비,category_organization,색상,8,butterfly,color,나비,1,0.125,Korean,color
+나비,category_organization,해당 사항 없음,8,butterfly,not applicable,나비,2,0.25,Korean,not applicable
+나비,category_organization,형태,8,butterfly,form,나비,3,0.375,Korean,shape
+나비,count_mass,셀 수 있다,6,butterfly,countable,나비,6,1,Korean,countable
+나비,solidity,고형물,5,butterfly,solid,나비,5,1,Korean,solid
+냉장고,category_organization,물질,7,refrigerator,substance,냉장고,2,0.2857142857142857,Korean,substance
+냉장고,category_organization,해당 사항 없음,7,refrigerator,not applicable,냉장고,3,0.42857142857142855,Korean,not applicable
+냉장고,category_organization,형태,7,refrigerator,form,냉장고,2,0.2857142857142857,Korean,shape
+냉장고,count_mass,셀 수 있다,4,refrigerator,countable,냉장고,4,1,Korean,countable
+냉장고,solidity,고형물,5,refrigerator,solid,냉장고,4,0.8,Korean,solid
+냉장고,solidity,해당 사항 없음,5,refrigerator,not applicable,냉장고,1,0.2,Korean,not applicable
+눈,category_organization,물질,9,eye,substance,눈,6,0.6666666666666666,Korean,substance
+눈,category_organization,물질,9,snow,substance,눈,6,0.6666666666666666,Korean,substance
+눈,category_organization,해당 사항 없음,9,eye,not applicable,눈,1,0.1111111111111111,Korean,not applicable
+눈,category_organization,해당 사항 없음,9,snow,not applicable,눈,1,0.1111111111111111,Korean,not applicable
+눈,category_organization,형태,9,eye,form,눈,2,0.2222222222222222,Korean,shape
+눈,category_organization,형태,9,snow,form,눈,2,0.2222222222222222,Korean,shape
+눈,count_mass,셀 수 없다,6,eye,uncountable,눈,3,0.5,Korean,uncountable
+눈,count_mass,셀 수 없다,6,snow,uncountable,눈,3,0.5,Korean,uncountable
+눈,count_mass,셀 수 있다,6,eye,countable,눈,3,0.5,Korean,countable
+눈,count_mass,셀 수 있다,6,snow,countable,눈,3,0.5,Korean,countable
+눈,solidity,고형물,5,eye,solid,눈,1,0.2,Korean,solid
+눈,solidity,고형물,5,snow,solid,눈,1,0.2,Korean,solid
+눈,solidity,비고형물,5,eye,non-solid,눈,3,0.6,Korean,non-solid
+눈,solidity,비고형물,5,snow,non-solid,눈,3,0.6,Korean,non-solid
+눈,solidity,해당 사항 없음,5,eye,not applicable,눈,1,0.2,Korean,not applicable
+눈,solidity,해당 사항 없음,5,snow,not applicable,눈,1,0.2,Korean,not applicable
+눈사람,category_organization,물질,7,snowman,substance,눈사람,4,0.5714285714285714,Korean,substance
+눈사람,category_organization,해당 사항 없음,7,snowman,not applicable,눈사람,1,0.14285714285714285,Korean,not applicable
+눈사람,category_organization,형태,7,snowman,form,눈사람,2,0.2857142857142857,Korean,shape
+눈사람,count_mass,셀 수 있다,7,snowman,countable,눈사람,7,1,Korean,countable
+눈사람,solidity,고형물,5,snowman,solid,눈사람,5,1,Korean,solid
+다람쥐,category_organization,물질,7,squirrel,substance,다람쥐,2,0.2857142857142857,Korean,substance
+다람쥐,category_organization,해당 사항 없음,7,squirrel,not applicable,다람쥐,2,0.2857142857142857,Korean,not applicable
+다람쥐,category_organization,형태,7,squirrel,form,다람쥐,3,0.42857142857142855,Korean,shape
+다람쥐,count_mass,셀 수 있다,4,squirrel,countable,다람쥐,4,1,Korean,countable
+다람쥐,solidity,고형물,4,squirrel,solid,다람쥐,4,1,Korean,solid
+다리,category_organization,물질,7,leg,substance,다리,2,0.2857142857142857,Korean,substance
+다리,category_organization,형태,7,leg,form,다리,5,0.7142857142857143,Korean,shape
+다리,count_mass,셀 수 없다,9,leg,uncountable,다리,1,0.1111111111111111,Korean,uncountable
+다리,count_mass,셀 수 있다,9,leg,countable,다리,8,0.8888888888888888,Korean,countable
+다리,solidity,고형물,6,leg,solid,다리,6,1,Korean,solid
+단추,category_organization,물질,4,button,substance,단추,2,0.5,Korean,substance
+단추,category_organization,형태,4,button,form,단추,2,0.5,Korean,shape
+단추,count_mass,셀 수 있다,7,button,countable,단추,7,1,Korean,countable
+단추,solidity,고형물,6,button,solid,단추,6,1,Korean,solid
+달,category_organization,물질,2,moon,substance,달,1,0.5,Korean,substance
+달,category_organization,해당 사항 없음,2,moon,not applicable,달,1,0.5,Korean,not applicable
+달,count_mass,셀 수 있다,6,moon,countable,달,6,1,Korean,countable
+달,solidity,고형물,8,moon,solid,달,7,0.875,Korean,solid
+달,solidity,해당 사항 없음,8,moon,not applicable,달,1,0.125,Korean,not applicable
+닭,category_organization,물질,7,chicken (animal),substance,닭,4,0.5714285714285714,Korean,substance
+닭,category_organization,해당 사항 없음,7,chicken (animal),not applicable,닭,1,0.14285714285714285,Korean,not applicable
+닭,category_organization,형태,7,chicken (animal),form,닭,2,0.2857142857142857,Korean,shape
+닭,count_mass,셀 수 있다,4,chicken (animal),countable,닭,4,1,Korean,countable
+닭,solidity,고형물,8,chicken (animal),solid,닭,8,1,Korean,solid
+닭고기,category_organization,물질,8,chicken (food),substance,닭고기,6,0.75,Korean,substance
+닭고기,category_organization,해당 사항 없음,8,chicken (food),not applicable,닭고기,2,0.25,Korean,not applicable
+닭고기,count_mass,셀 수 없다,4,chicken (food),uncountable,닭고기,1,0.25,Korean,uncountable
+닭고기,count_mass,셀 수 있다,4,chicken (food),countable,닭고기,2,0.5,Korean,countable
+닭고기,count_mass,잘 모르겠다/구분이 어렵다,4,chicken (food),not sure,닭고기,1,0.25,Korean,not sure
+닭고기,solidity,고형물,5,chicken (food),solid,닭고기,4,0.8,Korean,solid
+닭고기,solidity,해당 사항 없음,5,chicken (food),not applicable,닭고기,1,0.2,Korean,not applicable
+당근,category_organization,물질,9,carrot,substance,당근,7,0.7777777777777778,Korean,substance
+당근,category_organization,형태,9,carrot,form,당근,2,0.2222222222222222,Korean,shape
+당근,count_mass,셀 수 있다,3,carrot,countable,당근,3,1,Korean,countable
+당근,solidity,고형물,5,carrot,solid,당근,5,1,Korean,solid
+도너츠,category_organization,물질,6,donut,substance,도너츠,2,0.3333333333333333,Korean,substance
+도너츠,category_organization,형태,6,donut,form,도너츠,4,0.6666666666666666,Korean,shape
+도너츠,count_mass,셀 수 있다,7,donut,countable,도너츠,7,1,Korean,countable
+도너츠,solidity,고형물,6,donut,solid,도너츠,5,0.8333333333333334,Korean,solid
+도너츠,solidity,비고형물,6,donut,non-solid,도너츠,1,0.16666666666666666,Korean,non-solid
+돈,category_organization,물질,5,money,substance,돈,3,0.6,Korean,substance
+돈,category_organization,형태,5,money,form,돈,2,0.4,Korean,shape
+돈,count_mass,셀 수 있다,4,money,countable,돈,4,1,Korean,countable
+돈,solidity,고형물,8,money,solid,돈,6,0.75,Korean,solid
+돈,solidity,비고형물,8,money,non-solid,돈,1,0.125,Korean,non-solid
+돈,solidity,해당 사항 없음,8,money,not applicable,돈,1,0.125,Korean,not applicable
+돌,category_organization,물질,5,stone,substance,돌,5,1,Korean,substance
+돌,count_mass,셀 수 없다,6,stone,uncountable,돌,1,0.16666666666666666,Korean,uncountable
+돌,count_mass,셀 수 있다,6,stone,countable,돌,4,0.6666666666666666,Korean,countable
+돌,count_mass,잘 모르겠다/구분이 어렵다,6,stone,not sure,돌,1,0.16666666666666666,Korean,not sure
+돌,solidity,고형물,8,stone,solid,돌,8,1,Korean,solid
+동물,category_organization,물질,8,animal,substance,동물,1,0.125,Korean,substance
+동물,category_organization,해당 사항 없음,8,animal,not applicable,동물,3,0.375,Korean,not applicable
+동물,category_organization,형태,8,animal,form,동물,4,0.5,Korean,shape
+동물,count_mass,셀 수 있다,8,animal,countable,동물,7,0.875,Korean,countable
+동물,count_mass,잘 모르겠다/구분이 어렵다,8,animal,not sure,동물,1,0.125,Korean,not sure
+동물,solidity,고형물,3,animal,solid,동물,2,0.6666666666666666,Korean,solid
+동물,solidity,해당 사항 없음,3,animal,not applicable,동물,1,0.3333333333333333,Korean,not applicable
+돼지,category_organization,물질,4,pig,substance,돼지,1,0.25,Korean,substance
+돼지,category_organization,해당 사항 없음,4,pig,not applicable,돼지,2,0.5,Korean,not applicable
+돼지,category_organization,형태,4,pig,form,돼지,1,0.25,Korean,shape
+돼지,count_mass,셀 수 있다,11,pig,countable,돼지,11,1,Korean,countable
+돼지,solidity,고형물,5,pig,solid,돼지,4,0.8,Korean,solid
+돼지,solidity,해당 사항 없음,5,pig,not applicable,돼지,1,0.2,Korean,not applicable
+등,category_organization,물질,5,back (body part),substance,등,2,0.4,Korean,substance
+등,category_organization,해당 사항 없음,5,back (body part),not applicable,등,2,0.4,Korean,not applicable
+등,category_organization,형태,5,back (body part),form,등,1,0.2,Korean,shape
+등,count_mass,셀 수 없다,8,back (body part),uncountable,등,1,0.125,Korean,uncountable
+등,count_mass,셀 수 있다,8,back (body part),countable,등,5,0.625,Korean,countable
+등,count_mass,잘 모르겠다/구분이 어렵다,8,back (body part),not sure,등,2,0.25,Korean,not sure
+등,solidity,고형물,5,back (body part),solid,등,4,0.8,Korean,solid
+등,solidity,해당 사항 없음,5,back (body part),not applicable,등,1,0.2,Korean,not applicable
+딸기,category_organization,물질,10,strawberry,substance,딸기,5,0.5,Korean,substance
+딸기,category_organization,해당 사항 없음,10,strawberry,not applicable,딸기,2,0.2,Korean,not applicable
+딸기,category_organization,형태,10,strawberry,form,딸기,3,0.3,Korean,shape
+딸기,count_mass,셀 수 있다,2,strawberry,countable,딸기,2,1,Korean,countable
+딸기,solidity,고형물,8,strawberry,solid,딸기,8,1,Korean,solid
+땅,category_organization,물질,3,ground,substance,땅,2,0.6666666666666666,Korean,substance
+땅,category_organization,형태,3,ground,form,땅,1,0.3333333333333333,Korean,shape
+땅,count_mass,셀 수 없다,3,ground,uncountable,땅,2,0.6666666666666666,Korean,uncountable
+땅,count_mass,잘 모르겠다/구분이 어렵다,3,ground,not sure,땅,1,0.3333333333333333,Korean,not sure
+땅,solidity,고형물,7,ground,solid,땅,4,0.5714285714285714,Korean,solid
+땅,solidity,비고형물,7,ground,non-solid,땅,3,0.42857142857142855,Korean,non-solid
+땅콩,category_organization,물질,6,peanut,substance,땅콩,3,0.5,Korean,substance
+땅콩,category_organization,형태,6,peanut,form,땅콩,3,0.5,Korean,shape
+땅콩,count_mass,셀 수 있다,7,peanut,countable,땅콩,7,1,Korean,countable
+땅콩,solidity,고형물,8,peanut,solid,땅콩,8,1,Korean,solid
+떡,category_organization,물질,3,rice cake,substance,떡,3,1,Korean,substance
+떡,count_mass,셀 수 있다,8,rice cake,countable,떡,8,1,Korean,countable
+떡,solidity,고형물,5,rice cake,solid,떡,4,0.8,Korean,solid
+떡,solidity,비고형물,5,rice cake,non-solid,떡,1,0.2,Korean,non-solid
+똥꼬,category_organization,물질,4,butt,substance,똥꼬,2,0.5,Korean,substance
+똥꼬,category_organization,형태,4,butt,form,똥꼬,2,0.5,Korean,shape
+똥꼬,count_mass,셀 수 없다,9,butt,uncountable,똥꼬,2,0.2222222222222222,Korean,uncountable
+똥꼬,count_mass,셀 수 있다,9,butt,countable,똥꼬,7,0.7777777777777778,Korean,countable
+똥꼬,solidity,고형물,7,butt,solid,똥꼬,5,0.7142857142857143,Korean,solid
+똥꼬,solidity,해당 사항 없음,7,butt,not applicable,똥꼬,2,0.2857142857142857,Korean,not applicable
+라디오,category_organization,물질,7,radio,substance,라디오,3,0.42857142857142855,Korean,substance
+라디오,category_organization,색상,7,radio,color,라디오,1,0.14285714285714285,Korean,color
+라디오,category_organization,해당 사항 없음,7,radio,not applicable,라디오,1,0.14285714285714285,Korean,not applicable
+라디오,category_organization,형태,7,radio,form,라디오,2,0.2857142857142857,Korean,shape
+라디오,count_mass,셀 수 있다,5,radio,countable,라디오,5,1,Korean,countable
+라디오,solidity,고형물,5,radio,solid,라디오,5,1,Korean,solid
+라면,category_organization,물질,12,noodles,substance,라면,7,0.5833333333333334,Korean,substance
+라면,category_organization,색상,12,noodles,color,라면,1,0.08333333333333333,Korean,color
+라면,category_organization,해당 사항 없음,12,noodles,not applicable,라면,1,0.08333333333333333,Korean,not applicable
+라면,category_organization,형태,12,noodles,form,라면,3,0.25,Korean,shape
+라면,count_mass,셀 수 없다,7,noodles,uncountable,라면,1,0.14285714285714285,Korean,uncountable
+라면,count_mass,셀 수 있다,7,noodles,countable,라면,6,0.8571428571428571,Korean,countable
+라면,solidity,고형물,4,noodles,solid,라면,2,0.5,Korean,solid
+라면,solidity,해당 사항 없음,4,noodles,not applicable,라면,2,0.5,Korean,not applicable
+로봇,category_organization,물질,15,robot,substance,로봇,3,0.2,Korean,substance
+로봇,category_organization,해당 사항 없음,15,robot,not applicable,로봇,7,0.4666666666666667,Korean,not applicable
+로봇,category_organization,형태,15,robot,form,로봇,5,0.3333333333333333,Korean,shape
+로봇,count_mass,셀 수 있다,7,robot,countable,로봇,7,1,Korean,countable
+로봇,solidity,고형물,4,robot,solid,로봇,4,1,Korean,solid
+말,category_organization,해당 사항 없음,4,horse,not applicable,말,3,0.75,Korean,not applicable
+말,category_organization,형태,4,horse,form,말,1,0.25,Korean,shape
+말,count_mass,셀 수 없다,6,horse,uncountable,말,1,0.16666666666666666,Korean,uncountable
+말,count_mass,셀 수 있다,6,horse,countable,말,3,0.5,Korean,countable
+말,count_mass,잘 모르겠다/구분이 어렵다,6,horse,not sure,말,2,0.3333333333333333,Korean,not sure
+말,solidity,고형물,5,horse,solid,말,5,1,Korean,solid
+망치,category_organization,물질,4,hammer,substance,망치,2,0.5,Korean,substance
+망치,category_organization,형태,4,hammer,form,망치,2,0.5,Korean,shape
+망치,count_mass,셀 수 있다,5,hammer,countable,망치,5,1,Korean,countable
+망치,solidity,고형물,8,hammer,solid,망치,8,1,Korean,solid
+머리,category_organization,물질,6,head,substance,머리,2,0.3333333333333333,Korean,substance
+머리,category_organization,색상,6,head,color,머리,1,0.16666666666666666,Korean,color
+머리,category_organization,형태,6,head,form,머리,3,0.5,Korean,shape
+머리,count_mass,셀 수 없다,8,head,uncountable,머리,1,0.125,Korean,uncountable
+머리,count_mass,셀 수 있다,8,head,countable,머리,7,0.875,Korean,countable
+머리,solidity,고형물,9,head,solid,머리,8,0.8888888888888888,Korean,solid
+머리,solidity,비고형물,9,head,non-solid,머리,1,0.1111111111111111,Korean,non-solid
+머리카락,category_organization,물질,7,hair,substance,머리카락,3,0.42857142857142855,Korean,substance
+머리카락,category_organization,색상,7,hair,color,머리카락,2,0.2857142857142857,Korean,color
+머리카락,category_organization,해당 사항 없음,7,hair,not applicable,머리카락,1,0.14285714285714285,Korean,not applicable
+머리카락,category_organization,형태,7,hair,form,머리카락,1,0.14285714285714285,Korean,shape
+머리카락,count_mass,셀 수 없다,7,hair,uncountable,머리카락,2,0.2857142857142857,Korean,uncountable
+머리카락,count_mass,셀 수 있다,7,hair,countable,머리카락,4,0.5714285714285714,Korean,countable
+머리카락,count_mass,잘 모르겠다/구분이 어렵다,7,hair,not sure,머리카락,1,0.14285714285714285,Korean,not sure
+머리카락,solidity,고형물,8,hair,solid,머리카락,6,0.75,Korean,solid
+머리카락,solidity,비고형물,8,hair,non-solid,머리카락,2,0.25,Korean,non-solid
+메론,category_organization,물질,2,melon,substance,메론,1,0.5,Korean,substance
+메론,category_organization,해당 사항 없음,2,melon,not applicable,메론,1,0.5,Korean,not applicable
+메론,count_mass,셀 수 있다,7,melon,countable,메론,7,1,Korean,countable
+메론,solidity,고형물,7,melon,solid,메론,7,1,Korean,solid
+모래,category_organization,물질,7,sand,substance,모래,5,0.7142857142857143,Korean,substance
+모래,category_organization,형태,7,sand,form,모래,2,0.2857142857142857,Korean,shape
+모래,count_mass,셀 수 없다,5,sand,uncountable,모래,3,0.6,Korean,uncountable
+모래,count_mass,셀 수 있다,5,sand,countable,모래,1,0.2,Korean,countable
+모래,count_mass,잘 모르겠다/구분이 어렵다,5,sand,not sure,모래,1,0.2,Korean,not sure
+모래,solidity,고형물,6,sand,solid,모래,3,0.5,Korean,solid
+모래,solidity,비고형물,6,sand,non-solid,모래,2,0.3333333333333333,Korean,non-solid
+모래,solidity,해당 사항 없음,6,sand,not applicable,모래,1,0.16666666666666666,Korean,not applicable
+모자,category_organization,물질,9,hat,substance,모자,2,0.2222222222222222,Korean,substance
+모자,category_organization,형태,9,hat,form,모자,7,0.7777777777777778,Korean,shape
+모자,count_mass,셀 수 있다,6,hat,countable,모자,6,1,Korean,countable
+모자,solidity,고형물,7,hat,solid,모자,5,0.7142857142857143,Korean,solid
+모자,solidity,비고형물,7,hat,non-solid,모자,2,0.2857142857142857,Korean,non-solid
+목,category_organization,물질,4,neck,substance,목,1,0.25,Korean,substance
+목,category_organization,형태,4,neck,form,목,3,0.75,Korean,shape
+목,count_mass,셀 수 있다,8,neck,countable,목,8,1,Korean,countable
+목,solidity,고형물,3,neck,solid,목,2,0.6666666666666666,Korean,solid
+목,solidity,비고형물,3,neck,non-solid,목,1,0.3333333333333333,Korean,non-solid
+목걸이,category_organization,물질,9,necklace,substance,목걸이,2,0.2222222222222222,Korean,substance
+목걸이,category_organization,형태,9,necklace,form,목걸이,7,0.7777777777777778,Korean,shape
+목걸이,count_mass,셀 수 있다,7,necklace,countable,목걸이,7,1,Korean,countable
+목걸이,solidity,고형물,5,necklace,solid,목걸이,5,1,Korean,solid
+목도리,category_organization,물질,7,scarf,substance,목도리,5,0.7142857142857143,Korean,substance
+목도리,category_organization,형태,7,scarf,form,목도리,2,0.2857142857142857,Korean,shape
+목도리,count_mass,셀 수 있다,5,scarf,countable,목도리,5,1,Korean,countable
+목도리,solidity,고형물,8,scarf,solid,목도리,6,0.75,Korean,solid
+목도리,solidity,비고형물,8,scarf,non-solid,목도리,2,0.25,Korean,non-solid
+목욕탕,category_organization,해당 사항 없음,7,bathtub,not applicable,목욕탕,4,0.5714285714285714,Korean,not applicable
+목욕탕,category_organization,형태,7,bathtub,form,목욕탕,3,0.42857142857142855,Korean,shape
+목욕탕,count_mass,셀 수 없다,7,bathtub,uncountable,목욕탕,1,0.14285714285714285,Korean,uncountable
+목욕탕,count_mass,셀 수 있다,7,bathtub,countable,목욕탕,6,0.8571428571428571,Korean,countable
+목욕탕,solidity,고형물,3,bathtub,solid,목욕탕,2,0.6666666666666666,Korean,solid
+목욕탕,solidity,비고형물,3,bathtub,non-solid,목욕탕,1,0.3333333333333333,Korean,non-solid
+몸,category_organization,물질,5,body,substance,몸,2,0.4,Korean,substance
+몸,category_organization,해당 사항 없음,5,body,not applicable,몸,3,0.6,Korean,not applicable
+몸,count_mass,셀 수 있다,10,body,countable,몸,9,0.9,Korean,countable
+몸,count_mass,잘 모르겠다/구분이 어렵다,10,body,not sure,몸,1,0.1,Korean,not sure
+몸,solidity,고형물,6,body,solid,몸,5,0.8333333333333334,Korean,solid
+몸,solidity,해당 사항 없음,6,body,not applicable,몸,1,0.16666666666666666,Korean,not applicable
+못,category_organization,물질,5,nail (object),substance,못,1,0.2,Korean,substance
+못,category_organization,형태,5,nail (object),form,못,4,0.8,Korean,shape
+못,count_mass,셀 수 있다,4,nail (object),countable,못,4,1,Korean,countable
+못,solidity,고형물,8,nail (object),solid,못,8,1,Korean,solid
+무/무우,category_organization,물질,6,radish,substance,무/무우,3,0.5,Korean,substance
+무/무우,category_organization,형태,6,radish,form,무/무우,3,0.5,Korean,shape
+무/무우,count_mass,셀 수 있다,12,radish,countable,무/무우,12,1,Korean,countable
+무/무우,solidity,고형물,9,radish,solid,무/무우,8,0.8888888888888888,Korean,solid
+무/무우,solidity,비고형물,9,radish,non-solid,무/무우,1,0.1111111111111111,Korean,non-solid
+무릎,category_organization,해당 사항 없음,5,knee,not applicable,무릎,4,0.8,Korean,not applicable
+무릎,category_organization,형태,5,knee,form,무릎,1,0.2,Korean,shape
+무릎,count_mass,셀 수 있다,8,knee,countable,무릎,8,1,Korean,countable
+무릎,solidity,고형물,5,knee,solid,무릎,4,0.8,Korean,solid
+무릎,solidity,비고형물,5,knee,non-solid,무릎,1,0.2,Korean,non-solid
+문,category_organization,형태,5,door,form,문,5,1,Korean,shape
+문,count_mass,셀 수 있다,6,door,countable,문,6,1,Korean,countable
+문,solidity,고형물,7,door,solid,문,7,1,Korean,solid
+물고기,category_organization,형태,3,fish (animal),form,물고기,3,1,Korean,shape
+물고기,count_mass,셀 수 있다,9,fish (animal),countable,물고기,9,1,Korean,countable
+물고기,solidity,고형물,6,fish (animal),solid,물고기,6,1,Korean,solid
+미끄럼틀,category_organization,물질,8,slide (object),substance,미끄럼틀,3,0.375,Korean,substance
+미끄럼틀,category_organization,해당 사항 없음,8,slide (object),not applicable,미끄럼틀,1,0.125,Korean,not applicable
+미끄럼틀,category_organization,형태,8,slide (object),form,미끄럼틀,4,0.5,Korean,shape
+미끄럼틀,count_mass,셀 수 있다,6,slide (object),countable,미끄럼틀,6,1,Korean,countable
+미끄럼틀,solidity,고형물,3,slide (object),solid,미끄럼틀,3,1,Korean,solid
+바나나,category_organization,해당 사항 없음,4,banana,not applicable,바나나,1,0.25,Korean,not applicable
+바나나,category_organization,형태,4,banana,form,바나나,3,0.75,Korean,shape
+바나나,count_mass,셀 수 있다,9,banana,countable,바나나,9,1,Korean,countable
+바나나,solidity,고형물,9,banana,solid,바나나,9,1,Korean,solid
+바람,category_organization,해당 사항 없음,5,wind,not applicable,바람,4,0.8,Korean,not applicable
+바람,category_organization,형태,5,wind,form,바람,1,0.2,Korean,shape
+바람,count_mass,셀 수 없다,6,wind,uncountable,바람,6,1,Korean,uncountable
+바람,solidity,비고형물,4,wind,non-solid,바람,3,0.75,Korean,non-solid
+바람,solidity,해당 사항 없음,4,wind,not applicable,바람,1,0.25,Korean,not applicable
+바위,category_organization,물질,11,boulder,substance,바위,9,0.8181818181818182,Korean,substance
+바위,category_organization,형태,11,boulder,form,바위,2,0.18181818181818182,Korean,shape
+바위,count_mass,셀 수 있다,6,boulder,countable,바위,4,0.6666666666666666,Korean,countable
+바위,count_mass,잘 모르겠다/구분이 어렵다,6,boulder,not sure,바위,2,0.3333333333333333,Korean,not sure
+바위,solidity,고형물,6,boulder,solid,바위,6,1,Korean,solid
+바지,category_organization,물질,5,pants,substance,바지,1,0.2,Korean,substance
+바지,category_organization,형태,5,pants,form,바지,4,0.8,Korean,shape
+바지,count_mass,셀 수 있다,8,pants,countable,바지,8,1,Korean,countable
+바지,solidity,고형물,8,pants,solid,바지,7,0.875,Korean,solid
+바지,solidity,비고형물,8,pants,non-solid,바지,1,0.125,Korean,non-solid
+발,category_organization,물질,3,foot,substance,발,1,0.3333333333333333,Korean,substance
+발,category_organization,해당 사항 없음,3,foot,not applicable,발,1,0.3333333333333333,Korean,not applicable
+발,category_organization,형태,3,foot,form,발,1,0.3333333333333333,Korean,shape
+발,count_mass,셀 수 있다,10,foot,countable,발,10,1,Korean,countable
+발,solidity,고형물,4,foot,solid,발,4,1,Korean,solid
+발목,category_organization,물질,8,ankle,substance,발목,3,0.375,Korean,substance
+발목,category_organization,형태,8,ankle,form,발목,5,0.625,Korean,shape
+발목,count_mass,셀 수 있다,6,ankle,countable,발목,6,1,Korean,countable
+발목,solidity,고형물,6,ankle,solid,발목,6,1,Korean,solid
+발톱,category_organization,물질,6,fingernail,substance,발톱,1,0.16666666666666666,Korean,substance
+발톱,category_organization,해당 사항 없음,6,fingernail,not applicable,발톱,1,0.16666666666666666,Korean,not applicable
+발톱,category_organization,형태,6,fingernail,form,발톱,4,0.6666666666666666,Korean,shape
+발톱,count_mass,셀 수 있다,5,fingernail,countable,발톱,3,0.6,Korean,countable
+발톱,count_mass,잘 모르겠다/구분이 어렵다,5,fingernail,not sure,발톱,2,0.4,Korean,not sure
+발톱,solidity,고형물,7,fingernail,solid,발톱,7,1,Korean,solid
+밤,category_organization,물질,8,nut,substance,밤,4,0.5,Korean,substance
+밤,category_organization,색상,8,nut,color,밤,1,0.125,Korean,color
+밤,category_organization,해당 사항 없음,8,nut,not applicable,밤,2,0.25,Korean,not applicable
+밤,category_organization,형태,8,nut,form,밤,1,0.125,Korean,shape
+밤,count_mass,셀 수 있다,4,nut,countable,밤,3,0.75,Korean,countable
+밤,count_mass,잘 모르겠다/구분이 어렵다,4,nut,not sure,밤,1,0.25,Korean,not sure
+밤,solidity,고형물,7,nut,solid,밤,4,0.5714285714285714,Korean,solid
+밤,solidity,비고형물,7,nut,non-solid,밤,2,0.2857142857142857,Korean,non-solid
+밤,solidity,해당 사항 없음,7,nut,not applicable,밤,1,0.14285714285714285,Korean,not applicable
+방,category_organization,물질,9,room,substance,방,1,0.1111111111111111,Korean,substance
+방,category_organization,해당 사항 없음,9,room,not applicable,방,2,0.2222222222222222,Korean,not applicable
+방,category_organization,형태,9,room,form,방,6,0.6666666666666666,Korean,shape
+방,count_mass,셀 수 없다,2,room,uncountable,방,1,0.5,Korean,uncountable
+방,count_mass,셀 수 있다,2,room,countable,방,1,0.5,Korean,countable
+방,solidity,고형물,5,room,solid,방,2,0.4,Korean,solid
+방,solidity,비고형물,5,room,non-solid,방,1,0.2,Korean,non-solid
+방,solidity,해당 사항 없음,5,room,not applicable,방,2,0.4,Korean,not applicable
+배,category_organization,물질,10,boat,substance,배,3,0.3,Korean,substance
+배,category_organization,물질,10,tummy,substance,배,3,0.3,Korean,substance
+배,category_organization,해당 사항 없음,10,boat,not applicable,배,2,0.2,Korean,not applicable
+배,category_organization,해당 사항 없음,10,tummy,not applicable,배,2,0.2,Korean,not applicable
+배,category_organization,형태,10,boat,form,배,5,0.5,Korean,shape
+배,category_organization,형태,10,tummy,form,배,5,0.5,Korean,shape
+배,count_mass,셀 수 있다,15,boat,countable,배,15,1,Korean,countable
+배,count_mass,셀 수 있다,15,tummy,countable,배,15,1,Korean,countable
+배,solidity,고형물,10,boat,solid,배,10,1,Korean,solid
+배,solidity,고형물,10,tummy,solid,배,10,1,Korean,solid
+배꼽,category_organization,해당 사항 없음,6,belly button,not applicable,배꼽,2,0.3333333333333333,Korean,not applicable
+배꼽,category_organization,형태,6,belly button,form,배꼽,4,0.6666666666666666,Korean,shape
+배꼽,count_mass,셀 수 있다,6,belly button,countable,배꼽,6,1,Korean,countable
+배꼽,solidity,고형물,7,belly button,solid,배꼽,5,0.7142857142857143,Korean,solid
+배꼽,solidity,비고형물,7,belly button,non-solid,배꼽,1,0.14285714285714285,Korean,non-solid
+배꼽,solidity,해당 사항 없음,7,belly button,not applicable,배꼽,1,0.14285714285714285,Korean,not applicable
+배추,category_organization,물질,8,cabbage,substance,배추,6,0.75,Korean,substance
+배추,category_organization,해당 사항 없음,8,cabbage,not applicable,배추,2,0.25,Korean,not applicable
+배추,count_mass,셀 수 있다,9,cabbage,countable,배추,9,1,Korean,countable
+배추,solidity,고형물,4,cabbage,solid,배추,4,1,Korean,solid
+뱀,category_organization,형태,2,snake,form,뱀,2,1,Korean,shape
+뱀,count_mass,셀 수 있다,7,snake,countable,뱀,7,1,Korean,countable
+뱀,solidity,고형물,4,snake,solid,뱀,3,0.75,Korean,solid
+뱀,solidity,해당 사항 없음,4,snake,not applicable,뱀,1,0.25,Korean,not applicable
+버스,category_organization,해당 사항 없음,8,bus,not applicable,버스,1,0.125,Korean,not applicable
+버스,category_organization,형태,8,bus,form,버스,7,0.875,Korean,shape
+버스,count_mass,셀 수 있다,6,bus,countable,버스,6,1,Korean,countable
+버스,solidity,고형물,4,bus,solid,버스,4,1,Korean,solid
+벌,category_organization,물질,6,bee,substance,벌,1,0.16666666666666666,Korean,substance
+벌,category_organization,색상,6,bee,color,벌,1,0.16666666666666666,Korean,color
+벌,category_organization,형태,6,bee,form,벌,4,0.6666666666666666,Korean,shape
+벌,count_mass,셀 수 있다,9,bee,countable,벌,9,1,Korean,countable
+벌,solidity,고형물,5,bee,solid,벌,5,1,Korean,solid
+벌레,category_organization,물질,3,bug,substance,벌레,1,0.3333333333333333,Korean,substance
+벌레,category_organization,해당 사항 없음,3,bug,not applicable,벌레,1,0.3333333333333333,Korean,not applicable
+벌레,category_organization,형태,3,bug,form,벌레,1,0.3333333333333333,Korean,shape
+벌레,count_mass,셀 수 있다,5,bug,countable,벌레,4,0.8,Korean,countable
+벌레,count_mass,잘 모르겠다/구분이 어렵다,5,bug,not sure,벌레,1,0.2,Korean,not sure
+벌레,solidity,고형물,3,bug,solid,벌레,2,0.6666666666666666,Korean,solid
+벌레,solidity,해당 사항 없음,3,bug,not applicable,벌레,1,0.3333333333333333,Korean,not applicable
+베개,category_organization,물질,9,pillow,substance,베개,4,0.4444444444444444,Korean,substance
+베개,category_organization,해당 사항 없음,9,pillow,not applicable,베개,1,0.1111111111111111,Korean,not applicable
+베개,category_organization,형태,9,pillow,form,베개,4,0.4444444444444444,Korean,shape
+베개,count_mass,셀 수 있다,5,pillow,countable,베개,5,1,Korean,countable
+베개,solidity,고형물,5,pillow,solid,베개,4,0.8,Korean,solid
+베개,solidity,해당 사항 없음,5,pillow,not applicable,베개,1,0.2,Korean,not applicable
+별,category_organization,물질,4,star,substance,별,3,0.75,Korean,substance
+별,category_organization,해당 사항 없음,4,star,not applicable,별,1,0.25,Korean,not applicable
+별,count_mass,셀 수 없다,8,star,uncountable,별,3,0.375,Korean,uncountable
+별,count_mass,셀 수 있다,8,star,countable,별,5,0.625,Korean,countable
+별,solidity,고형물,6,star,solid,별,3,0.5,Korean,solid
+별,solidity,비고형물,6,star,non-solid,별,1,0.16666666666666666,Korean,non-solid
+별,solidity,해당 사항 없음,6,star,not applicable,별,2,0.3333333333333333,Korean,not applicable
+병,category_organization,물질,6,bottle,substance,병,1,0.16666666666666666,Korean,substance
+병,category_organization,형태,6,bottle,form,병,5,0.8333333333333334,Korean,shape
+병,count_mass,셀 수 있다,8,bottle,countable,병,7,0.875,Korean,countable
+병,count_mass,잘 모르겠다/구분이 어렵다,8,bottle,not sure,병,1,0.125,Korean,not sure
+병,solidity,고형물,5,bottle,solid,병,5,1,Korean,solid
+병아리,category_organization,물질,3,chick,substance,병아리,2,0.6666666666666666,Korean,substance
+병아리,category_organization,해당 사항 없음,3,chick,not applicable,병아리,1,0.3333333333333333,Korean,not applicable
+병아리,count_mass,셀 수 있다,2,chick,countable,병아리,2,1,Korean,countable
+병아리,solidity,고형물,7,chick,solid,병아리,7,1,Korean,solid
+복숭아,category_organization,물질,9,peach,substance,복숭아,7,0.7777777777777778,Korean,substance
+복숭아,category_organization,형태,9,peach,form,복숭아,2,0.2222222222222222,Korean,shape
+복숭아,count_mass,셀 수 있다,7,peach,countable,복숭아,7,1,Korean,countable
+복숭아,solidity,고형물,5,peach,solid,복숭아,4,0.8,Korean,solid
+복숭아,solidity,해당 사항 없음,5,peach,not applicable,복숭아,1,0.2,Korean,not applicable
+부엉이,category_organization,물질,11,owl,substance,부엉이,3,0.2727272727272727,Korean,substance
+부엉이,category_organization,해당 사항 없음,11,owl,not applicable,부엉이,3,0.2727272727272727,Korean,not applicable
+부엉이,category_organization,형태,11,owl,form,부엉이,5,0.45454545454545453,Korean,shape
+부엉이,count_mass,셀 수 있다,5,owl,countable,부엉이,5,1,Korean,countable
+부엉이,solidity,고형물,2,owl,solid,부엉이,2,1,Korean,solid
+부엌,category_organization,물질,4,kitchen,substance,부엌,1,0.25,Korean,substance
+부엌,category_organization,해당 사항 없음,4,kitchen,not applicable,부엌,1,0.25,Korean,not applicable
+부엌,category_organization,형태,4,kitchen,form,부엌,2,0.5,Korean,shape
+부엌,count_mass,셀 수 없다,7,kitchen,uncountable,부엌,2,0.2857142857142857,Korean,uncountable
+부엌,count_mass,셀 수 있다,7,kitchen,countable,부엌,5,0.7142857142857143,Korean,countable
+부엌,solidity,고형물,5,kitchen,solid,부엌,5,1,Korean,solid
+불,category_organization,물질,12,fire,substance,불,5,0.4166666666666667,Korean,substance
+불,category_organization,해당 사항 없음,12,fire,not applicable,불,4,0.3333333333333333,Korean,not applicable
+불,category_organization,형태,12,fire,form,불,3,0.25,Korean,shape
+불,count_mass,셀 수 없다,4,fire,uncountable,불,4,1,Korean,uncountable
+불,solidity,고형물,8,fire,solid,불,1,0.125,Korean,solid
+불,solidity,비고형물,8,fire,non-solid,불,7,0.875,Korean,non-solid
+불자동차/소방차,count_mass,셀 수 있다,8,firetruck,countable,불자동차/소방차,7,0.875,Korean,countable
+불자동차/소방차,count_mass,잘 모르겠다/구분이 어렵다,8,firetruck,not sure,불자동차/소방차,1,0.125,Korean,not sure
+블록,category_organization,형태,5,blocks,form,블록,5,1,Korean,shape
+블록,count_mass,셀 수 있다,6,blocks,countable,블록,6,1,Korean,countable
+블록,solidity,고형물,5,blocks,solid,블록,5,1,Korean,solid
+비,category_organization,물질,6,rain,substance,비,3,0.5,Korean,substance
+비,category_organization,해당 사항 없음,6,rain,not applicable,비,3,0.5,Korean,not applicable
+비,count_mass,셀 수 없다,2,rain,uncountable,비,2,1,Korean,uncountable
+비,solidity,비고형물,7,rain,non-solid,비,7,1,Korean,non-solid
+비누,category_organization,물질,4,soap,substance,비누,3,0.75,Korean,substance
+비누,category_organization,형태,4,soap,form,비누,1,0.25,Korean,shape
+비누,count_mass,셀 수 있다,6,soap,countable,비누,6,1,Korean,countable
+비누,solidity,고형물,4,soap,solid,비누,4,1,Korean,solid
+비누방울,category_organization,물질,2,bubbles,substance,비누방울,2,1,Korean,substance
+비누방울,count_mass,셀 수 없다,6,bubbles,uncountable,비누방울,1,0.16666666666666666,Korean,uncountable
+비누방울,count_mass,셀 수 있다,6,bubbles,countable,비누방울,4,0.6666666666666666,Korean,countable
+비누방울,count_mass,잘 모르겠다/구분이 어렵다,6,bubbles,not sure,비누방울,1,0.16666666666666666,Korean,not sure
+비누방울,solidity,비고형물,6,bubbles,non-solid,비누방울,6,1,Korean,non-solid
+비둘기,category_organization,해당 사항 없음,2,pigeon,not applicable,비둘기,1,0.5,Korean,not applicable
+비둘기,category_organization,형태,2,pigeon,form,비둘기,1,0.5,Korean,shape
+비둘기,count_mass,셀 수 있다,7,pigeon,countable,비둘기,7,1,Korean,countable
+비둘기,solidity,고형물,8,pigeon,solid,비둘기,7,0.875,Korean,solid
+비둘기,solidity,해당 사항 없음,8,pigeon,not applicable,비둘기,1,0.125,Korean,not applicable
+비행기,category_organization,물질,9,airplane,substance,비행기,2,0.2222222222222222,Korean,substance
+비행기,category_organization,색상,9,airplane,color,비행기,1,0.1111111111111111,Korean,color
+비행기,category_organization,해당 사항 없음,9,airplane,not applicable,비행기,3,0.3333333333333333,Korean,not applicable
+비행기,category_organization,형태,9,airplane,form,비행기,3,0.3333333333333333,Korean,shape
+비행기,count_mass,셀 수 있다,5,airplane,countable,비행기,5,1,Korean,countable
+비행기,solidity,고형물,4,airplane,solid,비행기,3,0.75,Korean,solid
+비행기,solidity,비고형물,4,airplane,non-solid,비행기,1,0.25,Korean,non-solid
+빗,category_organization,물질,7,comb (object),substance,빗,3,0.42857142857142855,Korean,substance
+빗,category_organization,형태,7,comb (object),form,빗,4,0.5714285714285714,Korean,shape
+빗,count_mass,셀 수 있다,5,comb (object),countable,빗,5,1,Korean,countable
+빗,solidity,고형물,4,comb (object),solid,빗,4,1,Korean,solid
+빗자루,category_organization,형태,3,broom,form,빗자루,3,1,Korean,shape
+빗자루,count_mass,셀 수 있다,6,broom,countable,빗자루,6,1,Korean,countable
+빗자루,solidity,고형물,6,broom,solid,빗자루,6,1,Korean,solid
+뺨,category_organization,물질,10,cheek,substance,뺨,2,0.2,Korean,substance
+뺨,category_organization,해당 사항 없음,10,cheek,not applicable,뺨,4,0.4,Korean,not applicable
+뺨,category_organization,형태,10,cheek,form,뺨,4,0.4,Korean,shape
+뺨,count_mass,셀 수 있다,9,cheek,countable,뺨,9,1,Korean,countable
+뺨,solidity,고형물,6,cheek,solid,뺨,3,0.5,Korean,solid
+뺨,solidity,해당 사항 없음,6,cheek,not applicable,뺨,3,0.5,Korean,not applicable
+사과,category_organization,물질,9,apple,substance,사과,5,0.5555555555555556,Korean,substance
+사과,category_organization,색상,9,apple,color,사과,2,0.2222222222222222,Korean,color
+사과,category_organization,해당 사항 없음,9,apple,not applicable,사과,1,0.1111111111111111,Korean,not applicable
+사과,category_organization,형태,9,apple,form,사과,1,0.1111111111111111,Korean,shape
+사과,count_mass,셀 수 있다,5,apple,countable,사과,5,1,Korean,countable
+사과,solidity,고형물,11,apple,solid,사과,11,1,Korean,solid
+사다리,category_organization,물질,5,ladder,substance,사다리,1,0.2,Korean,substance
+사다리,category_organization,형태,5,ladder,form,사다리,4,0.8,Korean,shape
+사다리,count_mass,셀 수 있다,7,ladder,countable,사다리,7,1,Korean,countable
+사다리,solidity,고형물,2,ladder,solid,사다리,1,0.5,Korean,solid
+사다리,solidity,비고형물,2,ladder,non-solid,사다리,1,0.5,Korean,non-solid
+사슴,category_organization,물질,11,deer,substance,사슴,3,0.2727272727272727,Korean,substance
+사슴,category_organization,색상,11,deer,color,사슴,1,0.09090909090909091,Korean,color
+사슴,category_organization,해당 사항 없음,11,deer,not applicable,사슴,2,0.18181818181818182,Korean,not applicable
+사슴,category_organization,형태,11,deer,form,사슴,5,0.45454545454545453,Korean,shape
+사슴,count_mass,셀 수 있다,7,deer,countable,사슴,7,1,Korean,countable
+사슴,solidity,고형물,3,deer,solid,사슴,3,1,Korean,solid
+사이다,category_organization,물질,9,soda,substance,사이다,8,0.8888888888888888,Korean,substance
+사이다,category_organization,해당 사항 없음,9,soda,not applicable,사이다,1,0.1111111111111111,Korean,not applicable
+사이다,count_mass,셀 수 없다,5,soda,uncountable,사이다,2,0.4,Korean,uncountable
+사이다,count_mass,셀 수 있다,5,soda,countable,사이다,3,0.6,Korean,countable
+사이다,solidity,비고형물,5,soda,non-solid,사이다,5,1,Korean,non-solid
+사자,category_organization,물질,4,lion,substance,사자,1,0.25,Korean,substance
+사자,category_organization,해당 사항 없음,4,lion,not applicable,사자,2,0.5,Korean,not applicable
+사자,category_organization,형태,4,lion,form,사자,1,0.25,Korean,shape
+사자,count_mass,셀 수 있다,5,lion,countable,사자,5,1,Korean,countable
+사자,solidity,고형물,8,lion,solid,사자,7,0.875,Korean,solid
+사자,solidity,비고형물,8,lion,non-solid,사자,1,0.125,Korean,non-solid
+사탕,category_organization,물질,8,candy,substance,사탕,7,0.875,Korean,substance
+사탕,category_organization,해당 사항 없음,8,candy,not applicable,사탕,1,0.125,Korean,not applicable
+사탕,count_mass,셀 수 있다,7,candy,countable,사탕,7,1,Korean,countable
+사탕,solidity,고형물,8,candy,solid,사탕,7,0.875,Korean,solid
+사탕,solidity,해당 사항 없음,8,candy,not applicable,사탕,1,0.125,Korean,not applicable
+상자,category_organization,물질,3,box,substance,상자,1,0.3333333333333333,Korean,substance
+상자,category_organization,형태,3,box,form,상자,2,0.6666666666666666,Korean,shape
+상자,count_mass,셀 수 있다,6,box,countable,상자,6,1,Korean,countable
+상자,solidity,고형물,4,box,solid,상자,3,0.75,Korean,solid
+상자,solidity,비고형물,4,box,non-solid,상자,1,0.25,Korean,non-solid
+새,category_organization,형태,6,bird,form,새,6,1,Korean,shape
+새,count_mass,셀 수 있다,7,bird,countable,새,7,1,Korean,countable
+새,solidity,고형물,5,bird,solid,새,5,1,Korean,solid
+생선,category_organization,물질,4,fish (food),substance,생선,3,0.75,Korean,substance
+생선,category_organization,색상,4,fish (food),color,생선,1,0.25,Korean,color
+생선,count_mass,셀 수 있다,5,fish (food),countable,생선,5,1,Korean,countable
+생선,solidity,고형물,7,fish (food),solid,생선,6,0.8571428571428571,Korean,solid
+생선,solidity,비고형물,7,fish (food),non-solid,생선,1,0.14285714285714285,Korean,non-solid
+서랍,category_organization,물질,12,drawer,substance,서랍,3,0.25,Korean,substance
+서랍,category_organization,형태,12,drawer,form,서랍,9,0.75,Korean,shape
+서랍,count_mass,셀 수 없다,8,drawer,uncountable,서랍,1,0.125,Korean,uncountable
+서랍,count_mass,셀 수 있다,8,drawer,countable,서랍,7,0.875,Korean,countable
+서랍,solidity,고형물,6,drawer,solid,서랍,6,1,Korean,solid
+선물,category_organization,물질,6,present,substance,선물,4,0.6666666666666666,Korean,substance
+선물,category_organization,해당 사항 없음,6,present,not applicable,선물,1,0.16666666666666666,Korean,not applicable
+선물,category_organization,형태,6,present,form,선물,1,0.16666666666666666,Korean,shape
+선물,count_mass,셀 수 있다,6,present,countable,선물,6,1,Korean,countable
+선물,solidity,고형물,9,present,solid,선물,7,0.7777777777777778,Korean,solid
+선물,solidity,비고형물,9,present,non-solid,선물,1,0.1111111111111111,Korean,non-solid
+선물,solidity,해당 사항 없음,9,present,not applicable,선물,1,0.1111111111111111,Korean,not applicable
+설탕,category_organization,물질,2,sugar,substance,설탕,2,1,Korean,substance
+설탕,count_mass,셀 수 없다,5,sugar,uncountable,설탕,4,0.8,Korean,uncountable
+설탕,count_mass,셀 수 있다,5,sugar,countable,설탕,1,0.2,Korean,countable
+설탕,solidity,고형물,7,sugar,solid,설탕,6,0.8571428571428571,Korean,solid
+설탕,solidity,비고형물,7,sugar,non-solid,설탕,1,0.14285714285714285,Korean,non-solid
+세탁기,category_organization,물질,4,washing machine,substance,세탁기,2,0.5,Korean,substance
+세탁기,category_organization,형태,4,washing machine,form,세탁기,2,0.5,Korean,shape
+세탁기,count_mass,셀 수 없다,6,washing machine,uncountable,세탁기,1,0.16666666666666666,Korean,uncountable
+세탁기,count_mass,셀 수 있다,6,washing machine,countable,세탁기,5,0.8333333333333334,Korean,countable
+세탁기,solidity,고형물,6,washing machine,solid,세탁기,6,1,Korean,solid
+소,category_organization,물질,5,cow,substance,소,2,0.4,Korean,substance
+소,category_organization,해당 사항 없음,5,cow,not applicable,소,2,0.4,Korean,not applicable
+소,category_organization,형태,5,cow,form,소,1,0.2,Korean,shape
+소,count_mass,셀 수 있다,5,cow,countable,소,5,1,Korean,countable
+소,solidity,고형물,5,cow,solid,소,4,0.8,Korean,solid
+소,solidity,해당 사항 없음,5,cow,not applicable,소,1,0.2,Korean,not applicable
+소금,category_organization,물질,7,salt,substance,소금,7,1,Korean,substance
+소금,count_mass,셀 수 없다,11,salt,uncountable,소금,9,0.8181818181818182,Korean,uncountable
+소금,count_mass,셀 수 있다,11,salt,countable,소금,2,0.18181818181818182,Korean,countable
+소금,solidity,고형물,5,salt,solid,소금,3,0.6,Korean,solid
+소금,solidity,비고형물,5,salt,non-solid,소금,1,0.2,Korean,non-solid
+소금,solidity,해당 사항 없음,5,salt,not applicable,소금,1,0.2,Korean,not applicable
+소파,category_organization,해당 사항 없음,8,couch,not applicable,소파,1,0.125,Korean,not applicable
+소파,category_organization,형태,8,couch,form,소파,7,0.875,Korean,shape
+소파,count_mass,셀 수 없다,10,couch,uncountable,소파,1,0.1,Korean,uncountable
+소파,count_mass,셀 수 있다,10,couch,countable,소파,9,0.9,Korean,countable
+소파,solidity,고형물,6,couch,solid,소파,6,1,Korean,solid
+손,category_organization,물질,5,hand,substance,손,2,0.4,Korean,substance
+손,category_organization,형태,5,hand,form,손,3,0.6,Korean,shape
+손,count_mass,셀 수 있다,8,hand,countable,손,8,1,Korean,countable
+손,solidity,고형물,4,hand,solid,손,4,1,Korean,solid
+손가락,category_organization,해당 사항 없음,6,finger,not applicable,손가락,1,0.16666666666666666,Korean,not applicable
+손가락,category_organization,형태,6,finger,form,손가락,5,0.8333333333333334,Korean,shape
+손가락,count_mass,셀 수 있다,1,finger,countable,손가락,1,1,Korean,countable
+손가락,solidity,고형물,9,finger,solid,손가락,9,1,Korean,solid
+송아지,category_organization,물질,10,calf,substance,송아지,1,0.1,Korean,substance
+송아지,category_organization,해당 사항 없음,10,calf,not applicable,송아지,5,0.5,Korean,not applicable
+송아지,category_organization,형태,10,calf,form,송아지,4,0.4,Korean,shape
+송아지,count_mass,셀 수 있다,8,calf,countable,송아지,8,1,Korean,countable
+송아지,solidity,고형물,5,calf,solid,송아지,4,0.8,Korean,solid
+송아지,solidity,해당 사항 없음,5,calf,not applicable,송아지,1,0.2,Korean,not applicable
+수건,category_organization,물질,4,towel,substance,수건,4,1,Korean,substance
+수건,count_mass,셀 수 없다,12,towel,uncountable,수건,1,0.08333333333333333,Korean,uncountable
+수건,count_mass,셀 수 있다,12,towel,countable,수건,11,0.9166666666666666,Korean,countable
+수건,solidity,고형물,4,towel,solid,수건,4,1,Korean,solid
+수박,category_organization,물질,8,watermelon,substance,수박,6,0.75,Korean,substance
+수박,category_organization,형태,8,watermelon,form,수박,2,0.25,Korean,shape
+수박,count_mass,셀 수 있다,5,watermelon,countable,수박,5,1,Korean,countable
+수박,solidity,고형물,5,watermelon,solid,수박,5,1,Korean,solid
+숟가락,category_organization,물질,8,spoon,substance,숟가락,1,0.125,Korean,substance
+숟가락,category_organization,형태,8,spoon,form,숟가락,7,0.875,Korean,shape
+숟가락,count_mass,셀 수 있다,7,spoon,countable,숟가락,7,1,Korean,countable
+숟가락,solidity,고형물,6,spoon,solid,숟가락,6,1,Korean,solid
+스파게티,category_organization,물질,6,spaghetti,substance,스파게티,4,0.6666666666666666,Korean,substance
+스파게티,category_organization,해당 사항 없음,6,spaghetti,not applicable,스파게티,1,0.16666666666666666,Korean,not applicable
+스파게티,category_organization,형태,6,spaghetti,form,스파게티,1,0.16666666666666666,Korean,shape
+스파게티,count_mass,셀 수 없다,7,spaghetti,uncountable,스파게티,4,0.5714285714285714,Korean,uncountable
+스파게티,count_mass,셀 수 있다,7,spaghetti,countable,스파게티,2,0.2857142857142857,Korean,countable
+스파게티,count_mass,잘 모르겠다/구분이 어렵다,7,spaghetti,not sure,스파게티,1,0.14285714285714285,Korean,not sure
+스파게티,solidity,고형물,12,spaghetti,solid,스파게티,10,0.8333333333333334,Korean,solid
+스파게티,solidity,비고형물,12,spaghetti,non-solid,스파게티,2,0.16666666666666666,Korean,non-solid
+시계,category_organization,해당 사항 없음,4,clock,not applicable,시계,1,0.25,Korean,not applicable
+시계,category_organization,형태,4,clock,form,시계,3,0.75,Korean,shape
+시계,count_mass,셀 수 있다,3,clock,countable,시계,3,1,Korean,countable
+시계,solidity,고형물,4,clock,solid,시계,4,1,Korean,solid
+시소,category_organization,물질,5,seesaw,substance,시소,1,0.2,Korean,substance
+시소,category_organization,해당 사항 없음,5,seesaw,not applicable,시소,1,0.2,Korean,not applicable
+시소,category_organization,형태,5,seesaw,form,시소,3,0.6,Korean,shape
+시소,count_mass,셀 수 있다,9,seesaw,countable,시소,8,0.8888888888888888,Korean,countable
+시소,count_mass,잘 모르겠다/구분이 어렵다,9,seesaw,not sure,시소,1,0.1111111111111111,Korean,not sure
+시소,solidity,고형물,4,seesaw,solid,시소,4,1,Korean,solid
+신/신발,category_organization,형태,5,shoe,form,신/신발,5,1,Korean,shape
+신/신발,count_mass,셀 수 있다,11,shoe,countable,신/신발,11,1,Korean,countable
+신/신발,solidity,고형물,6,shoe,solid,신/신발,6,1,Korean,solid
+쌀,category_organization,물질,7,rice,substance,쌀,4,0.5714285714285714,Korean,substance
+쌀,category_organization,형태,7,rice,form,쌀,3,0.42857142857142855,Korean,shape
+쌀,count_mass,셀 수 없다,7,rice,uncountable,쌀,3,0.42857142857142855,Korean,uncountable
+쌀,count_mass,셀 수 있다,7,rice,countable,쌀,2,0.2857142857142857,Korean,countable
+쌀,count_mass,잘 모르겠다/구분이 어렵다,7,rice,not sure,쌀,2,0.2857142857142857,Korean,not sure
+쌀,solidity,고형물,3,rice,solid,쌀,3,1,Korean,solid
+썰매,category_organization,해당 사항 없음,9,sled,not applicable,썰매,1,0.1111111111111111,Korean,not applicable
+썰매,category_organization,형태,9,sled,form,썰매,8,0.8888888888888888,Korean,shape
+썰매,count_mass,셀 수 없다,10,sled,uncountable,썰매,1,0.1,Korean,uncountable
+썰매,count_mass,셀 수 있다,10,sled,countable,썰매,9,0.9,Korean,countable
+썰매,solidity,고형물,5,sled,solid,썰매,4,0.8,Korean,solid
+썰매,solidity,비고형물,5,sled,non-solid,썰매,1,0.2,Korean,non-solid
+쓰레기,category_organization,물질,7,trash,substance,쓰레기,3,0.42857142857142855,Korean,substance
+쓰레기,category_organization,해당 사항 없음,7,trash,not applicable,쓰레기,1,0.14285714285714285,Korean,not applicable
+쓰레기,category_organization,형태,7,trash,form,쓰레기,3,0.42857142857142855,Korean,shape
+쓰레기,count_mass,셀 수 없다,4,trash,uncountable,쓰레기,4,1,Korean,uncountable
+쓰레기,solidity,고형물,5,trash,solid,쓰레기,3,0.6,Korean,solid
+쓰레기,solidity,해당 사항 없음,5,trash,not applicable,쓰레기,2,0.4,Korean,not applicable
+쓰레기통/휴지통,category_organization,물질,1,trash can,substance,쓰레기통/휴지통,1,1,Korean,substance
+쓰레기통/휴지통,count_mass,셀 수 있다,6,trash can,countable,쓰레기통/휴지통,6,1,Korean,countable
+쓰레기통/휴지통,solidity,고형물,5,trash can,solid,쓰레기통/휴지통,5,1,Korean,solid
+아이스크림,category_organization,물질,4,ice cream,substance,아이스크림,2,0.5,Korean,substance
+아이스크림,category_organization,해당 사항 없음,4,ice cream,not applicable,아이스크림,2,0.5,Korean,not applicable
+아이스크림,count_mass,셀 수 없다,7,ice cream,uncountable,아이스크림,1,0.14285714285714285,Korean,uncountable
+아이스크림,count_mass,셀 수 있다,7,ice cream,countable,아이스크림,6,0.8571428571428571,Korean,countable
+아이스크림,solidity,고형물,9,ice cream,solid,아이스크림,3,0.3333333333333333,Korean,solid
+아이스크림,solidity,비고형물,9,ice cream,non-solid,아이스크림,5,0.5555555555555556,Korean,non-solid
+아이스크림,solidity,해당 사항 없음,9,ice cream,not applicable,아이스크림,1,0.1111111111111111,Korean,not applicable
+악어,category_organization,물질,6,crocodile,substance,악어,1,0.16666666666666666,Korean,substance
+악어,category_organization,해당 사항 없음,6,crocodile,not applicable,악어,2,0.3333333333333333,Korean,not applicable
+악어,category_organization,형태,6,crocodile,form,악어,3,0.5,Korean,shape
+악어,count_mass,셀 수 있다,4,crocodile,countable,악어,4,1,Korean,countable
+악어,solidity,고형물,3,crocodile,solid,악어,3,1,Korean,solid
+안경,category_organization,물질,9,glasses,substance,안경,2,0.2222222222222222,Korean,substance
+안경,category_organization,형태,9,glasses,form,안경,7,0.7777777777777778,Korean,shape
+안경,count_mass,셀 수 있다,6,glasses,countable,안경,6,1,Korean,countable
+안경,solidity,고형물,9,glasses,solid,안경,8,0.8888888888888888,Korean,solid
+안경,solidity,비고형물,9,glasses,non-solid,안경,1,0.1111111111111111,Korean,non-solid
+약,category_organization,물질,6,medicine,substance,약,5,0.8333333333333334,Korean,substance
+약,category_organization,해당 사항 없음,6,medicine,not applicable,약,1,0.16666666666666666,Korean,not applicable
+약,count_mass,셀 수 없다,8,medicine,uncountable,약,1,0.125,Korean,uncountable
+약,count_mass,셀 수 있다,8,medicine,countable,약,7,0.875,Korean,countable
+약,solidity,고형물,5,medicine,solid,약,3,0.6,Korean,solid
+약,solidity,해당 사항 없음,5,medicine,not applicable,약,2,0.4,Korean,not applicable
+양,category_organization,해당 사항 없음,6,sheep,not applicable,양,3,0.5,Korean,not applicable
+양,category_organization,형태,6,sheep,form,양,3,0.5,Korean,shape
+양,count_mass,셀 수 없다,10,sheep,uncountable,양,1,0.1,Korean,uncountable
+양,count_mass,셀 수 있다,10,sheep,countable,양,9,0.9,Korean,countable
+양,solidity,고형물,9,sheep,solid,양,9,1,Korean,solid
+양말,category_organization,물질,5,sock,substance,양말,1,0.2,Korean,substance
+양말,category_organization,형태,5,sock,form,양말,4,0.8,Korean,shape
+양말,count_mass,셀 수 있다,8,sock,countable,양말,8,1,Korean,countable
+양말,solidity,고형물,3,sock,solid,양말,3,1,Korean,solid
+어깨,category_organization,물질,9,shoulder,substance,어깨,2,0.2222222222222222,Korean,substance
+어깨,category_organization,해당 사항 없음,9,shoulder,not applicable,어깨,1,0.1111111111111111,Korean,not applicable
+어깨,category_organization,형태,9,shoulder,form,어깨,6,0.6666666666666666,Korean,shape
+어깨,count_mass,셀 수 없다,9,shoulder,uncountable,어깨,2,0.2222222222222222,Korean,uncountable
+어깨,count_mass,셀 수 있다,9,shoulder,countable,어깨,7,0.7777777777777778,Korean,countable
+어깨,solidity,고형물,4,shoulder,solid,어깨,3,0.75,Korean,solid
+어깨,solidity,비고형물,4,shoulder,non-solid,어깨,1,0.25,Korean,non-solid
+얼굴,category_organization,해당 사항 없음,5,face,not applicable,얼굴,1,0.2,Korean,not applicable
+얼굴,category_organization,형태,5,face,form,얼굴,4,0.8,Korean,shape
+얼굴,count_mass,셀 수 있다,10,face,countable,얼굴,10,1,Korean,countable
+얼굴,solidity,고형물,7,face,solid,얼굴,6,0.8571428571428571,Korean,solid
+얼굴,solidity,해당 사항 없음,7,face,not applicable,얼굴,1,0.14285714285714285,Korean,not applicable
+얼음,category_organization,물질,8,ice,substance,얼음,5,0.625,Korean,substance
+얼음,category_organization,해당 사항 없음,8,ice,not applicable,얼음,1,0.125,Korean,not applicable
+얼음,category_organization,형태,8,ice,form,얼음,2,0.25,Korean,shape
+얼음,count_mass,셀 수 없다,10,ice,uncountable,얼음,3,0.3,Korean,uncountable
+얼음,count_mass,셀 수 있다,10,ice,countable,얼음,5,0.5,Korean,countable
+얼음,count_mass,잘 모르겠다/구분이 어렵다,10,ice,not sure,얼음,2,0.2,Korean,not sure
+얼음,solidity,고형물,5,ice,solid,얼음,3,0.6,Korean,solid
+얼음,solidity,비고형물,5,ice,non-solid,얼음,1,0.2,Korean,non-solid
+얼음,solidity,해당 사항 없음,5,ice,not applicable,얼음,1,0.2,Korean,not applicable
+엉덩이,category_organization,물질,8,hip,substance,엉덩이,4,0.5,Korean,substance
+엉덩이,category_organization,해당 사항 없음,8,hip,not applicable,엉덩이,2,0.25,Korean,not applicable
+엉덩이,category_organization,형태,8,hip,form,엉덩이,2,0.25,Korean,shape
+엉덩이,count_mass,셀 수 있다,10,hip,countable,엉덩이,9,0.9,Korean,countable
+엉덩이,count_mass,잘 모르겠다/구분이 어렵다,10,hip,not sure,엉덩이,1,0.1,Korean,not sure
+엉덩이,solidity,고형물,6,hip,solid,엉덩이,5,0.8333333333333334,Korean,solid
+엉덩이,solidity,해당 사항 없음,6,hip,not applicable,엉덩이,1,0.16666666666666666,Korean,not applicable
+여우,category_organization,물질,9,fox,substance,여우,2,0.2222222222222222,Korean,substance
+여우,category_organization,해당 사항 없음,9,fox,not applicable,여우,2,0.2222222222222222,Korean,not applicable
+여우,category_organization,형태,9,fox,form,여우,5,0.5555555555555556,Korean,shape
+여우,count_mass,셀 수 있다,3,fox,countable,여우,3,1,Korean,countable
+여우,solidity,고형물,6,fox,solid,여우,6,1,Korean,solid
+연필,category_organization,물질,4,pencil,substance,연필,2,0.5,Korean,substance
+연필,category_organization,형태,4,pencil,form,연필,2,0.5,Korean,shape
+연필,count_mass,셀 수 있다,3,pencil,countable,연필,3,1,Korean,countable
+연필,solidity,고형물,6,pencil,solid,연필,5,0.8333333333333334,Korean,solid
+연필,solidity,비고형물,6,pencil,non-solid,연필,1,0.16666666666666666,Korean,non-solid
+열쇠,category_organization,물질,6,key,substance,열쇠,1,0.16666666666666666,Korean,substance
+열쇠,category_organization,형태,6,key,form,열쇠,5,0.8333333333333334,Korean,shape
+열쇠,count_mass,셀 수 있다,8,key,countable,열쇠,8,1,Korean,countable
+열쇠,solidity,고형물,4,key,solid,열쇠,4,1,Korean,solid
+염소,category_organization,물질,4,goat,substance,염소,1,0.25,Korean,substance
+염소,category_organization,색상,4,goat,color,염소,1,0.25,Korean,color
+염소,category_organization,해당 사항 없음,4,goat,not applicable,염소,1,0.25,Korean,not applicable
+염소,category_organization,형태,4,goat,form,염소,1,0.25,Korean,shape
+염소,count_mass,셀 수 있다,5,goat,countable,염소,5,1,Korean,countable
+염소,solidity,고형물,6,goat,solid,염소,5,0.8333333333333334,Korean,solid
+염소,solidity,비고형물,6,goat,non-solid,염소,1,0.16666666666666666,Korean,non-solid
+오렌지,category_organization,물질,7,orange (food),substance,오렌지,1,0.14285714285714285,Korean,substance
+오렌지,category_organization,색상,7,orange (food),color,오렌지,3,0.42857142857142855,Korean,color
+오렌지,category_organization,해당 사항 없음,7,orange (food),not applicable,오렌지,2,0.2857142857142857,Korean,not applicable
+오렌지,category_organization,형태,7,orange (food),form,오렌지,1,0.14285714285714285,Korean,shape
+오렌지,count_mass,셀 수 없다,9,orange (food),uncountable,오렌지,1,0.1111111111111111,Korean,uncountable
+오렌지,count_mass,셀 수 있다,9,orange (food),countable,오렌지,8,0.8888888888888888,Korean,countable
+오렌지,solidity,고형물,13,orange (food),solid,오렌지,10,0.7692307692307693,Korean,solid
+오렌지,solidity,비고형물,13,orange (food),non-solid,오렌지,2,0.15384615384615385,Korean,non-solid
+오렌지,solidity,해당 사항 없음,13,orange (food),not applicable,오렌지,1,0.07692307692307693,Korean,not applicable
+오리,category_organization,물질,6,duck,substance,오리,2,0.3333333333333333,Korean,substance
+오리,category_organization,해당 사항 없음,6,duck,not applicable,오리,4,0.6666666666666666,Korean,not applicable
+오리,count_mass,셀 수 있다,7,duck,countable,오리,7,1,Korean,countable
+오리,solidity,고형물,4,duck,solid,오리,4,1,Korean,solid
+오토바이,category_organization,색상,5,motorcycle,color,오토바이,1,0.2,Korean,color
+오토바이,category_organization,형태,5,motorcycle,form,오토바이,4,0.8,Korean,shape
+오토바이,count_mass,셀 수 있다,5,motorcycle,countable,오토바이,5,1,Korean,countable
+오토바이,solidity,고형물,7,motorcycle,solid,오토바이,7,1,Korean,solid
+옥수수,category_organization,물질,11,corn,substance,옥수수,7,0.6363636363636364,Korean,substance
+옥수수,category_organization,해당 사항 없음,11,corn,not applicable,옥수수,2,0.18181818181818182,Korean,not applicable
+옥수수,category_organization,형태,11,corn,form,옥수수,2,0.18181818181818182,Korean,shape
+옥수수,count_mass,셀 수 있다,5,corn,countable,옥수수,5,1,Korean,countable
+옥수수,solidity,고형물,6,corn,solid,옥수수,6,1,Korean,solid
+옷/꼬까,category_organization,색상,3,dress (object),color,옷/꼬까,1,0.3333333333333333,Korean,color
+옷/꼬까,category_organization,형태,3,dress (object),form,옷/꼬까,2,0.6666666666666666,Korean,shape
+옷/꼬까,count_mass,셀 수 있다,8,dress (object),countable,옷/꼬까,8,1,Korean,countable
+옷/꼬까,solidity,고형물,7,dress (object),solid,옷/꼬까,5,0.7142857142857143,Korean,solid
+옷/꼬까,solidity,비고형물,7,dress (object),non-solid,옷/꼬까,2,0.2857142857142857,Korean,non-solid
+옷걸이,category_organization,물질,4,hanger,substance,옷걸이,2,0.5,Korean,substance
+옷걸이,category_organization,형태,4,hanger,form,옷걸이,2,0.5,Korean,shape
+옷걸이,count_mass,셀 수 있다,8,hanger,countable,옷걸이,8,1,Korean,countable
+옷걸이,solidity,고형물,4,hanger,solid,옷걸이,4,1,Korean,solid
+옷장,category_organization,해당 사항 없음,11,closet,not applicable,옷장,1,0.09090909090909091,Korean,not applicable
+옷장,category_organization,형태,11,closet,form,옷장,10,0.9090909090909091,Korean,shape
+옷장,count_mass,셀 수 있다,7,closet,countable,옷장,7,1,Korean,countable
+옷장,solidity,고형물,7,closet,solid,옷장,7,1,Korean,solid
+요구르트,category_organization,물질,9,yogurt,substance,요구르트,7,0.7777777777777778,Korean,substance
+요구르트,category_organization,해당 사항 없음,9,yogurt,not applicable,요구르트,2,0.2222222222222222,Korean,not applicable
+요구르트,count_mass,셀 수 없다,3,yogurt,uncountable,요구르트,2,0.6666666666666666,Korean,uncountable
+요구르트,count_mass,셀 수 있다,3,yogurt,countable,요구르트,1,0.3333333333333333,Korean,countable
+요구르트,solidity,고형물,7,yogurt,solid,요구르트,1,0.14285714285714285,Korean,solid
+요구르트,solidity,비고형물,7,yogurt,non-solid,요구르트,6,0.8571428571428571,Korean,non-solid
+우산,category_organization,물질,10,umbrella,substance,우산,5,0.5,Korean,substance
+우산,category_organization,해당 사항 없음,10,umbrella,not applicable,우산,1,0.1,Korean,not applicable
+우산,category_organization,형태,10,umbrella,form,우산,4,0.4,Korean,shape
+우산,count_mass,셀 수 있다,6,umbrella,countable,우산,6,1,Korean,countable
+우산,solidity,고형물,8,umbrella,solid,우산,6,0.75,Korean,solid
+우산,solidity,비고형물,8,umbrella,non-solid,우산,2,0.25,Korean,non-solid
+운동화,category_organization,물질,6,sneaker,substance,운동화,2,0.3333333333333333,Korean,substance
+운동화,category_organization,형태,6,sneaker,form,운동화,4,0.6666666666666666,Korean,shape
+운동화,count_mass,셀 수 있다,6,sneaker,countable,운동화,6,1,Korean,countable
+운동화,solidity,고형물,7,sneaker,solid,운동화,5,0.7142857142857143,Korean,solid
+운동화,solidity,비고형물,7,sneaker,non-solid,운동화,1,0.14285714285714285,Korean,non-solid
+운동화,solidity,해당 사항 없음,7,sneaker,not applicable,운동화,1,0.14285714285714285,Korean,not applicable
+원숭이,category_organization,물질,10,monkey,substance,원숭이,1,0.1,Korean,substance
+원숭이,category_organization,해당 사항 없음,10,monkey,not applicable,원숭이,3,0.3,Korean,not applicable
+원숭이,category_organization,형태,10,monkey,form,원숭이,6,0.6,Korean,shape
+원숭이,count_mass,셀 수 있다,6,monkey,countable,원숭이,6,1,Korean,countable
+원숭이,solidity,고형물,11,monkey,solid,원숭이,7,0.6363636363636364,Korean,solid
+원숭이,solidity,해당 사항 없음,11,monkey,not applicable,원숭이,4,0.36363636363636365,Korean,not applicable
+유리,category_organization,물질,6,glass,substance,유리,6,1,Korean,substance
+유리,count_mass,셀 수 없다,4,glass,uncountable,유리,1,0.25,Korean,uncountable
+유리,count_mass,셀 수 있다,4,glass,countable,유리,2,0.5,Korean,countable
+유리,count_mass,잘 모르겠다/구분이 어렵다,4,glass,not sure,유리,1,0.25,Korean,not sure
+유리,solidity,고형물,5,glass,solid,유리,5,1,Korean,solid
+유모차,category_organization,물질,9,stroller,substance,유모차,2,0.2222222222222222,Korean,substance
+유모차,category_organization,해당 사항 없음,9,stroller,not applicable,유모차,1,0.1111111111111111,Korean,not applicable
+유모차,category_organization,형태,9,stroller,form,유모차,6,0.6666666666666666,Korean,shape
+유모차,count_mass,셀 수 있다,1,stroller,countable,유모차,1,1,Korean,countable
+유모차,solidity,고형물,11,stroller,solid,유모차,10,0.9090909090909091,Korean,solid
+유모차,solidity,비고형물,11,stroller,non-solid,유모차,1,0.09090909090909091,Korean,non-solid
+음식,category_organization,물질,5,food,substance,음식,3,0.6,Korean,substance
+음식,category_organization,해당 사항 없음,5,food,not applicable,음식,1,0.2,Korean,not applicable
+음식,category_organization,형태,5,food,form,음식,1,0.2,Korean,shape
+음식,count_mass,셀 수 없다,4,food,uncountable,음식,1,0.25,Korean,uncountable
+음식,count_mass,셀 수 있다,4,food,countable,음식,2,0.5,Korean,countable
+음식,count_mass,잘 모르겠다/구분이 어렵다,4,food,not sure,음식,1,0.25,Korean,not sure
+음식,solidity,고형물,8,food,solid,음식,4,0.5,Korean,solid
+음식,solidity,비고형물,8,food,non-solid,음식,2,0.25,Korean,non-solid
+음식,solidity,해당 사항 없음,8,food,not applicable,음식,2,0.25,Korean,not applicable
+의자,category_organization,물질,7,chair,substance,의자,1,0.14285714285714285,Korean,substance
+의자,category_organization,형태,7,chair,form,의자,6,0.8571428571428571,Korean,shape
+의자,count_mass,셀 수 있다,5,chair,countable,의자,5,1,Korean,countable
+의자,solidity,고형물,7,chair,solid,의자,7,1,Korean,solid
+이/이빨,category_organization,물질,4,tooth,substance,이/이빨,2,0.5,Korean,substance
+이/이빨,category_organization,형태,4,tooth,form,이/이빨,2,0.5,Korean,shape
+이/이빨,count_mass,셀 수 있다,4,tooth,countable,이/이빨,4,1,Korean,countable
+이/이빨,solidity,고형물,6,tooth,solid,이/이빨,6,1,Korean,solid
+이불,category_organization,물질,7,blanket,substance,이불,2,0.2857142857142857,Korean,substance
+이불,category_organization,형태,7,blanket,form,이불,5,0.7142857142857143,Korean,shape
+이불,count_mass,셀 수 있다,5,blanket,countable,이불,5,1,Korean,countable
+이불,solidity,고형물,7,blanket,solid,이불,6,0.8571428571428571,Korean,solid
+이불,solidity,비고형물,7,blanket,non-solid,이불,1,0.14285714285714285,Korean,non-solid
+인형,category_organization,물질,8,doll,substance,인형,1,0.125,Korean,substance
+인형,category_organization,해당 사항 없음,8,doll,not applicable,인형,1,0.125,Korean,not applicable
+인형,category_organization,형태,8,doll,form,인형,6,0.75,Korean,shape
+인형,count_mass,셀 수 있다,5,doll,countable,인형,5,1,Korean,countable
+인형,solidity,고형물,4,doll,solid,인형,4,1,Korean,solid
+입,category_organization,해당 사항 없음,6,mouth,not applicable,입,1,0.16666666666666666,Korean,not applicable
+입,category_organization,형태,6,mouth,form,입,5,0.8333333333333334,Korean,shape
+입,count_mass,셀 수 있다,7,mouth,countable,입,7,1,Korean,countable
+입,solidity,고형물,8,mouth,solid,입,5,0.625,Korean,solid
+입,solidity,비고형물,8,mouth,non-solid,입,2,0.25,Korean,non-solid
+입,solidity,해당 사항 없음,8,mouth,not applicable,입,1,0.125,Korean,not applicable
+입술,category_organization,해당 사항 없음,6,lip,not applicable,입술,2,0.3333333333333333,Korean,not applicable
+입술,category_organization,형태,6,lip,form,입술,4,0.6666666666666666,Korean,shape
+입술,count_mass,셀 수 없다,9,lip,uncountable,입술,1,0.1111111111111111,Korean,uncountable
+입술,count_mass,셀 수 있다,9,lip,countable,입술,8,0.8888888888888888,Korean,countable
+입술,solidity,고형물,7,lip,solid,입술,5,0.7142857142857143,Korean,solid
+입술,solidity,비고형물,7,lip,non-solid,입술,2,0.2857142857142857,Korean,non-solid
+자전거,category_organization,물질,6,bicycle,substance,자전거,3,0.5,Korean,substance
+자전거,category_organization,형태,6,bicycle,form,자전거,3,0.5,Korean,shape
+자전거,count_mass,셀 수 있다,5,bicycle,countable,자전거,5,1,Korean,countable
+자전거,solidity,고형물,10,bicycle,solid,자전거,10,1,Korean,solid
+잠바,category_organization,물질,10,jacket,substance,잠바,2,0.2,Korean,substance
+잠바,category_organization,해당 사항 없음,10,jacket,not applicable,잠바,2,0.2,Korean,not applicable
+잠바,category_organization,형태,10,jacket,form,잠바,6,0.6,Korean,shape
+잠바,count_mass,셀 수 있다,5,jacket,countable,잠바,5,1,Korean,countable
+잠바,solidity,고형물,9,jacket,solid,잠바,7,0.7777777777777778,Korean,solid
+잠바,solidity,비고형물,9,jacket,non-solid,잠바,2,0.2222222222222222,Korean,non-solid
+잠옷,category_organization,물질,9,pajamas,substance,잠옷,5,0.5555555555555556,Korean,substance
+잠옷,category_organization,해당 사항 없음,9,pajamas,not applicable,잠옷,2,0.2222222222222222,Korean,not applicable
+잠옷,category_organization,형태,9,pajamas,form,잠옷,2,0.2222222222222222,Korean,shape
+잠옷,count_mass,셀 수 있다,4,pajamas,countable,잠옷,3,0.75,Korean,countable
+잠옷,count_mass,잘 모르겠다/구분이 어렵다,4,pajamas,not sure,잠옷,1,0.25,Korean,not sure
+잠옷,solidity,고형물,4,pajamas,solid,잠옷,4,1,Korean,solid
+장갑,category_organization,물질,6,glove,substance,장갑,1,0.16666666666666666,Korean,substance
+장갑,category_organization,형태,6,glove,form,장갑,5,0.8333333333333334,Korean,shape
+장갑,count_mass,셀 수 있다,5,glove,countable,장갑,5,1,Korean,countable
+장갑,solidity,고형물,5,glove,solid,장갑,5,1,Korean,solid
+장난감,category_organization,물질,6,toy (object),substance,장난감,2,0.3333333333333333,Korean,substance
+장난감,category_organization,해당 사항 없음,6,toy (object),not applicable,장난감,2,0.3333333333333333,Korean,not applicable
+장난감,category_organization,형태,6,toy (object),form,장난감,2,0.3333333333333333,Korean,shape
+장난감,count_mass,셀 수 있다,11,toy (object),countable,장난감,11,1,Korean,countable
+장난감,solidity,고형물,3,toy (object),solid,장난감,3,1,Korean,solid
+쟁반,category_organization,물질,5,tray,substance,쟁반,2,0.4,Korean,substance
+쟁반,category_organization,형태,5,tray,form,쟁반,3,0.6,Korean,shape
+쟁반,count_mass,셀 수 있다,9,tray,countable,쟁반,9,1,Korean,countable
+쟁반,solidity,고형물,6,tray,solid,쟁반,6,1,Korean,solid
+전자레인지,category_organization,물질,5,microwave,substance,전자레인지,2,0.4,Korean,substance
+전자레인지,category_organization,해당 사항 없음,5,microwave,not applicable,전자레인지,1,0.2,Korean,not applicable
+전자레인지,category_organization,형태,5,microwave,form,전자레인지,2,0.4,Korean,shape
+전자레인지,count_mass,셀 수 없다,9,microwave,uncountable,전자레인지,2,0.2222222222222222,Korean,uncountable
+전자레인지,count_mass,셀 수 있다,9,microwave,countable,전자레인지,7,0.7777777777777778,Korean,countable
+전자레인지,solidity,고형물,8,microwave,solid,전자레인지,8,1,Korean,solid
+전화,category_organization,해당 사항 없음,3,telephone,not applicable,전화,1,0.3333333333333333,Korean,not applicable
+전화,category_organization,형태,3,telephone,form,전화,2,0.6666666666666666,Korean,shape
+전화,count_mass,셀 수 없다,6,telephone,uncountable,전화,1,0.16666666666666666,Korean,uncountable
+전화,count_mass,셀 수 있다,6,telephone,countable,전화,5,0.8333333333333334,Korean,countable
+전화,solidity,고형물,6,telephone,solid,전화,3,0.5,Korean,solid
+전화,solidity,비고형물,6,telephone,non-solid,전화,2,0.3333333333333333,Korean,non-solid
+전화,solidity,해당 사항 없음,6,telephone,not applicable,전화,1,0.16666666666666666,Korean,not applicable
+접시,category_organization,물질,7,plate,substance,접시,2,0.2857142857142857,Korean,substance
+접시,category_organization,해당 사항 없음,7,plate,not applicable,접시,1,0.14285714285714285,Korean,not applicable
+접시,category_organization,형태,7,plate,form,접시,4,0.5714285714285714,Korean,shape
+접시,count_mass,셀 수 있다,4,plate,countable,접시,4,1,Korean,countable
+접시,solidity,고형물,5,plate,solid,접시,5,1,Korean,solid
+젓가락,category_organization,물질,5,chopstick,substance,젓가락,1,0.2,Korean,substance
+젓가락,category_organization,형태,5,chopstick,form,젓가락,4,0.8,Korean,shape
+젓가락,count_mass,셀 수 있다,1,chopstick,countable,젓가락,1,1,Korean,countable
+젓가락,solidity,고형물,13,chopstick,solid,젓가락,13,1,Korean,solid
+종이,category_organization,물질,3,paper,substance,종이,2,0.6666666666666666,Korean,substance
+종이,category_organization,색상,3,paper,color,종이,1,0.3333333333333333,Korean,color
+종이,count_mass,셀 수 있다,6,paper,countable,종이,6,1,Korean,countable
+종이,solidity,고형물,3,paper,solid,종이,3,1,Korean,solid
+주머니,category_organization,물질,5,pocket,substance,주머니,2,0.4,Korean,substance
+주머니,category_organization,형태,5,pocket,form,주머니,3,0.6,Korean,shape
+주머니,count_mass,셀 수 있다,6,pocket,countable,주머니,6,1,Korean,countable
+주머니,solidity,고형물,2,pocket,solid,주머니,1,0.5,Korean,solid
+주머니,solidity,해당 사항 없음,2,pocket,not applicable,주머니,1,0.5,Korean,not applicable
+주스,category_organization,물질,6,juice,substance,주스,5,0.8333333333333334,Korean,substance
+주스,category_organization,해당 사항 없음,6,juice,not applicable,주스,1,0.16666666666666666,Korean,not applicable
+주스,count_mass,셀 수 없다,6,juice,uncountable,주스,6,1,Korean,uncountable
+주스,solidity,비고형물,5,juice,non-solid,주스,5,1,Korean,non-solid
+쥐,category_organization,해당 사항 없음,10,mouse,not applicable,쥐,1,0.1,Korean,not applicable
+쥐,category_organization,형태,10,mouse,form,쥐,9,0.9,Korean,shape
+쥐,count_mass,셀 수 있다,6,mouse,countable,쥐,6,1,Korean,countable
+쥐,solidity,고형물,4,mouse,solid,쥐,3,0.75,Korean,solid
+쥐,solidity,해당 사항 없음,4,mouse,not applicable,쥐,1,0.25,Korean,not applicable
+지갑,category_organization,물질,2,wallet,substance,지갑,1,0.5,Korean,substance
+지갑,category_organization,형태,2,wallet,form,지갑,1,0.5,Korean,shape
+지갑,count_mass,셀 수 있다,3,wallet,countable,지갑,3,1,Korean,countable
+지갑,solidity,고형물,2,wallet,solid,지갑,2,1,Korean,solid
+지붕,category_organization,형태,5,roof,form,지붕,5,1,Korean,shape
+지붕,count_mass,셀 수 있다,5,roof,countable,지붕,4,0.8,Korean,countable
+지붕,count_mass,잘 모르겠다/구분이 어렵다,5,roof,not sure,지붕,1,0.2,Korean,not sure
+지붕,solidity,고형물,6,roof,solid,지붕,6,1,Korean,solid
+참새,category_organization,색상,5,sparrow,color,참새,1,0.2,Korean,color
+참새,category_organization,해당 사항 없음,5,sparrow,not applicable,참새,1,0.2,Korean,not applicable
+참새,category_organization,형태,5,sparrow,form,참새,3,0.6,Korean,shape
+참새,count_mass,셀 수 있다,7,sparrow,countable,참새,7,1,Korean,countable
+참새,solidity,고형물,4,sparrow,solid,참새,4,1,Korean,solid
+창문,category_organization,색상,7,window,color,창문,1,0.14285714285714285,Korean,color
+창문,category_organization,해당 사항 없음,7,window,not applicable,창문,1,0.14285714285714285,Korean,not applicable
+창문,category_organization,형태,7,window,form,창문,5,0.7142857142857143,Korean,shape
+창문,count_mass,셀 수 있다,6,window,countable,창문,6,1,Korean,countable
+창문,solidity,고형물,3,window,solid,창문,3,1,Korean,solid
+책,category_organization,물질,5,book,substance,책,2,0.4,Korean,substance
+책,category_organization,해당 사항 없음,5,book,not applicable,책,1,0.2,Korean,not applicable
+책,category_organization,형태,5,book,form,책,2,0.4,Korean,shape
+책,count_mass,셀 수 있다,3,book,countable,책,3,1,Korean,countable
+책,solidity,고형물,10,book,solid,책,8,0.8,Korean,solid
+책,solidity,비고형물,10,book,non-solid,책,2,0.2,Korean,non-solid
+청소기,category_organization,물질,5,vacuum,substance,청소기,2,0.4,Korean,substance
+청소기,category_organization,해당 사항 없음,5,vacuum,not applicable,청소기,1,0.2,Korean,not applicable
+청소기,category_organization,형태,5,vacuum,form,청소기,2,0.4,Korean,shape
+청소기,count_mass,셀 수 있다,5,vacuum,countable,청소기,5,1,Korean,countable
+청소기,solidity,고형물,9,vacuum,solid,청소기,9,1,Korean,solid
+초콜렛,category_organization,물질,9,chocolate,substance,초콜렛,7,0.7777777777777778,Korean,substance
+초콜렛,category_organization,형태,9,chocolate,form,초콜렛,2,0.2222222222222222,Korean,shape
+초콜렛,count_mass,셀 수 없다,4,chocolate,uncountable,초콜렛,1,0.25,Korean,uncountable
+초콜렛,count_mass,셀 수 있다,4,chocolate,countable,초콜렛,3,0.75,Korean,countable
+초콜렛,solidity,고형물,7,chocolate,solid,초콜렛,7,1,Korean,solid
+총,category_organization,물질,9,gun,substance,총,2,0.2222222222222222,Korean,substance
+총,category_organization,해당 사항 없음,9,gun,not applicable,총,1,0.1111111111111111,Korean,not applicable
+총,category_organization,형태,9,gun,form,총,6,0.6666666666666666,Korean,shape
+총,count_mass,셀 수 없다,7,gun,uncountable,총,1,0.14285714285714285,Korean,uncountable
+총,count_mass,셀 수 있다,7,gun,countable,총,6,0.8571428571428571,Korean,countable
+총,solidity,고형물,10,gun,solid,총,10,1,Korean,solid
+치마,category_organization,물질,6,skirt,substance,치마,1,0.16666666666666666,Korean,substance
+치마,category_organization,형태,6,skirt,form,치마,5,0.8333333333333334,Korean,shape
+치마,count_mass,셀 수 있다,7,skirt,countable,치마,7,1,Korean,countable
+치마,solidity,고형물,7,skirt,solid,치마,7,1,Korean,solid
+치약,category_organization,물질,5,toothpaste,substance,치약,4,0.8,Korean,substance
+치약,category_organization,해당 사항 없음,5,toothpaste,not applicable,치약,1,0.2,Korean,not applicable
+치약,count_mass,셀 수 없다,9,toothpaste,uncountable,치약,3,0.3333333333333333,Korean,uncountable
+치약,count_mass,셀 수 있다,9,toothpaste,countable,치약,6,0.6666666666666666,Korean,countable
+치약,solidity,비고형물,5,toothpaste,non-solid,치약,5,1,Korean,non-solid
+치즈,category_organization,물질,8,cheese,substance,치즈,7,0.875,Korean,substance
+치즈,category_organization,해당 사항 없음,8,cheese,not applicable,치즈,1,0.125,Korean,not applicable
+치즈,count_mass,셀 수 없다,11,cheese,uncountable,치즈,3,0.2727272727272727,Korean,uncountable
+치즈,count_mass,셀 수 있다,11,cheese,countable,치즈,7,0.6363636363636364,Korean,countable
+치즈,count_mass,잘 모르겠다/구분이 어렵다,11,cheese,not sure,치즈,1,0.09090909090909091,Korean,not sure
+치즈,solidity,고형물,5,cheese,solid,치즈,3,0.6,Korean,solid
+치즈,solidity,비고형물,5,cheese,non-solid,치즈,1,0.2,Korean,non-solid
+치즈,solidity,해당 사항 없음,5,cheese,not applicable,치즈,1,0.2,Korean,not applicable
+침대,category_organization,물질,7,bed,substance,침대,1,0.14285714285714285,Korean,substance
+침대,category_organization,해당 사항 없음,7,bed,not applicable,침대,1,0.14285714285714285,Korean,not applicable
+침대,category_organization,형태,7,bed,form,침대,5,0.7142857142857143,Korean,shape
+침대,count_mass,셀 수 있다,7,bed,countable,침대,7,1,Korean,countable
+침대,solidity,고형물,2,bed,solid,침대,2,1,Korean,solid
+칫솔,category_organization,해당 사항 없음,3,toothbrush,not applicable,칫솔,1,0.3333333333333333,Korean,not applicable
+칫솔,category_organization,형태,3,toothbrush,form,칫솔,2,0.6666666666666666,Korean,shape
+칫솔,count_mass,셀 수 있다,4,toothbrush,countable,칫솔,4,1,Korean,countable
+칫솔,solidity,고형물,10,toothbrush,solid,칫솔,10,1,Korean,solid
+카메라,category_organization,물질,5,camera,substance,카메라,1,0.2,Korean,substance
+카메라,category_organization,해당 사항 없음,5,camera,not applicable,카메라,2,0.4,Korean,not applicable
+카메라,category_organization,형태,5,camera,form,카메라,2,0.4,Korean,shape
+카메라,count_mass,셀 수 없다,5,camera,uncountable,카메라,1,0.2,Korean,uncountable
+카메라,count_mass,셀 수 있다,5,camera,countable,카메라,4,0.8,Korean,countable
+카메라,solidity,고형물,4,camera,solid,카메라,4,1,Korean,solid
+칼,category_organization,물질,5,knife,substance,칼,1,0.2,Korean,substance
+칼,category_organization,해당 사항 없음,5,knife,not applicable,칼,1,0.2,Korean,not applicable
+칼,category_organization,형태,5,knife,form,칼,3,0.6,Korean,shape
+칼,count_mass,셀 수 있다,2,knife,countable,칼,2,1,Korean,countable
+칼,solidity,고형물,10,knife,solid,칼,10,1,Korean,solid
+커피,category_organization,물질,5,coffee,substance,커피,5,1,Korean,substance
+커피,count_mass,셀 수 없다,3,coffee,uncountable,커피,2,0.6666666666666666,Korean,uncountable
+커피,count_mass,셀 수 있다,3,coffee,countable,커피,1,0.3333333333333333,Korean,countable
+커피,solidity,비고형물,5,coffee,non-solid,커피,5,1,Korean,non-solid
+컵,category_organization,물질,7,cup,substance,컵,3,0.42857142857142855,Korean,substance
+컵,category_organization,형태,7,cup,form,컵,4,0.5714285714285714,Korean,shape
+컵,count_mass,셀 수 있다,8,cup,countable,컵,8,1,Korean,countable
+컵,solidity,고형물,10,cup,solid,컵,10,1,Korean,solid
+케이크,category_organization,물질,12,cake,substance,케이크,7,0.5833333333333334,Korean,substance
+케이크,category_organization,형태,12,cake,form,케이크,5,0.4166666666666667,Korean,shape
+케이크,count_mass,셀 수 있다,8,cake,countable,케이크,8,1,Korean,countable
+케이크,solidity,고형물,4,cake,solid,케이크,3,0.75,Korean,solid
+케이크,solidity,해당 사항 없음,4,cake,not applicable,케이크,1,0.25,Korean,not applicable
+코끼리,category_organization,물질,4,elephant,substance,코끼리,1,0.25,Korean,substance
+코끼리,category_organization,색상,4,elephant,color,코끼리,1,0.25,Korean,color
+코끼리,category_organization,해당 사항 없음,4,elephant,not applicable,코끼리,1,0.25,Korean,not applicable
+코끼리,category_organization,형태,4,elephant,form,코끼리,1,0.25,Korean,shape
+코끼리,count_mass,셀 수 있다,12,elephant,countable,코끼리,12,1,Korean,countable
+코끼리,solidity,고형물,11,elephant,solid,코끼리,10,0.9090909090909091,Korean,solid
+코끼리,solidity,해당 사항 없음,11,elephant,not applicable,코끼리,1,0.09090909090909091,Korean,not applicable
+코트/외투,category_organization,물질,4,coat,substance,코트/외투,1,0.25,Korean,substance
+코트/외투,category_organization,형태,4,coat,form,코트/외투,3,0.75,Korean,shape
+코트/외투,count_mass,셀 수 있다,6,coat,countable,코트/외투,6,1,Korean,countable
+코트/외투,solidity,고형물,3,coat,solid,코트/외투,1,0.3333333333333333,Korean,solid
+코트/외투,solidity,비고형물,3,coat,non-solid,코트/외투,1,0.3333333333333333,Korean,non-solid
+코트/외투,solidity,해당 사항 없음,3,coat,not applicable,코트/외투,1,0.3333333333333333,Korean,not applicable
+콜라,category_organization,물질,3,coke,substance,콜라,3,1,Korean,substance
+콜라,count_mass,셀 수 없다,10,coke,uncountable,콜라,4,0.4,Korean,uncountable
+콜라,count_mass,셀 수 있다,10,coke,countable,콜라,5,0.5,Korean,countable
+콜라,count_mass,잘 모르겠다/구분이 어렵다,10,coke,not sure,콜라,1,0.1,Korean,not sure
+콜라,solidity,비고형물,8,coke,non-solid,콜라,8,1,Korean,non-solid
+콩,category_organization,물질,5,beans,substance,콩,5,1,Korean,substance
+콩,count_mass,셀 수 있다,6,beans,countable,콩,6,1,Korean,countable
+콩,solidity,고형물,7,beans,solid,콩,5,0.7142857142857143,Korean,solid
+콩,solidity,비고형물,7,beans,non-solid,콩,1,0.14285714285714285,Korean,non-solid
+콩,solidity,해당 사항 없음,7,beans,not applicable,콩,1,0.14285714285714285,Korean,not applicable
+크레용/크레파스,category_organization,물질,3,crayon,substance,크레용/크레파스,2,0.6666666666666666,Korean,substance
+크레용/크레파스,category_organization,형태,3,crayon,form,크레용/크레파스,1,0.3333333333333333,Korean,shape
+크레용/크레파스,count_mass,셀 수 있다,4,crayon,countable,크레용/크레파스,4,1,Korean,countable
+크레용/크레파스,solidity,고형물,14,crayon,solid,크레용/크레파스,13,0.9285714285714286,Korean,solid
+크레용/크레파스,solidity,해당 사항 없음,14,crayon,not applicable,크레용/크레파스,1,0.07142857142857142,Korean,not applicable
+택시,category_organization,색상,6,taxi,color,택시,1,0.16666666666666666,Korean,color
+택시,category_organization,해당 사항 없음,6,taxi,not applicable,택시,1,0.16666666666666666,Korean,not applicable
+택시,category_organization,형태,6,taxi,form,택시,4,0.6666666666666666,Korean,shape
+택시,count_mass,셀 수 있다,6,taxi,countable,택시,6,1,Korean,countable
+택시,solidity,고형물,7,taxi,solid,택시,7,1,Korean,solid
+턱,category_organization,물질,8,chin,substance,턱,1,0.125,Korean,substance
+턱,category_organization,해당 사항 없음,8,chin,not applicable,턱,3,0.375,Korean,not applicable
+턱,category_organization,형태,8,chin,form,턱,4,0.5,Korean,shape
+턱,count_mass,셀 수 없다,7,chin,uncountable,턱,2,0.2857142857142857,Korean,uncountable
+턱,count_mass,셀 수 있다,7,chin,countable,턱,4,0.5714285714285714,Korean,countable
+턱,count_mass,잘 모르겠다/구분이 어렵다,7,chin,not sure,턱,1,0.14285714285714285,Korean,not sure
+턱,solidity,고형물,5,chin,solid,턱,5,1,Korean,solid
+텔레비전,category_organization,물질,2,tv,substance,텔레비전,1,0.5,Korean,substance
+텔레비전,category_organization,해당 사항 없음,2,tv,not applicable,텔레비전,1,0.5,Korean,not applicable
+텔레비전,count_mass,셀 수 있다,10,tv,countable,텔레비전,10,1,Korean,countable
+텔레비전,solidity,고형물,6,tv,solid,텔레비전,6,1,Korean,solid
+토끼,category_organization,물질,10,bunny,substance,토끼,5,0.5,Korean,substance
+토끼,category_organization,해당 사항 없음,10,bunny,not applicable,토끼,2,0.2,Korean,not applicable
+토끼,category_organization,형태,10,bunny,form,토끼,3,0.3,Korean,shape
+토끼,count_mass,셀 수 있다,7,bunny,countable,토끼,7,1,Korean,countable
+토끼,solidity,고형물,5,bunny,solid,토끼,5,1,Korean,solid
+토마토,category_organization,물질,6,tomato,substance,토마토,4,0.6666666666666666,Korean,substance
+토마토,category_organization,형태,6,tomato,form,토마토,2,0.3333333333333333,Korean,shape
+토마토,count_mass,셀 수 있다,5,tomato,countable,토마토,5,1,Korean,countable
+토마토,solidity,고형물,6,tomato,solid,토마토,5,0.8333333333333334,Korean,solid
+토마토,solidity,비고형물,6,tomato,non-solid,토마토,1,0.16666666666666666,Korean,non-solid
+트럭,category_organization,물질,6,truck,substance,트럭,1,0.16666666666666666,Korean,substance
+트럭,category_organization,형태,6,truck,form,트럭,5,0.8333333333333334,Korean,shape
+트럭,count_mass,셀 수 있다,2,truck,countable,트럭,2,1,Korean,countable
+트럭,solidity,고형물,6,truck,solid,트럭,6,1,Korean,solid
+팔,category_organization,물질,13,arm,substance,팔,4,0.3076923076923077,Korean,substance
+팔,category_organization,해당 사항 없음,13,arm,not applicable,팔,3,0.23076923076923078,Korean,not applicable
+팔,category_organization,형태,13,arm,form,팔,6,0.46153846153846156,Korean,shape
+팔,count_mass,셀 수 있다,6,arm,countable,팔,6,1,Korean,countable
+팔,solidity,고형물,6,arm,solid,팔,5,0.8333333333333334,Korean,solid
+팔,solidity,해당 사항 없음,6,arm,not applicable,팔,1,0.16666666666666666,Korean,not applicable
+팬티,category_organization,물질,3,underpants,substance,팬티,1,0.3333333333333333,Korean,substance
+팬티,category_organization,색상,3,underpants,color,팬티,1,0.3333333333333333,Korean,color
+팬티,category_organization,형태,3,underpants,form,팬티,1,0.3333333333333333,Korean,shape
+팬티,count_mass,셀 수 있다,7,underpants,countable,팬티,7,1,Korean,countable
+팬티,solidity,고형물,14,underpants,solid,팬티,12,0.8571428571428571,Korean,solid
+팬티,solidity,비고형물,14,underpants,non-solid,팬티,2,0.14285714285714285,Korean,non-solid
+펭귄,category_organization,물질,5,penguin,substance,펭귄,1,0.2,Korean,substance
+펭귄,category_organization,해당 사항 없음,5,penguin,not applicable,펭귄,1,0.2,Korean,not applicable
+펭귄,category_organization,형태,5,penguin,form,펭귄,3,0.6,Korean,shape
+펭귄,count_mass,셀 수 있다,8,penguin,countable,펭귄,8,1,Korean,countable
+펭귄,solidity,고형물,6,penguin,solid,펭귄,6,1,Korean,solid
+포도,category_organization,물질,6,grapes,substance,포도,2,0.3333333333333333,Korean,substance
+포도,category_organization,형태,6,grapes,form,포도,4,0.6666666666666666,Korean,shape
+포도,count_mass,셀 수 있다,5,grapes,countable,포도,5,1,Korean,countable
+포도,solidity,고형물,11,grapes,solid,포도,9,0.8181818181818182,Korean,solid
+포도,solidity,비고형물,11,grapes,non-solid,포도,2,0.18181818181818182,Korean,non-solid
+포크,category_organization,형태,8,fork,form,포크,8,1,Korean,shape
+포크,count_mass,셀 수 있다,3,fork,countable,포크,3,1,Korean,countable
+포크,solidity,고형물,7,fork,solid,포크,7,1,Korean,solid
+풀,category_organization,물질,7,glue (object),substance,풀,5,0.7142857142857143,Korean,substance
+풀,category_organization,물질,7,grass,substance,풀,5,0.7142857142857143,Korean,substance
+풀,category_organization,색상,7,glue (object),color,풀,1,0.14285714285714285,Korean,color
+풀,category_organization,색상,7,grass,color,풀,1,0.14285714285714285,Korean,color
+풀,category_organization,해당 사항 없음,7,glue (object),not applicable,풀,1,0.14285714285714285,Korean,not applicable
+풀,category_organization,해당 사항 없음,7,grass,not applicable,풀,1,0.14285714285714285,Korean,not applicable
+풀,count_mass,셀 수 없다,8,glue (object),uncountable,풀,7,0.875,Korean,uncountable
+풀,count_mass,셀 수 없다,8,grass,uncountable,풀,7,0.875,Korean,uncountable
+풀,count_mass,잘 모르겠다/구분이 어렵다,8,glue (object),not sure,풀,1,0.125,Korean,not sure
+풀,count_mass,잘 모르겠다/구분이 어렵다,8,grass,not sure,풀,1,0.125,Korean,not sure
+풀,solidity,고형물,10,glue (object),solid,풀,7,0.7,Korean,solid
+풀,solidity,고형물,10,grass,solid,풀,7,0.7,Korean,solid
+풀,solidity,비고형물,10,glue (object),non-solid,풀,2,0.2,Korean,non-solid
+풀,solidity,비고형물,10,grass,non-solid,풀,2,0.2,Korean,non-solid
+풀,solidity,해당 사항 없음,10,glue (object),not applicable,풀,1,0.1,Korean,not applicable
+풀,solidity,해당 사항 없음,10,grass,not applicable,풀,1,0.1,Korean,not applicable
+풍선,category_organization,물질,9,balloon,substance,풍선,5,0.5555555555555556,Korean,substance
+풍선,category_organization,색상,9,balloon,color,풍선,1,0.1111111111111111,Korean,color
+풍선,category_organization,형태,9,balloon,form,풍선,3,0.3333333333333333,Korean,shape
+풍선,count_mass,셀 수 있다,3,balloon,countable,풍선,3,1,Korean,countable
+풍선,solidity,고형물,7,balloon,solid,풍선,6,0.8571428571428571,Korean,solid
+풍선,solidity,비고형물,7,balloon,non-solid,풍선,1,0.14285714285714285,Korean,non-solid
+피,category_organization,물질,4,blood,substance,피,3,0.75,Korean,substance
+피,category_organization,색상,4,blood,color,피,1,0.25,Korean,color
+피,count_mass,셀 수 없다,9,blood,uncountable,피,9,1,Korean,uncountable
+피,solidity,비고형물,8,blood,non-solid,피,8,1,Korean,non-solid
+피아노,category_organization,물질,9,piano,substance,피아노,2,0.2222222222222222,Korean,substance
+피아노,category_organization,해당 사항 없음,9,piano,not applicable,피아노,1,0.1111111111111111,Korean,not applicable
+피아노,category_organization,형태,9,piano,form,피아노,6,0.6666666666666666,Korean,shape
+피아노,count_mass,셀 수 있다,5,piano,countable,피아노,5,1,Korean,countable
+피아노,solidity,고형물,9,piano,solid,피아노,9,1,Korean,solid
+피자,category_organization,물질,6,pizza,substance,피자,4,0.6666666666666666,Korean,substance
+피자,category_organization,형태,6,pizza,form,피자,2,0.3333333333333333,Korean,shape
+피자,count_mass,셀 수 있다,11,pizza,countable,피자,11,1,Korean,countable
+피자,solidity,고형물,8,pizza,solid,피자,6,0.75,Korean,solid
+피자,solidity,비고형물,8,pizza,non-solid,피자,1,0.125,Korean,non-solid
+피자,solidity,해당 사항 없음,8,pizza,not applicable,피자,1,0.125,Korean,not applicable
+하늘,category_organization,해당 사항 없음,8,sky,not applicable,하늘,6,0.75,Korean,not applicable
+하늘,category_organization,형태,8,sky,form,하늘,2,0.25,Korean,shape
+하늘,count_mass,셀 수 없다,5,sky,uncountable,하늘,5,1,Korean,uncountable
+하늘,solidity,비고형물,4,sky,non-solid,하늘,3,0.75,Korean,non-solid
+하늘,solidity,해당 사항 없음,4,sky,not applicable,하늘,1,0.25,Korean,not applicable
+하마,category_organization,물질,12,hippopotamus,substance,하마,3,0.25,Korean,substance
+하마,category_organization,해당 사항 없음,12,hippopotamus,not applicable,하마,5,0.4166666666666667,Korean,not applicable
+하마,category_organization,형태,12,hippopotamus,form,하마,4,0.3333333333333333,Korean,shape
+하마,count_mass,셀 수 없다,3,hippopotamus,uncountable,하마,1,0.3333333333333333,Korean,uncountable
+하마,count_mass,셀 수 있다,3,hippopotamus,countable,하마,2,0.6666666666666666,Korean,countable
+하마,solidity,고형물,13,hippopotamus,solid,하마,11,0.8461538461538461,Korean,solid
+하마,solidity,비고형물,13,hippopotamus,non-solid,하마,2,0.15384615384615385,Korean,non-solid
+핫도그,category_organization,물질,4,hot dog,substance,핫도그,2,0.5,Korean,substance
+핫도그,category_organization,형태,4,hot dog,form,핫도그,2,0.5,Korean,shape
+핫도그,count_mass,셀 수 없다,10,hot dog,uncountable,핫도그,1,0.1,Korean,uncountable
+핫도그,count_mass,셀 수 있다,10,hot dog,countable,핫도그,9,0.9,Korean,countable
+핫도그,solidity,고형물,5,hot dog,solid,핫도그,5,1,Korean,solid
+해/햇빛,category_organization,물질,3,sun,substance,해/햇빛,1,0.3333333333333333,Korean,substance
+해/햇빛,category_organization,형태,3,sun,form,해/햇빛,2,0.6666666666666666,Korean,shape
+해/햇빛,count_mass,셀 수 없다,7,sun,uncountable,해/햇빛,6,0.8571428571428571,Korean,uncountable
+해/햇빛,count_mass,셀 수 있다,7,sun,countable,해/햇빛,1,0.14285714285714285,Korean,countable
+해/햇빛,solidity,고형물,7,sun,solid,해/햇빛,2,0.2857142857142857,Korean,solid
+해/햇빛,solidity,비고형물,7,sun,non-solid,해/햇빛,4,0.5714285714285714,Korean,non-solid
+해/햇빛,solidity,해당 사항 없음,7,sun,not applicable,해/햇빛,1,0.14285714285714285,Korean,not applicable
+햄버거,category_organization,물질,8,hamburger,substance,햄버거,6,0.75,Korean,substance
+햄버거,category_organization,해당 사항 없음,8,hamburger,not applicable,햄버거,1,0.125,Korean,not applicable
+햄버거,category_organization,형태,8,hamburger,form,햄버거,1,0.125,Korean,shape
+햄버거,count_mass,셀 수 있다,5,hamburger,countable,햄버거,5,1,Korean,countable
+햄버거,solidity,고형물,6,hamburger,solid,햄버거,5,0.8333333333333334,Korean,solid
+햄버거,solidity,비고형물,6,hamburger,non-solid,햄버거,1,0.16666666666666666,Korean,non-solid
+허리,category_organization,해당 사항 없음,4,waist,not applicable,허리,1,0.25,Korean,not applicable
+허리,category_organization,형태,4,waist,form,허리,3,0.75,Korean,shape
+허리,count_mass,셀 수 없다,4,waist,uncountable,허리,1,0.25,Korean,uncountable
+허리,count_mass,셀 수 있다,4,waist,countable,허리,2,0.5,Korean,countable
+허리,count_mass,잘 모르겠다/구분이 어렵다,4,waist,not sure,허리,1,0.25,Korean,not sure
+허리,solidity,고형물,5,waist,solid,허리,5,1,Korean,solid
+허리띠,category_organization,물질,6,belt,substance,허리띠,2,0.3333333333333333,Korean,substance
+허리띠,category_organization,형태,6,belt,form,허리띠,4,0.6666666666666666,Korean,shape
+허리띠,count_mass,셀 수 있다,2,belt,countable,허리띠,2,1,Korean,countable
+허리띠,solidity,고형물,5,belt,solid,허리띠,4,0.8,Korean,solid
+허리띠,solidity,비고형물,5,belt,non-solid,허리띠,1,0.2,Korean,non-solid
+헬리콥터,category_organization,물질,7,helicopter,substance,헬리콥터,3,0.42857142857142855,Korean,substance
+헬리콥터,category_organization,형태,7,helicopter,form,헬리콥터,4,0.5714285714285714,Korean,shape
+헬리콥터,count_mass,셀 수 있다,5,helicopter,countable,헬리콥터,5,1,Korean,countable
+헬리콥터,solidity,고형물,6,helicopter,solid,헬리콥터,6,1,Korean,solid
+혀,category_organization,물질,8,tongue,substance,혀,3,0.375,Korean,substance
+혀,category_organization,형태,8,tongue,form,혀,5,0.625,Korean,shape
+혀,count_mass,셀 수 있다,5,tongue,countable,혀,5,1,Korean,countable
+혀,solidity,고형물,5,tongue,solid,혀,5,1,Korean,solid
+호떡,category_organization,물질,6,pancake,substance,호떡,6,1,Korean,substance
+호떡,count_mass,셀 수 있다,7,pancake,countable,호떡,7,1,Korean,countable
+호떡,solidity,고형물,8,pancake,solid,호떡,5,0.625,Korean,solid
+호떡,solidity,비고형물,8,pancake,non-solid,호떡,2,0.25,Korean,non-solid
+호떡,solidity,해당 사항 없음,8,pancake,not applicable,호떡,1,0.125,Korean,not applicable
+호랑이,category_organization,물질,6,tiger,substance,호랑이,3,0.5,Korean,substance
+호랑이,category_organization,해당 사항 없음,6,tiger,not applicable,호랑이,2,0.3333333333333333,Korean,not applicable
+호랑이,category_organization,형태,6,tiger,form,호랑이,1,0.16666666666666666,Korean,shape
+호랑이,count_mass,셀 수 있다,2,tiger,countable,호랑이,2,1,Korean,countable
+호랑이,solidity,고형물,3,tiger,solid,호랑이,2,0.6666666666666666,Korean,solid
+호랑이,solidity,비고형물,3,tiger,non-solid,호랑이,1,0.3333333333333333,Korean,non-solid
+호박,category_organization,물질,8,pumpkin,substance,호박,4,0.5,Korean,substance
+호박,category_organization,해당 사항 없음,8,pumpkin,not applicable,호박,2,0.25,Korean,not applicable
+호박,category_organization,형태,8,pumpkin,form,호박,2,0.25,Korean,shape
+호박,count_mass,셀 수 있다,2,pumpkin,countable,호박,2,1,Korean,countable
+호박,solidity,고형물,6,pumpkin,solid,호박,6,1,Korean,solid
+화장실,category_organization,물질,7,bathroom,substance,화장실,2,0.2857142857142857,Korean,substance
+화장실,category_organization,해당 사항 없음,7,bathroom,not applicable,화장실,3,0.42857142857142855,Korean,not applicable
+화장실,category_organization,형태,7,bathroom,form,화장실,2,0.2857142857142857,Korean,shape
+화장실,count_mass,셀 수 없다,6,bathroom,uncountable,화장실,1,0.16666666666666666,Korean,uncountable
+화장실,count_mass,셀 수 있다,6,bathroom,countable,화장실,5,0.8333333333333334,Korean,countable
+화장실,solidity,고형물,9,bathroom,solid,화장실,6,0.6666666666666666,Korean,solid
+화장실,solidity,비고형물,9,bathroom,non-solid,화장실,1,0.1111111111111111,Korean,non-solid
+화장실,solidity,해당 사항 없음,9,bathroom,not applicable,화장실,2,0.2222222222222222,Korean,not applicable
+휴지,category_organization,물질,9,tissue,substance,휴지,7,0.7777777777777778,Korean,substance
+휴지,category_organization,형태,9,tissue,form,휴지,2,0.2222222222222222,Korean,shape
+휴지,count_mass,셀 수 없다,6,tissue,uncountable,휴지,1,0.16666666666666666,Korean,uncountable
+휴지,count_mass,셀 수 있다,6,tissue,countable,휴지,4,0.6666666666666666,Korean,countable
+휴지,count_mass,잘 모르겠다/구분이 어렵다,6,tissue,not sure,휴지,1,0.16666666666666666,Korean,not sure
+휴지,solidity,비고형물,1,tissue,non-solid,휴지,1,1,Korean,non-solid
+흙,category_organization,물질,11,soil,substance,흙,11,1,Korean,substance
+흙,count_mass,셀 수 없다,2,soil,uncountable,흙,1,0.5,Korean,uncountable
+흙,count_mass,잘 모르겠다/구분이 어렵다,2,soil,not sure,흙,1,0.5,Korean,not sure
+흙,solidity,고형물,6,soil,solid,흙,2,0.3333333333333333,Korean,solid
+흙,solidity,비고형물,6,soil,non-solid,흙,4,0.6666666666666666,Korean,non-solid

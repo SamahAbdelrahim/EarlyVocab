@@ -1,0 +1,190 @@
+---
+title: "aoa_prediction"
+author: ""
+date: "2025-10-12"
+output: html_document
+---
+
+```{r setup, message=FALSE, warning=FALSE, echo=FALSE, include=FALSE}
+# Seed for random number generation
+set.seed(42)
+knitr::opts_chunk$set(cache.extra = knitr::rand_seed, echo = FALSE, message=FALSE, include = FALSE)
+
+library(tidyverse)
+library(brms)
+library(psych)
+library(modelr)
+library(glue)
+library(here)
+library(quanteda)
+library(tmcn)
+library(janitor)
+library(GGally)
+library(lme4)
+library(stringr)
+library(lmerTest)  # For p-values in lme4 models
+library(skimr)     # For quick and nice summaries
+library(performance) # For model diagnostics
+library(ggvenn)
+library(purrr)
+source(here("helper.R"))
+library("papaja")
+library(psych)
+library(irr)
+library(ggplot2)
+library(corrr)
+library(broom)
+library(effectsize)
+library(patchwork)
+library(ggeffects)
+
+#r_refs("r-references.bib")
+```
+
+```{r }
+ratings_aoa <- read_csv(here("data/predictors","ratings_aoa.csv"))
+```
+
+```{r }
+predictors_df_few <- ratings_aoa %>%
+  select(uni_lemma, aoa, logfreq, concreteness, solid, mean_shape, count_noun, category, language, shape_s2, shape_s1)  %>%
+  mutate(
+    across(c(logfreq, concreteness, solid, shape_s2, shape_s1, mean_shape, count_noun), scale)
+  ) %>% distinct()
+
+```
+
+```{r }
+correlations <- predictors_df_few %>%
+  select(aoa, logfreq, concreteness, solid, mean_shape, count_noun) %>%
+  cor(use = "pairwise.complete.obs")
+
+correlations
+
+GGally::ggpairs(
+  correlations, 
+  lower = list(continuous = wrap("points", alpha = 0.2)),
+  upper = list(continuous = wrap("cor", size = 3))
+) +
+  theme_bw() +
+  labs(title = "Correlations between AoA and Predictors")
+```
+
+```{r }
+ggplot(predictors_df_few, aes(x = mean_shape, y = aoa)) +
+  geom_point(alpha = 0.2) +
+  geom_smooth(method = "lm", se = FALSE, color="blue") +
+  labs(title = "AoA vs. Shape-based Organization by Language", x = "Proportion Rated Shape-based", y = "AoA") +
+  theme_bw()
+
+ggsave(here("data/figures", "aoa_vs_shape.png"), width = 6, height = 4)
+```
+
+```{r }
+ggplot(predictors_df_few, aes(x = count_noun, y = aoa)) +
+  geom_point(alpha = 0.2) +
+  geom_smooth(method = "lm", se = FALSE, color="blue") +
+  labs(title = "AoA vs. Count", x = "Proportion Rated Count", y = "AoA") +
+  theme_bw()
+
+ggplot(predictors_df_few, aes(x = solid, y = aoa)) +
+  geom_point(alpha = 0.2) +
+  geom_smooth(method = "lm", se = FALSE, color="blue") +
+  labs(title = "AoA vs. Solid", x = "Proportion Rated Solid", y = "AoA") +
+  theme_bw() +
+  facet_wrap(~language)
+```
+
+```{r }
+
+summary(lmerTest::lmer(aoa ~ logfreq + (1 | language) + (1 | category) , data = predictors_df_few))
+
+summary(lmerTest::lmer(aoa ~ logfreq + concreteness + (1 | language) + (1 | category) , data = predictors_df_few))
+
+summary(lmerTest::lmer(aoa ~ logfreq + concreteness + solid  + (1 | language) + (1 | category) , data = predictors_df_few))
+
+summary(lmerTest::lmer(aoa ~ logfreq + concreteness + solid + mean_shape + (1 | language) + (1 | category) , data = predictors_df_few))
+
+summary(lmerTest::lmer(aoa ~ logfreq + concreteness + solid + mean_shape + count_noun + (1 | language) + (1 | category) , data = predictors_df_few))
+
+```
+
+
+```{r }
+summary(lmerTest::lmer(aoa ~ logfreq + concreteness + solid + mean_shape + count_noun + language + (1 | category) , data = predictors_df_few))
+```
+
+```{r }
+# Example words
+# without the animates ~ narrowing down to only artifacts ~ sensitivity analysis 
+solid_words <- predictors_df_few %>%
+  filter(solid > 0.5 & mean_shape < 0.3) %>%
+  select(uni_lemma, aoa, solid, mean_shape, concreteness) %>%
+  distinct() %>% 
+  arrange(desc(solid))
+unique(solid_words$uni_lemma)
+
+nonsolid_words <- predictors_df_few %>%
+  filter(solid < 0.5 & mean_shape > 0.5 & aoa < 30 ) %>%
+  select(uni_lemma, solid) %>%
+  distinct() %>% 
+  arrange(desc(solid))
+
+unique(nonsolid_words$uni_lemma)
+
+
+ predictors_df_few %>% filter(category != "animals" , category != "body parts" , category != "clothing" , category != "outside") %>%
+filter(solid > 0.5 & mean_shape < 0.3) %>%
+select(uni_lemma, aoa, solid, mean_shape, concreteness) %>%
+distinct() %>% 
+arrange(desc(solid))
+
+```
+
+```{r }
+# sensitivity analysis and excluding animates, clothing,  ... etc
+summary(lmerTest::lmer(aoa ~ logfreq + concreteness + solid + mean_shape + count_noun + (1 | language) + (1 | category) , data = predictors_df_few %>% filter(category != "animals" , category != "body parts" , category != "clothing" , category != "outside")))
+```
+
+
+# Korean ratings
+```{r }
+korean_ratings <- read_csv(here("data/predictors", "shape_korean_compare_aoa.csv"))
+```
+
+```{r }
+korean_predictors <- korean_ratings %>%
+  mutate(
+    across(c(logfreq, concreteness, english_s1, english_s2, korean_s1, korean_s2), scale)
+  ) %>% distinct()
+```
+
+
+```{r }
+correlations_korean <- korean_predictors %>%
+  select(aoa, logfreq, concreteness, english_s1, english_s2, korean_s1, korean_s2) %>%
+  cor(use = "pairwise.complete.obs")
+
+correlations_korean
+
+GGally::ggpairs(
+  correlations_korean, 
+  lower = list(continuous = wrap("points", alpha = 0.2)),
+  upper = list(continuous = wrap("cor", size = 3))
+) +
+  theme_bw() +
+  labs(title = "Correlations between AoA and Predictors")
+```
+
+```{r }
+summary(lmerTest::lmer(aoa ~ logfreq + (1 | category) , data = korean_predictors))
+
+summary(lmerTest::lmer(aoa ~ logfreq + concreteness  + (1 | category) , data = korean_predictors))
+
+summary(lmerTest::lmer(aoa ~ logfreq + concreteness + korean_s1   + (1 | category) , data = korean_predictors))
+
+summary(lmerTest::lmer(aoa ~ logfreq + concreteness + korean_s1 +korean_s2  + (1 | category) , data = korean_predictors))
+
+summary(lmerTest::lmer(aoa ~ logfreq + concreteness + korean_s1 + korean_s2 +english_s1 + english_s2 + (1 | category) , data = korean_predictors))
+
+```

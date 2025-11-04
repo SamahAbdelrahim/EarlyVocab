@@ -1,0 +1,5 @@
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+\includegraphics[width=0.9\linewidth]{lexical_stats_MS_files/figure-latex/venn_eng_1-1} \caption{ }(\#fig:venn_eng_1)
+\end{figure*}

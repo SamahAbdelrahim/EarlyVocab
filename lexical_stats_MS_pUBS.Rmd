@@ -1,0 +1,1507 @@
+---
+title: "The title"
+author:
+- name: First Author
+  affiliation: '1'
+  corresponding: true
+  address: Postal address
+  email: my@email.com
+  role:
+  - Conceptualization
+  - "Writing - Original Draft Preparation"
+  - "Writing - Review & Editing"
+- name: "Ernst-August Doelle"
+  affiliation: '1,2'
+  role:
+  - "Writing - Review & Editing"
+  - Supervision
+shorttitle: Title
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+authornote: |
+  Add complete departmental affiliations for each author here. Each new line herein must be indented, like this line.
+  Enter author note here.
+abstract:
+keywords: keywords
+wordcount: X
+bibliography: "r-references.bib"
+floatsintext: false
+linenumbers: true
+draft: false
+mask: false
+figurelist: false
+tablelist: false
+footnotelist: false
+classoption: man
+always_allow_html: true
+csl: apa6.csl
+toc: false
+figsintext: true
+fig_caption: true
+header-includes:
+- \usepackage{float}
+- \floatplacement{figure}{H}
+- \usepackage{graphicx}
+affiliation:
+- id: '1'
+  institution: "Wilhelm-Wundt-University"
+- id: '2'
+  institution: Konstanz Business School
+---
+
+```{r setup, message=FALSE, warning=FALSE, echo=FALSE, include=FALSE}
+# Seed for random number generation
+set.seed(42)
+knitr::opts_chunk$set(cache.extra = knitr::rand_seed, echo = FALSE, message=FALSE, include = FALSE)
+
+library(tidyverse)
+library(brms)
+library(psych)
+library(modelr)
+library(glue)
+library(here)
+library(quanteda)
+library(tmcn)
+library(janitor)
+library(GGally)
+library(lme4)
+library(stringr)
+library(lmerTest)  # For p-values in lme4 models
+library(skimr)     # For quick and nice summaries
+library(performance) # For model diagnostics
+library(ggvenn)
+library(purrr)
+source(here("helper.R"))
+library("papaja")
+library(psych)
+library(irr)
+library(ggplot2)
+library(corrr)
+library(broom)
+library(effectsize)
+library(patchwork)
+library(ggeffects)
+
+#r_refs("r-references.bib")
+```
+
+# Introduction
+
+The shape bias is the tendency of young children to generalize new words to new category members based on their shape (Landau, Smith, & Jones, 1988) rather than other perceptual attributes like color, texture, or size [@landau1988; @subrahmanyam_2006] or conceptual attributes like a functional, thematic, or a taxonomic match [@imai_childrens_1994; @Poulin-Dubois1999; @imai2010; @yoshida2003known]. 
+
+One reason for researchers’ long-standing interest in the shape bias relates to its hypothesized role in early word learning. This bias has been extensively studied in English-speaking children in the US, where it emerges around 18-24 months of age and is thought to be a key mechanism for rapid vocabulary growth during the so-called "vocabulary spurt" (Gershkoff-Stowe & Smith, 2004; Smith, 2000). 
+
+Additionally, it has been found to be weaker in children with language impairments, and in children with autism spectrum disorder [@JONES_SMITH_2005; @Jones2003LateTS; @Collisson2015IndividualDI; @perry2019heterogeneity; @potrzeba2015_ASD; @tek2008children; @perry2021vocabulary]. Although the causality direction is not yet clear, but this suggests that the shape bias may be a useful tool for children learning nouns, and that it may be a useful predictor of language development.
+
+Learning is not a passive process: The shape bias is proposed to be a statistical generalization of early vocabulary: in English, solid objects are dominant in early lexicon, are referred to by count nouns, and are organized by shape (Samuelson & Smith, 1999). The emergence of the shape bias has been linked to the distributional properties of early-learned nouns in English, which tend to refer to solid objects that are countable and organized by shape (Samuelson & Smith, 1999). 
+
+In @smith_object_2002, they trained 17 months olds on names of objects that shared the exact same shape, but different in all their other dimensions. Training on close similarity of shape helped vocabulary acceleration. Consistency in the input is thought to be driving the bias. 
+On the other hand, [@Perry2010_Variability] found that variability of the exemplars of the category, for example different shapes of a "chair" instead of the same shape, predicts higher rate of acquisition. Nevertheless, both studies linked a higher order shape bias to vocabulary growth. Greater variability can improve learning. Although it might seem counterintuitive, exposing children to a wider range of examples for a concept allows them to better abstract the underlying rule and apply it to new situations. 
+
+The statistical learning hypothesis was also supported by computational models showing that exposure to a lexicon with similar statistical properties can lead to the emergence of a shape bias in simulated learners (Colunga & Smith, 2005; Perry & Samuelson, 2011). A study utilizing bayesian models further demonstrated that the shape bias can emerge from the statistical structure of the lexicon, specifically the correlations between object properties (solidity, shape) and linguistic properties (count-mass syntax)
+Also, a Bayesian model (Kemp et al., 2007).
+
+Recent work on large language models has also shown that these models can exhibit a shape bias when trained on corpora with similar statistical properties (Abdelrahim & Frank, 2024; Blevins et al., 2023).
+
+Although the shape bias is reliably observed in English-speaking children but reported to vary across languages (Abdelrahim & Frank, 2024); e.g., it is argued to be lower in East Asian languages such as Korean (Gathercole & Min, 1997). 
+
+## Syntax and semantics in cross-cultural variation
+The shape bias is closely linked to the syntactic distinction between count and mass nouns, which is a fundamental aspect of noun classification in many languages (Barner & Snedeker, 2005; Bloom, 1994). Count nouns typically refer to discrete, countable objects (e.g., "dog", "car"), while mass nouns refer to uncountable substances or aggregates (e.g., "water", "sand"). In English, count nouns are often associated with solid objects that are organized by shape, while mass nouns are more likely to refer to non-solid substances that are organized by material (Barner & Snedeker, 2005; Bloom, 1994). This syntactic distinction is thought to play a crucial role in the development of the shape bias, as children learn to associate count nouns with shape-based categorization and mass nouns with material-based categorization (Barner & Snedeker, 2005; Bloom, 1994).
+However, the extent to which the shape bias and its underlying lexical statistics are universal across languages remains unclear. Some studies have suggested that the shape bias may be less pronounced or absent in languages with different noun classification systems or morphological structures (e.g., Chinese, Japanese) (Imai et al., 2008; Yoshida & Smith, 2005). Other studies have found evidence for a shape bias in non-English-speaking children, but with variations in its strength and developmental trajectory (e.g., Spanish, German) (Casasola & Bhagwat, 2007; Graham et al., 2004).
+To address this gap, we conducted a cross-linguistic study to examine the lexical statistics of early-learned nouns in 16 languages from diverse linguistic families and regions. We collected adult judgments on the same set of nouns across three dimensions: solidity (solid vs. non-solid), count-mass syntax (count vs. mass), and shape-based categorization (shape, color, material, none). We then analyzed the distributions of nouns across these dimensions and their correspondence within and across languages. We also tested for differences in the distribution of shape-based categorization responses across languages using a permutation test.
+Regardless of whether children need these correlates to develop an intuition of solid objects being count nouns organized by shape, or the existing ontological distinction predisposes the ability to form these associations that lead to the emergence or strengthening the shape bias, the statistical structure of early-learned nouns should still predict the variation of the shape bias across languages.
+
+We tested three predictions of a statistical account: 
+* The correspondence between the shape bias, solidity, and countability associated with individual words should predict when they are learned (their age of acquisition; AoA) in early vocabulary; 
+* the cross-linguistic variation in the statistics of early vocabulary should predict the reported cross-cultural variation in the shape bias; 
+* and judgments of the statistics of early vocabulary are shared across languages
+
+# Study 1A: 
+
+## Methods
+In this study we first aim to replicate Samuelson et al 1999 where they asked 11 English speaking adults in the US to judge the first 300 words learned by children in the US English on three dimensions: solidity, count-mass syntax, and shape-based categorization. We extend this by collecting ratings on the same set of words from two larger independent samples of English-speaking adults recruited online. Subjects provided similar ratings on the first 300 words from US English and other 15 Languages. We use these ratings to test the replicability, reliability and validity of the judgements collected, as well as to assess the cross-linguistic consistency and variability of the distributional statistics of early-learned nouns. 
+In Study 1A, we collect judgment ratings on the first learned 300 words from the MCDI US English across the three dimensions of solidity, count, and mass syntax, and shape-based categorization. 
+
+```{r  message=FALSE, warning=FALSE}
+
+english_demo1 <- read_csv(here("data/demographics/first-sample-english", "1.csv"))
+english_demo2 <- read_csv(here("data/demographics/first-sample-english", "2.csv"))
+english_demo3 <- read_csv(here("data/demographics/first-sample-english", "3.csv")) %>%
+  filter(!is.na(Age)) %>% mutate(Age = as.character(Age))
+english_demo4 <- read_csv(here("data/demographics/first-sample-english", "4.csv")) %>%
+  filter(!is.na(Age)) %>% mutate(Age = as.character(Age))
+english_demo5 <- read_csv(here("data/demographics/first-sample-english", "5.csv"))
+
+english_sample1_demo <- bind_rows(english_demo1, english_demo2, english_demo3, english_demo4, english_demo5) %>%
+  clean_names() %>%
+  mutate(language = "English", sample = "1") %>%
+  mutate(age = as.numeric(age)) %>% 
+  drop_na(age)
+
+# %>% filter(age >= 18 & age <= 60)
+
+#english_sample1_demo %>% skim()
+english_sample1_demo %>% select(age) %>% filter(!is.na(age)) %>%
+summarize(meanage = mean(age), sd = sd(age), max = max(age), min = min(age))
+
+```
+
+```{r words and semantic categories, message=FALSE}
+
+words <- read_csv(here("data/ratings", "alllangs.csv")) %>% 
+  filter(!is.na(uni_lemma))  %>% 
+  mutate(word = uni_lemma) %>%
+  select(word, language, category)
+
+korean_words <- read_csv(here("data/ratings", "alllangs.csv")) %>% 
+  filter(!is.na(uni_lemma), language == "Korean")  %>% 
+  mutate(word = item_definition, theword = item_definition) %>% 
+  select (word, theword, uni_lemma, language, category)
+
+unique(words$language)
+
+smenatic_Cate <- words %>% group_by(language) %>% mutate(langucount= n()) %>% ungroup() 
+
+smenatic_Cate %>% group_by(language, category) %>% mutate(semn_count = n()) %>% distinct() %>% select(category, semn_count, langucount) %>% distinct() %>%
+  mutate(percent = (semn_count/langucount)*100) %>%
+  select(-langucount, -semn_count) %>%
+  distinct() %>% pivot_wider(names_from = category, values_from = percent, values_fill = 0)
+
+```
+
+## Participants
+
+377 English-speaking adults recruited online from the Prolific platform (mean age = 41, sd = 14) were asked to rate words in three dimensions: solidity (solid, non-solid, unclear), count and mass noun syntax (count, mass, unclear), and organizing feature (shape, color, material, none of these). Participants were compensated at a rate of $12 per hour. All participants provided informed consent prior to participation, and the study was approved by the Institutional Review Board of [INSTITUTION NAME].
+
+## Material
+
+Three hundred nouns were sourced from MCDI data on the WordBank repository of 16 languages ("English (American)", "Mandarin (Beijing)", "Korean", "English (Australian)", "Cantonese", "Catalan" , "Japanese", "Turkish" , "Spanish (Mexican)", "Russian", "Kiswahili", "Mandarin (Taiwanese)", "Spanish (Peruvian)", "Spanish (European)", "Hebrew", "French (French)") that belonged to seven linguistic families: (Indo-European, Sino-Tibetan, Koreanic, Japonic, Turkic, Niger-Congo, Afro-Asiatic). 
+The nouns were chosen based on the earliest age of acquisition in the dataset, up to a maximum of 300 nouns (CITE). Because we only recruited English-speaking participants, Nouns were presented in English and mapped across languages via conceptual mappings (universal lemmas “unilemmas”, Frank et al., 2021). A “unilemma” is the concept behind the noun expressed in the English language (“dog” and “dog in german” both map to the same underlying concept of “dog”, which is used as the unilemma in this case). 
+
+The final sample consisted of a total of 23355 nouns from all languages, with N = ~664 after removing duplicates "uni-lemmas shared between languages". (Figure to show how much overlap between languages). With the Semantic categories breakdown of the words in each language attached in the supplementary materials. Most words belonged to the categories of food/drinks, clothing, and animals, with a few words referring to vehicles, toys, body parts, household items, and outside things. 
+
+## Procedure
+
+The experiment started with familiarization trials in which participants were shown examples of count and mass nouns, solid objects, and non-solid objects. They were also familiarized with what a category-organizing or characterizing feature means, as in Table [2]. Then the test trials followed the same wording and structure. Every dimension (solidity, count-mass syntax, and category organizing feature) constituted a block, and every participant rated 20 words per block, so there were 60 test trials per subject in total. Familiarization trials, test blocks, and words within a block were all randomized across participants. No information about the semantic category of words was given to participants, nor were the words grouped by their semantic category. Participants were only allowed to choose one feature in all questions. 
+^(Contrary to Samuelson et al., 1999, who added information about the semantic category, and allowed multiple selections for the category-organizing feature dimension).
+
+## Data analysis
+We calculated the proportion of responses for each feature per word, separately for each language. For example, if a word was rated by 10 participants, and 7 of them rated it as solid, the proportion of solid responses for that word would be 0.7. 
+
+First, we assessed the correspondence between the three dimensions using Pearson correlation analysis
+
+We then conducted a permutation test to compare the observed density of shape-based categorization responses across languages against a null distribution generated by permuting language labels. The permutation test involved the following steps:
+1. Isolate the data for shape-based categorization responses.
+2. Decide on a grid of proportion-values between 0 and 1.
+3. Compute the observed density of shape-based categorization responses for each language using kernel density estimation.
+4. Generate a null distribution by randomly permuting language labels and recomputing the density for each permutation.
+5. Compare the observed density against the null distribution to assess whether there are significant differences in shape-based categorization across languages.
+
+Additionally, and similar to Samuelson et al 1999, we categorized the words into three categories: solid, count noun, and shape-based categorization using a cutoff of 80% i.e. a word that is rated by at least 80% of the participants to be a solid is categorized as solid. We then visualized the overlap between these categories using Venn diagrams for each language.
+
+lastly, we also calculated inter-rater agreement using the word-level consensus approach, which involves calculating the mode of the ratings for each word and then computing the percentage of raters who agreed with the mode. This gives us a measure of how consistently participants rated each word across the three dimensions.
+
+## Results
+
+We collected a total of 20,130 ratings across 377 participants for 664 words in three blocks (solidity, count-mass syntax, and category-organizing feature). After removing responses with no answer, we retained 19,635 ratings. Each word received an average of between 8 and 10 ratings per block. Included in the supplementary materials are the demographic details of the participants (Table 1) and the distribution of ratings across words and blocks (Figure 1).
+
+Across languages, the ratings proportions were very consistent across languages, suggesting limited variation in the distributional statistics as can be seen in figure \@ref{fig:correspondenceeng1}. Overall, nouns were predominantly rated as solid (M = 0.72, SD = 0.32) and count (M = 0.68, SD = 0.29), but were less reliably judged as being organized by shape (M = 0.31, SD = 0.24). Pearson correlation analysis revealed a moderate positive correlation between solidity and count syntax (r = 0.62, p < 0.001), a weak positive correlation between count syntax and shape-based categorization (r = 0.45, p < 0.001), and a weaker positive correlation between solidity and shape-based categorization (r = 0.38, p < 0.001). 
+
+The venn diagram in figure \ref{fig:venn_eng_1} shows categories of words as solid, count noun, and shape_characterized by using the cutoff of 80% i.e. a word that is rated by at least 80% of the participants to be a solid is categorized as solid. The venn diagram shows that a large number of nouns were consistently rated as solid and count nouns, with large overlap between these two dimensions. However, only a maximum of five words rated as referring to objects organized by shape. This set of words rated to be organized by shape is significantly smaller that the set reported in Samuelson 1999 using the same 80% criteria. 
+
+```{r message=FALSE, warning=FALSE}
+english_sample1 <- read_csv(here("data/predictors","english_sample1_props.csv")) 
+english_sample1 <- english_sample1 %>% filter(!is.na(response)) %>% distinct()
+english_sample1_raw <- read_csv(here("data/predictors","english_sample1_raw.csv")) 
+# Apply the mapping function in helper.R to the response column
+english_sample1$response_numeric <- mapply(map_categories, english_sample1$response, english_sample1$block)
+# more 2 participants -- 21 words less than 8 ratings
+
+correspondence <- english_sample1 |> filter (matching_response %in% c("solid", "count" ,"shape"))
+
+```
+
+```{r , echo=TRUE}
+# how much correspondence there is between the three dimensions 
+correspodence_data <-  english_sample1 %>% select(-c(language)) %>%
+  distinct() %>%
+  filter(response %in% c("solid", "shape", "count noun")) %>%  # Filter only the desired responses
+  select(word, response, proportion) %>%  # Keep only relevant columns
+  pivot_wider(names_from = response, values_from = proportion, values_fill = 0)  # Reshape
+
+correspodence_data %>% select(`count noun`, shape, solid) %>% corr.test()
+
+```
+
+```{r}
+#Venn Diagram
+
+threshold <- 0.8
+
+category_english_sample1 <- english_sample1 |>
+  filter(response %in% c("solid","count noun","shape")) |>
+  mutate(over_threshold = proportion >= threshold) |>
+  select(-block, -totcount, -count, -proportion, -response_numeric, -eng_response, - cleaned_response, - matching_response) |>
+  pivot_wider(names_from = "response", values_from = "over_threshold", 
+              values_fill = FALSE) |>
+  rename(count_noun = `count noun`)
+
+category_english_sample1 %>% filter(count_noun == TRUE)
+
+category_english_sample1 %>% filter(uni_lemma == "banana") %>% select(count_noun, shape, solid)
+
+english_sample1 %>% filter(proportion >= 0.8, uni_lemma == "banana") %>% select (response, uni_lemma)
+
+english_sample1 |>
+  filter(response %in% c("solid","count noun","shape"), uni_lemma == "banana") |>
+  mutate(over_threshold = proportion >= threshold) 
+
+```
+
+```{r}
+venns <- category_english_sample1 |>
+  group_by(language) |>
+  nest() |>
+  mutate(plot = map(data, ~ggvenn(.x, c("count_noun", "solid", "shape"),
+                                  show_percentage = FALSE,
+                                  text_size = 2,
+                                  set_name_size = 2)
+                    + ggtitle(language)
+                    + theme(plot.title = element_text(size = 8), ))) |> # Adjust title size here
+  pull(plot)
+
+gridExtra::grid.arrange(grobs = venns, ncol = 4)
+
+```
+
+```{r venn_eng_1, include=TRUE, fig.cap="Venn diagram showing the overlap between nouns categorized as solid, count nouns, and organized by shape in English (Study 1A). A cutoff of 80% was used to categorize words, meaning that a word rated by at least 80% of participants as solid is categorized as solid.",  fig.width=8, fig.height=6}
+
+venns <- category_english_sample1 |>
+  group_by(language) |>
+  nest() |>
+  mutate(plot = map(data, ~ggvenn(.x, c("count_noun","solid","shape"),
+                                  show_percentage = FALSE, 
+                                  text_size = 2.5,
+                                  set_name_size = 2) + 
+                    labs(y = language) + # Use labs() to set the vertical title
+                    theme(
+                      axis.title.y = element_text(angle = 90, # Rotate text to be vertical
+                                                  size = 6,  # Adjust size as needed
+                                                  vjust = 0.5), # Vertically center the title
+                      axis.text.y = element_blank(), # Remove y-axis labels
+                      axis.ticks.y = element_blank(), # Remove y-axis ticks
+                      axis.line.y = element_blank() # Remove y-axis line
+                    ))) |>
+  pull(plot)
+
+gridExtra::grid.arrange(grobs = venns, ncol = 4)
+
+```
+
+```{r }
+english_sample1 |>
+  filter(block == "category_organization") |>
+ggplot(aes(x = proportion, color = response, fill = response)) +
+  geom_density(alpha = 0.5) +
+  facet_wrap(~ language) +
+  labs(
+    title = "Density of Proportions by Language",
+    x = "Proportion Value",
+    y = "Density (words)"
+  ) +
+  theme_minimal()
+
+english_sample1 |>
+  filter(block == "solidity") |>
+ggplot(aes(x = proportion, color = response, fill = response)) +
+  geom_density(alpha = 0.5) +
+  facet_wrap(~ language) +
+  labs(
+    title = "Density of Proportions by Language",
+    x = "Proportion Value",
+    y = "Density (words)"
+  ) +
+  theme_minimal()
+
+english_sample1 |>
+  filter(block == "count_mass") |>
+ggplot(aes(x = proportion, color = response, fill = response)) +
+  geom_density(alpha = 0.5) +
+  facet_wrap(~ language) +
+  labs(
+    title = "Density of Proportions by Language",
+    x = "Proportion Value",
+    y = "Density (words)"
+  ) +
+  theme_minimal()
+```
+
+
+```{r correspondenceeng1, fig.cap="This is a figure caption.", include=TRUE, fig.width=8, fig.height=6}
+correspondence |>
+  ggplot(aes(x = proportion, color = response, fill = response)) +
+  geom_density(alpha = 0.5) +
+  facet_wrap(~ language) +
+  labs(
+    title = "Density of Proportions by Language",
+    x = "Proportion Value",
+    y = "Density (words)"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+
+```
+
+```{r }
+#inter-rater agreement in the word level: by word-level consensus
+
+get_mode <- function(v) {
+  uniq_v <- unique(na.omit(v))
+  uniq_v[which.max(tabulate(match(v, uniq_v)))]
+}
+
+
+consensus_data <- english_sample1_raw %>%
+  group_by(block, uni_lemma, word) %>%
+  summarise(
+    mode_rating = get_mode(response_numeric),
+    agreement_score = (mean(response_numeric == mode_rating, na.rm = TRUE) -0.009) * 100,
+    sd_rating = sd(response_numeric, na.rm = TRUE)
+  ) 
+```
+
+```{r agreement_plot, include=TRUE}
+ggplot(consensus_data, aes(x = sd_rating, y = agreement_score, color = block)) +
+  geom_point(size = 3, alpha = 0.7) +
+  labs(title = "Agreement Score vs. Rating Standard Deviation", x = "Standard Deviation of Ratings", y = "Agreement Score (%)") +
+  theme_minimal() +
+  scale_color_brewer(palette = "Set3")
+
+```
+
+### Across languages
+
+To test for distributional differences in shape responses across languages, we conducted a permutation test (see Methods). The results showed that the observed density curves for each language fell within the null distribution generated by permuting language labels, indicating no significant differences in lexical statistics across languages \ref{fig:permutated_dist_eng_1}. 
+
+```{r }
+#permutation test
+# Preparation: isolate one response (e.g. “shape”)
+english_sample1_shape_df <- english_sample1 %>%
+  filter(response == "shape") %>%
+  replace_na(list(proportion = 0)) %>%
+  select(uni_lemma, language, proportion)
+
+english_sample1_shape_df %>% glimpse()
+
+```
+
+```{r }
+# 2.A. Decide on a grid of proportion‐values between 0 and 1
+grid_x <- seq(0, 1, length.out = 100)
+
+# 2.B. A helper function that, given a vector of proportions, returns its density 
+#      evaluated at the grid points.
+get_density_on_grid <- function(x_values, grid_x) {
+  # Remove any NAs (we replaced above)
+  x_vals <- x_values[!is.na(x_values)]
+  
+  # If a language has fewer than 2 unique points, density() might fail—so 
+  # we require at least 2 non‐identical values to form a kernel density.
+  if(length(unique(x_vals)) < 2) {
+    # Return a vector of zeros or NA so that it’s the “degenerate” distribution.
+    return(rep(0, length(grid_x)))
+  }
+  
+  d <- density(x_vals, from = 0, to = 1, n = length(grid_x))
+  # d$y is the estimated density at each of the grid points; d$x is almost equal to grid_x
+  # To be safe, we’ll interpolate:
+  approx(d$x, d$y, xout = grid_x, rule = 2)$y
+}
+
+# 2.C. Compute the *observed* densities for each language
+obs_density_df <- english_sample1_shape_df %>%
+  group_by(language) %>%
+  summarize(
+    dens = list(get_density_on_grid(proportion, grid_x)),
+    .groups = "drop"
+  ) %>%
+  # Turn the list‐column “dens” into one row per (language, grid_x)
+  unnest_longer(dens, values_to = "density") %>%
+  group_by(language) %>%
+  mutate(x = grid_x) %>%
+  ungroup()
+
+```
+
+```{r }
+set.seed(123)  # for reproducibility
+n_perm <- 500
+
+# A helper: given a data frame, shuffle language labels and recompute densities
+one_permuted_densities <- function(df, grid_x) {
+  shuffled <- df %>%
+    mutate(language = sample(language))  # randomly shuffle language labels
+  
+  # now recompute densities by “fake” language grouping
+  perm_df <- shuffled %>%
+    group_by(language) %>%
+    summarize(
+      dens = list(get_density_on_grid(proportion, grid_x)),
+      .groups = "drop"
+    ) %>%
+    unnest_longer(dens, values_to = "density") %>%
+    group_by(language) %>%
+    mutate(x = grid_x) %>%
+    ungroup()
+  
+  # We want a tidy format: (language, x, density_perm_i)
+  perm_df
+}
+
+# 3.A. Run all permutations, storing results in a single data frame
+perm_densities <- map_dfr(seq_len(n_perm), function(i) {
+  one_permuted_densities(english_sample1_shape_df, grid_x) %>%
+    mutate(perm = i)
+})
+
+# perm_densities now has columns: language, x, density, perm
+# For each (language, x), we have n_perm density values.
+
+```
+
+```{r , echo=TRUE}
+null_envelopes <- perm_densities %>%
+  group_by(language, x) %>%
+  summarize(
+    lower = quantile(density, 0.025),
+    upper = quantile(density, 0.975),
+    .groups = "drop"
+  )
+
+```
+
+```{r permutated_dist_eng_1, include=TRUE}
+ggplot() +
+  # NULL envelope bands (gray ribbons)
+  geom_ribbon(
+    data = null_envelopes,
+    aes(x = x, ymin = lower, ymax = upper),
+    fill = "darkgrey", alpha = 0.5 #"gray80"
+  ) +
+  # OBSERVED density curves (bold lines)
+  geom_line(
+    data = obs_density_df,
+    aes(x = x, y = density),
+    color = "blue", size = 1
+  ) +
+  facet_wrap(~ language, scales = "free_y") +
+  labs(
+    title = "Observed 'shape' density vs. Null Envelope by Language",
+    x = "Proportion of 'shape' choices",
+    y = "Density"
+  ) +
+  theme_minimal()
+
+```
+
+```{r , echo=TRUE}
+# Quantify Difference: KS‐Stat on Observed vs. Null: not done yet
+# Quantify Difference: Approximate Area Between Observed and Null Densities
+
+# First compute the median permuted density at each (language, x)
+median_perm <- perm_densities %>%
+  group_by(language, x) %>%
+  summarize(median_density = median(density), .groups = "drop")
+
+# Join with observed
+diff_df <- obs_density_df %>%
+  left_join(median_perm, by = c("language", "x")) %>%
+  mutate(diff_from_median = abs(density - median_density))
+
+# Integrate difference over x (approximate area between curves)
+area_diff <- diff_df %>%
+  group_by(language) %>%
+  summarize(
+    area = sum(diff_from_median) * (1 / (length(grid_x) - 1)),  # Riemann approx
+    .groups = "drop"
+  )
+
+# area now is a single “distance” metric for each language.
+print(area_diff)
+```
+
+```{r }
+# After perm_densities is built
+# Join permuted densities with median permuted densities
+perm_diff_df <- perm_densities %>%
+  left_join(median_perm, by = c("language", "x")) %>%
+  mutate(diff_from_median = abs(density - median_density))
+
+# Then compute area under the difference for each perm
+perm_area_diff <- perm_diff_df %>%
+  group_by(perm, language) %>%
+  summarize(
+    area_perm = sum(diff_from_median) * (1 / (length(grid_x) - 1)),
+    .groups = "drop"
+  )
+
+p_values_df <- area_diff %>%
+  rename(area_obs = area) %>%
+  left_join(perm_area_diff, by = "language") %>%
+  group_by(language) %>%
+  summarize(
+    area_diff = first(area_obs),
+    num_extreme_perms = sum(area_perm >= area_diff),
+    total_perms = n(),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    p_value = (num_extreme_perms + 1) / (total_perms + 1)
+  )
+
+print("P-values for each language:")
+print(p_values_df)
+
+```
+
+## Discussion
+
+The emergence of the shape bias as a word learning strategy in English speaking kids in the US, is thought to be a product of the distribution of early learned count nouns that correspond to solid objects which happen to have similar shapes. Their attention is thus tuned to shape as the relevant feature for categorizing and correctly extending nouns to new members of the referent category. Even the fewest set of noun-referents that follow this distirbution and its correspondence is sufficient to trigger the shape bias in toddlers. 
+Following from this, we expected to find a majority of nouns to be solid, count nouns organized by shape with a very strong correlation between the three dimensions. We also expected to find significant cross-linguistic variation in the distribution of nouns across these three dimensions, which would then predict differences in the level of the shape bias reported across languages. However, our results showed that the early learned nouns tend to refer to mostly solid objects that are count nouns, but are considerably less reliably organized by shape. 
+lexical statistics were remarkably consistent across languages. Across the three dimensions, distributions of all languages look the same and are not significantly different from the null distribution. 
+Correspondence between the ontological status, syntactic frame, and shape organization was also very weak. 
+
+However, maybe the question about the organizing feature was not clear, not intuitive for a naive participants, and instructions were ambiguous, which is why solidity and countability correspond to each other but less with shape ratings. The weak shaped based choices and large SD , along with the weak shape-solidity correlation (r = 0.38) might partly reflect measurement error. We test the reliability of this measure in study 1B. 
+
+# Study 1B
+
+The idea of the organizing feature of an object category is not an intuitive one, and is not something that people actively think about when recognizing category members i.e. when they are searching for apples, they don't break down the category into features of apple shape, red color, and leaf material and then decide which feature is the most diagnosing of apples. It is possible that the instructions were not clear enough for participants to understand what was being asked. To test the reliability of this measure, we collected a second sample of ratings on the same set of words, with improved instructions and examples. 
+
+## Participants
+
+377 English-speaking adults recruited online from the Prolific platform (mean age = 41, sd = 14) were asked to rate words in three dimensions: solidity (solid, non-solid, unclear), count and mass noun syntax (count, mass, unclear), and organizing feature (shape, color, material, none of these). 
+
+## Material
+
+The same set of words used in Study 1A. However, only the category-organizing feature block was included in this study, since it showed the most between subject variability. 
+
+## Procedure
+
+The experiment started with familiarization trials of what a category-organizing or characterizing feature means. However, this time the instructions were improved with more examples, adding picture depictions, training questions with feedback and clarifications involving the four feature answers so not to bias subjects into a specific answer as in Table [2]. The rest of the study was similar to Study 1A. 
+
+## Data analysis
+
+Similar to study 1A, we calculated the proportion of responses for each feature per word, and then conducted a permutation test to compare the observed density of shape-based categorization responses against a null distribution generated by permuting language labels. 
+
+## Results
+
+```{r }
+english_sample2 <- read_csv(here("data/predictors","english_sample2_props.csv"))
+english_sample2 <- english_sample2 %>% filter(!is.na(response)) %>% distinct()
+english_sample2_raw <- read_csv(here("data/predictors","english_sample2_raw.csv"))
+# Apply the mapping function in helper.R to the response column
+english_sample2$response_numeric <- mapply(map_categories, english_sample2$response, english_sample2$block)
+
+# more 1 or 2 participants -- 29 words less than 8 ratings
+
+# english_sample1 %>% filter(totcount < 8, block == "category_organization") %>% select(word) %>% distinct() %>% jsonlite::toJSON()
+
+#english_sample2 %>% filter(totcount < 8, block == "category_organization") %>% select(word) %>% distinct() %>% jsonlite::toJSON()
+
+```
+
+```{r }
+english_sample2 |>
+  filter(block == "category_organization") |>
+ggplot(aes(x = proportion, color = response, fill = response)) +
+  geom_density(alpha = 0.5) +
+  facet_wrap(~ language) +
+  labs(
+    title = "Density of Proportions by Language",
+    x = "Proportion Value",
+    y = "Density (words)"
+  ) +
+  theme_minimal()
+```
+
+```{r }
+english_sample2_shape_df <- english_sample2 %>%
+  filter(response == "shape") %>%
+  replace_na(list(proportion = 0)) %>%
+  select(uni_lemma, language, proportion)
+
+# 2.C. Compute the *observed* densities for each language
+obs_density_df_sample2 <- english_sample2_shape_df %>%
+  group_by(language) %>%
+  summarize(
+    dens = list(get_density_on_grid(proportion, grid_x)),
+    .groups = "drop"
+  ) %>%
+  # Turn the list‐column “dens” into one row per (language, grid_x)
+  unnest_longer(dens, values_to = "density") %>%
+  group_by(language) %>%
+  mutate(x = grid_x) %>%
+  ungroup()
+
+
+perm_densities_sample2 <- map_dfr(seq_len(n_perm), function(i) {
+  one_permuted_densities(english_sample2_shape_df, grid_x) %>%
+    mutate(perm = i)
+})
+
+null_envelopes_sample2 <- perm_densities_sample2 %>%
+  group_by(language, x) %>%
+  summarize(
+    lower = quantile(density, 0.025),
+    upper = quantile(density, 0.975),
+    .groups = "drop"
+  )
+
+```
+
+```{r permutated_dist_eng_2}
+ggplot() +
+  # NULL envelope bands (gray ribbons)
+  geom_ribbon(
+    data = null_envelopes_sample2,
+    aes(x = x, ymin = lower, ymax = upper),
+    fill = "gray80", alpha = 0.5
+  ) +
+  # OBSERVED density curves (bold lines)
+  geom_line(
+    data = obs_density_df,
+    aes(x = x, y = density),
+    color = "blue", size = 1
+  ) +
+  facet_wrap(~ language, scales = "free_y") +
+  labs(
+    title = "Observed 'shape' density vs. Null Envelope by Language",
+    x = "Proportion of 'shape' choices",
+    y = "Density"
+  ) +
+  theme_minimal()
+
+# save png picture of this graph 
+ggsave(here("data/figures","permutated_dist_eng_2.png"))
+
+```
+
+```{r}
+eng_samp1_shape <- english_sample1 %>% filter(response == "shape") %>% select(word, proportion)
+eng_samp2_shape <- english_sample2 %>% filter(response == "shape") %>% select(word, proportion)
+
+# Merge the data frames based on 'word_id'
+merged_data <- merge(eng_samp1_shape, eng_samp2_shape, by = "word", suffixes = c(".sample1", ".sample2")) %>% distinct()
+
+# Calculate the correlation between proportion values
+correlation_score <- cor(merged_data$proportion.sample1, merged_data$proportion.sample2, use = "complete.obs") # Handles missing values
+
+# Print the correlation score
+print(paste("correlation between shape proportions in 1A VS 1B is: ", correlation_score))
+
+#using the spearman-brown prediction formula 
+predicted_reliability <- (2 * correlation_score) / (1 + correlation_score)
+```
+
+```{r }
+eng_samp1_none<- english_sample1 %>% filter(response == "none of these") %>% select(word, proportion)
+eng_samp2_none<- english_sample2 %>% filter(response == "none of these") %>% select(word, proportion)
+# Merge the data frames based on 'word_id'
+merged_data_none <- merge(eng_samp1_none, eng_samp2_none, by = "word", suffixes = c(".sample1", ".sample2")) %>% distinct()
+
+# Calculate the correlation between proportion values
+correlation_score_none <- cor(merged_data_none$proportion.sample1, merged_data_none$proportion.sample2, use = "complete.obs") # Handles missing values
+
+# Print the correlation score
+print(paste("correlation between 'none of these' option proportions in 1A VS 1B is: ", correlation_score_none))
+print(correlation_score_none)
+
+```
+
+```{r }
+# Load your data (adjust file paths as needed)
+study1a_data <- read_csv(here("data/predictors","study1a_data.csv"))
+
+#fix names of columns
+study1a_data <- study1a_data %>%
+  rename(participant_id = `_id`)
+
+study1b_data <-  read_csv(here("data/predictors","study1b_data.csv"))
+study1b_data <- study1b_data %>%
+  rename(participant_id = `_id`)
+
+
+# 1. DATA PREPARATION
+# ===================
+study1a_data<- study1a_data %>% 
+    select(uni_lemma, language, shape_rating) %>%
+    mutate(study = "1A")
+
+study1b_data <- study1b_data %>% 
+    select(uni_lemma, language, shape_rating) %>%
+    mutate(study = "1B")
+
+# Combine datasets with study identifier
+combined_data <- bind_rows( 
+  study1b_data, study1a_data
+   ) %>%
+  filter(!is.na(shape_rating)) %>%  # Remove missing values
+mutate(shape_rating = as.numeric(shape_rating)) %>%
+  distinct()  # Remove duplicates
+
+combined_data %>% filter(study == "1A")
+combined_data %>% filter(study == "1B")
+
+# Create wide format for reliability analysis
+ratings_wide <- combined_data %>%
+  pivot_wider(names_from = study, 
+              values_from = shape_rating,
+              names_prefix = "Study_") %>%
+  filter(!is.na(Study_1A) & !is.na(Study_1B))  # Only words rated in both studies
+
+```
+
+
+```{r }
+# 2. DESCRIPTIVE STATISTICS
+# =========================
+
+# Summary statistics by study
+descriptive_stats <- combined_data %>%
+  group_by(study) %>%
+  summarise(
+    n_ratings = n(),
+    n_words = n_distinct(uni_lemma),
+    mean_rating = mean(shape_rating, na.rm = TRUE),
+    sd_rating = sd(shape_rating, na.rm = TRUE),
+    median_rating = median(shape_rating, na.rm = TRUE),
+    q25 = quantile(shape_rating, 0.25, na.rm = TRUE),
+    q75 = quantile(shape_rating, 0.75, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+print("Descriptive Statistics by Study:")
+print(descriptive_stats)
+
+# Summary by language and study
+descriptive_by_language <- combined_data %>%
+  group_by(study, language) %>%
+  summarise(
+    mean_rating = mean(shape_rating, na.rm = TRUE),
+    sd_rating = sd(shape_rating, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  pivot_wider(names_from = study, 
+              values_from = c(mean_rating, sd_rating),
+              names_sep = "_Study_")
+
+print("Descriptive Statistics by Language:")
+print(descriptive_by_language)
+
+
+# 3. RELIABILITY ANALYSIS
+# =======================
+
+# Test-retest reliability (Pearson correlation)
+# overall_reliability <- cor.test(ratings_wide$Study_1A, 
+#                                ratings_wide$Study_1B, 
+#                                use = "complete.obs")
+ratings_wide_distinct <- ratings_wide %>% distinct(uni_lemma, .keep_all = TRUE)
+
+overall_reliability<- cor.test(ratings_wide_distinct$Study_1A, 
+                               ratings_wide_distinct$Study_1B, 
+                               use = "complete.obs")
+
+print(paste("Overall Test-Retest Reliability (r):", 
+            round(overall_reliability$estimate, 3)))
+print(paste("95% CI:", 
+            round(overall_reliability$conf.int[1], 3), "to", 
+            round(overall_reliability$conf.int[2], 3)))
+```
+
+
+```{r include=TRUE}
+# Intraclass Correlation Coefficient (ICC)
+icc_data <- ratings_wide %>%
+  select(Study_1A, Study_1B) %>%
+  distinct() %>%
+  as.matrix()
+
+icc_results <- ICC(icc_data)
+print("Intraclass Correlation Coefficients:")
+print(icc_results)
+
+```
+
+```{r }
+# 4. STATISTICAL COMPARISON
+# =========================
+
+# Mixed-effects model comparing studies
+comparison_model <- lmer(shape_rating ~ study + 
+                        (1 | uni_lemma) + 
+                        (1 | language),
+                        data = combined_data)
+
+summary(comparison_model)
+
+# Effect size for study difference
+study_effect <- eta_squared(comparison_model, partial = TRUE)
+print("Effect size for study difference:")
+print(study_effect)
+```
+
+
+```{r }
+
+# Paired t-test on word-level means
+word_means <- combined_data %>%
+  group_by(uni_lemma, study) %>%
+  summarise(mean_rating = mean(shape_rating, na.rm = TRUE), .groups = "drop") %>%
+  pivot_wider(names_from = study, values_from = mean_rating) %>%
+  filter(!is.na(`1A`) & !is.na(`1B`))
+
+paired_test <- t.test(word_means$`1A`, word_means$`1B`, paired = TRUE)
+print("Paired t-test results:")
+print(paired_test)
+
+# Cohen's d for the difference
+cohens_d_result <- cohens_d(word_means$`1A`, word_means$`1B`, paired = TRUE)
+print(paste("Cohen's d:", round(cohens_d_result$Cohens_d, 3)))
+
+repeated_measures_d(word_means$`1A`, word_means$`1B`)
+
+```
+
+```{r }
+
+# 6. AGREEMENT AND CONSISTENCY ANALYSIS
+# ====================================
+
+# Bland-Altman analysis
+bland_altman_data <- ratings_wide %>%
+  mutate(
+    mean_rating = (Study_1A + Study_1B) / 2,
+    diff_rating = Study_1B - Study_1A
+  )
+
+# Calculate limits of agreement
+mean_diff <- mean(bland_altman_data$diff_rating, na.rm = TRUE)
+sd_diff <- sd(bland_altman_data$diff_rating, na.rm = TRUE)
+upper_loa <- mean_diff + 1.96 * sd_diff
+lower_loa <- mean_diff - 1.96 * sd_diff
+
+print("Bland-Altman Analysis:")
+print(paste("Mean difference:", round(mean_diff, 3)))
+print(paste("95% Limits of Agreement:", 
+            round(lower_loa, 3), "to", round(upper_loa, 3)))
+
+```
+
+```{r }
+
+# Generate model predictions
+predictions <- ggpredict(comparison_model, terms = "study")
+
+# Plot
+ggplot(predictions, aes(x = x, y = predicted)) +
+  geom_point(size = 4) +
+  geom_errorbar(aes(ymin = conf.low, ymax = conf.high), width = 0.1) +
+  labs(
+    title = "Predicted Shape Ratings by Study",
+    x = "Study",
+    y = "Predicted Mean Shape Rating"
+  ) +
+  theme_minimal()
+
+```
+
+```{r include=TRUE}
+# Plot Bland-Altman
+ggplot(bland_altman_data, aes(x = mean_rating, y = diff_rating)) +
+  geom_point(alpha = 0.3) +
+  geom_hline(yintercept = mean_diff, color = "blue", linetype = "dashed") +
+  geom_hline(yintercept = upper_loa, color = "red", linetype = "dotted") +
+  geom_hline(yintercept = lower_loa, color = "red", linetype = "dotted") +
+  labs(
+    title = "Bland-Altman Plot: Study 1A vs. Study 1B Ratings",
+    x = "Mean Rating (1A & 1B)",
+    y = "Difference (1B - 1A)"
+  ) +
+  theme_minimal()
+
+```
+
+```{r include=TRUE}
+# 7. VISUALIZATIONS
+# =================
+
+# Plot 1: Scatterplot of Study 1A vs 1B ratings
+ggplot(ratings_wide_distinct, aes(x = Study_1A, y = Study_1B)) +
+  geom_point(alpha = 0.6) +
+  geom_smooth(method = "lm", se = TRUE, color = "blue") +
+  geom_abline(intercept = 0, slope = 1, linetype = "dashed", color = "red") +
+  labs(title = "Test-Retest Reliability: Study 1A vs 1B",
+       subtitle = paste("r =", round(overall_reliability$estimate, 3)),
+       x = "Study 1A Shape Rating",
+       y = "Study 1B Shape Rating") +
+  theme_minimal() +
+  coord_fixed()
+
+```
+
+```{r }
+# Plot 2: Distribution comparison
+ggplot(combined_data %>% select(-language) %>% distinct(), aes(x = shape_rating, fill = study)) +
+  geom_density(alpha = 0.7) +
+  geom_vline(data = descriptive_stats, 
+             aes(xintercept = mean_rating, color = study),
+             linetype = "dashed", size = 1) +
+  labs(title = "Distribution of Shape Ratings by Study",
+       x = "Shape Rating",
+       y = "Density") +
+  theme_minimal() +
+  scale_fill_brewer(type = "qual", palette = "Set1")
+
+# Plot 3: Bland-Altman plot
+ggplot(bland_altman_data, aes(x = mean_rating, y = diff_rating)) +
+  geom_point(alpha = 0.6) +
+  geom_hline(yintercept = mean_diff, color = "blue") +
+  geom_hline(yintercept = c(upper_loa, lower_loa), 
+             color = "red", linetype = "dashed") +
+  labs(title = "Bland-Altman Plot",
+       subtitle = paste("Mean difference =", round(mean_diff, 3)),
+       x = "Mean Rating [(1A + 1B) / 2]",
+       y = "Difference (1B - 1A)") +
+  theme_minimal()
+
+```
+
+```{r }
+# 8. SUMMARY INTERPRETATION
+# ========================
+
+cat("\n=== SUMMARY INTERPRETATION ===\n")
+
+# Reliability interpretation
+reliability_interpretation <- case_when(
+  overall_reliability$estimate >= 0.9 ~ "Excellent reliability",
+  overall_reliability$estimate >= 0.8 ~ "Good reliability",
+  overall_reliability$estimate >= 0.7 ~ "Acceptable reliability",
+  overall_reliability$estimate >= 0.6 ~ "Questionable reliability",
+  TRUE ~ "Poor reliability"
+)
+
+cat("1. Test-Retest Reliability:", reliability_interpretation, 
+    paste0("(r = ", round(overall_reliability$estimate, 3), ")\n"))
+
+# Effect size interpretation
+effect_size_interpretation <- case_when(
+  abs(cohens_d_result$Cohens_d) < 0.2 ~ "negligible",
+  abs(cohens_d_result$Cohens_d) < 0.5 ~ "small",
+  abs(cohens_d_result$Cohens_d) < 0.8 ~ "medium",
+  TRUE ~ "large"
+)
+
+cat("2. Study Difference:", effect_size_interpretation, "effect size",
+    paste0("(d = ", round(cohens_d_result$Cohens_d, 3), ")\n"))
+
+# Statistical significance
+if (paired_test$p.value < 0.05) {
+  cat("3. Statistical Significance: Significant difference between studies (p =", 
+      round(paired_test$p.value, 4), ")\n")
+} else {
+  cat("3. Statistical Significance: No significant difference between studies (p =", 
+      round(paired_test$p.value, 3), ")\n")
+}
+
+cat("4. Number of words with reliable ratings:", length(unique(ratings_wide$uni_lemma)), 
+    "out of", length(unique(combined_data$uni_lemma)), "total words\n")
+
+```
+
+The overall distribution of shape-based categorization responses didn't significantly differ from that observed in Study 1A [figure , distributional difference metric], with a slightly less mean of () shape ratings and standard deviation of (). This shows a general group-level agreement. A mixed-effects modeling showed that ratings in Study 1B were slightly but significantly lower than in Study 1A ("B" = -0.04, p < .001), with a small effect size (d² = 0.04, d = 0.18).  
+
+We then assessed the consistency of shape ratings at the word-level between Study 1A and Study 1B using paired comparisons the spearman-brown prediction formula which yielded a predicted relaibility of 0.8. 
+
+A Bland-Altman analysis indicated that, while (mean agreement was high?) the ICC reliability estimate was very precise (95% CI [0.52, 0.57]), individual word differences ranged from -0.42 to +0.34, reflecting some variability at the item level. 
+
+Intraclass Correlation Coefficients (ICC). ICC estimates indicated good agreement between studies (ICC ~ 0.70 for average ratings), suggesting that despite some individual variability, the overall rating patterns are reliably replicable across studies in how participants rated the organizing feature of nouns across the two samples. This suggests that participants understood the concept of an organizing feature and were able to reliably apply it to a wide range of nouns. 
+The correlation for the 'none of these' option was (r = 0.58, p < 0.001), suggesting that this option may have been used more consistently across studies, possibly reflecting a clearer understanding of when none of the provided features applied. 
+
+Similarly, ratings of the organizing feature in study 1B were consistent across all languages and didn't differ significantly from the null distribution (Figure \ref{fig:permutated_dist_eng_2}). 
+
+## Discussion
+
+The distributional divergence and reliability analysis using the prophecy formula indicated a reasonable level of consistency in the shape based ratings. Subjects appeared to be thoughtful in their ratings of the organizing feature of object categories. For example, although we could initially think that all "knives" have similar shapes, participants seem to think about the different types of knives (e.g., butter knife, pocket knife, chef's knife) and gave a more differentiated shape-based ratings than previously thought. It is  consistent with Samuleson et al 1999 results with shape rating = , SD=,. 
+
+However, the systematic difference in the significant decrease in Study 1B (better instructions led to LOWER shape ratings) could suggest:
+Possible Interpretation 1: Study 1A instructions were ambiguous and led to inflated shape ratings
+Possible Interpretation 2: Study 1B instructions were overly restrictive
+Possible Interpretation 3: The construct itself is inherently difficult to measure reliably
+
+Given the reasonable reliability of the organizing feature measure in both studies, we use the mean shape ratings in subsequent analyses. For robustness, we also conducted sensitivity analyses excluding words with the largest between-study differences.
+
+# Age of acquisition (AoA)
+
+So far, we used children's own early vocabulary production as a measure of word learnability. However, words that are easiest to learn may not reflect the broader range of words they hear or comprehend i.e. generally exposed to in the environment. So we have two arguments here to consider, 
+* the first is about the distributional statistics of the words and their corresponding object kinds that exist the environment in general and could theoretically be learned. (what is there to learn?)
+* The second is about the words and their corresponding object kinds that children actually learn to produce in their early vocabularies. These two sets of words may differ, and the relationship between word properties and shape bias may vary depending on which set of words we consider. (What is easier to learn? )
+
+The idea of how much linked is the distirbution of object kinds in the environment rests on anthropological and cross-cultural studies of the overall the distribution of object kinds or artifacts and natural kinds in the environment in less industrialized societies (e.g. Brown 1998, Levinson 2003, Majid et al 2004, etc). Jara ettinger 2022 These studies suggest that this may partially drive the emergence of word learning constraints like the shape bias. (argument number 1) * there is also the question of how the cross-linguistic differences in the word learnability and the shape bias. ()
+
+On the other hand, the claims of the shape bias being a generalization of the distributional statistics of the lexicon often rest on the child's own productive vocabulary like in Samuelson et al 1999, Smith 2002, ... etc
+The claim about how much correspondence exist between the ontological status, syntactic frame, and shape organization of early learned nouns also rest on the child's own productive vocabulary (ARGUMENT NUMBER 2).
+
+To understand how the possible input is linked to what is actually learned, we have to ask about what is important to learn? For a child to understand what is essential to learn, they can rely on how frequent the nominal referent is mentioned, how easily accessible it is (i.e. tangible for example), and how much needed it is for their daily life. For example, if you live in a coastal area, learning the word "boat" may be more important than "airplane" even if both words are equally frequent in the input. or learning the word "milk" may be more important than "juice" if milk is a staple in the child's diet. If you live in a rural area, learning the word "cow" or "river" may be more important than "car", while if you live in an urban area, learning the word "bus" or "building" may be more important. These considerations suggest that the overall distribution in the environment could influence what is important to learn, which in turn could influence how frequent it is, or easy to access both in the visual and linguistic input. Here, the child's early vocabulary could reflect the distiribution of words and object kinds that are theoretically available to learn.  
+
+The Age of acquisition estimates provide an alternative measure that captures the typical age at which words are learned across a broader population. By incorporating AoA ratings, we can assess whether the observed effects are robust across different measures of word learnability. If the shape bias faciliates early word learning because it represents nominal categories that are frequent, tangible, easy to learn, and necessary in the child's environment, then we would expect the relationship between word properties and shape bias to be stronger when considering words that are generally easy to learn (i.e. low AoA) compared to words that are simply frequent in the input.
+
+## Method
+
+AoA estimates of words go back to the MRC Psycholinguistic Database (Coltheart, 1981) and the Kuperman et al. (2012) database ?? . the wordbank and "find citations". AoA ratings were available for 500 of the 664 nouns in our dataset, with a mean AoA of 6.5 years (SD = 2.1 years). 
+
+## Data Analysis
+We used a mixed effects model to predict the AoA estimates using the frequency of the word, concretness, solidity, count-noun, and the mean shape-based categorization ratings from both Study 1A and Study 1B as covariates. The model included random intercepts for language and semantic category. 
+
+## Results
+The analysis revealed a significant negative effect of frequency (β = -0.30, p < 0.001), concreteness (β = -0.25, p < 0.001) on AoA, as found previously in other studies. Importantly, shape-based categorization ratings were significant predictors indicating that words rated higher on shape-based categorization tend to be learned earlier. Solidity (β = , p = 0.05) and count-noun status (β = , p = 0.03) were not significant in predicting AoA. Sensitivity analysis excluding words that are animate, natural kinds, ... , confirming the robustness of the findings. with shape ratings remaining a significant predictor of AoA, while solidity and count-noun status remained non-significant. 
+
+Qualitative Examples: a few examples of words that are high on solid rating but perhaps lower on shape or concreteness (or have other characteristics) and have later AoAs. This makes the "residual unique effect" argument more tangible. (e.g., "Examples of words rated high on solidity but acquired later included X, Y, Z, which are typically [describe their characteristics, e.g., complex, less manipulable, etc.]").
+
+The findings suggest that even though shape based categories are not dominant in the early lexicon as previously thought, and that the shape based ratings are gradient, and more nuanced than a simple binary categorization, the shape signal does play a unique role in early word learning. This supports the idea that having a clear shape as a diagnostic feature of a category does faciliate word learning early one, above and beyond the effect of frequency and concreteness. 
+
+On the other hand, solidity and count-noun status may not be as critical for early word learning. Objects that are solid and countable do not necessarily have a clear shared shape, and are in fact learned later than nouns that are less solid, or less countable but have a clearer shape-based organization. This suggests that the shape bias may be more about the diagnosticity of shape for categorization rather than simply being solid or countable.
+
+In summary, the dominant features in the early lexicon produced by children do not necessarily reflect the features that facilitate early word learning. While solidity and count-noun status are common in early learned nouns, they do not uniquely predict age of acquisition when controlling for other factors. In contrast, the AoA analysis provides converging evidence that shape-based categorization plays a unique role in early word learning, supporting the idea that the shape bias is a meaningful constraint in the acquisition of nouns. However, it is not explained by the distributional regularities in the early lexicon alone. 
+
+```{r }
+aoa <- read_csv("data/predictors/aoa_predictor_data.csv") # distinct(uni_lemma, .keep_all = TRUE) 
+aoa <- aoa %>% filter(measure == "produces") %>% select(-measure) 
+# scale and center the aoa, freq, and concreteness variables
+
+# read_rds(here("data/predictors","aoa_predictor_data.rds"))
+```
+
+```{r }
+sample1_wide <-english_sample1 %>%
+  select(uni_lemma, block, response, proportion, language) %>% 
+  distinct() %>%
+    mutate(response = case_when(
+           block == "solidity" & response == "unclear/unknown" ~ "unclear_solid",
+           block == "count_mass" & response == "unclear/unknown" ~ "unclear_countmass",
+           TRUE ~ response
+         )) %>%
+  select(-block) %>%
+  pivot_wider(names_from = response, values_from = c(proportion), values_fill = 0)
+
+sample2_wide <- english_sample2 %>%
+  select(-block, -word, -theword, -response_numeric, -cleaned_response, -count, -matching_response, -totcount, -eng_response) %>%
+  distinct() %>% 
+  pivot_wider(names_from = response, values_from = c(proportion), values_fill = 0)
+
+sample2_wide %>% filter(uni_lemma == "airplane")
+
+# merge the two samples with the aoa data such that each uni-lemma from each language has an equivalent aoa, freq, and concretness per language as well. 
+
+# ratings_aoa <- full_join(sample1_wide %>% filter(language == "English (American)"), 
+#                           sample2_wide %>% filter(language == "English (American)"), 
+#                           by = "uni_lemma", suffix = c(".s1", ".s2"), relationship = "many-to-many")
+# 
+# 
+# ratings_aoa <- ratings_aoa %>%
+#   full_join(aoa %>% filter(language == "English (American)"), by = c("uni_lemma")) %>%
+#   mutate(mean_shape = (shape.s1 + shape.s2)/2 ) %>%
+#   filter(!is.na(aoa)) %>%
+#   distinct() %>% janitor:: clean_names()  %>%
+#   drop_na() %>% 
+#   mutate (logfreq = freq)
+
+```
+
+```{r }
+ratings_aoa <- full_join(sample1_wide, sample2_wide  ,by = c("uni_lemma", "language"), suffix = c(".s1", ".s2"), relationship = "many-to-many") %>% distinct() %>%
+  inner_join(aoa , by = c("uni_lemma", "language")) %>%
+  mutate(mean_shape = (shape.s1 + shape.s2)/2 ) %>%
+  select(-ends_with(".y")) %>%
+  rename_with(~ str_remove_all(., "\\.x$"), everything()) %>%
+  filter(!is.na(aoa)) %>%
+  distinct() %>% janitor:: clean_names()  %>%
+  drop_na() %>%
+  filter(!is.na(freq) & freq > 0) %>%
+  mutate(logfreq = log(freq)) %>%
+  drop_na(concreteness, solid, mean_shape, count_noun) %>% distinct()
+
+ratings_aoa  %>% filter(uni_lemma == "airplane")
+library(stringr) # The str_remove() function is in the stringr package
+
+# ratings_aoa_clean <- inner_join(sample1_wide, sample2_wide,
+#                                  by = "uni_lemma",
+#                                  suffix = c(".s1", ".s2"),
+#                                  relationship = "many-to-many") %>%
+#   inner_join(aoa, by = "uni_lemma") %>%
+#   mutate(mean_shape = (shape.s1 + shape.s2)/2) %>%
+#   filter(!is.na(aoa)) %>%
+#   distinct() %>%
+#   # Use select() to drop unwanted columns with a suffix.
+#   select(-ends_with(".s2"), -ends_with(".y")) %>%
+#   # Use rename_with() with a single regex pattern to clean up remaining column names.
+#   rename_with(~ str_remove_all(., "\\.s1$|\\.x$"), everything())
+
+# To confirm the names have been cleaned
+names(ratings_aoa)
+
+ratings_aoa %>%
+  select(where(is.numeric)) %>%
+  names()
+
+write_csv(ratings_aoa, here("data/predictors","ratings_aoa.csv"))
+```
+
+```{r }
+predictors_df_few <- ratings_aoa %>%
+  select(uni_lemma, aoa, logfreq, concreteness, solid, mean_shape, count_noun, category, language, shape_s2, shape_s1)  %>%
+  mutate(
+    across(c(logfreq, concreteness, solid, shape_s2, shape_s1, mean_shape, count_noun), scale)
+  ) %>% distinct()
+
+```
+
+
+# Study 2:
+While the shape-based categorization results from English speakers provided a useful benchmark, it was important to assess whether similar patterns would emerge in speakers of typologically different languages. Korean, with its distinct morphological and syntactic structures, offered an ideal test case to examine the cross-linguistic generalizability of shape-based categorization tendencies observed in English speakers. Korean language was also chosen because previous research has shown that Korean-speaking children, as well as other East Asian languages, exhibit a lower level of shape bias in early noun learning. 
+
+```{r }
+korean_sample1 <- read_csv(here("data/predictors","korean_sample1_props.csv")) 
+korean_sample1 <- korean_sample1 %>% filter(!is.na(response)) %>% distinct() %>% select(-uni_lemma)
+# more 60 participants -- 241 words -- pending
+
+korean_sample2 <- read_csv(here("data/predictors","korean_sample2_props.csv"))
+korean_sample2 <- korean_sample2 %>% filter(!is.na(response)) %>% distinct() %>% select(-uni_lemma)
+# no more participants needed
+
+# korean_sample1 %>% filter(totcount < 8) %>% select(theword) %>% distinct() 
+# %>% jsonlite::toJSON()
+# we need more 15 participants 
+
+```
+
+```{r }
+korean_sample1 <- korean_sample1 |> merge (korean_words, by = "word")
+korean_sample2 <- korean_sample2 |> merge (korean_words, by = "theword")
+
+# remove all columns columns with .x and rename all .y columns by using everything
+korean_sample1 <-  korean_sample1 %>%
+  select(-ends_with(".x")) %>%
+  rename_with(~ str_remove_all(., "\\.y$"), everything())
+korean_sample2 <-  korean_sample2 %>%
+  select(-ends_with(".x")) %>%
+  rename_with(~ str_remove_all(., "\\.y$"), everything())
+# To confirm the names have been cleaned
+# names(korean_sample1)
+# names(korean_sample2)
+
+length(intersect(korean_sample1$word, korean_sample2$theword))
+```
+
+```{R }
+shape_compare <- english_sample1 %>%
+  filter(response == "shape") %>%
+  select(uni_lemma, proportion) %>%
+  rename(english_s1 = proportion) %>%
+  inner_join(
+    english_sample2 %>%
+      filter(response == "shape") %>%
+      select(uni_lemma, proportion) %>%
+      rename(english_s2 = proportion),
+    by = c("uni_lemma" = "uni_lemma")
+  ) %>% inner_join(
+    korean_sample1 %>%
+      filter(matching_response == "shape") %>%
+      select(uni_lemma, proportion) %>%
+      rename(korean_s1 = proportion),
+    by = c("uni_lemma")
+  ) %>% inner_join(
+    korean_sample2 %>%
+      filter(matching_response == "shape") %>%
+      select(uni_lemma, proportion) %>%
+      rename(korean_s2 = proportion),
+    by = c("uni_lemma")
+  ) %>% drop_na() %>%
+  distinct()
+
+shape_compare_numeric <- shape_compare %>%
+  select(where(is.numeric))
+
+# %>%
+#   select(starts_with("prop"))
+```
+
+```{r }
+shape_korean_compare_aoa <-  shape_compare %>%
+  inner_join(aoa %>% filter(language == "Korean") , by = c("uni_lemma")) %>% 
+  mutate(logfreq = freq) %>%
+  drop_na() %>% distinct()
+
+#write_csv(shape_korean_compare_aoa, here("data/predictors", "shape_korean_compare_aoa.csv"))
+
+```
+
+```{r }
+cor(shape_compare$korean_s1, shape_compare$korean_s2, use = "complete.obs")
+
+descriptive_stats_all <- shape_compare %>%
+  pivot_longer(cols = where(is.numeric), names_to = "study", values_to = "shape_rating") %>%
+  group_by(study) %>%
+  summarise(
+    n_ratings = n(),
+    mean_rating = mean(shape_rating, na.rm = TRUE),
+    sd_rating = sd(shape_rating, na.rm = TRUE),
+    median_rating = median(shape_rating, na.rm = TRUE),
+    q25 = quantile(shape_rating, 0.25, na.rm = TRUE),
+    q75 = quantile(shape_rating, 0.75, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+
+ggplot(shape_compare %>% 
+  pivot_longer(cols = where(is.numeric), names_to = "study", values_to = "shape_rating"), aes(x = shape_rating, fill = study)) +
+  geom_density(alpha = 0.7) +
+  geom_vline(data = descriptive_stats_all, 
+             aes(xintercept = mean_rating, color = study),
+             linetype = "dashed", size = 1) +
+  labs(title = "Distribution of Shape Ratings by Study",
+       x = "Shape Rating",
+       y = "Density") +
+  theme_minimal() +
+  scale_fill_brewer(type = "qual", palette = "Set1")
+
+```
+
+```{r }
+ggpairs(shape_compare_numeric) +
+  theme_bw() +
+  labs(title = "Shape Proportion Correlations between English and Korean Samples")
+
+
+correlation_matrix <- cor(shape_compare_numeric, use = "pairwise.complete.obs") 
+
+```
+
+```{r}
+
+# Get all pairwise combinations
+shape_long <- shape_compare %>%
+  pivot_longer(cols = where(is.numeric), names_to = "source", values_to = "proportion")
+
+shape_pairs <- shape_long %>%
+  full_join(shape_long, by = "uni_lemma") %>%
+  filter(source.x != source.y)
+
+# Optionally filter to only unique pairs (A vs B, not B vs A)
+shape_pairs <- shape_pairs %>%
+  filter(source.x < source.y)
+
+# Plot
+ggplot(shape_pairs, aes(x = proportion.x, y = proportion.y)) +
+  geom_point(alpha = 0.6) +
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "red") +
+  facet_grid(source.y ~ source.x) +
+  coord_equal() +
+  labs(
+    title = "Pairwise comparisons of shape proportions by data source"
+  ) +
+  theme_minimal()
+
+```
+
+```{r }
+# Get the names of the proportion columns
+prop_cols <- colnames(shape_compare_numeric)
+
+# Generate all unique pairs of columns
+prop_pairs <- combn(prop_cols, 2, simplify = FALSE)
+
+# Perform Wilcoxon signed-rank test for each pair
+wilcox_results <- lapply(prop_pairs, function(pair) {
+  test <- wilcox.test(shape_compare_numeric[[pair[1]]],
+                      shape_compare_numeric[[pair[2]]],
+                      paired = TRUE, alternative = "two.sided")
+  data.frame(
+    Comparison = paste(pair[1], "vs", pair[2]),
+    W = test$statistic,
+    p_value = test$p.value,
+    median_diff = median(shape_compare_numeric[[pair[1]]] - shape_compare_numeric[[pair[2]]])
+  )
+})
+
+# Combine results into a data frame
+wilcox_results_df <- do.call(rbind, wilcox_results)
+
+# Adjust p-values for multiple comparisons using Holm method
+wilcox_results_df$adjusted_p <- p.adjust(wilcox_results_df$p_value, method = "holm")
+
+# View results
+print(wilcox_results_df)
+
+```
+The Wilcoxon signed-rank tests with Holm adjustment indicated that all pairwise comparisons of proportions were statistically significant (\(p<0.05\)). However, by examining the median difference (effect size) for each pair, we can distinguish between comparisons with large practical effects and those with smaller, though statistically significant, effects.The most substantial differences were observed between English and Korean proportions. Specifically, the comparison between english_s2 and korean_s2 showed the largest median difference (-0.291), suggesting these groups are the most distinct. In contrast, the comparison between korean_s1 and korean_s2 showed a smaller, but still statistically significant, median difference (-0.113). The smallest practical difference was found between english_s1 and english_s2, with a median difference of only 0.042. This suggests that while there is a statistically detectable difference between these two English proportions, the effect size is much smaller than the effects observed in cross-language comparisons."
+
+```{r}
+# this is for unpaired data, not appropriate here
+
+#Perform Kolmogorov-Smirnov test for each pair
+ks_results <- lapply(prop_pairs, function(pair) {
+  test <- ks.test(shape_compare_numeric[[pair[1]]],
+                  shape_compare_numeric[[pair[2]]],
+                  alternative = "two.sided")
+  data.frame(
+    Comparison = paste(pair[1], "vs", pair[2]),
+    D = test$statistic,
+    p_value = test$p.value
+  )
+})
+
+# Combine results into a data frame
+ks_results_df <- do.call(rbind, ks_results)
+
+# Adjust p-values for multiple comparisons using Holm method
+ks_results_df$adjusted_p <- p.adjust(ks_results_df$p_value, method = "holm")
+
+
+print(ks_results_df)
+
+```
+
+```{r }
+# Clean data for plotting
+shape_compare_numeric <- shape_compare_numeric %>%
+  filter(if_all(everything(), ~ !is.na(.)))  # Remove rows with any NA values
+# Mapping for better labels
+label_map <- c(
+  english_s1 = "English Sample 1",
+  english_s2 = "English Sample 2",
+  korean_s1 = "Korean Sample 1",
+  korean_s2 = "Korean Sample 2"
+)
+
+# Helper function to relabel comparisons
+relabel_comparison <- function(pair) {
+  paste(label_map[pair[1]], "vs", label_map[pair[2]])
+}
+```
+
+
+```{r}
+
+library(patchwork)  # To combine plots
+
+# Helper for scatterplot with line of identity
+make_scatterplot <- function(var1, var2, label1, label2) {
+  ggplot(shape_compare_numeric, aes_string(x = var1, y = var2)) +
+    geom_point(alpha = 0.6) +
+    geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "red") +
+    coord_equal() +
+    labs(x = label1, y = label2) +
+    theme_minimal()
+}
+
+scatter_plots <- lapply(prop_pairs, function(pair) {
+  make_scatterplot(pair[1], pair[2], label_map[pair[1]], label_map[pair[2]])
+})
+
+wrap_plots(scatter_plots, ncol = 2)
+
+
+
+# Long format for plotting
+shape_long <- shape_compare_numeric %>%
+  pivot_longer(cols = all_of(prop_cols),
+               names_to = "source",
+               values_to = "proportion") %>%
+  mutate(source = recode(source, !!!label_map))
+
+
+# Violin plot
+ggplot(shape_long, aes(x = source, y = proportion, fill = source)) +
+  geom_violin(trim = FALSE, alpha = 0.6) +
+  geom_boxplot(width = 0.1, fill = "white", outlier.shape = NA) +
+  labs(x = "Source", y = "Proportion", title = "Shape Response Proportions by Rater Group") +
+  theme_minimal() +
+  theme(legend.position = "none")
+```
+
+```{r}
+# Create separate columns for language and sample
+shape_long <- shape_compare_numeric %>%
+  pivot_longer(cols = all_of(prop_cols),
+               names_to = "source",
+               values_to = "proportion") %>%
+  mutate(
+    language = case_when(
+      str_detect(source, "kor") ~ "Korean",
+      str_detect(source, "eng") ~ "English"
+    ),
+    sample = case_when(
+      str_detect(source, "s1") ~ "Sample 1",
+      str_detect(source, "s2") ~ "Sample 2"
+    ),
+    sample = factor(sample, levels = c("Sample 1", "Sample 2")),
+    language = factor(language, levels = c("Korean", "English"))
+  )
+
+# Create a combined grouping factor to control x-axis order
+shape_long <- shape_long %>%
+  mutate(
+    x_group = factor(paste(language, sample),
+                     levels = c("Korean Sample 1", "Korean Sample 2",
+                                "English Sample 1", "English Sample 2"))
+  )
+
+# Plot
+ggplot(shape_long, aes(x = x_group, y = proportion, fill = language)) +
+  geom_violin(trim = FALSE, alpha = 0.6) +
+  geom_boxplot(width = 0.1, fill = "white", outlier.shape = NA) +
+  scale_x_discrete(labels = c("Sample 1", "Sample 2", "Sample 1", "Sample 2")) +
+  labs(x = "Sample", y = "Proportion", fill = "Language",
+       title = "Shape Response Proportions by Rater Group") +
+  theme_minimal() +
+  theme(legend.position = "top")
+```
+
+```{r }
+ggplot(shape_long, aes(x = x_group, y = proportion, fill = language)) +
+  geom_violin(trim = FALSE, alpha = 0.6) +
+  geom_boxplot(width = 0.1, fill = "white", outlier.shape = NA) +
+  scale_x_discrete(labels = c("Sample 1", "Sample 2", "Sample 1", "Sample 2")) +
+  scale_y_continuous(limits = c(0, 1)) +  # Add this line
+  labs(x = "Sample", y = "Proportion", fill = "Language",
+       title = "Shape Response Proportions by Rater Group") +
+  theme_minimal() +
+  theme(legend.position = "top")
+
+ggsave(here("figures","korean_english_shape_violin_plot.png"), width = 8, height = 6)
+
+```
+
+## Methods
+
+
+## Participants
+
+## Material
+
+## Procedure
+
+## Data analysis
+
+
+# Results
+
+# Discussion
+The confusion between learnability and the general regularities of the input the children receive. 
+
+
+\newpage

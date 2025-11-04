@@ -1,0 +1,2750 @@
+Word,block,response,totcount,theword,proportion
+Animal,category_organization,Form,29,동물,0.5862068965517241
+Animal,category_organization,"Form, Color",29,동물,0.06896551724137931
+Animal,category_organization,"Form, Color, Material",29,동물,0.13793103448275862
+Animal,category_organization,"Form, Material",29,동물,0.10344827586206896
+Animal,category_organization,Material,29,동물,0.034482758620689655
+Animal,category_organization,Not applicable,29,동물,0.06896551724137931
+Animal,count_mass,Can be counted,37,동물,0.6756756756756757
+Animal,count_mass,Cannot be counted,37,동물,0.02702702702702703
+Animal,count_mass,I don't know/It's hard to say,37,동물,0.2972972972972973
+Animal,solidity,I don't know/It's hard to say,32,동물,0.34375
+Animal,solidity,Not a solid,32,동물,0.09375
+Animal,solidity,Solid,32,동물,0.5625
+Ankle,category_organization,Form,29,발목,0.8620689655172413
+Ankle,category_organization,"Form, Material",29,발목,0.10344827586206896
+Ankle,category_organization,Material,29,발목,0.034482758620689655
+Ankle,count_mass,Can be counted,36,발목,0.8055555555555556
+Ankle,count_mass,I don't know/It's hard to say,36,발목,0.19444444444444445
+Ankle,solidity,I don't know/It's hard to say,29,발목,0.2413793103448276
+Ankle,solidity,Not a solid,29,발목,0.10344827586206896
+Ankle,solidity,Solid,29,발목,0.6551724137931034
+Ant,category_organization,Color,29,개미,0.034482758620689655
+Ant,category_organization,Form,29,개미,0.6206896551724138
+Ant,category_organization,"Form, Color",29,개미,0.10344827586206896
+Ant,category_organization,"Form, Color, Material",29,개미,0.10344827586206896
+Ant,category_organization,"Form, Material",29,개미,0.10344827586206896
+Ant,category_organization,Material,29,개미,0.034482758620689655
+Ant,count_mass,Can be counted,37,개미,0.7027027027027027
+Ant,count_mass,Cannot be counted,37,개미,0.08108108108108109
+Ant,count_mass,I don't know/It's hard to say,37,개미,0.21621621621621623
+Ant,solidity,I don't know/It's hard to say,29,개미,0.27586206896551724
+Ant,solidity,Not a solid,29,개미,0.10344827586206896
+Ant,solidity,Solid,29,개미,0.6206896551724138
+Anus,category_organization,Form,29,똥꼬,0.7586206896551724
+Anus,category_organization,"Form, Color",29,똥꼬,0.034482758620689655
+Anus,category_organization,"Form, Material",29,똥꼬,0.13793103448275862
+Anus,category_organization,Material,29,똥꼬,0.034482758620689655
+Anus,category_organization,Not applicable,29,똥꼬,0.034482758620689655
+Anus,count_mass,Can be counted,38,똥꼬,0.6842105263157895
+Anus,count_mass,Cannot be counted,38,똥꼬,0.07894736842105263
+Anus,count_mass,I don't know/It's hard to say,38,똥꼬,0.23684210526315788
+Anus,solidity,I don't know/It's hard to say,29,똥꼬,0.3103448275862069
+Anus,solidity,Not a solid,29,똥꼬,0.10344827586206896
+Anus,solidity,Solid,29,똥꼬,0.5862068965517241
+Apple,category_organization,Form,29,사과,0.4482758620689655
+Apple,category_organization,"Form, Color",29,사과,0.13793103448275862
+Apple,category_organization,"Form, Color, Material",29,사과,0.1724137931034483
+Apple,category_organization,"Form, Material",29,사과,0.13793103448275862
+Apple,category_organization,Material,29,사과,0.10344827586206896
+Apple,count_mass,Can be counted,32,사과,0.90625
+Apple,count_mass,I don't know/It's hard to say,32,사과,0.09375
+Apple,solidity,I don't know/It's hard to say,29,사과,0.10344827586206896
+Apple,solidity,Not a solid,29,사과,0.06896551724137931
+Apple,solidity,Solid,29,사과,0.8275862068965517
+Arm,category_organization,Form,29,팔,0.8620689655172413
+Arm,category_organization,"Form, Material",29,팔,0.10344827586206896
+Arm,category_organization,Material,29,팔,0.034482758620689655
+Arm,count_mass,Can be counted,35,팔,0.8285714285714286
+Arm,count_mass,I don't know/It's hard to say,35,팔,0.17142857142857143
+Arm,solidity,I don't know/It's hard to say,29,팔,0.20689655172413793
+Arm,solidity,Not a solid,29,팔,0.10344827586206896
+Arm,solidity,Solid,29,팔,0.6896551724137931
+Back,category_organization,Form,29,등,0.7931034482758621
+Back,category_organization,"Form, Material",29,등,0.10344827586206896
+Back,category_organization,Material,29,등,0.06896551724137931
+Back,category_organization,Not applicable,29,등,0.034482758620689655
+Back,count_mass,Can be counted,36,등,0.5833333333333334
+Back,count_mass,Cannot be counted,36,등,0.1388888888888889
+Back,count_mass,I don't know/It's hard to say,36,등,0.2777777777777778
+Back,solidity,I don't know/It's hard to say,32,등,0.3125
+Back,solidity,Not a solid,32,등,0.09375
+Back,solidity,Solid,32,등,0.59375
+Bag,category_organization,Form,29,가방,0.6551724137931034
+Bag,category_organization,"Form, Color",29,가방,0.034482758620689655
+Bag,category_organization,"Form, Color, Material",29,가방,0.13793103448275862
+Bag,category_organization,"Form, Material",29,가방,0.13793103448275862
+Bag,category_organization,Material,29,가방,0.034482758620689655
+Bag,count_mass,Can be counted,30,가방,0.9666666666666667
+Bag,count_mass,I don't know/It's hard to say,30,가방,0.03333333333333333
+Bag,solidity,I don't know/It's hard to say,29,가방,0.034482758620689655
+Bag,solidity,Solid,29,가방,0.9655172413793104
+Ball,category_organization,Color,29,공,0.034482758620689655
+Ball,category_organization,Form,29,공,0.6206896551724138
+Ball,category_organization,"Form, Color, Material",29,공,0.06896551724137931
+Ball,category_organization,"Form, Material",29,공,0.20689655172413793
+Ball,category_organization,Material,29,공,0.06896551724137931
+Ball,count_mass,Can be counted,31,공,0.9032258064516129
+Ball,count_mass,I don't know/It's hard to say,31,공,0.0967741935483871
+Ball,solidity,I don't know/It's hard to say,30,공,0.1
+Ball,solidity,Solid,30,공,0.9
+Balloon,category_organization,Color,29,풍선,0.034482758620689655
+Balloon,category_organization,Form,29,풍선,0.3793103448275862
+Balloon,category_organization,"Form, Color",29,풍선,0.034482758620689655
+Balloon,category_organization,"Form, Color, Material",29,풍선,0.13793103448275862
+Balloon,category_organization,"Form, Material",29,풍선,0.3103448275862069
+Balloon,category_organization,Material,29,풍선,0.10344827586206896
+Balloon,count_mass,Can be counted,34,풍선,0.7941176470588235
+Balloon,count_mass,Cannot be counted,34,풍선,0.029411764705882353
+Balloon,count_mass,I don't know/It's hard to say,34,풍선,0.17647058823529413
+Balloon,solidity,I don't know/It's hard to say,30,풍선,0.2
+Balloon,solidity,Not a solid,30,풍선,0.1
+Balloon,solidity,Solid,30,풍선,0.7
+Banana,category_organization,Color,29,바나나,0.034482758620689655
+Banana,category_organization,"Color, Material",29,바나나,0.034482758620689655
+Banana,category_organization,Form,29,바나나,0.4827586206896552
+Banana,category_organization,"Form, Color",29,바나나,0.10344827586206896
+Banana,category_organization,"Form, Color, Material",29,바나나,0.20689655172413793
+Banana,category_organization,"Form, Material",29,바나나,0.034482758620689655
+Banana,category_organization,Material,29,바나나,0.06896551724137931
+Banana,category_organization,Not applicable,29,바나나,0.034482758620689655
+Banana,count_mass,Can be counted,32,바나나,0.90625
+Banana,count_mass,I don't know/It's hard to say,32,바나나,0.09375
+Banana,solidity,I don't know/It's hard to say,29,바나나,0.10344827586206896
+Banana,solidity,Not a solid,29,바나나,0.10344827586206896
+Banana,solidity,Solid,29,바나나,0.7931034482758621
+Bathroom,category_organization,Form,29,화장실,0.6896551724137931
+Bathroom,category_organization,"Form, Color",29,화장실,0.034482758620689655
+Bathroom,category_organization,"Form, Color, Material",29,화장실,0.034482758620689655
+Bathroom,category_organization,"Form, Material",29,화장실,0.10344827586206896
+Bathroom,category_organization,Material,29,화장실,0.034482758620689655
+Bathroom,category_organization,Not applicable,29,화장실,0.10344827586206896
+Bathroom,count_mass,Can be counted,37,화장실,0.7567567567567568
+Bathroom,count_mass,I don't know/It's hard to say,37,화장실,0.24324324324324326
+Bathroom,solidity,I don't know/It's hard to say,30,화장실,0.3
+Bathroom,solidity,Not a solid,30,화장실,0.1
+Bathroom,solidity,Solid,30,화장실,0.6
+Bathtub,category_organization,Form,29,목욕탕,0.6206896551724138
+Bathtub,category_organization,"Form, Material",29,목욕탕,0.27586206896551724
+Bathtub,category_organization,Material,29,목욕탕,0.06896551724137931
+Bathtub,category_organization,Not applicable,29,목욕탕,0.034482758620689655
+Bathtub,count_mass,Can be counted,38,목욕탕,0.6842105263157895
+Bathtub,count_mass,Cannot be counted,38,목욕탕,0.05263157894736842
+Bathtub,count_mass,I don't know/It's hard to say,38,목욕탕,0.2631578947368421
+Bathtub,solidity,I don't know/It's hard to say,30,목욕탕,0.3333333333333333
+Bathtub,solidity,Not a solid,30,목욕탕,0.03333333333333333
+Bathtub,solidity,Solid,30,목욕탕,0.6333333333333333
+Beans,category_organization,Color,29,콩,0.034482758620689655
+Beans,category_organization,Form,29,콩,0.5517241379310345
+Beans,category_organization,"Form, Color",29,콩,0.034482758620689655
+Beans,category_organization,"Form, Color, Material",29,콩,0.06896551724137931
+Beans,category_organization,"Form, Material",29,콩,0.20689655172413793
+Beans,category_organization,Material,29,콩,0.06896551724137931
+Beans,category_organization,Not applicable,29,콩,0.034482758620689655
+Beans,count_mass,Can be counted,31,콩,0.8064516129032258
+Beans,count_mass,Cannot be counted,31,콩,0.0967741935483871
+Beans,count_mass,I don't know/It's hard to say,31,콩,0.0967741935483871
+Beans,solidity,I don't know/It's hard to say,30,콩,0.1
+Beans,solidity,Not a solid,30,콩,0.06666666666666667
+Beans,solidity,Solid,30,콩,0.8333333333333334
+Bear,category_organization,Form,29,곰,0.6551724137931034
+Bear,category_organization,"Form, Color",29,곰,0.10344827586206896
+Bear,category_organization,"Form, Color, Material",29,곰,0.10344827586206896
+Bear,category_organization,"Form, Material",29,곰,0.10344827586206896
+Bear,category_organization,Material,29,곰,0.034482758620689655
+Bear,count_mass,Can be counted,36,곰,0.8055555555555556
+Bear,count_mass,I don't know/It's hard to say,36,곰,0.19444444444444445
+Bear,solidity,I don't know/It's hard to say,29,곰,0.2413793103448276
+Bear,solidity,Not a solid,29,곰,0.10344827586206896
+Bear,solidity,Solid,29,곰,0.6551724137931034
+Bed,category_organization,Form,29,침대,0.6896551724137931
+Bed,category_organization,"Form, Color",29,침대,0.034482758620689655
+Bed,category_organization,"Form, Color, Material",29,침대,0.034482758620689655
+Bed,category_organization,"Form, Material",29,침대,0.20689655172413793
+Bed,category_organization,Material,29,침대,0.034482758620689655
+Bed,count_mass,Can be counted,32,침대,0.90625
+Bed,count_mass,I don't know/It's hard to say,32,침대,0.09375
+Bed,solidity,I don't know/It's hard to say,29,침대,0.10344827586206896
+Bed,solidity,Solid,29,침대,0.896551724137931
+Bee,category_organization,Form,29,벌,0.6896551724137931
+Bee,category_organization,"Form, Color",29,벌,0.034482758620689655
+Bee,category_organization,"Form, Color, Material",29,벌,0.13793103448275862
+Bee,category_organization,"Form, Material",29,벌,0.10344827586206896
+Bee,category_organization,Material,29,벌,0.034482758620689655
+Bee,count_mass,Can be counted,36,벌,0.6944444444444444
+Bee,count_mass,Cannot be counted,36,벌,0.1111111111111111
+Bee,count_mass,I don't know/It's hard to say,36,벌,0.19444444444444445
+Bee,solidity,I don't know/It's hard to say,29,벌,0.2413793103448276
+Bee,solidity,Not a solid,29,벌,0.10344827586206896
+Bee,solidity,Solid,29,벌,0.6551724137931034
+Belly Button,category_organization,Form,29,배꼽,0.7586206896551724
+Belly Button,category_organization,"Form, Color",29,배꼽,0.06896551724137931
+Belly Button,category_organization,"Form, Material",29,배꼽,0.13793103448275862
+Belly Button,category_organization,Material,29,배꼽,0.034482758620689655
+Belly Button,count_mass,Can be counted,38,배꼽,0.7631578947368421
+Belly Button,count_mass,I don't know/It's hard to say,38,배꼽,0.23684210526315788
+Belly Button,solidity,I don't know/It's hard to say,29,배꼽,0.3103448275862069
+Belly Button,solidity,Not a solid,29,배꼽,0.10344827586206896
+Belly Button,solidity,Solid,29,배꼽,0.5862068965517241
+Belt,category_organization,Form,29,허리띠,0.6206896551724138
+Belt,category_organization,"Form, Color",29,허리띠,0.034482758620689655
+Belt,category_organization,"Form, Color, Material",29,허리띠,0.10344827586206896
+Belt,category_organization,"Form, Material",29,허리띠,0.1724137931034483
+Belt,category_organization,Material,29,허리띠,0.06896551724137931
+Belt,count_mass,Can be counted,32,허리띠,0.84375
+Belt,count_mass,Cannot be counted,32,허리띠,0.0625
+Belt,count_mass,I don't know/It's hard to say,32,허리띠,0.09375
+Belt,solidity,I don't know/It's hard to say,29,허리띠,0.10344827586206896
+Belt,solidity,Solid,29,허리띠,0.896551724137931
+Bicycle,category_organization,Form,28,자전거,0.6428571428571429
+Bicycle,category_organization,"Form, Color, Material",28,자전거,0.03571428571428571
+Bicycle,category_organization,"Form, Material",28,자전거,0.25
+Bicycle,category_organization,Material,28,자전거,0.07142857142857142
+Bicycle,count_mass,Can be counted,30,자전거,0.9333333333333333
+Bicycle,count_mass,I don't know/It's hard to say,30,자전거,0.06666666666666667
+Bicycle,solidity,I don't know/It's hard to say,30,자전거,0.06666666666666667
+Bicycle,solidity,Solid,30,자전거,0.9333333333333333
+Bird,category_organization,Form,29,새,0.7586206896551724
+Bird,category_organization,"Form, Color",29,새,0.034482758620689655
+Bird,category_organization,"Form, Color, Material",29,새,0.034482758620689655
+Bird,category_organization,"Form, Material",29,새,0.13793103448275862
+Bird,category_organization,Material,29,새,0.034482758620689655
+Bird,count_mass,Can be counted,36,새,0.75
+Bird,count_mass,I don't know/It's hard to say,36,새,0.25
+Bird,solidity,I don't know/It's hard to say,31,새,0.2903225806451613
+Bird,solidity,Not a solid,31,새,0.0967741935483871
+Bird,solidity,Solid,31,새,0.6129032258064516
+Blanket,category_organization,Color,29,이불,0.034482758620689655
+Blanket,category_organization,Form,29,이불,0.5517241379310345
+Blanket,category_organization,"Form, Color, Material",29,이불,0.10344827586206896
+Blanket,category_organization,"Form, Material",29,이불,0.27586206896551724
+Blanket,category_organization,Material,29,이불,0.034482758620689655
+Blanket,count_mass,Can be counted,34,이불,0.7941176470588235
+Blanket,count_mass,I don't know/It's hard to say,34,이불,0.20588235294117646
+Blanket,solidity,I don't know/It's hard to say,31,이불,0.22580645161290322
+Blanket,solidity,Solid,31,이불,0.7741935483870968
+Block,category_organization,Form,29,블럭,0.5172413793103449
+Block,category_organization,"Form, Color",29,블럭,0.06896551724137931
+Block,category_organization,"Form, Color, Material",29,블럭,0.10344827586206896
+Block,category_organization,"Form, Material",29,블럭,0.1724137931034483
+Block,category_organization,Material,29,블럭,0.10344827586206896
+Block,category_organization,Not applicable,29,블럭,0.034482758620689655
+Block,count_mass,Can be counted,30,블럭,0.8
+Block,count_mass,Cannot be counted,30,블럭,0.06666666666666667
+Block,count_mass,I don't know/It's hard to say,30,블럭,0.13333333333333333
+Block,solidity,I don't know/It's hard to say,32,블럭,0.125
+Block,solidity,Solid,32,블럭,0.875
+Blood,category_organization,"Color, Material",29,피,0.27586206896551724
+Blood,category_organization,Form,29,피,0.3448275862068966
+Blood,category_organization,"Form, Color",29,피,0.034482758620689655
+Blood,category_organization,"Form, Color, Material",29,피,0.13793103448275862
+Blood,category_organization,"Form, Color, Material, Not applicable",29,피,0.034482758620689655
+Blood,category_organization,"Form, Material",29,피,0.06896551724137931
+Blood,category_organization,Material,29,피,0.10344827586206896
+Blood,count_mass,Can be counted,32,피,0.25
+Blood,count_mass,Cannot be counted,32,피,0.53125
+Blood,count_mass,I don't know/It's hard to say,32,피,0.21875
+Blood,solidity,I don't know/It's hard to say,33,피,0.21212121212121213
+Blood,solidity,Not a solid,33,피,0.6666666666666666
+Blood,solidity,Solid,33,피,0.12121212121212122
+Boat,category_organization,Form,28,배,0.6428571428571429
+Boat,category_organization,"Form, Color, Material",28,배,0.03571428571428571
+Boat,category_organization,"Form, Material",28,배,0.25
+Boat,category_organization,Material,28,배,0.07142857142857142
+Boat,count_mass,Can be counted,30,배,0.9333333333333333
+Boat,count_mass,I don't know/It's hard to say,30,배,0.06666666666666667
+Boat,solidity,I don't know/It's hard to say,30,배,0.06666666666666667
+Boat,solidity,Solid,30,배,0.9333333333333333
+Body,category_organization,Form,29,몸,0.8620689655172413
+Body,category_organization,"Form, Material",29,몸,0.10344827586206896
+Body,category_organization,Material,29,몸,0.034482758620689655
+Body,count_mass,Can be counted,35,몸,0.6
+Body,count_mass,Cannot be counted,35,몸,0.02857142857142857
+Body,count_mass,I don't know/It's hard to say,35,몸,0.37142857142857144
+Body,solidity,I don't know/It's hard to say,36,몸,0.3611111111111111
+Body,solidity,Not a solid,36,몸,0.08333333333333333
+Body,solidity,Solid,36,몸,0.5555555555555556
+Book,category_organization,Form,29,책,0.4827586206896552
+Book,category_organization,"Form, Color, Material",29,책,0.10344827586206896
+Book,category_organization,"Form, Material",29,책,0.3103448275862069
+Book,category_organization,Material,29,책,0.06896551724137931
+Book,category_organization,Not applicable,29,책,0.034482758620689655
+Book,count_mass,Can be counted,30,책,0.9333333333333333
+Book,count_mass,I don't know/It's hard to say,30,책,0.06666666666666667
+Book,solidity,I don't know/It's hard to say,30,책,0.06666666666666667
+Book,solidity,Solid,30,책,0.9333333333333333
+Bottle,category_organization,Form,29,병,0.7241379310344828
+Bottle,category_organization,"Form, Color, Material",29,병,0.10344827586206896
+Bottle,category_organization,"Form, Material",29,병,0.13793103448275862
+Bottle,category_organization,Material,29,병,0.034482758620689655
+Bottle,count_mass,Can be counted,30,병,0.9666666666666667
+Bottle,count_mass,I don't know/It's hard to say,30,병,0.03333333333333333
+Bottle,solidity,I don't know/It's hard to say,29,병,0.034482758620689655
+Bottle,solidity,Solid,29,병,0.9655172413793104
+Box,category_organization,"Color, Material",29,상자,0.034482758620689655
+Box,category_organization,Form,29,상자,0.7241379310344828
+Box,category_organization,"Form, Color, Material",29,상자,0.10344827586206896
+Box,category_organization,"Form, Material",29,상자,0.10344827586206896
+Box,category_organization,Material,29,상자,0.034482758620689655
+Box,count_mass,Can be counted,30,상자,0.9
+Box,count_mass,Cannot be counted,30,상자,0.06666666666666667
+Box,count_mass,I don't know/It's hard to say,30,상자,0.03333333333333333
+Box,solidity,I don't know/It's hard to say,29,상자,0.034482758620689655
+Box,solidity,Solid,29,상자,0.9655172413793104
+Bread,category_organization,Color,29,빵,0.034482758620689655
+Bread,category_organization,"Color, Material",29,빵,0.034482758620689655
+Bread,category_organization,Form,29,빵,0.41379310344827586
+Bread,category_organization,"Form, Color, Material",29,빵,0.10344827586206896
+Bread,category_organization,"Form, Material",29,빵,0.27586206896551724
+Bread,category_organization,Material,29,빵,0.13793103448275862
+Bread,count_mass,Can be counted,33,빵,0.8484848484848485
+Bread,count_mass,Cannot be counted,33,빵,0.030303030303030304
+Bread,count_mass,I don't know/It's hard to say,33,빵,0.12121212121212122
+Bread,solidity,I don't know/It's hard to say,29,빵,0.13793103448275862
+Bread,solidity,Not a solid,29,빵,0.13793103448275862
+Bread,solidity,Solid,29,빵,0.7241379310344828
+Broomstick,category_organization,Form,29,빗자루,0.7241379310344828
+Broomstick,category_organization,"Form, Color, Material",29,빗자루,0.06896551724137931
+Broomstick,category_organization,"Form, Material",29,빗자루,0.1724137931034483
+Broomstick,category_organization,Material,29,빗자루,0.034482758620689655
+Broomstick,count_mass,Can be counted,30,빗자루,0.9333333333333333
+Broomstick,count_mass,Cannot be counted,30,빗자루,0.03333333333333333
+Broomstick,count_mass,I don't know/It's hard to say,30,빗자루,0.03333333333333333
+Broomstick,solidity,I don't know/It's hard to say,29,빗자루,0.034482758620689655
+Broomstick,solidity,Not a solid,29,빗자루,0.034482758620689655
+Broomstick,solidity,Solid,29,빗자루,0.9310344827586207
+Brush,category_organization,Form,29,빗,0.7586206896551724
+Brush,category_organization,"Form, Color, Material",29,빗,0.06896551724137931
+Brush,category_organization,"Form, Material",29,빗,0.13793103448275862
+Brush,category_organization,Material,29,빗,0.034482758620689655
+Brush,count_mass,Can be counted,30,빗,0.9666666666666667
+Brush,count_mass,I don't know/It's hard to say,30,빗,0.03333333333333333
+Brush,solidity,I don't know/It's hard to say,29,빗,0.034482758620689655
+Brush,solidity,Solid,29,빗,0.9655172413793104
+Bug,category_organization,Form,29,벌레,0.6206896551724138
+Bug,category_organization,"Form, Color",29,벌레,0.06896551724137931
+Bug,category_organization,"Form, Color, Material",29,벌레,0.06896551724137931
+Bug,category_organization,"Form, Material",29,벌레,0.13793103448275862
+Bug,category_organization,Material,29,벌레,0.034482758620689655
+Bug,category_organization,Not applicable,29,벌레,0.06896551724137931
+Bug,count_mass,Can be counted,36,벌레,0.6666666666666666
+Bug,count_mass,Cannot be counted,36,벌레,0.1111111111111111
+Bug,count_mass,I don't know/It's hard to say,36,벌레,0.2222222222222222
+Bug,solidity,I don't know/It's hard to say,30,벌레,0.26666666666666666
+Bug,solidity,Not a solid,30,벌레,0.1
+Bug,solidity,Solid,30,벌레,0.6333333333333333
+Bus,category_organization,Form,28,버스,0.5714285714285714
+Bus,category_organization,"Form, Color",28,버스,0.07142857142857142
+Bus,category_organization,"Form, Color, Material",28,버스,0.07142857142857142
+Bus,category_organization,"Form, Material",28,버스,0.21428571428571427
+Bus,category_organization,Material,28,버스,0.07142857142857142
+Bus,count_mass,Can be counted,30,버스,0.9333333333333333
+Bus,count_mass,I don't know/It's hard to say,30,버스,0.06666666666666667
+Bus,solidity,I don't know/It's hard to say,30,버스,0.06666666666666667
+Bus,solidity,Solid,30,버스,0.9333333333333333
+Butt,category_organization,Form,29,엉덩이,0.8275862068965517
+Butt,category_organization,"Form, Color, Material",29,엉덩이,0.034482758620689655
+Butt,category_organization,"Form, Material",29,엉덩이,0.10344827586206896
+Butt,category_organization,Material,29,엉덩이,0.034482758620689655
+Butt,count_mass,Can be counted,37,엉덩이,0.6486486486486487
+Butt,count_mass,Cannot be counted,37,엉덩이,0.02702702702702703
+Butt,count_mass,I don't know/It's hard to say,37,엉덩이,0.32432432432432434
+Butt,solidity,I don't know/It's hard to say,33,엉덩이,0.36363636363636365
+Butt,solidity,Not a solid,33,엉덩이,0.09090909090909091
+Butt,solidity,Solid,33,엉덩이,0.5454545454545454
+Butterfly,category_organization,Form,29,나비,0.6896551724137931
+Butterfly,category_organization,"Form, Color",29,나비,0.034482758620689655
+Butterfly,category_organization,"Form, Color, Material",29,나비,0.10344827586206896
+Butterfly,category_organization,"Form, Material",29,나비,0.13793103448275862
+Butterfly,category_organization,Material,29,나비,0.034482758620689655
+Butterfly,count_mass,Can be counted,36,나비,0.7222222222222222
+Butterfly,count_mass,Cannot be counted,36,나비,0.08333333333333333
+Butterfly,count_mass,I don't know/It's hard to say,36,나비,0.19444444444444445
+Butterfly,solidity,I don't know/It's hard to say,29,나비,0.2413793103448276
+Butterfly,solidity,Not a solid,29,나비,0.10344827586206896
+Butterfly,solidity,Solid,29,나비,0.6551724137931034
+Button,category_organization,Form,29,단추,0.6551724137931034
+Button,category_organization,"Form, Color",29,단추,0.06896551724137931
+Button,category_organization,"Form, Color, Material",29,단추,0.06896551724137931
+Button,category_organization,"Form, Material",29,단추,0.13793103448275862
+Button,category_organization,Material,29,단추,0.06896551724137931
+Button,count_mass,Can be counted,30,단추,0.8666666666666667
+Button,count_mass,Cannot be counted,30,단추,0.06666666666666667
+Button,count_mass,I don't know/It's hard to say,30,단추,0.06666666666666667
+Button,solidity,I don't know/It's hard to say,30,단추,0.06666666666666667
+Button,solidity,Solid,30,단추,0.9333333333333333
+Cake,category_organization,Form,29,케이크,0.4827586206896552
+Cake,category_organization,"Form, Color",29,케이크,0.06896551724137931
+Cake,category_organization,"Form, Color, Material",29,케이크,0.1724137931034483
+Cake,category_organization,"Form, Material",29,케이크,0.1724137931034483
+Cake,category_organization,Material,29,케이크,0.10344827586206896
+Cake,count_mass,Can be counted,32,케이크,0.8125
+Cake,count_mass,Cannot be counted,32,케이크,0.0625
+Cake,count_mass,I don't know/It's hard to say,32,케이크,0.125
+Cake,solidity,I don't know/It's hard to say,30,케이크,0.13333333333333333
+Cake,solidity,Not a solid,30,케이크,0.16666666666666666
+Cake,solidity,Solid,30,케이크,0.7
+Calf,category_organization,Form,29,송아지,0.7586206896551724
+Calf,category_organization,"Form, Color",29,송아지,0.034482758620689655
+Calf,category_organization,"Form, Color, Material",29,송아지,0.13793103448275862
+Calf,category_organization,"Form, Material",29,송아지,0.034482758620689655
+Calf,category_organization,Material,29,송아지,0.034482758620689655
+Calf,count_mass,Can be counted,36,송아지,0.8055555555555556
+Calf,count_mass,I don't know/It's hard to say,36,송아지,0.19444444444444445
+Calf,solidity,I don't know/It's hard to say,29,송아지,0.2413793103448276
+Calf,solidity,Not a solid,29,송아지,0.10344827586206896
+Calf,solidity,Solid,29,송아지,0.6551724137931034
+Camera,category_organization,Color,29,카메라,0.034482758620689655
+Camera,category_organization,Form,29,카메라,0.7241379310344828
+Camera,category_organization,"Form, Color, Material",29,카메라,0.06896551724137931
+Camera,category_organization,"Form, Material",29,카메라,0.13793103448275862
+Camera,category_organization,Material,29,카메라,0.034482758620689655
+Camera,count_mass,Can be counted,30,카메라,0.9333333333333333
+Camera,count_mass,I don't know/It's hard to say,30,카메라,0.06666666666666667
+Camera,solidity,I don't know/It's hard to say,30,카메라,0.06666666666666667
+Camera,solidity,Solid,30,카메라,0.9333333333333333
+Candy,category_organization,"Color, Material",29,사탕,0.034482758620689655
+Candy,category_organization,Form,29,사탕,0.3793103448275862
+Candy,category_organization,"Form, Color",29,사탕,0.034482758620689655
+Candy,category_organization,"Form, Color, Material",29,사탕,0.06896551724137931
+Candy,category_organization,"Form, Material",29,사탕,0.3103448275862069
+Candy,category_organization,Material,29,사탕,0.13793103448275862
+Candy,category_organization,Not applicable,29,사탕,0.034482758620689655
+Candy,count_mass,Can be counted,32,사탕,0.875
+Candy,count_mass,I don't know/It's hard to say,32,사탕,0.125
+Candy,solidity,I don't know/It's hard to say,30,사탕,0.13333333333333333
+Candy,solidity,Not a solid,30,사탕,0.06666666666666667
+Candy,solidity,Solid,30,사탕,0.8
+Car,category_organization,Form,28,차/자동차,0.6071428571428571
+Car,category_organization,"Form, Color",28,차/자동차,0.03571428571428571
+Car,category_organization,"Form, Color, Material",28,차/자동차,0.03571428571428571
+Car,category_organization,"Form, Material",28,차/자동차,0.25
+Car,category_organization,Material,28,차/자동차,0.07142857142857142
+Car,count_mass,Can be counted,30,차/자동차,0.9333333333333333
+Car,count_mass,I don't know/It's hard to say,30,차/자동차,0.06666666666666667
+Car,solidity,I don't know/It's hard to say,30,차/자동차,0.06666666666666667
+Car,solidity,Solid,30,차/자동차,0.9333333333333333
+Carbonated Drink,category_organization,"Color, Material",29,사이다,0.10344827586206896
+Carbonated Drink,category_organization,Form,29,사이다,0.27586206896551724
+Carbonated Drink,category_organization,"Form, Color",29,사이다,0.034482758620689655
+Carbonated Drink,category_organization,"Form, Color, Material",29,사이다,0.034482758620689655
+Carbonated Drink,category_organization,"Form, Material",29,사이다,0.27586206896551724
+Carbonated Drink,category_organization,Material,29,사이다,0.20689655172413793
+Carbonated Drink,category_organization,Not applicable,29,사이다,0.06896551724137931
+Carbonated Drink,count_mass,Can be counted,32,사이다,0.59375
+Carbonated Drink,count_mass,Cannot be counted,32,사이다,0.09375
+Carbonated Drink,count_mass,I don't know/It's hard to say,32,사이다,0.3125
+Carbonated Drink,solidity,I don't know/It's hard to say,36,사이다,0.2777777777777778
+Carbonated Drink,solidity,Not a solid,36,사이다,0.6388888888888888
+Carbonated Drink,solidity,Solid,36,사이다,0.08333333333333333
+Carrot,category_organization,"Color, Material",29,당근,0.034482758620689655
+Carrot,category_organization,Form,29,당근,0.4482758620689655
+Carrot,category_organization,"Form, Color",29,당근,0.13793103448275862
+Carrot,category_organization,"Form, Color, Material",29,당근,0.1724137931034483
+Carrot,category_organization,"Form, Material",29,당근,0.10344827586206896
+Carrot,category_organization,Material,29,당근,0.034482758620689655
+Carrot,category_organization,Not applicable,29,당근,0.06896551724137931
+Carrot,count_mass,Can be counted,32,당근,0.90625
+Carrot,count_mass,I don't know/It's hard to say,32,당근,0.09375
+Carrot,solidity,I don't know/It's hard to say,29,당근,0.10344827586206896
+Carrot,solidity,Not a solid,29,당근,0.06896551724137931
+Carrot,solidity,Solid,29,당근,0.8275862068965517
+Cat,category_organization,Form,29,고양이,0.7241379310344828
+Cat,category_organization,"Form, Color",29,고양이,0.06896551724137931
+Cat,category_organization,"Form, Color, Material",29,고양이,0.06896551724137931
+Cat,category_organization,"Form, Material",29,고양이,0.10344827586206896
+Cat,category_organization,Material,29,고양이,0.034482758620689655
+Cat,count_mass,Can be counted,36,고양이,0.8055555555555556
+Cat,count_mass,I don't know/It's hard to say,36,고양이,0.19444444444444445
+Cat,solidity,I don't know/It's hard to say,29,고양이,0.2413793103448276
+Cat,solidity,Not a solid,29,고양이,0.13793103448275862
+Cat,solidity,Solid,29,고양이,0.6206896551724138
+Chair,category_organization,Form,29,의자,0.6551724137931034
+Chair,category_organization,"Form, Color, Material",29,의자,0.13793103448275862
+Chair,category_organization,"Form, Material",29,의자,0.13793103448275862
+Chair,category_organization,Material,29,의자,0.06896551724137931
+Chair,count_mass,Can be counted,30,의자,0.9666666666666667
+Chair,count_mass,I don't know/It's hard to say,30,의자,0.03333333333333333
+Chair,solidity,I don't know/It's hard to say,29,의자,0.034482758620689655
+Chair,solidity,Solid,29,의자,0.9655172413793104
+Cheek,category_organization,"Color, Material",27,뺨,0.037037037037037035
+Cheek,category_organization,Form,27,뺨,0.7037037037037037
+Cheek,category_organization,"Form, Color",27,뺨,0.07407407407407407
+Cheek,category_organization,"Form, Material",27,뺨,0.14814814814814814
+Cheek,category_organization,Material,27,뺨,0.037037037037037035
+Cheek,count_mass,Can be counted,36,뺨,0.75
+Cheek,count_mass,Cannot be counted,36,뺨,0.05555555555555555
+Cheek,count_mass,I don't know/It's hard to say,36,뺨,0.19444444444444445
+Cheek,solidity,I don't know/It's hard to say,29,뺨,0.2413793103448276
+Cheek,solidity,Not a solid,29,뺨,0.10344827586206896
+Cheek,solidity,Solid,29,뺨,0.6551724137931034
+Cheese,category_organization,Color,29,치즈,0.10344827586206896
+Cheese,category_organization,"Color, Material",29,치즈,0.06896551724137931
+Cheese,category_organization,Form,29,치즈,0.20689655172413793
+Cheese,category_organization,"Form, Color",29,치즈,0.06896551724137931
+Cheese,category_organization,"Form, Color, Material",29,치즈,0.20689655172413793
+Cheese,category_organization,"Form, Material",29,치즈,0.1724137931034483
+Cheese,category_organization,Material,29,치즈,0.1724137931034483
+Cheese,count_mass,Can be counted,33,치즈,0.6363636363636364
+Cheese,count_mass,Cannot be counted,33,치즈,0.09090909090909091
+Cheese,count_mass,I don't know/It's hard to say,33,치즈,0.2727272727272727
+Cheese,solidity,I don't know/It's hard to say,34,치즈,0.2647058823529412
+Cheese,solidity,Not a solid,34,치즈,0.17647058823529413
+Cheese,solidity,Solid,34,치즈,0.5588235294117647
+Chestnut,category_organization,Color,29,밤,0.034482758620689655
+Chestnut,category_organization,Form,29,밤,0.4827586206896552
+Chestnut,category_organization,"Form, Color",29,밤,0.10344827586206896
+Chestnut,category_organization,"Form, Color, Material",29,밤,0.10344827586206896
+Chestnut,category_organization,"Form, Material",29,밤,0.1724137931034483
+Chestnut,category_organization,Material,29,밤,0.06896551724137931
+Chestnut,category_organization,Not applicable,29,밤,0.034482758620689655
+Chestnut,count_mass,Can be counted,32,밤,0.90625
+Chestnut,count_mass,I don't know/It's hard to say,32,밤,0.09375
+Chestnut,solidity,I don't know/It's hard to say,29,밤,0.10344827586206896
+Chestnut,solidity,Not a solid,29,밤,0.06896551724137931
+Chestnut,solidity,Solid,29,밤,0.8275862068965517
+Chick,category_organization,Form,29,병아리,0.6206896551724138
+Chick,category_organization,"Form, Color",29,병아리,0.1724137931034483
+Chick,category_organization,"Form, Color, Material",29,병아리,0.13793103448275862
+Chick,category_organization,"Form, Material",29,병아리,0.034482758620689655
+Chick,category_organization,Material,29,병아리,0.034482758620689655
+Chick,count_mass,Can be counted,36,병아리,0.8055555555555556
+Chick,count_mass,I don't know/It's hard to say,36,병아리,0.19444444444444445
+Chick,solidity,I don't know/It's hard to say,29,병아리,0.2413793103448276
+Chick,solidity,Not a solid,29,병아리,0.10344827586206896
+Chick,solidity,Solid,29,병아리,0.6551724137931034
+Chicken,category_organization,"Color, Material",29,닭고기,0.10344827586206896
+Chicken,category_organization,Form,29,닭고기,0.4827586206896552
+Chicken,category_organization,"Form, Color",29,닭고기,0.06896551724137931
+Chicken,category_organization,"Form, Material",29,닭고기,0.20689655172413793
+Chicken,category_organization,Material,29,닭고기,0.06896551724137931
+Chicken,category_organization,Not applicable,29,닭고기,0.06896551724137931
+Chicken,count_mass,Can be counted,33,닭고기,0.696969696969697
+Chicken,count_mass,Cannot be counted,33,닭고기,0.09090909090909091
+Chicken,count_mass,I don't know/It's hard to say,33,닭고기,0.21212121212121213
+Chicken,solidity,I don't know/It's hard to say,32,닭고기,0.21875
+Chicken,solidity,Not a solid,32,닭고기,0.09375
+Chicken,solidity,Solid,32,닭고기,0.6875
+Chicken/Rooster,category_organization,Form,29,닭,0.6551724137931034
+Chicken/Rooster,category_organization,"Form, Color",29,닭,0.10344827586206896
+Chicken/Rooster,category_organization,"Form, Color, Material",29,닭,0.06896551724137931
+Chicken/Rooster,category_organization,"Form, Material",29,닭,0.13793103448275862
+Chicken/Rooster,category_organization,Material,29,닭,0.034482758620689655
+Chicken/Rooster,count_mass,Can be counted,36,닭,0.8055555555555556
+Chicken/Rooster,count_mass,I don't know/It's hard to say,36,닭,0.19444444444444445
+Chicken/Rooster,solidity,I don't know/It's hard to say,29,닭,0.2413793103448276
+Chicken/Rooster,solidity,Not a solid,29,닭,0.10344827586206896
+Chicken/Rooster,solidity,Solid,29,닭,0.6551724137931034
+Chin,category_organization,Form,29,턱,0.8620689655172413
+Chin,category_organization,"Form, Material",29,턱,0.10344827586206896
+Chin,category_organization,Material,29,턱,0.034482758620689655
+Chin,count_mass,Can be counted,35,턱,0.8
+Chin,count_mass,I don't know/It's hard to say,35,턱,0.2
+Chin,solidity,I don't know/It's hard to say,30,턱,0.23333333333333334
+Chin,solidity,Not a solid,30,턱,0.1
+Chin,solidity,Solid,30,턱,0.6666666666666666
+Chocolate,category_organization,Color,29,초콜렛,0.06896551724137931
+Chocolate,category_organization,"Color, Material",29,초콜렛,0.10344827586206896
+Chocolate,category_organization,Form,29,초콜렛,0.20689655172413793
+Chocolate,category_organization,"Form, Color",29,초콜렛,0.10344827586206896
+Chocolate,category_organization,"Form, Color, Material",29,초콜렛,0.20689655172413793
+Chocolate,category_organization,"Form, Material",29,초콜렛,0.13793103448275862
+Chocolate,category_organization,Material,29,초콜렛,0.1724137931034483
+Chocolate,count_mass,Can be counted,33,초콜렛,0.7575757575757576
+Chocolate,count_mass,Cannot be counted,33,초콜렛,0.06060606060606061
+Chocolate,count_mass,I don't know/It's hard to say,33,초콜렛,0.18181818181818182
+Chocolate,solidity,I don't know/It's hard to say,31,초콜렛,0.1935483870967742
+Chocolate,solidity,Not a solid,31,초콜렛,0.12903225806451613
+Chocolate,solidity,Solid,31,초콜렛,0.6774193548387096
+Chopsticks,category_organization,Color,29,젓가락,0.034482758620689655
+Chopsticks,category_organization,Form,29,젓가락,0.7241379310344828
+Chopsticks,category_organization,"Form, Color, Material",29,젓가락,0.06896551724137931
+Chopsticks,category_organization,"Form, Material",29,젓가락,0.10344827586206896
+Chopsticks,category_organization,Material,29,젓가락,0.06896551724137931
+Chopsticks,count_mass,Can be counted,30,젓가락,0.9333333333333333
+Chopsticks,count_mass,I don't know/It's hard to say,30,젓가락,0.06666666666666667
+Chopsticks,solidity,I don't know/It's hard to say,30,젓가락,0.06666666666666667
+Chopsticks,solidity,Solid,30,젓가락,0.9333333333333333
+Clock/Watch,category_organization,Color,29,시계,0.034482758620689655
+Clock/Watch,category_organization,Form,29,시계,0.6896551724137931
+Clock/Watch,category_organization,"Form, Color, Material",29,시계,0.10344827586206896
+Clock/Watch,category_organization,"Form, Material",29,시계,0.13793103448275862
+Clock/Watch,category_organization,Material,29,시계,0.034482758620689655
+Clock/Watch,count_mass,Can be counted,30,시계,0.9666666666666667
+Clock/Watch,count_mass,I don't know/It's hard to say,30,시계,0.03333333333333333
+Clock/Watch,solidity,I don't know/It's hard to say,29,시계,0.034482758620689655
+Clock/Watch,solidity,Solid,29,시계,0.9655172413793104
+Closet,category_organization,Form,29,옷장,0.7241379310344828
+Closet,category_organization,"Form, Color, Material",29,옷장,0.13793103448275862
+Closet,category_organization,"Form, Material",29,옷장,0.10344827586206896
+Closet,category_organization,Material,29,옷장,0.034482758620689655
+Closet,count_mass,Can be counted,30,옷장,0.9666666666666667
+Closet,count_mass,I don't know/It's hard to say,30,옷장,0.03333333333333333
+Closet,solidity,I don't know/It's hard to say,29,옷장,0.034482758620689655
+Closet,solidity,Solid,29,옷장,0.9655172413793104
+Clothes,category_organization,Color,29,옷/꼬까,0.034482758620689655
+Clothes,category_organization,Form,29,옷/꼬까,0.6206896551724138
+Clothes,category_organization,"Form, Color",29,옷/꼬까,0.034482758620689655
+Clothes,category_organization,"Form, Color, Material",29,옷/꼬까,0.10344827586206896
+Clothes,category_organization,"Form, Material",29,옷/꼬까,0.10344827586206896
+Clothes,category_organization,Material,29,옷/꼬까,0.06896551724137931
+Clothes,category_organization,Not applicable,29,옷/꼬까,0.034482758620689655
+Clothes,count_mass,Can be counted,32,옷/꼬까,0.875
+Clothes,count_mass,I don't know/It's hard to say,32,옷/꼬까,0.125
+Clothes,solidity,I don't know/It's hard to say,30,옷/꼬까,0.13333333333333333
+Clothes,solidity,Not a solid,30,옷/꼬까,0.06666666666666667
+Clothes,solidity,Solid,30,옷/꼬까,0.8
+Clothes Hanger,category_organization,Form,29,옷걸이,0.6551724137931034
+Clothes Hanger,category_organization,"Form, Color, Material",29,옷걸이,0.10344827586206896
+Clothes Hanger,category_organization,"Form, Material",29,옷걸이,0.1724137931034483
+Clothes Hanger,category_organization,Material,29,옷걸이,0.06896551724137931
+Clothes Hanger,count_mass,Can be counted,30,옷걸이,0.9666666666666667
+Clothes Hanger,count_mass,I don't know/It's hard to say,30,옷걸이,0.03333333333333333
+Clothes Hanger,solidity,I don't know/It's hard to say,29,옷걸이,0.034482758620689655
+Clothes Hanger,solidity,Solid,29,옷걸이,0.9655172413793104
+Cloud,category_organization,Form,29,구름,0.4482758620689655
+Cloud,category_organization,"Form, Color",29,구름,0.13793103448275862
+Cloud,category_organization,"Form, Color, Material",29,구름,0.13793103448275862
+Cloud,category_organization,"Form, Material",29,구름,0.13793103448275862
+Cloud,category_organization,Material,29,구름,0.13793103448275862
+Cloud,count_mass,Can be counted,24,구름,0.20833333333333334
+Cloud,count_mass,Cannot be counted,24,구름,0.6666666666666666
+Cloud,count_mass,I don't know/It's hard to say,24,구름,0.125
+Cloud,solidity,I don't know/It's hard to say,29,구름,0.10344827586206896
+Cloud,solidity,Not a solid,29,구름,0.896551724137931
+Coat,category_organization,Form,29,코트/외투,0.5862068965517241
+Coat,category_organization,"Form, Color",29,코트/외투,0.13793103448275862
+Coat,category_organization,"Form, Color, Material",29,코트/외투,0.10344827586206896
+Coat,category_organization,"Form, Material",29,코트/외투,0.10344827586206896
+Coat,category_organization,Material,29,코트/외투,0.06896551724137931
+Coat,count_mass,Can be counted,32,코트/외투,0.90625
+Coat,count_mass,I don't know/It's hard to say,32,코트/외투,0.09375
+Coat,solidity,I don't know/It's hard to say,29,코트/외투,0.10344827586206896
+Coat,solidity,Not a solid,29,코트/외투,0.034482758620689655
+Coat,solidity,Solid,29,코트/외투,0.8620689655172413
+Coffee,category_organization,Color,29,커피,0.13793103448275862
+Coffee,category_organization,"Color, Material",29,커피,0.1724137931034483
+Coffee,category_organization,Form,29,커피,0.13793103448275862
+Coffee,category_organization,"Form, Color",29,커피,0.06896551724137931
+Coffee,category_organization,"Form, Color, Material",29,커피,0.13793103448275862
+Coffee,category_organization,"Form, Material",29,커피,0.06896551724137931
+Coffee,category_organization,Material,29,커피,0.2413793103448276
+Coffee,category_organization,Not applicable,29,커피,0.034482758620689655
+Coffee,count_mass,Can be counted,33,커피,0.5151515151515151
+Coffee,count_mass,Cannot be counted,33,커피,0.18181818181818182
+Coffee,count_mass,I don't know/It's hard to say,33,커피,0.30303030303030304
+Coffee,solidity,I don't know/It's hard to say,35,커피,0.2857142857142857
+Coffee,solidity,Not a solid,35,커피,0.6
+Coffee,solidity,Solid,35,커피,0.11428571428571428
+Coke/Cola,category_organization,Color,29,콜라,0.13793103448275862
+Coke/Cola,category_organization,"Color, Material",29,콜라,0.20689655172413793
+Coke/Cola,category_organization,Form,29,콜라,0.13793103448275862
+Coke/Cola,category_organization,"Form, Color",29,콜라,0.06896551724137931
+Coke/Cola,category_organization,"Form, Color, Material",29,콜라,0.10344827586206896
+Coke/Cola,category_organization,"Form, Material",29,콜라,0.10344827586206896
+Coke/Cola,category_organization,Material,29,콜라,0.20689655172413793
+Coke/Cola,category_organization,Not applicable,29,콜라,0.034482758620689655
+Coke/Cola,count_mass,Can be counted,31,콜라,0.6451612903225806
+Coke/Cola,count_mass,Cannot be counted,31,콜라,0.12903225806451613
+Coke/Cola,count_mass,I don't know/It's hard to say,31,콜라,0.22580645161290322
+Coke/Cola,solidity,I don't know/It's hard to say,34,콜라,0.20588235294117646
+Coke/Cola,solidity,Not a solid,34,콜라,0.7352941176470589
+Coke/Cola,solidity,Solid,34,콜라,0.058823529411764705
+Corn,category_organization,Color,29,옥수수,0.034482758620689655
+Corn,category_organization,Form,29,옥수수,0.4827586206896552
+Corn,category_organization,"Form, Color",29,옥수수,0.13793103448275862
+Corn,category_organization,"Form, Color, Material",29,옥수수,0.20689655172413793
+Corn,category_organization,"Form, Material",29,옥수수,0.06896551724137931
+Corn,category_organization,Material,29,옥수수,0.06896551724137931
+Corn,count_mass,Can be counted,32,옥수수,0.90625
+Corn,count_mass,I don't know/It's hard to say,32,옥수수,0.09375
+Corn,solidity,I don't know/It's hard to say,29,옥수수,0.10344827586206896
+Corn,solidity,Not a solid,29,옥수수,0.10344827586206896
+Corn,solidity,Solid,29,옥수수,0.7931034482758621
+Cow,category_organization,Form,29,소,0.6896551724137931
+Cow,category_organization,"Form, Color",29,소,0.10344827586206896
+Cow,category_organization,"Form, Color, Material",29,소,0.13793103448275862
+Cow,category_organization,"Form, Material",29,소,0.034482758620689655
+Cow,category_organization,Material,29,소,0.034482758620689655
+Cow,count_mass,Can be counted,36,소,0.8055555555555556
+Cow,count_mass,I don't know/It's hard to say,36,소,0.19444444444444445
+Cow,solidity,I don't know/It's hard to say,29,소,0.2413793103448276
+Cow,solidity,Not a solid,29,소,0.10344827586206896
+Cow,solidity,Solid,29,소,0.6551724137931034
+Crackers/Chips,category_organization,Form,29,과자/까까,0.4482758620689655
+Crackers/Chips,category_organization,"Form, Color",29,과자/까까,0.034482758620689655
+Crackers/Chips,category_organization,"Form, Color, Material",29,과자/까까,0.06896551724137931
+Crackers/Chips,category_organization,"Form, Material",29,과자/까까,0.27586206896551724
+Crackers/Chips,category_organization,Material,29,과자/까까,0.13793103448275862
+Crackers/Chips,category_organization,Not applicable,29,과자/까까,0.034482758620689655
+Crackers/Chips,count_mass,Can be counted,34,과자/까까,0.6764705882352942
+Crackers/Chips,count_mass,Cannot be counted,34,과자/까까,0.08823529411764706
+Crackers/Chips,count_mass,I don't know/It's hard to say,34,과자/까까,0.23529411764705882
+Crackers/Chips,solidity,I don't know/It's hard to say,32,과자/까까,0.25
+Crackers/Chips,solidity,Not a solid,32,과자/까까,0.0625
+Crackers/Chips,solidity,Solid,32,과자/까까,0.6875
+Crayon,category_organization,Color,29,크레용/크레파스,0.034482758620689655
+Crayon,category_organization,Form,29,크레용/크레파스,0.3103448275862069
+Crayon,category_organization,"Form, Color",29,크레용/크레파스,0.06896551724137931
+Crayon,category_organization,"Form, Color, Material",29,크레용/크레파스,0.20689655172413793
+Crayon,category_organization,"Form, Material",29,크레용/크레파스,0.2413793103448276
+Crayon,category_organization,Material,29,크레용/크레파스,0.10344827586206896
+Crayon,category_organization,Not applicable,29,크레용/크레파스,0.034482758620689655
+Crayon,count_mass,Can be counted,30,크레용/크레파스,0.9
+Crayon,count_mass,Cannot be counted,30,크레용/크레파스,0.03333333333333333
+Crayon,count_mass,I don't know/It's hard to say,30,크레용/크레파스,0.06666666666666667
+Crayon,solidity,I don't know/It's hard to say,30,크레용/크레파스,0.06666666666666667
+Crayon,solidity,Not a solid,30,크레용/크레파스,0.03333333333333333
+Crayon,solidity,Solid,30,크레용/크레파스,0.9
+Crocodile,category_organization,Form,29,악어,0.6896551724137931
+Crocodile,category_organization,"Form, Color",29,악어,0.10344827586206896
+Crocodile,category_organization,"Form, Color, Material",29,악어,0.10344827586206896
+Crocodile,category_organization,"Form, Material",29,악어,0.06896551724137931
+Crocodile,category_organization,Material,29,악어,0.034482758620689655
+Crocodile,count_mass,Can be counted,36,악어,0.7777777777777778
+Crocodile,count_mass,I don't know/It's hard to say,36,악어,0.2222222222222222
+Crocodile,solidity,I don't know/It's hard to say,30,악어,0.26666666666666666
+Crocodile,solidity,Not a solid,30,악어,0.1
+Crocodile,solidity,Solid,30,악어,0.6333333333333333
+Cup,category_organization,Color,29,컵,0.06896551724137931
+Cup,category_organization,Form,29,컵,0.6896551724137931
+Cup,category_organization,"Form, Color, Material",29,컵,0.10344827586206896
+Cup,category_organization,"Form, Material",29,컵,0.10344827586206896
+Cup,category_organization,Material,29,컵,0.034482758620689655
+Cup,count_mass,Can be counted,30,컵,0.9666666666666667
+Cup,count_mass,I don't know/It's hard to say,30,컵,0.03333333333333333
+Cup,solidity,I don't know/It's hard to say,29,컵,0.034482758620689655
+Cup,solidity,Solid,29,컵,0.9655172413793104
+Deer,category_organization,Form,29,사슴,0.6896551724137931
+Deer,category_organization,"Form, Color",29,사슴,0.10344827586206896
+Deer,category_organization,"Form, Color, Material",29,사슴,0.10344827586206896
+Deer,category_organization,"Form, Material",29,사슴,0.06896551724137931
+Deer,category_organization,Material,29,사슴,0.034482758620689655
+Deer,count_mass,Can be counted,36,사슴,0.8055555555555556
+Deer,count_mass,I don't know/It's hard to say,36,사슴,0.19444444444444445
+Deer,solidity,I don't know/It's hard to say,29,사슴,0.2413793103448276
+Deer,solidity,Not a solid,29,사슴,0.10344827586206896
+Deer,solidity,Solid,29,사슴,0.6551724137931034
+Diaper,category_organization,Form,29,기저귀,0.6206896551724138
+Diaper,category_organization,"Form, Color",29,기저귀,0.034482758620689655
+Diaper,category_organization,"Form, Color, Material",29,기저귀,0.06896551724137931
+Diaper,category_organization,"Form, Material",29,기저귀,0.20689655172413793
+Diaper,category_organization,Material,29,기저귀,0.06896551724137931
+Diaper,count_mass,Can be counted,33,기저귀,0.7575757575757576
+Diaper,count_mass,Cannot be counted,33,기저귀,0.12121212121212122
+Diaper,count_mass,I don't know/It's hard to say,33,기저귀,0.12121212121212122
+Diaper,solidity,I don't know/It's hard to say,29,기저귀,0.13793103448275862
+Diaper,solidity,Not a solid,29,기저귀,0.06896551724137931
+Diaper,solidity,Solid,29,기저귀,0.7931034482758621
+Dinosaur,category_organization,Form,29,공룡,0.6896551724137931
+Dinosaur,category_organization,"Form, Color",29,공룡,0.034482758620689655
+Dinosaur,category_organization,"Form, Color, Material",29,공룡,0.10344827586206896
+Dinosaur,category_organization,"Form, Material",29,공룡,0.13793103448275862
+Dinosaur,category_organization,Material,29,공룡,0.034482758620689655
+Dinosaur,count_mass,Can be counted,36,공룡,0.6666666666666666
+Dinosaur,count_mass,Cannot be counted,36,공룡,0.05555555555555555
+Dinosaur,count_mass,I don't know/It's hard to say,36,공룡,0.2777777777777778
+Dinosaur,solidity,I don't know/It's hard to say,32,공룡,0.3125
+Dinosaur,solidity,Not a solid,32,공룡,0.09375
+Dinosaur,solidity,Solid,32,공룡,0.59375
+Dog,category_organization,Form,29,개,0.6896551724137931
+Dog,category_organization,"Form, Color",29,개,0.06896551724137931
+Dog,category_organization,"Form, Color, Material",29,개,0.10344827586206896
+Dog,category_organization,"Form, Material",29,개,0.10344827586206896
+Dog,category_organization,Material,29,개,0.034482758620689655
+Dog,count_mass,Can be counted,36,개,0.8055555555555556
+Dog,count_mass,I don't know/It's hard to say,36,개,0.19444444444444445
+Dog,solidity,I don't know/It's hard to say,29,개,0.2413793103448276
+Dog,solidity,Not a solid,29,개,0.10344827586206896
+Dog,solidity,Solid,29,개,0.6551724137931034
+Doll,category_organization,"Color, Material",29,인형,0.034482758620689655
+Doll,category_organization,Form,29,인형,0.5172413793103449
+Doll,category_organization,"Form, Color",29,인형,0.034482758620689655
+Doll,category_organization,"Form, Color, Material",29,인형,0.13793103448275862
+Doll,category_organization,"Form, Material",29,인형,0.13793103448275862
+Doll,category_organization,Material,29,인형,0.10344827586206896
+Doll,category_organization,Not applicable,29,인형,0.034482758620689655
+Doll,count_mass,Can be counted,30,인형,0.9333333333333333
+Doll,count_mass,I don't know/It's hard to say,30,인형,0.06666666666666667
+Doll,solidity,I don't know/It's hard to say,30,인형,0.06666666666666667
+Doll,solidity,Solid,30,인형,0.9333333333333333
+Donkey,category_organization,Form,29,당나귀,0.6551724137931034
+Donkey,category_organization,"Form, Color",29,당나귀,0.10344827586206896
+Donkey,category_organization,"Form, Color, Material",29,당나귀,0.10344827586206896
+Donkey,category_organization,"Form, Material",29,당나귀,0.10344827586206896
+Donkey,category_organization,Material,29,당나귀,0.034482758620689655
+Donkey,count_mass,Can be counted,36,당나귀,0.8055555555555556
+Donkey,count_mass,I don't know/It's hard to say,36,당나귀,0.19444444444444445
+Donkey,solidity,I don't know/It's hard to say,29,당나귀,0.2413793103448276
+Donkey,solidity,Not a solid,29,당나귀,0.10344827586206896
+Donkey,solidity,Solid,29,당나귀,0.6551724137931034
+Donut,category_organization,Form,29,도너츠,0.5862068965517241
+Donut,category_organization,"Form, Color",29,도너츠,0.034482758620689655
+Donut,category_organization,"Form, Color, Material",29,도너츠,0.10344827586206896
+Donut,category_organization,"Form, Material",29,도너츠,0.2413793103448276
+Donut,category_organization,Material,29,도너츠,0.034482758620689655
+Donut,count_mass,Can be counted,33,도너츠,0.8787878787878788
+Donut,count_mass,I don't know/It's hard to say,33,도너츠,0.12121212121212122
+Donut,solidity,I don't know/It's hard to say,29,도너츠,0.13793103448275862
+Donut,solidity,Not a solid,29,도너츠,0.10344827586206896
+Donut,solidity,Solid,29,도너츠,0.7586206896551724
+Door,category_organization,Form,29,문,0.5862068965517241
+Door,category_organization,"Form, Color",29,문,0.034482758620689655
+Door,category_organization,"Form, Color, Material",29,문,0.034482758620689655
+Door,category_organization,"Form, Material",29,문,0.27586206896551724
+Door,category_organization,Material,29,문,0.034482758620689655
+Door,category_organization,Not applicable,29,문,0.034482758620689655
+Door,count_mass,Can be counted,30,문,0.9333333333333333
+Door,count_mass,I don't know/It's hard to say,30,문,0.06666666666666667
+Door,solidity,I don't know/It's hard to say,30,문,0.06666666666666667
+Door,solidity,Solid,30,문,0.9333333333333333
+Drawer,category_organization,Color,29,서랍,0.034482758620689655
+Drawer,category_organization,Form,29,서랍,0.7241379310344828
+Drawer,category_organization,"Form, Color, Material",29,서랍,0.034482758620689655
+Drawer,category_organization,"Form, Material",29,서랍,0.1724137931034483
+Drawer,category_organization,Material,29,서랍,0.034482758620689655
+Drawer,count_mass,Can be counted,30,서랍,0.8666666666666667
+Drawer,count_mass,Cannot be counted,30,서랍,0.06666666666666667
+Drawer,count_mass,I don't know/It's hard to say,30,서랍,0.06666666666666667
+Drawer,solidity,I don't know/It's hard to say,30,서랍,0.06666666666666667
+Drawer,solidity,Not a solid,30,서랍,0.03333333333333333
+Drawer,solidity,Solid,30,서랍,0.9
+Duck,category_organization,Form,29,오리,0.6206896551724138
+Duck,category_organization,"Form, Color",29,오리,0.1724137931034483
+Duck,category_organization,"Form, Color, Material",29,오리,0.10344827586206896
+Duck,category_organization,"Form, Material",29,오리,0.06896551724137931
+Duck,category_organization,Material,29,오리,0.034482758620689655
+Duck,count_mass,Can be counted,36,오리,0.8055555555555556
+Duck,count_mass,I don't know/It's hard to say,36,오리,0.19444444444444445
+Duck,solidity,I don't know/It's hard to say,29,오리,0.2413793103448276
+Duck,solidity,Not a solid,29,오리,0.10344827586206896
+Duck,solidity,Solid,29,오리,0.6551724137931034
+Ear,category_organization,Form,29,귀,0.8275862068965517
+Ear,category_organization,"Form, Material",29,귀,0.13793103448275862
+Ear,category_organization,Material,29,귀,0.034482758620689655
+Ear,count_mass,Can be counted,34,귀,0.8235294117647058
+Ear,count_mass,I don't know/It's hard to say,34,귀,0.17647058823529413
+Ear,solidity,I don't know/It's hard to say,30,귀,0.2
+Ear,solidity,Not a solid,30,귀,0.1
+Ear,solidity,Solid,30,귀,0.7
+Egg,category_organization,Color,29,계란/달걀,0.034482758620689655
+Egg,category_organization,Form,29,계란/달걀,0.4827586206896552
+Egg,category_organization,"Form, Color",29,계란/달걀,0.13793103448275862
+Egg,category_organization,"Form, Color, Material",29,계란/달걀,0.20689655172413793
+Egg,category_organization,"Form, Material",29,계란/달걀,0.06896551724137931
+Egg,category_organization,Material,29,계란/달걀,0.034482758620689655
+Egg,category_organization,Not applicable,29,계란/달걀,0.034482758620689655
+Egg,count_mass,Can be counted,35,계란/달걀,0.8285714285714286
+Egg,count_mass,I don't know/It's hard to say,35,계란/달걀,0.17142857142857143
+Egg,solidity,I don't know/It's hard to say,29,계란/달걀,0.20689655172413793
+Egg,solidity,Not a solid,29,계란/달걀,0.13793103448275862
+Egg,solidity,Solid,29,계란/달걀,0.6551724137931034
+Elephant,category_organization,Form,29,코끼리,0.7241379310344828
+Elephant,category_organization,"Form, Color",29,코끼리,0.06896551724137931
+Elephant,category_organization,"Form, Color, Material",29,코끼리,0.10344827586206896
+Elephant,category_organization,"Form, Material",29,코끼리,0.06896551724137931
+Elephant,category_organization,Material,29,코끼리,0.034482758620689655
+Elephant,count_mass,Can be counted,36,코끼리,0.8055555555555556
+Elephant,count_mass,I don't know/It's hard to say,36,코끼리,0.19444444444444445
+Elephant,solidity,I don't know/It's hard to say,29,코끼리,0.2413793103448276
+Elephant,solidity,Not a solid,29,코끼리,0.10344827586206896
+Elephant,solidity,Solid,29,코끼리,0.6551724137931034
+Eye,category_organization,Color,29,눈,0.034482758620689655
+Eye,category_organization,Form,29,눈,0.6896551724137931
+Eye,category_organization,"Form, Color",29,눈,0.10344827586206896
+Eye,category_organization,"Form, Color, Material",29,눈,0.06896551724137931
+Eye,category_organization,"Form, Material",29,눈,0.06896551724137931
+Eye,category_organization,Material,29,눈,0.034482758620689655
+Eye,count_mass,Can be counted,37,눈,0.7567567567567568
+Eye,count_mass,I don't know/It's hard to say,37,눈,0.24324324324324326
+Eye,solidity,I don't know/It's hard to say,30,눈,0.3
+Eye,solidity,Not a solid,30,눈,0.1
+Eye,solidity,Solid,30,눈,0.6
+Face,category_organization,Form,29,얼굴,0.7931034482758621
+Face,category_organization,"Form, Color",29,얼굴,0.06896551724137931
+Face,category_organization,"Form, Color, Material",29,얼굴,0.034482758620689655
+Face,category_organization,"Form, Material",29,얼굴,0.06896551724137931
+Face,category_organization,Material,29,얼굴,0.034482758620689655
+Face,count_mass,Can be counted,36,얼굴,0.7777777777777778
+Face,count_mass,I don't know/It's hard to say,36,얼굴,0.2222222222222222
+Face,solidity,I don't know/It's hard to say,30,얼굴,0.26666666666666666
+Face,solidity,Not a solid,30,얼굴,0.1
+Face,solidity,Solid,30,얼굴,0.6333333333333333
+Finger,category_organization,Form,29,손가락,0.7931034482758621
+Finger,category_organization,"Form, Color",29,손가락,0.034482758620689655
+Finger,category_organization,"Form, Material",29,손가락,0.13793103448275862
+Finger,category_organization,Material,29,손가락,0.034482758620689655
+Finger,count_mass,Can be counted,35,손가락,0.8285714285714286
+Finger,count_mass,I don't know/It's hard to say,35,손가락,0.17142857142857143
+Finger,solidity,I don't know/It's hard to say,29,손가락,0.20689655172413793
+Finger,solidity,Not a solid,29,손가락,0.10344827586206896
+Finger,solidity,Solid,29,손가락,0.6896551724137931
+Fire,category_organization,Color,29,불,0.10344827586206896
+Fire,category_organization,"Color, Material",29,불,0.13793103448275862
+Fire,category_organization,Form,29,불,0.3103448275862069
+Fire,category_organization,"Form, Color",29,불,0.10344827586206896
+Fire,category_organization,"Form, Color, Material",29,불,0.10344827586206896
+Fire,category_organization,"Form, Material",29,불,0.034482758620689655
+Fire,category_organization,Material,29,불,0.10344827586206896
+Fire,category_organization,Not applicable,29,불,0.10344827586206896
+Fire,count_mass,Can be counted,31,불,0.16129032258064516
+Fire,count_mass,Cannot be counted,31,불,0.6774193548387096
+Fire,count_mass,I don't know/It's hard to say,31,불,0.16129032258064516
+Fire,solidity,I don't know/It's hard to say,29,불,0.1724137931034483
+Fire,solidity,Not a solid,29,불,0.8275862068965517
+Fire Truck,category_organization,Form,28,소방차/불자동차,0.5
+Fire Truck,category_organization,"Form, Color",28,소방차/불자동차,0.14285714285714285
+Fire Truck,category_organization,"Form, Color, Material",28,소방차/불자동차,0.21428571428571427
+Fire Truck,category_organization,"Form, Material",28,소방차/불자동차,0.07142857142857142
+Fire Truck,category_organization,Material,28,소방차/불자동차,0.07142857142857142
+Fire Truck,count_mass,Can be counted,30,소방차/불자동차,0.9
+Fire Truck,count_mass,Cannot be counted,30,소방차/불자동차,0.03333333333333333
+Fire Truck,count_mass,I don't know/It's hard to say,30,소방차/불자동차,0.06666666666666667
+Fire Truck,solidity,I don't know/It's hard to say,30,소방차/불자동차,0.06666666666666667
+Fire Truck,solidity,Solid,30,소방차/불자동차,0.9333333333333333
+Fish,category_organization,Color,58,생선,0.017241379310344827
+Fish,category_organization,"Color, Material",58,생선,0.017241379310344827
+Fish,category_organization,Form,58,물고기,0.3275862068965517
+Fish,category_organization,Form,58,생선,0.20689655172413793
+Fish,category_organization,"Form, Color",58,물고기,0.05172413793103448
+Fish,category_organization,"Form, Color",58,생선,0.034482758620689655
+Fish,category_organization,"Form, Color, Material",58,물고기,0.034482758620689655
+Fish,category_organization,"Form, Material",58,물고기,0.06896551724137931
+Fish,category_organization,"Form, Material",58,생선,0.15517241379310345
+Fish,category_organization,Material,58,물고기,0.017241379310344827
+Fish,category_organization,Material,58,생선,0.05172413793103448
+Fish,category_organization,Not applicable,58,생선,0.017241379310344827
+Fish,count_mass,Can be counted,69,물고기,0.36231884057971014
+Fish,count_mass,Can be counted,69,생선,0.391304347826087
+Fish,count_mass,Cannot be counted,69,물고기,0.028985507246376812
+Fish,count_mass,Cannot be counted,69,생선,0.014492753623188406
+Fish,count_mass,I don't know/It's hard to say,69,물고기,0.13043478260869565
+Fish,count_mass,I don't know/It's hard to say,69,생선,0.07246376811594203
+Fish,solidity,I don't know/It's hard to say,61,물고기,0.14754098360655737
+Fish,solidity,I don't know/It's hard to say,61,생선,0.08196721311475409
+Fish,solidity,Not a solid,61,물고기,0.04918032786885246
+Fish,solidity,Not a solid,61,생선,0.04918032786885246
+Fish,solidity,Solid,61,물고기,0.3114754098360656
+Fish,solidity,Solid,61,생선,0.36065573770491804
+Flag,category_organization,Color,29,깃발,0.06896551724137931
+Flag,category_organization,Form,29,깃발,0.6206896551724138
+Flag,category_organization,"Form, Color",29,깃발,0.034482758620689655
+Flag,category_organization,"Form, Color, Material",29,깃발,0.10344827586206896
+Flag,category_organization,"Form, Material",29,깃발,0.13793103448275862
+Flag,category_organization,Material,29,깃발,0.034482758620689655
+Flag,count_mass,Can be counted,30,깃발,0.9333333333333333
+Flag,count_mass,I don't know/It's hard to say,30,깃발,0.06666666666666667
+Flag,solidity,I don't know/It's hard to say,29,깃발,0.06896551724137931
+Flag,solidity,Not a solid,29,깃발,0.034482758620689655
+Flag,solidity,Solid,29,깃발,0.896551724137931
+Flower,category_organization,Form,29,꽃,0.5172413793103449
+Flower,category_organization,"Form, Color",29,꽃,0.1724137931034483
+Flower,category_organization,"Form, Color, Material",29,꽃,0.13793103448275862
+Flower,category_organization,"Form, Material",29,꽃,0.10344827586206896
+Flower,category_organization,Material,29,꽃,0.034482758620689655
+Flower,category_organization,Not applicable,29,꽃,0.034482758620689655
+Flower,count_mass,Can be counted,33,꽃,0.7575757575757576
+Flower,count_mass,Cannot be counted,33,꽃,0.12121212121212122
+Flower,count_mass,I don't know/It's hard to say,33,꽃,0.12121212121212122
+Flower,solidity,I don't know/It's hard to say,29,꽃,0.13793103448275862
+Flower,solidity,Not a solid,29,꽃,0.1724137931034483
+Flower,solidity,Solid,29,꽃,0.6896551724137931
+Food,category_organization,Color,29,음식,0.034482758620689655
+Food,category_organization,Form,29,음식,0.2413793103448276
+Food,category_organization,"Form, Color",29,음식,0.034482758620689655
+Food,category_organization,"Form, Color, Material",29,음식,0.27586206896551724
+Food,category_organization,"Form, Material",29,음식,0.13793103448275862
+Food,category_organization,Material,29,음식,0.13793103448275862
+Food,category_organization,Not applicable,29,음식,0.13793103448275862
+Food,count_mass,Can be counted,43,음식,0.4186046511627907
+Food,count_mass,Cannot be counted,43,음식,0.09302325581395349
+Food,count_mass,I don't know/It's hard to say,43,음식,0.4883720930232558
+Food,solidity,I don't know/It's hard to say,36,음식,0.5833333333333334
+Food,solidity,Not a solid,36,음식,0.08333333333333333
+Food,solidity,Solid,36,음식,0.3333333333333333
+Foot,category_organization,Form,29,발,0.8620689655172413
+Foot,category_organization,"Form, Material",29,발,0.10344827586206896
+Foot,category_organization,Material,29,발,0.034482758620689655
+Foot,count_mass,Can be counted,34,발,0.8529411764705882
+Foot,count_mass,I don't know/It's hard to say,34,발,0.14705882352941177
+Foot,solidity,I don't know/It's hard to say,29,발,0.1724137931034483
+Foot,solidity,Not a solid,29,발,0.10344827586206896
+Foot,solidity,Solid,29,발,0.7241379310344828
+Fork,category_organization,Color,29,포크,0.034482758620689655
+Fork,category_organization,Form,29,포크,0.7241379310344828
+Fork,category_organization,"Form, Color, Material",29,포크,0.06896551724137931
+Fork,category_organization,"Form, Material",29,포크,0.13793103448275862
+Fork,category_organization,Material,29,포크,0.034482758620689655
+Fork,count_mass,Can be counted,30,포크,0.9666666666666667
+Fork,count_mass,I don't know/It's hard to say,30,포크,0.03333333333333333
+Fork,solidity,I don't know/It's hard to say,29,포크,0.034482758620689655
+Fork,solidity,Solid,29,포크,0.9655172413793104
+Fox,category_organization,Form,29,여우,0.6896551724137931
+Fox,category_organization,"Form, Color",29,여우,0.10344827586206896
+Fox,category_organization,"Form, Color, Material",29,여우,0.034482758620689655
+Fox,category_organization,"Form, Material",29,여우,0.13793103448275862
+Fox,category_organization,Material,29,여우,0.034482758620689655
+Fox,count_mass,Can be counted,36,여우,0.8055555555555556
+Fox,count_mass,I don't know/It's hard to say,36,여우,0.19444444444444445
+Fox,solidity,I don't know/It's hard to say,29,여우,0.2413793103448276
+Fox,solidity,Not a solid,29,여우,0.10344827586206896
+Fox,solidity,Solid,29,여우,0.6551724137931034
+Frog,category_organization,Color,29,개구리,0.034482758620689655
+Frog,category_organization,Form,29,개구리,0.5517241379310345
+Frog,category_organization,"Form, Color",29,개구리,0.1724137931034483
+Frog,category_organization,"Form, Color, Material",29,개구리,0.06896551724137931
+Frog,category_organization,"Form, Material",29,개구리,0.13793103448275862
+Frog,category_organization,Material,29,개구리,0.034482758620689655
+Frog,count_mass,Can be counted,36,개구리,0.7777777777777778
+Frog,count_mass,I don't know/It's hard to say,36,개구리,0.2222222222222222
+Frog,solidity,I don't know/It's hard to say,30,개구리,0.26666666666666666
+Frog,solidity,Not a solid,30,개구리,0.1
+Frog,solidity,Solid,30,개구리,0.6333333333333333
+Fruit,category_organization,Color,29,과일,0.034482758620689655
+Fruit,category_organization,Form,29,과일,0.41379310344827586
+Fruit,category_organization,"Form, Color",29,과일,0.10344827586206896
+Fruit,category_organization,"Form, Color, Material",29,과일,0.10344827586206896
+Fruit,category_organization,"Form, Material",29,과일,0.20689655172413793
+Fruit,category_organization,Material,29,과일,0.06896551724137931
+Fruit,category_organization,Not applicable,29,과일,0.06896551724137931
+Fruit,count_mass,Can be counted,33,과일,0.7575757575757576
+Fruit,count_mass,Cannot be counted,33,과일,0.030303030303030304
+Fruit,count_mass,I don't know/It's hard to say,33,과일,0.21212121212121213
+Fruit,solidity,I don't know/It's hard to say,32,과일,0.21875
+Fruit,solidity,Not a solid,32,과일,0.0625
+Fruit,solidity,Solid,32,과일,0.71875
+Garbage,category_organization,Color,29,쓰레기,0.034482758620689655
+Garbage,category_organization,Form,29,쓰레기,0.41379310344827586
+Garbage,category_organization,"Form, Color, Material",29,쓰레기,0.034482758620689655
+Garbage,category_organization,"Form, Color, Material, Not applicable",29,쓰레기,0.034482758620689655
+Garbage,category_organization,"Form, Material",29,쓰레기,0.1724137931034483
+Garbage,category_organization,Material,29,쓰레기,0.06896551724137931
+Garbage,category_organization,Not applicable,29,쓰레기,0.2413793103448276
+Garbage,count_mass,Can be counted,42,쓰레기,0.30952380952380953
+Garbage,count_mass,Cannot be counted,42,쓰레기,0.21428571428571427
+Garbage,count_mass,I don't know/It's hard to say,42,쓰레기,0.47619047619047616
+Garbage,solidity,I don't know/It's hard to say,36,쓰레기,0.5555555555555556
+Garbage,solidity,Not a solid,36,쓰레기,0.08333333333333333
+Garbage,solidity,Solid,36,쓰레기,0.3611111111111111
+Gift/present,category_organization,Form,29,선물,0.4827586206896552
+Gift/present,category_organization,"Form, Color, Material",29,선물,0.13793103448275862
+Gift/present,category_organization,"Form, Material",29,선물,0.06896551724137931
+Gift/present,category_organization,Material,29,선물,0.10344827586206896
+Gift/present,category_organization,Not applicable,29,선물,0.20689655172413793
+Gift/present,count_mass,Can be counted,40,선물,0.575
+Gift/present,count_mass,Cannot be counted,40,선물,0.075
+Gift/present,count_mass,I don't know/It's hard to say,40,선물,0.35
+Gift/present,solidity,I don't know/It's hard to say,32,선물,0.4375
+Gift/present,solidity,Solid,32,선물,0.5625
+Giraffe,category_organization,Form,29,기린,0.6206896551724138
+Giraffe,category_organization,"Form, Color",29,기린,0.1724137931034483
+Giraffe,category_organization,"Form, Color, Material",29,기린,0.10344827586206896
+Giraffe,category_organization,"Form, Material",29,기린,0.06896551724137931
+Giraffe,category_organization,Material,29,기린,0.034482758620689655
+Giraffe,count_mass,Can be counted,36,기린,0.8055555555555556
+Giraffe,count_mass,I don't know/It's hard to say,36,기린,0.19444444444444445
+Giraffe,solidity,I don't know/It's hard to say,29,기린,0.2413793103448276
+Giraffe,solidity,Not a solid,29,기린,0.10344827586206896
+Giraffe,solidity,Solid,29,기린,0.6551724137931034
+Glass,category_organization,Form,28,유리,0.25
+Glass,category_organization,"Form, Color",28,유리,0.03571428571428571
+Glass,category_organization,"Form, Material",28,유리,0.32142857142857145
+Glass,category_organization,Material,28,유리,0.35714285714285715
+Glass,category_organization,Not applicable,28,유리,0.03571428571428571
+Glass,count_mass,Can be counted,30,유리,0.6333333333333333
+Glass,count_mass,Cannot be counted,30,유리,0.16666666666666666
+Glass,count_mass,I don't know/It's hard to say,30,유리,0.2
+Glass,solidity,I don't know/It's hard to say,34,유리,0.17647058823529413
+Glass,solidity,Not a solid,34,유리,0.029411764705882353
+Glass,solidity,Solid,34,유리,0.7941176470588235
+Glasses,category_organization,Form,29,안경,0.6551724137931034
+Glasses,category_organization,"Form, Color, Material",29,안경,0.13793103448275862
+Glasses,category_organization,"Form, Material",29,안경,0.1724137931034483
+Glasses,category_organization,Material,29,안경,0.034482758620689655
+Glasses,count_mass,Can be counted,30,안경,0.9333333333333333
+Glasses,count_mass,Cannot be counted,30,안경,0.03333333333333333
+Glasses,count_mass,I don't know/It's hard to say,30,안경,0.03333333333333333
+Glasses,solidity,I don't know/It's hard to say,29,안경,0.034482758620689655
+Glasses,solidity,Solid,29,안경,0.9655172413793104
+Gloves,category_organization,Color,29,장갑,0.034482758620689655
+Gloves,category_organization,Form,29,장갑,0.6551724137931034
+Gloves,category_organization,"Form, Color",29,장갑,0.034482758620689655
+Gloves,category_organization,"Form, Color, Material",29,장갑,0.10344827586206896
+Gloves,category_organization,"Form, Material",29,장갑,0.10344827586206896
+Gloves,category_organization,Material,29,장갑,0.06896551724137931
+Gloves,count_mass,Can be counted,32,장갑,0.875
+Gloves,count_mass,Cannot be counted,32,장갑,0.03125
+Gloves,count_mass,I don't know/It's hard to say,32,장갑,0.09375
+Gloves,solidity,I don't know/It's hard to say,29,장갑,0.10344827586206896
+Gloves,solidity,Not a solid,29,장갑,0.06896551724137931
+Gloves,solidity,Solid,29,장갑,0.8275862068965517
+Glue/Gluestick,category_organization,Color,29,풀,0.034482758620689655
+Glue/Gluestick,category_organization,Form,29,풀,0.3448275862068966
+Glue/Gluestick,category_organization,"Form, Color, Material",29,풀,0.034482758620689655
+Glue/Gluestick,category_organization,"Form, Material",29,풀,0.3448275862068966
+Glue/Gluestick,category_organization,Material,29,풀,0.1724137931034483
+Glue/Gluestick,category_organization,Not applicable,29,풀,0.06896551724137931
+Glue/Gluestick,count_mass,Can be counted,34,풀,0.7352941176470589
+Glue/Gluestick,count_mass,Cannot be counted,34,풀,0.058823529411764705
+Glue/Gluestick,count_mass,I don't know/It's hard to say,34,풀,0.20588235294117646
+Glue/Gluestick,solidity,I don't know/It's hard to say,31,풀,0.22580645161290322
+Glue/Gluestick,solidity,Not a solid,31,풀,0.1935483870967742
+Glue/Gluestick,solidity,Solid,31,풀,0.5806451612903226
+Goat,category_organization,Form,29,염소,0.7241379310344828
+Goat,category_organization,"Form, Color",29,염소,0.06896551724137931
+Goat,category_organization,"Form, Color, Material",29,염소,0.06896551724137931
+Goat,category_organization,"Form, Material",29,염소,0.10344827586206896
+Goat,category_organization,Material,29,염소,0.034482758620689655
+Goat,count_mass,Can be counted,36,염소,0.8055555555555556
+Goat,count_mass,I don't know/It's hard to say,36,염소,0.19444444444444445
+Goat,solidity,I don't know/It's hard to say,29,염소,0.2413793103448276
+Goat,solidity,Not a solid,29,염소,0.10344827586206896
+Goat,solidity,Solid,29,염소,0.6551724137931034
+Goose,category_organization,Color,29,거위,0.034482758620689655
+Goose,category_organization,Form,29,거위,0.6206896551724138
+Goose,category_organization,"Form, Color",29,거위,0.10344827586206896
+Goose,category_organization,"Form, Color, Material",29,거위,0.06896551724137931
+Goose,category_organization,"Form, Material",29,거위,0.13793103448275862
+Goose,category_organization,Material,29,거위,0.034482758620689655
+Goose,count_mass,Can be counted,36,거위,0.8055555555555556
+Goose,count_mass,I don't know/It's hard to say,36,거위,0.19444444444444445
+Goose,solidity,I don't know/It's hard to say,29,거위,0.2413793103448276
+Goose,solidity,Not a solid,29,거위,0.10344827586206896
+Goose,solidity,Solid,29,거위,0.6551724137931034
+Grape,category_organization,Color,29,포도,0.034482758620689655
+Grape,category_organization,Form,29,포도,0.4482758620689655
+Grape,category_organization,"Form, Color",29,포도,0.10344827586206896
+Grape,category_organization,"Form, Color, Material",29,포도,0.2413793103448276
+Grape,category_organization,"Form, Material",29,포도,0.034482758620689655
+Grape,category_organization,Material,29,포도,0.10344827586206896
+Grape,category_organization,Not applicable,29,포도,0.034482758620689655
+Grape,count_mass,Can be counted,32,포도,0.8125
+Grape,count_mass,Cannot be counted,32,포도,0.0625
+Grape,count_mass,I don't know/It's hard to say,32,포도,0.125
+Grape,solidity,I don't know/It's hard to say,30,포도,0.13333333333333333
+Grape,solidity,Not a solid,30,포도,0.1
+Grape,solidity,Solid,30,포도,0.7666666666666667
+Grass (more beautified and maintained),category_organization,"Color, Material",29,잔디,0.13793103448275862
+Grass (more beautified and maintained),category_organization,Form,29,잔디,0.4827586206896552
+Grass (more beautified and maintained),category_organization,"Form, Color",29,잔디,0.13793103448275862
+Grass (more beautified and maintained),category_organization,"Form, Color, Material",29,잔디,0.034482758620689655
+Grass (more beautified and maintained),category_organization,"Form, Material",29,잔디,0.06896551724137931
+Grass (more beautified and maintained),category_organization,Material,29,잔디,0.06896551724137931
+Grass (more beautified and maintained),category_organization,Not applicable,29,잔디,0.06896551724137931
+Grass (more beautified and maintained),count_mass,Can be counted,30,잔디,0.16666666666666666
+Grass (more beautified and maintained),count_mass,Cannot be counted,30,잔디,0.6
+Grass (more beautified and maintained),count_mass,I don't know/It's hard to say,30,잔디,0.23333333333333334
+Grass (more beautified and maintained),solidity,I don't know/It's hard to say,29,잔디,0.2413793103448276
+Grass (more beautified and maintained),solidity,Not a solid,29,잔디,0.20689655172413793
+Grass (more beautified and maintained),solidity,Solid,29,잔디,0.5517241379310345
+Grass/weeds (In nature),category_organization,"Color, Material",29,풀,0.10344827586206896
+Grass/weeds (In nature),category_organization,Form,29,풀,0.41379310344827586
+Grass/weeds (In nature),category_organization,"Form, Color",29,풀,0.1724137931034483
+Grass/weeds (In nature),category_organization,"Form, Color, Material",29,풀,0.06896551724137931
+Grass/weeds (In nature),category_organization,"Form, Material",29,풀,0.13793103448275862
+Grass/weeds (In nature),category_organization,Material,29,풀,0.06896551724137931
+Grass/weeds (In nature),category_organization,Not applicable,29,풀,0.034482758620689655
+Grass/weeds (In nature),count_mass,Can be counted,31,풀,0.12903225806451613
+Grass/weeds (In nature),count_mass,Cannot be counted,31,풀,0.6451612903225806
+Grass/weeds (In nature),count_mass,I don't know/It's hard to say,31,풀,0.22580645161290322
+Grass/weeds (In nature),solidity,I don't know/It's hard to say,29,풀,0.2413793103448276
+Grass/weeds (In nature),solidity,Not a solid,29,풀,0.20689655172413793
+Grass/weeds (In nature),solidity,Solid,29,풀,0.5517241379310345
+Ground,category_organization,Color,29,땅,0.034482758620689655
+Ground,category_organization,"Color, Material",29,땅,0.034482758620689655
+Ground,category_organization,Form,29,땅,0.4482758620689655
+Ground,category_organization,"Form, Color",29,땅,0.06896551724137931
+Ground,category_organization,"Form, Color, Material",29,땅,0.06896551724137931
+Ground,category_organization,"Form, Material",29,땅,0.13793103448275862
+Ground,category_organization,Material,29,땅,0.13793103448275862
+Ground,category_organization,Not applicable,29,땅,0.06896551724137931
+Ground,count_mass,Can be counted,30,땅,0.13333333333333333
+Ground,count_mass,Cannot be counted,30,땅,0.7
+Ground,count_mass,I don't know/It's hard to say,30,땅,0.16666666666666666
+Ground,solidity,I don't know/It's hard to say,29,땅,0.1724137931034483
+Ground,solidity,Not a solid,29,땅,0.1724137931034483
+Ground,solidity,Solid,29,땅,0.6551724137931034
+Gum,category_organization,Form,29,껌,0.3103448275862069
+Gum,category_organization,"Form, Color",29,껌,0.10344827586206896
+Gum,category_organization,"Form, Material",29,껌,0.3793103448275862
+Gum,category_organization,Material,29,껌,0.1724137931034483
+Gum,category_organization,Not applicable,29,껌,0.034482758620689655
+Gum,count_mass,Can be counted,33,껌,0.7575757575757576
+Gum,count_mass,Cannot be counted,33,껌,0.06060606060606061
+Gum,count_mass,I don't know/It's hard to say,33,껌,0.18181818181818182
+Gum,solidity,I don't know/It's hard to say,31,껌,0.1935483870967742
+Gum,solidity,Not a solid,31,껌,0.0967741935483871
+Gum,solidity,Solid,31,껌,0.7096774193548387
+Gun,category_organization,Color,29,총,0.034482758620689655
+Gun,category_organization,Form,29,총,0.5517241379310345
+Gun,category_organization,"Form, Color, Material",29,총,0.06896551724137931
+Gun,category_organization,"Form, Material",29,총,0.2413793103448276
+Gun,category_organization,Material,29,총,0.06896551724137931
+Gun,category_organization,Not applicable,29,총,0.034482758620689655
+Gun,count_mass,Can be counted,30,총,0.8666666666666667
+Gun,count_mass,I don't know/It's hard to say,30,총,0.13333333333333333
+Gun,solidity,I don't know/It's hard to say,32,총,0.125
+Gun,solidity,Solid,32,총,0.875
+Hair,category_organization,Form,29,머리카락,0.4827586206896552
+Hair,category_organization,"Form, Color",29,머리카락,0.20689655172413793
+Hair,category_organization,"Form, Color, Material",29,머리카락,0.10344827586206896
+Hair,category_organization,"Form, Material",29,머리카락,0.1724137931034483
+Hair,category_organization,Material,29,머리카락,0.034482758620689655
+Hair,count_mass,Can be counted,33,머리카락,0.6060606060606061
+Hair,count_mass,Cannot be counted,33,머리카락,0.18181818181818182
+Hair,count_mass,I don't know/It's hard to say,33,머리카락,0.21212121212121213
+Hair,solidity,I don't know/It's hard to say,32,머리카락,0.21875
+Hair,solidity,Not a solid,32,머리카락,0.1875
+Hair,solidity,Solid,32,머리카락,0.59375
+Hamburger,category_organization,Form,29,햄버거,0.5172413793103449
+Hamburger,category_organization,"Form, Color",29,햄버거,0.10344827586206896
+Hamburger,category_organization,"Form, Color, Material",29,햄버거,0.06896551724137931
+Hamburger,category_organization,"Form, Color, Not applicable",29,햄버거,0.034482758620689655
+Hamburger,category_organization,"Form, Material",29,햄버거,0.1724137931034483
+Hamburger,category_organization,Material,29,햄버거,0.10344827586206896
+Hamburger,count_mass,Can be counted,34,햄버거,0.8529411764705882
+Hamburger,count_mass,I don't know/It's hard to say,34,햄버거,0.14705882352941177
+Hamburger,solidity,I don't know/It's hard to say,29,햄버거,0.1724137931034483
+Hamburger,solidity,Not a solid,29,햄버거,0.10344827586206896
+Hamburger,solidity,Solid,29,햄버거,0.7241379310344828
+Hammer,category_organization,Color,29,망치,0.034482758620689655
+Hammer,category_organization,Form,29,망치,0.7241379310344828
+Hammer,category_organization,"Form, Color",29,망치,0.034482758620689655
+Hammer,category_organization,"Form, Material",29,망치,0.1724137931034483
+Hammer,category_organization,Material,29,망치,0.034482758620689655
+Hammer,count_mass,Can be counted,30,망치,0.9666666666666667
+Hammer,count_mass,I don't know/It's hard to say,30,망치,0.03333333333333333
+Hammer,solidity,I don't know/It's hard to say,29,망치,0.034482758620689655
+Hammer,solidity,Solid,29,망치,0.9655172413793104
+Hand,category_organization,Form,29,손,0.8275862068965517
+Hand,category_organization,"Form, Color",29,손,0.034482758620689655
+Hand,category_organization,"Form, Material",29,손,0.10344827586206896
+Hand,category_organization,Material,29,손,0.034482758620689655
+Hand,count_mass,Can be counted,35,손,0.8285714285714286
+Hand,count_mass,I don't know/It's hard to say,35,손,0.17142857142857143
+Hand,solidity,I don't know/It's hard to say,29,손,0.20689655172413793
+Hand,solidity,Not a solid,29,손,0.10344827586206896
+Hand,solidity,Solid,29,손,0.6896551724137931
+Hat,category_organization,Color,29,모자,0.034482758620689655
+Hat,category_organization,Form,29,모자,0.6206896551724138
+Hat,category_organization,"Form, Color",29,모자,0.034482758620689655
+Hat,category_organization,"Form, Color, Material",29,모자,0.10344827586206896
+Hat,category_organization,"Form, Material",29,모자,0.13793103448275862
+Hat,category_organization,Material,29,모자,0.06896551724137931
+Hat,count_mass,Can be counted,31,모자,0.9354838709677419
+Hat,count_mass,I don't know/It's hard to say,31,모자,0.06451612903225806
+Hat,solidity,I don't know/It's hard to say,29,모자,0.06896551724137931
+Hat,solidity,Not a solid,29,모자,0.034482758620689655
+Hat,solidity,Solid,29,모자,0.896551724137931
+Head,category_organization,Form,29,머리,0.8275862068965517
+Head,category_organization,"Form, Color, Material",29,머리,0.034482758620689655
+Head,category_organization,"Form, Material",29,머리,0.10344827586206896
+Head,category_organization,Material,29,머리,0.034482758620689655
+Head,count_mass,Can be counted,34,머리,0.8235294117647058
+Head,count_mass,I don't know/It's hard to say,34,머리,0.17647058823529413
+Head,solidity,I don't know/It's hard to say,30,머리,0.2
+Head,solidity,Not a solid,30,머리,0.1
+Head,solidity,Solid,30,머리,0.7
+Helipcopter,category_organization,Form,28,헬리콥터,0.6428571428571429
+Helipcopter,category_organization,"Form, Color, Material",28,헬리콥터,0.03571428571428571
+Helipcopter,category_organization,"Form, Material",28,헬리콥터,0.25
+Helipcopter,category_organization,Material,28,헬리콥터,0.07142857142857142
+Helipcopter,count_mass,Can be counted,30,헬리콥터,0.9
+Helipcopter,count_mass,Cannot be counted,30,헬리콥터,0.03333333333333333
+Helipcopter,count_mass,I don't know/It's hard to say,30,헬리콥터,0.06666666666666667
+Helipcopter,solidity,I don't know/It's hard to say,30,헬리콥터,0.06666666666666667
+Helipcopter,solidity,Solid,30,헬리콥터,0.9333333333333333
+Hippopotamus,category_organization,Form,29,하마,0.7586206896551724
+Hippopotamus,category_organization,"Form, Color",29,하마,0.034482758620689655
+Hippopotamus,category_organization,"Form, Color, Material",29,하마,0.06896551724137931
+Hippopotamus,category_organization,"Form, Material",29,하마,0.10344827586206896
+Hippopotamus,category_organization,Material,29,하마,0.034482758620689655
+Hippopotamus,count_mass,Can be counted,36,하마,0.7777777777777778
+Hippopotamus,count_mass,I don't know/It's hard to say,36,하마,0.2222222222222222
+Hippopotamus,solidity,I don't know/It's hard to say,30,하마,0.26666666666666666
+Hippopotamus,solidity,Not a solid,30,하마,0.1
+Hippopotamus,solidity,Solid,30,하마,0.6333333333333333
+Horse,category_organization,Form,29,말,0.6551724137931034
+Horse,category_organization,"Form, Color",29,말,0.06896551724137931
+Horse,category_organization,"Form, Color, Material",29,말,0.13793103448275862
+Horse,category_organization,"Form, Material",29,말,0.10344827586206896
+Horse,category_organization,Material,29,말,0.034482758620689655
+Horse,count_mass,Can be counted,36,말,0.8055555555555556
+Horse,count_mass,I don't know/It's hard to say,36,말,0.19444444444444445
+Horse,solidity,I don't know/It's hard to say,29,말,0.2413793103448276
+Horse,solidity,Not a solid,29,말,0.10344827586206896
+Horse,solidity,Solid,29,말,0.6551724137931034
+Hot Dog,category_organization,Color,29,핫도그,0.034482758620689655
+Hot Dog,category_organization,Form,29,핫도그,0.5172413793103449
+Hot Dog,category_organization,"Form, Color",29,핫도그,0.06896551724137931
+Hot Dog,category_organization,"Form, Color, Material",29,핫도그,0.13793103448275862
+Hot Dog,category_organization,"Form, Material",29,핫도그,0.13793103448275862
+Hot Dog,category_organization,Material,29,핫도그,0.06896551724137931
+Hot Dog,category_organization,"Material, Not applicable",29,핫도그,0.034482758620689655
+Hot Dog,count_mass,Can be counted,34,핫도그,0.8529411764705882
+Hot Dog,count_mass,I don't know/It's hard to say,34,핫도그,0.14705882352941177
+Hot Dog,solidity,I don't know/It's hard to say,29,핫도그,0.1724137931034483
+Hot Dog,solidity,Not a solid,29,핫도그,0.10344827586206896
+Hot Dog,solidity,Solid,29,핫도그,0.7241379310344828
+Hotteok (Korean Pancake),category_organization,Color,29,호떡,0.034482758620689655
+Hotteok (Korean Pancake),category_organization,Form,29,호떡,0.5172413793103449
+Hotteok (Korean Pancake),category_organization,"Form, Color",29,호떡,0.06896551724137931
+Hotteok (Korean Pancake),category_organization,"Form, Color, Material",29,호떡,0.10344827586206896
+Hotteok (Korean Pancake),category_organization,"Form, Material",29,호떡,0.1724137931034483
+Hotteok (Korean Pancake),category_organization,Material,29,호떡,0.10344827586206896
+Hotteok (Korean Pancake),count_mass,Can be counted,34,호떡,0.8529411764705882
+Hotteok (Korean Pancake),count_mass,I don't know/It's hard to say,34,호떡,0.14705882352941177
+Hotteok (Korean Pancake),solidity,I don't know/It's hard to say,29,호떡,0.1724137931034483
+Hotteok (Korean Pancake),solidity,Not a solid,29,호떡,0.10344827586206896
+Hotteok (Korean Pancake),solidity,Solid,29,호떡,0.7241379310344828
+Ice,category_organization,"Color, Material",29,얼음,0.034482758620689655
+Ice,category_organization,Form,29,얼음,0.3793103448275862
+Ice,category_organization,"Form, Material",29,얼음,0.3103448275862069
+Ice,category_organization,Material,29,얼음,0.1724137931034483
+Ice,category_organization,Not applicable,29,얼음,0.10344827586206896
+Ice,count_mass,Can be counted,33,얼음,0.5757575757575758
+Ice,count_mass,Cannot be counted,33,얼음,0.15151515151515152
+Ice,count_mass,I don't know/It's hard to say,33,얼음,0.2727272727272727
+Ice,solidity,I don't know/It's hard to say,34,얼음,0.2647058823529412
+Ice,solidity,Not a solid,34,얼음,0.17647058823529413
+Ice,solidity,Solid,34,얼음,0.5588235294117647
+Ice Cream,category_organization,Form,29,아이스크림,0.41379310344827586
+Ice Cream,category_organization,"Form, Color",29,아이스크림,0.034482758620689655
+Ice Cream,category_organization,"Form, Color, Material",29,아이스크림,0.13793103448275862
+Ice Cream,category_organization,"Form, Material",29,아이스크림,0.2413793103448276
+Ice Cream,category_organization,Material,29,아이스크림,0.1724137931034483
+Ice Cream,count_mass,Can be counted,40,아이스크림,0.6
+Ice Cream,count_mass,Cannot be counted,40,아이스크림,0.025
+Ice Cream,count_mass,I don't know/It's hard to say,40,아이스크림,0.375
+Ice Cream,solidity,I don't know/It's hard to say,33,아이스크림,0.45454545454545453
+Ice Cream,solidity,Not a solid,33,아이스크림,0.30303030303030304
+Ice Cream,solidity,Solid,33,아이스크림,0.24242424242424243
+Jacket,category_organization,Form,29,잠바,0.5862068965517241
+Jacket,category_organization,"Form, Color",29,잠바,0.10344827586206896
+Jacket,category_organization,"Form, Color, Material",29,잠바,0.13793103448275862
+Jacket,category_organization,"Form, Material",29,잠바,0.10344827586206896
+Jacket,category_organization,Material,29,잠바,0.06896551724137931
+Jacket,count_mass,Can be counted,32,잠바,0.90625
+Jacket,count_mass,I don't know/It's hard to say,32,잠바,0.09375
+Jacket,solidity,I don't know/It's hard to say,29,잠바,0.10344827586206896
+Jacket,solidity,Not a solid,29,잠바,0.034482758620689655
+Jacket,solidity,Solid,29,잠바,0.8620689655172413
+Juice,category_organization,Color,29,주스,0.10344827586206896
+Juice,category_organization,"Color, Material",29,주스,0.10344827586206896
+Juice,category_organization,Form,29,주스,0.1724137931034483
+Juice,category_organization,"Form, Color, Material",29,주스,0.13793103448275862
+Juice,category_organization,"Form, Material",29,주스,0.1724137931034483
+Juice,category_organization,Material,29,주스,0.3103448275862069
+Juice,count_mass,Can be counted,31,주스,0.5161290322580645
+Juice,count_mass,Cannot be counted,31,주스,0.16129032258064516
+Juice,count_mass,I don't know/It's hard to say,31,주스,0.3225806451612903
+Juice,solidity,I don't know/It's hard to say,37,주스,0.2702702702702703
+Juice,solidity,Not a solid,37,주스,0.6756756756756757
+Juice,solidity,Solid,37,주스,0.05405405405405406
+Key,category_organization,"Color, Material",29,열쇠,0.034482758620689655
+Key,category_organization,Form,29,열쇠,0.5862068965517241
+Key,category_organization,"Form, Color, Material",29,열쇠,0.13793103448275862
+Key,category_organization,"Form, Material",29,열쇠,0.20689655172413793
+Key,category_organization,Material,29,열쇠,0.034482758620689655
+Key,count_mass,Can be counted,30,열쇠,0.9666666666666667
+Key,count_mass,I don't know/It's hard to say,30,열쇠,0.03333333333333333
+Key,solidity,I don't know/It's hard to say,29,열쇠,0.034482758620689655
+Key,solidity,Solid,29,열쇠,0.9655172413793104
+Kimchi,category_organization,Form,29,김치,0.4827586206896552
+Kimchi,category_organization,"Form, Color",29,김치,0.10344827586206896
+Kimchi,category_organization,"Form, Color, Material",29,김치,0.20689655172413793
+Kimchi,category_organization,"Form, Material",29,김치,0.10344827586206896
+Kimchi,category_organization,Material,29,김치,0.10344827586206896
+Kimchi,count_mass,Can be counted,36,김치,0.5833333333333334
+Kimchi,count_mass,Cannot be counted,36,김치,0.08333333333333333
+Kimchi,count_mass,I don't know/It's hard to say,36,김치,0.3333333333333333
+Kimchi,solidity,I don't know/It's hard to say,34,김치,0.35294117647058826
+Kimchi,solidity,Not a solid,34,김치,0.08823529411764706
+Kimchi,solidity,Solid,34,김치,0.5588235294117647
+Kitchen,category_organization,Form,29,부엌,0.6896551724137931
+Kitchen,category_organization,"Form, Color, Material",29,부엌,0.034482758620689655
+Kitchen,category_organization,"Form, Material",29,부엌,0.13793103448275862
+Kitchen,category_organization,Material,29,부엌,0.034482758620689655
+Kitchen,category_organization,Not applicable,29,부엌,0.10344827586206896
+Kitchen,count_mass,Can be counted,37,부엌,0.5945945945945946
+Kitchen,count_mass,Cannot be counted,37,부엌,0.10810810810810811
+Kitchen,count_mass,I don't know/It's hard to say,37,부엌,0.2972972972972973
+Kitchen,solidity,I don't know/It's hard to say,32,부엌,0.34375
+Kitchen,solidity,Not a solid,32,부엌,0.09375
+Kitchen,solidity,Solid,32,부엌,0.5625
+Knee,category_organization,Form,29,무릎,0.8275862068965517
+Knee,category_organization,"Form, Color",29,무릎,0.034482758620689655
+Knee,category_organization,"Form, Material",29,무릎,0.10344827586206896
+Knee,category_organization,Material,29,무릎,0.034482758620689655
+Knee,count_mass,Can be counted,37,무릎,0.7297297297297297
+Knee,count_mass,Cannot be counted,37,무릎,0.02702702702702703
+Knee,count_mass,I don't know/It's hard to say,37,무릎,0.24324324324324326
+Knee,solidity,I don't know/It's hard to say,30,무릎,0.3
+Knee,solidity,Not a solid,30,무릎,0.1
+Knee,solidity,Solid,30,무릎,0.6
+Knife,category_organization,Form,29,칼,0.6896551724137931
+Knife,category_organization,"Form, Color, Material",29,칼,0.06896551724137931
+Knife,category_organization,"Form, Material",29,칼,0.13793103448275862
+Knife,category_organization,Material,29,칼,0.10344827586206896
+Knife,count_mass,Can be counted,30,칼,0.9666666666666667
+Knife,count_mass,I don't know/It's hard to say,30,칼,0.03333333333333333
+Knife,solidity,I don't know/It's hard to say,29,칼,0.034482758620689655
+Knife,solidity,Solid,29,칼,0.9655172413793104
+Ladder,category_organization,Color,29,사다리,0.034482758620689655
+Ladder,category_organization,Form,29,사다리,0.6551724137931034
+Ladder,category_organization,"Form, Color, Material",29,사다리,0.06896551724137931
+Ladder,category_organization,"Form, Material",29,사다리,0.1724137931034483
+Ladder,category_organization,Material,29,사다리,0.06896551724137931
+Ladder,count_mass,Can be counted,28,사다리,0.9642857142857143
+Ladder,count_mass,I don't know/It's hard to say,28,사다리,0.03571428571428571
+Ladder,solidity,I don't know/It's hard to say,29,사다리,0.034482758620689655
+Ladder,solidity,Solid,29,사다리,0.9655172413793104
+Laundry Machine/Washer,category_organization,Form,29,세탁기,0.6896551724137931
+Laundry Machine/Washer,category_organization,"Form, Color, Material",29,세탁기,0.06896551724137931
+Laundry Machine/Washer,category_organization,"Form, Material",29,세탁기,0.20689655172413793
+Laundry Machine/Washer,category_organization,Material,29,세탁기,0.034482758620689655
+Laundry Machine/Washer,count_mass,Can be counted,30,세탁기,0.9666666666666667
+Laundry Machine/Washer,count_mass,I don't know/It's hard to say,30,세탁기,0.03333333333333333
+Laundry Machine/Washer,solidity,I don't know/It's hard to say,29,세탁기,0.034482758620689655
+Laundry Machine/Washer,solidity,Solid,29,세탁기,0.9655172413793104
+Leg,category_organization,Form,29,다리,0.8275862068965517
+Leg,category_organization,"Form, Color",29,다리,0.034482758620689655
+Leg,category_organization,"Form, Material",29,다리,0.10344827586206896
+Leg,category_organization,Material,29,다리,0.034482758620689655
+Leg,count_mass,Can be counted,34,다리,0.7941176470588235
+Leg,count_mass,Cannot be counted,34,다리,0.029411764705882353
+Leg,count_mass,I don't know/It's hard to say,34,다리,0.17647058823529413
+Leg,solidity,I don't know/It's hard to say,30,다리,0.2
+Leg,solidity,Not a solid,30,다리,0.1
+Leg,solidity,Solid,30,다리,0.7
+Lion,category_organization,Form,29,사자,0.6896551724137931
+Lion,category_organization,"Form, Color",29,사자,0.10344827586206896
+Lion,category_organization,"Form, Color, Material",29,사자,0.10344827586206896
+Lion,category_organization,"Form, Material",29,사자,0.06896551724137931
+Lion,category_organization,Material,29,사자,0.034482758620689655
+Lion,count_mass,Can be counted,36,사자,0.8055555555555556
+Lion,count_mass,I don't know/It's hard to say,36,사자,0.19444444444444445
+Lion,solidity,I don't know/It's hard to say,29,사자,0.2413793103448276
+Lion,solidity,Not a solid,29,사자,0.10344827586206896
+Lion,solidity,Solid,29,사자,0.6551724137931034
+Lips,category_organization,Form,29,입술,0.5172413793103449
+Lips,category_organization,"Form, Color",29,입술,0.27586206896551724
+Lips,category_organization,"Form, Color, Material",29,입술,0.10344827586206896
+Lips,category_organization,"Form, Material",29,입술,0.06896551724137931
+Lips,category_organization,Material,29,입술,0.034482758620689655
+Lips,count_mass,Can be counted,37,입술,0.7567567567567568
+Lips,count_mass,I don't know/It's hard to say,37,입술,0.24324324324324326
+Lips,solidity,I don't know/It's hard to say,30,입술,0.3
+Lips,solidity,Not a solid,30,입술,0.1
+Lips,solidity,Solid,30,입술,0.6
+Meat,category_organization,"Color, Material",29,고기,0.06896551724137931
+Meat,category_organization,Form,29,고기,0.41379310344827586
+Meat,category_organization,"Form, Color",29,고기,0.1724137931034483
+Meat,category_organization,"Form, Color, Material",29,고기,0.10344827586206896
+Meat,category_organization,"Form, Material",29,고기,0.10344827586206896
+Meat,category_organization,Material,29,고기,0.13793103448275862
+Meat,count_mass,Can be counted,32,고기,0.53125
+Meat,count_mass,Cannot be counted,32,고기,0.15625
+Meat,count_mass,I don't know/It's hard to say,32,고기,0.3125
+Meat,solidity,I don't know/It's hard to say,36,고기,0.2777777777777778
+Meat,solidity,Not a solid,36,고기,0.1388888888888889
+Meat,solidity,Solid,36,고기,0.5833333333333334
+Medicine,category_organization,"Color, Material",29,약,0.034482758620689655
+Medicine,category_organization,Form,29,약,0.3793103448275862
+Medicine,category_organization,"Form, Color",29,약,0.06896551724137931
+Medicine,category_organization,"Form, Color, Material",29,약,0.10344827586206896
+Medicine,category_organization,"Form, Material",29,약,0.20689655172413793
+Medicine,category_organization,Material,29,약,0.1724137931034483
+Medicine,category_organization,Not applicable,29,약,0.034482758620689655
+Medicine,count_mass,Can be counted,43,약,0.5348837209302325
+Medicine,count_mass,Cannot be counted,43,약,0.09302325581395349
+Medicine,count_mass,I don't know/It's hard to say,43,약,0.37209302325581395
+Medicine,solidity,I don't know/It's hard to say,31,약,0.5161290322580645
+Medicine,solidity,Not a solid,31,약,0.0967741935483871
+Medicine,solidity,Solid,31,약,0.3870967741935484
+Melon,category_organization,Form,29,메론,0.4482758620689655
+Melon,category_organization,"Form, Color",29,메론,0.1724137931034483
+Melon,category_organization,"Form, Color, Material",29,메론,0.20689655172413793
+Melon,category_organization,"Form, Material",29,메론,0.06896551724137931
+Melon,category_organization,Material,29,메론,0.06896551724137931
+Melon,category_organization,Not applicable,29,메론,0.034482758620689655
+Melon,count_mass,Can be counted,32,메론,0.90625
+Melon,count_mass,I don't know/It's hard to say,32,메론,0.09375
+Melon,solidity,I don't know/It's hard to say,29,메론,0.10344827586206896
+Melon,solidity,Not a solid,29,메론,0.06896551724137931
+Melon,solidity,Solid,29,메론,0.8275862068965517
+Microwave,category_organization,Form,29,전자레인지,0.6896551724137931
+Microwave,category_organization,"Form, Color",29,전자레인지,0.034482758620689655
+Microwave,category_organization,"Form, Color, Material",29,전자레인지,0.034482758620689655
+Microwave,category_organization,"Form, Material",29,전자레인지,0.20689655172413793
+Microwave,category_organization,Material,29,전자레인지,0.034482758620689655
+Microwave,count_mass,Can be counted,30,전자레인지,0.9666666666666667
+Microwave,count_mass,I don't know/It's hard to say,30,전자레인지,0.03333333333333333
+Microwave,solidity,I don't know/It's hard to say,29,전자레인지,0.034482758620689655
+Microwave,solidity,Solid,29,전자레인지,0.9655172413793104
+Milk,category_organization,"Color, Material",29,우유,0.13793103448275862
+Milk,category_organization,Form,29,우유,0.1724137931034483
+Milk,category_organization,"Form, Color",29,우유,0.06896551724137931
+Milk,category_organization,"Form, Color, Material",29,우유,0.06896551724137931
+Milk,category_organization,"Form, Material",29,우유,0.27586206896551724
+Milk,category_organization,Material,29,우유,0.2413793103448276
+Milk,category_organization,Not applicable,29,우유,0.034482758620689655
+Milk,count_mass,Can be counted,32,우유,0.59375
+Milk,count_mass,Cannot be counted,32,우유,0.15625
+Milk,count_mass,I don't know/It's hard to say,32,우유,0.25
+Milk,solidity,I don't know/It's hard to say,34,우유,0.23529411764705882
+Milk,solidity,Not a solid,34,우유,0.7058823529411765
+Milk,solidity,Solid,34,우유,0.058823529411764705
+Money,category_organization,"Color, Material",29,돈,0.034482758620689655
+Money,category_organization,Form,29,돈,0.5172413793103449
+Money,category_organization,"Form, Color",29,돈,0.06896551724137931
+Money,category_organization,"Form, Color, Material",29,돈,0.10344827586206896
+Money,category_organization,"Form, Material",29,돈,0.1724137931034483
+Money,category_organization,Material,29,돈,0.034482758620689655
+Money,category_organization,Not applicable,29,돈,0.06896551724137931
+Money,count_mass,Can be counted,33,돈,0.696969696969697
+Money,count_mass,Cannot be counted,33,돈,0.06060606060606061
+Money,count_mass,I don't know/It's hard to say,33,돈,0.24242424242424243
+Money,solidity,I don't know/It's hard to say,33,돈,0.24242424242424243
+Money,solidity,Not a solid,33,돈,0.06060606060606061
+Money,solidity,Solid,33,돈,0.696969696969697
+Monkey,category_organization,Form,29,원숭이,0.7586206896551724
+Monkey,category_organization,"Form, Color",29,원숭이,0.034482758620689655
+Monkey,category_organization,"Form, Color, Material",29,원숭이,0.10344827586206896
+Monkey,category_organization,"Form, Material",29,원숭이,0.06896551724137931
+Monkey,category_organization,Material,29,원숭이,0.034482758620689655
+Monkey,count_mass,Can be counted,36,원숭이,0.8055555555555556
+Monkey,count_mass,I don't know/It's hard to say,36,원숭이,0.19444444444444445
+Monkey,solidity,I don't know/It's hard to say,29,원숭이,0.2413793103448276
+Monkey,solidity,Not a solid,29,원숭이,0.10344827586206896
+Monkey,solidity,Solid,29,원숭이,0.6551724137931034
+Moon,category_organization,"Color, Material",29,달,0.034482758620689655
+Moon,category_organization,Form,29,달,0.5172413793103449
+Moon,category_organization,"Form, Color",29,달,0.10344827586206896
+Moon,category_organization,"Form, Color, Material",29,달,0.06896551724137931
+Moon,category_organization,"Form, Material",29,달,0.20689655172413793
+Moon,category_organization,Material,29,달,0.06896551724137931
+Moon,count_mass,Can be counted,35,달,0.7428571428571429
+Moon,count_mass,Cannot be counted,35,달,0.08571428571428572
+Moon,count_mass,I don't know/It's hard to say,35,달,0.17142857142857143
+Moon,solidity,I don't know/It's hard to say,29,달,0.20689655172413793
+Moon,solidity,Not a solid,29,달,0.13793103448275862
+Moon,solidity,Solid,29,달,0.6551724137931034
+Motorcycle,category_organization,Form,28,오토바이,0.6428571428571429
+Motorcycle,category_organization,"Form, Color, Material",28,오토바이,0.03571428571428571
+Motorcycle,category_organization,"Form, Material",28,오토바이,0.25
+Motorcycle,category_organization,Material,28,오토바이,0.07142857142857142
+Motorcycle,count_mass,Can be counted,30,오토바이,0.9333333333333333
+Motorcycle,count_mass,I don't know/It's hard to say,30,오토바이,0.06666666666666667
+Motorcycle,solidity,I don't know/It's hard to say,30,오토바이,0.06666666666666667
+Motorcycle,solidity,Solid,30,오토바이,0.9333333333333333
+Mouse,category_organization,Form,29,쥐,0.7241379310344828
+Mouse,category_organization,"Form, Color",29,쥐,0.06896551724137931
+Mouse,category_organization,"Form, Color, Material",29,쥐,0.034482758620689655
+Mouse,category_organization,"Form, Material",29,쥐,0.13793103448275862
+Mouse,category_organization,Material,29,쥐,0.034482758620689655
+Mouse,count_mass,Can be counted,36,쥐,0.7777777777777778
+Mouse,count_mass,Cannot be counted,36,쥐,0.027777777777777776
+Mouse,count_mass,I don't know/It's hard to say,36,쥐,0.19444444444444445
+Mouse,solidity,I don't know/It's hard to say,29,쥐,0.2413793103448276
+Mouse,solidity,Not a solid,29,쥐,0.10344827586206896
+Mouse,solidity,Solid,29,쥐,0.6551724137931034
+Mouth,category_organization,Form,29,입,0.7241379310344828
+Mouth,category_organization,"Form, Color",29,입,0.10344827586206896
+Mouth,category_organization,"Form, Material",29,입,0.13793103448275862
+Mouth,category_organization,Material,29,입,0.034482758620689655
+Mouth,count_mass,Can be counted,37,입,0.7027027027027027
+Mouth,count_mass,Cannot be counted,37,입,0.02702702702702703
+Mouth,count_mass,I don't know/It's hard to say,37,입,0.2702702702702703
+Mouth,solidity,I don't know/It's hard to say,31,입,0.3225806451612903
+Mouth,solidity,Not a solid,31,입,0.0967741935483871
+Mouth,solidity,Solid,31,입,0.5806451612903226
+Nail,category_organization,Color,29,못,0.034482758620689655
+Nail,category_organization,Form,29,못,0.6206896551724138
+Nail,category_organization,"Form, Color",29,못,0.034482758620689655
+Nail,category_organization,"Form, Color, Material",29,못,0.06896551724137931
+Nail,category_organization,"Form, Material",29,못,0.1724137931034483
+Nail,category_organization,Material,29,못,0.06896551724137931
+Nail,count_mass,Can be counted,30,못,0.9666666666666667
+Nail,count_mass,I don't know/It's hard to say,30,못,0.03333333333333333
+Nail,solidity,I don't know/It's hard to say,29,못,0.034482758620689655
+Nail,solidity,Solid,29,못,0.9655172413793104
+Napa Cabbage,category_organization,Color,29,배추,0.034482758620689655
+Napa Cabbage,category_organization,Form,29,배추,0.5172413793103449
+Napa Cabbage,category_organization,"Form, Color",29,배추,0.06896551724137931
+Napa Cabbage,category_organization,"Form, Color, Material",29,배추,0.06896551724137931
+Napa Cabbage,category_organization,"Form, Material",29,배추,0.20689655172413793
+Napa Cabbage,category_organization,Material,29,배추,0.06896551724137931
+Napa Cabbage,category_organization,Not applicable,29,배추,0.034482758620689655
+Napa Cabbage,count_mass,Can be counted,32,배추,0.875
+Napa Cabbage,count_mass,Cannot be counted,32,배추,0.03125
+Napa Cabbage,count_mass,I don't know/It's hard to say,32,배추,0.09375
+Napa Cabbage,solidity,I don't know/It's hard to say,29,배추,0.10344827586206896
+Napa Cabbage,solidity,Not a solid,29,배추,0.10344827586206896
+Napa Cabbage,solidity,Solid,29,배추,0.7931034482758621
+Neck,category_organization,Form,29,목,0.8620689655172413
+Neck,category_organization,"Form, Material",29,목,0.10344827586206896
+Neck,category_organization,Material,29,목,0.034482758620689655
+Neck,count_mass,Can be counted,35,목,0.8
+Neck,count_mass,I don't know/It's hard to say,35,목,0.2
+Neck,solidity,I don't know/It's hard to say,30,목,0.23333333333333334
+Neck,solidity,Not a solid,30,목,0.1
+Neck,solidity,Solid,30,목,0.6666666666666666
+Necklace,category_organization,Color,29,목걸이,0.034482758620689655
+Necklace,category_organization,Form,29,목걸이,0.6206896551724138
+Necklace,category_organization,"Form, Color",29,목걸이,0.034482758620689655
+Necklace,category_organization,"Form, Color, Material",29,목걸이,0.10344827586206896
+Necklace,category_organization,"Form, Material",29,목걸이,0.13793103448275862
+Necklace,category_organization,Material,29,목걸이,0.06896551724137931
+Necklace,count_mass,Can be counted,30,목걸이,0.9333333333333333
+Necklace,count_mass,Cannot be counted,30,목걸이,0.03333333333333333
+Necklace,count_mass,I don't know/It's hard to say,30,목걸이,0.03333333333333333
+Necklace,solidity,I don't know/It's hard to say,29,목걸이,0.034482758620689655
+Necklace,solidity,Solid,29,목걸이,0.9655172413793104
+Noodles,category_organization,"Color, Material",29,국수,0.06896551724137931
+Noodles,category_organization,Form,29,국수,0.3448275862068966
+Noodles,category_organization,"Form, Color",29,국수,0.034482758620689655
+Noodles,category_organization,"Form, Color, Material",29,국수,0.06896551724137931
+Noodles,category_organization,"Form, Material",29,국수,0.3793103448275862
+Noodles,category_organization,Material,29,국수,0.10344827586206896
+Noodles,count_mass,Can be counted,39,국수,0.46153846153846156
+Noodles,count_mass,Cannot be counted,39,국수,0.07692307692307693
+Noodles,count_mass,I don't know/It's hard to say,39,국수,0.46153846153846156
+Noodles,solidity,I don't know/It's hard to say,37,국수,0.4864864864864865
+Noodles,solidity,Not a solid,37,국수,0.13513513513513514
+Noodles,solidity,Solid,37,국수,0.3783783783783784
+Nose,category_organization,Form,29,코,0.8275862068965517
+Nose,category_organization,"Form, Material",29,코,0.13793103448275862
+Nose,category_organization,Material,29,코,0.034482758620689655
+Nose,count_mass,Can be counted,35,코,0.8285714285714286
+Nose,count_mass,I don't know/It's hard to say,35,코,0.17142857142857143
+Nose,solidity,I don't know/It's hard to say,29,코,0.20689655172413793
+Nose,solidity,Not a solid,29,코,0.10344827586206896
+Nose,solidity,Solid,29,코,0.6896551724137931
+Orange,category_organization,Color,29,오렌지,0.034482758620689655
+Orange,category_organization,"Color, Material",29,오렌지,0.034482758620689655
+Orange,category_organization,Form,29,오렌지,0.4482758620689655
+Orange,category_organization,"Form, Color",29,오렌지,0.13793103448275862
+Orange,category_organization,"Form, Color, Material",29,오렌지,0.1724137931034483
+Orange,category_organization,"Form, Material",29,오렌지,0.06896551724137931
+Orange,category_organization,Material,29,오렌지,0.06896551724137931
+Orange,category_organization,Not applicable,29,오렌지,0.034482758620689655
+Orange,count_mass,Can be counted,33,오렌지,0.8787878787878788
+Orange,count_mass,I don't know/It's hard to say,33,오렌지,0.12121212121212122
+Orange,solidity,I don't know/It's hard to say,29,오렌지,0.13793103448275862
+Orange,solidity,Not a solid,29,오렌지,0.13793103448275862
+Orange,solidity,Solid,29,오렌지,0.7241379310344828
+Owl,category_organization,Form,29,부엉이,0.6896551724137931
+Owl,category_organization,"Form, Color",29,부엉이,0.10344827586206896
+Owl,category_organization,"Form, Color, Material",29,부엉이,0.06896551724137931
+Owl,category_organization,"Form, Material",29,부엉이,0.10344827586206896
+Owl,category_organization,Material,29,부엉이,0.034482758620689655
+Owl,count_mass,Can be counted,36,부엉이,0.8055555555555556
+Owl,count_mass,I don't know/It's hard to say,36,부엉이,0.19444444444444445
+Owl,solidity,I don't know/It's hard to say,29,부엉이,0.2413793103448276
+Owl,solidity,Not a solid,29,부엉이,0.10344827586206896
+Owl,solidity,Solid,29,부엉이,0.6551724137931034
+PIgeon,category_organization,Form,29,비둘기,0.6896551724137931
+PIgeon,category_organization,"Form, Color",29,비둘기,0.10344827586206896
+PIgeon,category_organization,"Form, Color, Material",29,비둘기,0.10344827586206896
+PIgeon,category_organization,"Form, Material",29,비둘기,0.06896551724137931
+PIgeon,category_organization,Material,29,비둘기,0.034482758620689655
+PIgeon,count_mass,Can be counted,36,비둘기,0.8055555555555556
+PIgeon,count_mass,I don't know/It's hard to say,36,비둘기,0.19444444444444445
+PIgeon,solidity,I don't know/It's hard to say,29,비둘기,0.2413793103448276
+PIgeon,solidity,Not a solid,29,비둘기,0.10344827586206896
+PIgeon,solidity,Solid,29,비둘기,0.6551724137931034
+Pajamas,category_organization,Form,29,잠옷,0.6551724137931034
+Pajamas,category_organization,"Form, Color",29,잠옷,0.034482758620689655
+Pajamas,category_organization,"Form, Color, Material",29,잠옷,0.13793103448275862
+Pajamas,category_organization,"Form, Material",29,잠옷,0.10344827586206896
+Pajamas,category_organization,Material,29,잠옷,0.06896551724137931
+Pajamas,count_mass,Can be counted,32,잠옷,0.90625
+Pajamas,count_mass,I don't know/It's hard to say,32,잠옷,0.09375
+Pajamas,solidity,I don't know/It's hard to say,29,잠옷,0.10344827586206896
+Pajamas,solidity,Not a solid,29,잠옷,0.034482758620689655
+Pajamas,solidity,Solid,29,잠옷,0.8620689655172413
+Pants,category_organization,Form,29,바지,0.6551724137931034
+Pants,category_organization,"Form, Color",29,바지,0.034482758620689655
+Pants,category_organization,"Form, Color, Material",29,바지,0.13793103448275862
+Pants,category_organization,"Form, Material",29,바지,0.10344827586206896
+Pants,category_organization,Material,29,바지,0.06896551724137931
+Pants,count_mass,Can be counted,32,바지,0.90625
+Pants,count_mass,I don't know/It's hard to say,32,바지,0.09375
+Pants,solidity,I don't know/It's hard to say,29,바지,0.10344827586206896
+Pants,solidity,Not a solid,29,바지,0.06896551724137931
+Pants,solidity,Solid,29,바지,0.8275862068965517
+Paper,category_organization,Form,29,종이,0.27586206896551724
+Paper,category_organization,"Form, Color, Material",29,종이,0.10344827586206896
+Paper,category_organization,"Form, Material",29,종이,0.3448275862068966
+Paper,category_organization,Material,29,종이,0.2413793103448276
+Paper,category_organization,Not applicable,29,종이,0.034482758620689655
+Paper,count_mass,Can be counted,30,종이,0.8333333333333334
+Paper,count_mass,Cannot be counted,30,종이,0.06666666666666667
+Paper,count_mass,I don't know/It's hard to say,30,종이,0.1
+Paper,solidity,I don't know/It's hard to say,31,종이,0.0967741935483871
+Paper,solidity,Not a solid,31,종이,0.03225806451612903
+Paper,solidity,Solid,31,종이,0.8709677419354839
+Path,category_organization,Color,29,길,0.06896551724137931
+Path,category_organization,"Color, Material",29,길,0.034482758620689655
+Path,category_organization,Form,29,길,0.6896551724137931
+Path,category_organization,"Form, Material",29,길,0.06896551724137931
+Path,category_organization,"Form, Material, Not applicable",29,길,0.034482758620689655
+Path,category_organization,Not applicable,29,길,0.10344827586206896
+Path,count_mass,Can be counted,28,길,0.39285714285714285
+Path,count_mass,Cannot be counted,28,길,0.32142857142857145
+Path,count_mass,I don't know/It's hard to say,28,길,0.2857142857142857
+Path,solidity,I don't know/It's hard to say,29,길,0.27586206896551724
+Path,solidity,Not a solid,29,길,0.2413793103448276
+Path,solidity,Solid,29,길,0.4827586206896552
+Peach,category_organization,"Color, Not applicable",29,복숭아,0.034482758620689655
+Peach,category_organization,Form,29,복숭아,0.4482758620689655
+Peach,category_organization,"Form, Color",29,복숭아,0.13793103448275862
+Peach,category_organization,"Form, Color, Material",29,복숭아,0.20689655172413793
+Peach,category_organization,"Form, Material",29,복숭아,0.10344827586206896
+Peach,category_organization,Material,29,복숭아,0.06896551724137931
+Peach,count_mass,Can be counted,32,복숭아,0.90625
+Peach,count_mass,I don't know/It's hard to say,32,복숭아,0.09375
+Peach,solidity,I don't know/It's hard to say,29,복숭아,0.10344827586206896
+Peach,solidity,Not a solid,29,복숭아,0.10344827586206896
+Peach,solidity,Solid,29,복숭아,0.7931034482758621
+Peanut,category_organization,Form,29,땅콩,0.5172413793103449
+Peanut,category_organization,"Form, Color",29,땅콩,0.06896551724137931
+Peanut,category_organization,"Form, Color, Material",29,땅콩,0.10344827586206896
+Peanut,category_organization,"Form, Material",29,땅콩,0.13793103448275862
+Peanut,category_organization,Material,29,땅콩,0.10344827586206896
+Peanut,category_organization,Not applicable,29,땅콩,0.06896551724137931
+Peanut,count_mass,Can be counted,32,땅콩,0.875
+Peanut,count_mass,Cannot be counted,32,땅콩,0.03125
+Peanut,count_mass,I don't know/It's hard to say,32,땅콩,0.09375
+Peanut,solidity,I don't know/It's hard to say,29,땅콩,0.10344827586206896
+Peanut,solidity,Not a solid,29,땅콩,0.06896551724137931
+Peanut,solidity,Solid,29,땅콩,0.8275862068965517
+Pencil,category_organization,Form,29,연필,0.41379310344827586
+Pencil,category_organization,"Form, Color, Material",29,연필,0.1724137931034483
+Pencil,category_organization,"Form, Material",29,연필,0.3103448275862069
+Pencil,category_organization,Material,29,연필,0.06896551724137931
+Pencil,category_organization,Not applicable,29,연필,0.034482758620689655
+Pencil,count_mass,Can be counted,30,연필,0.9333333333333333
+Pencil,count_mass,I don't know/It's hard to say,30,연필,0.06666666666666667
+Pencil,solidity,I don't know/It's hard to say,30,연필,0.06666666666666667
+Pencil,solidity,Solid,30,연필,0.9333333333333333
+Penguin,category_organization,Form,29,펭귄,0.7241379310344828
+Penguin,category_organization,"Form, Color",29,펭귄,0.06896551724137931
+Penguin,category_organization,"Form, Color, Material",29,펭귄,0.06896551724137931
+Penguin,category_organization,"Form, Material",29,펭귄,0.10344827586206896
+Penguin,category_organization,Material,29,펭귄,0.034482758620689655
+Penguin,count_mass,Can be counted,36,펭귄,0.7777777777777778
+Penguin,count_mass,I don't know/It's hard to say,36,펭귄,0.2222222222222222
+Penguin,solidity,I don't know/It's hard to say,30,펭귄,0.26666666666666666
+Penguin,solidity,Not a solid,30,펭귄,0.1
+Penguin,solidity,Solid,30,펭귄,0.6333333333333333
+Pepper,category_organization,Form,29,고추,0.8275862068965517
+Pepper,category_organization,"Form, Color",29,고추,0.034482758620689655
+Pepper,category_organization,"Form, Material",29,고추,0.10344827586206896
+Pepper,category_organization,Material,29,고추,0.034482758620689655
+Pepper,count_mass,Can be counted,35,고추,0.7714285714285715
+Pepper,count_mass,Cannot be counted,35,고추,0.02857142857142857
+Pepper,count_mass,I don't know/It's hard to say,35,고추,0.2
+Pepper,solidity,I don't know/It's hard to say,30,고추,0.23333333333333334
+Pepper,solidity,Not a solid,30,고추,0.1
+Pepper,solidity,Solid,30,고추,0.6666666666666666
+Persimmon,category_organization,Form,29,감,0.5172413793103449
+Persimmon,category_organization,"Form, Color",29,감,0.13793103448275862
+Persimmon,category_organization,"Form, Color, Material",29,감,0.1724137931034483
+Persimmon,category_organization,"Form, Material",29,감,0.13793103448275862
+Persimmon,category_organization,Material,29,감,0.034482758620689655
+Persimmon,count_mass,Can be counted,33,감,0.8787878787878788
+Persimmon,count_mass,I don't know/It's hard to say,33,감,0.12121212121212122
+Persimmon,solidity,I don't know/It's hard to say,29,감,0.13793103448275862
+Persimmon,solidity,Not a solid,29,감,0.06896551724137931
+Persimmon,solidity,Solid,29,감,0.7931034482758621
+Phone,category_organization,Color,29,전화,0.034482758620689655
+Phone,category_organization,Form,29,전화,0.7241379310344828
+Phone,category_organization,"Form, Color, Material",29,전화,0.06896551724137931
+Phone,category_organization,"Form, Material",29,전화,0.10344827586206896
+Phone,category_organization,Material,29,전화,0.034482758620689655
+Phone,category_organization,Not applicable,29,전화,0.034482758620689655
+Phone,count_mass,Can be counted,31,전화,0.8709677419354839
+Phone,count_mass,Cannot be counted,31,전화,0.03225806451612903
+Phone,count_mass,I don't know/It's hard to say,31,전화,0.0967741935483871
+Phone,solidity,I don't know/It's hard to say,30,전화,0.1
+Phone,solidity,Solid,30,전화,0.9
+Piano,category_organization,Form,29,피아노,0.7586206896551724
+Piano,category_organization,"Form, Color",29,피아노,0.034482758620689655
+Piano,category_organization,"Form, Color, Material",29,피아노,0.06896551724137931
+Piano,category_organization,"Form, Material",29,피아노,0.10344827586206896
+Piano,category_organization,Material,29,피아노,0.034482758620689655
+Piano,count_mass,Can be counted,30,피아노,0.9666666666666667
+Piano,count_mass,I don't know/It's hard to say,30,피아노,0.03333333333333333
+Piano,solidity,I don't know/It's hard to say,29,피아노,0.034482758620689655
+Piano,solidity,Solid,29,피아노,0.9655172413793104
+Picture/Artwork,category_organization,Color,29,그림,0.034482758620689655
+Picture/Artwork,category_organization,"Color, Material",29,그림,0.034482758620689655
+Picture/Artwork,category_organization,Form,29,그림,0.5172413793103449
+Picture/Artwork,category_organization,"Form, Color",29,그림,0.10344827586206896
+Picture/Artwork,category_organization,"Form, Color, Material",29,그림,0.06896551724137931
+Picture/Artwork,category_organization,"Form, Material",29,그림,0.13793103448275862
+Picture/Artwork,category_organization,Material,29,그림,0.06896551724137931
+Picture/Artwork,category_organization,Not applicable,29,그림,0.034482758620689655
+Picture/Artwork,count_mass,Can be counted,33,그림,0.696969696969697
+Picture/Artwork,count_mass,Cannot be counted,33,그림,0.12121212121212122
+Picture/Artwork,count_mass,I don't know/It's hard to say,33,그림,0.18181818181818182
+Picture/Artwork,solidity,I don't know/It's hard to say,31,그림,0.1935483870967742
+Picture/Artwork,solidity,Not a solid,31,그림,0.06451612903225806
+Picture/Artwork,solidity,Solid,31,그림,0.7419354838709677
+Pig,category_organization,Form,29,돼지,0.6206896551724138
+Pig,category_organization,"Form, Color",29,돼지,0.10344827586206896
+Pig,category_organization,"Form, Color, Material",29,돼지,0.13793103448275862
+Pig,category_organization,"Form, Material",29,돼지,0.10344827586206896
+Pig,category_organization,Material,29,돼지,0.034482758620689655
+Pig,count_mass,Can be counted,36,돼지,0.8055555555555556
+Pig,count_mass,I don't know/It's hard to say,36,돼지,0.19444444444444445
+Pig,solidity,I don't know/It's hard to say,29,돼지,0.2413793103448276
+Pig,solidity,Not a solid,29,돼지,0.10344827586206896
+Pig,solidity,Solid,29,돼지,0.6551724137931034
+Pillow,category_organization,Color,29,베개,0.034482758620689655
+Pillow,category_organization,Form,29,베개,0.6551724137931034
+Pillow,category_organization,"Form, Color, Material",29,베개,0.06896551724137931
+Pillow,category_organization,"Form, Material",29,베개,0.20689655172413793
+Pillow,category_organization,Material,29,베개,0.034482758620689655
+Pillow,count_mass,Can be counted,31,베개,0.9032258064516129
+Pillow,count_mass,I don't know/It's hard to say,31,베개,0.0967741935483871
+Pillow,solidity,I don't know/It's hard to say,30,베개,0.1
+Pillow,solidity,Not a solid,30,베개,0.06666666666666667
+Pillow,solidity,Solid,30,베개,0.8333333333333334
+Pizza,category_organization,Color,29,피자,0.06896551724137931
+Pizza,category_organization,"Color, Material",29,피자,0.034482758620689655
+Pizza,category_organization,Form,29,피자,0.4827586206896552
+Pizza,category_organization,"Form, Color",29,피자,0.06896551724137931
+Pizza,category_organization,"Form, Color, Material",29,피자,0.10344827586206896
+Pizza,category_organization,"Form, Material",29,피자,0.13793103448275862
+Pizza,category_organization,"Form, Material, Not applicable",29,피자,0.034482758620689655
+Pizza,category_organization,Material,29,피자,0.06896551724137931
+Pizza,count_mass,Can be counted,34,피자,0.8235294117647058
+Pizza,count_mass,I don't know/It's hard to say,34,피자,0.17647058823529413
+Pizza,solidity,I don't know/It's hard to say,30,피자,0.2
+Pizza,solidity,Not a solid,30,피자,0.1
+Pizza,solidity,Solid,30,피자,0.7
+Plane,category_organization,Form,28,비행기,0.6428571428571429
+Plane,category_organization,"Form, Color, Material",28,비행기,0.03571428571428571
+Plane,category_organization,"Form, Material",28,비행기,0.25
+Plane,category_organization,Material,28,비행기,0.07142857142857142
+Plane,count_mass,Can be counted,30,비행기,0.9333333333333333
+Plane,count_mass,I don't know/It's hard to say,30,비행기,0.06666666666666667
+Plane,solidity,I don't know/It's hard to say,30,비행기,0.06666666666666667
+Plane,solidity,Solid,30,비행기,0.9333333333333333
+Plate (More curved and round),category_organization,Form,29,그릇,0.6206896551724138
+Plate (More curved and round),category_organization,"Form, Color",29,그릇,0.034482758620689655
+Plate (More curved and round),category_organization,"Form, Color, Material",29,그릇,0.10344827586206896
+Plate (More curved and round),category_organization,"Form, Material",29,그릇,0.13793103448275862
+Plate (More curved and round),category_organization,Material,29,그릇,0.10344827586206896
+Plate (More curved and round),count_mass,Can be counted,30,그릇,0.9666666666666667
+Plate (More curved and round),count_mass,I don't know/It's hard to say,30,그릇,0.03333333333333333
+Plate (More curved and round),solidity,I don't know/It's hard to say,29,그릇,0.034482758620689655
+Plate (More curved and round),solidity,Solid,29,그릇,0.9655172413793104
+Plate (More flat),category_organization,Form,29,접시,0.6896551724137931
+Plate (More flat),category_organization,"Form, Color, Material",29,접시,0.1724137931034483
+Plate (More flat),category_organization,"Form, Material",29,접시,0.06896551724137931
+Plate (More flat),category_organization,Material,29,접시,0.06896551724137931
+Plate (More flat),count_mass,Can be counted,30,접시,0.9333333333333333
+Plate (More flat),count_mass,I don't know/It's hard to say,30,접시,0.06666666666666667
+Plate (More flat),solidity,I don't know/It's hard to say,30,접시,0.06666666666666667
+Plate (More flat),solidity,Solid,30,접시,0.9333333333333333
+Pocket,category_organization,Form,29,주머니,0.6896551724137931
+Pocket,category_organization,"Form, Color",29,주머니,0.034482758620689655
+Pocket,category_organization,"Form, Color, Material",29,주머니,0.06896551724137931
+Pocket,category_organization,"Form, Material",29,주머니,0.13793103448275862
+Pocket,category_organization,Material,29,주머니,0.06896551724137931
+Pocket,count_mass,Can be counted,34,주머니,0.7647058823529411
+Pocket,count_mass,I don't know/It's hard to say,34,주머니,0.23529411764705882
+Pocket,solidity,I don't know/It's hard to say,32,주머니,0.25
+Pocket,solidity,Not a solid,32,주머니,0.0625
+Pocket,solidity,Solid,32,주머니,0.6875
+Potato,category_organization,"Color, Material",29,감자,0.034482758620689655
+Potato,category_organization,Form,29,감자,0.4827586206896552
+Potato,category_organization,"Form, Color",29,감자,0.1724137931034483
+Potato,category_organization,"Form, Color, Material",29,감자,0.13793103448275862
+Potato,category_organization,"Form, Material",29,감자,0.10344827586206896
+Potato,category_organization,Material,29,감자,0.06896551724137931
+Potato,count_mass,Can be counted,32,감자,0.90625
+Potato,count_mass,I don't know/It's hard to say,32,감자,0.09375
+Potato,solidity,I don't know/It's hard to say,29,감자,0.10344827586206896
+Potato,solidity,Not a solid,29,감자,0.06896551724137931
+Potato,solidity,Solid,29,감자,0.8275862068965517
+Pumpkin,category_organization,Color,29,호박,0.06896551724137931
+Pumpkin,category_organization,Form,29,호박,0.4827586206896552
+Pumpkin,category_organization,"Form, Color",29,호박,0.06896551724137931
+Pumpkin,category_organization,"Form, Color, Material",29,호박,0.13793103448275862
+Pumpkin,category_organization,"Form, Material",29,호박,0.1724137931034483
+Pumpkin,category_organization,Material,29,호박,0.06896551724137931
+Pumpkin,count_mass,Can be counted,32,호박,0.90625
+Pumpkin,count_mass,I don't know/It's hard to say,32,호박,0.09375
+Pumpkin,solidity,I don't know/It's hard to say,29,호박,0.10344827586206896
+Pumpkin,solidity,Not a solid,29,호박,0.10344827586206896
+Pumpkin,solidity,Solid,29,호박,0.7931034482758621
+Rabbit,category_organization,Form,29,토끼,0.7586206896551724
+Rabbit,category_organization,"Form, Color",29,토끼,0.034482758620689655
+Rabbit,category_organization,"Form, Color, Material",29,토끼,0.034482758620689655
+Rabbit,category_organization,"Form, Material",29,토끼,0.13793103448275862
+Rabbit,category_organization,Material,29,토끼,0.034482758620689655
+Rabbit,count_mass,Can be counted,36,토끼,0.8055555555555556
+Rabbit,count_mass,I don't know/It's hard to say,36,토끼,0.19444444444444445
+Rabbit,solidity,I don't know/It's hard to say,29,토끼,0.2413793103448276
+Rabbit,solidity,Not a solid,29,토끼,0.10344827586206896
+Rabbit,solidity,Solid,29,토끼,0.6551724137931034
+Radio,category_organization,Color,29,라디오,0.034482758620689655
+Radio,category_organization,Form,29,라디오,0.6206896551724138
+Radio,category_organization,"Form, Color",29,라디오,0.06896551724137931
+Radio,category_organization,"Form, Material",29,라디오,0.13793103448275862
+Radio,category_organization,Material,29,라디오,0.034482758620689655
+Radio,category_organization,Not applicable,29,라디오,0.10344827586206896
+Radio,count_mass,Can be counted,31,라디오,0.9354838709677419
+Radio,count_mass,I don't know/It's hard to say,31,라디오,0.06451612903225806
+Radio,solidity,I don't know/It's hard to say,29,라디오,0.06896551724137931
+Radio,solidity,Solid,29,라디오,0.9310344827586207
+Radish,category_organization,Color,29,무/무우,0.034482758620689655
+Radish,category_organization,Form,29,무/무우,0.5172413793103449
+Radish,category_organization,"Form, Color",29,무/무우,0.06896551724137931
+Radish,category_organization,"Form, Color, Material",29,무/무우,0.13793103448275862
+Radish,category_organization,"Form, Material",29,무/무우,0.10344827586206896
+Radish,category_organization,Material,29,무/무우,0.10344827586206896
+Radish,category_organization,Not applicable,29,무/무우,0.034482758620689655
+Radish,count_mass,Can be counted,32,무/무우,0.90625
+Radish,count_mass,I don't know/It's hard to say,32,무/무우,0.09375
+Radish,solidity,I don't know/It's hard to say,29,무/무우,0.10344827586206896
+Radish,solidity,Not a solid,29,무/무우,0.06896551724137931
+Radish,solidity,Solid,29,무/무우,0.8275862068965517
+Rag,category_organization,Color,29,걸레,0.034482758620689655
+Rag,category_organization,Form,29,걸레,0.5172413793103449
+Rag,category_organization,"Form, Color, Material",29,걸레,0.10344827586206896
+Rag,category_organization,"Form, Material",29,걸레,0.1724137931034483
+Rag,category_organization,Material,29,걸레,0.13793103448275862
+Rag,category_organization,Not applicable,29,걸레,0.034482758620689655
+Rag,count_mass,Can be counted,31,걸레,0.9032258064516129
+Rag,count_mass,Cannot be counted,31,걸레,0.03225806451612903
+Rag,count_mass,I don't know/It's hard to say,31,걸레,0.06451612903225806
+Rag,solidity,I don't know/It's hard to say,29,걸레,0.06896551724137931
+Rag,solidity,Not a solid,29,걸레,0.10344827586206896
+Rag,solidity,Solid,29,걸레,0.8275862068965517
+Rain,category_organization,Color,29,비,0.034482758620689655
+Rain,category_organization,"Color, Material",29,비,0.034482758620689655
+Rain,category_organization,Form,29,비,0.3448275862068966
+Rain,category_organization,"Form, Material",29,비,0.13793103448275862
+Rain,category_organization,Material,29,비,0.27586206896551724
+Rain,category_organization,"Material, Not applicable",29,비,0.06896551724137931
+Rain,category_organization,Not applicable,29,비,0.10344827586206896
+Rain,count_mass,Can be counted,28,비,0.03571428571428571
+Rain,count_mass,Cannot be counted,28,비,0.8928571428571429
+Rain,count_mass,I don't know/It's hard to say,28,비,0.07142857142857142
+Rain,solidity,I don't know/It's hard to say,29,비,0.06896551724137931
+Rain,solidity,Not a solid,29,비,0.896551724137931
+Rain,solidity,Solid,29,비,0.034482758620689655
+Ramen,category_organization,Color,29,라면,0.034482758620689655
+Ramen,category_organization,"Color, Material",29,라면,0.034482758620689655
+Ramen,category_organization,Form,29,라면,0.4827586206896552
+Ramen,category_organization,"Form, Color",29,라면,0.06896551724137931
+Ramen,category_organization,"Form, Color, Material",29,라면,0.13793103448275862
+Ramen,category_organization,"Form, Material",29,라면,0.20689655172413793
+Ramen,category_organization,Material,29,라면,0.034482758620689655
+Ramen,count_mass,Can be counted,41,라면,0.6097560975609756
+Ramen,count_mass,Cannot be counted,41,라면,0.024390243902439025
+Ramen,count_mass,I don't know/It's hard to say,41,라면,0.36585365853658536
+Ramen,solidity,I don't know/It's hard to say,32,라면,0.46875
+Ramen,solidity,Not a solid,32,라면,0.09375
+Ramen,solidity,Solid,32,라면,0.4375
+Refrigerator,category_organization,Color,29,냉장고,0.034482758620689655
+Refrigerator,category_organization,Form,29,냉장고,0.6896551724137931
+Refrigerator,category_organization,"Form, Color, Material",29,냉장고,0.034482758620689655
+Refrigerator,category_organization,"Form, Material",29,냉장고,0.1724137931034483
+Refrigerator,category_organization,Material,29,냉장고,0.06896551724137931
+Refrigerator,count_mass,Can be counted,30,냉장고,0.9666666666666667
+Refrigerator,count_mass,I don't know/It's hard to say,30,냉장고,0.03333333333333333
+Refrigerator,solidity,I don't know/It's hard to say,29,냉장고,0.034482758620689655
+Refrigerator,solidity,Solid,29,냉장고,0.9655172413793104
+Rice,category_organization,Color,29,쌀,0.034482758620689655
+Rice,category_organization,Form,29,쌀,0.4482758620689655
+Rice,category_organization,"Form, Color",29,쌀,0.034482758620689655
+Rice,category_organization,"Form, Color, Material",29,쌀,0.13793103448275862
+Rice,category_organization,"Form, Material",29,쌀,0.20689655172413793
+Rice,category_organization,Material,29,쌀,0.13793103448275862
+Rice,count_mass,Can be counted,31,쌀,0.5161290322580645
+Rice,count_mass,Cannot be counted,31,쌀,0.25806451612903225
+Rice,count_mass,I don't know/It's hard to say,31,쌀,0.22580645161290322
+Rice,solidity,I don't know/It's hard to say,34,쌀,0.20588235294117646
+Rice,solidity,Not a solid,34,쌀,0.11764705882352941
+Rice,solidity,Solid,34,쌀,0.6764705882352942
+Rice Cake,category_organization,Form,29,떡,0.5517241379310345
+Rice Cake,category_organization,"Form, Color, Material",29,떡,0.06896551724137931
+Rice Cake,category_organization,"Form, Material",29,떡,0.2413793103448276
+Rice Cake,category_organization,Material,29,떡,0.13793103448275862
+Rice Cake,count_mass,Can be counted,32,떡,0.90625
+Rice Cake,count_mass,I don't know/It's hard to say,32,떡,0.09375
+Rice Cake,solidity,I don't know/It's hard to say,29,떡,0.10344827586206896
+Rice Cake,solidity,Not a solid,29,떡,0.13793103448275862
+Rice Cake,solidity,Solid,29,떡,0.7586206896551724
+Robot,category_organization,Form,29,로봇,0.6206896551724138
+Robot,category_organization,"Form, Color, Material",29,로봇,0.034482758620689655
+Robot,category_organization,"Form, Material",29,로봇,0.20689655172413793
+Robot,category_organization,Material,29,로봇,0.06896551724137931
+Robot,category_organization,Not applicable,29,로봇,0.06896551724137931
+Robot,count_mass,Can be counted,30,로봇,0.8333333333333334
+Robot,count_mass,I don't know/It's hard to say,30,로봇,0.16666666666666666
+Robot,solidity,I don't know/It's hard to say,33,로봇,0.15151515151515152
+Robot,solidity,Solid,33,로봇,0.8484848484848485
+Rock,category_organization,"Color, Material",29,돌,0.034482758620689655
+Rock,category_organization,Form,29,돌,0.4482758620689655
+Rock,category_organization,"Form, Color",29,돌,0.06896551724137931
+Rock,category_organization,"Form, Color, Material",29,돌,0.10344827586206896
+Rock,category_organization,"Form, Material",29,돌,0.1724137931034483
+Rock,category_organization,Material,29,돌,0.13793103448275862
+Rock,category_organization,Not applicable,29,돌,0.034482758620689655
+Rock,count_mass,Can be counted,30,돌,0.7333333333333333
+Rock,count_mass,Cannot be counted,30,돌,0.2
+Rock,count_mass,I don't know/It's hard to say,30,돌,0.06666666666666667
+Rock,solidity,I don't know/It's hard to say,29,돌,0.06896551724137931
+Rock,solidity,Solid,29,돌,0.9310344827586207
+Roof,category_organization,Form,29,지붕,0.7241379310344828
+Roof,category_organization,"Form, Color, Material",29,지붕,0.13793103448275862
+Roof,category_organization,"Form, Material",29,지붕,0.10344827586206896
+Roof,category_organization,Material,29,지붕,0.034482758620689655
+Roof,count_mass,Can be counted,27,지붕,0.9629629629629629
+Roof,count_mass,I don't know/It's hard to say,27,지붕,0.037037037037037035
+Roof,solidity,I don't know/It's hard to say,29,지붕,0.034482758620689655
+Roof,solidity,Solid,29,지붕,0.9655172413793104
+Room,category_organization,Form,29,방,0.6551724137931034
+Room,category_organization,"Form, Color",29,방,0.034482758620689655
+Room,category_organization,"Form, Color, Material",29,방,0.034482758620689655
+Room,category_organization,"Form, Material",29,방,0.13793103448275862
+Room,category_organization,Material,29,방,0.034482758620689655
+Room,category_organization,Not applicable,29,방,0.10344827586206896
+Room,count_mass,Can be counted,35,방,0.7714285714285715
+Room,count_mass,Cannot be counted,35,방,0.02857142857142857
+Room,count_mass,I don't know/It's hard to say,35,방,0.2
+Room,solidity,I don't know/It's hard to say,30,방,0.23333333333333334
+Room,solidity,Not a solid,30,방,0.06666666666666667
+Room,solidity,Solid,30,방,0.7
+Salt,category_organization,Color,29,소금,0.034482758620689655
+Salt,category_organization,"Color, Material",29,소금,0.034482758620689655
+Salt,category_organization,Form,29,소금,0.27586206896551724
+Salt,category_organization,"Form, Color, Material",29,소금,0.10344827586206896
+Salt,category_organization,"Form, Material",29,소금,0.2413793103448276
+Salt,category_organization,Material,29,소금,0.27586206896551724
+Salt,category_organization,Not applicable,29,소금,0.034482758620689655
+Salt,count_mass,Can be counted,34,소금,0.4117647058823529
+Salt,count_mass,Cannot be counted,34,소금,0.2647058823529412
+Salt,count_mass,I don't know/It's hard to say,34,소금,0.3235294117647059
+Salt,solidity,I don't know/It's hard to say,35,소금,0.3142857142857143
+Salt,solidity,Not a solid,35,소금,0.14285714285714285
+Salt,solidity,Solid,35,소금,0.5428571428571428
+Sand,category_organization,Color,29,모래,0.06896551724137931
+Sand,category_organization,"Color, Material",29,모래,0.034482758620689655
+Sand,category_organization,Form,29,모래,0.3103448275862069
+Sand,category_organization,"Form, Color",29,모래,0.034482758620689655
+Sand,category_organization,"Form, Color, Material",29,모래,0.06896551724137931
+Sand,category_organization,"Form, Material",29,모래,0.27586206896551724
+Sand,category_organization,Material,29,모래,0.20689655172413793
+Sand,count_mass,Can be counted,27,모래,0.14814814814814814
+Sand,count_mass,Cannot be counted,27,모래,0.7777777777777778
+Sand,count_mass,I don't know/It's hard to say,27,모래,0.07407407407407407
+Sand,solidity,I don't know/It's hard to say,29,모래,0.06896551724137931
+Sand,solidity,Not a solid,29,모래,0.20689655172413793
+Sand,solidity,Solid,29,모래,0.7241379310344828
+Scarf,category_organization,Form,29,목도리,0.6206896551724138
+Scarf,category_organization,"Form, Color",29,목도리,0.034482758620689655
+Scarf,category_organization,"Form, Color, Material",29,목도리,0.13793103448275862
+Scarf,category_organization,"Form, Material",29,목도리,0.13793103448275862
+Scarf,category_organization,Material,29,목도리,0.06896551724137931
+Scarf,count_mass,Can be counted,32,목도리,0.875
+Scarf,count_mass,Cannot be counted,32,목도리,0.03125
+Scarf,count_mass,I don't know/It's hard to say,32,목도리,0.09375
+Scarf,solidity,I don't know/It's hard to say,29,목도리,0.10344827586206896
+Scarf,solidity,Not a solid,29,목도리,0.06896551724137931
+Scarf,solidity,Solid,29,목도리,0.8275862068965517
+Scissors,category_organization,Form,29,가위,0.6551724137931034
+Scissors,category_organization,"Form, Color",29,가위,0.034482758620689655
+Scissors,category_organization,"Form, Color, Material",29,가위,0.034482758620689655
+Scissors,category_organization,"Form, Material",29,가위,0.2413793103448276
+Scissors,category_organization,Material,29,가위,0.034482758620689655
+Scissors,count_mass,Can be counted,30,가위,0.9666666666666667
+Scissors,count_mass,I don't know/It's hard to say,30,가위,0.03333333333333333
+Scissors,solidity,I don't know/It's hard to say,29,가위,0.034482758620689655
+Scissors,solidity,Solid,29,가위,0.9655172413793104
+See-Saw,category_organization,Color,29,시소,0.034482758620689655
+See-Saw,category_organization,Form,29,시소,0.6896551724137931
+See-Saw,category_organization,"Form, Color, Material",29,시소,0.10344827586206896
+See-Saw,category_organization,"Form, Material",29,시소,0.13793103448275862
+See-Saw,category_organization,Material,29,시소,0.034482758620689655
+See-Saw,count_mass,Can be counted,29,시소,0.9310344827586207
+See-Saw,count_mass,Cannot be counted,29,시소,0.034482758620689655
+See-Saw,count_mass,I don't know/It's hard to say,29,시소,0.034482758620689655
+See-Saw,solidity,I don't know/It's hard to say,29,시소,0.034482758620689655
+See-Saw,solidity,Solid,29,시소,0.9655172413793104
+Seweed,category_organization,Color,29,김,0.034482758620689655
+Seweed,category_organization,"Color, Material",29,김,0.034482758620689655
+Seweed,category_organization,Form,29,김,0.3793103448275862
+Seweed,category_organization,"Form, Color",29,김,0.1724137931034483
+Seweed,category_organization,"Form, Color, Material",29,김,0.20689655172413793
+Seweed,category_organization,"Form, Material",29,김,0.06896551724137931
+Seweed,category_organization,Material,29,김,0.10344827586206896
+Seweed,count_mass,Can be counted,34,김,0.6764705882352942
+Seweed,count_mass,Cannot be counted,34,김,0.058823529411764705
+Seweed,count_mass,I don't know/It's hard to say,34,김,0.2647058823529412
+Seweed,solidity,I don't know/It's hard to say,33,김,0.2727272727272727
+Seweed,solidity,Not a solid,33,김,0.15151515151515152
+Seweed,solidity,Solid,33,김,0.5757575757575758
+Sheep,category_organization,Form,29,양,0.6896551724137931
+Sheep,category_organization,"Form, Color",29,양,0.10344827586206896
+Sheep,category_organization,"Form, Color, Material",29,양,0.13793103448275862
+Sheep,category_organization,"Form, Material",29,양,0.034482758620689655
+Sheep,category_organization,Material,29,양,0.034482758620689655
+Sheep,count_mass,Can be counted,36,양,0.8055555555555556
+Sheep,count_mass,I don't know/It's hard to say,36,양,0.19444444444444445
+Sheep,solidity,I don't know/It's hard to say,29,양,0.2413793103448276
+Sheep,solidity,Not a solid,29,양,0.10344827586206896
+Sheep,solidity,Solid,29,양,0.6551724137931034
+Shoes,category_organization,Color,29,신/신발,0.034482758620689655
+Shoes,category_organization,Form,29,신/신발,0.6206896551724138
+Shoes,category_organization,"Form, Color",29,신/신발,0.034482758620689655
+Shoes,category_organization,"Form, Color, Material",29,신/신발,0.13793103448275862
+Shoes,category_organization,"Form, Material",29,신/신발,0.10344827586206896
+Shoes,category_organization,Material,29,신/신발,0.06896551724137931
+Shoes,count_mass,Can be counted,30,신/신발,0.9666666666666667
+Shoes,count_mass,I don't know/It's hard to say,30,신/신발,0.03333333333333333
+Shoes,solidity,I don't know/It's hard to say,29,신/신발,0.034482758620689655
+Shoes,solidity,Solid,29,신/신발,0.9655172413793104
+Shoes/Dress Shoes,category_organization,Form,29,구두,0.6206896551724138
+Shoes/Dress Shoes,category_organization,"Form, Color",29,구두,0.034482758620689655
+Shoes/Dress Shoes,category_organization,"Form, Color, Material",29,구두,0.1724137931034483
+Shoes/Dress Shoes,category_organization,"Form, Material",29,구두,0.10344827586206896
+Shoes/Dress Shoes,category_organization,Material,29,구두,0.06896551724137931
+Shoes/Dress Shoes,count_mass,Can be counted,30,구두,0.9666666666666667
+Shoes/Dress Shoes,count_mass,I don't know/It's hard to say,30,구두,0.03333333333333333
+Shoes/Dress Shoes,solidity,I don't know/It's hard to say,29,구두,0.034482758620689655
+Shoes/Dress Shoes,solidity,Solid,29,구두,0.9655172413793104
+Shoulder,category_organization,Form,29,어깨,0.8620689655172413
+Shoulder,category_organization,"Form, Material",29,어깨,0.10344827586206896
+Shoulder,category_organization,Material,29,어깨,0.034482758620689655
+Shoulder,count_mass,Can be counted,36,어깨,0.6666666666666666
+Shoulder,count_mass,Cannot be counted,36,어깨,0.027777777777777776
+Shoulder,count_mass,I don't know/It's hard to say,36,어깨,0.3055555555555556
+Shoulder,solidity,I don't know/It's hard to say,33,어깨,0.3333333333333333
+Shoulder,solidity,Not a solid,33,어깨,0.09090909090909091
+Shoulder,solidity,Solid,33,어깨,0.5757575757575758
+Skirt,category_organization,Form,29,치마,0.6551724137931034
+Skirt,category_organization,"Form, Color",29,치마,0.034482758620689655
+Skirt,category_organization,"Form, Color, Material",29,치마,0.13793103448275862
+Skirt,category_organization,"Form, Material",29,치마,0.10344827586206896
+Skirt,category_organization,Material,29,치마,0.06896551724137931
+Skirt,count_mass,Can be counted,32,치마,0.90625
+Skirt,count_mass,I don't know/It's hard to say,32,치마,0.09375
+Skirt,solidity,I don't know/It's hard to say,29,치마,0.10344827586206896
+Skirt,solidity,Not a solid,29,치마,0.06896551724137931
+Skirt,solidity,Solid,29,치마,0.8275862068965517
+Sky,category_organization,Color,29,하늘,0.27586206896551724
+Sky,category_organization,"Color, Material",29,하늘,0.06896551724137931
+Sky,category_organization,Form,29,하늘,0.3448275862068966
+Sky,category_organization,"Form, Color, Material",29,하늘,0.034482758620689655
+Sky,category_organization,Material,29,하늘,0.13793103448275862
+Sky,category_organization,Not applicable,29,하늘,0.13793103448275862
+Sky,count_mass,Can be counted,31,하늘,0.03225806451612903
+Sky,count_mass,Cannot be counted,31,하늘,0.8387096774193549
+Sky,count_mass,I don't know/It's hard to say,31,하늘,0.12903225806451613
+Sky,solidity,I don't know/It's hard to say,29,하늘,0.13793103448275862
+Sky,solidity,Not a solid,29,하늘,0.7931034482758621
+Sky,solidity,Solid,29,하늘,0.06896551724137931
+Sled,category_organization,Form,28,썰매,0.6785714285714286
+Sled,category_organization,"Form, Color, Material",28,썰매,0.03571428571428571
+Sled,category_organization,"Form, Material",28,썰매,0.21428571428571427
+Sled,category_organization,Material,28,썰매,0.07142857142857142
+Sled,count_mass,Can be counted,30,썰매,0.7666666666666667
+Sled,count_mass,Cannot be counted,30,썰매,0.1
+Sled,count_mass,I don't know/It's hard to say,30,썰매,0.13333333333333333
+Sled,solidity,I don't know/It's hard to say,32,썰매,0.125
+Sled,solidity,Solid,32,썰매,0.875
+Slide,category_organization,Color,29,미끄럼틀,0.034482758620689655
+Slide,category_organization,Form,29,미끄럼틀,0.7241379310344828
+Slide,category_organization,"Form, Color",29,미끄럼틀,0.034482758620689655
+Slide,category_organization,"Form, Color, Material",29,미끄럼틀,0.06896551724137931
+Slide,category_organization,"Form, Material",29,미끄럼틀,0.10344827586206896
+Slide,category_organization,Material,29,미끄럼틀,0.034482758620689655
+Slide,count_mass,Can be counted,30,미끄럼틀,0.9666666666666667
+Slide,count_mass,I don't know/It's hard to say,30,미끄럼틀,0.03333333333333333
+Slide,solidity,I don't know/It's hard to say,29,미끄럼틀,0.034482758620689655
+Slide,solidity,Solid,29,미끄럼틀,0.9655172413793104
+Snake,category_organization,Form,29,뱀,0.6551724137931034
+Snake,category_organization,"Form, Color",29,뱀,0.06896551724137931
+Snake,category_organization,"Form, Color, Material",29,뱀,0.06896551724137931
+Snake,category_organization,"Form, Material",29,뱀,0.1724137931034483
+Snake,category_organization,Material,29,뱀,0.034482758620689655
+Snake,count_mass,Can be counted,36,뱀,0.7777777777777778
+Snake,count_mass,I don't know/It's hard to say,36,뱀,0.2222222222222222
+Snake,solidity,I don't know/It's hard to say,30,뱀,0.26666666666666666
+Snake,solidity,Not a solid,30,뱀,0.1
+Snake,solidity,Solid,30,뱀,0.6333333333333333
+Sneakers,category_organization,Form,29,운동화,0.6206896551724138
+Sneakers,category_organization,"Form, Color",29,운동화,0.034482758620689655
+Sneakers,category_organization,"Form, Color, Material",29,운동화,0.13793103448275862
+Sneakers,category_organization,"Form, Material",29,운동화,0.10344827586206896
+Sneakers,category_organization,Material,29,운동화,0.10344827586206896
+Sneakers,count_mass,Can be counted,30,운동화,0.9666666666666667
+Sneakers,count_mass,I don't know/It's hard to say,30,운동화,0.03333333333333333
+Sneakers,solidity,I don't know/It's hard to say,29,운동화,0.034482758620689655
+Sneakers,solidity,Solid,29,운동화,0.9655172413793104
+Snow,category_organization,"Color, Material",29,눈,0.13793103448275862
+Snow,category_organization,Form,29,눈,0.3793103448275862
+Snow,category_organization,"Form, Color, Material",29,눈,0.1724137931034483
+Snow,category_organization,"Form, Material",29,눈,0.10344827586206896
+Snow,category_organization,Material,29,눈,0.1724137931034483
+Snow,category_organization,Not applicable,29,눈,0.034482758620689655
+Snow,count_mass,Can be counted,31,눈,0.16129032258064516
+Snow,count_mass,Cannot be counted,31,눈,0.6451612903225806
+Snow,count_mass,I don't know/It's hard to say,31,눈,0.1935483870967742
+Snow,solidity,I don't know/It's hard to say,29,눈,0.20689655172413793
+Snow,solidity,Not a solid,29,눈,0.4827586206896552
+Snow,solidity,Solid,29,눈,0.3103448275862069
+Snowman,category_organization,"Color, Material",29,눈사람,0.034482758620689655
+Snowman,category_organization,Form,29,눈사람,0.41379310344827586
+Snowman,category_organization,"Form, Color",29,눈사람,0.034482758620689655
+Snowman,category_organization,"Form, Color, Material",29,눈사람,0.20689655172413793
+Snowman,category_organization,"Form, Material",29,눈사람,0.20689655172413793
+Snowman,category_organization,Material,29,눈사람,0.10344827586206896
+Snowman,count_mass,Can be counted,35,눈사람,0.6857142857142857
+Snowman,count_mass,Cannot be counted,35,눈사람,0.11428571428571428
+Snowman,count_mass,I don't know/It's hard to say,35,눈사람,0.2
+Snowman,solidity,I don't know/It's hard to say,29,눈사람,0.2413793103448276
+Snowman,solidity,Not a solid,29,눈사람,0.20689655172413793
+Snowman,solidity,Solid,29,눈사람,0.5517241379310345
+Soap,category_organization,Color,29,비누,0.034482758620689655
+Soap,category_organization,"Color, Material",29,비누,0.06896551724137931
+Soap,category_organization,Form,29,비누,0.4482758620689655
+Soap,category_organization,"Form, Color, Material",29,비누,0.10344827586206896
+Soap,category_organization,"Form, Material",29,비누,0.3103448275862069
+Soap,category_organization,Material,29,비누,0.034482758620689655
+Soap,count_mass,Can be counted,32,비누,0.875
+Soap,count_mass,I don't know/It's hard to say,32,비누,0.125
+Soap,solidity,I don't know/It's hard to say,30,비누,0.13333333333333333
+Soap,solidity,Not a solid,30,비누,0.13333333333333333
+Soap,solidity,Solid,30,비누,0.7333333333333333
+Soap Bubble,category_organization,Color,29,비누방울,0.034482758620689655
+Soap Bubble,category_organization,Form,29,비누방울,0.2413793103448276
+Soap Bubble,category_organization,"Form, Color",29,비누방울,0.034482758620689655
+Soap Bubble,category_organization,"Form, Color, Material",29,비누방울,0.13793103448275862
+Soap Bubble,category_organization,"Form, Material",29,비누방울,0.3103448275862069
+Soap Bubble,category_organization,Material,29,비누방울,0.2413793103448276
+Soap Bubble,count_mass,Can be counted,32,비누방울,0.4375
+Soap Bubble,count_mass,Cannot be counted,32,비누방울,0.28125
+Soap Bubble,count_mass,I don't know/It's hard to say,32,비누방울,0.28125
+Soap Bubble,solidity,I don't know/It's hard to say,35,비누방울,0.2571428571428571
+Soap Bubble,solidity,Not a solid,35,비누방울,0.6857142857142857
+Soap Bubble,solidity,Solid,35,비누방울,0.05714285714285714
+Socks,category_organization,Form,29,양말,0.6896551724137931
+Socks,category_organization,"Form, Color",29,양말,0.034482758620689655
+Socks,category_organization,"Form, Color, Material",29,양말,0.10344827586206896
+Socks,category_organization,"Form, Material",29,양말,0.10344827586206896
+Socks,category_organization,Material,29,양말,0.06896551724137931
+Socks,count_mass,Can be counted,32,양말,0.90625
+Socks,count_mass,I don't know/It's hard to say,32,양말,0.09375
+Socks,solidity,I don't know/It's hard to say,29,양말,0.10344827586206896
+Socks,solidity,Not a solid,29,양말,0.06896551724137931
+Socks,solidity,Solid,29,양말,0.8275862068965517
+Sofa,category_organization,Form,29,소파,0.6896551724137931
+Sofa,category_organization,"Form, Color, Material",29,소파,0.13793103448275862
+Sofa,category_organization,"Form, Material",29,소파,0.10344827586206896
+Sofa,category_organization,Material,29,소파,0.06896551724137931
+Sofa,count_mass,Can be counted,31,소파,0.9354838709677419
+Sofa,count_mass,I don't know/It's hard to say,31,소파,0.06451612903225806
+Sofa,solidity,I don't know/It's hard to say,29,소파,0.06896551724137931
+Sofa,solidity,Not a solid,29,소파,0.06896551724137931
+Sofa,solidity,Solid,29,소파,0.8620689655172413
+Soil/Dirt,category_organization,Color,29,흙,0.06896551724137931
+Soil/Dirt,category_organization,"Color, Material",29,흙,0.1724137931034483
+Soil/Dirt,category_organization,Form,29,흙,0.27586206896551724
+Soil/Dirt,category_organization,"Form, Color, Material",29,흙,0.034482758620689655
+Soil/Dirt,category_organization,"Form, Material",29,흙,0.20689655172413793
+Soil/Dirt,category_organization,Material,29,흙,0.1724137931034483
+Soil/Dirt,category_organization,Not applicable,29,흙,0.06896551724137931
+Soil/Dirt,count_mass,Can be counted,33,흙,0.06060606060606061
+Soil/Dirt,count_mass,Cannot be counted,33,흙,0.7878787878787878
+Soil/Dirt,count_mass,I don't know/It's hard to say,33,흙,0.15151515151515152
+Soil/Dirt,solidity,I don't know/It's hard to say,29,흙,0.1724137931034483
+Soil/Dirt,solidity,Not a solid,29,흙,0.20689655172413793
+Soil/Dirt,solidity,Solid,29,흙,0.6206896551724138
+Soup,category_organization,Color,29,국,0.034482758620689655
+Soup,category_organization,"Color, Material",29,국,0.10344827586206896
+Soup,category_organization,Form,29,국,0.3103448275862069
+Soup,category_organization,"Form, Color",29,국,0.034482758620689655
+Soup,category_organization,"Form, Color, Material",29,국,0.06896551724137931
+Soup,category_organization,"Form, Material",29,국,0.2413793103448276
+Soup,category_organization,Material,29,국,0.20689655172413793
+Soup,count_mass,Can be counted,32,국,0.5
+Soup,count_mass,Cannot be counted,32,국,0.1875
+Soup,count_mass,I don't know/It's hard to say,32,국,0.3125
+Soup,solidity,I don't know/It's hard to say,36,국,0.2777777777777778
+Soup,solidity,Not a solid,36,국,0.6111111111111112
+Soup,solidity,Solid,36,국,0.1111111111111111
+Spaghetti,category_organization,Color,29,스파게티,0.06896551724137931
+Spaghetti,category_organization,"Color, Material",29,스파게티,0.034482758620689655
+Spaghetti,category_organization,Form,29,스파게티,0.3448275862068966
+Spaghetti,category_organization,"Form, Color",29,스파게티,0.10344827586206896
+Spaghetti,category_organization,"Form, Color, Material",29,스파게티,0.034482758620689655
+Spaghetti,category_organization,"Form, Material",29,스파게티,0.3448275862068966
+Spaghetti,category_organization,Material,29,스파게티,0.06896551724137931
+Spaghetti,count_mass,Can be counted,34,스파게티,0.5294117647058824
+Spaghetti,count_mass,Cannot be counted,34,스파게티,0.11764705882352941
+Spaghetti,count_mass,I don't know/It's hard to say,34,스파게티,0.35294117647058826
+Spaghetti,solidity,I don't know/It's hard to say,36,스파게티,0.3333333333333333
+Spaghetti,solidity,Not a solid,36,스파게티,0.1111111111111111
+Spaghetti,solidity,Solid,36,스파게티,0.5555555555555556
+Sparrow,category_organization,Form,29,참새,0.7241379310344828
+Sparrow,category_organization,"Form, Color",29,참새,0.06896551724137931
+Sparrow,category_organization,"Form, Color, Material",29,참새,0.06896551724137931
+Sparrow,category_organization,"Form, Material",29,참새,0.10344827586206896
+Sparrow,category_organization,Material,29,참새,0.034482758620689655
+Sparrow,count_mass,Can be counted,36,참새,0.7777777777777778
+Sparrow,count_mass,Cannot be counted,36,참새,0.027777777777777776
+Sparrow,count_mass,I don't know/It's hard to say,36,참새,0.19444444444444445
+Sparrow,solidity,I don't know/It's hard to say,29,참새,0.2413793103448276
+Sparrow,solidity,Not a solid,29,참새,0.10344827586206896
+Sparrow,solidity,Solid,29,참새,0.6551724137931034
+Spoon,category_organization,Color,29,숟가락,0.034482758620689655
+Spoon,category_organization,Form,29,숟가락,0.6206896551724138
+Spoon,category_organization,"Form, Color, Material",29,숟가락,0.10344827586206896
+Spoon,category_organization,"Form, Material",29,숟가락,0.20689655172413793
+Spoon,category_organization,Material,29,숟가락,0.034482758620689655
+Spoon,count_mass,Can be counted,30,숟가락,0.9333333333333333
+Spoon,count_mass,I don't know/It's hard to say,30,숟가락,0.06666666666666667
+Spoon,solidity,I don't know/It's hard to say,30,숟가락,0.06666666666666667
+Spoon,solidity,Solid,30,숟가락,0.9333333333333333
+Squirrel,category_organization,Form,29,다람쥐,0.6896551724137931
+Squirrel,category_organization,"Form, Color",29,다람쥐,0.10344827586206896
+Squirrel,category_organization,"Form, Color, Material",29,다람쥐,0.10344827586206896
+Squirrel,category_organization,"Form, Material",29,다람쥐,0.06896551724137931
+Squirrel,category_organization,Material,29,다람쥐,0.034482758620689655
+Squirrel,count_mass,Can be counted,36,다람쥐,0.8055555555555556
+Squirrel,count_mass,I don't know/It's hard to say,36,다람쥐,0.19444444444444445
+Squirrel,solidity,I don't know/It's hard to say,29,다람쥐,0.2413793103448276
+Squirrel,solidity,Not a solid,29,다람쥐,0.10344827586206896
+Squirrel,solidity,Solid,29,다람쥐,0.6551724137931034
+Stairs,category_organization,Form,29,계단,0.6551724137931034
+Stairs,category_organization,"Form, Color, Material",29,계단,0.06896551724137931
+Stairs,category_organization,"Form, Material",29,계단,0.20689655172413793
+Stairs,category_organization,Material,29,계단,0.034482758620689655
+Stairs,category_organization,Not applicable,29,계단,0.034482758620689655
+Stairs,count_mass,Can be counted,30,계단,0.8
+Stairs,count_mass,Cannot be counted,30,계단,0.06666666666666667
+Stairs,count_mass,I don't know/It's hard to say,30,계단,0.13333333333333333
+Stairs,solidity,I don't know/It's hard to say,32,계단,0.125
+Stairs,solidity,Solid,32,계단,0.875
+Star,category_organization,Color,29,별,0.10344827586206896
+Star,category_organization,Form,29,별,0.5517241379310345
+Star,category_organization,"Form, Color",29,별,0.06896551724137931
+Star,category_organization,"Form, Color, Material",29,별,0.06896551724137931
+Star,category_organization,"Form, Material",29,별,0.034482758620689655
+Star,category_organization,Material,29,별,0.10344827586206896
+Star,category_organization,Not applicable,29,별,0.06896551724137931
+Star,count_mass,Can be counted,34,별,0.5588235294117647
+Star,count_mass,Cannot be counted,34,별,0.20588235294117646
+Star,count_mass,I don't know/It's hard to say,34,별,0.23529411764705882
+Star,solidity,I don't know/It's hard to say,29,별,0.27586206896551724
+Star,solidity,Not a solid,29,별,0.13793103448275862
+Star,solidity,Solid,29,별,0.5862068965517241
+Stomach,category_organization,Form,29,배,0.8275862068965517
+Stomach,category_organization,"Form, Material",29,배,0.10344827586206896
+Stomach,category_organization,Material,29,배,0.034482758620689655
+Stomach,category_organization,Not applicable,29,배,0.034482758620689655
+Stomach,count_mass,Can be counted,37,배,0.6756756756756757
+Stomach,count_mass,Cannot be counted,37,배,0.05405405405405406
+Stomach,count_mass,I don't know/It's hard to say,37,배,0.2702702702702703
+Stomach,solidity,I don't know/It's hard to say,31,배,0.3225806451612903
+Stomach,solidity,Not a solid,31,배,0.0967741935483871
+Stomach,solidity,Solid,31,배,0.5806451612903226
+Stone,category_organization,Form,29,바위,0.4827586206896552
+Stone,category_organization,"Form, Color",29,바위,0.06896551724137931
+Stone,category_organization,"Form, Color, Material",29,바위,0.20689655172413793
+Stone,category_organization,"Form, Material",29,바위,0.10344827586206896
+Stone,category_organization,Material,29,바위,0.13793103448275862
+Stone,count_mass,Can be counted,28,바위,0.75
+Stone,count_mass,Cannot be counted,28,바위,0.21428571428571427
+Stone,count_mass,I don't know/It's hard to say,28,바위,0.03571428571428571
+Stone,solidity,I don't know/It's hard to say,29,바위,0.034482758620689655
+Stone,solidity,Solid,29,바위,0.9655172413793104
+Strawberry,category_organization,Form,29,딸기,0.5172413793103449
+Strawberry,category_organization,"Form, Color",29,딸기,0.06896551724137931
+Strawberry,category_organization,"Form, Color, Material",29,딸기,0.20689655172413793
+Strawberry,category_organization,"Form, Material",29,딸기,0.034482758620689655
+Strawberry,category_organization,Material,29,딸기,0.10344827586206896
+Strawberry,category_organization,Not applicable,29,딸기,0.06896551724137931
+Strawberry,count_mass,Can be counted,33,딸기,0.8787878787878788
+Strawberry,count_mass,I don't know/It's hard to say,33,딸기,0.12121212121212122
+Strawberry,solidity,I don't know/It's hard to say,29,딸기,0.13793103448275862
+Strawberry,solidity,Not a solid,29,딸기,0.10344827586206896
+Strawberry,solidity,Solid,29,딸기,0.7586206896551724
+Stroller,category_organization,Form,28,유모차,0.6785714285714286
+Stroller,category_organization,"Form, Color, Material",28,유모차,0.03571428571428571
+Stroller,category_organization,"Form, Material",28,유모차,0.21428571428571427
+Stroller,category_organization,Material,28,유모차,0.07142857142857142
+Stroller,count_mass,Can be counted,30,유모차,0.8666666666666667
+Stroller,count_mass,I don't know/It's hard to say,30,유모차,0.13333333333333333
+Stroller,solidity,I don't know/It's hard to say,32,유모차,0.125
+Stroller,solidity,Solid,32,유모차,0.875
+Subway,category_organization,Color,29,지하철,0.034482758620689655
+Subway,category_organization,Form,29,지하철,0.7241379310344828
+Subway,category_organization,"Form, Material",29,지하철,0.13793103448275862
+Subway,category_organization,Material,29,지하철,0.034482758620689655
+Subway,category_organization,Not applicable,29,지하철,0.06896551724137931
+Subway,count_mass,Can be counted,31,지하철,0.7096774193548387
+Subway,count_mass,Cannot be counted,31,지하철,0.0967741935483871
+Subway,count_mass,I don't know/It's hard to say,31,지하철,0.1935483870967742
+Subway,solidity,I don't know/It's hard to say,33,지하철,0.18181818181818182
+Subway,solidity,Not a solid,33,지하철,0.030303030303030304
+Subway,solidity,Solid,33,지하철,0.7878787878787878
+Sugar,category_organization,Color,29,설탕,0.034482758620689655
+Sugar,category_organization,"Color, Material",29,설탕,0.06896551724137931
+Sugar,category_organization,Form,29,설탕,0.20689655172413793
+Sugar,category_organization,"Form, Color",29,설탕,0.06896551724137931
+Sugar,category_organization,"Form, Color, Material",29,설탕,0.10344827586206896
+Sugar,category_organization,"Form, Material",29,설탕,0.1724137931034483
+Sugar,category_organization,Material,29,설탕,0.3103448275862069
+Sugar,category_organization,Not applicable,29,설탕,0.034482758620689655
+Sugar,count_mass,Can be counted,34,설탕,0.4411764705882353
+Sugar,count_mass,Cannot be counted,34,설탕,0.23529411764705882
+Sugar,count_mass,I don't know/It's hard to say,34,설탕,0.3235294117647059
+Sugar,solidity,I don't know/It's hard to say,35,설탕,0.3142857142857143
+Sugar,solidity,Not a solid,35,설탕,0.14285714285714285
+Sugar,solidity,Solid,35,설탕,0.5428571428571428
+Sun/sunlight,category_organization,Color,29,해/햇빛,0.13793103448275862
+Sun/sunlight,category_organization,"Color, Material",29,해/햇빛,0.034482758620689655
+Sun/sunlight,category_organization,Form,29,해/햇빛,0.3793103448275862
+Sun/sunlight,category_organization,"Form, Color",29,해/햇빛,0.06896551724137931
+Sun/sunlight,category_organization,"Form, Color, Material",29,해/햇빛,0.034482758620689655
+Sun/sunlight,category_organization,"Form, Material",29,해/햇빛,0.034482758620689655
+Sun/sunlight,category_organization,Material,29,해/햇빛,0.13793103448275862
+Sun/sunlight,category_organization,Not applicable,29,해/햇빛,0.1724137931034483
+Sun/sunlight,count_mass,Can be counted,33,해/햇빛,0.21212121212121213
+Sun/sunlight,count_mass,Cannot be counted,33,해/햇빛,0.5454545454545454
+Sun/sunlight,count_mass,I don't know/It's hard to say,33,해/햇빛,0.24242424242424243
+Sun/sunlight,solidity,I don't know/It's hard to say,29,해/햇빛,0.27586206896551724
+Sun/sunlight,solidity,Not a solid,29,해/햇빛,0.6206896551724138
+Sun/sunlight,solidity,Solid,29,해/햇빛,0.10344827586206896
+Sweet Potato,category_organization,"Color, Material",29,고구마,0.034482758620689655
+Sweet Potato,category_organization,Form,29,고구마,0.4827586206896552
+Sweet Potato,category_organization,"Form, Color",29,고구마,0.1724137931034483
+Sweet Potato,category_organization,"Form, Color, Material",29,고구마,0.10344827586206896
+Sweet Potato,category_organization,"Form, Material",29,고구마,0.13793103448275862
+Sweet Potato,category_organization,Material,29,고구마,0.06896551724137931
+Sweet Potato,count_mass,Can be counted,32,고구마,0.90625
+Sweet Potato,count_mass,I don't know/It's hard to say,32,고구마,0.09375
+Sweet Potato,solidity,I don't know/It's hard to say,29,고구마,0.10344827586206896
+Sweet Potato,solidity,Not a solid,29,고구마,0.06896551724137931
+Sweet Potato,solidity,Solid,29,고구마,0.8275862068965517
+Swings,category_organization,Form,29,그네,0.7586206896551724
+Swings,category_organization,"Form, Color, Material",29,그네,0.10344827586206896
+Swings,category_organization,"Form, Material",29,그네,0.10344827586206896
+Swings,category_organization,Material,29,그네,0.034482758620689655
+Swings,count_mass,Can be counted,30,그네,0.9333333333333333
+Swings,count_mass,Cannot be counted,30,그네,0.03333333333333333
+Swings,count_mass,I don't know/It's hard to say,30,그네,0.03333333333333333
+Swings,solidity,I don't know/It's hard to say,29,그네,0.034482758620689655
+Swings,solidity,Solid,29,그네,0.9655172413793104
+Tangerine,category_organization,Form,29,귤,0.5172413793103449
+Tangerine,category_organization,"Form, Color",29,귤,0.06896551724137931
+Tangerine,category_organization,"Form, Color, Material",29,귤,0.2413793103448276
+Tangerine,category_organization,"Form, Material",29,귤,0.06896551724137931
+Tangerine,category_organization,Material,29,귤,0.06896551724137931
+Tangerine,category_organization,Not applicable,29,귤,0.034482758620689655
+Tangerine,count_mass,Can be counted,33,귤,0.8787878787878788
+Tangerine,count_mass,I don't know/It's hard to say,33,귤,0.12121212121212122
+Tangerine,solidity,I don't know/It's hard to say,29,귤,0.13793103448275862
+Tangerine,solidity,Not a solid,29,귤,0.06896551724137931
+Tangerine,solidity,Solid,29,귤,0.7931034482758621
+Taxi,category_organization,Form,28,택시,0.5357142857142857
+Taxi,category_organization,"Form, Color",28,택시,0.10714285714285714
+Taxi,category_organization,"Form, Color, Material",28,택시,0.14285714285714285
+Taxi,category_organization,"Form, Material",28,택시,0.14285714285714285
+Taxi,category_organization,Material,28,택시,0.07142857142857142
+Taxi,count_mass,Can be counted,30,택시,0.9333333333333333
+Taxi,count_mass,I don't know/It's hard to say,30,택시,0.06666666666666667
+Taxi,solidity,I don't know/It's hard to say,30,택시,0.06666666666666667
+Taxi,solidity,Solid,30,택시,0.9333333333333333
+Television,category_organization,Form,29,텔레비전,0.7586206896551724
+Television,category_organization,"Form, Color, Material",29,텔레비전,0.10344827586206896
+Television,category_organization,"Form, Material",29,텔레비전,0.10344827586206896
+Television,category_organization,Material,29,텔레비전,0.034482758620689655
+Television,count_mass,Can be counted,30,텔레비전,0.9666666666666667
+Television,count_mass,I don't know/It's hard to say,30,텔레비전,0.03333333333333333
+Television,solidity,I don't know/It's hard to say,29,텔레비전,0.034482758620689655
+Television,solidity,Solid,29,텔레비전,0.9655172413793104
+Tiger,category_organization,Form,29,호랑이,0.6896551724137931
+Tiger,category_organization,"Form, Color",29,호랑이,0.10344827586206896
+Tiger,category_organization,"Form, Color, Material",29,호랑이,0.10344827586206896
+Tiger,category_organization,"Form, Material",29,호랑이,0.06896551724137931
+Tiger,category_organization,Material,29,호랑이,0.034482758620689655
+Tiger,count_mass,Can be counted,36,호랑이,0.8055555555555556
+Tiger,count_mass,I don't know/It's hard to say,36,호랑이,0.19444444444444445
+Tiger,solidity,I don't know/It's hard to say,29,호랑이,0.2413793103448276
+Tiger,solidity,Not a solid,29,호랑이,0.10344827586206896
+Tiger,solidity,Solid,29,호랑이,0.6551724137931034
+Tissue/Napkin,category_organization,Color,29,휴지,0.06896551724137931
+Tissue/Napkin,category_organization,Form,29,휴지,0.4827586206896552
+Tissue/Napkin,category_organization,"Form, Color, Material",29,휴지,0.10344827586206896
+Tissue/Napkin,category_organization,"Form, Material",29,휴지,0.27586206896551724
+Tissue/Napkin,category_organization,Material,29,휴지,0.06896551724137931
+Tissue/Napkin,count_mass,Can be counted,32,휴지,0.78125
+Tissue/Napkin,count_mass,Cannot be counted,32,휴지,0.09375
+Tissue/Napkin,count_mass,I don't know/It's hard to say,32,휴지,0.125
+Tissue/Napkin,solidity,I don't know/It's hard to say,30,휴지,0.13333333333333333
+Tissue/Napkin,solidity,Not a solid,30,휴지,0.1
+Tissue/Napkin,solidity,Solid,30,휴지,0.7666666666666667
+Toenail,category_organization,Form,29,발톱,0.6896551724137931
+Toenail,category_organization,"Form, Color",29,발톱,0.034482758620689655
+Toenail,category_organization,"Form, Material",29,발톱,0.2413793103448276
+Toenail,category_organization,Material,29,발톱,0.034482758620689655
+Toenail,count_mass,Can be counted,33,발톱,0.8787878787878788
+Toenail,count_mass,I don't know/It's hard to say,33,발톱,0.12121212121212122
+Toenail,solidity,I don't know/It's hard to say,29,발톱,0.13793103448275862
+Toenail,solidity,Not a solid,29,발톱,0.06896551724137931
+Toenail,solidity,Solid,29,발톱,0.7931034482758621
+Tomato,category_organization,Color,29,토마토,0.034482758620689655
+Tomato,category_organization,Form,29,토마토,0.4827586206896552
+Tomato,category_organization,"Form, Color",29,토마토,0.13793103448275862
+Tomato,category_organization,"Form, Color, Material",29,토마토,0.20689655172413793
+Tomato,category_organization,"Form, Material",29,토마토,0.034482758620689655
+Tomato,category_organization,Material,29,토마토,0.10344827586206896
+Tomato,count_mass,Can be counted,32,토마토,0.90625
+Tomato,count_mass,I don't know/It's hard to say,32,토마토,0.09375
+Tomato,solidity,I don't know/It's hard to say,29,토마토,0.10344827586206896
+Tomato,solidity,Not a solid,29,토마토,0.10344827586206896
+Tomato,solidity,Solid,29,토마토,0.7931034482758621
+Tongue,category_organization,Form,29,혀,0.5862068965517241
+Tongue,category_organization,"Form, Color",29,혀,0.1724137931034483
+Tongue,category_organization,"Form, Color, Material",29,혀,0.10344827586206896
+Tongue,category_organization,"Form, Material",29,혀,0.10344827586206896
+Tongue,category_organization,Material,29,혀,0.034482758620689655
+Tongue,count_mass,Can be counted,36,혀,0.8055555555555556
+Tongue,count_mass,I don't know/It's hard to say,36,혀,0.19444444444444445
+Tongue,solidity,I don't know/It's hard to say,29,혀,0.2413793103448276
+Tongue,solidity,Not a solid,29,혀,0.10344827586206896
+Tongue,solidity,Solid,29,혀,0.6551724137931034
+Tooth/Teeth,category_organization,Form,29,이/이빨,0.5517241379310345
+Tooth/Teeth,category_organization,"Form, Color",29,이/이빨,0.13793103448275862
+Tooth/Teeth,category_organization,"Form, Color, Material",29,이/이빨,0.10344827586206896
+Tooth/Teeth,category_organization,"Form, Material",29,이/이빨,0.1724137931034483
+Tooth/Teeth,category_organization,Material,29,이/이빨,0.034482758620689655
+Tooth/Teeth,count_mass,Can be counted,32,이/이빨,0.90625
+Tooth/Teeth,count_mass,I don't know/It's hard to say,32,이/이빨,0.09375
+Tooth/Teeth,solidity,I don't know/It's hard to say,29,이/이빨,0.10344827586206896
+Tooth/Teeth,solidity,Not a solid,29,이/이빨,0.06896551724137931
+Tooth/Teeth,solidity,Solid,29,이/이빨,0.8275862068965517
+Toothbrush,category_organization,Form,29,칫솔,0.6896551724137931
+Toothbrush,category_organization,"Form, Color, Material",29,칫솔,0.10344827586206896
+Toothbrush,category_organization,"Form, Material",29,칫솔,0.1724137931034483
+Toothbrush,category_organization,Material,29,칫솔,0.034482758620689655
+Toothbrush,count_mass,Can be counted,30,칫솔,0.9666666666666667
+Toothbrush,count_mass,I don't know/It's hard to say,30,칫솔,0.03333333333333333
+Toothbrush,solidity,I don't know/It's hard to say,29,칫솔,0.034482758620689655
+Toothbrush,solidity,Solid,29,칫솔,0.9655172413793104
+Toothpaste,category_organization,Color,29,치약,0.034482758620689655
+Toothpaste,category_organization,"Color, Material",29,치약,0.06896551724137931
+Toothpaste,category_organization,Form,29,치약,0.4827586206896552
+Toothpaste,category_organization,"Form, Color, Material",29,치약,0.06896551724137931
+Toothpaste,category_organization,"Form, Material",29,치약,0.27586206896551724
+Toothpaste,category_organization,Material,29,치약,0.06896551724137931
+Toothpaste,count_mass,Can be counted,38,치약,0.7105263157894737
+Toothpaste,count_mass,Cannot be counted,38,치약,0.05263157894736842
+Toothpaste,count_mass,I don't know/It's hard to say,38,치약,0.23684210526315788
+Toothpaste,solidity,I don't know/It's hard to say,29,치약,0.3103448275862069
+Toothpaste,solidity,Not a solid,29,치약,0.27586206896551724
+Toothpaste,solidity,Solid,29,치약,0.41379310344827586
+Towel,category_organization,Color,29,수건,0.034482758620689655
+Towel,category_organization,Form,29,수건,0.5862068965517241
+Towel,category_organization,"Form, Color",29,수건,0.06896551724137931
+Towel,category_organization,"Form, Color, Material",29,수건,0.06896551724137931
+Towel,category_organization,"Form, Material",29,수건,0.1724137931034483
+Towel,category_organization,Material,29,수건,0.06896551724137931
+Towel,count_mass,Can be counted,33,수건,0.8484848484848485
+Towel,count_mass,I don't know/It's hard to say,33,수건,0.15151515151515152
+Towel,solidity,I don't know/It's hard to say,30,수건,0.16666666666666666
+Towel,solidity,Not a solid,30,수건,0.06666666666666667
+Towel,solidity,Solid,30,수건,0.7666666666666667
+Toy,category_organization,"Color, Material",29,장난감,0.034482758620689655
+Toy,category_organization,Form,29,장난감,0.4827586206896552
+Toy,category_organization,"Form, Color",29,장난감,0.034482758620689655
+Toy,category_organization,"Form, Color, Material",29,장난감,0.10344827586206896
+Toy,category_organization,"Form, Material",29,장난감,0.13793103448275862
+Toy,category_organization,Material,29,장난감,0.06896551724137931
+Toy,category_organization,Not applicable,29,장난감,0.13793103448275862
+Toy,count_mass,Can be counted,34,장난감,0.7647058823529411
+Toy,count_mass,Cannot be counted,34,장난감,0.029411764705882353
+Toy,count_mass,I don't know/It's hard to say,34,장난감,0.20588235294117646
+Toy,solidity,I don't know/It's hard to say,31,장난감,0.22580645161290322
+Toy,solidity,Solid,31,장난감,0.7741935483870968
+Train,category_organization,Form,28,기차,0.6428571428571429
+Train,category_organization,"Form, Color, Material",28,기차,0.03571428571428571
+Train,category_organization,"Form, Material",28,기차,0.25
+Train,category_organization,Material,28,기차,0.07142857142857142
+Train,count_mass,Can be counted,30,기차,0.8666666666666667
+Train,count_mass,Cannot be counted,30,기차,0.03333333333333333
+Train,count_mass,I don't know/It's hard to say,30,기차,0.1
+Train,solidity,I don't know/It's hard to say,31,기차,0.0967741935483871
+Train,solidity,Solid,31,기차,0.9032258064516129
+Trash can,category_organization,Color,29,쓰레기통/휴지통,0.034482758620689655
+Trash can,category_organization,Form,29,쓰레기통/휴지통,0.7586206896551724
+Trash can,category_organization,"Form, Color, Material",29,쓰레기통/휴지통,0.10344827586206896
+Trash can,category_organization,"Form, Material",29,쓰레기통/휴지통,0.06896551724137931
+Trash can,category_organization,Material,29,쓰레기통/휴지통,0.034482758620689655
+Trash can,count_mass,Can be counted,30,쓰레기통/휴지통,0.9666666666666667
+Trash can,count_mass,I don't know/It's hard to say,30,쓰레기통/휴지통,0.03333333333333333
+Trash can,solidity,I don't know/It's hard to say,29,쓰레기통/휴지통,0.034482758620689655
+Trash can,solidity,Solid,29,쓰레기통/휴지통,0.9655172413793104
+Tray,category_organization,Color,29,쟁반,0.034482758620689655
+Tray,category_organization,Form,29,쟁반,0.6551724137931034
+Tray,category_organization,"Form, Color",29,쟁반,0.034482758620689655
+Tray,category_organization,"Form, Color, Material",29,쟁반,0.10344827586206896
+Tray,category_organization,"Form, Material",29,쟁반,0.13793103448275862
+Tray,category_organization,Material,29,쟁반,0.034482758620689655
+Tray,count_mass,Can be counted,30,쟁반,0.9666666666666667
+Tray,count_mass,I don't know/It's hard to say,30,쟁반,0.03333333333333333
+Tray,solidity,I don't know/It's hard to say,29,쟁반,0.034482758620689655
+Tray,solidity,Solid,29,쟁반,0.9655172413793104
+Tree,category_organization,Color,29,나무,0.034482758620689655
+Tree,category_organization,Form,29,나무,0.5862068965517241
+Tree,category_organization,"Form, Color",29,나무,0.06896551724137931
+Tree,category_organization,"Form, Color, Material",29,나무,0.13793103448275862
+Tree,category_organization,"Form, Material",29,나무,0.10344827586206896
+Tree,category_organization,Material,29,나무,0.034482758620689655
+Tree,category_organization,Not applicable,29,나무,0.034482758620689655
+Tree,count_mass,Can be counted,33,나무,0.7878787878787878
+Tree,count_mass,Cannot be counted,33,나무,0.09090909090909091
+Tree,count_mass,I don't know/It's hard to say,33,나무,0.12121212121212122
+Tree,solidity,I don't know/It's hard to say,29,나무,0.13793103448275862
+Tree,solidity,Not a solid,29,나무,0.10344827586206896
+Tree,solidity,Solid,29,나무,0.7586206896551724
+Truck,category_organization,Form,28,트럭,0.6071428571428571
+Truck,category_organization,"Form, Color",28,트럭,0.03571428571428571
+Truck,category_organization,"Form, Color, Material",28,트럭,0.03571428571428571
+Truck,category_organization,"Form, Material",28,트럭,0.25
+Truck,category_organization,Material,28,트럭,0.07142857142857142
+Truck,count_mass,Can be counted,30,트럭,0.9333333333333333
+Truck,count_mass,I don't know/It's hard to say,30,트럭,0.06666666666666667
+Truck,solidity,I don't know/It's hard to say,30,트럭,0.06666666666666667
+Truck,solidity,Solid,30,트럭,0.9333333333333333
+Turtle,category_organization,Color,29,거북이,0.034482758620689655
+Turtle,category_organization,Form,29,거북이,0.6206896551724138
+Turtle,category_organization,"Form, Color",29,거북이,0.10344827586206896
+Turtle,category_organization,"Form, Color, Material",29,거북이,0.06896551724137931
+Turtle,category_organization,"Form, Material",29,거북이,0.13793103448275862
+Turtle,category_organization,Material,29,거북이,0.034482758620689655
+Turtle,count_mass,Can be counted,36,거북이,0.8055555555555556
+Turtle,count_mass,I don't know/It's hard to say,36,거북이,0.19444444444444445
+Turtle,solidity,I don't know/It's hard to say,29,거북이,0.2413793103448276
+Turtle,solidity,Not a solid,29,거북이,0.10344827586206896
+Turtle,solidity,Solid,29,거북이,0.6551724137931034
+Umbrella,category_organization,Color,29,우산,0.034482758620689655
+Umbrella,category_organization,Form,29,우산,0.6206896551724138
+Umbrella,category_organization,"Form, Color",29,우산,0.06896551724137931
+Umbrella,category_organization,"Form, Color, Material",29,우산,0.13793103448275862
+Umbrella,category_organization,"Form, Material",29,우산,0.10344827586206896
+Umbrella,category_organization,Material,29,우산,0.034482758620689655
+Umbrella,count_mass,Can be counted,30,우산,0.9666666666666667
+Umbrella,count_mass,I don't know/It's hard to say,30,우산,0.03333333333333333
+Umbrella,solidity,I don't know/It's hard to say,29,우산,0.034482758620689655
+Umbrella,solidity,Solid,29,우산,0.9655172413793104
+Underwear,category_organization,Form,29,팬티,0.6206896551724138
+Underwear,category_organization,"Form, Color",29,팬티,0.06896551724137931
+Underwear,category_organization,"Form, Color, Material",29,팬티,0.10344827586206896
+Underwear,category_organization,"Form, Material",29,팬티,0.13793103448275862
+Underwear,category_organization,Material,29,팬티,0.06896551724137931
+Underwear,count_mass,Can be counted,32,팬티,0.875
+Underwear,count_mass,Cannot be counted,32,팬티,0.03125
+Underwear,count_mass,I don't know/It's hard to say,32,팬티,0.09375
+Underwear,solidity,I don't know/It's hard to say,29,팬티,0.10344827586206896
+Underwear,solidity,Not a solid,29,팬티,0.06896551724137931
+Underwear,solidity,Solid,29,팬티,0.8275862068965517
+Vacuum Cleaner,category_organization,Color,29,청소기,0.034482758620689655
+Vacuum Cleaner,category_organization,Form,29,청소기,0.6896551724137931
+Vacuum Cleaner,category_organization,"Form, Color",29,청소기,0.034482758620689655
+Vacuum Cleaner,category_organization,"Form, Color, Material",29,청소기,0.034482758620689655
+Vacuum Cleaner,category_organization,"Form, Material",29,청소기,0.13793103448275862
+Vacuum Cleaner,category_organization,Material,29,청소기,0.06896551724137931
+Vacuum Cleaner,count_mass,Can be counted,30,청소기,0.9666666666666667
+Vacuum Cleaner,count_mass,I don't know/It's hard to say,30,청소기,0.03333333333333333
+Vacuum Cleaner,solidity,I don't know/It's hard to say,29,청소기,0.034482758620689655
+Vacuum Cleaner,solidity,Solid,29,청소기,0.9655172413793104
+Waist,category_organization,Form,29,허리,0.8620689655172413
+Waist,category_organization,"Form, Material",29,허리,0.10344827586206896
+Waist,category_organization,Material,29,허리,0.034482758620689655
+Waist,count_mass,Can be counted,37,허리,0.7027027027027027
+Waist,count_mass,Cannot be counted,37,허리,0.02702702702702703
+Waist,count_mass,I don't know/It's hard to say,37,허리,0.2702702702702703
+Waist,solidity,I don't know/It's hard to say,31,허리,0.3225806451612903
+Waist,solidity,Not a solid,31,허리,0.0967741935483871
+Waist,solidity,Solid,31,허리,0.5806451612903226
+Wallet,category_organization,Color,29,지갑,0.034482758620689655
+Wallet,category_organization,Form,29,지갑,0.6896551724137931
+Wallet,category_organization,"Form, Color",29,지갑,0.034482758620689655
+Wallet,category_organization,"Form, Color, Material",29,지갑,0.13793103448275862
+Wallet,category_organization,"Form, Material",29,지갑,0.06896551724137931
+Wallet,category_organization,Material,29,지갑,0.034482758620689655
+Wallet,count_mass,Can be counted,30,지갑,0.9666666666666667
+Wallet,count_mass,I don't know/It's hard to say,30,지갑,0.03333333333333333
+Wallet,solidity,I don't know/It's hard to say,29,지갑,0.034482758620689655
+Wallet,solidity,Solid,29,지갑,0.9655172413793104
+Water,category_organization,"Color, Material",29,물,0.13793103448275862
+Water,category_organization,Form,29,물,0.1724137931034483
+Water,category_organization,"Form, Color",29,물,0.034482758620689655
+Water,category_organization,"Form, Color, Material",29,물,0.06896551724137931
+Water,category_organization,"Form, Material",29,물,0.27586206896551724
+Water,category_organization,Material,29,물,0.27586206896551724
+Water,category_organization,Not applicable,29,물,0.034482758620689655
+Water,count_mass,Can be counted,31,물,0.3548387096774194
+Water,count_mass,Cannot be counted,31,물,0.25806451612903225
+Water,count_mass,I don't know/It's hard to say,31,물,0.3870967741935484
+Water,solidity,I don't know/It's hard to say,39,물,0.3076923076923077
+Water,solidity,Not a solid,39,물,0.6153846153846154
+Water,solidity,Solid,39,물,0.07692307692307693
+Watermelon,category_organization,Color,29,수박,0.034482758620689655
+Watermelon,category_organization,Form,29,수박,0.5517241379310345
+Watermelon,category_organization,"Form, Color",29,수박,0.06896551724137931
+Watermelon,category_organization,"Form, Color, Material",29,수박,0.2413793103448276
+Watermelon,category_organization,"Form, Material",29,수박,0.034482758620689655
+Watermelon,category_organization,Material,29,수박,0.06896551724137931
+Watermelon,count_mass,Can be counted,32,수박,0.90625
+Watermelon,count_mass,I don't know/It's hard to say,32,수박,0.09375
+Watermelon,solidity,I don't know/It's hard to say,29,수박,0.10344827586206896
+Watermelon,solidity,Not a solid,29,수박,0.06896551724137931
+Watermelon,solidity,Solid,29,수박,0.8275862068965517
+Window,category_organization,Color,58,바람,0.017241379310344827
+Window,category_organization,Color,58,창문,0.017241379310344827
+Window,category_organization,Form,58,바람,0.13793103448275862
+Window,category_organization,Form,58,창문,0.3620689655172414
+Window,category_organization,"Form, Color, Material",58,창문,0.017241379310344827
+Window,category_organization,"Form, Material",58,바람,0.034482758620689655
+Window,category_organization,"Form, Material",58,창문,0.08620689655172414
+Window,category_organization,Material,58,바람,0.13793103448275862
+Window,category_organization,Material,58,창문,0.017241379310344827
+Window,category_organization,Not applicable,58,바람,0.1724137931034483
+Window,count_mass,Can be counted,62,바람,0.04838709677419355
+Window,count_mass,Can be counted,62,창문,0.46774193548387094
+Window,count_mass,Cannot be counted,62,바람,0.4032258064516129
+Window,count_mass,I don't know/It's hard to say,62,바람,0.03225806451612903
+Window,count_mass,I don't know/It's hard to say,62,창문,0.04838709677419355
+Window,solidity,I don't know/It's hard to say,58,바람,0.034482758620689655
+Window,solidity,I don't know/It's hard to say,58,창문,0.05172413793103448
+Window,solidity,Not a solid,58,바람,0.4482758620689655
+Window,solidity,Solid,58,바람,0.017241379310344827
+Window,solidity,Solid,58,창문,0.4482758620689655
+Yogurt,category_organization,Color,29,요구르트,0.034482758620689655
+Yogurt,category_organization,"Color, Material",29,요구르트,0.10344827586206896
+Yogurt,category_organization,Form,29,요구르트,0.20689655172413793
+Yogurt,category_organization,"Form, Color",29,요구르트,0.06896551724137931
+Yogurt,category_organization,"Form, Color, Material",29,요구르트,0.034482758620689655
+Yogurt,category_organization,"Form, Material",29,요구르트,0.27586206896551724
+Yogurt,category_organization,Material,29,요구르트,0.2413793103448276
+Yogurt,category_organization,Not applicable,29,요구르트,0.034482758620689655
+Yogurt,count_mass,Can be counted,32,요구르트,0.65625
+Yogurt,count_mass,Cannot be counted,32,요구르트,0.125
+Yogurt,count_mass,I don't know/It's hard to say,32,요구르트,0.21875
+Yogurt,solidity,I don't know/It's hard to say,33,요구르트,0.21212121212121213
+Yogurt,solidity,Not a solid,33,요구르트,0.6363636363636364
+Yogurt,solidity,Solid,33,요구르트,0.15151515151515152
