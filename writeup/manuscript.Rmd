@@ -1,0 +1,603 @@
+---
+title             : "The title"
+shorttitle        : "Title"
+
+author: 
+  - name          : "First Author"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    address       : "Postal address"
+    email         : "my@email.com"
+    role: # Contributorship roles (e.g., CRediT, https://credit.niso.org/)
+      - "Conceptualization"
+      - "Writing - Original Draft Preparation"
+      - "Writing - Review & Editing"
+  - name          : "Ernst-August Doelle"
+    affiliation   : "1,2"
+    role:
+      - "Writing - Review & Editing"
+      - "Supervision"
+
+affiliation:
+  - id            : "1"
+    institution   : "Wilhelm-Wundt-University"
+  - id            : "2"
+    institution   : "Konstanz Business School"
+
+authornote: |
+  Add complete departmental affiliations for each author here. Each new line herein must be indented, like this line.
+
+  Enter author note here.
+
+abstract: |
+  One or two sentences providing a **basic introduction** to the field,  comprehensible to a scientist in any discipline.
+  Two to three sentences of **more detailed background**, comprehensible  to scientists in related disciplines.
+  One sentence clearly stating the **general problem** being addressed by  this particular study.
+  One sentence summarizing the main result (with the words "**here we show**" or their equivalent).
+  Two or three sentences explaining what the **main result** reveals in direct comparison to what was thought to be the case previously, or how the  main result adds to previous knowledge.
+  One or two sentences to put the results into a more **general context**.
+  Two or three sentences to provide a **broader perspective**, readily comprehensible to a scientist in any discipline.
+  
+  <!-- https://tinyurl.com/ybremelq -->
+  
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : "r-references.bib"
+
+floatsintext      : no
+linenumbers       : yes
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+classoption       : "man"
+output            : papaja::apa6_pdf
+
+always_allow_html: true
+csl: apa6.csl
+toc: false 
+figsintext: yes
+fig_caption: yes
+lang: en-US
+
+header-includes:
+  - \usepackage{float}
+  - \floatplacement{figure}{H}
+  - \usepackage{graphicx}
+  
+---
+
+```{r analysis-preferences}
+# Seed for random number generation
+set.seed(42)
+knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
+
+```
+
+```{r setup, message=FALSE, warning=FALSE, echo=FALSE, include=FALSE}
+# Seed for random number generation
+set.seed(42)
+knitr::opts_chunk$set(cache.extra = knitr::rand_seed, echo = FALSE, message=FALSE, include = FALSE)
+
+library("papaja")
+r_refs("r-references.bib")
+library(tidyverse)
+library(brms)
+library(psych)
+library(modelr)
+library(glue)
+library(here)
+library(quanteda)
+library(tmcn)
+library(janitor)
+library(GGally)
+library(lme4)
+library(stringr)
+library(lmerTest)  # For p-values in lme4 models
+library(skimr)     # For quick and nice summaries
+library(performance) # For model diagnostics
+library(ggvenn)
+library(purrr)
+source(here("helper.R"))
+library("papaja")
+library(psych)
+library(irr)
+library(ggplot2)
+library(corrr)
+library(broom)
+library(effectsize)
+library(patchwork)
+library(ggeffects)
+
+#r_refs("r-references.bib")
+```
+
+# Introduction
+
+The shape bias is the tendency of young children to generalize new words to new category members based on their shape (Landau, Smith, & Jones, 1988) rather than other perceptual attributes like color, texture, or size [@landau1988; @subrahmanyam_2006] or conceptual attributes like a functional, thematic, or a taxonomic match [@imai_childrens_1994; @Poulin-Dubois1999; @imai2010; @yoshida2003known]. 
+
+One reason for researchers’ long-standing interest in the shape bias relates to its hypothesized role in early word learning. This bias has been extensively studied in English-speaking children in the US, where it emerges around 18-24-36? months of age and is thought to be a key mechanism for rapid vocabulary growth after the second year (Gershkoff-Stowe & Smith, 2004; Smith et al 2000). 
+
+Additionally, it has been found to be weaker in children with language impairments, and in children with autism spectrum disorder [@JONES_SMITH_2005; @Jones2003LateTS; @Collisson2015IndividualDI; @perry2019heterogeneity; @potrzeba2015_ASD; @tek2008children; @perry2021vocabulary]. Although the causality direction is not yet clear, but this suggests that the shape bias may be a useful tool for children learning nouns, and that it may be a useful predictor of language development.
+
+The ALA associative account vs. the shape as a cue: 
+whether the underyling mechanism was mere association of correlates in the input and the act of naming (Colunga & Smith, 2005; Samuelson & Smith, 1999; Smith et al., 2002), or a more abstract understanding of shape as a cue for object kind categorization has been debated. But regardless, both accounts agree that the presence of shape as a defining feature of labeled categories is supported by the distributional dominance of this feature in early learning. 
+
+Learning is not a passive process: 
+The shape bias is proposed to be a statistical generalization of early vocabulary: in English, solid objects are dominant in early lexicon, are referred to by count nouns, and are organized by shape (Samuelson & Smith, 1999). The emergence of the shape bias has been linked to the distributional properties of early-learned nouns in English, which tend to refer to solid objects that are countable and organized by shape (Samuelson & Smith, 1999). 
+
+In @smith_object_2002, they trained 17 months olds on names of objects that shared the exact same shape, but different in all their other dimensions. Training on close similarity of shape helped vocabulary acceleration. Consistency in the input is thought to be driving the bias. 
+On the other hand, [@Perry2010_Variability] found that variability of the exemplars of the category, for example different shapes of a "chair" instead of the same shape, predicts higher rate of acquisition. Nevertheless, both studies linked a higher order shape bias to vocabulary growth. Greater variability can improve learning. Although it might seem counterintuitive, exposing children to a wider range of examples for a concept allows them to better abstract the underlying rule and apply it to new situations. 
+
+The statistical generalization hypothesis was also supported by computational models showing that exposure to a lexicon with similar statistical properties can lead to the emergence of a shape bias in simulated learners (Colunga & Smith, 2005; Perry & Samuelson, 2011). A study utilizing bayesian models further demonstrated that the shape bias can emerge from the statistical structure of the lexicon, specifically the correlations between object properties (solidity, shape) and linguistic properties (count-mass syntax)
+Also, a Bayesian model (Kemp et al., 2007).
+
+Recent work on large language models has also shown that these models can exhibit a shape bias when trained on corpora with similar statistical properties (Blevins et al., 2023).
+
+## Syntax and semantics in cross-cultural variation
+
+Although the shape bias is reliably observed in English-speaking children but reported to vary across languages (Abdelrahim & Frank, 2024); e.g., it is argued to be lower in East Asian languages such as Korean (Gathercole & Min, 1997). 
+
+if the strength of the shape bias or even its presence depends on the degree of correspondence between the distributional properties of environmental (i.e. the dominance of solid vs. non-solid objects, artifacts vs. natural objects, or shape organization) and linguistic correlates (i.e. count or mass syntax, classifier) of nouns to object kinds mapping, then cross-linguistic variation in these correlates should predict cross-linguistic variation in the shape bias.
+
+One aspect of cross-inguistic variation is the syntactic distinction between count and mass nouns, which is a fundamental aspect of noun classification in many languages (Barner & Snedeker, 2005; Bloom, 1994). Count nouns typically refer to discrete, countable objects (e.g., "dog", "car"), while mass nouns refer to uncountable substances or aggregates (e.g., "water", "sand"). In English, count nouns are often associated with solid objects that are organized by shape, while mass nouns are more likely to refer to non-solid substances that are organized by material (Barner & Snedeker, 2005; Bloom, 1994). This syntactic distinction is thought to play a crucial role in the development of the shape bias, as children learn to associate count nouns with shape-based categorization and mass nouns with material-based categorization (Barner & Snedeker, 2005; Bloom, 1994).
+
+Some studies have suggested that the shape bias may be less pronounced or absent in languages with different noun classification systems or morphological structures (e.g., Chinese, Japanese) (Imai et al., 2008; Yoshida & Smith, 2005). Other studies have found evidence for a shape bias in non-English-speaking children, but with variations in its strength and developmental trajectory (e.g., Spanish, German) (Casasola & Bhagwat, 2007; Graham et al., 2004).
+
+The lack of this linguistic cue that differentiates between count and mass nouns and the corresponding referents might make the cut in the correlates that give rise to the shape bias less salient in some languages. For example, in languages like Korean and Japanese, where the count-mass distinction is not as syntactically marked as in English, children may be less likely to develop a strong shape bias (Gathercole & Min, 1997; Imai et al., 2008). 
+
+Tsimane case as an example of environmental 
+
+# The current study
+
+However, the extent to which the shape bias and underlying lexical statistics are universal across languages remains unclear. 
+1- To address this gap, we conducted a cross-linguistic study to examine the lexical statistics of early-learned nouns in 16 languages from diverse linguistic families and regions. here, we focus on three aspects: 
+* The dominance of shape-based organzied categories in early-learned nouns across languages.
+* the correspondence between shape-based categorization, solidity, and count-mass syntax in early-learned nouns across languages. 
+* the cross-linguistic variation in the distribution of early-learned nouns across these dimensions
+
+2- the difference between learnability (easiness to learn) vs. exposure (how much is there to learn) is a crucial distinction to make here. If children find shape-based categories easier to learn, regardless of their prevalence in the environment, then we might expect to see a shape bias emerge even in languages where the correlates are not that strong, or environments where shape-based categories are less common. On the other hand, if the shape bias is primarily driven by exposure to shape-based categories in the environment, then we would expect to see cross-linguistic variation in the strength of the shape bias that corresponds to the prevalence of shape-based categories in early-learned nouns. 
+* We evaluate this by examining the relationship between shape-based ratings of nouns and their age of acquisition (AoA) in early vocabulary across languages. We then connect this to the reported cross-linguistic variation in the shape bias. 
+
+3- rater origin and perspective: do people across languages agree on these ratings? if yes, then it suggests that these conceptions are not language-specific or culture-specfic but rather universal cognitive processes. 
+
+# Study 1:
+
+```{r  message=FALSE, warning=FALSE}
+english_demo1 <- read_csv(here("data/demographics/first-sample-english", "1.csv"))
+english_demo2 <- read_csv(here("data/demographics/first-sample-english", "2.csv"))
+english_demo3 <- read_csv(here("data/demographics/first-sample-english", "3.csv")) %>%
+  filter(!is.na(Age)) %>% mutate(Age = as.character(Age))
+english_demo4 <- read_csv(here("data/demographics/first-sample-english", "4.csv")) %>%
+  filter(!is.na(Age)) %>% mutate(Age = as.character(Age))
+english_demo5 <- read_csv(here("data/demographics/first-sample-english", "5.csv"))
+
+english_sample1_demo <- bind_rows(english_demo1, english_demo2, english_demo3, english_demo4, english_demo5) %>%
+  clean_names() %>%
+  mutate(language = "English", sample = "1") %>%
+  mutate(age = as.numeric(age)) %>% 
+  drop_na(age)
+
+english_sample1_demo %>% select(age) %>% filter(!is.na(age)) %>%
+summarize(meanage = mean(age), sd = sd(age), max = max(age), min = min(age))
+
+```
+
+```{r message=FALSE, warning=FALSE}
+english_sample1 <- read_csv(here("data/predictors","english_sample1_props.csv")) 
+english_sample1 <- english_sample1 %>% filter(!is.na(response)) %>% distinct()
+english_sample1_raw <- read_csv(here("data/predictors","english_sample1_raw.csv")) 
+# Apply the mapping function in helper.R to the response column
+english_sample1$response_numeric <- mapply(map_categories, english_sample1$response, english_sample1$block)
+# more 2 participants -- 21 words less than 8 ratings
+
+correspondence <- english_sample1 |> filter (matching_response %in% c("solid", "count" ,"shape"))
+
+```
+
+## Methods
+This study follows Samuelson et al 1999 where they asked 11 English speaking adults in the US to judge a set of 300 nouns learned the earliest as measured by the MCDI parental reports of English speaking children in the US. Ratings were collected for three dimensions: solidity, count-mass syntax, and shape-based categorization. 
+We extends on this by collecting ratings on early learned nouns from the MCDI of 16 languages including English. 
+
+## Participants
+
+377 English-speaking adults recruited online from the Prolific platform (mean age = 41, sd = 14) were asked to rate nouns on three dimensions: solidity (solid, non-solid, unclear), count and mass noun syntax (count, mass, unclear), and organizing feature (shape, color, material, none of these). Participants were compensated at a rate of $12 per hour. All participants provided informed consent prior to participation, and the study was approved by the Institutional Review Board of [INSTITUTION NAME].
+
+## Material
+
+A set of nouns were sourced from MCDI data on the WordBank repository of 16 languages ("English (American)", "Mandarin (Beijing)", "Korean", "English (Australian)", "Cantonese", "Catalan" , "Japanese", "Turkish" , "Spanish (Mexican)", "Russian", "Kiswahili", "Mandarin (Taiwanese)", "Spanish (Peruvian)", "Spanish (European)", "Hebrew", "French (French)") that belonged to seven linguistic families: (Indo-European, Sino-Tibetan, Koreanic, Japonic, Turkic, Niger-Congo, Afro-Asiatic). 
+The nouns were chosen based on the earliest age of acquisition in the dataset, up to a maximum of 300 nouns (CITE). Because we only recruited English-speaking participants, nouns were presented in English and mapped across languages via conceptual mappings (universal lemmas “unilemmas”, Frank et al., 2021). A “unilemma” is the concept behind the noun expressed in the English language (“dog” and “dog in german” both map to the same underlying concept of “dog”, which is used as the unilemma in this case). 
+
+The final sample consisted of a total of 23355 nouns from all languages, with N = ~664 after removing duplicates "uni-lemmas shared between languages". (Figure to show how much overlap between languages). Most nouns belonged to the semantic categories of food/drinks, clothing, and animals, with a few words referring to vehicles, toys, body parts, household items, and outside things. The Semantic categories breakdown of the nouns in each language attached in the supplementary materials. 
+
+## Procedure
+
+The experiment started with familiarization trials in which participants were provided with demonstrations of count and mass nouns, solid objects, and non-solid objects. They were also familiarized with what a category-organizing or characterizing feature means, as in Table [--]. Then the test trials followed the same wording and structure. Every dimension (solidity, count-mass syntax, and category organizing feature) constituted a block, and every participant rated 20 nouns per block, so there were 60 test trials per subject in total. Familiarization trials, test blocks, and nouns within a block were all randomized across participants. No information about the semantic category of nouns was given to participants, nor were the nouns grouped by their semantic category. Participants were only allowed to choose one feature in all questions. 
+^(Contrary to Samuelson et al., 1999, who added information about the semantic category, and allowed multiple selections for the category-organizing feature dimension).
+```{r , echo=TRUE}
+# how much correspondence there is between the three dimensions 
+correspodence_data <-  english_sample1 %>% select(-c(language)) %>%
+  distinct() %>%
+  filter(response %in% c("solid", "shape", "count noun")) %>%  # Filter only the desired responses
+  select(word, response, proportion) %>%  # Keep only relevant columns
+  pivot_wider(names_from = response, values_from = proportion, values_fill = 0)  # Reshape
+
+correspodence_data %>% select(`count noun`, shape, solid) %>% corr.test()
+
+```
+
+## Data analysis
+We calculated the proportion of responses for each feature per noun per language. For example, if a word was rated by 10 participants in total, and 7 of them rated it as solid, the proportion of solid responses for that word would be 0.7. First, we assessed the correspondence between the three dimensions using Pearson correlation analysis. We then conducted a permutation test to compare the observed density of shape-based categorization responses across languages against a null distribution.
+Additionally, and similar to Samuelson et al 1999, we categorized the nouns into three categories: solid, count noun, and shape-based using a cutoff of 80% i.e. a noun that is rated by at least 80% of the participants to be a solid is categorized as solid. We then visualized the overlap between these categories using Venn diagrams.
+
+lastly, we also calculated inter-rater agreement using the word-level consensus approach, which involves calculating the mode of the ratings for each word and then computing the percentage of raters who agreed with the mode. This gives us a measure of how consistently participants rated each word across the three dimensions.
+
+## Results
+
+```{r correspondenceeng1, include=TRUE, fig.cap="This is a figure caption.", fig.align = "center", fig.pos = "H"}
+correspondence |>
+  ggplot(aes(x = proportion, color = response, fill = response)) +
+  geom_density(alpha = 0.5) +
+  facet_wrap(~ language) +
+  labs(
+    x = "Proportion Value",
+    y = "Density (words)"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+```
+
+```{r include=FALSE, echo= FALSE}
+correspondence %>% filter( language %in% c("English (American)", "Korean", "Mandarin (Beijing)", "Japanese")) |>
+  ggplot(aes(x = proportion, color = response, fill = response)) +
+  geom_density(alpha = 0.5) +
+  facet_wrap(~ language) +
+  labs(
+    title = "Density of Proportions by Language",
+    x = "Proportion Value",
+    y = "Density (words)"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+
+# ggsave(here("data/figures", "correspoendence_eng_1.png"))
+
+```
+
+```{r}
+#Venn Diagram
+
+threshold <- 0.8
+
+category_english_sample1 <- english_sample1 |>
+  filter(response %in% c("solid","count noun","shape")) |>
+  mutate(over_threshold = proportion >= threshold) |>
+  select(-block, -totcount, -count, -proportion, -response_numeric, -eng_response, - cleaned_response, - matching_response) |>
+  pivot_wider(names_from = "response", values_from = "over_threshold", 
+              values_fill = FALSE) |>
+  rename(count_noun = `count noun`)
+
+```
+
+```{r venneng1, include=TRUE, fig.cap="Venn diagram showing the overlap between nouns categorized as solid, count nouns, and organized by shape in English (Study 1A). A cutoff of 80% was used to categorize words, meaning that a word rated by at least 80% of participants as solid is categorized as solid.", fig.align = "center", fig.pos = "H"}
+
+venns <- category_english_sample1 |>
+  group_by(language) |>
+  nest() |>
+  mutate(plot = map(data, ~ggvenn(.x, c("count_noun","solid","shape"),
+                                  show_percentage = FALSE, 
+                                  text_size = 2.5,
+                                  set_name_size = 2) + 
+                    labs(y = language) + # Use labs() to set the vertical title
+                    theme(
+                      axis.title.y = element_text(angle = 90, # Rotate text to be vertical
+                                                  size = 6,  # Adjust size as needed
+                                                  vjust = 0.5), # Vertically center the title
+                      axis.text.y = element_blank(), # Remove y-axis labels
+                      axis.ticks.y = element_blank(), # Remove y-axis ticks
+                      axis.line.y = element_blank() # Remove y-axis line
+                    ))) |>
+  pull(plot)
+
+gridExtra::grid.arrange(grobs = venns, ncol = 4)
+
+```
+
+We collected a total of 20,130 ratings across 377 participants for 664 nouns in three blocks (solidity, count-mass syntax, and category-organizing feature). 19,635 ratings were retained after exclusions. Nouns received an average of (-) ratings per block. Included in the supplementary materials are the demographic details of the participants (Table 1) and the distribution of ratings across nouns and blocks (Figure 1).
+
+Across languages, the ratings proportions were very consistent, suggesting limited variation in the distributional statistics as can be seen in figure \@ref(fig:correspondenceeng1). Overall, nouns were predominantly rated as solid (M = 0.72, SD = 0.32) and count (M = 0.68, SD = 0.29), but were less reliably judged as being organized by shape (M = 0.31, SD = 0.24). Pearson correlation analysis revealed a moderate positive correlation between solidity and count syntax (r = 0.62, p < 0.001), a weak positive correlation between count syntax and shape-based categorization (r = 0.45, p < 0.001), and a weaker positive correlation between solidity and shape-based categorization (r = 0.38, p < 0.001). 
+
+The venn diagram in figure \@ref(fig:venneng1) shows categories of nouns as solid, count noun, and shape_characterized by using the cutoff of 80% i.e. a word that is rated by at least 80% of the participants to be a solid is categorized as solid. The venn diagram shows that a large number of nouns were consistently rated as solid and count nouns, with large overlap between these two dimensions. However, only a maximum of five nouns rated as referring to objects organized by shape. This set of nouns rated to be organized by shape is significantly smaller that the set reported in Samuelson 1999 using the same 80% criteria. 
+
+To test for distributional differences in shape responses across languages, we conducted a permutation test (see Methods). The results showed that the observed density curves for each language fell within the null distribution generated by permuting language labels, indicating no significant differences in lexical statistics across languages \ref{fig:permutateddisteng1}. 
+
+## Discussion
+
+The emergence of the shape bias as a word learning strategy in English speaking kids in the US, is thought to be a product of the distribution of early learned count nouns that correspond to solid objects which happen to have similar shapes. Their attention is thus tuned to shape as the relevant feature for categorizing and correctly extending nouns to new members of the referent category. Even the fewest set of noun-referents that follow this distirbution and its correspondence is sufficient to trigger the shape bias in toddlers. 
+Following from this, we expected to find a majority of nouns to be solid, count nouns organized by shape with a very strong correlation between the three dimensions. We also expected to find significant cross-linguistic variation in the distribution of nouns across these three dimensions, which would then predict differences in the level of the shape bias reported across languages. However, our results showed that the early learned nouns tend to refer to mostly solid objects that are count nouns, but are considerably less reliably organized by shape. 
+lexical statistics were remarkably consistent across languages. Across the three dimensions, distributions of all languages look the same and are not significantly different from the null distribution. 
+Correspondence between the ontological status, syntactic frame, and shape organization was also very weak. 
+
+However, maybe the question about the organizing feature was not clear, not intuitive for a naive participants, and instructions were ambiguous, which is why solidity and countability correspond to each other but less with shape ratings. The weak shaped based choices and large SD , along with the weak shape-solidity correlation (r = 0.38) might partly reflect measurement error. We test the reliability of this measure in study 1B. 
+
+# Study 2
+The idea of the organizing feature of an object category is not an intuitive one, and is not something that people actively think about when recognizing category members i.e. when they are searching for apples, they don't break down the category into features of apple shape, red color, and leaf material and then decide which feature is the most diagnosing of apples. It is possible that the instructions were not clear enough for participants to understand what was being asked. To test the reliability of this measure, we collected a second sample of ratings on the same set of words, with improved instructions and examples. 
+
+## Participants
+
+377 English-speaking adults recruited online from the Prolific platform (mean age = 41, sd = 14) were asked to rate words in three dimensions: solidity (solid, non-solid, unclear), count and mass noun syntax (count, mass, unclear), and organizing feature (shape, color, material, none of these). 
+
+## Material
+
+The same set of words used in Study 1. However, only the category-organizing feature block was included in this study, since it showed the most between subject variability. 
+
+## Procedure
+
+The experiment started with familiarization trials of what a category-organizing or characterizing feature means. However, this time the instructions were improved with more examples, adding picture depictions, training questions with feedback and clarifications involving the four feature answers so not to bias subjects into a specific answer as in Table [2]. The rest of the study was similar to Study 1. 
+
+## Data analysis
+
+Similar to study 1, we calculated the proportion of responses for each feature per word, and then compared the distribution of shape-based categorization responses between Study 1 and Study 2 using density plots and mixed-effects modeling. We also calculated the spearman-brown prediction correlation score between the two samples. 
+```{r }
+english_sample2 <- read_csv(here("data/predictors","english_sample2_props.csv"))
+english_sample2 <- english_sample2 %>% filter(!is.na(response)) %>% distinct()
+english_sample2_raw <- read_csv(here("data/predictors","english_sample2_raw.csv"))
+
+english_sample2$response_numeric <- mapply(map_categories, english_sample2$response, english_sample2$block)
+
+```
+
+## Results
+The overall distribution of shape-based categorization responses didn't significantly differ from that observed in Study 1A [figure , distributional difference metric], with a slightly less mean of () shape ratings and standard deviation of (). This shows a general group-level agreement. A mixed-effects modeling showed that ratings in Study 1B were slightly but significantly lower than in Study 1A ("B" = -0.04, p < .001), with a small effect size (d² = 0.04, d = 0.18).  
+
+We then assessed the consistency of shape ratings at the word-level between Study 1A and Study 1B using paired comparisons the spearman-brown prediction formula which yielded a predicted relaibility of 0.8. 
+
+Similarly, ratings of the organizing feature in study 1B were consistent across all languages and didn't differ significantly from the null distribution (Figure \ref{fig:permutateddisteng2}). 
+
+```{r }
+english_sample2 |>
+  filter(block == "category_organization") |>
+ggplot(aes(x = proportion, color = response, fill = response)) +
+  geom_density(alpha = 0.5) +
+  facet_wrap(~ language) +
+  labs(
+    title = "Density of Proportions by Language",
+    x = "Proportion Value",
+    y = "Density (words)"
+  ) +
+  theme_minimal()
+```
+
+```{r}
+eng_samp1_shape <- english_sample1 %>% filter(response == "shape") %>% select(word, proportion)
+eng_samp2_shape <- english_sample2 %>% filter(response == "shape") %>% select(word, proportion)
+
+# Merge on 'word_id'
+merged_data <- merge(eng_samp1_shape, eng_samp2_shape, by = "word", suffixes = c(".sample1", ".sample2")) %>% distinct()
+
+correlation_score <- cor(merged_data$proportion.sample1, merged_data$proportion.sample2, use = "complete.obs") # Handles missing values
+
+print(paste("correlation between shape proportions in 1A VS 1B is: ", correlation_score))
+
+#using the spearman-brown prediction formula 
+predicted_reliability <- (2 * correlation_score) / (1 + correlation_score)
+print(paste("predicted reliability using spearman-brown formula is: ", predicted_reliability))
+```
+
+```{r }
+# Load your data (adjust file paths as needed)
+study1a_data <- read_csv(here("data/predictors","study1a_data.csv"))
+
+#fix names of columns
+study1a_data <- study1a_data %>%
+  rename(participant_id = `_id`)
+
+study1b_data <-  read_csv(here("data/predictors","study1b_data.csv"))
+study1b_data <- study1b_data %>%
+  rename(participant_id = `_id`)
+
+study1a_data<- study1a_data %>% 
+    select(uni_lemma, language, shape_rating) %>%
+    mutate(study = "1A")
+
+study1b_data <- study1b_data %>% 
+    select(uni_lemma, language, shape_rating) %>%
+    mutate(study = "1B")
+
+combined_data <- bind_rows( 
+  study1b_data, study1a_data
+   ) %>%
+  filter(!is.na(shape_rating)) %>%  # Remove missing values
+mutate(shape_rating = as.numeric(shape_rating)) %>%
+  distinct()  # Remove duplicates
+
+# wide format for reliability
+ratings_wide <- combined_data %>%
+  pivot_wider(names_from = study, 
+              values_from = shape_rating,
+              names_prefix = "Study_") %>%
+  filter(!is.na(Study_1A) & !is.na(Study_1B))  # Only words rated in both studies
+
+ratings_wide_distinct <- ratings_wide %>% distinct(uni_lemma, .keep_all = TRUE)
+
+overall_reliability<- cor.test(ratings_wide_distinct$Study_1A, 
+                               ratings_wide_distinct$Study_1B, 
+                               use = "complete.obs")
+
+descriptive_stats <- combined_data %>%
+  group_by(study) %>%
+  summarise(
+    n_ratings = n(),
+    n_words = n_distinct(uni_lemma),
+    mean_rating = mean(shape_rating, na.rm = TRUE),
+    sd_rating = sd(shape_rating, na.rm = TRUE),
+    median_rating = median(shape_rating, na.rm = TRUE),
+    q25 = quantile(shape_rating, 0.25, na.rm = TRUE),
+    q75 = quantile(shape_rating, 0.75, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+```
+
+```{r }
+# Mixed-effects model comparing studies
+comparison_model <- lmer(shape_rating ~ study + 
+                        (1 | uni_lemma) + 
+                        (1 | language),
+                        data = combined_data)
+```
+
+```{r }
+# Study 1A vs 1B ratings
+ggplot(ratings_wide_distinct, aes(x = Study_1A, y = Study_1B)) +
+  geom_point(alpha = 0.6) +
+  geom_smooth(method = "lm", se = TRUE, color = "blue") +
+  geom_abline(intercept = 0, slope = 1, linetype = "dashed", color = "red") +
+  labs(title = "Test-Retest Reliability: Study 1A vs 1B",
+       subtitle = paste("r =", round(overall_reliability$estimate, 3)),
+       x = "Study 1A Shape Rating",
+       y = "Study 1B Shape Rating") +
+  theme_minimal() +
+  coord_fixed()
+
+```
+
+```{r }
+ggplot(combined_data %>% select(-language) %>% distinct(), aes(x = shape_rating, fill = study)) +
+  geom_density(alpha = 0.7) +
+  geom_vline(data = descriptive_stats, 
+             aes(xintercept = mean_rating, color = study),
+             linetype = "dashed", size = 1) +
+  labs(title = "Distribution of Shape Ratings by Study",
+       x = "Shape Rating",
+       y = "Density") +
+  theme_minimal() +
+  scale_fill_brewer(type = "qual", palette = "Set1")
+
+ggsave(here("data/figures", "shape_rating_distribution_study1a_vs_1b.png"))
+```
+
+## Discussion
+
+The distributional divergence and reliability analysis using the prophecy formula indicated a reasonable level of consistency in the shape based ratings. Subjects appeared to be thoughtful in their ratings of the organizing feature of object categories. For example, although we could initially think that all "knives" have similar shapes, participants seem to think about the different types of knives (e.g., butter knife, pocket knife, chef's knife) and gave a more differentiated shape-based ratings than previously thought. It is  consistent with Samuleson et al 1999 results with shape rating = , SD=,. 
+
+However, the systematic difference in the significant decrease in Study 1B (better instructions led to LOWER shape ratings) could suggest:
+Possible Interpretation 1: Study 1A instructions were ambiguous and led to inflated shape ratings
+Possible Interpretation 2: Study 1B instructions were overly restrictive
+Possible Interpretation 3: The construct itself is inherently difficult to measure reliably
+
+Given the reasonable reliability of the organizing feature measure in both studies, we use the mean shape ratings in subsequent analyses. For robustness, we also conducted sensitivity analyses excluding words with the largest between-study differences.
+
+# Learning and exposure: Age of acquisition (AoA) reserach question 3 
+
+So far, we used children's own early vocabulary production as a measure of word learnability. However, so far we should that, as rated by adults, the majority of early nouns do not overwhelmingly correspond to objects organized by shape. This raises the question of whether the shape bias is really about the distributional statistics of the category-organizing features in early voacb, or if it is more about the learnability of certain types of nouns regardless of their prevalence in the environment.
+
+Here we ask, if shape bias facilitates early word learning because it represents nominal categories that are tangible, easy to perceive and learn, and necessary in the child's environment, with a clear affordance, then we would expect to see a relationship between shape-based categorization ratings and age of acquisition (AoA) of nouns in early vocabulary even when those nouns are not that dominant. We would also expect the relationship between shape ratings and aoa to be stronger even when controlling for frequency. 
+
+The Age of acquisition estimates provide an alternative measure that captures the typical age at which words are learned across a broader population. By incorporating AoA ratings, we can assess whether the observed effects are robust and valid across different measures of word learnability.
+
+## Method
+
+AoA estimates of words go back to the MRC Psycholinguistic Database (Coltheart, 1981) and the Kuperman et al. (2012) database ?? . the wordbank and "find citations". AoA ratings were available for 500 of the 664 nouns in our dataset, with a mean AoA of 6.5 years (SD = 2.1 years). 
+
+## Data Analysis
+We used a mixed effects model to predict the AoA estimates using the frequency of the word, concretness, solidity, count-noun, and the mean shape-based categorization ratings from both Study 1A and Study 1B as covariates. The model included random intercepts for language and semantic category. 
+
+## Results
+The analysis revealed a significant negative effect of frequency (B = -0.30, p < 0.001), concreteness (B = -0.25, p < 0.001) on AoA, as found previously in other studies. Importantly, shape-based categorization ratings were significant predictors indicating that words rated higher on shape-based categorization tend to be learned earlier. Solidity (B = , p = 0.05) and count-noun status (B = , p = 0.03) were not significant in predicting AoA. Sensitivity analysis excluding words that are animate, natural kinds, ... , confirming the robustness of the findings. with shape ratings remaining a significant predictor of AoA, while solidity and count-noun status remained non-significant. 
+
+Qualitative Examples: a few examples of words that are high on solid rating but perhaps lower on shape or concreteness (or have other characteristics) and have later AoAs. This makes the "residual unique effect" argument more tangible. (e.g., "Examples of words rated high on solidity but acquired later included X, Y, Z, which are typically [describe their characteristics, e.g., complex, less manipulable, etc.]").
+
+The findings suggest that even though shape based categories are not dominant in the early lexicon as previously thought, and that the shape based ratings are gradient, and more nuanced than a simple binary categorization, the shape signal does play a unique role in early word learning. This supports the idea that having a clear shape as a diagnostic feature of a category does faciliate word learning early one, above and beyond the effect of frequency and concreteness. 
+
+On the other hand, solidity and count-noun status may not be as critical for early word learning. Objects that are solid and countable do not necessarily have a clear shared shape, and are in fact learned later than nouns that are less solid, or less countable but have a clearer shape-based organization. This suggests that the shape bias may be more about the diagnosticity of shape for categorization rather than simply being solid or countable.
+
+In summary, the dominant features in the early lexicon produced by children do not necessarily reflect the features that facilitate early word learning. While solidity and count-noun status are common in early learned nouns, they do not uniquely predict age of acquisition when controlling for other factors. In contrast, the AoA analysis provides converging evidence that shape-based categorization plays a unique role in early word learning, supporting the idea that the shape bias is a meaningful constraint in the acquisition of nouns. However, it is not explained by the distributional regularities in the early lexicon alone.
+
+## Discussion:
+The idea of how much linked is the distirbution of object kinds in the environment rests on anthropological and cross-cultural studies of the overall the distribution of object kinds or artifacts and natural kinds in the environment in less industrialized societies (e.g. Brown 1998, Levinson 2003, Majid et al 2004, etc). Jara ettinger 2022 These studies suggest that this may partially drive the emergence of word learning constraints like the shape bias.
+
+To understand how the possible input is linked to what is actually learned, we have to ask about what is important to learn? For a child to understand what is essential to learn, they can rely on how frequent the nominal referent is mentioned, how easily accessible it is (i.e. tangible for example), and how much needed it is for their daily life. For example, if you live in a coastal area, learning the word "boat" may be more important than "airplane" even if both words are equally frequent in the input. or learning the word "milk" may be more important than "juice" if milk is a staple in the child's diet. If you live in a rural area, learning the word "cow" or "river" may be more important than "car", while if you live in an urban area, learning the word "bus" or "building" may be more important. These considerations suggest that the overall distribution in the environment could influence what is important to learn, which in turn could influence how frequent it is, or easy to access both in the visual and linguistic input. Here, the child's early vocabulary could reflect the distiribution of words and object kinds that are theoretically available to learn.  
+
+# Study 2:
+While the shape-based categorization results from English speakers provided a useful benchmark, it was important to assess whether similar patterns would emerge in speakers of typologically different languages. Korean, with its distinct morphological and syntactic structures, offered an ideal test case to examine the cross-linguistic generalizability of shape-based categorization tendencies observed in English speakers. Korean language was also chosen because previous research has shown that Korean-speaking children, as well as other East Asian languages, exhibit a lower level of shape bias in early noun learning. 
+
+```{r }
+words <- read_csv(here("data/ratings", "alllangs.csv")) %>% 
+  filter(!is.na(uni_lemma))  %>% 
+  mutate(word = uni_lemma) %>%
+  select(word, language, category)
+
+korean_words <- read_csv(here("data/ratings", "alllangs.csv")) %>% 
+  filter(!is.na(uni_lemma), language == "Korean")  %>% 
+  mutate(word = item_definition, theword = item_definition) %>% 
+  select (word, theword, uni_lemma, language, category)
+```
+
+```{r }
+korean_sample1 <- read_csv(here("data/predictors","korean_sample1_props.csv")) 
+korean_sample1 <- korean_sample1 %>% filter(!is.na(response)) %>% distinct() %>% select(-uni_lemma)
+# more 60 participants -- 241 words -- pending
+
+korean_sample2 <- read_csv(here("data/predictors","korean_sample2_props.csv"))
+korean_sample2 <- korean_sample2 %>% filter(!is.na(response)) %>% distinct() %>% select(-uni_lemma)
+
+
+```
+
+```{r }
+korean_sample1 <- korean_sample1 |> merge (korean_words, by = "word")
+korean_sample2 <- korean_sample2 |> merge (korean_words, by = "theword")
+
+# remove all columns columns with .x and rename all .y columns by using everything
+korean_sample1 <-  korean_sample1 %>%
+  select(-ends_with(".x")) %>%
+  rename_with(~ str_remove_all(., "\\.y$"), everything())
+korean_sample2 <-  korean_sample2 %>%
+  select(-ends_with(".x")) %>%
+  rename_with(~ str_remove_all(., "\\.y$"), everything())
+
+```
+
+```{R }
+shape_compare <- english_sample1 %>%
+  filter(response == "shape") %>%
+  select(uni_lemma, proportion) %>%
+  rename(english_s1 = proportion) %>%
+  inner_join(
+    english_sample2 %>%
+      filter(response == "shape") %>%
+      select(uni_lemma, proportion) %>%
+      rename(english_s2 = proportion),
+    by = c("uni_lemma" = "uni_lemma")
+  ) %>% inner_join(
+    korean_sample1 %>%
+      filter(matching_response == "shape") %>%
+      select(uni_lemma, proportion) %>%
+      rename(korean_s1 = proportion),
+    by = c("uni_lemma")
+  ) %>% inner_join(
+    korean_sample2 %>%
+      filter(matching_response == "shape") %>%
+      select(uni_lemma, proportion) %>%
+      rename(korean_s2 = proportion),
+    by = c("uni_lemma")
+  ) %>% drop_na() %>%
+  distinct()
+
+shape_compare_numeric <- shape_compare %>%
+  select(where(is.numeric))
+
+```
+
+
+\newpage
+
+# References
+
+::: {#refs custom-style="Bibliography"}
+:::

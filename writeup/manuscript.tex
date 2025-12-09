@@ -2,8 +2,8 @@
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 \documentclass[
-  english,
-  man]{apa6}
+  american,
+  man,floatsintext]{apa6}
 \usepackage{xcolor}
 \usepackage{amsmath,amssymb}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
@@ -162,13 +162,16 @@
 
 \linenumbers
 \usepackage{csquotes}
+\usepackage{float}
+\floatplacement{figure}{H}
+\usepackage{graphicx}
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
   pdftitle={The title},
   pdfauthor={First Author1 \& Ernst-August Doelle1,2},
-  pdflang={en-EN},
+  pdflang={en-US},
   pdfkeywords={keywords},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
@@ -213,82 +216,106 @@ Two or three sentences to provide a \textbf{broader perspective}, readily compre
 
 The shape bias is the tendency of young children to generalize new words to new category members based on their shape (Landau, Smith, \& Jones, 1988) rather than other perceptual attributes like color, texture, or size (\textbf{landau1988?}; \textbf{subrahmanyam\_2006?}) or conceptual attributes like a functional, thematic, or a taxonomic match (\textbf{imai\_childrens\_1994?}; \textbf{Poulin-Dubois1999?}; \textbf{imai2010?}; \textbf{yoshida2003known?}).
 
-One reason for researchers' long-standing interest in the shape bias relates to its hypothesized role in early word learning. This bias has been extensively studied in English-speaking children in the US, where it emerges around 18-24 months of age and is thought to be a key mechanism for rapid vocabulary growth during the so-called ``vocabulary spurt'' (Gershkoff-Stowe \& Smith, 2004; Smith, 2000).
+One reason for researchers' long-standing interest in the shape bias relates to its hypothesized role in early word learning. This bias has been extensively studied in English-speaking children in the US, where it emerges around 18-24-36? months of age and is thought to be a key mechanism for rapid vocabulary growth after the second year (Gershkoff-Stowe \& Smith, 2004; Smith et al 2000).
 
 Additionally, it has been found to be weaker in children with language impairments, and in children with autism spectrum disorder (\textbf{JONES\_SMITH\_2005?}; \textbf{Jones2003LateTS?}; \textbf{Collisson2015IndividualDI?}; \textbf{perry2019heterogeneity?}; \textbf{potrzeba2015\_ASD?}; \textbf{tek2008children?}; \textbf{perry2021vocabulary?}). Although the causality direction is not yet clear, but this suggests that the shape bias may be a useful tool for children learning nouns, and that it may be a useful predictor of language development.
 
-Learning is not a passive process: The shape bias is proposed to be a statistical generalization of early vocabulary: in English, solid objects are dominant in early lexicon, are referred to by count nouns, and are organized by shape (Samuelson \& Smith, 1999). The emergence of the shape bias has been linked to the distributional properties of early-learned nouns in English, which tend to refer to solid objects that are countable and organized by shape (Samuelson \& Smith, 1999).
+The ALA associative account vs.~the shape as a cue:
+whether the underyling mechanism was mere association of correlates in the input and the act of naming (Colunga \& Smith, 2005; Samuelson \& Smith, 1999; Smith et al., 2002), or a more abstract understanding of shape as a cue for object kind categorization has been debated. But regardless, both accounts agree that the presence of shape as a defining feature of labeled categories is supported by the distributional dominance of this feature in early learning.
+
+Learning is not a passive process:
+The shape bias is proposed to be a statistical generalization of early vocabulary: in English, solid objects are dominant in early lexicon, are referred to by count nouns, and are organized by shape (Samuelson \& Smith, 1999). The emergence of the shape bias has been linked to the distributional properties of early-learned nouns in English, which tend to refer to solid objects that are countable and organized by shape (Samuelson \& Smith, 1999).
 
 In (\textbf{smith\_object\_2002?}), they trained 17 months olds on names of objects that shared the exact same shape, but different in all their other dimensions. Training on close similarity of shape helped vocabulary acceleration. Consistency in the input is thought to be driving the bias.
 On the other hand, (\textbf{Perry2010\_Variability?}) found that variability of the exemplars of the category, for example different shapes of a ``chair'' instead of the same shape, predicts higher rate of acquisition. Nevertheless, both studies linked a higher order shape bias to vocabulary growth. Greater variability can improve learning. Although it might seem counterintuitive, exposing children to a wider range of examples for a concept allows them to better abstract the underlying rule and apply it to new situations.
 
-The statistical learning hypothesis was also supported by computational models showing that exposure to a lexicon with similar statistical properties can lead to the emergence of a shape bias in simulated learners (Colunga \& Smith, 2005; Perry \& Samuelson, 2011). A study utilizing bayesian models further demonstrated that the shape bias can emerge from the statistical structure of the lexicon, specifically the correlations between object properties (solidity, shape) and linguistic properties (count-mass syntax)
+The statistical generalization hypothesis was also supported by computational models showing that exposure to a lexicon with similar statistical properties can lead to the emergence of a shape bias in simulated learners (Colunga \& Smith, 2005; Perry \& Samuelson, 2011). A study utilizing bayesian models further demonstrated that the shape bias can emerge from the statistical structure of the lexicon, specifically the correlations between object properties (solidity, shape) and linguistic properties (count-mass syntax)
 Also, a Bayesian model (Kemp et al., 2007).
 
-Recent work on large language models has also shown that these models can exhibit a shape bias when trained on corpora with similar statistical properties (Abdelrahim \& Frank, 2024; Blevins et al., 2023).
-
-Although the shape bias is reliably observed in English-speaking children but reported to vary across languages (Abdelrahim \& Frank, 2024); e.g., it is argued to be lower in East Asian languages such as Korean (Gathercole \& Min, 1997).
+Recent work on large language models has also shown that these models can exhibit a shape bias when trained on corpora with similar statistical properties (Blevins et al., 2023).
 
 \subsection{Syntax and semantics in cross-cultural variation}\label{syntax-and-semantics-in-cross-cultural-variation}
 
-The shape bias is closely linked to the syntactic distinction between count and mass nouns, which is a fundamental aspect of noun classification in many languages (Barner \& Snedeker, 2005; Bloom, 1994). Count nouns typically refer to discrete, countable objects (e.g., ``dog'', ``car''), while mass nouns refer to uncountable substances or aggregates (e.g., ``water'', ``sand''). In English, count nouns are often associated with solid objects that are organized by shape, while mass nouns are more likely to refer to non-solid substances that are organized by material (Barner \& Snedeker, 2005; Bloom, 1994). This syntactic distinction is thought to play a crucial role in the development of the shape bias, as children learn to associate count nouns with shape-based categorization and mass nouns with material-based categorization (Barner \& Snedeker, 2005; Bloom, 1994).
-However, the extent to which the shape bias and its underlying lexical statistics are universal across languages remains unclear. Some studies have suggested that the shape bias may be less pronounced or absent in languages with different noun classification systems or morphological structures (e.g., Chinese, Japanese) (Imai et al., 2008; Yoshida \& Smith, 2005). Other studies have found evidence for a shape bias in non-English-speaking children, but with variations in its strength and developmental trajectory (e.g., Spanish, German) (Casasola \& Bhagwat, 2007; Graham et al., 2004).
-To address this gap, we conducted a cross-linguistic study to examine the lexical statistics of early-learned nouns in 16 languages from diverse linguistic families and regions. We collected adult judgments on the same set of nouns across three dimensions: solidity (solid vs.~non-solid), count-mass syntax (count vs.~mass), and shape-based categorization (shape, color, material, none). We then analyzed the distributions of nouns across these dimensions and their correspondence within and across languages. We also tested for differences in the distribution of shape-based categorization responses across languages using a permutation test.
-Regardless of whether children need these correlates to develop an intuition of solid objects being count nouns organized by shape, or the existing ontological distinction predisposes the ability to form these associations that lead to the emergence or strengthening the shape bias, the statistical structure of early-learned nouns should still predict the variation of the shape bias across languages.
+Although the shape bias is reliably observed in English-speaking children but reported to vary across languages (Abdelrahim \& Frank, 2024); e.g., it is argued to be lower in East Asian languages such as Korean (Gathercole \& Min, 1997).
 
-We tested three predictions of a statistical account:
-* The correspondence between the shape bias, solidity, and countability associated with individual words should predict when they are learned (their age of acquisition; AoA) in early vocabulary;
-* the cross-linguistic variation in the statistics of early vocabulary should predict the reported cross-cultural variation in the shape bias;
-* and judgments of the statistics of early vocabulary are shared across languages
+if the strength of the shape bias or even its presence depends on the degree of correspondence between the distributional properties of environmental (i.e.~the dominance of solid vs.~non-solid objects, artifacts vs.~natural objects, or shape organization) and linguistic correlates (i.e.~count or mass syntax, classifier) of nouns to object kinds mapping, then cross-linguistic variation in these correlates should predict cross-linguistic variation in the shape bias.
 
-\pandocbounded{\includegraphics[keepaspectratio]{manuscript_files/figure-latex/correspondenceeng1-1.pdf}}
-\# Study 1A:
+One aspect of cross-inguistic variation is the syntactic distinction between count and mass nouns, which is a fundamental aspect of noun classification in many languages (Barner \& Snedeker, 2005; Bloom, 1994). Count nouns typically refer to discrete, countable objects (e.g., ``dog'', ``car''), while mass nouns refer to uncountable substances or aggregates (e.g., ``water'', ``sand''). In English, count nouns are often associated with solid objects that are organized by shape, while mass nouns are more likely to refer to non-solid substances that are organized by material (Barner \& Snedeker, 2005; Bloom, 1994). This syntactic distinction is thought to play a crucial role in the development of the shape bias, as children learn to associate count nouns with shape-based categorization and mass nouns with material-based categorization (Barner \& Snedeker, 2005; Bloom, 1994).
+
+Some studies have suggested that the shape bias may be less pronounced or absent in languages with different noun classification systems or morphological structures (e.g., Chinese, Japanese) (Imai et al., 2008; Yoshida \& Smith, 2005). Other studies have found evidence for a shape bias in non-English-speaking children, but with variations in its strength and developmental trajectory (e.g., Spanish, German) (Casasola \& Bhagwat, 2007; Graham et al., 2004).
+
+The lack of this linguistic cue that differentiates between count and mass nouns and the corresponding referents might make the cut in the correlates that give rise to the shape bias less salient in some languages. For example, in languages like Korean and Japanese, where the count-mass distinction is not as syntactically marked as in English, children may be less likely to develop a strong shape bias (Gathercole \& Min, 1997; Imai et al., 2008).
+
+Tsimane case as an example of environmental
+
+\section{The current study}\label{the-current-study}
+
+However, the extent to which the shape bias and underlying lexical statistics are universal across languages remains unclear.
+1- To address this gap, we conducted a cross-linguistic study to examine the lexical statistics of early-learned nouns in 16 languages from diverse linguistic families and regions. here, we focus on three aspects:
+* The dominance of shape-based organzied categories in early-learned nouns across languages.
+* the correspondence between shape-based categorization, solidity, and count-mass syntax in early-learned nouns across languages.
+* the cross-linguistic variation in the distribution of early-learned nouns across these dimensions
+
+2- the difference between learnability (easiness to learn) vs.~exposure (how much is there to learn) is a crucial distinction to make here. If children find shape-based categories easier to learn, regardless of their prevalence in the environment, then we might expect to see a shape bias emerge even in languages where the correlates are not that strong, or environments where shape-based categories are less common. On the other hand, if the shape bias is primarily driven by exposure to shape-based categories in the environment, then we would expect to see cross-linguistic variation in the strength of the shape bias that corresponds to the prevalence of shape-based categories in early-learned nouns.
+* We evaluate this by examining the relationship between shape-based ratings of nouns and their age of acquisition (AoA) in early vocabulary across languages. We then connect this to the reported cross-linguistic variation in the shape bias.
+
+3- rater origin and perspective: do people across languages agree on these ratings? if yes, then it suggests that these conceptions are not language-specific or culture-specfic but rather universal cognitive processes.
+
+\section{Study 1:}\label{study-1}
 
 \subsection{Methods}\label{methods}
 
-In this study we first aim to replicate Samuelson et al 1999 where they asked 11 English speaking adults in the US to judge the first 300 words learned by children in the US English on three dimensions: solidity, count-mass syntax, and shape-based categorization. We extend this by collecting ratings on the same set of words from two larger independent samples of English-speaking adults recruited online. Subjects provided similar ratings on the first 300 words from US English and other 15 Languages. We use these ratings to test the replicability, reliability and validity of the judgements collected, as well as to assess the cross-linguistic consistency and variability of the distributional statistics of early-learned nouns.
-In Study 1A, we collect judgment ratings on the first learned 300 words from the MCDI US English across the three dimensions of solidity, count, and mass syntax, and shape-based categorization.
+This study follows Samuelson et al 1999 where they asked 11 English speaking adults in the US to judge a set of 300 nouns learned the earliest as measured by the MCDI parental reports of English speaking children in the US. Ratings were collected for three dimensions: solidity, count-mass syntax, and shape-based categorization.
+We extends on this by collecting ratings on early learned nouns from the MCDI of 16 languages including English.
 
 \subsection{Participants}\label{participants}
 
-377 English-speaking adults recruited online from the Prolific platform (mean age = 41, sd = 14) were asked to rate words in three dimensions: solidity (solid, non-solid, unclear), count and mass noun syntax (count, mass, unclear), and organizing feature (shape, color, material, none of these). Participants were compensated at a rate of \$12 per hour. All participants provided informed consent prior to participation, and the study was approved by the Institutional Review Board of {[}INSTITUTION NAME{]}.
+377 English-speaking adults recruited online from the Prolific platform (mean age = 41, sd = 14) were asked to rate nouns on three dimensions: solidity (solid, non-solid, unclear), count and mass noun syntax (count, mass, unclear), and organizing feature (shape, color, material, none of these). Participants were compensated at a rate of \$12 per hour. All participants provided informed consent prior to participation, and the study was approved by the Institutional Review Board of {[}INSTITUTION NAME{]}.
 
 \subsection{Material}\label{material}
 
-Three hundred nouns were sourced from MCDI data on the WordBank repository of 16 languages (``English (American)'', ``Mandarin (Beijing)'', ``Korean'', ``English (Australian)'', ``Cantonese'', ``Catalan'' , ``Japanese'', ``Turkish'' , ``Spanish (Mexican)'', ``Russian'', ``Kiswahili'', ``Mandarin (Taiwanese)'', ``Spanish (Peruvian)'', ``Spanish (European)'', ``Hebrew'', ``French (French)'') that belonged to seven linguistic families: (Indo-European, Sino-Tibetan, Koreanic, Japonic, Turkic, Niger-Congo, Afro-Asiatic).
-The nouns were chosen based on the earliest age of acquisition in the dataset, up to a maximum of 300 nouns (CITE). Because we only recruited English-speaking participants, Nouns were presented in English and mapped across languages via conceptual mappings (universal lemmas ``unilemmas'', Frank et al., 2021). A ``unilemma'' is the concept behind the noun expressed in the English language (``dog'' and ``dog in german'' both map to the same underlying concept of ``dog'', which is used as the unilemma in this case).
+A set of nouns were sourced from MCDI data on the WordBank repository of 16 languages (``English (American)'', ``Mandarin (Beijing)'', ``Korean'', ``English (Australian)'', ``Cantonese'', ``Catalan'' , ``Japanese'', ``Turkish'' , ``Spanish (Mexican)'', ``Russian'', ``Kiswahili'', ``Mandarin (Taiwanese)'', ``Spanish (Peruvian)'', ``Spanish (European)'', ``Hebrew'', ``French (French)'') that belonged to seven linguistic families: (Indo-European, Sino-Tibetan, Koreanic, Japonic, Turkic, Niger-Congo, Afro-Asiatic).
+The nouns were chosen based on the earliest age of acquisition in the dataset, up to a maximum of 300 nouns (CITE). Because we only recruited English-speaking participants, nouns were presented in English and mapped across languages via conceptual mappings (universal lemmas ``unilemmas'', Frank et al., 2021). A ``unilemma'' is the concept behind the noun expressed in the English language (``dog'' and ``dog in german'' both map to the same underlying concept of ``dog'', which is used as the unilemma in this case).
 
-The final sample consisted of a total of 23355 nouns from all languages, with N = \textasciitilde664 after removing duplicates ``uni-lemmas shared between languages''. (Figure to show how much overlap between languages). With the Semantic categories breakdown of the words in each language attached in the supplementary materials. Most words belonged to the categories of food/drinks, clothing, and animals, with a few words referring to vehicles, toys, body parts, household items, and outside things.
+The final sample consisted of a total of 23355 nouns from all languages, with N = \textasciitilde664 after removing duplicates ``uni-lemmas shared between languages''. (Figure to show how much overlap between languages). Most nouns belonged to the semantic categories of food/drinks, clothing, and animals, with a few words referring to vehicles, toys, body parts, household items, and outside things. The Semantic categories breakdown of the nouns in each language attached in the supplementary materials.
 
 \subsection{Procedure}\label{procedure}
 
-The experiment started with familiarization trials in which participants were shown examples of count and mass nouns, solid objects, and non-solid objects. They were also familiarized with what a category-organizing or characterizing feature means, as in Table {[}2{]}. Then the test trials followed the same wording and structure. Every dimension (solidity, count-mass syntax, and category organizing feature) constituted a block, and every participant rated 20 words per block, so there were 60 test trials per subject in total. Familiarization trials, test blocks, and words within a block were all randomized across participants. No information about the semantic category of words was given to participants, nor were the words grouped by their semantic category. Participants were only allowed to choose one feature in all questions.
+The experiment started with familiarization trials in which participants were provided with demonstrations of count and mass nouns, solid objects, and non-solid objects. They were also familiarized with what a category-organizing or characterizing feature means, as in Table {[}--{]}. Then the test trials followed the same wording and structure. Every dimension (solidity, count-mass syntax, and category organizing feature) constituted a block, and every participant rated 20 nouns per block, so there were 60 test trials per subject in total. Familiarization trials, test blocks, and nouns within a block were all randomized across participants. No information about the semantic category of nouns was given to participants, nor were the nouns grouped by their semantic category. Participants were only allowed to choose one feature in all questions.
 \^{}(Contrary to Samuelson et al., 1999, who added information about the semantic category, and allowed multiple selections for the category-organizing feature dimension).
 
 \subsection{Data analysis}\label{data-analysis}
 
-We calculated the proportion of responses for each feature per word, separately for each language. For example, if a word was rated by 10 participants, and 7 of them rated it as solid, the proportion of solid responses for that word would be 0.7.
-
-First, we assessed the correspondence between the three dimensions using Pearson correlation analysis
-
-We then conducted a permutation test to compare the observed density of shape-based categorization responses across languages against a null distribution generated by permuting language labels. The permutation test involved the following steps:
-1. Isolate the data for shape-based categorization responses.
-2. Decide on a grid of proportion-values between 0 and 1.
-3. Compute the observed density of shape-based categorization responses for each language using kernel density estimation.
-4. Generate a null distribution by randomly permuting language labels and recomputing the density for each permutation.
-5. Compare the observed density against the null distribution to assess whether there are significant differences in shape-based categorization across languages.
-
-Additionally, and similar to Samuelson et al 1999, we categorized the words into three categories: solid, count noun, and shape-based categorization using a cutoff of 80\% i.e.~a word that is rated by at least 80\% of the participants to be a solid is categorized as solid. We then visualized the overlap between these categories using Venn diagrams for each language.
+We calculated the proportion of responses for each feature per noun per language. For example, if a word was rated by 10 participants in total, and 7 of them rated it as solid, the proportion of solid responses for that word would be 0.7. First, we assessed the correspondence between the three dimensions using Pearson correlation analysis. We then conducted a permutation test to compare the observed density of shape-based categorization responses across languages against a null distribution.
+Additionally, and similar to Samuelson et al 1999, we categorized the nouns into three categories: solid, count noun, and shape-based using a cutoff of 80\% i.e.~a noun that is rated by at least 80\% of the participants to be a solid is categorized as solid. We then visualized the overlap between these categories using Venn diagrams.
 
 lastly, we also calculated inter-rater agreement using the word-level consensus approach, which involves calculating the mode of the ratings for each word and then computing the percentage of raters who agreed with the mode. This gives us a measure of how consistently participants rated each word across the three dimensions.
 
 \subsection{Results}\label{results}
 
-We collected a total of 20,130 ratings across 377 participants for 664 words in three blocks (solidity, count-mass syntax, and category-organizing feature). After removing responses with no answer, we retained 19,635 ratings. Each word received an average of between 8 and 10 ratings per block. Included in the supplementary materials are the demographic details of the participants (Table 1) and the distribution of ratings across words and blocks (Figure 1).
+\begin{figure}[H]
 
-Across languages, the ratings proportions were very consistent across languages, suggesting limited variation in the distributional statistics as can be seen in figure @ref\{fig:correspondenceeng1\}. Overall, nouns were predominantly rated as solid (M = 0.72, SD = 0.32) and count (M = 0.68, SD = 0.29), but were less reliably judged as being organized by shape (M = 0.31, SD = 0.24). Pearson correlation analysis revealed a moderate positive correlation between solidity and count syntax (r = 0.62, p \textless{} 0.001), a weak positive correlation between count syntax and shape-based categorization (r = 0.45, p \textless{} 0.001), and a weaker positive correlation between solidity and shape-based categorization (r = 0.38, p \textless{} 0.001).
+{\centering \includegraphics{manuscript_files/figure-latex/correspondenceeng1-1} 
 
-The venn diagram in figure \ref{fig:venn_eng_1} shows categories of words as solid, count noun, and shape\_characterized by using the cutoff of 80\% i.e.~a word that is rated by at least 80\% of the participants to be a solid is categorized as solid. The venn diagram shows that a large number of nouns were consistently rated as solid and count nouns, with large overlap between these two dimensions. However, only a maximum of five words rated as referring to objects organized by shape. This set of words rated to be organized by shape is significantly smaller that the set reported in Samuelson 1999 using the same 80\% criteria.
+}
+
+\caption{This is a figure caption.}\label{fig:correspondenceeng1}
+\end{figure}
+
+\begin{figure}[H]
+
+{\centering \includegraphics{manuscript_files/figure-latex/venneng1-1} 
+
+}
+
+\caption{Venn diagram showing the overlap between nouns categorized as solid, count nouns, and organized by shape in English (Study 1A). A cutoff of 80\% was used to categorize words, meaning that a word rated by at least 80\% of participants as solid is categorized as solid.}\label{fig:venneng1}
+\end{figure}
+
+We collected a total of 20,130 ratings across 377 participants for 664 nouns in three blocks (solidity, count-mass syntax, and category-organizing feature). 19,635 ratings were retained after exclusions. Nouns received an average of (-) ratings per block. Included in the supplementary materials are the demographic details of the participants (Table 1) and the distribution of ratings across nouns and blocks (Figure 1).
+
+Across languages, the ratings proportions were very consistent, suggesting limited variation in the distributional statistics as can be seen in figure \ref{fig:correspondenceeng1}. Overall, nouns were predominantly rated as solid (M = 0.72, SD = 0.32) and count (M = 0.68, SD = 0.29), but were less reliably judged as being organized by shape (M = 0.31, SD = 0.24). Pearson correlation analysis revealed a moderate positive correlation between solidity and count syntax (r = 0.62, p \textless{} 0.001), a weak positive correlation between count syntax and shape-based categorization (r = 0.45, p \textless{} 0.001), and a weaker positive correlation between solidity and shape-based categorization (r = 0.38, p \textless{} 0.001).
+
+The venn diagram in figure \ref{fig:venneng1} shows categories of nouns as solid, count noun, and shape\_characterized by using the cutoff of 80\% i.e.~a word that is rated by at least 80\% of the participants to be a solid is categorized as solid. The venn diagram shows that a large number of nouns were consistently rated as solid and count nouns, with large overlap between these two dimensions. However, only a maximum of five nouns rated as referring to objects organized by shape. This set of nouns rated to be organized by shape is significantly smaller that the set reported in Samuelson 1999 using the same 80\% criteria.
 
 To test for distributional differences in shape responses across languages, we conducted a permutation test (see Methods). The results showed that the observed density curves for each language fell within the null distribution generated by permuting language labels, indicating no significant differences in lexical statistics across languages \ref{fig:permutated_dist_eng_1}.
 
@@ -301,7 +328,7 @@ Correspondence between the ontological status, syntactic frame, and shape organi
 
 However, maybe the question about the organizing feature was not clear, not intuitive for a naive participants, and instructions were ambiguous, which is why solidity and countability correspond to each other but less with shape ratings. The weak shaped based choices and large SD , along with the weak shape-solidity correlation (r = 0.38) might partly reflect measurement error. We test the reliability of this measure in study 1B.
 
-\section{Study 1B}\label{study-1b}
+\section{Study 2}\label{study-2}
 
 The idea of the organizing feature of an object category is not an intuitive one, and is not something that people actively think about when recognizing category members i.e.~when they are searching for apples, they don't break down the category into features of apple shape, red color, and leaf material and then decide which feature is the most diagnosing of apples. It is possible that the instructions were not clear enough for participants to understand what was being asked. To test the reliability of this measure, we collected a second sample of ratings on the same set of words, with improved instructions and examples.
 
@@ -311,15 +338,15 @@ The idea of the organizing feature of an object category is not an intuitive one
 
 \subsection{Material}\label{material-1}
 
-The same set of words used in Study 1A. However, only the category-organizing feature block was included in this study, since it showed the most between subject variability.
+The same set of words used in Study 1. However, only the category-organizing feature block was included in this study, since it showed the most between subject variability.
 
 \subsection{Procedure}\label{procedure-1}
 
-The experiment started with familiarization trials of what a category-organizing or characterizing feature means. However, this time the instructions were improved with more examples, adding picture depictions, training questions with feedback and clarifications involving the four feature answers so not to bias subjects into a specific answer as in Table {[}2{]}. The rest of the study was similar to Study 1A.
+The experiment started with familiarization trials of what a category-organizing or characterizing feature means. However, this time the instructions were improved with more examples, adding picture depictions, training questions with feedback and clarifications involving the four feature answers so not to bias subjects into a specific answer as in Table {[}2{]}. The rest of the study was similar to Study 1.
 
 \subsection{Data analysis}\label{data-analysis-1}
 
-Similar to study 1A, we calculated the proportion of responses for each feature per word, and then conducted a permutation test to compare the observed density of shape-based categorization responses against a null distribution generated by permuting language labels.
+Similar to study 1, we calculated the proportion of responses for each feature per word, and then compared the distribution of shape-based categorization responses between Study 1 and Study 2 using density plots and mixed-effects modeling. We also calculated the spearman-brown prediction correlation score between the two samples.
 
 \subsection{Results}\label{results-1}
 
@@ -340,7 +367,7 @@ Possible Interpretation 3: The construct itself is inherently difficult to measu
 
 Given the reasonable reliability of the organizing feature measure in both studies, we use the mean shape ratings in subsequent analyses. For robustness, we also conducted sensitivity analyses excluding words with the largest between-study differences.
 
-\section{Age of acquisition (AoA)}\label{age-of-acquisition-aoa}
+\section{Learning and exposure: Age of acquisition (AoA)}\label{learning-and-exposure-age-of-acquisition-aoa}
 
 So far, we used children's own early vocabulary production as a measure of word learnability. However, words that are easiest to learn may not reflect the broader range of words they hear or comprehend i.e.~generally exposed to in the environment. So we have two arguments here to consider,
 * the first is about the distributional statistics of the words and their corresponding object kinds that exist the environment in general and could theoretically be learned. (what is there to learn?)
@@ -375,7 +402,7 @@ On the other hand, solidity and count-noun status may not be as critical for ear
 
 In summary, the dominant features in the early lexicon produced by children do not necessarily reflect the features that facilitate early word learning. While solidity and count-noun status are common in early learned nouns, they do not uniquely predict age of acquisition when controlling for other factors. In contrast, the AoA analysis provides converging evidence that shape-based categorization plays a unique role in early word learning, supporting the idea that the shape bias is a meaningful constraint in the acquisition of nouns. However, it is not explained by the distributional regularities in the early lexicon alone.
 
-\section{Study 2:}\label{study-2}
+\section{Study 2:}\label{study-2-1}
 
 While the shape-based categorization results from English speakers provided a useful benchmark, it was important to assess whether similar patterns would emerge in speakers of typologically different languages. Korean, with its distinct morphological and syntactic structures, offered an ideal test case to examine the cross-linguistic generalizability of shape-based categorization tendencies observed in English speakers. Korean language was also chosen because previous research has shown that Korean-speaking children, as well as other East Asian languages, exhibit a lower level of shape bias in early noun learning.
 

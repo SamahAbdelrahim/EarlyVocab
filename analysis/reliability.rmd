@@ -1,5 +1,5 @@
 
-# Study 1
+# English Study 1
 
 ```{r message=FALSE, warning=FALSE}
 english_sample1 <- read_csv(here("data/predictors","english_sample1_props.csv")) 
@@ -41,7 +41,7 @@ ggplot(consensus_data, aes(x = sd_rating, y = agreement_score, color = block)) +
   scale_color_brewer(palette = "Set3")
 ```
 
-# Study 2
+# English Study 2
 ```{r }
 english_sample2 <- read_csv(here("data/predictors","english_sample2_props.csv"))
 english_sample2 <- english_sample2 %>% filter(!is.na(response)) %>% distinct()
@@ -191,4 +191,9 @@ top_discrepancies <- merged_data %>% arrange(desc(abs_diff)) %>%
 print(top_discrepancies)
 ```
 
+# Korean 
 
+```{r }
+korean_sample1 <- read_csv(here("data/predictors","korean_sample1_props.csv"))
+
+```
