@@ -165,7 +165,7 @@ However, the extent to which the shape bias and underlying lexical statistics ar
 
 3- rater origin and perspective: do people across languages agree on these ratings? if yes, then it suggests that these conceptions are not language-specific or culture-specfic but rather universal cognitive processes. 
 
-# Study 1:
+# Study 1A:
 
 ```{r  message=FALSE, warning=FALSE}
 english_demo1 <- read_csv(here("data/demographics/first-sample-english", "1.csv"))
@@ -324,7 +324,7 @@ Correspondence between the ontological status, syntactic frame, and shape organi
 
 However, maybe the question about the organizing feature was not clear, not intuitive for a naive participants, and instructions were ambiguous, which is why solidity and countability correspond to each other but less with shape ratings. The weak shaped based choices and large SD , along with the weak shape-solidity correlation (r = 0.38) might partly reflect measurement error. We test the reliability of this measure in study 1B. 
 
-# Study 2
+# Study 1B
 The idea of the organizing feature of an object category is not an intuitive one, and is not something that people actively think about when recognizing category members i.e. when they are searching for apples, they don't break down the category into features of apple shape, red color, and leaf material and then decide which feature is the most diagnosing of apples. It is possible that the instructions were not clear enough for participants to understand what was being asked. To test the reliability of this measure, we collected a second sample of ratings on the same set of words, with improved instructions and examples. 
 
 ## Participants
@@ -458,9 +458,7 @@ ggplot(ratings_wide_distinct, aes(x = Study_1A, y = Study_1B)) +
   geom_smooth(method = "lm", se = TRUE, color = "blue") +
   geom_abline(intercept = 0, slope = 1, linetype = "dashed", color = "red") +
   labs(title = "Test-Retest Reliability: Study 1A vs 1B",
-       subtitle = paste("r =", round(overall_reliability$estimate, 3)),
-       x = "Study 1A Shape Rating",
-       y = "Study 1B Shape Rating") +
+       subtitle = paste("r =", round(overall_reliability$estimate, 3))) +
   theme_minimal() +
   coord_fixed()
 
@@ -523,7 +521,7 @@ The idea of how much linked is the distirbution of object kinds in the environme
 
 To understand how the possible input is linked to what is actually learned, we have to ask about what is important to learn? For a child to understand what is essential to learn, they can rely on how frequent the nominal referent is mentioned, how easily accessible it is (i.e. tangible for example), and how much needed it is for their daily life. For example, if you live in a coastal area, learning the word "boat" may be more important than "airplane" even if both words are equally frequent in the input. or learning the word "milk" may be more important than "juice" if milk is a staple in the child's diet. If you live in a rural area, learning the word "cow" or "river" may be more important than "car", while if you live in an urban area, learning the word "bus" or "building" may be more important. These considerations suggest that the overall distribution in the environment could influence what is important to learn, which in turn could influence how frequent it is, or easy to access both in the visual and linguistic input. Here, the child's early vocabulary could reflect the distiribution of words and object kinds that are theoretically available to learn.  
 
-# Study 2:
+# Study 2: 
 While the shape-based categorization results from English speakers provided a useful benchmark, it was important to assess whether similar patterns would emerge in speakers of typologically different languages. Korean, with its distinct morphological and syntactic structures, offered an ideal test case to examine the cross-linguistic generalizability of shape-based categorization tendencies observed in English speakers. Korean language was also chosen because previous research has shown that Korean-speaking children, as well as other East Asian languages, exhibit a lower level of shape bias in early noun learning. 
 
 ```{r }
