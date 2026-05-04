@@ -1,0 +1,46 @@
+# R / RStudio
+.Rproj.user
+.Rhistory
+.RData
+.RDataTmp*
+.Ruserdata
+rsconnect
+
+# Project-specific large or sensitive directories
+data/demographics/
+
+# Project planning and informal notes (kept locally only)
+PLAN.md
+writeup/feedback.txt
+misc/
+
+# knitr / R Markdown caches and helper outputs
+*_files
+*.h
+writeup/*.html
+analysis/reliability_interpretation.pdf
+
+# LaTeX / Pandoc build artifacts (manuscript.pdf is intentionally tracked)
+*.tex
+*.log
+*.aux
+*.fff
+*.ttt
+*.toc
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+
+# knitr PNG outputs dropped in writeup/ root (canonical copies are in data/figures/)
+writeup/*.png
+
+# Duplicated knitr fig.path output inside writeup/
+writeup/data/figures/
+
+# Top-level figures/ directory (exploratory/scratch figures)
+/figures/
+
+# jsPsych library and images bundled with experiment files (see README for CDN instructions)
+experiment files/jspsych/
+experiment files/images/

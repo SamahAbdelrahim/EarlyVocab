@@ -1,0 +1,464 @@
+---
+title: "Supplementary materials: Lexical statistics in early noun vocabularies (shape bias project)"
+author: "Samah Abdelrahim & Michael C. Frank (authorship as in main text)"
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    latex_engine: pdflatex
+    toc: false
+header-includes:
+  - \usepackage{graphicx}
+  - \usepackage{booktabs}
+  - \usepackage{threeparttable}
+  - \usepackage{float}
+  - \usepackage{etoolbox}
+  - \AtBeginEnvironment{table}{\small\setlength{\tabcolsep}{4.5pt}}
+---
+
+```{r setup, message=FALSE, warning=FALSE, echo=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE, message = FALSE, warning = FALSE,
+  fig.path   = "data/figures/supplement-",
+  fig.align  = "center",
+  dev        = "pdf",
+  dpi        = 300,
+  out.width  = "0.98\\textwidth",
+  fig.width  = 5.4,
+  fig.height = 3.0
+)
+
+library(here)
+library(tidyverse)
+library(papaja)
+library(psych)
+library(ggvenn)
+library(gridExtra)
+library(janitor)
+library(lmerTest)
+
+source(here("helper.R"))
+```
+
+This document supplements the main manuscript *Lexical statistics and the shape bias* (same data and code repository). It provides (S1) kernel-density plots of solidity, count, and shape ratings for **all 16** unilemma languages in Study~1A, **split into two page-sized figures**; (S2) 80% cutoff Venn diagrams, likewise split; (S3) the $4 \times 4$ correlation matrix of **word-level shape proportions** across English samples 1--2 and Korean samples 1--2; (S4) the Korean-only age-of-acquisition model reported as a robustness check in the main text; (S5) numeric details of the Study~2B strict- vs. broad-shape coding sensitivity analysis; and (S6) pointers to **browser-ready jsPsych implementations** of the rating tasks (Studies~1A and 2A), described below. **Study~1A Materials coverage** (referenced in the main manuscript): **per-language unilemma counts** and a **semantic-category composition** table and heatmap (linked via `ratings_aoa.csv`); **pairwise Jaccard overlap** between the 16 language-specific noun lists; **participant demographics** from Prolific CSV exports; and **distributions** of per-item rating totals (`totcount`) and response proportions across blocks.
+
+# Experiment implementations (Studies 1A and 2A)
+
+The repository folder `experiment files/` (at the project root) contains the exact **HTML + JavaScript** tasks used for online collection. They mirror the procedures described in the main text:
+
+- **Study 1A (English, 16-language unilemma lists):** Open `solidity-ratings.html`, which loads `solidity-ratings.js` (embedded word lists and jsPsych timeline). Participants completed three blocks—solidity, count–mass syntax, and category-organizing feature—in random order (20 nouns per block). On test trials, each *uni_lemma* appears alone as the prompt for solidity and count–mass; the organizing-feature trial asks whether the lemma *belongs to a category that is organized by:* with responses *shape* / *color* / *material* / *none of these*.
+- **Study 2A (Korean):** Open `vocab_comp.html`, which loads `words.js` (defines global `words_array`) then `vocab_comp.js`. Instructions follow the clarified wording used in Study 2A; test-trial structure matches Study 1A for the corresponding blocks.
+
+Supporting assets include local copies of jsPsych plugins under `experiment files/jspsych/` and shared styling (`solidity.css`). Opening the HTML files directly from disk (`file://`) works with the scripts as checked in (classic scripts; no ES-module imports required). Serving the folder over a local HTTP server is optional for deployment or debugging.
+
+# Study 1A: Lexicon composition, cross-language overlap, demographics, and rating distributions
+
+```{r load-eng1}
+english_sample1 <- read_csv(here("data/predictors", "english_sample1_props.csv"),
+                           show_col_types = FALSE) %>%
+  filter(!is.na(response)) %>%
+  distinct()
+threshold <- 0.8
+
+langs_16 <- english_sample1 %>%
+  distinct(language) %>%
+  arrange(language) %>%
+  pull(language)
+
+lang_batch1 <- langs_16[1:8]
+lang_batch2 <- langs_16[9:16]
+
+category_english_sample1 <- english_sample1 %>%
+  filter(response %in% c("solid", "count noun", "shape")) %>%
+  mutate(over_threshold = proportion >= threshold) %>%
+  select(-block, -totcount, -count, -proportion, -response_numeric,
+         -eng_response, -cleaned_response, -matching_response) %>%
+  pivot_wider(names_from = "response", values_from = "over_threshold",
+              values_fill = FALSE) %>%
+  rename(count_noun = `count noun`)
+
+ratings_aoa <- read_csv(here("data/predictors", "ratings_aoa.csv"), show_col_types = FALSE)
+```
+
+## Per-language unilemma counts and semantic categories
+
+```{r supp-lang-n-tab, results="asis"}
+lang_n_tbl <- english_sample1 %>%
+  distinct(language, uni_lemma) %>%
+  count(language, name = "N unilemmas") %>%
+  arrange(language)
+
+papaja::apa_table(lang_n_tbl,
+                  caption = "Study~1A: Number of distinct unilemmas rated per Wordbank language list (English-speaking raters).",
+                  placement = "!htb",
+                  escape = TRUE,
+                  align = c("l", "r"))
+```
+
+```{r supp-category-heatmap, fig.width = 7.2, fig.height = 5.4, fig.cap = "Semantic category counts per language for Study~1A items (categories taken from \\texttt{ratings\\_aoa.csv}, aligned with AoA regression syntax). Cell value is the number of unilemmas in each category--language cell."}
+cat_counts <- ratings_aoa %>%
+  distinct(language, uni_lemma, category) %>%
+  count(language, category, name = "n")
+
+ggplot(cat_counts, aes(x = language, y = category, fill = n)) +
+  geom_tile(color = "white", linewidth = 0.15) +
+  geom_text(aes(label = n), size = 2.3, color = "grey15") +
+  scale_fill_gradient(low = "#f7f7f7", high = "#8C1515") +
+  labs(x = NULL, y = NULL, fill = "Count") +
+  theme_minimal(base_size = 9) +
+  theme(
+    axis.text.x = element_text(angle = 55, hjust = 1, size = 6),
+    axis.text.y = element_text(size = 7),
+    legend.position = "right",
+    panel.grid = element_blank()
+  )
+```
+
+```{r supp-category-wide-tab, results="asis"}
+cat_wide <- cat_counts %>%
+  pivot_wider(names_from = language, values_from = n, values_fill = 0)
+
+papaja::apa_table(cat_wide,
+                  caption = "Study~1A: Same semantic-category counts as the heatmap (wide format). Zeros indicate no noun from that category in that language list.",
+                  note  = "Categories follow Wordbank semantic coding linked in predictor construction.",
+                  placement = "!htb",
+                  escape = TRUE)
+```
+
+## Pairwise overlap of language-specific unilemma sets (Jaccard index)
+
+```{r supp-lang-overlap-heatmap, fig.width = 7, fig.height = 6.2, fig.cap = "Pairwise Jaccard similarity $|L_i \\cap L_j| / |L_i \\cup L_j|$ between Study~1A noun lists $L_i$, defined over distinct \\texttt{uni\\_lemma} values per \\texttt{language} in \\texttt{english\\_sample1\\_props.csv}. Diagonal $= 1$."}
+lemma_sets_df <- english_sample1 %>%
+  distinct(language, uni_lemma) %>%
+  group_by(language) %>%
+  summarise(lemmas = list(unique(uni_lemma)), .groups = "drop")
+lemma_sets <- lemma_sets_df$lemmas
+names(lemma_sets) <- lemma_sets_df$language
+
+langs_ord <- sort(names(lemma_sets))
+jac_mat <- outer(langs_ord, langs_ord,
+                 Vectorize(function(a, b) {
+                   ia <- lemma_sets[[a]]
+                   ib <- lemma_sets[[b]]
+                   length(intersect(ia, ib)) / length(union(ia, ib))
+                 }))
+dimnames(jac_mat) <- list(langs_ord, langs_ord)
+
+jac_long <- jac_mat %>%
+  as.data.frame() %>%
+  tibble::rownames_to_column("lang_a") %>%
+  tidyr::pivot_longer(-lang_a, names_to = "lang_b", values_to = "jaccard")
+
+ggplot(jac_long, aes(x = lang_a, y = lang_b, fill = jaccard)) +
+  geom_tile(color = "white", linewidth = 0.08) +
+  scale_fill_gradient2(low = "white", mid = "#c7d4e8", high = "#1c3d5a", midpoint = 0.5,
+                       limits = c(0, 1)) +
+  labs(x = NULL, y = NULL, fill = expression(Jaccard)) +
+  theme_minimal(base_size = 8) +
+  theme(
+    axis.text.x = element_text(angle = 60, hjust = 1, size = 5.5),
+    axis.text.y = element_text(size = 5.5),
+    panel.grid = element_blank()
+  )
+```
+
+## Participant demographics (Study 1A; Prolific)
+
+```{r supp-demo-1a}
+demo_paths <- list.files(here("data/demographics/first-sample-english"),
+                         pattern = "\\.csv$", full.names = TRUE)
+stopifnot(length(demo_paths) > 0)
+
+english_demo_1a <- purrr::map_dfr(demo_paths, function(p) {
+  read_csv(p, show_col_types = FALSE) %>%
+    dplyr::mutate(dplyr::across(dplyr::everything(), ~ suppressWarnings(as.character(.x))))
+}) %>%
+  janitor::clean_names()
+
+english_demo_1a <- english_demo_1a %>%
+  mutate(age = suppressWarnings(as.numeric(age)))
+
+demo_sum <- tibble::tibble(
+  Statistic = c("N participants (rows in combined Prolific exports)",
+                 "Mean age (years)", "SD age", "Min age", "Max age"),
+  Value = c(
+    as.character(nrow(english_demo_1a)),
+    sprintf("%.2f", mean(english_demo_1a$age, na.rm = TRUE)),
+    sprintf("%.2f", sd(english_demo_1a$age,   na.rm = TRUE)),
+    sprintf("%.0f", min(english_demo_1a$age, na.rm = TRUE)),
+    sprintf("%.0f", max(english_demo_1a$age, na.rm = TRUE))
+  )
+)
+
+demo_sex <- english_demo_1a %>%
+  count(sex, name = "n") %>%
+  mutate(pct = sprintf("%.1f%%", 100 * n / sum(n)))
+```
+
+```{r supp-demo-1a-tab1, results="asis"}
+papaja::apa_table(demo_sum,
+                  caption = "Study~1A: Demographic summary from merged Prolific export files (\\texttt{data/demographics/first-sample-english/}).",
+                  placement = "!htb",
+                  escape = TRUE,
+                  align = c("l", "r"))
+```
+
+```{r supp-demo-1a-tab2, results="asis"}
+papaja::apa_table(demo_sex,
+                  caption = "Study~1A: Self-reported sex (Prolific).",
+                  placement = "!htb",
+                  escape = TRUE,
+                  align = c("l", "r", "r"))
+```
+
+## Distributions of rating totals and response proportions (Study 1A)
+
+```{r supp-rating-distributions, fig.width = 7.2, fig.height = 4.8, fig.cap = "\\textbf{Left:} Distribution of per-item--language totals (number of participant judgments contributing to each aggregated proportion), by experimental block. \\textbf{Right:} Distribution of aggregated proportions for solidity, count-noun, and shape responses (coded dimension of proportion column)."}
+word_tot <- english_sample1 %>%
+  distinct(language, uni_lemma, block, totcount)
+
+p_tot <- ggplot(word_tot, aes(x = totcount)) +
+  geom_histogram(aes(y = after_stat(density)), bins = 25,
+                 fill = "#8C1515", color = "white", linewidth = 0.2, alpha = 0.85) +
+  facet_wrap(~block, ncol = 1, scales = "free_y") +
+  labs(x = "totcount (raters contributing to item)", y = "Density") +
+  theme_minimal(base_size = 10)
+
+resp_dim <- english_sample1 %>%
+  dplyr::filter(matching_response %in% c("solid", "count", "shape"))
+
+p_prop <- ggplot(resp_dim, aes(x = proportion)) +
+  geom_histogram(aes(y = after_stat(density)), bins = 30,
+                 fill = "#4a6fa5", color = "white", linewidth = 0.2, alpha = 0.85) +
+  facet_wrap(~matching_response, ncol = 1, scales = "free_y") +
+  labs(x = "Aggregated proportion (per uni_lemma × language)", y = "Density") +
+  theme_minimal(base_size = 10)
+
+gridExtra::grid.arrange(p_tot, p_prop, ncol = 2)
+```
+
+# Study 1A: Sixteen languages (full grids, two panels per plot type)
+
+<!-- `english_sample1`, `langs_16`, batches, Venns prepped in chunk `load-eng1` above. -->
+
+```{r supp-correspondence-16a, fig.width=5.4, fig.height=3, fig.cap="(Part 1 of 2) Kernel density of per-word proportions for solidity, count, and shape responses, Study~1A (eight unilemma languages, alphabetical a--h). See Part~2 for remaining languages."}
+english_sample1 %>%
+  filter(matching_response %in% c("solid", "count", "shape"),
+         language %in% lang_batch1) %>%
+  mutate(language = forcats::fct_relevel(factor(language), as.character(lang_batch1))) %>%
+  ggplot(aes(x = proportion, color = response, fill = response)) +
+  geom_density(alpha = 0.5) +
+  facet_wrap(~ language, ncol = 4) +
+  labs(x = "Proportion of trials", y = "Density (words)") +
+  theme_minimal() +
+  theme(
+    legend.position = "bottom",
+    legend.text = element_text(size = 6),
+    axis.text  = element_text(size = 5.5),
+    strip.text = element_text(size = 5.5)
+  )
+```
+
+```{r supp-correspondence-16b, fig.width=5.4, fig.height=3, fig.cap="(Part 2 of 2) Same as Part~1 for the remaining eight unilemma languages (alphabetical i--p)."}
+english_sample1 %>%
+  filter(matching_response %in% c("solid", "count", "shape"),
+         language %in% lang_batch2) %>%
+  mutate(language = forcats::fct_relevel(factor(language), as.character(lang_batch2))) %>%
+  ggplot(aes(x = proportion, color = response, fill = response)) +
+  geom_density(alpha = 0.5) +
+  facet_wrap(~ language, ncol = 4) +
+  labs(x = "Proportion of trials", y = "Density (words)") +
+  theme_minimal() +
+  theme(
+    legend.position = "bottom",
+    legend.text = element_text(size = 6),
+    axis.text  = element_text(size = 5.5),
+    strip.text = element_text(size = 5.5)
+  )
+```
+
+```{r supp-venn-16a, fig.width=5.4, fig.height=2.85, fig.cap="(Part 1 of 2) Venn diagrams (80\\% cutoff) for solid, count, and shape-organization, Study~1A (eight languages; same ordering as the density figure)."}
+venns16a <- category_english_sample1 %>%
+  filter(language %in% lang_batch1) %>%
+  mutate(language = forcats::fct_relevel(factor(language), as.character(lang_batch1))) %>%
+  group_by(language) %>%
+  nest() %>%
+  mutate(plot = map2(data, language, ~ ggvenn(
+    .x, c("count_noun", "solid", "shape"),
+    show_percentage = FALSE, text_size = 1.45, set_name_size = 1.35) +
+    labs(y = .y) +
+    theme(axis.title.y = element_text(angle = 90, size = 4, vjust = 0.5),
+          axis.text.y = element_blank(), axis.ticks.y = element_blank(),
+          axis.line.y = element_blank()))) %>%
+  pull(plot)
+
+gridExtra::grid.arrange(grobs = venns16a, ncol = 4)
+```
+
+```{r supp-venn-16b, fig.width=5.4, fig.height=2.85, fig.cap="(Part 2 of 2) Venn diagrams for the remaining eight languages."}
+venns16b <- category_english_sample1 %>%
+  filter(language %in% lang_batch2) %>%
+  mutate(language = forcats::fct_relevel(factor(language), as.character(lang_batch2))) %>%
+  group_by(language) %>%
+  nest() %>%
+  mutate(plot = map2(data, language, ~ ggvenn(
+    .x, c("count_noun", "solid", "shape"),
+    show_percentage = FALSE, text_size = 1.45, set_name_size = 1.35) +
+    labs(y = .y) +
+    theme(axis.title.y = element_text(angle = 90, size = 4, vjust = 0.5),
+          axis.text.y = element_blank(), axis.ticks.y = element_blank(),
+          axis.line.y = element_blank()))) %>%
+  pull(plot)
+
+gridExtra::grid.arrange(grobs = venns16b, ncol = 4)
+```
+
+# Cross-sample shape correlations
+
+```{r shape-4x4}
+all_data_wide <- read_csv(here("data/predictors", "reliability_wide_alldata.csv"),
+                          show_col_types = FALSE)
+
+shape_wide <- all_data_wide %>%
+  filter(response_norm == "shape") %>%
+  distinct(uni_lemma, .keep_all = TRUE) %>%
+  select(eng1, eng2, kor1, kor2)
+
+cor4 <- cor(shape_wide, use = "pairwise.complete.obs")
+cor4_df <- tibble::rownames_to_column(as.data.frame(cor4), "Sample")
+```
+
+```{r shape-4x4-table, results="asis"}
+papaja::apa_table(cor4_df,
+                  caption = "Pearson correlations of word-level shape-organization proportions across the four norming samples (Study 1A = eng1, Study 1B = eng2, Study 2A = kor1, Study 2B = kor2).",
+                  note  = "Lower triangle matches psych::corr.test output; diagonal is 1.",
+                  placement = "!htb",
+                  escape = TRUE,
+                  align = c("l", rep("r", 4)))
+```
+
+# Korean-only age-of-acquisition model
+
+```{r korean-aoa-supp}
+ratings_aoa <- read_csv(here("data/predictors", "ratings_aoa.csv"),
+                        show_col_types = FALSE)
+ratings_aoa_korean <- ratings_aoa %>% filter(language == "Korean")
+
+all_data_wide_kor_model <- all_data_wide %>%
+  select(uni_lemma, kor1, kor2, response_norm) %>%
+  pivot_wider(names_from = response_norm, values_from = c(kor1, kor2),
+              values_fill = 0) %>%
+  mutate(
+    mean_shape_kor = (kor1_shape + kor2_shape) / 2,
+    mean_solid_kor = (kor1_solid + kor2_solid) / 2,
+    mean_count_kor = (kor1_count + kor2_count) / 2
+  ) %>%
+  left_join(ratings_aoa_korean, by = "uni_lemma") %>%
+  select(-ends_with(".y")) %>%
+  rename_with(~ str_remove_all(., "\\.x$"), everything()) %>%
+  filter(!is.na(aoa)) %>%
+  distinct() %>%
+  janitor::clean_names() %>%
+  drop_na() %>%
+  filter(!is.na(freq) & freq > 0) %>%
+  mutate(logfreq = log(freq)) %>%
+  drop_na(concreteness, solid, mean_shape, count_noun) %>%
+  distinct()
+
+korean_fit <- lmerTest::lmer(
+  aoa ~ logfreq + concreteness + mean_solid_kor + mean_shape_kor + mean_count_kor +
+        (1 | category),
+  data = all_data_wide_kor_model
+)
+k_tab <- coef(summary(korean_fit))
+k_out <- tibble::tibble(
+  Predictor = rownames(k_tab),
+  Estimate    = papaja::printnum(k_tab[, "Estimate"], digits = 2),
+  SE          = papaja::printnum(k_tab[, "Std. Error"], digits = 2),
+  df          = papaja::printnum(k_tab[, "df"], digits = 1),
+  `t`         = papaja::printnum(k_tab[, "t value"], digits = 2),
+  p           = papaja::printp(k_tab[, "Pr(>|t|)"])
+)
+```
+
+```{r korean-aoa-table, results="asis"}
+papaja::apa_table(k_out,
+                  caption = "Fixed effects for the Korean-only model predicting age of acquisition (months) from corpus log-frequency, concreteness, and Korean-averaged solidity, shape, and count-noun ratings.",
+                  note  = "Random intercept for semantic category. Predictors use the same scaling as in the main text where applicable.",
+                  placement = "!htb",
+                  escape = TRUE)
+```
+
+# Study 2B: Strict vs. broad shape coding
+
+The main manuscript reports counts and means for strict (``shape'' as the only selected feature) versus broad (``shape'' selected alone or with another feature) coding. Those values are computed in `manuscript.Rmd` chunk `kor2-sensitivity` from `data/predictors/korean_sample2_props.csv`. For submission, paste the latest inline values from the rendered main text here if the journal requires a static supplement table.
+
+```{r kor2-supp, results="asis"}
+korean_sample2 <- read_csv(here("data/predictors", "korean_sample2_props.csv"),
+                           show_col_types = FALSE) %>%
+  mutate(Word = stringr::str_to_lower(Word)) %>%
+  filter(!is.na(response)) %>%
+  distinct() %>%
+  filter(!Word %in% c("fish", "window"))
+
+shape_strict_kor2 <- korean_sample2 %>%
+  filter(block == "category_organization", matching_response == "shape") %>%
+  distinct(Word, proportion) %>%
+  rename(prop_strict = proportion)
+
+shape_broad_kor2 <- korean_sample2 %>%
+  filter(block == "category_organization") %>%
+  filter(matching_response == "shape" |
+         (matching_response == "multiple" &
+            stringr::str_detect(cleaned_response, "form"))) %>%
+  group_by(Word) %>%
+  summarise(prop_broad = sum(proportion), .groups = "drop")
+
+shape_kor2_compare <- dplyr::full_join(shape_strict_kor2, shape_broad_kor2,
+                                       by = "Word") %>%
+  mutate(
+    prop_strict = ifelse(is.na(prop_strict), 0, prop_strict),
+    prop_broad  = ifelse(is.na(prop_broad),  prop_strict, prop_broad)
+  )
+
+n_trials_total <- korean_sample2 %>%
+  filter(block == "category_organization") %>%
+  distinct(Word, totcount) %>%
+  summarise(n = sum(totcount, na.rm = TRUE)) %>% pull(n)
+
+n_shape_only <- korean_sample2 %>%
+  filter(block == "category_organization", matching_response == "shape") %>%
+  summarise(n = sum(proportion * totcount, na.rm = TRUE)) %>% pull(n) %>% round()
+
+n_shape_multi <- korean_sample2 %>%
+  filter(block == "category_organization",
+         matching_response == "multiple",
+         stringr::str_detect(cleaned_response, "form")) %>%
+  summarise(n = sum(proportion * totcount, na.rm = TRUE)) %>% pull(n) %>% round()
+
+sens_tbl <- tibble::tibble(
+  Description = c(
+    "Organizing block trials (total, weighted N)",
+    "``Shape only'' (strict)",
+    "Shape + other feature (broad)",
+    "Mean P(shape), strict",
+    "SD, strict",
+    "Mean P(shape), broad",
+    "SD, broad"
+  ),
+  Value = c(
+    as.character(prettyNum(n_trials_total, big.mark = ",")),
+    as.character(prettyNum(n_shape_only, big.mark = ",")),
+    as.character(prettyNum(n_shape_multi, big.mark = ",")),
+    sprintf("%.3f", mean(shape_kor2_compare$prop_strict, na.rm = TRUE)),
+    sprintf("%.3f", sd(shape_kor2_compare$prop_strict,   na.rm = TRUE)),
+    sprintf("%.3f", mean(shape_kor2_compare$prop_broad,  na.rm = TRUE)),
+    sprintf("%.3f", sd(shape_kor2_compare$prop_broad,    na.rm = TRUE))
+  )
+)
+
+papaja::apa_table(sens_tbl,
+                  caption = "Sensitivity analysis for Study~2B multiple-selection trials (per main text). P(shape) = item-level shape proportion under each coding rule.",
+                  placement = "!htb",
+                  escape = TRUE,
+                  align = c("l", "r"))
+```

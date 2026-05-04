@@ -511,16 +511,25 @@ ggplot() +
   geom_line(
     data = obs_density_df,
     aes(x = x, y = density),
-    color = "blue", size = 1
+    color = "blue", size = 0.5
   ) +
-  facet_wrap(~ language, scales = "free_y") +
+  facet_wrap(~ language) +
+  #facet_wrap(~ language, scales = "free_y") +
   labs(
-    title = "Observed 'shape' density vs. Null Envelope by Language",
+   # title = "Observed 'shape' density vs. Null Envelope by Language",
     x = "Proportion of 'shape' choices",
     y = "Density"
-  ) +
-  theme_minimal()
-
+  ) + theme_minimal() + # Start with the minimal theme
+  theme(
+    panel.grid.major = element_blank(), # Remove major gridlines
+    panel.grid.minor = element_blank(), # Remove minor gridlines
+    axis.line = element_line(colour = "black"), # Add axis lines back if desired
+    strip.text = element_text(size = 7), 
+    axis.text = element_text(size = 7)
+  )
+#+ theme_void()
+#ggsave(here("data/figures", "permu.png"))
+ggsave("permu.png", dpi=300, path = here("data/figures"))
 ```
 
 ```{r , echo=TRUE}

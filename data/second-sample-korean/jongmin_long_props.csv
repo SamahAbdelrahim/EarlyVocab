@@ -1,0 +1,1346 @@
+theword,block,response,totcount,eng_response,proportion
+가방,category_organization,형태,3,form,1
+가방,category_organization,형태,3,form,1
+가방,category_organization,형태,3,form,1
+가방,count_mass,셀 수 있다,1,countable,1
+가방,solidity,고형물,2,solid,1
+가방,solidity,고형물,2,solid,1
+가위,category_organization,물질,1,substance,1
+가위,count_mass,셀 수 있다,2,countable,1
+가위,count_mass,셀 수 있다,2,countable,1
+감,category_organization,물질,4,substance,0.25
+감,category_organization,형태,4,form,0.75
+감,category_organization,형태,4,form,0.75
+감,category_organization,형태,4,form,0.75
+감,count_mass,셀 수 있다,1,countable,1
+감,solidity,고형물,3,solid,0.6666666666666666
+감,solidity,고형물,3,solid,0.6666666666666666
+감,solidity,비고형물,3,non-solid,0.3333333333333333
+감자,category_organization,물질,1,substance,1
+감자,count_mass,셀 수 있다,3,countable,1
+감자,count_mass,셀 수 있다,3,countable,1
+감자,count_mass,셀 수 있다,3,countable,1
+개,category_organization,물질,3,substance,0.3333333333333333
+개,category_organization,색상,3,color,0.3333333333333333
+개,category_organization,형태,3,form,0.3333333333333333
+개,count_mass,셀 수 없다,4,uncountable,0.25
+개,count_mass,셀 수 있다,4,countable,0.75
+개,count_mass,셀 수 있다,4,countable,0.75
+개,count_mass,셀 수 있다,4,countable,0.75
+개,solidity,고형물,2,solid,1
+개,solidity,고형물,2,solid,1
+개구리,category_organization,색상,2,color,0.5
+개구리,category_organization,형태,2,form,0.5
+개구리,count_mass,셀 수 있다,1,countable,1
+개구리,solidity,고형물,4,solid,0.75
+개구리,solidity,고형물,4,solid,0.75
+개구리,solidity,고형물,4,solid,0.75
+개구리,solidity,해당 사항 없음,4,not applicable,0.25
+개미,count_mass,셀 수 있다,2,countable,1
+개미,count_mass,셀 수 있다,2,countable,1
+거북이,count_mass,셀 수 있다,2,countable,1
+거북이,count_mass,셀 수 있다,2,countable,1
+거북이,solidity,고형물,2,solid,1
+거북이,solidity,고형물,2,solid,1
+걸레,count_mass,셀 수 있다,2,countable,1
+걸레,count_mass,셀 수 있다,2,countable,1
+걸레,solidity,고형물,1,solid,1
+계단,category_organization,형태,2,form,1
+계단,category_organization,형태,2,form,1
+계단,count_mass,셀 수 없다,3,uncountable,0.3333333333333333
+계단,count_mass,셀 수 있다,3,countable,0.6666666666666666
+계단,count_mass,셀 수 있다,3,countable,0.6666666666666666
+계란/달걀,category_organization,물질,2,substance,1
+계란/달걀,category_organization,물질,2,substance,1
+고구마,count_mass,셀 수 있다,5,countable,1
+고구마,count_mass,셀 수 있다,5,countable,1
+고구마,count_mass,셀 수 있다,5,countable,1
+고구마,count_mass,셀 수 있다,5,countable,1
+고구마,count_mass,셀 수 있다,5,countable,1
+고구마,solidity,고형물,1,solid,1
+고기,category_organization,물질,1,substance,1
+고기,count_mass,셀 수 없다,2,uncountable,0.5
+고기,count_mass,셀 수 있다,2,countable,0.5
+고기,solidity,고형물,3,solid,1
+고기,solidity,고형물,3,solid,1
+고기,solidity,고형물,3,solid,1
+고양이,count_mass,셀 수 없다,3,uncountable,0.3333333333333333
+고양이,count_mass,셀 수 있다,3,countable,0.6666666666666666
+고양이,count_mass,셀 수 있다,3,countable,0.6666666666666666
+고양이,solidity,고형물,2,solid,1
+고양이,solidity,고형물,2,solid,1
+고추,category_organization,물질,3,substance,0.3333333333333333
+고추,category_organization,형태,3,form,0.6666666666666666
+고추,category_organization,형태,3,form,0.6666666666666666
+고추,count_mass,셀 수 있다,3,countable,1
+고추,count_mass,셀 수 있다,3,countable,1
+고추,count_mass,셀 수 있다,3,countable,1
+고추,solidity,고형물,1,solid,1
+곰,category_organization,해당 사항 없음,1,not applicable,1
+곰,count_mass,셀 수 없다,2,uncountable,0.5
+곰,count_mass,셀 수 있다,2,countable,0.5
+곰,solidity,고형물,1,solid,1
+공룡,category_organization,해당 사항 없음,3,not applicable,0.6666666666666666
+공룡,category_organization,해당 사항 없음,3,not applicable,0.6666666666666666
+공룡,category_organization,형태,3,form,0.3333333333333333
+공룡,count_mass,셀 수 있다,1,countable,1
+공룡,solidity,고형물,1,solid,1
+과일,category_organization,물질,4,substance,0.5
+과일,category_organization,물질,4,substance,0.5
+과일,category_organization,형태,4,form,0.5
+과일,category_organization,형태,4,form,0.5
+과일,solidity,고형물,2,solid,1
+과일,solidity,고형물,2,solid,1
+구두,category_organization,물질,3,substance,0.3333333333333333
+구두,category_organization,형태,3,form,0.6666666666666666
+구두,category_organization,형태,3,form,0.6666666666666666
+구두,count_mass,셀 수 있다,2,countable,1
+구두,count_mass,셀 수 있다,2,countable,1
+구두,solidity,고형물,2,solid,0.5
+구두,solidity,비고형물,2,non-solid,0.5
+구름,count_mass,셀 수 없다,2,uncountable,0.5
+구름,count_mass,셀 수 있다,2,countable,0.5
+구름,solidity,고형물,5,solid,0.2
+구름,solidity,비고형물,5,non-solid,0.6
+구름,solidity,비고형물,5,non-solid,0.6
+구름,solidity,비고형물,5,non-solid,0.6
+구름,solidity,해당 사항 없음,5,not applicable,0.2
+국,category_organization,물질,2,substance,0.5
+국,category_organization,형태,2,form,0.5
+국,solidity,비고형물,1,non-solid,1
+국수,category_organization,형태,1,form,1
+국수,count_mass,셀 수 없다,3,uncountable,0.3333333333333333
+국수,count_mass,셀 수 있다,3,countable,0.6666666666666666
+국수,count_mass,셀 수 있다,3,countable,0.6666666666666666
+국수,solidity,고형물,2,solid,1
+국수,solidity,고형물,2,solid,1
+귀,count_mass,셀 수 있다,3,countable,1
+귀,count_mass,셀 수 있다,3,countable,1
+귀,count_mass,셀 수 있다,3,countable,1
+귀,solidity,고형물,4,solid,0.75
+귀,solidity,고형물,4,solid,0.75
+귀,solidity,고형물,4,solid,0.75
+귀,solidity,비고형물,4,non-solid,0.25
+귤,category_organization,색상,3,color,0.3333333333333333
+귤,category_organization,형태,3,form,0.6666666666666666
+귤,category_organization,형태,3,form,0.6666666666666666
+귤,count_mass,셀 수 있다,2,countable,1
+귤,count_mass,셀 수 있다,2,countable,1
+그네,category_organization,물질,1,substance,1
+그릇,category_organization,물질,2,substance,0.5
+그릇,category_organization,해당 사항 없음,2,not applicable,0.5
+그릇,count_mass,셀 수 있다,4,countable,1
+그릇,count_mass,셀 수 있다,4,countable,1
+그릇,count_mass,셀 수 있다,4,countable,1
+그릇,count_mass,셀 수 있다,4,countable,1
+그릇,solidity,고형물,4,solid,1
+그릇,solidity,고형물,4,solid,1
+그릇,solidity,고형물,4,solid,1
+그릇,solidity,고형물,4,solid,1
+그림,category_organization,해당 사항 없음,2,not applicable,0.5
+그림,category_organization,형태,2,form,0.5
+그림,count_mass,셀 수 있다,2,countable,1
+그림,count_mass,셀 수 있다,2,countable,1
+그림,solidity,고형물,2,solid,1
+그림,solidity,고형물,2,solid,1
+기린,category_organization,해당 사항 없음,2,not applicable,0.5
+기린,category_organization,형태,2,form,0.5
+기린,solidity,고형물,3,solid,1
+기린,solidity,고형물,3,solid,1
+기린,solidity,고형물,3,solid,1
+기저귀,category_organization,물질,4,substance,0.75
+기저귀,category_organization,물질,4,substance,0.75
+기저귀,category_organization,물질,4,substance,0.75
+기저귀,category_organization,형태,4,form,0.25
+기저귀,solidity,고형물,4,solid,1
+기저귀,solidity,고형물,4,solid,1
+기저귀,solidity,고형물,4,solid,1
+기저귀,solidity,고형물,4,solid,1
+기차,category_organization,물질,3,substance,0.3333333333333333
+기차,category_organization,해당 사항 없음,3,not applicable,0.3333333333333333
+기차,category_organization,형태,3,form,0.3333333333333333
+기차,count_mass,셀 수 없다,2,uncountable,0.5
+기차,count_mass,셀 수 있다,2,countable,0.5
+기차,solidity,고형물,1,solid,1
+길,category_organization,형태,3,form,1
+길,category_organization,형태,3,form,1
+길,category_organization,형태,3,form,1
+길,count_mass,셀 수 있다,2,countable,0.5
+길,count_mass,잘 모르겠다/구분이 어렵다,2,not sure,0.5
+길,solidity,해당 사항 없음,1,not applicable,1
+김,category_organization,물질,2,substance,1
+김,category_organization,물질,2,substance,1
+김,count_mass,셀 수 있다,1,countable,1
+김,solidity,고형물,1,solid,1
+김치,count_mass,셀 수 없다,2,uncountable,0.5
+김치,count_mass,잘 모르겠다/구분이 어렵다,2,not sure,0.5
+김치,solidity,고형물,2,solid,1
+김치,solidity,고형물,2,solid,1
+껌,count_mass,셀 수 있다,3,countable,1
+껌,count_mass,셀 수 있다,3,countable,1
+껌,count_mass,셀 수 있다,3,countable,1
+꽃,category_organization,물질,2,substance,0.5
+꽃,category_organization,색상,2,color,0.5
+꽃,solidity,고형물,2,solid,1
+꽃,solidity,고형물,2,solid,1
+나무,category_organization,물질,1,substance,1
+나무,solidity,고형물,6,solid,1
+나무,solidity,고형물,6,solid,1
+나무,solidity,고형물,6,solid,1
+나무,solidity,고형물,6,solid,1
+나무,solidity,고형물,6,solid,1
+나무,solidity,고형물,6,solid,1
+나비,category_organization,물질,3,substance,0.3333333333333333
+나비,category_organization,색상,3,color,0.3333333333333333
+나비,category_organization,형태,3,form,0.3333333333333333
+나비,count_mass,셀 수 있다,1,countable,1
+나비,solidity,고형물,2,solid,1
+나비,solidity,고형물,2,solid,1
+냉장고,category_organization,해당 사항 없음,1,not applicable,1
+냉장고,count_mass,셀 수 있다,1,countable,1
+냉장고,solidity,고형물,1,solid,1
+눈,category_organization,물질,8,substance,0.25
+눈,category_organization,물질,8,substance,0.25
+눈,category_organization,해당 사항 없음,8,not applicable,0.25
+눈,category_organization,해당 사항 없음,8,not applicable,0.25
+눈,category_organization,형태,8,form,0.5
+눈,category_organization,형태,8,form,0.5
+눈,category_organization,형태,8,form,0.5
+눈,category_organization,형태,8,form,0.5
+눈,count_mass,셀 수 없다,4,uncountable,0.5
+눈,count_mass,셀 수 없다,4,uncountable,0.5
+눈,count_mass,셀 수 있다,4,countable,0.5
+눈,count_mass,셀 수 있다,4,countable,0.5
+눈,solidity,비고형물,6,non-solid,0.6666666666666666
+눈,solidity,비고형물,6,non-solid,0.6666666666666666
+눈,solidity,비고형물,6,non-solid,0.6666666666666666
+눈,solidity,비고형물,6,non-solid,0.6666666666666666
+눈,solidity,해당 사항 없음,6,not applicable,0.3333333333333333
+눈,solidity,해당 사항 없음,6,not applicable,0.3333333333333333
+눈사람,category_organization,물질,3,substance,0.6666666666666666
+눈사람,category_organization,물질,3,substance,0.6666666666666666
+눈사람,category_organization,형태,3,form,0.3333333333333333
+눈사람,count_mass,셀 수 있다,1,countable,1
+다람쥐,category_organization,물질,2,substance,0.5
+다람쥐,category_organization,해당 사항 없음,2,not applicable,0.5
+다람쥐,count_mass,셀 수 있다,2,countable,1
+다람쥐,count_mass,셀 수 있다,2,countable,1
+다리,category_organization,형태,3,form,1
+다리,category_organization,형태,3,form,1
+다리,category_organization,형태,3,form,1
+다리,count_mass,셀 수 없다,2,uncountable,0.5
+다리,count_mass,셀 수 있다,2,countable,0.5
+다리,solidity,고형물,1,solid,1
+단추,count_mass,셀 수 있다,1,countable,1
+단추,solidity,고형물,2,solid,1
+단추,solidity,고형물,2,solid,1
+달,category_organization,해당 사항 없음,1,not applicable,1
+달,count_mass,셀 수 있다,3,countable,1
+달,count_mass,셀 수 있다,3,countable,1
+달,count_mass,셀 수 있다,3,countable,1
+달,solidity,고형물,2,solid,1
+달,solidity,고형물,2,solid,1
+닭,category_organization,물질,3,substance,0.6666666666666666
+닭,category_organization,물질,3,substance,0.6666666666666666
+닭,category_organization,형태,3,form,0.3333333333333333
+닭,count_mass,셀 수 있다,1,countable,1
+닭,solidity,고형물,5,solid,1
+닭,solidity,고형물,5,solid,1
+닭,solidity,고형물,5,solid,1
+닭,solidity,고형물,5,solid,1
+닭,solidity,고형물,5,solid,1
+닭고기,category_organization,물질,1,substance,1
+닭고기,count_mass,잘 모르겠다/구분이 어렵다,1,not sure,1
+닭고기,solidity,고형물,3,solid,0.6666666666666666
+닭고기,solidity,고형물,3,solid,0.6666666666666666
+닭고기,solidity,해당 사항 없음,3,not applicable,0.3333333333333333
+당근,category_organization,물질,3,substance,1
+당근,category_organization,물질,3,substance,1
+당근,category_organization,물질,3,substance,1
+당근,count_mass,셀 수 있다,1,countable,1
+당근,solidity,고형물,1,solid,1
+도너츠,category_organization,물질,1,substance,1
+도너츠,count_mass,셀 수 있다,2,countable,1
+도너츠,count_mass,셀 수 있다,2,countable,1
+도너츠,solidity,고형물,3,solid,0.6666666666666666
+도너츠,solidity,고형물,3,solid,0.6666666666666666
+도너츠,solidity,비고형물,3,non-solid,0.3333333333333333
+돈,category_organization,물질,3,substance,0.3333333333333333
+돈,category_organization,형태,3,form,0.6666666666666666
+돈,category_organization,형태,3,form,0.6666666666666666
+돈,solidity,고형물,3,solid,0.6666666666666666
+돈,solidity,고형물,3,solid,0.6666666666666666
+돈,solidity,해당 사항 없음,3,not applicable,0.3333333333333333
+돌,category_organization,물질,4,substance,1
+돌,category_organization,물질,4,substance,1
+돌,category_organization,물질,4,substance,1
+돌,category_organization,물질,4,substance,1
+돌,count_mass,셀 수 있다,1,countable,1
+돌,solidity,고형물,2,solid,1
+돌,solidity,고형물,2,solid,1
+동물,category_organization,해당 사항 없음,2,not applicable,1
+동물,category_organization,해당 사항 없음,2,not applicable,1
+동물,count_mass,셀 수 있다,5,countable,0.8
+동물,count_mass,셀 수 있다,5,countable,0.8
+동물,count_mass,셀 수 있다,5,countable,0.8
+동물,count_mass,셀 수 있다,5,countable,0.8
+동물,count_mass,잘 모르겠다/구분이 어렵다,5,not sure,0.2
+동물,solidity,고형물,1,solid,1
+돼지,category_organization,물질,1,substance,1
+돼지,count_mass,셀 수 있다,6,countable,1
+돼지,count_mass,셀 수 있다,6,countable,1
+돼지,count_mass,셀 수 있다,6,countable,1
+돼지,count_mass,셀 수 있다,6,countable,1
+돼지,count_mass,셀 수 있다,6,countable,1
+돼지,count_mass,셀 수 있다,6,countable,1
+돼지,solidity,고형물,2,solid,1
+돼지,solidity,고형물,2,solid,1
+등,category_organization,해당 사항 없음,1,not applicable,1
+등,count_mass,셀 수 없다,2,uncountable,0.5
+등,count_mass,잘 모르겠다/구분이 어렵다,2,not sure,0.5
+딸기,category_organization,물질,3,substance,1
+딸기,category_organization,물질,3,substance,1
+딸기,category_organization,물질,3,substance,1
+딸기,solidity,고형물,2,solid,1
+딸기,solidity,고형물,2,solid,1
+땅,category_organization,물질,1,substance,1
+땅,solidity,고형물,2,solid,0.5
+땅,solidity,비고형물,2,non-solid,0.5
+땅콩,category_organization,물질,2,substance,0.5
+땅콩,category_organization,형태,2,form,0.5
+땅콩,count_mass,셀 수 있다,2,countable,1
+땅콩,count_mass,셀 수 있다,2,countable,1
+땅콩,solidity,고형물,2,solid,1
+땅콩,solidity,고형물,2,solid,1
+떡,category_organization,물질,1,substance,1
+떡,count_mass,셀 수 있다,3,countable,1
+떡,count_mass,셀 수 있다,3,countable,1
+떡,count_mass,셀 수 있다,3,countable,1
+떡,solidity,고형물,3,solid,0.6666666666666666
+떡,solidity,고형물,3,solid,0.6666666666666666
+떡,solidity,비고형물,3,non-solid,0.3333333333333333
+똥꼬,category_organization,형태,1,form,1
+똥꼬,solidity,고형물,4,solid,0.5
+똥꼬,solidity,고형물,4,solid,0.5
+똥꼬,solidity,해당 사항 없음,4,not applicable,0.5
+똥꼬,solidity,해당 사항 없음,4,not applicable,0.5
+라디오,category_organization,물질,3,substance,0.3333333333333333
+라디오,category_organization,해당 사항 없음,3,not applicable,0.3333333333333333
+라디오,category_organization,형태,3,form,0.3333333333333333
+라디오,solidity,고형물,1,solid,1
+라면,category_organization,물질,4,substance,0.5
+라면,category_organization,물질,4,substance,0.5
+라면,category_organization,해당 사항 없음,4,not applicable,0.25
+라면,category_organization,형태,4,form,0.25
+라면,count_mass,셀 수 없다,1,uncountable,1
+라면,solidity,고형물,1,solid,1
+로봇,category_organization,물질,4,substance,0.5
+로봇,category_organization,물질,4,substance,0.5
+로봇,category_organization,해당 사항 없음,4,not applicable,0.25
+로봇,category_organization,형태,4,form,0.25
+로봇,count_mass,셀 수 있다,3,countable,1
+로봇,count_mass,셀 수 있다,3,countable,1
+로봇,count_mass,셀 수 있다,3,countable,1
+로봇,solidity,고형물,2,solid,1
+로봇,solidity,고형물,2,solid,1
+말,category_organization,해당 사항 없음,1,not applicable,1
+말,count_mass,잘 모르겠다/구분이 어렵다,1,not sure,1
+말,solidity,고형물,2,solid,1
+말,solidity,고형물,2,solid,1
+망치,count_mass,셀 수 있다,3,countable,1
+망치,count_mass,셀 수 있다,3,countable,1
+망치,count_mass,셀 수 있다,3,countable,1
+망치,solidity,고형물,2,solid,1
+망치,solidity,고형물,2,solid,1
+머리,category_organization,색상,3,color,0.3333333333333333
+머리,category_organization,형태,3,form,0.6666666666666666
+머리,category_organization,형태,3,form,0.6666666666666666
+머리,count_mass,셀 수 있다,2,countable,1
+머리,count_mass,셀 수 있다,2,countable,1
+머리,solidity,고형물,4,solid,1
+머리,solidity,고형물,4,solid,1
+머리,solidity,고형물,4,solid,1
+머리,solidity,고형물,4,solid,1
+머리카락,category_organization,물질,2,substance,0.5
+머리카락,category_organization,색상,2,color,0.5
+머리카락,count_mass,셀 수 있다,3,countable,0.6666666666666666
+머리카락,count_mass,셀 수 있다,3,countable,0.6666666666666666
+머리카락,count_mass,잘 모르겠다/구분이 어렵다,3,not sure,0.3333333333333333
+머리카락,solidity,고형물,3,solid,0.6666666666666666
+머리카락,solidity,고형물,3,solid,0.6666666666666666
+머리카락,solidity,비고형물,3,non-solid,0.3333333333333333
+메론,count_mass,셀 수 있다,1,countable,1
+모래,category_organization,물질,2,substance,0.5
+모래,category_organization,형태,2,form,0.5
+모래,count_mass,셀 수 있다,1,countable,1
+모자,category_organization,물질,4,substance,0.25
+모자,category_organization,형태,4,form,0.75
+모자,category_organization,형태,4,form,0.75
+모자,category_organization,형태,4,form,0.75
+모자,count_mass,셀 수 있다,3,countable,1
+모자,count_mass,셀 수 있다,3,countable,1
+모자,count_mass,셀 수 있다,3,countable,1
+모자,solidity,고형물,3,solid,0.6666666666666666
+모자,solidity,고형물,3,solid,0.6666666666666666
+모자,solidity,비고형물,3,non-solid,0.3333333333333333
+목,category_organization,형태,2,form,1
+목,category_organization,형태,2,form,1
+목,count_mass,셀 수 있다,1,countable,1
+목걸이,category_organization,형태,2,form,1
+목걸이,category_organization,형태,2,form,1
+목걸이,count_mass,셀 수 있다,2,countable,1
+목걸이,count_mass,셀 수 있다,2,countable,1
+목걸이,solidity,고형물,1,solid,1
+목도리,category_organization,물질,2,substance,1
+목도리,category_organization,물질,2,substance,1
+목도리,count_mass,셀 수 있다,1,countable,1
+목도리,solidity,고형물,2,solid,1
+목도리,solidity,고형물,2,solid,1
+목욕탕,category_organization,해당 사항 없음,4,not applicable,0.25
+목욕탕,category_organization,형태,4,form,0.75
+목욕탕,category_organization,형태,4,form,0.75
+목욕탕,category_organization,형태,4,form,0.75
+목욕탕,count_mass,셀 수 있다,1,countable,1
+목욕탕,solidity,고형물,1,solid,1
+몸,count_mass,셀 수 있다,4,countable,0.75
+몸,count_mass,셀 수 있다,4,countable,0.75
+몸,count_mass,셀 수 있다,4,countable,0.75
+몸,count_mass,잘 모르겠다/구분이 어렵다,4,not sure,0.25
+못,category_organization,형태,1,form,1
+못,count_mass,셀 수 있다,1,countable,1
+못,solidity,고형물,2,solid,1
+못,solidity,고형물,2,solid,1
+무/무우,category_organization,물질,2,substance,0.5
+무/무우,category_organization,형태,2,form,0.5
+무/무우,count_mass,셀 수 있다,3,countable,1
+무/무우,count_mass,셀 수 있다,3,countable,1
+무/무우,count_mass,셀 수 있다,3,countable,1
+무/무우,solidity,고형물,2,solid,1
+무/무우,solidity,고형물,2,solid,1
+무릎,category_organization,해당 사항 없음,1,not applicable,1
+무릎,solidity,고형물,2,solid,0.5
+무릎,solidity,비고형물,2,non-solid,0.5
+문,category_organization,형태,1,form,1
+문,count_mass,셀 수 있다,2,countable,1
+문,count_mass,셀 수 있다,2,countable,1
+문,solidity,고형물,2,solid,1
+문,solidity,고형물,2,solid,1
+물고기,count_mass,셀 수 있다,4,countable,1
+물고기,count_mass,셀 수 있다,4,countable,1
+물고기,count_mass,셀 수 있다,4,countable,1
+물고기,count_mass,셀 수 있다,4,countable,1
+물고기,solidity,고형물,1,solid,1
+미끄럼틀,category_organization,물질,3,substance,0.3333333333333333
+미끄럼틀,category_organization,형태,3,form,0.6666666666666666
+미끄럼틀,category_organization,형태,3,form,0.6666666666666666
+미끄럼틀,count_mass,셀 수 있다,1,countable,1
+미끄럼틀,solidity,고형물,1,solid,1
+바나나,category_organization,형태,2,form,1
+바나나,category_organization,형태,2,form,1
+바나나,count_mass,셀 수 있다,3,countable,1
+바나나,count_mass,셀 수 있다,3,countable,1
+바나나,count_mass,셀 수 있다,3,countable,1
+바나나,solidity,고형물,5,solid,1
+바나나,solidity,고형물,5,solid,1
+바나나,solidity,고형물,5,solid,1
+바나나,solidity,고형물,5,solid,1
+바나나,solidity,고형물,5,solid,1
+바람,count_mass,셀 수 없다,2,uncountable,1
+바람,count_mass,셀 수 없다,2,uncountable,1
+바람,solidity,비고형물,3,non-solid,0.6666666666666666
+바람,solidity,비고형물,3,non-solid,0.6666666666666666
+바람,solidity,해당 사항 없음,3,not applicable,0.3333333333333333
+바위,category_organization,물질,1,substance,1
+바위,count_mass,셀 수 있다,3,countable,1
+바위,count_mass,셀 수 있다,3,countable,1
+바위,count_mass,셀 수 있다,3,countable,1
+바위,solidity,고형물,1,solid,1
+바지,category_organization,형태,1,form,1
+바지,count_mass,셀 수 있다,1,countable,1
+바지,solidity,고형물,3,solid,1
+바지,solidity,고형물,3,solid,1
+바지,solidity,고형물,3,solid,1
+발,count_mass,셀 수 있다,2,countable,1
+발,count_mass,셀 수 있다,2,countable,1
+발,solidity,고형물,1,solid,1
+발목,category_organization,물질,3,substance,0.3333333333333333
+발목,category_organization,형태,3,form,0.6666666666666666
+발목,category_organization,형태,3,form,0.6666666666666666
+발목,count_mass,셀 수 있다,1,countable,1
+발톱,category_organization,형태,2,form,1
+발톱,category_organization,형태,2,form,1
+발톱,count_mass,셀 수 있다,2,countable,0.5
+발톱,count_mass,잘 모르겠다/구분이 어렵다,2,not sure,0.5
+발톱,solidity,고형물,5,solid,1
+발톱,solidity,고형물,5,solid,1
+발톱,solidity,고형물,5,solid,1
+발톱,solidity,고형물,5,solid,1
+발톱,solidity,고형물,5,solid,1
+밤,category_organization,물질,4,substance,0.75
+밤,category_organization,물질,4,substance,0.75
+밤,category_organization,물질,4,substance,0.75
+밤,category_organization,해당 사항 없음,4,not applicable,0.25
+밤,count_mass,셀 수 있다,3,countable,0.6666666666666666
+밤,count_mass,셀 수 있다,3,countable,0.6666666666666666
+밤,count_mass,잘 모르겠다/구분이 어렵다,3,not sure,0.3333333333333333
+밤,solidity,고형물,1,solid,1
+방,category_organization,해당 사항 없음,2,not applicable,0.5
+방,category_organization,형태,2,form,0.5
+배,category_organization,물질,6,substance,0.3333333333333333
+배,category_organization,물질,6,substance,0.3333333333333333
+배,category_organization,해당 사항 없음,6,not applicable,0.3333333333333333
+배,category_organization,해당 사항 없음,6,not applicable,0.3333333333333333
+배,category_organization,형태,6,form,0.3333333333333333
+배,category_organization,형태,6,form,0.3333333333333333
+배,count_mass,셀 수 있다,12,countable,1
+배,count_mass,셀 수 있다,12,countable,1
+배,count_mass,셀 수 있다,12,countable,1
+배,count_mass,셀 수 있다,12,countable,1
+배,count_mass,셀 수 있다,12,countable,1
+배,count_mass,셀 수 있다,12,countable,1
+배,count_mass,셀 수 있다,12,countable,1
+배,count_mass,셀 수 있다,12,countable,1
+배,count_mass,셀 수 있다,12,countable,1
+배,count_mass,셀 수 있다,12,countable,1
+배,count_mass,셀 수 있다,12,countable,1
+배,count_mass,셀 수 있다,12,countable,1
+배,solidity,고형물,10,solid,1
+배,solidity,고형물,10,solid,1
+배,solidity,고형물,10,solid,1
+배,solidity,고형물,10,solid,1
+배,solidity,고형물,10,solid,1
+배,solidity,고형물,10,solid,1
+배,solidity,고형물,10,solid,1
+배,solidity,고형물,10,solid,1
+배,solidity,고형물,10,solid,1
+배,solidity,고형물,10,solid,1
+배꼽,category_organization,해당 사항 없음,3,not applicable,0.3333333333333333
+배꼽,category_organization,형태,3,form,0.6666666666666666
+배꼽,category_organization,형태,3,form,0.6666666666666666
+배꼽,count_mass,셀 수 있다,1,countable,1
+배꼽,solidity,비고형물,1,non-solid,1
+배추,category_organization,물질,1,substance,1
+배추,solidity,고형물,2,solid,1
+배추,solidity,고형물,2,solid,1
+뱀,count_mass,셀 수 있다,1,countable,1
+뱀,solidity,고형물,2,solid,1
+뱀,solidity,고형물,2,solid,1
+버스,category_organization,형태,2,form,1
+버스,category_organization,형태,2,form,1
+버스,count_mass,셀 수 있다,2,countable,1
+버스,count_mass,셀 수 있다,2,countable,1
+버스,solidity,고형물,2,solid,1
+버스,solidity,고형물,2,solid,1
+벌,category_organization,형태,2,form,1
+벌,category_organization,형태,2,form,1
+벌,solidity,고형물,2,solid,1
+벌,solidity,고형물,2,solid,1
+벌레,count_mass,셀 수 있다,2,countable,1
+벌레,count_mass,셀 수 있다,2,countable,1
+베개,category_organization,물질,3,substance,0.6666666666666666
+베개,category_organization,물질,3,substance,0.6666666666666666
+베개,category_organization,해당 사항 없음,3,not applicable,0.3333333333333333
+베개,count_mass,셀 수 있다,1,countable,1
+베개,solidity,해당 사항 없음,1,not applicable,1
+별,category_organization,물질,1,substance,1
+별,count_mass,셀 수 없다,3,uncountable,0.3333333333333333
+별,count_mass,셀 수 있다,3,countable,0.6666666666666666
+별,count_mass,셀 수 있다,3,countable,0.6666666666666666
+별,solidity,고형물,2,solid,0.5
+별,solidity,해당 사항 없음,2,not applicable,0.5
+병,category_organization,물질,4,substance,0.25
+병,category_organization,형태,4,form,0.75
+병,category_organization,형태,4,form,0.75
+병,category_organization,형태,4,form,0.75
+병,count_mass,셀 수 있다,3,countable,1
+병,count_mass,셀 수 있다,3,countable,1
+병,count_mass,셀 수 있다,3,countable,1
+병,solidity,고형물,1,solid,1
+병아리,category_organization,물질,1,substance,1
+병아리,count_mass,셀 수 있다,2,countable,1
+병아리,count_mass,셀 수 있다,2,countable,1
+병아리,solidity,고형물,3,solid,1
+병아리,solidity,고형물,3,solid,1
+병아리,solidity,고형물,3,solid,1
+복숭아,category_organization,물질,2,substance,0.5
+복숭아,category_organization,형태,2,form,0.5
+복숭아,count_mass,셀 수 있다,2,countable,1
+복숭아,count_mass,셀 수 있다,2,countable,1
+복숭아,solidity,고형물,2,solid,1
+복숭아,solidity,고형물,2,solid,1
+부엉이,category_organization,해당 사항 없음,2,not applicable,0.5
+부엉이,category_organization,형태,2,form,0.5
+부엉이,count_mass,셀 수 있다,2,countable,1
+부엉이,count_mass,셀 수 있다,2,countable,1
+부엉이,solidity,고형물,2,solid,1
+부엉이,solidity,고형물,2,solid,1
+부엌,category_organization,해당 사항 없음,1,not applicable,1
+부엌,count_mass,셀 수 있다,1,countable,1
+부엌,solidity,고형물,2,solid,1
+부엌,solidity,고형물,2,solid,1
+불,category_organization,물질,4,substance,0.5
+불,category_organization,물질,4,substance,0.5
+불,category_organization,형태,4,form,0.5
+불,category_organization,형태,4,form,0.5
+불,count_mass,셀 수 없다,1,uncountable,1
+불,solidity,비고형물,2,non-solid,1
+불,solidity,비고형물,2,non-solid,1
+불자동차/소방차,count_mass,셀 수 있다,5,countable,0.8
+불자동차/소방차,count_mass,셀 수 있다,5,countable,0.8
+불자동차/소방차,count_mass,셀 수 있다,5,countable,0.8
+불자동차/소방차,count_mass,셀 수 있다,5,countable,0.8
+불자동차/소방차,count_mass,잘 모르겠다/구분이 어렵다,5,not sure,0.2
+블록,category_organization,형태,2,form,1
+블록,category_organization,형태,2,form,1
+블록,count_mass,셀 수 있다,2,countable,1
+블록,count_mass,셀 수 있다,2,countable,1
+블록,solidity,고형물,1,solid,1
+비,count_mass,셀 수 없다,1,uncountable,1
+비,solidity,비고형물,2,non-solid,1
+비,solidity,비고형물,2,non-solid,1
+비누,category_organization,물질,2,substance,1
+비누,category_organization,물질,2,substance,1
+비누,count_mass,셀 수 있다,1,countable,1
+비누,solidity,고형물,2,solid,1
+비누,solidity,고형물,2,solid,1
+비누방울,count_mass,셀 수 있다,1,countable,1
+비누방울,solidity,비고형물,1,non-solid,1
+비둘기,category_organization,해당 사항 없음,1,not applicable,1
+비둘기,count_mass,셀 수 있다,5,countable,1
+비둘기,count_mass,셀 수 있다,5,countable,1
+비둘기,count_mass,셀 수 있다,5,countable,1
+비둘기,count_mass,셀 수 있다,5,countable,1
+비둘기,count_mass,셀 수 있다,5,countable,1
+비둘기,solidity,고형물,1,solid,1
+비행기,category_organization,해당 사항 없음,1,not applicable,1
+비행기,count_mass,셀 수 있다,2,countable,1
+비행기,count_mass,셀 수 있다,2,countable,1
+비행기,solidity,고형물,1,solid,1
+빗,category_organization,형태,1,form,1
+빗,solidity,고형물,1,solid,1
+빗자루,category_organization,형태,1,form,1
+빗자루,count_mass,셀 수 있다,1,countable,1
+빗자루,solidity,고형물,4,solid,1
+빗자루,solidity,고형물,4,solid,1
+빗자루,solidity,고형물,4,solid,1
+빗자루,solidity,고형물,4,solid,1
+뺨,category_organization,해당 사항 없음,3,not applicable,0.6666666666666666
+뺨,category_organization,해당 사항 없음,3,not applicable,0.6666666666666666
+뺨,category_organization,형태,3,form,0.3333333333333333
+뺨,count_mass,셀 수 있다,2,countable,1
+뺨,count_mass,셀 수 있다,2,countable,1
+뺨,solidity,고형물,1,solid,1
+사과,category_organization,물질,2,substance,0.5
+사과,category_organization,색상,2,color,0.5
+사과,solidity,고형물,2,solid,1
+사과,solidity,고형물,2,solid,1
+사다리,count_mass,셀 수 있다,3,countable,1
+사다리,count_mass,셀 수 있다,3,countable,1
+사다리,count_mass,셀 수 있다,3,countable,1
+사다리,solidity,고형물,1,solid,1
+사슴,category_organization,물질,6,substance,0.16666666666666666
+사슴,category_organization,색상,6,color,0.16666666666666666
+사슴,category_organization,형태,6,form,0.6666666666666666
+사슴,category_organization,형태,6,form,0.6666666666666666
+사슴,category_organization,형태,6,form,0.6666666666666666
+사슴,category_organization,형태,6,form,0.6666666666666666
+사슴,count_mass,셀 수 있다,2,countable,1
+사슴,count_mass,셀 수 있다,2,countable,1
+사이다,category_organization,물질,2,substance,1
+사이다,category_organization,물질,2,substance,1
+사이다,count_mass,셀 수 없다,2,uncountable,0.5
+사이다,count_mass,셀 수 있다,2,countable,0.5
+사자,category_organization,해당 사항 없음,2,not applicable,0.5
+사자,category_organization,형태,2,form,0.5
+사자,count_mass,셀 수 있다,1,countable,1
+사자,solidity,고형물,1,solid,1
+사탕,category_organization,물질,2,substance,1
+사탕,category_organization,물질,2,substance,1
+사탕,count_mass,셀 수 있다,2,countable,1
+사탕,count_mass,셀 수 있다,2,countable,1
+사탕,solidity,고형물,4,solid,0.75
+사탕,solidity,고형물,4,solid,0.75
+사탕,solidity,고형물,4,solid,0.75
+사탕,solidity,해당 사항 없음,4,not applicable,0.25
+상자,category_organization,물질,2,substance,0.5
+상자,category_organization,형태,2,form,0.5
+상자,count_mass,셀 수 있다,1,countable,1
+상자,solidity,고형물,1,solid,1
+새,category_organization,형태,2,form,1
+새,category_organization,형태,2,form,1
+새,count_mass,셀 수 있다,3,countable,1
+새,count_mass,셀 수 있다,3,countable,1
+새,count_mass,셀 수 있다,3,countable,1
+새,solidity,고형물,2,solid,1
+새,solidity,고형물,2,solid,1
+생선,category_organization,물질,3,substance,0.6666666666666666
+생선,category_organization,물질,3,substance,0.6666666666666666
+생선,category_organization,색상,3,color,0.3333333333333333
+생선,solidity,고형물,3,solid,1
+생선,solidity,고형물,3,solid,1
+생선,solidity,고형물,3,solid,1
+서랍,category_organization,물질,3,substance,0.3333333333333333
+서랍,category_organization,형태,3,form,0.6666666666666666
+서랍,category_organization,형태,3,form,0.6666666666666666
+서랍,count_mass,셀 수 있다,1,countable,1
+서랍,solidity,고형물,3,solid,1
+서랍,solidity,고형물,3,solid,1
+서랍,solidity,고형물,3,solid,1
+선물,count_mass,셀 수 있다,2,countable,1
+선물,count_mass,셀 수 있다,2,countable,1
+선물,solidity,고형물,3,solid,1
+선물,solidity,고형물,3,solid,1
+선물,solidity,고형물,3,solid,1
+설탕,category_organization,물질,1,substance,1
+설탕,count_mass,셀 수 없다,4,uncountable,1
+설탕,count_mass,셀 수 없다,4,uncountable,1
+설탕,count_mass,셀 수 없다,4,uncountable,1
+설탕,count_mass,셀 수 없다,4,uncountable,1
+설탕,solidity,비고형물,1,non-solid,1
+세탁기,category_organization,물질,2,substance,0.5
+세탁기,category_organization,형태,2,form,0.5
+세탁기,solidity,고형물,1,solid,1
+소,category_organization,물질,2,substance,0.5
+소,category_organization,형태,2,form,0.5
+소,count_mass,셀 수 있다,1,countable,1
+소,solidity,고형물,3,solid,0.6666666666666666
+소,solidity,고형물,3,solid,0.6666666666666666
+소,solidity,해당 사항 없음,3,not applicable,0.3333333333333333
+소금,category_organization,물질,3,substance,1
+소금,category_organization,물질,3,substance,1
+소금,category_organization,물질,3,substance,1
+소금,count_mass,셀 수 없다,3,uncountable,1
+소금,count_mass,셀 수 없다,3,uncountable,1
+소금,count_mass,셀 수 없다,3,uncountable,1
+소금,solidity,고형물,1,solid,1
+소파,category_organization,해당 사항 없음,3,not applicable,0.3333333333333333
+소파,category_organization,형태,3,form,0.6666666666666666
+소파,category_organization,형태,3,form,0.6666666666666666
+소파,count_mass,셀 수 있다,2,countable,1
+소파,count_mass,셀 수 있다,2,countable,1
+소파,solidity,고형물,2,solid,1
+소파,solidity,고형물,2,solid,1
+손,category_organization,형태,1,form,1
+손,count_mass,셀 수 있다,1,countable,1
+손가락,category_organization,형태,1,form,1
+손가락,count_mass,셀 수 있다,1,countable,1
+손가락,solidity,고형물,2,solid,1
+손가락,solidity,고형물,2,solid,1
+송아지,category_organization,해당 사항 없음,1,not applicable,1
+송아지,count_mass,셀 수 있다,1,countable,1
+송아지,solidity,고형물,2,solid,1
+송아지,solidity,고형물,2,solid,1
+수건,category_organization,물질,2,substance,1
+수건,category_organization,물질,2,substance,1
+수건,count_mass,셀 수 있다,2,countable,1
+수건,count_mass,셀 수 있다,2,countable,1
+수박,category_organization,물질,3,substance,0.6666666666666666
+수박,category_organization,물질,3,substance,0.6666666666666666
+수박,category_organization,형태,3,form,0.3333333333333333
+수박,solidity,고형물,4,solid,1
+수박,solidity,고형물,4,solid,1
+수박,solidity,고형물,4,solid,1
+수박,solidity,고형물,4,solid,1
+숟가락,category_organization,형태,2,form,1
+숟가락,category_organization,형태,2,form,1
+숟가락,count_mass,셀 수 있다,2,countable,1
+숟가락,count_mass,셀 수 있다,2,countable,1
+스파게티,category_organization,물질,2,substance,0.5
+스파게티,category_organization,형태,2,form,0.5
+스파게티,count_mass,셀 수 없다,3,uncountable,0.6666666666666666
+스파게티,count_mass,셀 수 없다,3,uncountable,0.6666666666666666
+스파게티,count_mass,셀 수 있다,3,countable,0.3333333333333333
+스파게티,solidity,고형물,1,solid,1
+시계,category_organization,해당 사항 없음,1,not applicable,1
+시계,count_mass,셀 수 있다,1,countable,1
+시계,solidity,고형물,1,solid,1
+시소,category_organization,물질,2,substance,0.5
+시소,category_organization,형태,2,form,0.5
+시소,count_mass,잘 모르겠다/구분이 어렵다,1,not sure,1
+시소,solidity,고형물,1,solid,1
+신/신발,category_organization,형태,2,form,1
+신/신발,category_organization,형태,2,form,1
+신/신발,count_mass,셀 수 있다,4,countable,1
+신/신발,count_mass,셀 수 있다,4,countable,1
+신/신발,count_mass,셀 수 있다,4,countable,1
+신/신발,count_mass,셀 수 있다,4,countable,1
+신/신발,solidity,고형물,1,solid,1
+쌀,count_mass,셀 수 없다,3,uncountable,1
+쌀,count_mass,셀 수 없다,3,uncountable,1
+쌀,count_mass,셀 수 없다,3,uncountable,1
+쌀,solidity,고형물,1,solid,1
+썰매,category_organization,형태,2,form,1
+썰매,category_organization,형태,2,form,1
+썰매,count_mass,셀 수 있다,3,countable,1
+썰매,count_mass,셀 수 있다,3,countable,1
+썰매,count_mass,셀 수 있다,3,countable,1
+썰매,solidity,고형물,1,solid,1
+쓰레기,category_organization,물질,2,substance,0.5
+쓰레기,category_organization,해당 사항 없음,2,not applicable,0.5
+쓰레기,count_mass,셀 수 없다,1,uncountable,1
+쓰레기,solidity,고형물,1,solid,1
+쓰레기통/휴지통,count_mass,셀 수 있다,1,countable,1
+쓰레기통/휴지통,solidity,고형물,2,solid,1
+쓰레기통/휴지통,solidity,고형물,2,solid,1
+아이스크림,count_mass,셀 수 없다,2,uncountable,0.5
+아이스크림,count_mass,셀 수 있다,2,countable,0.5
+아이스크림,solidity,고형물,4,solid,0.25
+아이스크림,solidity,비고형물,4,non-solid,0.75
+아이스크림,solidity,비고형물,4,non-solid,0.75
+아이스크림,solidity,비고형물,4,non-solid,0.75
+악어,solidity,고형물,1,solid,1
+안경,category_organization,물질,3,substance,0.3333333333333333
+안경,category_organization,형태,3,form,0.6666666666666666
+안경,category_organization,형태,3,form,0.6666666666666666
+안경,count_mass,셀 수 있다,2,countable,1
+안경,count_mass,셀 수 있다,2,countable,1
+안경,solidity,고형물,1,solid,1
+약,category_organization,물질,2,substance,1
+약,category_organization,물질,2,substance,1
+약,solidity,고형물,2,solid,0.5
+약,solidity,해당 사항 없음,2,not applicable,0.5
+양,count_mass,셀 수 있다,5,countable,1
+양,count_mass,셀 수 있다,5,countable,1
+양,count_mass,셀 수 있다,5,countable,1
+양,count_mass,셀 수 있다,5,countable,1
+양,count_mass,셀 수 있다,5,countable,1
+양,solidity,고형물,4,solid,1
+양,solidity,고형물,4,solid,1
+양,solidity,고형물,4,solid,1
+양,solidity,고형물,4,solid,1
+양말,count_mass,셀 수 있다,3,countable,1
+양말,count_mass,셀 수 있다,3,countable,1
+양말,count_mass,셀 수 있다,3,countable,1
+양말,solidity,고형물,1,solid,1
+어깨,category_organization,형태,6,form,1
+어깨,category_organization,형태,6,form,1
+어깨,category_organization,형태,6,form,1
+어깨,category_organization,형태,6,form,1
+어깨,category_organization,형태,6,form,1
+어깨,category_organization,형태,6,form,1
+어깨,count_mass,셀 수 있다,1,countable,1
+어깨,solidity,고형물,2,solid,1
+어깨,solidity,고형물,2,solid,1
+얼굴,category_organization,형태,1,form,1
+얼굴,count_mass,셀 수 있다,3,countable,1
+얼굴,count_mass,셀 수 있다,3,countable,1
+얼굴,count_mass,셀 수 있다,3,countable,1
+얼굴,solidity,고형물,4,solid,1
+얼굴,solidity,고형물,4,solid,1
+얼굴,solidity,고형물,4,solid,1
+얼굴,solidity,고형물,4,solid,1
+얼음,category_organization,물질,3,substance,1
+얼음,category_organization,물질,3,substance,1
+얼음,category_organization,물질,3,substance,1
+얼음,count_mass,셀 수 없다,3,uncountable,0.3333333333333333
+얼음,count_mass,잘 모르겠다/구분이 어렵다,3,not sure,0.6666666666666666
+얼음,count_mass,잘 모르겠다/구분이 어렵다,3,not sure,0.6666666666666666
+얼음,solidity,고형물,1,solid,1
+엉덩이,category_organization,물질,3,substance,0.3333333333333333
+엉덩이,category_organization,형태,3,form,0.6666666666666666
+엉덩이,category_organization,형태,3,form,0.6666666666666666
+엉덩이,count_mass,셀 수 있다,3,countable,0.6666666666666666
+엉덩이,count_mass,셀 수 있다,3,countable,0.6666666666666666
+엉덩이,count_mass,잘 모르겠다/구분이 어렵다,3,not sure,0.3333333333333333
+엉덩이,solidity,고형물,1,solid,1
+여우,category_organization,물질,3,substance,0.3333333333333333
+여우,category_organization,해당 사항 없음,3,not applicable,0.3333333333333333
+여우,category_organization,형태,3,form,0.3333333333333333
+여우,count_mass,셀 수 있다,2,countable,1
+여우,count_mass,셀 수 있다,2,countable,1
+여우,solidity,고형물,2,solid,1
+여우,solidity,고형물,2,solid,1
+연필,count_mass,셀 수 있다,1,countable,1
+연필,solidity,고형물,3,solid,1
+연필,solidity,고형물,3,solid,1
+연필,solidity,고형물,3,solid,1
+열쇠,category_organization,형태,2,form,1
+열쇠,category_organization,형태,2,form,1
+열쇠,solidity,고형물,2,solid,1
+열쇠,solidity,고형물,2,solid,1
+염소,category_organization,물질,1,substance,1
+염소,count_mass,셀 수 있다,1,countable,1
+염소,solidity,고형물,2,solid,0.5
+염소,solidity,비고형물,2,non-solid,0.5
+오렌지,category_organization,색상,2,color,0.5
+오렌지,category_organization,해당 사항 없음,2,not applicable,0.5
+오렌지,count_mass,셀 수 있다,3,countable,1
+오렌지,count_mass,셀 수 있다,3,countable,1
+오렌지,count_mass,셀 수 있다,3,countable,1
+오렌지,solidity,고형물,1,solid,1
+오리,category_organization,해당 사항 없음,2,not applicable,1
+오리,category_organization,해당 사항 없음,2,not applicable,1
+오리,solidity,고형물,2,solid,1
+오리,solidity,고형물,2,solid,1
+오토바이,category_organization,색상,3,color,0.3333333333333333
+오토바이,category_organization,형태,3,form,0.6666666666666666
+오토바이,category_organization,형태,3,form,0.6666666666666666
+오토바이,count_mass,셀 수 있다,1,countable,1
+오토바이,solidity,고형물,1,solid,1
+옥수수,count_mass,셀 수 있다,1,countable,1
+옥수수,solidity,고형물,2,solid,1
+옥수수,solidity,고형물,2,solid,1
+옷/꼬까,category_organization,색상,1,color,1
+옷/꼬까,count_mass,셀 수 있다,2,countable,1
+옷/꼬까,count_mass,셀 수 있다,2,countable,1
+옷/꼬까,solidity,고형물,2,solid,1
+옷/꼬까,solidity,고형물,2,solid,1
+옷걸이,count_mass,셀 수 있다,2,countable,1
+옷걸이,count_mass,셀 수 있다,2,countable,1
+옷걸이,solidity,고형물,1,solid,1
+옷장,category_organization,형태,2,form,1
+옷장,category_organization,형태,2,form,1
+옷장,count_mass,셀 수 있다,3,countable,1
+옷장,count_mass,셀 수 있다,3,countable,1
+옷장,count_mass,셀 수 있다,3,countable,1
+옷장,solidity,고형물,4,solid,1
+옷장,solidity,고형물,4,solid,1
+옷장,solidity,고형물,4,solid,1
+옷장,solidity,고형물,4,solid,1
+요구르트,category_organization,물질,1,substance,1
+요구르트,solidity,비고형물,2,non-solid,1
+요구르트,solidity,비고형물,2,non-solid,1
+우산,category_organization,해당 사항 없음,1,not applicable,1
+우산,count_mass,셀 수 있다,1,countable,1
+우산,solidity,고형물,2,solid,1
+우산,solidity,고형물,2,solid,1
+운동화,count_mass,셀 수 있다,2,countable,1
+운동화,count_mass,셀 수 있다,2,countable,1
+운동화,solidity,고형물,2,solid,1
+운동화,solidity,고형물,2,solid,1
+원숭이,category_organization,물질,4,substance,0.25
+원숭이,category_organization,해당 사항 없음,4,not applicable,0.25
+원숭이,category_organization,형태,4,form,0.5
+원숭이,category_organization,형태,4,form,0.5
+원숭이,count_mass,셀 수 있다,2,countable,1
+원숭이,count_mass,셀 수 있다,2,countable,1
+원숭이,solidity,고형물,3,solid,0.6666666666666666
+원숭이,solidity,고형물,3,solid,0.6666666666666666
+원숭이,solidity,해당 사항 없음,3,not applicable,0.3333333333333333
+유리,category_organization,물질,2,substance,1
+유리,category_organization,물질,2,substance,1
+유리,count_mass,셀 수 없다,1,uncountable,1
+유리,solidity,고형물,2,solid,1
+유리,solidity,고형물,2,solid,1
+유모차,category_organization,형태,4,form,1
+유모차,category_organization,형태,4,form,1
+유모차,category_organization,형태,4,form,1
+유모차,category_organization,형태,4,form,1
+유모차,solidity,고형물,3,solid,1
+유모차,solidity,고형물,3,solid,1
+유모차,solidity,고형물,3,solid,1
+음식,category_organization,물질,2,substance,1
+음식,category_organization,물질,2,substance,1
+음식,count_mass,잘 모르겠다/구분이 어렵다,1,not sure,1
+의자,category_organization,형태,1,form,1
+의자,count_mass,셀 수 있다,2,countable,1
+의자,count_mass,셀 수 있다,2,countable,1
+의자,solidity,고형물,3,solid,1
+의자,solidity,고형물,3,solid,1
+의자,solidity,고형물,3,solid,1
+이/이빨,category_organization,형태,2,form,1
+이/이빨,category_organization,형태,2,form,1
+이/이빨,count_mass,셀 수 있다,2,countable,1
+이/이빨,count_mass,셀 수 있다,2,countable,1
+이/이빨,solidity,고형물,2,solid,1
+이/이빨,solidity,고형물,2,solid,1
+이불,category_organization,물질,2,substance,0.5
+이불,category_organization,형태,2,form,0.5
+이불,count_mass,셀 수 있다,2,countable,1
+이불,count_mass,셀 수 있다,2,countable,1
+인형,category_organization,물질,1,substance,1
+인형,count_mass,셀 수 있다,1,countable,1
+인형,solidity,고형물,2,solid,1
+인형,solidity,고형물,2,solid,1
+입,category_organization,형태,3,form,1
+입,category_organization,형태,3,form,1
+입,category_organization,형태,3,form,1
+입,count_mass,셀 수 있다,1,countable,1
+입,solidity,비고형물,1,non-solid,1
+입술,category_organization,형태,1,form,1
+입술,count_mass,셀 수 있다,4,countable,1
+입술,count_mass,셀 수 있다,4,countable,1
+입술,count_mass,셀 수 있다,4,countable,1
+입술,count_mass,셀 수 있다,4,countable,1
+자전거,category_organization,물질,1,substance,1
+자전거,count_mass,셀 수 있다,2,countable,1
+자전거,count_mass,셀 수 있다,2,countable,1
+자전거,solidity,고형물,2,solid,1
+자전거,solidity,고형물,2,solid,1
+잠바,category_organization,형태,1,form,1
+잠바,count_mass,셀 수 있다,1,countable,1
+잠바,solidity,고형물,4,solid,0.75
+잠바,solidity,고형물,4,solid,0.75
+잠바,solidity,고형물,4,solid,0.75
+잠바,solidity,비고형물,4,non-solid,0.25
+잠옷,category_organization,물질,4,substance,1
+잠옷,category_organization,물질,4,substance,1
+잠옷,category_organization,물질,4,substance,1
+잠옷,category_organization,물질,4,substance,1
+잠옷,count_mass,셀 수 있다,1,countable,1
+잠옷,solidity,고형물,1,solid,1
+장갑,category_organization,형태,4,form,1
+장갑,category_organization,형태,4,form,1
+장갑,category_organization,형태,4,form,1
+장갑,category_organization,형태,4,form,1
+장갑,count_mass,셀 수 있다,1,countable,1
+장난감,category_organization,물질,3,substance,0.6666666666666666
+장난감,category_organization,물질,3,substance,0.6666666666666666
+장난감,category_organization,형태,3,form,0.3333333333333333
+장난감,count_mass,셀 수 있다,2,countable,1
+장난감,count_mass,셀 수 있다,2,countable,1
+장난감,solidity,고형물,1,solid,1
+쟁반,category_organization,형태,1,form,1
+쟁반,count_mass,셀 수 있다,1,countable,1
+쟁반,solidity,고형물,3,solid,1
+쟁반,solidity,고형물,3,solid,1
+쟁반,solidity,고형물,3,solid,1
+전자레인지,category_organization,형태,1,form,1
+전자레인지,count_mass,셀 수 없다,3,uncountable,0.3333333333333333
+전자레인지,count_mass,셀 수 있다,3,countable,0.6666666666666666
+전자레인지,count_mass,셀 수 있다,3,countable,0.6666666666666666
+전화,solidity,고형물,2,solid,0.5
+전화,solidity,해당 사항 없음,2,not applicable,0.5
+접시,category_organization,형태,1,form,1
+접시,solidity,고형물,3,solid,1
+접시,solidity,고형물,3,solid,1
+접시,solidity,고형물,3,solid,1
+젓가락,category_organization,형태,1,form,1
+젓가락,solidity,고형물,4,solid,1
+젓가락,solidity,고형물,4,solid,1
+젓가락,solidity,고형물,4,solid,1
+젓가락,solidity,고형물,4,solid,1
+종이,category_organization,색상,1,color,1
+종이,count_mass,셀 수 있다,1,countable,1
+종이,solidity,고형물,1,solid,1
+주머니,category_organization,형태,1,form,1
+주스,category_organization,물질,1,substance,1
+주스,count_mass,셀 수 없다,3,uncountable,1
+주스,count_mass,셀 수 없다,3,uncountable,1
+주스,count_mass,셀 수 없다,3,uncountable,1
+주스,solidity,비고형물,2,non-solid,1
+주스,solidity,비고형물,2,non-solid,1
+쥐,category_organization,형태,3,form,1
+쥐,category_organization,형태,3,form,1
+쥐,category_organization,형태,3,form,1
+쥐,count_mass,셀 수 있다,1,countable,1
+쥐,solidity,고형물,1,solid,1
+지갑,category_organization,물질,1,substance,1
+지갑,count_mass,셀 수 있다,1,countable,1
+지붕,category_organization,형태,1,form,1
+지붕,count_mass,셀 수 있다,2,countable,0.5
+지붕,count_mass,잘 모르겠다/구분이 어렵다,2,not sure,0.5
+참새,count_mass,셀 수 있다,6,countable,1
+참새,count_mass,셀 수 있다,6,countable,1
+참새,count_mass,셀 수 있다,6,countable,1
+참새,count_mass,셀 수 있다,6,countable,1
+참새,count_mass,셀 수 있다,6,countable,1
+참새,count_mass,셀 수 있다,6,countable,1
+참새,solidity,고형물,2,solid,1
+참새,solidity,고형물,2,solid,1
+창문,category_organization,형태,2,form,1
+창문,category_organization,형태,2,form,1
+창문,count_mass,셀 수 있다,3,countable,1
+창문,count_mass,셀 수 있다,3,countable,1
+창문,count_mass,셀 수 있다,3,countable,1
+창문,solidity,고형물,2,solid,1
+창문,solidity,고형물,2,solid,1
+책,category_organization,해당 사항 없음,1,not applicable,1
+책,solidity,고형물,2,solid,1
+책,solidity,고형물,2,solid,1
+청소기,category_organization,형태,1,form,1
+청소기,solidity,고형물,2,solid,1
+청소기,solidity,고형물,2,solid,1
+초콜렛,category_organization,물질,2,substance,1
+초콜렛,category_organization,물질,2,substance,1
+초콜렛,solidity,고형물,2,solid,1
+초콜렛,solidity,고형물,2,solid,1
+총,category_organization,형태,2,form,1
+총,category_organization,형태,2,form,1
+총,solidity,고형물,6,solid,1
+총,solidity,고형물,6,solid,1
+총,solidity,고형물,6,solid,1
+총,solidity,고형물,6,solid,1
+총,solidity,고형물,6,solid,1
+총,solidity,고형물,6,solid,1
+치마,category_organization,물질,2,substance,0.5
+치마,category_organization,형태,2,form,0.5
+치마,count_mass,셀 수 있다,1,countable,1
+치마,solidity,고형물,1,solid,1
+치약,count_mass,셀 수 있다,3,countable,1
+치약,count_mass,셀 수 있다,3,countable,1
+치약,count_mass,셀 수 있다,3,countable,1
+치약,solidity,비고형물,2,non-solid,1
+치약,solidity,비고형물,2,non-solid,1
+치즈,category_organization,물질,4,substance,1
+치즈,category_organization,물질,4,substance,1
+치즈,category_organization,물질,4,substance,1
+치즈,category_organization,물질,4,substance,1
+치즈,count_mass,셀 수 있다,2,countable,0.5
+치즈,count_mass,잘 모르겠다/구분이 어렵다,2,not sure,0.5
+치즈,solidity,고형물,3,solid,0.3333333333333333
+치즈,solidity,비고형물,3,non-solid,0.3333333333333333
+치즈,solidity,해당 사항 없음,3,not applicable,0.3333333333333333
+침대,category_organization,형태,3,form,1
+침대,category_organization,형태,3,form,1
+침대,category_organization,형태,3,form,1
+침대,count_mass,셀 수 있다,1,countable,1
+칫솔,category_organization,해당 사항 없음,2,not applicable,0.5
+칫솔,category_organization,형태,2,form,0.5
+칫솔,count_mass,셀 수 있다,2,countable,1
+칫솔,count_mass,셀 수 있다,2,countable,1
+칫솔,solidity,고형물,3,solid,1
+칫솔,solidity,고형물,3,solid,1
+칫솔,solidity,고형물,3,solid,1
+카메라,category_organization,해당 사항 없음,2,not applicable,0.5
+카메라,category_organization,형태,2,form,0.5
+카메라,count_mass,셀 수 없다,1,uncountable,1
+카메라,solidity,고형물,1,solid,1
+칼,category_organization,물질,2,substance,0.5
+칼,category_organization,형태,2,form,0.5
+칼,solidity,고형물,3,solid,1
+칼,solidity,고형물,3,solid,1
+칼,solidity,고형물,3,solid,1
+커피,category_organization,물질,3,substance,1
+커피,category_organization,물질,3,substance,1
+커피,category_organization,물질,3,substance,1
+커피,count_mass,셀 수 없다,1,uncountable,1
+커피,solidity,비고형물,2,non-solid,1
+커피,solidity,비고형물,2,non-solid,1
+컵,category_organization,형태,1,form,1
+컵,count_mass,셀 수 있다,4,countable,1
+컵,count_mass,셀 수 있다,4,countable,1
+컵,count_mass,셀 수 있다,4,countable,1
+컵,count_mass,셀 수 있다,4,countable,1
+컵,solidity,고형물,5,solid,1
+컵,solidity,고형물,5,solid,1
+컵,solidity,고형물,5,solid,1
+컵,solidity,고형물,5,solid,1
+컵,solidity,고형물,5,solid,1
+케이크,category_organization,물질,2,substance,1
+케이크,category_organization,물질,2,substance,1
+케이크,count_mass,셀 수 있다,5,countable,1
+케이크,count_mass,셀 수 있다,5,countable,1
+케이크,count_mass,셀 수 있다,5,countable,1
+케이크,count_mass,셀 수 있다,5,countable,1
+케이크,count_mass,셀 수 있다,5,countable,1
+코끼리,category_organization,색상,3,color,0.3333333333333333
+코끼리,category_organization,해당 사항 없음,3,not applicable,0.3333333333333333
+코끼리,category_organization,형태,3,form,0.3333333333333333
+코끼리,count_mass,셀 수 있다,5,countable,1
+코끼리,count_mass,셀 수 있다,5,countable,1
+코끼리,count_mass,셀 수 있다,5,countable,1
+코끼리,count_mass,셀 수 있다,5,countable,1
+코끼리,count_mass,셀 수 있다,5,countable,1
+코끼리,solidity,고형물,1,solid,1
+코트/외투,category_organization,형태,1,form,1
+코트/외투,count_mass,셀 수 있다,2,countable,1
+코트/외투,count_mass,셀 수 있다,2,countable,1
+콜라,count_mass,셀 수 없다,3,uncountable,0.6666666666666666
+콜라,count_mass,셀 수 없다,3,uncountable,0.6666666666666666
+콜라,count_mass,셀 수 있다,3,countable,0.3333333333333333
+콜라,solidity,비고형물,2,non-solid,1
+콜라,solidity,비고형물,2,non-solid,1
+콩,category_organization,물질,1,substance,1
+콩,count_mass,셀 수 있다,2,countable,1
+콩,count_mass,셀 수 있다,2,countable,1
+콩,solidity,해당 사항 없음,1,not applicable,1
+크레용/크레파스,count_mass,셀 수 있다,3,countable,1
+크레용/크레파스,count_mass,셀 수 있다,3,countable,1
+크레용/크레파스,count_mass,셀 수 있다,3,countable,1
+크레용/크레파스,solidity,고형물,1,solid,1
+택시,category_organization,색상,2,color,0.5
+택시,category_organization,해당 사항 없음,2,not applicable,0.5
+택시,count_mass,셀 수 있다,3,countable,1
+택시,count_mass,셀 수 있다,3,countable,1
+택시,count_mass,셀 수 있다,3,countable,1
+택시,solidity,고형물,2,solid,1
+택시,solidity,고형물,2,solid,1
+턱,category_organization,형태,2,form,1
+턱,category_organization,형태,2,form,1
+턱,count_mass,셀 수 있다,2,countable,1
+턱,count_mass,셀 수 있다,2,countable,1
+턱,solidity,고형물,2,solid,1
+턱,solidity,고형물,2,solid,1
+텔레비전,count_mass,셀 수 있다,3,countable,1
+텔레비전,count_mass,셀 수 있다,3,countable,1
+텔레비전,count_mass,셀 수 있다,3,countable,1
+텔레비전,solidity,고형물,3,solid,1
+텔레비전,solidity,고형물,3,solid,1
+텔레비전,solidity,고형물,3,solid,1
+토끼,category_organization,해당 사항 없음,2,not applicable,0.5
+토끼,category_organization,형태,2,form,0.5
+토끼,count_mass,셀 수 있다,3,countable,1
+토끼,count_mass,셀 수 있다,3,countable,1
+토끼,count_mass,셀 수 있다,3,countable,1
+토끼,solidity,고형물,1,solid,1
+토마토,category_organization,물질,2,substance,1
+토마토,category_organization,물질,2,substance,1
+토마토,count_mass,셀 수 있다,1,countable,1
+토마토,solidity,고형물,1,solid,1
+트럭,category_organization,물질,1,substance,1
+트럭,count_mass,셀 수 있다,1,countable,1
+트럭,solidity,고형물,2,solid,1
+트럭,solidity,고형물,2,solid,1
+팔,category_organization,물질,2,substance,0.5
+팔,category_organization,형태,2,form,0.5
+팔,count_mass,셀 수 있다,2,countable,1
+팔,count_mass,셀 수 있다,2,countable,1
+팔,solidity,고형물,1,solid,1
+팬티,category_organization,색상,1,color,1
+팬티,count_mass,셀 수 있다,2,countable,1
+팬티,count_mass,셀 수 있다,2,countable,1
+팬티,solidity,고형물,3,solid,0.6666666666666666
+팬티,solidity,고형물,3,solid,0.6666666666666666
+팬티,solidity,비고형물,3,non-solid,0.3333333333333333
+펭귄,category_organization,형태,3,form,1
+펭귄,category_organization,형태,3,form,1
+펭귄,category_organization,형태,3,form,1
+펭귄,count_mass,셀 수 있다,3,countable,1
+펭귄,count_mass,셀 수 있다,3,countable,1
+펭귄,count_mass,셀 수 있다,3,countable,1
+펭귄,solidity,고형물,2,solid,1
+펭귄,solidity,고형물,2,solid,1
+포도,category_organization,물질,1,substance,1
+포도,count_mass,셀 수 있다,2,countable,1
+포도,count_mass,셀 수 있다,2,countable,1
+포도,solidity,고형물,5,solid,0.8
+포도,solidity,고형물,5,solid,0.8
+포도,solidity,고형물,5,solid,0.8
+포도,solidity,고형물,5,solid,0.8
+포도,solidity,비고형물,5,non-solid,0.2
+포크,category_organization,형태,2,form,1
+포크,category_organization,형태,2,form,1
+포크,count_mass,셀 수 있다,1,countable,1
+풀,category_organization,물질,8,substance,0.75
+풀,category_organization,물질,8,substance,0.75
+풀,category_organization,물질,8,substance,0.75
+풀,category_organization,물질,8,substance,0.75
+풀,category_organization,물질,8,substance,0.75
+풀,category_organization,물질,8,substance,0.75
+풀,category_organization,색상,8,color,0.25
+풀,category_organization,색상,8,color,0.25
+풀,count_mass,셀 수 없다,8,uncountable,1
+풀,count_mass,셀 수 없다,8,uncountable,1
+풀,count_mass,셀 수 없다,8,uncountable,1
+풀,count_mass,셀 수 없다,8,uncountable,1
+풀,count_mass,셀 수 없다,8,uncountable,1
+풀,count_mass,셀 수 없다,8,uncountable,1
+풀,count_mass,셀 수 없다,8,uncountable,1
+풀,count_mass,셀 수 없다,8,uncountable,1
+풀,solidity,고형물,4,solid,1
+풀,solidity,고형물,4,solid,1
+풀,solidity,고형물,4,solid,1
+풀,solidity,고형물,4,solid,1
+풍선,category_organization,물질,5,substance,0.4
+풍선,category_organization,물질,5,substance,0.4
+풍선,category_organization,색상,5,color,0.2
+풍선,category_organization,형태,5,form,0.4
+풍선,category_organization,형태,5,form,0.4
+풍선,count_mass,셀 수 있다,1,countable,1
+풍선,solidity,고형물,3,solid,0.6666666666666666
+풍선,solidity,고형물,3,solid,0.6666666666666666
+풍선,solidity,비고형물,3,non-solid,0.3333333333333333
+피,category_organization,물질,1,substance,1
+피,count_mass,셀 수 없다,2,uncountable,1
+피,count_mass,셀 수 없다,2,uncountable,1
+피,solidity,비고형물,2,non-solid,1
+피,solidity,비고형물,2,non-solid,1
+피아노,category_organization,형태,4,form,1
+피아노,category_organization,형태,4,form,1
+피아노,category_organization,형태,4,form,1
+피아노,category_organization,형태,4,form,1
+피아노,count_mass,셀 수 있다,4,countable,1
+피아노,count_mass,셀 수 있다,4,countable,1
+피아노,count_mass,셀 수 있다,4,countable,1
+피아노,count_mass,셀 수 있다,4,countable,1
+피아노,solidity,고형물,2,solid,1
+피아노,solidity,고형물,2,solid,1
+피자,category_organization,물질,2,substance,1
+피자,category_organization,물질,2,substance,1
+피자,count_mass,셀 수 있다,2,countable,1
+피자,count_mass,셀 수 있다,2,countable,1
+피자,solidity,고형물,4,solid,0.75
+피자,solidity,고형물,4,solid,0.75
+피자,solidity,고형물,4,solid,0.75
+피자,solidity,비고형물,4,non-solid,0.25
+하늘,category_organization,해당 사항 없음,2,not applicable,1
+하늘,category_organization,해당 사항 없음,2,not applicable,1
+하늘,count_mass,셀 수 없다,1,uncountable,1
+하늘,solidity,비고형물,2,non-solid,0.5
+하늘,solidity,해당 사항 없음,2,not applicable,0.5
+하마,category_organization,형태,2,form,1
+하마,category_organization,형태,2,form,1
+하마,solidity,고형물,5,solid,0.6
+하마,solidity,고형물,5,solid,0.6
+하마,solidity,고형물,5,solid,0.6
+하마,solidity,비고형물,5,non-solid,0.4
+하마,solidity,비고형물,5,non-solid,0.4
+핫도그,category_organization,형태,1,form,1
+핫도그,count_mass,셀 수 있다,5,countable,1
+핫도그,count_mass,셀 수 있다,5,countable,1
+핫도그,count_mass,셀 수 있다,5,countable,1
+핫도그,count_mass,셀 수 있다,5,countable,1
+핫도그,count_mass,셀 수 있다,5,countable,1
+해/햇빛,category_organization,형태,1,form,1
+해/햇빛,count_mass,셀 수 없다,1,uncountable,1
+해/햇빛,solidity,비고형물,2,non-solid,0.5
+해/햇빛,solidity,해당 사항 없음,2,not applicable,0.5
+햄버거,category_organization,물질,5,substance,0.8
+햄버거,category_organization,물질,5,substance,0.8
+햄버거,category_organization,물질,5,substance,0.8
+햄버거,category_organization,물질,5,substance,0.8
+햄버거,category_organization,형태,5,form,0.2
+햄버거,count_mass,셀 수 있다,1,countable,1
+햄버거,solidity,고형물,2,solid,0.5
+햄버거,solidity,비고형물,2,non-solid,0.5
+허리,category_organization,해당 사항 없음,2,not applicable,0.5
+허리,category_organization,형태,2,form,0.5
+허리,count_mass,셀 수 없다,2,uncountable,0.5
+허리,count_mass,셀 수 있다,2,countable,0.5
+허리,solidity,고형물,3,solid,1
+허리,solidity,고형물,3,solid,1
+허리,solidity,고형물,3,solid,1
+허리띠,category_organization,형태,1,form,1
+허리띠,solidity,비고형물,1,non-solid,1
+헬리콥터,category_organization,물질,3,substance,0.3333333333333333
+헬리콥터,category_organization,형태,3,form,0.6666666666666666
+헬리콥터,category_organization,형태,3,form,0.6666666666666666
+헬리콥터,count_mass,셀 수 있다,2,countable,1
+헬리콥터,count_mass,셀 수 있다,2,countable,1
+헬리콥터,solidity,고형물,4,solid,1
+헬리콥터,solidity,고형물,4,solid,1
+헬리콥터,solidity,고형물,4,solid,1
+헬리콥터,solidity,고형물,4,solid,1
+혀,category_organization,형태,3,form,1
+혀,category_organization,형태,3,form,1
+혀,category_organization,형태,3,form,1
+혀,solidity,고형물,1,solid,1
+호떡,category_organization,물질,1,substance,1
+호떡,count_mass,셀 수 있다,2,countable,1
+호떡,count_mass,셀 수 있다,2,countable,1
+호떡,solidity,고형물,1,solid,1
+호랑이,category_organization,물질,3,substance,0.3333333333333333
+호랑이,category_organization,해당 사항 없음,3,not applicable,0.6666666666666666
+호랑이,category_organization,해당 사항 없음,3,not applicable,0.6666666666666666
+호박,category_organization,물질,2,substance,1
+호박,category_organization,물질,2,substance,1
+화장실,count_mass,셀 수 없다,3,uncountable,0.3333333333333333
+화장실,count_mass,셀 수 있다,3,countable,0.6666666666666666
+화장실,count_mass,셀 수 있다,3,countable,0.6666666666666666
+화장실,solidity,고형물,4,solid,0.5
+화장실,solidity,고형물,4,solid,0.5
+화장실,solidity,해당 사항 없음,4,not applicable,0.5
+화장실,solidity,해당 사항 없음,4,not applicable,0.5
+휴지,category_organization,물질,3,substance,1
+휴지,category_organization,물질,3,substance,1
+휴지,category_organization,물질,3,substance,1
+휴지,count_mass,셀 수 있다,3,countable,0.6666666666666666
+휴지,count_mass,셀 수 있다,3,countable,0.6666666666666666
+휴지,count_mass,잘 모르겠다/구분이 어렵다,3,not sure,0.3333333333333333
+흙,category_organization,물질,3,substance,1
+흙,category_organization,물질,3,substance,1
+흙,category_organization,물질,3,substance,1
+흙,count_mass,셀 수 없다,1,uncountable,1
+흙,solidity,고형물,2,solid,0.5
+흙,solidity,비고형물,2,non-solid,0.5

@@ -74,3 +74,47 @@ find_shared_words <- function(df1, df2, name1, name2, prop1, prop2) {
     )
 }
 
+
+canonical_responses <- c(
+  "shape", "material", "color",
+  "count", "mass",
+  "solid", "non-solid",
+  "none", "unknown",
+  "multiple"
+)
+
+response_map <- tribble(
+  ~block,                  ~raw_response,        ~response_norm,
+  
+  # -------------------------
+  # category_organization
+  # -------------------------
+  "category_organization", "shape",              "shape",
+  "category_organization", "color",              "color",
+  "category_organization", "substance",           "material",
+  "category_organization", "material",            "material",
+  "category_organization", "multiple",            "multiple",
+  "category_organization", "none of these",       "none",
+  "category_organization", "not applicable",      "none",
+  
+  # -------------------------
+  # solidity
+  # -------------------------
+  "solidity",              "solid",              "solid",
+  "solidity",              "non-solid",          "non-solid",
+  "solidity",              "unknown",            "unknown",
+  "solidity",              "unclear/unknown",    "unknown",
+  "solidity",              "not applicable",     "unknown",
+  
+  # -------------------------
+  # count_mass
+  # -------------------------
+  "count_mass",            "countable",          "count",
+  "count_mass",            "count",              "count",
+  "count_mass",            "count noun",         "count",
+  "count_mass",            "uncountable",        "mass",
+  "count_mass",            "mass",               "mass",
+  "count_mass",            "mass noun",          "mass",
+  "count_mass",            "not sure",           "unknown",
+  "count_mass",            "unknown",            "unknown"
+)

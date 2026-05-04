@@ -1,0 +1,908 @@
+uni_lemma,response_norm,block,eng1,eng2,kor1,kor2
+airplane,shape,category_organization,0.3,0.5,0.3333333333333333,NA
+airplane,count,count_mass,0.9,NA,1,NA
+airplane,solid,solidity,1,NA,0.75,NA
+animal,shape,category_organization,0.1111111111111111,0.16666666666666666,0.5,0.5862068965517241
+animal,count,count_mass,0.7,NA,0.875,0.6756756756756757
+animal,solid,solidity,0.75,NA,0.6666666666666666,0.5625
+ankle,solid,solidity,1,NA,1,0.6551724137931034
+ankle,shape,category_organization,0.2857142857142857,0.5,0.625,0.8620689655172413
+ankle,count,count_mass,1,NA,1,0.8055555555555556
+ant,shape,category_organization,0.25,0.14285714285714285,0.25,0.6206896551724138
+ant,count,count_mass,0.5,NA,0.7142857142857143,0.7027027027027027
+ant,solid,solidity,0.42857142857142855,NA,0.75,0.6206896551724138
+apple,solid,solidity,1,NA,1,0.8275862068965517
+apple,shape,category_organization,0.75,0.09090909090909093,0.1111111111111111,0.4482758620689655
+apple,count,count_mass,1,NA,1,0.90625
+arm,shape,category_organization,0.6,0.5555555555555556,0.4615384615384616,0.8620689655172413
+arm,count,count_mass,0.8888888888888888,NA,1,0.8285714285714286
+arm,solid,solidity,0.8333333333333334,NA,0.8333333333333334,0.6896551724137931
+back (body part),count,count_mass,0.625,NA,0.625,NA
+back (body part),shape,category_organization,0.2727272727272727,0.5555555555555556,0.2,NA
+back (body part),solid,solidity,0.6363636363636364,NA,0.8,NA
+bag,solid,solidity,0.7777777777777778,NA,1,0.9655172413793104
+bag,shape,category_organization,0.4444444444444444,0.4444444444444444,1,0.6551724137931034
+bag,count,count_mass,0.875,NA,1,0.9666666666666668
+balloon,count,count_mass,0.8,NA,1,0.7941176470588235
+balloon,shape,category_organization,0.6153846153846154,0.25,0.3333333333333333,0.3793103448275862
+balloon,solid,solidity,0.16666666666666666,NA,0.8571428571428571,0.7
+banana,shape,category_organization,0.5,0.4117647058823529,0.75,0.4827586206896552
+banana,solid,solidity,0.8,NA,1,0.7931034482758621
+banana,count,count_mass,0.8571428571428571,NA,1,0.90625
+bathroom,shape,category_organization,0.2,NA,0.2857142857142857,0.6896551724137931
+bathroom,count,count_mass,0.7142857142857143,NA,0.8333333333333334,0.7567567567567568
+bathroom,solid,solidity,0.7142857142857143,NA,0.6666666666666666,0.6
+bathtub,shape,category_organization,0.3076923076923077,0.3,0.42857142857142855,0.6206896551724138
+bathtub,count,count_mass,0.6,NA,0.8571428571428571,0.6842105263157895
+bathtub,solid,solidity,1,NA,0.6666666666666666,0.6333333333333333
+beans,solid,solidity,0.5,NA,0.7142857142857143,0.8333333333333334
+beans,shape,category_organization,0.16666666666666666,0.2222222222222222,NA,0.5517241379310345
+beans,count,count_mass,0.5555555555555556,NA,1,0.8064516129032258
+bear,shape,category_organization,0.125,0.1111111111111111,0.3333333333333333,0.6551724137931034
+bear,count,count_mass,0.8333333333333334,NA,0.6666666666666666,0.8055555555555556
+bear,solid,solidity,1,NA,0.8,0.6551724137931034
+bed,shape,category_organization,0.75,0.5,0.7142857142857143,0.6896551724137931
+bed,count,count_mass,1,NA,1,0.90625
+bed,solid,solidity,1,NA,1,0.896551724137931
+bee,shape,category_organization,0.25,0.08333333333333333,0.6666666666666666,0.6896551724137931
+bee,count,count_mass,1,NA,1,0.6944444444444444
+bee,solid,solidity,0.8571428571428571,NA,1,0.6551724137931034
+belly button,count,count_mass,0.8888888888888888,NA,1,0.7631578947368421
+belly button,solid,solidity,0.4444444444444444,NA,0.7142857142857143,0.5862068965517241
+belly button,shape,category_organization,0.5,0.6923076923076923,0.6666666666666666,0.7586206896551724
+belt,count,count_mass,1,NA,1,0.84375
+belt,shape,category_organization,0.42857142857142855,0.1111111111111111,0.6666666666666666,0.6206896551724138
+belt,solid,solidity,1,NA,0.8,0.896551724137931
+bicycle,shape,category_organization,0.75,0.6111111111111112,0.5,0.6428571428571429
+bicycle,count,count_mass,0.8888888888888888,NA,1,0.9333333333333332
+bicycle,solid,solidity,1,NA,1,0.9333333333333332
+bird,solid,solidity,1,NA,1,0.6129032258064516
+bird,shape,category_organization,0.125,0.38461538461538464,1,0.7586206896551724
+bird,count,count_mass,0.9,NA,1,0.75
+blanket,shape,category_organization,0.25,0.1111111111111111,0.7142857142857143,0.5517241379310345
+blanket,solid,solidity,0.8333333333333334,NA,0.8571428571428571,0.7741935483870968
+blanket,count,count_mass,0.875,NA,1,0.7941176470588235
+blocks,shape,category_organization,0.9,0.8888888888888888,1,NA
+blocks,count,count_mass,0.75,NA,1,NA
+blocks,solid,solidity,1,NA,1,NA
+blood,count,count_mass,0.25,NA,NA,0.25
+boat,shape,category_organization,0.375,0.2857142857142857,0.5,0.6428571428571429
+boat,count,count_mass,1,NA,1,0.9333333333333332
+boat,solid,solidity,1,NA,1,0.9333333333333332
+body,solid,solidity,0.8571428571428571,NA,0.8333333333333334,0.5555555555555556
+body,count,count_mass,0.625,NA,0.9,0.6
+body,shape,category_organization,0.3333333333333333,0.8888888888888888,NA,0.8620689655172413
+book,shape,category_organization,0.375,0.21428571428571427,0.4,0.4827586206896552
+book,count,count_mass,0.8,NA,1,0.9333333333333332
+book,solid,solidity,0.8333333333333334,NA,0.8,0.9333333333333332
+bottle,shape,category_organization,0.6666666666666666,0.5833333333333334,0.8333333333333334,0.7241379310344828
+bottle,count,count_mass,0.8333333333333334,NA,0.875,0.9666666666666668
+bottle,solid,solidity,0.8888888888888888,NA,1,0.9655172413793104
+boulder,solid,solidity,1,NA,1,NA
+boulder,shape,category_organization,0.5454545454545454,0.5,0.18181818181818185,NA
+boulder,count,count_mass,0.75,NA,0.6666666666666666,NA
+bowl,shape,category_organization,0.7777777777777778,1,0.42857142857142855,NA
+bowl,count,count_mass,0.8333333333333334,NA,1,NA
+bowl,solid,solidity,1,NA,1,NA
+box,count,count_mass,1,NA,1,0.9
+box,shape,category_organization,0.7142857142857143,0.9090909090909092,0.6666666666666666,0.7241379310344828
+box,solid,solidity,0.8571428571428571,NA,0.75,0.9655172413793104
+broom,shape,category_organization,0.625,0.625,1,NA
+broom,count,count_mass,0.6666666666666666,NA,1,NA
+broom,solid,solidity,1,NA,1,NA
+bubbles,shape,category_organization,0.5454545454545454,0.3333333333333333,NA,NA
+bubbles,count,count_mass,0.4444444444444444,NA,0.6666666666666666,NA
+bug,shape,category_organization,0.18181818181818185,NA,0.3333333333333333,0.6206896551724138
+bug,count,count_mass,0.7142857142857143,NA,0.8,0.6666666666666666
+bug,solid,solidity,0.75,NA,0.6666666666666666,0.6333333333333333
+bunny,solid,solidity,0.8571428571428571,NA,1,NA
+bunny,shape,category_organization,0.3,0.2,0.3,NA
+bunny,count,count_mass,0.8571428571428571,NA,1,NA
+bus,shape,category_organization,0.5,0.7,0.875,0.5714285714285714
+bus,count,count_mass,1,NA,1,0.9333333333333332
+bus,solid,solidity,0.875,NA,1,0.9333333333333332
+butt,count,count_mass,0.5454545454545454,NA,0.7777777777777778,0.6486486486486487
+butt,shape,category_organization,0.25,0.631578947368421,0.5,0.8275862068965517
+butt,solid,solidity,0.5,NA,0.7142857142857143,0.5454545454545454
+butterfly,solid,solidity,0.7142857142857143,NA,1,0.6551724137931034
+butterfly,shape,category_organization,0.375,0.2,0.375,0.6896551724137931
+butterfly,count,count_mass,0.6666666666666666,NA,1,0.7222222222222222
+button,solid,solidity,1,NA,1,0.9333333333333332
+button,shape,category_organization,0.375,0.5,0.5,0.6551724137931034
+button,count,count_mass,0.8333333333333334,NA,1,0.8666666666666667
+cabbage,shape,category_organization,0.3636363636363637,0.2857142857142857,NA,NA
+cabbage,count,count_mass,0.6666666666666666,NA,1,NA
+cabbage,solid,solidity,1,NA,1,NA
+cake,shape,category_organization,0.1111111111111111,0.2222222222222222,0.4166666666666667,0.4827586206896552
+cake,solid,solidity,0.6666666666666666,NA,0.75,0.7
+cake,count,count_mass,0.8333333333333334,NA,1,0.8125
+calf,shape,category_organization,0.13333333333333333,NA,0.4,0.7586206896551724
+calf,count,count_mass,0.75,NA,1,0.8055555555555556
+calf,solid,solidity,0.8571428571428571,NA,0.8,0.6551724137931034
+camera,shape,category_organization,0.5,0.1111111111111111,0.4,0.7241379310344828
+camera,count,count_mass,0.7142857142857143,NA,0.8,0.9333333333333332
+camera,solid,solidity,1,NA,1,0.9333333333333332
+candy,solid,solidity,0.8181818181818182,NA,0.875,0.8
+candy,count,count_mass,0.5,NA,1,0.875
+candy,shape,category_organization,0.1,NA,NA,0.3793103448275862
+carrot,count,count_mass,1,NA,1,0.90625
+carrot,shape,category_organization,0.3333333333333333,0.3,0.2222222222222222,0.4482758620689655
+carrot,solid,solidity,1,NA,1,0.8275862068965517
+cat,shape,category_organization,0.3,NA,0.3333333333333333,0.7241379310344828
+cat,count,count_mass,0.875,NA,0.8333333333333334,0.8055555555555556
+cat,solid,solidity,0.9,NA,0.875,0.6206896551724138
+chair,shape,category_organization,0.7,0.7,0.8571428571428571,0.6551724137931034
+chair,solid,solidity,1,NA,1,0.9655172413793104
+chair,count,count_mass,0.8333333333333334,NA,1,0.9666666666666668
+cheek,shape,category_organization,0.125,0.25,0.4,0.7037037037037037
+cheek,count,count_mass,0.25,NA,1,0.75
+cheek,solid,solidity,0.75,NA,0.5,0.6551724137931034
+cheese,solid,solidity,0.8333333333333334,NA,0.6,0.5588235294117647
+cheese,count,count_mass,0.375,NA,0.6363636363636364,0.6363636363636364
+chick,shape,category_organization,0.2222222222222222,0.1111111111111111,NA,0.6206896551724138
+chick,count,count_mass,0.5,NA,1,0.8055555555555556
+chick,solid,solidity,0.6666666666666666,NA,1,0.6551724137931034
+chicken (animal),shape,category_organization,0.25,0.1111111111111111,0.2857142857142857,NA
+chicken (animal),solid,solidity,1,NA,1,NA
+chicken (animal),count,count_mass,0.7777777777777778,NA,1,NA
+chicken (food),solid,solidity,0.8888888888888888,NA,0.8,NA
+chicken (food),count,count_mass,0.5,NA,0.5,NA
+chin,shape,category_organization,0.5,0.6,0.5,0.8620689655172413
+chin,count,count_mass,0.875,NA,0.5714285714285714,0.8
+chin,solid,solidity,1,NA,1,0.6666666666666666
+chocolate,count,count_mass,0.7142857142857143,NA,0.75,0.7575757575757576
+chocolate,solid,solidity,0.8333333333333334,NA,1,0.6774193548387096
+chopstick,solid,solidity,1,NA,1,NA
+chopstick,shape,category_organization,0.5,0.7777777777777778,0.8,NA
+chopstick,count,count_mass,0.625,NA,1,NA
+clock,count,count_mass,0.8888888888888888,NA,1,NA
+clock,shape,category_organization,0.3,0.4,0.75,NA
+clock,solid,solidity,1,NA,1,NA
+closet,shape,category_organization,0.26666666666666666,0.4545454545454546,0.9090909090909092,0.7241379310344828
+closet,count,count_mass,1,NA,1,0.9666666666666668
+closet,solid,solidity,1,NA,1,0.9655172413793104
+cloud,count,count_mass,0.25,NA,0.4,0.20833333333333337
+coat,solid,solidity,0.7142857142857143,NA,0.3333333333333333,0.8620689655172413
+coat,shape,category_organization,0.2307692307692308,0.5,0.75,0.5862068965517241
+coat,count,count_mass,1,NA,1,0.90625
+coffee,solid,solidity,0.16666666666666666,NA,NA,0.11428571428571428
+coffee,count,count_mass,0.16666666666666666,NA,0.3333333333333333,0.5151515151515151
+coke,count,count_mass,0.25,NA,0.5,NA
+comb (object),shape,category_organization,0.7,0.625,0.5714285714285714,NA
+comb (object),count,count_mass,1,NA,1,NA
+comb (object),solid,solidity,1,NA,1,NA
+corn,count,count_mass,0.8571428571428571,NA,1,0.90625
+corn,solid,solidity,1,NA,1,0.7931034482758621
+couch,shape,category_organization,0.625,0.6666666666666666,0.875,NA
+couch,count,count_mass,1,NA,0.9,NA
+couch,solid,solidity,1,NA,1,NA
+cow,shape,category_organization,0.3,0.38461538461538464,0.2,0.6896551724137931
+cow,count,count_mass,1,NA,1,0.8055555555555556
+cow,solid,solidity,1,NA,0.8,0.6551724137931034
+crayon,solid,solidity,1,NA,0.9285714285714286,0.9
+crayon,shape,category_organization,0.2307692307692308,NA,0.3333333333333333,0.3103448275862069
+crayon,count,count_mass,0.9090909090909092,NA,1,0.9
+crocodile,shape,category_organization,0.38461538461538464,0.2222222222222222,0.5,0.6896551724137931
+crocodile,count,count_mass,0.8,NA,1,0.7777777777777778
+crocodile,solid,solidity,1,NA,1,0.6333333333333333
+cup,shape,category_organization,0.7,0.7777777777777778,0.5714285714285714,0.6896551724137931
+cup,count,count_mass,0.8571428571428571,NA,1,0.9666666666666668
+cup,solid,solidity,1,NA,1,0.9655172413793104
+deer,solid,solidity,0.8571428571428571,NA,1,0.6551724137931034
+deer,shape,category_organization,0.375,0.15384615384615383,0.4545454545454546,0.6896551724137931
+deer,count,count_mass,0.6666666666666666,NA,1,0.8055555555555556
+diaper,shape,category_organization,0.2222222222222222,0.21428571428571427,0.25,0.6206896551724138
+diaper,count,count_mass,1,NA,1,0.7575757575757576
+diaper,solid,solidity,0.8,NA,1,0.7931034482758621
+dinosaur,solid,solidity,0.8333333333333334,NA,0.9,0.59375
+dinosaur,shape,category_organization,0.3333333333333333,NA,0.25,0.6896551724137931
+dinosaur,count,count_mass,0.8333333333333334,NA,1,0.6666666666666666
+dog,count,count_mass,1,NA,0.9,0.8055555555555556
+dog,solid,solidity,0.8571428571428571,NA,0.875,0.6551724137931034
+doll,shape,category_organization,0.5555555555555556,0.4545454545454546,0.75,0.5172413793103449
+doll,count,count_mass,1,NA,1,0.9333333333333332
+doll,solid,solidity,0.9,NA,1,0.9333333333333332
+donut,solid,solidity,1,NA,0.8333333333333334,0.7586206896551724
+donut,shape,category_organization,0.6666666666666666,0.625,0.6666666666666666,0.5862068965517241
+donut,count,count_mass,1,NA,1,0.8787878787878788
+door,shape,category_organization,0.6,0.6363636363636364,1,0.5862068965517241
+door,count,count_mass,0.75,NA,1,0.9333333333333332
+door,solid,solidity,1,NA,1,0.9333333333333332
+drawer,shape,category_organization,0.6,0.5,0.75,0.7241379310344828
+drawer,count,count_mass,1,NA,0.875,0.8666666666666667
+drawer,solid,solidity,1,NA,1,0.9
+dress (object),shape,category_organization,0.21428571428571427,0.1,0.6666666666666666,NA
+dress (object),solid,solidity,0.8571428571428571,NA,0.7142857142857143,NA
+dress (object),count,count_mass,0.9,NA,1,NA
+dress shoe,shape,category_organization,0.25,NA,0.5454545454545454,NA
+dress shoe,count,count_mass,0.8571428571428571,NA,1,NA
+dress shoe,solid,solidity,1,NA,0.8333333333333334,NA
+dried seaweed,solid,solidity,0.5,NA,1,NA
+dried seaweed,count,count_mass,0.375,NA,0.8571428571428571,NA
+dried seaweed,shape,category_organization,0.07692307692307693,NA,NA,NA
+duck,solid,solidity,1,NA,1,0.6551724137931034
+duck,shape,category_organization,0.3,0.25,NA,0.6206896551724138
+duck,count,count_mass,1,NA,1,0.8055555555555556
+ear,shape,category_organization,0.4444444444444444,0.35294117647058826,0.2,0.8275862068965517
+ear,count,count_mass,0.6666666666666666,NA,1,0.8235294117647058
+ear,solid,solidity,1,NA,0.8888888888888888,0.7
+egg,shape,category_organization,0.6666666666666666,0.47368421052631576,NA,0.4827586206896552
+egg,count,count_mass,0.8571428571428571,NA,1,0.8285714285714286
+egg,solid,solidity,0.625,NA,0.6666666666666666,0.6551724137931034
+elephant,shape,category_organization,0.25,NA,0.25,0.7241379310344828
+elephant,count,count_mass,0.9,NA,1,0.8055555555555556
+elephant,solid,solidity,1,NA,0.9090909090909092,0.6551724137931034
+eye,shape,category_organization,0.6666666666666666,0.625,0.2222222222222222,0.6896551724137931
+eye,count,count_mass,0.7777777777777778,NA,0.5,0.7567567567567568
+eye,solid,solidity,0.42857142857142855,NA,0.2,0.6
+face,solid,solidity,0.6,NA,0.8571428571428571,0.6333333333333333
+face,shape,category_organization,0.5,0.5,0.8,0.7931034482758621
+face,count,count_mass,0.625,NA,1,0.7777777777777778
+finger,shape,category_organization,0.3404255319148936,0.38461538461538464,0.8333333333333334,0.7931034482758621
+finger,count,count_mass,1,NA,1,0.8285714285714286
+finger,solid,solidity,0.7142857142857143,NA,1,0.6896551724137931
+fingernail,solid,solidity,0.8571428571428571,NA,1,NA
+fingernail,shape,category_organization,0.375,0.16666666666666666,0.6666666666666666,NA
+fingernail,count,count_mass,1,NA,0.6,NA
+fire,solid,solidity,0.25,NA,0.125,NA
+fire,count,count_mass,0.3333333333333333,NA,NA,0.16129032258064516
+firetruck,solid,solidity,1,NA,NA,NA
+firetruck,shape,category_organization,0.38461538461538464,0.3,NA,NA
+firetruck,count,count_mass,0.9090909090909092,NA,0.875,NA
+fish (animal),shape,category_organization,0.2,0.4444444444444444,1,NA
+fish (animal),count,count_mass,0.9,NA,1,NA
+fish (animal),solid,solidity,1,NA,1,NA
+fish (food),solid,solidity,1,NA,0.8571428571428571,NA
+fish (food),shape,category_organization,0.4444444444444444,0.2,NA,NA
+fish (food),count,count_mass,0.6,NA,1,NA
+flower,solid,solidity,0.7142857142857143,NA,1,0.6896551724137931
+flower,count,count_mass,0.7777777777777778,NA,1,0.7575757575757576
+flower,shape,category_organization,0.2,NA,0.125,0.5172413793103449
+food,count,count_mass,0.2222222222222222,NA,0.5,0.4186046511627907
+food,solid,solidity,0.5,NA,0.5,0.3333333333333333
+foot,solid,solidity,1,NA,1,0.7241379310344828
+foot,shape,category_organization,0.5454545454545454,0.5,0.3333333333333333,0.8620689655172413
+foot,count,count_mass,1,NA,1,0.8529411764705882
+fork,shape,category_organization,0.8,0.7,1,0.7241379310344828
+fork,count,count_mass,1,NA,1,0.9666666666666668
+fork,solid,solidity,1,NA,1,0.9655172413793104
+fox,shape,category_organization,0.3333333333333333,NA,0.5555555555555556,0.6896551724137931
+fox,count,count_mass,0.8571428571428571,NA,1,0.8055555555555556
+fox,solid,solidity,0.8333333333333334,NA,1,0.6551724137931034
+frog,solid,solidity,1,NA,0.8888888888888888,0.6333333333333333
+frog,shape,category_organization,0.4,0.16666666666666666,0.5,0.5517241379310345
+frog,count,count_mass,0.8,NA,1,0.7777777777777778
+fruit,shape,category_organization,0.1111111111111111,0.15384615384615383,0.18181818181818185,0.41379310344827586
+fruit,count,count_mass,0.75,NA,1,0.7575757575757576
+fruit,solid,solidity,1,NA,1,0.71875
+giraffe,shape,category_organization,0.25,0.125,0.4,0.6206896551724138
+giraffe,solid,solidity,0.8571428571428571,NA,1,0.6551724137931034
+giraffe,count,count_mass,0.8571428571428571,NA,0.8,0.8055555555555556
+glass,count,count_mass,0.2857142857142857,NA,0.5,0.6333333333333333
+glass,solid,solidity,0.8571428571428571,NA,1,0.7941176470588235
+glasses,count,count_mass,0.8333333333333334,NA,1,0.9333333333333332
+glasses,shape,category_organization,0.3636363636363637,0.3636363636363637,0.7777777777777778,0.6551724137931034
+glasses,solid,solidity,1,NA,0.8888888888888888,0.9655172413793104
+glove,solid,solidity,0.8571428571428571,NA,1,NA
+glove,shape,category_organization,0.6,0.8333333333333334,0.8333333333333334,NA
+glove,count,count_mass,1,NA,1,NA
+glue (object),count,count_mass,0.3333333333333333,NA,NA,NA
+glue (object),solid,solidity,0.14285714285714285,NA,0.7,NA
+goat,shape,category_organization,0.2,0.25,0.25,0.7241379310344828
+goat,count,count_mass,0.8333333333333334,NA,1,0.8055555555555556
+goat,solid,solidity,1,NA,0.8333333333333334,0.6551724137931034
+grapes,solid,solidity,0.42857142857142855,NA,0.8181818181818182,NA
+grapes,shape,category_organization,0.16666666666666666,0.1111111111111111,0.6666666666666666,NA
+grapes,count,count_mass,0.5555555555555556,NA,1,NA
+grass,solid,solidity,0.42857142857142855,NA,0.7,NA
+ground,solid,solidity,0.8333333333333334,NA,0.5714285714285714,0.6551724137931034
+ground,count,count_mass,0.5714285714285714,NA,NA,0.13333333333333333
+gum,solid,solidity,0.5,NA,0.6666666666666666,0.7096774193548387
+gum,count,count_mass,0.3333333333333333,NA,1,0.7575757575757576
+gum,shape,category_organization,0.1111111111111111,NA,NA,0.3103448275862069
+gun,solid,solidity,1,NA,1,0.875
+gun,shape,category_organization,0.3076923076923077,0.1,0.6666666666666666,0.5517241379310345
+gun,count,count_mass,1,NA,0.8571428571428571,0.8666666666666667
+hair,count,count_mass,0.42857142857142855,NA,0.5714285714285714,0.6060606060606061
+hair,solid,solidity,0.5,NA,0.75,0.59375
+hamburger,shape,category_organization,0.1111111111111111,0.3,0.125,0.5172413793103449
+hamburger,count,count_mass,0.8571428571428571,NA,1,0.8529411764705882
+hamburger,solid,solidity,0.5555555555555556,NA,0.8333333333333334,0.7241379310344828
+hammer,solid,solidity,1,NA,1,0.9655172413793104
+hammer,shape,category_organization,0.8333333333333334,0.3636363636363637,0.5,0.7241379310344828
+hammer,count,count_mass,0.875,NA,1,0.9666666666666668
+hand,shape,category_organization,0.7,0.25,0.6,0.8275862068965517
+hand,count,count_mass,0.5,NA,1,0.8285714285714286
+hand,solid,solidity,1,NA,1,0.6896551724137931
+hanger,shape,category_organization,0.7777777777777778,NA,0.5,NA
+hanger,count,count_mass,0.8333333333333334,NA,1,NA
+hanger,solid,solidity,1,NA,1,NA
+hat,shape,category_organization,0.6,0.4615384615384616,0.7777777777777778,0.6206896551724138
+hat,count,count_mass,1,NA,1,0.935483870967742
+hat,solid,solidity,0.8888888888888888,NA,0.7142857142857143,0.896551724137931
+head,shape,category_organization,0.3333333333333333,0.5882352941176471,0.5,0.8275862068965517
+head,count,count_mass,0.8571428571428571,NA,0.875,0.8235294117647058
+head,solid,solidity,1,NA,0.8888888888888888,0.7
+helicopter,solid,solidity,1,NA,1,NA
+helicopter,shape,category_organization,0.5,0.4615384615384616,0.5714285714285714,NA
+helicopter,count,count_mass,1,NA,1,NA
+hip,shape,category_organization,0.5,0.5,0.25,NA
+hip,count,count_mass,0.7142857142857143,NA,0.9,NA
+hip,solid,solidity,1,NA,0.8333333333333334,NA
+hippopotamus,shape,category_organization,0.5,0.4444444444444444,0.3333333333333333,0.7586206896551724
+hippopotamus,count,count_mass,0.75,NA,0.6666666666666666,0.7777777777777778
+hippopotamus,solid,solidity,0.6666666666666666,NA,0.8461538461538461,0.6333333333333333
+horse,shape,category_organization,0.4,0.42857142857142855,0.25,0.6551724137931034
+horse,count,count_mass,0.875,NA,0.5,0.8055555555555556
+horse,solid,solidity,0.875,NA,1,0.6551724137931034
+hot dog,shape,category_organization,0.3,0.3636363636363637,0.5,0.5172413793103449
+hot dog,count,count_mass,1,NA,0.9,0.8529411764705882
+hot dog,solid,solidity,0.875,NA,1,0.7241379310344828
+ice,count,count_mass,0.18181818181818185,NA,0.5,0.5757575757575758
+ice,solid,solidity,0.7777777777777778,NA,0.6,0.5588235294117647
+ice cream,count,count_mass,0.5,NA,0.8571428571428571,0.6
+ice cream,shape,category_organization,0.18181818181818185,NA,NA,0.41379310344827586
+jacket,shape,category_organization,0.3636363636363637,0.18181818181818185,0.6,0.5862068965517241
+jacket,count,count_mass,0.8,NA,1,0.90625
+jacket,solid,solidity,0.7142857142857143,NA,0.7777777777777778,0.8620689655172413
+juice,shape,category_organization,0.08333333333333333,NA,NA,0.1724137931034483
+key,shape,category_organization,0.75,0.6,0.8333333333333334,0.5862068965517241
+key,count,count_mass,1,NA,1,0.9666666666666668
+key,solid,solidity,1,NA,1,0.9655172413793104
+kimchi,solid,solidity,0.7142857142857143,NA,0.8333333333333334,0.5588235294117647
+kimchi,count,count_mass,0.125,NA,0.4,0.5833333333333334
+kimchi,shape,category_organization,0.125,NA,0.625,0.4827586206896552
+kitchen,solid,solidity,0.8,NA,1,0.5625
+kitchen,shape,category_organization,0.16666666666666666,NA,0.5,0.6896551724137931
+kitchen,count,count_mass,0.5833333333333334,NA,0.7142857142857143,0.5945945945945946
+knee,solid,solidity,1,NA,0.8,0.6
+knee,shape,category_organization,0.3,0.3333333333333333,0.2,0.8275862068965517
+knee,count,count_mass,0.8,NA,1,0.7297297297297297
+knife,shape,category_organization,0.4,0.5384615384615384,0.6,0.6896551724137931
+knife,count,count_mass,0.8333333333333334,NA,1,0.9666666666666668
+knife,solid,solidity,1,NA,1,0.9655172413793104
+ladder,count,count_mass,0.8,NA,1,0.9642857142857144
+ladder,shape,category_organization,0.75,0.4545454545454546,0.8,0.6551724137931034
+ladder,solid,solidity,1,NA,0.5,0.9655172413793104
+leg,shape,category_organization,0.75,0.35294117647058826,0.7142857142857143,0.8275862068965517
+leg,count,count_mass,1,NA,0.8888888888888888,0.7941176470588235
+leg,solid,solidity,0.8333333333333334,NA,1,0.7
+lion,shape,category_organization,0.3333333333333333,0.125,0.25,0.6896551724137931
+lion,count,count_mass,1,NA,1,0.8055555555555556
+lion,solid,solidity,0.9230769230769232,NA,0.875,0.6551724137931034
+lip,solid,solidity,0.5714285714285714,NA,0.7142857142857143,NA
+lip,shape,category_organization,0.4444444444444444,0.5454545454545454,0.6666666666666666,NA
+lip,count,count_mass,1,NA,0.8888888888888888,NA
+meat,count,count_mass,0.14285714285714285,NA,0.5,0.53125
+meat,solid,solidity,0.7142857142857143,NA,1,0.5833333333333334
+medicine,count,count_mass,0.16666666666666666,NA,0.875,0.5348837209302325
+medicine,solid,solidity,0.2857142857142857,NA,0.6,0.3870967741935484
+melon,solid,solidity,0.8571428571428571,NA,1,0.8275862068965517
+melon,shape,category_organization,0.2727272727272727,0.18181818181818185,NA,0.4482758620689655
+melon,count,count_mass,0.6666666666666666,NA,1,0.90625
+microwave,solid,solidity,1,NA,1,0.9655172413793104
+microwave,shape,category_organization,0.4,0.125,0.4,0.6896551724137931
+microwave,count,count_mass,0.625,NA,0.7777777777777778,0.9666666666666668
+money,solid,solidity,0.8,NA,0.75,0.696969696969697
+money,count,count_mass,0.5714285714285714,NA,1,0.696969696969697
+monkey,count,count_mass,0.8333333333333334,NA,1,0.8055555555555556
+monkey,shape,category_organization,0.18181818181818185,0.06666666666666667,0.6,0.7586206896551724
+monkey,solid,solidity,1,NA,0.6363636363636364,0.6551724137931034
+moon,shape,category_organization,0.7777777777777778,0.6666666666666666,NA,0.5172413793103449
+moon,count,count_mass,0.7142857142857143,NA,1,0.7428571428571429
+moon,solid,solidity,1,NA,0.875,0.6551724137931034
+motorcycle,shape,category_organization,0.5384615384615384,0.5,0.8,0.6428571428571429
+motorcycle,solid,solidity,1,NA,1,0.9333333333333332
+motorcycle,count,count_mass,0.8571428571428571,NA,1,0.9333333333333332
+mouse,shape,category_organization,0.5,0.4,0.9,0.7241379310344828
+mouse,count,count_mass,0.8571428571428571,NA,1,0.7777777777777778
+mouse,solid,solidity,0.875,NA,0.75,0.6551724137931034
+mouth,shape,category_organization,0.6666666666666666,0.4166666666666667,0.8333333333333334,0.7241379310344828
+mouth,count,count_mass,0.6,NA,1,0.7027027027027027
+nail (object),count,count_mass,0.75,NA,1,NA
+nail (object),shape,category_organization,0.4444444444444444,0.3333333333333333,0.8,NA
+nail (object),solid,solidity,1,NA,1,NA
+neck,solid,solidity,0.6,NA,0.6666666666666666,0.6666666666666666
+neck,shape,category_organization,0.5555555555555556,0.5833333333333334,0.75,0.8620689655172413
+neck,count,count_mass,0.4,NA,1,0.8
+necklace,shape,category_organization,0.5,0.3,0.7777777777777778,0.6206896551724138
+necklace,count,count_mass,0.8333333333333334,NA,1,0.9333333333333332
+necklace,solid,solidity,1,NA,1,0.9655172413793104
+noodles,solid,solidity,1,NA,0.5,0.3783783783783784
+noodles,shape,category_organization,0.6666666666666666,0.14285714285714285,0.25,0.3448275862068966
+noodles,count,count_mass,0.3333333333333333,NA,0.8571428571428571,0.4615384615384616
+nut,solid,solidity,1,NA,0.5714285714285714,NA
+nut,shape,category_organization,0.3333333333333333,0.09090909090909093,0.125,NA
+nut,count,count_mass,0.6666666666666666,NA,0.75,NA
+orange (food),solid,solidity,0.8571428571428571,NA,0.7692307692307693,NA
+orange (food),shape,category_organization,0.3333333333333333,0.13333333333333333,0.14285714285714285,NA
+orange (food),count,count_mass,0.8,NA,0.8888888888888888,NA
+owl,solid,solidity,0.875,NA,1,0.6551724137931034
+owl,shape,category_organization,0.3636363636363637,NA,0.4545454545454546,0.6896551724137931
+owl,count,count_mass,0.75,NA,1,0.8055555555555556
+pajamas,count,count_mass,0.6,NA,0.75,0.90625
+pajamas,solid,solidity,1,NA,1,0.8620689655172413
+pajamas,shape,category_organization,0.18181818181818185,0.09090909090909093,0.2222222222222222,0.6551724137931034
+pancake,count,count_mass,0.9166666666666666,NA,1,NA
+pancake,shape,category_organization,0.5833333333333334,0.1111111111111111,NA,NA
+pancake,solid,solidity,0.7142857142857143,NA,0.625,NA
+pants,shape,category_organization,0.3636363636363637,0.3,0.8,0.6551724137931034
+pants,count,count_mass,1,NA,1,0.90625
+pants,solid,solidity,0.8888888888888888,NA,0.875,0.8275862068965517
+paper,count,count_mass,0.6666666666666666,NA,1,0.8333333333333334
+paper,solid,solidity,0.625,NA,1,0.8709677419354839
+pasta,shape,category_organization,0.5,0.4,0.25,NA
+pasta,solid,solidity,0.6,NA,0.8333333333333334,NA
+peach,shape,category_organization,0.4,0.25,0.2222222222222222,0.4482758620689655
+peach,solid,solidity,1,NA,0.8,0.7931034482758621
+peach,count,count_mass,0.5,NA,1,0.90625
+peanut,count,count_mass,0.75,NA,1,0.875
+peanut,solid,solidity,0.8571428571428571,NA,1,0.8275862068965517
+pencil,shape,category_organization,0.5,0.07692307692307693,0.5,0.41379310344827586
+pencil,count,count_mass,1,NA,1,0.9333333333333332
+pencil,solid,solidity,1,NA,0.8333333333333334,0.9333333333333332
+penguin,solid,solidity,0.6666666666666666,NA,1,0.6333333333333333
+penguin,shape,category_organization,0.2222222222222222,NA,0.6,0.7241379310344828
+penguin,count,count_mass,1,NA,1,0.7777777777777778
+penis,count,count_mass,0.7142857142857143,NA,1,NA
+penis,solid,solidity,0.8,NA,0.8333333333333334,NA
+penis,shape,category_organization,0.3333333333333333,0.3333333333333333,0.5,NA
+piano,shape,category_organization,0.7272727272727273,0.5,0.6666666666666666,0.7586206896551724
+piano,count,count_mass,0.75,NA,1,0.9666666666666668
+piano,solid,solidity,1,NA,1,0.9655172413793104
+picture,shape,category_organization,0.15384615384615383,NA,0.6,NA
+picture,count,count_mass,0.5714285714285714,NA,1,NA
+picture,solid,solidity,0.5714285714285714,NA,0.9090909090909092,NA
+pig,count,count_mass,0.9,NA,1,0.8055555555555556
+pig,solid,solidity,0.875,NA,0.8,0.6551724137931034
+pigeon,shape,category_organization,0.5,0.25,0.5,0.6896551724137931
+pigeon,count,count_mass,0.8571428571428571,NA,1,0.8055555555555556
+pillow,shape,category_organization,0.125,0.07692307692307693,0.4444444444444444,0.6551724137931034
+pillow,count,count_mass,0.5,NA,1,0.9032258064516128
+pillow,solid,solidity,0.5714285714285714,NA,0.8,0.8333333333333334
+pizza,shape,category_organization,0.4,0.3333333333333333,0.3333333333333333,0.4827586206896552
+pizza,count,count_mass,0.7,NA,1,0.8235294117647058
+pizza,solid,solidity,0.8571428571428571,NA,0.75,0.7
+plate,shape,category_organization,0.6666666666666666,0.9090909090909092,0.5714285714285714,NA
+plate,count,count_mass,1,NA,1,NA
+plate,solid,solidity,1,NA,1,NA
+pocket,shape,category_organization,0.3333333333333333,NA,0.6,0.6896551724137931
+pocket,count,count_mass,0.5,NA,1,0.7647058823529411
+potato,count,count_mass,0.8571428571428571,NA,1,0.90625
+potato,solid,solidity,1,NA,0.9166666666666666,0.8275862068965517
+present,count,count_mass,0.75,NA,1,NA
+present,solid,solidity,0.4,NA,0.7777777777777778,NA
+pumpkin,shape,category_organization,0.18181818181818185,0.07692307692307693,0.25,0.4827586206896552
+pumpkin,count,count_mass,0.8571428571428571,NA,1,0.90625
+pumpkin,solid,solidity,0.9,NA,1,0.7931034482758621
+radio,count,count_mass,0.3333333333333333,NA,1,0.935483870967742
+radio,solid,solidity,1,NA,1,0.9310344827586208
+radish,shape,category_organization,0.15217391304347827,NA,0.5,0.5172413793103449
+radish,count,count_mass,0.8571428571428571,NA,1,0.90625
+radish,solid,solidity,0.6666666666666666,NA,0.8888888888888888,0.8275862068965517
+rag,shape,category_organization,0.08333333333333333,0.2222222222222222,0.4,0.5172413793103449
+rag,count,count_mass,0.7777777777777778,NA,1,0.9032258064516128
+rag,solid,solidity,1,NA,1,0.8275862068965517
+refrigerator,shape,category_organization,0.3,0.3076923076923077,0.2857142857142857,0.6896551724137931
+refrigerator,count,count_mass,0.6666666666666666,NA,1,0.9666666666666668
+refrigerator,solid,solidity,1,NA,0.8,0.9655172413793104
+rice,shape,category_organization,0.5,0.06666666666666667,0.42857142857142855,0.4482758620689655
+rice,count,count_mass,0.3333333333333333,NA,0.2857142857142857,0.5161290322580645
+rice,solid,solidity,0.4,NA,1,0.6764705882352942
+rice cake,shape,category_organization,0.25,NA,NA,0.5517241379310345
+rice cake,count,count_mass,1,NA,1,0.90625
+rice cake,solid,solidity,0.8,NA,0.8,0.7586206896551724
+robot,shape,category_organization,0.3333333333333333,NA,0.3333333333333333,0.6206896551724138
+robot,count,count_mass,1,NA,1,0.8333333333333334
+robot,solid,solidity,0.8571428571428571,NA,1,0.8484848484848485
+roof,shape,category_organization,0.375,0.25,1,0.7241379310344828
+roof,count,count_mass,0.5,NA,0.8,0.9629629629629628
+roof,solid,solidity,0.5,NA,1,0.9655172413793104
+room,shape,category_organization,0.6666666666666666,0.21428571428571427,0.6666666666666666,0.6551724137931034
+room,count,count_mass,0.625,NA,0.5,0.7714285714285715
+room,solid,solidity,0.5,NA,0.4,0.7
+salt,solid,solidity,0.2857142857142857,NA,0.6,0.5428571428571428
+scarf,shape,category_organization,0.2,0.4444444444444444,0.2857142857142857,0.6206896551724138
+scarf,count,count_mass,0.5,NA,1,0.875
+scarf,solid,solidity,0.625,NA,0.75,0.8275862068965517
+scissors,shape,category_organization,0.5454545454545454,0.6,NA,0.6551724137931034
+scissors,count,count_mass,0.8333333333333334,NA,1,0.9666666666666668
+scissors,solid,solidity,1,NA,1,0.9655172413793104
+seesaw,shape,category_organization,0.2222222222222222,0.2222222222222222,0.6,NA
+seesaw,count,count_mass,0.8,NA,0.8888888888888888,NA
+seesaw,solid,solidity,0.8571428571428571,NA,1,NA
+sheep,shape,category_organization,0.25,0.07142857142857142,0.5,0.6896551724137931
+sheep,count,count_mass,0.6666666666666666,NA,0.9,0.8055555555555556
+sheep,solid,solidity,1,NA,1,0.6551724137931034
+shoe,shape,category_organization,0.6,0.625,1,NA
+shoe,count,count_mass,1,NA,1,NA
+shoe,solid,solidity,1,NA,1,NA
+shoulder,shape,category_organization,0.3,0.3076923076923077,0.6666666666666666,0.8620689655172413
+shoulder,count,count_mass,0.8333333333333334,NA,0.7777777777777778,0.6666666666666666
+shoulder,solid,solidity,1,NA,0.75,0.5757575757575758
+skirt,shape,category_organization,0.125,0.4,0.8333333333333334,0.6551724137931034
+skirt,count,count_mass,1,NA,1,0.90625
+skirt,solid,solidity,0.7,NA,1,0.8275862068965517
+sky,count,count_mass,0.16666666666666666,NA,NA,0.03225806451612903
+sled,shape,category_organization,0.4166666666666667,0.7,0.8888888888888888,0.6785714285714286
+sled,count,count_mass,1,NA,0.9,0.7666666666666667
+sled,solid,solidity,1,NA,0.8,0.875
+slide (object),shape,category_organization,0.75,0.7777777777777778,0.5,NA
+slide (object),count,count_mass,0.5,NA,1,NA
+slide (object),solid,solidity,0.875,NA,1,NA
+snake,shape,category_organization,0.6,0.2,1,0.6551724137931034
+snake,count,count_mass,0.8333333333333334,NA,1,0.7777777777777778
+snake,solid,solidity,0.8333333333333334,NA,0.75,0.6333333333333333
+sneaker,shape,category_organization,0.5,0.2727272727272727,0.6666666666666666,NA
+sneaker,count,count_mass,1,NA,1,NA
+sneaker,solid,solidity,1,NA,0.7142857142857143,NA
+snow,count,count_mass,0.2,NA,0.5,0.16129032258064516
+snowman,shape,category_organization,0.4,0.2222222222222222,0.2857142857142857,0.41379310344827586
+snowman,count,count_mass,0.4444444444444444,NA,1,0.6857142857142857
+snowman,solid,solidity,0.3333333333333333,NA,1,0.5517241379310345
+soap,shape,category_organization,0.06666666666666667,0.18181818181818185,0.25,0.4482758620689655
+soap,count,count_mass,0.3333333333333333,NA,1,0.875
+soap,solid,solidity,0.6666666666666666,NA,1,0.7333333333333333
+sock,shape,category_organization,0.375,0.3333333333333333,0.8,NA
+sock,count,count_mass,0.8888888888888888,NA,1,NA
+sock,solid,solidity,0.75,NA,1,NA
+soda,count,count_mass,0.1111111111111111,NA,0.6,NA
+soda,solid,solidity,0.16666666666666666,NA,NA,NA
+soil,count,count_mass,0.3333333333333333,NA,NA,NA
+soil,solid,solidity,0.4444444444444444,NA,0.3333333333333333,NA
+soup,count,count_mass,0.25,NA,0.1111111111111111,0.5
+spaghetti,shape,category_organization,0.2222222222222222,0.5,0.16666666666666666,0.3448275862068966
+spaghetti,count,count_mass,0.5,NA,0.2857142857142857,0.5294117647058824
+spaghetti,solid,solidity,0.5,NA,0.8333333333333334,0.5555555555555556
+sparrow,shape,category_organization,0.2727272727272727,0.25,0.6,0.7241379310344828
+sparrow,count,count_mass,0.75,NA,1,0.7777777777777778
+sparrow,solid,solidity,0.75,NA,1,0.6551724137931034
+spoon,shape,category_organization,0.7777777777777778,0.75,0.875,0.6206896551724138
+spoon,count,count_mass,1,NA,1,0.9333333333333332
+spoon,solid,solidity,1,NA,1,0.9333333333333332
+squirrel,shape,category_organization,0.625,0.2727272727272727,0.42857142857142855,0.6896551724137931
+squirrel,count,count_mass,0.875,NA,1,0.8055555555555556
+squirrel,solid,solidity,0.8333333333333334,NA,1,0.6551724137931034
+stairs,shape,category_organization,0.4,0.9,0.7777777777777778,0.6551724137931034
+stairs,count,count_mass,0.42857142857142855,NA,0.875,0.8
+stairs,solid,solidity,1,NA,0.75,0.875
+star,shape,category_organization,0.8,0.6666666666666666,NA,0.5517241379310345
+star,count,count_mass,0.3333333333333333,NA,0.625,0.5588235294117647
+stone,shape,category_organization,0.1111111111111111,NA,NA,0.4827586206896552
+stone,count,count_mass,0.75,NA,0.6666666666666666,0.75
+stone,solid,solidity,1,NA,1,0.9655172413793104
+strawberry,shape,category_organization,0.2,0.2727272727272727,0.3,0.5172413793103449
+strawberry,count,count_mass,1,NA,1,0.8787878787878788
+strawberry,solid,solidity,0.7857142857142857,NA,1,0.7586206896551724
+street,shape,category_organization,0.09090909090909093,0.08333333333333333,0.75,NA
+street,count,count_mass,0.6666666666666666,NA,0.8,NA
+street,solid,solidity,0.42857142857142855,NA,0.375,NA
+stroller,shape,category_organization,0.6666666666666666,0.3333333333333333,0.6666666666666666,0.6785714285714286
+stroller,count,count_mass,0.8333333333333334,NA,1,0.8666666666666667
+stroller,solid,solidity,1,NA,0.9090909090909092,0.875
+sugar,count,count_mass,0.16666666666666666,NA,0.2,0.4411764705882353
+sugar,solid,solidity,0.14285714285714285,NA,0.8571428571428571,0.5428571428571428
+sun,shape,category_organization,0.2222222222222222,0.26666666666666666,0.6666666666666666,NA
+sun,count,count_mass,0.16666666666666666,NA,0.14285714285714285,NA
+sweet potato,shape,category_organization,0.25,0.3333333333333333,0.5,0.4827586206896552
+sweet potato,count,count_mass,1,NA,1,0.90625
+sweet potato,solid,solidity,1,NA,1,0.8275862068965517
+swing (object),shape,category_organization,0.625,0.25,0.5,NA
+swing (object),count,count_mass,0.8333333333333334,NA,1,NA
+swing (object),solid,solidity,0.8571428571428571,NA,0.75,NA
+tangerine,shape,category_organization,0.14285714285714285,0.25,0.5,0.5172413793103449
+tangerine,count,count_mass,0.75,NA,1,0.8787878787878788
+tangerine,solid,solidity,1,NA,0.75,0.7931034482758621
+taxi,shape,category_organization,0.3636363636363637,0.25,0.6666666666666666,0.5357142857142857
+taxi,count,count_mass,0.3333333333333333,NA,1,0.9333333333333332
+taxi,solid,solidity,0.8,NA,1,0.9333333333333332
+telephone,shape,category_organization,0.375,0.25,0.6666666666666666,NA
+telephone,count,count_mass,0.8,NA,0.8333333333333334,NA
+telephone,solid,solidity,1,NA,0.5,NA
+tiger,shape,category_organization,0.4444444444444444,0.1176470588235294,0.16666666666666666,0.6896551724137931
+tiger,count,count_mass,0.8,NA,1,0.8055555555555556
+tiger,solid,solidity,1,NA,0.6666666666666666,0.6551724137931034
+tissue,count,count_mass,0.5714285714285714,NA,0.6666666666666666,NA
+tissue,solid,solidity,0.5,NA,NA,NA
+tomato,shape,category_organization,0.2,NA,0.3333333333333333,0.4827586206896552
+tomato,count,count_mass,0.8333333333333334,NA,1,0.90625
+tomato,solid,solidity,0.8888888888888888,NA,0.8333333333333334,0.7931034482758621
+tongue,shape,category_organization,0.2222222222222222,0.375,0.625,0.5862068965517241
+tongue,count,count_mass,0.8571428571428571,NA,1,0.8055555555555556
+tongue,solid,solidity,0.6666666666666666,NA,1,0.6551724137931034
+tooth,shape,category_organization,0.3,0.13333333333333333,0.5,NA
+tooth,count,count_mass,0.75,NA,1,NA
+tooth,solid,solidity,1,NA,1,NA
+toothbrush,shape,category_organization,0.5555555555555556,0.3333333333333333,0.6666666666666666,0.6896551724137931
+toothbrush,count,count_mass,0.9,NA,1,0.9666666666666668
+toothbrush,solid,solidity,1,NA,1,0.9655172413793104
+toothpaste,shape,category_organization,0.09090909090909093,NA,NA,0.4827586206896552
+toothpaste,count,count_mass,0.3333333333333333,NA,0.6666666666666666,0.7105263157894737
+towel,shape,category_organization,0.09090909090909093,0.2,NA,0.5862068965517241
+towel,count,count_mass,0.8888888888888888,NA,0.9166666666666666,0.8484848484848485
+towel,solid,solidity,0.6666666666666666,NA,1,0.7666666666666667
+toy (object),shape,category_organization,0.2222222222222222,0.2,0.3333333333333333,NA
+toy (object),count,count_mass,0.8333333333333334,NA,1,NA
+toy (object),solid,solidity,1,NA,1,NA
+train,shape,category_organization,0.3333333333333333,0.375,0.25,0.6428571428571429
+train,solid,solidity,1,NA,0.8,0.9032258064516128
+trash,count,count_mass,0.16666666666666666,NA,NA,NA
+trash,solid,solidity,0.2857142857142857,NA,0.6,NA
+trash can,count,count_mass,0.8333333333333334,NA,1,0.9666666666666668
+trash can,solid,solidity,1,NA,1,0.9655172413793104
+tray,shape,category_organization,0.4615384615384616,0.5454545454545454,0.6,0.6551724137931034
+tray,count,count_mass,1,NA,1,0.9666666666666668
+tray,solid,solidity,0.8,NA,1,0.9655172413793104
+tree,shape,category_organization,0.3,0.3333333333333333,0.4,0.5862068965517241
+tree,count,count_mass,0.875,NA,0.6666666666666666,0.7878787878787878
+tree,solid,solidity,1,NA,1,0.7586206896551724
+truck,shape,category_organization,0.375,0.5384615384615384,0.8333333333333334,0.6071428571428571
+truck,count,count_mass,0.875,NA,1,0.9333333333333332
+truck,solid,solidity,1,NA,1,0.9333333333333332
+tummy,shape,category_organization,0.2222222222222222,0.4705882352941176,0.5,NA
+tummy,count,count_mass,0.42857142857142855,NA,1,NA
+tummy,solid,solidity,0.5,NA,1,NA
+turtle,shape,category_organization,0.4166666666666667,0.3333333333333333,1,0.6206896551724138
+turtle,count,count_mass,0.8333333333333334,NA,1,0.8055555555555556
+turtle,solid,solidity,1,NA,0.9,0.6551724137931034
+tv,shape,category_organization,0.4444444444444444,0.3333333333333333,NA,NA
+tv,count,count_mass,0.8571428571428571,NA,1,NA
+tv,solid,solidity,1,NA,1,NA
+umbrella,shape,category_organization,0.7777777777777778,0.6153846153846154,0.4,0.6206896551724138
+umbrella,count,count_mass,0.8333333333333334,NA,1,0.9666666666666668
+umbrella,solid,solidity,1,NA,0.75,0.9655172413793104
+underpants,shape,category_organization,0.125,0.3125,0.3333333333333333,NA
+underpants,count,count_mass,0.6666666666666666,NA,1,NA
+underpants,solid,solidity,0.4,NA,0.8571428571428571,NA
+vacuum,shape,category_organization,0.125,0.18181818181818185,0.4,NA
+vacuum,count,count_mass,0.8571428571428571,NA,1,NA
+vacuum,solid,solidity,0.42857142857142855,NA,1,NA
+waist,shape,category_organization,0.5555555555555556,0.25,0.75,0.8620689655172413
+waist,count,count_mass,0.4444444444444444,NA,0.5,0.7027027027027027
+waist,solid,solidity,0.5,NA,1,0.5806451612903226
+wallet,shape,category_organization,0.1111111111111111,0.25,0.5,0.6896551724137931
+wallet,count,count_mass,0.7142857142857143,NA,1,0.9666666666666668
+wallet,solid,solidity,1,NA,1,0.9655172413793104
+washing machine,shape,category_organization,0.375,0.2222222222222222,0.5,NA
+washing machine,count,count_mass,1,NA,0.8333333333333334,NA
+washing machine,solid,solidity,1,NA,1,NA
+watermelon,shape,category_organization,0.3,0.375,0.25,0.5517241379310345
+watermelon,count,count_mass,0.6666666666666666,NA,1,0.90625
+watermelon,solid,solidity,0.7777777777777778,NA,1,0.8275862068965517
+window,shape,category_organization,0.42857142857142855,0.4444444444444444,NA,NA
+window,count,count_mass,0.75,NA,NA,NA
+window,solid,solidity,0.8333333333333334,NA,NA,NA
+yogurt,count,count_mass,0.3333333333333333,NA,0.3333333333333333,0.65625
+cheese,shape,category_organization,NA,0.25,NA,0.20689655172413793
+chicken (food),shape,category_organization,NA,0.1,NA,NA
+cloud,shape,category_organization,NA,0.3333333333333333,0.2857142857142857,0.4482758620689655
+dog,shape,category_organization,NA,0.08333333333333333,0.42857142857142855,0.6896551724137931
+grass,shape,category_organization,NA,0.05263157894736842,NA,NA
+ground,shape,category_organization,NA,0.09090909090909093,0.3333333333333333,0.4482758620689655
+hair,shape,category_organization,NA,0.125,0.14285714285714285,0.4827586206896552
+ice,shape,category_organization,NA,0.2,0.25,0.3793103448275862
+medicine,shape,category_organization,NA,0.18181818181818185,NA,0.3793103448275862
+peanut,shape,category_organization,NA,0.2222222222222222,0.5,0.5172413793103449
+pig,shape,category_organization,NA,0.09090909090909093,0.25,0.6206896551724138
+potato,shape,category_organization,NA,0.1111111111111111,0.16666666666666666,0.4827586206896552
+radio,shape,category_organization,NA,0.18181818181818185,0.2857142857142857,0.6206896551724138
+sand,shape,category_organization,NA,0.25,0.2857142857142857,0.3103448275862069
+sky,shape,category_organization,NA,0.1,0.25,0.3448275862068966
+soil,shape,category_organization,NA,0.1,NA,NA
+soup,shape,category_organization,NA,0.09090909090909093,0.5,0.3103448275862069
+trash,shape,category_organization,NA,0.08333333333333333,0.42857142857142855,NA
+trash can,shape,category_organization,NA,0.3636363636363637,NA,0.7586206896551724
+Persimmon,shape,category_organization,NA,NA,0.3,NA
+Persimmon,count,count_mass,NA,NA,1,NA
+Persimmon,solid,solidity,NA,NA,0.7,NA
+cloud,solid,solidity,NA,NA,0.125,NA
+pasta,count,count_mass,NA,NA,0.625,NA
+train,count,count_mass,NA,NA,0.8888888888888888,0.8666666666666667
+snow,shape,category_organization,NA,NA,0.2222222222222222,0.3793103448275862
+snow,solid,solidity,NA,NA,0.2,0.3103448275862069
+money,shape,category_organization,NA,NA,0.4,0.5172413793103449
+sand,count,count_mass,NA,NA,0.2,0.14814814814814814
+sand,solid,solidity,NA,NA,0.5,0.7241379310344828
+wind,shape,category_organization,NA,NA,0.2,NA
+star,solid,solidity,NA,NA,0.5,0.5862068965517241
+fire,shape,category_organization,NA,NA,0.25,0.3103448275862069
+pigeon,solid,solidity,NA,NA,0.875,0.6551724137931034
+present,shape,category_organization,NA,NA,0.16666666666666666,NA
+salt,count,count_mass,NA,NA,0.18181818181818185,0.4117647058823529
+ice cream,solid,solidity,NA,NA,0.3333333333333333,0.24242424242424243
+corn,shape,category_organization,NA,NA,0.18181818181818185,0.4827586206896552
+yogurt,solid,solidity,NA,NA,0.14285714285714285,0.15151515151515152
+food,shape,category_organization,NA,NA,0.2,0.2413793103448276
+mouth,solid,solidity,NA,NA,0.625,0.5806451612903226
+pocket,solid,solidity,NA,NA,0.5,0.6875
+chocolate,shape,category_organization,NA,NA,0.2222222222222222,0.20689655172413793
+sun,solid,solidity,NA,NA,0.2857142857142857,NA
+tissue,shape,category_organization,NA,NA,0.2222222222222222,NA
+persimmon,count,count_mass,NA,NA,NA,0.8787878787878788
+persimmon,shape,category_organization,NA,NA,NA,0.5172413793103449
+persimmon,solid,solidity,NA,NA,NA,0.7931034482758621
+meat,shape,category_organization,NA,NA,NA,0.41379310344827586
+pepper,count,count_mass,NA,NA,NA,0.7714285714285715
+pepper,shape,category_organization,NA,NA,NA,0.8275862068965517
+pepper,solid,solidity,NA,NA,NA,0.6666666666666666
+shoes/dress shoes,count,count_mass,NA,NA,NA,0.9666666666666668
+shoes/dress shoes,solid,solidity,NA,NA,NA,0.9655172413793104
+shoes/dress shoes,shape,category_organization,NA,NA,NA,0.6206896551724138
+soup,solid,solidity,NA,NA,NA,0.1111111111111111
+swings,shape,category_organization,NA,NA,NA,0.7586206896551724
+swings,count,count_mass,NA,NA,NA,0.9333333333333332
+swings,solid,solidity,NA,NA,NA,0.9655172413793104
+plate (more curved and round),shape,category_organization,NA,NA,NA,0.6206896551724138
+plate (more curved and round),count,count_mass,NA,NA,NA,0.9666666666666668
+plate (more curved and round),solid,solidity,NA,NA,NA,0.9655172413793104
+picture/artwork,solid,solidity,NA,NA,NA,0.7419354838709677
+picture/artwork,shape,category_organization,NA,NA,NA,0.5172413793103449
+picture/artwork,count,count_mass,NA,NA,NA,0.696969696969697
+path,shape,category_organization,NA,NA,NA,0.6896551724137931
+path,count,count_mass,NA,NA,NA,0.3928571428571429
+path,solid,solidity,NA,NA,NA,0.4827586206896552
+seweed,shape,category_organization,NA,NA,NA,0.3793103448275862
+seweed,solid,solidity,NA,NA,NA,0.5757575757575758
+seweed,count,count_mass,NA,NA,NA,0.6764705882352942
+chicken/rooster,solid,solidity,NA,NA,NA,0.6551724137931034
+chicken/rooster,shape,category_organization,NA,NA,NA,0.6551724137931034
+chicken/rooster,count,count_mass,NA,NA,NA,0.8055555555555556
+chicken,solid,solidity,NA,NA,NA,0.6875
+chicken,count,count_mass,NA,NA,NA,0.696969696969697
+chicken,shape,category_organization,NA,NA,NA,0.4827586206896552
+rock,shape,category_organization,NA,NA,NA,0.4482758620689655
+rock,count,count_mass,NA,NA,NA,0.7333333333333333
+rock,solid,solidity,NA,NA,NA,0.9310344827586208
+back,count,count_mass,NA,NA,NA,0.5833333333333334
+back,shape,category_organization,NA,NA,NA,0.7931034482758621
+back,solid,solidity,NA,NA,NA,0.59375
+anus,count,count_mass,NA,NA,NA,0.6842105263157895
+anus,solid,solidity,NA,NA,NA,0.5862068965517241
+anus,shape,category_organization,NA,NA,NA,0.7586206896551724
+ramen,count,count_mass,NA,NA,NA,0.6097560975609756
+ramen,solid,solidity,NA,NA,NA,0.4375
+ramen,shape,category_organization,NA,NA,NA,0.4827586206896552
+nail,count,count_mass,NA,NA,NA,0.9666666666666668
+nail,solid,solidity,NA,NA,NA,0.9655172413793104
+nail,shape,category_organization,NA,NA,NA,0.6206896551724138
+slide,shape,category_organization,NA,NA,NA,0.7241379310344828
+slide,solid,solidity,NA,NA,NA,0.9655172413793104
+slide,count,count_mass,NA,NA,NA,0.9666666666666668
+toenail,shape,category_organization,NA,NA,NA,0.6896551724137931
+toenail,count,count_mass,NA,NA,NA,0.8787878787878788
+toenail,solid,solidity,NA,NA,NA,0.7931034482758621
+chestnut,shape,category_organization,NA,NA,NA,0.4827586206896552
+chestnut,count,count_mass,NA,NA,NA,0.90625
+chestnut,solid,solidity,NA,NA,NA,0.8275862068965517
+stomach,count,count_mass,NA,NA,NA,0.6756756756756757
+stomach,shape,category_organization,NA,NA,NA,0.8275862068965517
+stomach,solid,solidity,NA,NA,NA,0.5806451612903226
+napa cabbage,shape,category_organization,NA,NA,NA,0.5172413793103449
+napa cabbage,solid,solidity,NA,NA,NA,0.7931034482758621
+napa cabbage,count,count_mass,NA,NA,NA,0.875
+rain,shape,category_organization,NA,NA,NA,0.3448275862068966
+rain,count,count_mass,NA,NA,NA,0.03571428571428571
+rain,solid,solidity,NA,NA,NA,0.03448275862068965
+soap bubble,shape,category_organization,NA,NA,NA,0.2413793103448276
+soap bubble,solid,solidity,NA,NA,NA,0.05714285714285714
+soap bubble,count,count_mass,NA,NA,NA,0.4375
+plane,solid,solidity,NA,NA,NA,0.9333333333333332
+plane,shape,category_organization,NA,NA,NA,0.6428571428571429
+plane,count,count_mass,NA,NA,NA,0.9333333333333332
+brush,count,count_mass,NA,NA,NA,0.9666666666666668
+brush,solid,solidity,NA,NA,NA,0.9655172413793104
+brush,shape,category_organization,NA,NA,NA,0.7586206896551724
+broomstick,count,count_mass,NA,NA,NA,0.9333333333333332
+broomstick,shape,category_organization,NA,NA,NA,0.7241379310344828
+broomstick,solid,solidity,NA,NA,NA,0.9310344827586208
+carbonated drink,shape,category_organization,NA,NA,NA,0.27586206896551724
+carbonated drink,solid,solidity,NA,NA,NA,0.08333333333333333
+carbonated drink,count,count_mass,NA,NA,NA,0.59375
+gift/present,count,count_mass,NA,NA,NA,0.575
+gift/present,shape,category_organization,NA,NA,NA,0.4827586206896552
+gift/present,solid,solidity,NA,NA,NA,0.5625
+sugar,shape,category_organization,NA,NA,NA,0.20689655172413793
+laundry machine/washer,count,count_mass,NA,NA,NA,0.9666666666666668
+laundry machine/washer,shape,category_organization,NA,NA,NA,0.6896551724137931
+laundry machine/washer,solid,solidity,NA,NA,NA,0.9655172413793104
+salt,shape,category_organization,NA,NA,NA,0.27586206896551724
+sofa,count,count_mass,NA,NA,NA,0.935483870967742
+sofa,shape,category_organization,NA,NA,NA,0.6896551724137931
+sofa,solid,solidity,NA,NA,NA,0.8620689655172413
+clock/watch,solid,solidity,NA,NA,NA,0.9655172413793104
+clock/watch,shape,category_organization,NA,NA,NA,0.6896551724137931
+clock/watch,count,count_mass,NA,NA,NA,0.9666666666666668
+see-saw,count,count_mass,NA,NA,NA,0.9310344827586208
+see-saw,solid,solidity,NA,NA,NA,0.9655172413793104
+see-saw,shape,category_organization,NA,NA,NA,0.6896551724137931
+shoes,count,count_mass,NA,NA,NA,0.9666666666666668
+shoes,shape,category_organization,NA,NA,NA,0.6206896551724138
+shoes,solid,solidity,NA,NA,NA,0.9655172413793104
+garbage,shape,category_organization,NA,NA,NA,0.41379310344827586
+garbage,count,count_mass,NA,NA,NA,0.30952380952380953
+garbage,solid,solidity,NA,NA,NA,0.3611111111111111
+socks,shape,category_organization,NA,NA,NA,0.6896551724137931
+socks,count,count_mass,NA,NA,NA,0.90625
+socks,solid,solidity,NA,NA,NA,0.8275862068965517
+orange,shape,category_organization,NA,NA,NA,0.4482758620689655
+orange,count,count_mass,NA,NA,NA,0.8787878787878788
+orange,solid,solidity,NA,NA,NA,0.7241379310344828
+clothes,count,count_mass,NA,NA,NA,0.875
+clothes,shape,category_organization,NA,NA,NA,0.6206896551724138
+clothes,solid,solidity,NA,NA,NA,0.8
+clothes hanger,solid,solidity,NA,NA,NA,0.9655172413793104
+clothes hanger,count,count_mass,NA,NA,NA,0.9666666666666668
+clothes hanger,shape,category_organization,NA,NA,NA,0.6551724137931034
+yogurt,shape,category_organization,NA,NA,NA,0.20689655172413793
+sneakers,count,count_mass,NA,NA,NA,0.9666666666666668
+sneakers,shape,category_organization,NA,NA,NA,0.6206896551724138
+sneakers,solid,solidity,NA,NA,NA,0.9655172413793104
+glass,shape,category_organization,NA,NA,NA,0.25
+tooth/teeth,shape,category_organization,NA,NA,NA,0.5517241379310345
+tooth/teeth,count,count_mass,NA,NA,NA,0.90625
+tooth/teeth,solid,solidity,NA,NA,NA,0.8275862068965517
+lips,count,count_mass,NA,NA,NA,0.7567567567567568
+lips,solid,solidity,NA,NA,NA,0.6
+lips,shape,category_organization,NA,NA,NA,0.5172413793103449
+gloves,shape,category_organization,NA,NA,NA,0.6551724137931034
+gloves,count,count_mass,NA,NA,NA,0.875
+gloves,solid,solidity,NA,NA,NA,0.8275862068965517
+toy,shape,category_organization,NA,NA,NA,0.4827586206896552
+toy,count,count_mass,NA,NA,NA,0.7647058823529411
+toy,solid,solidity,NA,NA,NA,0.7741935483870968
+phone,shape,category_organization,NA,NA,NA,0.7241379310344828
+phone,solid,solidity,NA,NA,NA,0.9
+phone,count,count_mass,NA,NA,NA,0.8709677419354839
+plate (more flat),shape,category_organization,NA,NA,NA,0.6896551724137931
+plate (more flat),count,count_mass,NA,NA,NA,0.9333333333333332
+plate (more flat),solid,solidity,NA,NA,NA,0.9333333333333332
+chopsticks,count,count_mass,NA,NA,NA,0.9333333333333332
+chopsticks,solid,solidity,NA,NA,NA,0.9333333333333332
+chopsticks,shape,category_organization,NA,NA,NA,0.7241379310344828
+paper,shape,category_organization,NA,NA,NA,0.27586206896551724
+juice,solid,solidity,NA,NA,NA,0.05405405405405406
+juice,count,count_mass,NA,NA,NA,0.5161290322580645
+vacuum cleaner,shape,category_organization,NA,NA,NA,0.6896551724137931
+vacuum cleaner,count,count_mass,NA,NA,NA,0.9666666666666668
+vacuum cleaner,solid,solidity,NA,NA,NA,0.9655172413793104
+toothpaste,solid,solidity,NA,NA,NA,0.41379310344827586
+coffee,shape,category_organization,NA,NA,NA,0.13793103448275862
+coke/cola,count,count_mass,NA,NA,NA,0.6451612903225806
+coke/cola,shape,category_organization,NA,NA,NA,0.13793103448275862
+coke/cola,solid,solidity,NA,NA,NA,0.0588235294117647
+television,shape,category_organization,NA,NA,NA,0.7586206896551724
+television,count,count_mass,NA,NA,NA,0.9666666666666668
+television,solid,solidity,NA,NA,NA,0.9655172413793104
+rabbit,shape,category_organization,NA,NA,NA,0.7586206896551724
+rabbit,count,count_mass,NA,NA,NA,0.8055555555555556
+rabbit,solid,solidity,NA,NA,NA,0.6551724137931034
+underwear,shape,category_organization,NA,NA,NA,0.6206896551724138
+underwear,count,count_mass,NA,NA,NA,0.875
+underwear,solid,solidity,NA,NA,NA,0.8275862068965517
+grape,count,count_mass,NA,NA,NA,0.8125
+grape,shape,category_organization,NA,NA,NA,0.4482758620689655
+grape,solid,solidity,NA,NA,NA,0.7666666666666667
+glue/gluestick,count,count_mass,NA,NA,NA,0.7352941176470589
+glue/gluestick,solid,solidity,NA,NA,NA,0.5806451612903226
+grass/weeds (in nature),shape,category_organization,NA,NA,NA,0.41379310344827586
+grass/weeds (in nature),solid,solidity,NA,NA,NA,0.5517241379310345
+glue/gluestick,shape,category_organization,NA,NA,NA,0.3448275862068966
+grass/weeds (in nature),count,count_mass,NA,NA,NA,0.12903225806451613
+blood,shape,category_organization,NA,NA,NA,0.3448275862068966
+blood,solid,solidity,NA,NA,NA,0.12121212121212122
+sky,solid,solidity,NA,NA,NA,0.06896551724137931
+sun/sunlight,count,count_mass,NA,NA,NA,0.21212121212121213
+sun/sunlight,shape,category_organization,NA,NA,NA,0.3793103448275862
+sun/sunlight,solid,solidity,NA,NA,NA,0.10344827586206896
+helipcopter,solid,solidity,NA,NA,NA,0.9333333333333332
+helipcopter,shape,category_organization,NA,NA,NA,0.6428571428571429
+helipcopter,count,count_mass,NA,NA,NA,0.9
+hotteok (korean pancake),shape,category_organization,NA,NA,NA,0.5172413793103449
+hotteok (korean pancake),solid,solidity,NA,NA,NA,0.7241379310344828
+hotteok (korean pancake),count,count_mass,NA,NA,NA,0.8529411764705882
+tissue/napkin,shape,category_organization,NA,NA,NA,0.4827586206896552
+tissue/napkin,count,count_mass,NA,NA,NA,0.78125
+tissue/napkin,solid,solidity,NA,NA,NA,0.7666666666666667
+soil/dirt,shape,category_organization,NA,NA,NA,0.27586206896551724
+soil/dirt,count,count_mass,NA,NA,NA,0.06060606060606061
+soil/dirt,solid,solidity,NA,NA,NA,0.6206896551724138

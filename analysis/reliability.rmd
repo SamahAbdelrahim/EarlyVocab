@@ -195,5 +195,467 @@ print(top_discrepancies)
 
 ```{r }
 korean_sample1 <- read_csv(here("data/predictors","korean_sample1_props.csv"))
+korean_sample2 <- read_csv(here("data/predictors","korean_sample2_props.csv"))
+# filter the words fish and window, which are homonyms in Korean and have different meanings in English, to avoid confusion in the analysis
+korean_sample1 <- korean_sample1 %>% filter(uni_lemma != "fish", uni_lemma != "window")
+korean_sample2 <- korean_sample2 %>% filter(uni_lemma != "fish", uni_lemma != "window", Word != "Fish", Word != "Window", Word != "fish", Word != "window")
+
+
+english_sample1_koreanlist <- english_sample1 %>% filter (language == "Korean")
+
+words <- read_csv(here("data/ratings", "alllangs.csv")) %>% 
+  filter(!is.na(uni_lemma))  %>% 
+  mutate(word = uni_lemma) %>%
+  select(word, language, category)
+
+korean_words <- read_csv(here("data/ratings", "alllangs.csv")) %>% 
+  filter(!is.na(uni_lemma), language == "Korean")  %>% 
+  mutate(word = item_definition, theword = item_definition) %>% 
+  select (word, theword, uni_lemma, language, category)
+
+korean_words <- korean_words %>% 
+  mutate(uni_lemma = str_to_lower(uni_lemma))
+
+korean_sample2 <- korean_sample2 %>% 
+  mutate(Word = str_to_lower(Word))
+
+korean_sample2 <- korean_sample2 |> merge(korean_words, 
+        by = "theword") |> 
+  select(-ends_with(".x")) %>% distinct() %>%
+  rename_with(~ str_remove_all(., "\\.y$"), everything())
+
+```
+
+```{r }
+canonical_responses <- c(
+  "shape", "material", "color",
+  "count", "mass",
+  "solid", "non-solid",
+  "none", "unknown",
+  "multiple"
+)
+
+response_map <- tribble(
+  ~block,                  ~raw_response,        ~response_norm,
+
+  # -------------------------
+  # category_organization
+  # -------------------------
+  "category_organization", "shape",              "shape",
+  "category_organization", "color",              "color",
+  "category_organization", "substance",           "material",
+  "category_organization", "material",            "material",
+  "category_organization", "multiple",            "multiple",
+  "category_organization", "none of these",       "none",
+  "category_organization", "not applicable",      "none",
+
+  # -------------------------
+  # solidity
+  # -------------------------
+  "solidity",              "solid",              "solid",
+  "solidity",              "non-solid",          "non-solid",
+  "solidity",              "unknown",            "unknown",
+  "solidity",              "unclear/unknown",    "unknown",
+  "solidity",              "not applicable",     "unknown",
+
+  # -------------------------
+  # count_mass
+  # -------------------------
+  "count_mass",            "countable",          "count",
+  "count_mass",            "count",              "count",
+  "count_mass",            "count noun",         "count",
+  "count_mass",            "uncountable",        "mass",
+  "count_mass",            "mass",               "mass",
+  "count_mass",            "mass noun",          "mass",
+  "count_mass",            "not sure",           "unknown",
+  "count_mass",            "unknown",            "unknown"
+)
+
+```
+
+```{r }
+korean1_norm <- korean_sample1 %>%
+  left_join(
+    response_map,
+    by = c("block", "matching_response" = "raw_response")
+  )
+
+korean2_norm <- korean_sample2 %>%
+  left_join(
+    response_map,
+    by = c("block", "matching_response" = "raw_response")
+  )
+
+unique(c(korean1_norm$response_norm,
+         korean2_norm$response_norm))
+
+english1_norm <- english_sample1_koreanlist %>%
+  left_join(
+    response_map,
+    by = c("block", "response" = "raw_response")
+  )
+
+
+english2_norm <- english_sample2 %>% filter(language == "Korean") %>%
+  left_join(
+    response_map,
+    by = c("block", "matching_response" = "raw_response") 
+  )
+
+setdiff(
+  unique(c(english1_norm$response_norm,
+           english2_norm$response_norm)),
+  canonical_responses
+)
+
+```
+```{r }
+
+kor1 <- korean1_norm %>% 
+    select(uni_lemma, response_norm, block, proportion) %>% 
+    filter(response_norm %in% c("shape", "count", "solid")) %>%
+    mutate(sample = "kor1") %>% distinct()
+
+kor1 %>% filter(uni_lemma == "bag")
+
+kor2 <- korean2_norm %>% 
+    select(Word, response_norm, block, proportion) %>%
+    filter(response_norm %in% c("shape", "count", "solid")) %>%
+    mutate(sample = "kor2") %>% distinct() %>%
+  rename(uni_lemma = Word)
+
+kor2 %>% filter(uni_lemma == "bag")
+
+korean_all <- bind_rows(kor1, kor2) %>% distinct()
+
+korean_all %>% filter(uni_lemma == "bag", response_norm == "shape", block == "category_organization")
+
+korean_all %>%
+  summarise(n = n(), .by = c(uni_lemma, response_norm, block, sample)) %>%
+  filter(n > 1)
+
+english_all <- bind_rows(
+  english1_norm %>% select(uni_lemma, response_norm, block, proportion) %>%
+    filter(response_norm %in% c("shape", "count", "solid")) %>%
+    mutate(sample = "eng1"),
+  english2_norm %>%  select(uni_lemma, response_norm, block, proportion) %>%
+    filter(response_norm %in% c("shape", "count", "solid")) %>%
+    mutate(sample = "eng2")
+) %>% distinct()
+
+sample_map <- tribble(
+  ~korean_sample, ~english_sample,
+  "kor1",         "eng1",
+  "kor2",         "eng2"
+)
+
+```
+
+```{r }
+
+all_data <- bind_rows(english_all, korean_all) 
+
+wide_data <- all_data %>%
+  pivot_wider(
+    names_from = sample,
+    values_from = proportion
+  ) 
+
+all_data %>%
+  summarise(n = n(), .by = c(uni_lemma, response_norm, block, sample)) %>%
+  filter(n > 1)
+
+
+icc_data <- wide_data %>%
+  select(eng1, eng2, kor1, kor2)
+icc_data
+psych::ICC(icc_data)
+
+write_csv(wide_data, here("data/predictors", "reliability_wide_alldata.csv"))
+write_csv(all_data, here("data/predictors", "reliability_long_alldata.csv"))
+
+
+```
+Reliability of item-level proportions across norming samples was assessed using intraclass correlation coefficients (ICCs; McGraw & Wong, 1996). Treating samples as fixed effects, average-measures reliability was high, ICC(3,4) = .87, 95% CI [.86, .89], indicating strong consistency across English and Korean norming datasets.
+
+If you want the random-effects framing: Average-measures reliability remained high under a random-effects model, ICC(2,4) = .83, 95% CI [.72, .88].
+
+A single norming sample gives you a moderately reliable estimate of the underlying proportion. If you average across samples, reliability is high to excellent, suggesting that the item-level proportions are stable and consistent across different norming samples and languages > ICC2
+
+
+```{r }
+wide_data %>%
+  select(eng1, eng2, kor1, kor2) %>%
+  corr.test()
+
+```
+# Language-aware ICC
+```{r }
+# “After obtaining the most reliable estimate within each language, do items show similar structure across languages?”
+
+long_data <- all_data %>%
+  mutate(
+    language = case_when(
+      sample %in% c("eng1", "eng2") ~ "English",
+      sample %in% c("kor1", "kor2") ~ "Korean"
+    )
+  )
+
+lang_means <- long_data %>%
+  group_by(uni_lemma, response_norm, block, language) %>%
+  summarise(proportion = mean(proportion), .groups = "drop")
+
+lang_means_wide <- lang_means %>%
+  pivot_wider(names_from = language, values_from = proportion)
+
+cor(lang_means_wide$English, lang_means_wide$Korean, use = "pairwise")
+```
+When we get the average within language, items are ranked very similarly in English and Korean.
+Reliability was assessed both within and across languages. Within each language, item-level shape proportions were moderately to strongly correlated across the two independent norming samples (Korean: r = .38; English: r = .54). Applying the Spearman–Brown correction indicated that averaging across samples substantially improved reliability (Korean: .55; English: .70). Accordingly, language-specific averages were used for subsequent analyses. To assess cross-language consistency, we correlated item-level proportions averaged within English and Korean. This analysis revealed a strong cross-language association (r = .71), indicating that items exhibit highly similar structure across languages.
+
+If a reviewer asks “why not ICC?”, your answer is simple:
+
+We used split-half correlations with Spearman–Brown correction because they directly quantify the reliability of averaged item-level proportions and make minimal assumptions about variance homogeneity. see below for a more detailed explanation of the variance components and ICC approach.
+
+```{r }
+# After averaging within language, how much variance is due to items vs languages vs noise?
+# a variance-partitioning model, not a reliability coefficient
+
+m <- lmer(
+  proportion ~ 1 +
+    (1 | uni_lemma) +
+    (1 | language),
+  data = lang_means,
+  REML = TRUE
+)
+
+variance_components <- as.data.frame(VarCorr(m))
+variance_components$proportion <- variance_components$vcov / sum(variance_components$vcov)
+vc <- variance_components
+vc
+# 1. “How reliable are samples within the same language?”
+ICC_within_lang <-
+  vc$vcov[vc$grp == "uni_lemma"] /
+  (vc$vcov[vc$grp == "uni_lemma"] +
+   vc$vcov[vc$grp == "language"] +
+   vc$vcov[vc$grp == "Residual"])
+ICC_within_lang
+
+# 2. “How reliable are samples across languages?” “How much variance is item-level vs language-driven?”
+ICC_cross_lang <-
+  vc$vcov[vc$grp == "uni_lemma"] /
+  sum(vc$vcov)
+ICC_cross_lang
+
+```
+| Component   | Variance | Proportion |
+| ----------- | -------- | ---------- |
+| `uni_lemma` | 0.0144   | **19.4%**  |
+| `language`  | 0.0043   | **5.8%**   |
+| Residual    | 0.0557   | **74.8%**  |
+
+About 19% of total variance in language-averaged proportions is attributable to stable item differences.
+not low, given that:
+* the DV is a bounded proportion
+* many items cluster near 0 or 1
+* residual variance includes binomial + task noise
+
+The short, accurate meaning of “residual variance includes binomial + task noise” = 
+After accounting for stable item differences and language effects, the remaining unexplained variability reflects (a) sampling variability inherent to proportions and (b) noise introduced by the experimental task itself.
+
+Those two sources are structural, not mistakes.
+1️⃣ Binomial variance (the unavoidable part)
+
+the dependent variable is a proportion:
+Even if an item has a true underlying probability p, the observed proportio nmust vary across samples because participant responses are discrete.
+
+For a binomial process:
+Variance is largest near p = .5
+Variance shrinks near 0 or 1
+Smaller n → more variance
+
+This variance exists even if participants are perfectly consistent.
+mixed model treats all of this as residual variance.
+
+2️⃣ Task noise (human + procedural variability)
+
+Beyond binomial sampling, participants also differ in ways that are not item-stable:
+Examples:
+momentary attention
+interpretation of instructions
+response biases
+fatigue
+interface effects
+trial context
+These add variability that:
+is not systematic across items
+does not replicate across samples
+does not reflect “true” item properties
+This is task noise.
+
+3️⃣ Why both end up in the residual
+model: proportion ~ 1 + (1 | uni_lemma) + (1 | language)
+
+has no term that can explain:
+trial-level randomness
+participant-level variability
+binomial sampling error
+So all of that variance gets absorbed into:
+Residual
+This is expected.
+
+4️⃣ Why this matters for interpretation
+
+This is the crucial insight:
+A large residual variance does NOT mean your data are unreliable.
+It means:
+your measurement is noisy at the participant level
+but noise cancels out when you average
+which is exactly why reliability improves with aggregation
+That’s why you saw:
+moderate single-sample correlations
+high reliability after averaging
+
+strong cross-language correlations
+All three are compatible.
+
+5️⃣ Why proportions make residuals look especially big
+
+Two reasons:
+
+A. Bounded scale
+Proportions are restricted to 
+[0,1] which:
+compresses between-item variance
+inflates the relative size of residual variance
+
+B. Gaussian mismatch
+
+we're fitting a Gaussian mixed model to binomially generated data.
+This doesn’t invalidate the model, but it:
+shifts binomial variance into the residual
+lowers variance-based “ICC-like” ratios
+That’s why variance-partition ICCs often look “low” for proportions.
+
+ to model this explicitly: could separate binomial variance from task noise by using a binomial or beta mixed model:
+
+glmmTMB(
+  cbind(k, n - k) ~ 1 + (1 | uni_lemma) + (1 | language),
+  family = binomial,
+  data = ...
+)
+
+
+The residual variance reflects unavoidable binomial sampling variability in proportion estimates as well as unsystematic task-related noise, rather than unreliability of the underlying item-level structure.
+
+At the word level, we asked whether the words that strongly elicit count responses in the countability block are the same words that also strongly elicit solid and shape response relative to their respective alternatives. Pearson correlation analysis revealed a moderate negative correlation between countability and both solidity and shape rating. This could also be explained by the carryover effect between blocks, where participants could use the global context of the previous blocks to inform their ratings in the following blocks creating a contrast effect. For example, if a word is strongly rated as countable, participants may be less likely to rate it as solid or shape-based. On the other hand, sample 2A showed a positive correlation because the randomization of blocks and words could have led to more independent ratings across blocks. 
+
+# old code
+```{r }
+response_map <- tribble(
+  ~block,                    ~korean,           ~english_ref,
+  # category_organization
+  "category_organization",   "substance",        "material",
+  "category_organization",   "not applicable",   "none of these",
+  "category_organization",   "shape",            "shape",
+  "category_organization",   "color",            "color",
+
+  # solidity
+  "solidity",                "solid",            "solid",
+  "solidity",                "non-solid",        "non-solid",
+  "solidity",                "not applicable",   "unknown",
+
+  # count_mass
+  "count_mass",              "countable",        "count",
+  "count_mass",              "uncountable",      "mass",
+  "count_mass",              "not sure",         "unknown"
+)
+
+korean_norm <- korean_sample1 %>%
+  left_join(
+    response_map,
+    by = c("block" = "block", "matching_response" = "korean")
+  ) %>%
+  mutate(response_norm = english_ref)
+
+english_norm <- english_sample1_koreanlist %>%
+  mutate(
+    response_norm = case_when(
+      response %in% c("unclear/unknown", "unknown") ~ "unknown",
+      TRUE ~ response
+    )
+  )
+
+english_norm <- english_norm %>%
+  mutate(
+    response_norm = case_when(
+      response %in% c("count", "count noun") ~ "count",
+      response %in% c("mass", "mass noun") ~ "mass",
+      response %in% c("unclear/unknown", "unknown") ~ "unknown",
+      response == "none of these" ~ "none",
+      TRUE ~ response
+    )
+  )
+
+korean_norm <- korean_norm %>%
+  mutate(
+    response_norm = case_when(
+      response_norm == "none of these" ~ "none",
+      TRUE ~ response_norm
+    )
+  )
+
+setdiff(unique(korean_norm$response_norm),
+        unique(english_norm$response_norm))
+
+```
+
+```{r }
+merged <- korean_norm %>%
+  select(uni_lemma, block, response_norm, proportion) %>%
+  left_join(
+    english_norm %>%
+      select(uni_lemma, block, response_norm,
+             proportion_eng = proportion),
+    by = c("uni_lemma", "block", "response_norm")
+  ) %>%
+  distinct()
+
+merged %>%
+  filter(uni_lemma == "bag", block == "count_mass")
+
+merged_wide <- merged %>%
+  mutate(
+    dimension = case_when(
+      block == "count_mass" & response_norm == "count" ~ "count",
+      block == "category_organization" & response_norm == "shape" ~ "shape",
+      block == "solidity" & response_norm == "solid" ~ "solid",
+      TRUE ~ NA_character_
+    )
+  ) %>%
+  filter(!is.na(dimension)) %>%
+  select(uni_lemma, dimension, proportion, proportion_eng) %>%
+  pivot_wider(
+    names_from = dimension,
+    values_from = c(proportion, proportion_eng)
+  )
+
+merged_wide %>%
+  select(
+    proportion_count, proportion_eng_count,
+    proportion_shape, proportion_eng_shape,
+    proportion_solid, proportion_eng_solid
+  ) %>%
+  corr.test()
+
+list(
+  count = corr.test(merged_wide$proportion_count,
+                    merged_wide$proportion_eng_count),
+  shape = corr.test(merged_wide$proportion_shape,
+                    merged_wide$proportion_eng_shape),
+  solid = corr.test(merged_wide$proportion_solid,
+                    merged_wide$proportion_eng_solid)
+)
+
 
 ```
