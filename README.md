@@ -8,7 +8,7 @@ This repository contains the data, analysis code, and manuscript for a project t
 2. Replicates those ratings with a Korean-speaking sample (both online and in-country) to test rater-origin effects. [Studies 2A, 2B]
 3. Uses the resulting shape ratings to predict the **age of acquisition (AoA)** of those words from Wordbank, controlling for word frequency, concreteness, solidity, and countability. [Study 3]
 
-The headline findings are: shape-organized categories are **not** numerically dominant in early lexicons, yet shape uniquely predicts earlier acquisition above and beyond frequency and concreteness, and Korean adult ratings of shape are *higher* — not lower — than English.
+The headline findings are: shape-organized categories are **not** numerically dominant in early lexicons, yet shape uniquely predicts earlier acquisition above and beyond frequency and concreteness, and Korean adult ratings of shape are *higher* not lower than English.
 
 ## Repository layout
 
