@@ -3,11 +3,11 @@ title             : "Lexical statistics in early noun vocabularies: Examining th
 shorttitle        : "Lexical statistics and the shape bias"
 
 author: 
-  - name          : "Samah Abdelrahim"
+  - name          : "first author"
     affiliation   : "1"
     corresponding : yes
-    address       : "Department of Psychology, Stanford University, 450 Jane Stanford Way, Stanford, CA 94305"
-    email         : "samahabd@stanford.edu"
+    address       : "Department of Psychology, Some-University, Some-Address"
+    email         : "my@email.com"
     role:
       - "Conceptualization"
       - "Methodology"
@@ -16,7 +16,7 @@ author:
       - "Formal Analysis"
       - "Writing - Original Draft Preparation"
       - "Writing - Review & Editing"
-  - name          : "Michael C. Frank"
+  - name          : "second author"
     affiliation   : "1"
     role:
       - "Supervision"
@@ -24,14 +24,12 @@ author:
 
 affiliation:
   - id            : "1"
-    institution   : "Department of Psychology, Stanford University"
+    institution   : "Some-University"
 
 authornote: |
-  Correspondence concerning this article should be addressed to Samah Abdelrahim, Department of Psychology, Stanford University, 450 Jane Stanford Way, Stanford, CA 94305. E-mail: samahabd@stanford.edu.
+  Correspondence concerning this article should be addressed to first author, Some-University, Some-Address. E-mail: my@email.com.
 
-  We thank the audiences at the Language and Cognition Lab meetings at Stanford for helpful feedback on earlier drafts, and the staff at Chosun University for their assistance with Korean data collection. Data, materials, and analysis code for all four studies are openly available in the project repository.
-
-  This research was approved by the Institutional Review Board of Stanford University. The authors declare no competing interests.
+  The authors declare no competing interests.
 
 abstract: |
   The shape bias, the tendency for children to generalize new words based on shape, is well-documented in English-speaking children but reportedly weaker in children acquiring typologicaly different languages like Korean. A prominent explanation, the *statistical generalization account*, attributes the bias to the distributional dominance of shape-organized nouns in the early lexicon. We test this account directly. In Studies 1A and 1B, English-speaking adults rated early-acquired nouns sourced from 16 languages on shape-based organization, solidity, and count/mass syntax. Most nouns were rated as solid and countable, but shape-based organization was considerably less dominant than the account would predict, and the distribution of shape ratings did not differ significantly across the 16 unilemma sets. In Studies 2A and 2B, two independent samples of Korean-speaking adults (online and in-country) completed comparable rating tasks. Solidity and countability ratings aligned with English raters, but Korean adults rated *more* nouns as shape-organized than English adults, the opposite of the developmental pattern reported in word extension tasks by Korean children. In Study 3, mean shape ratings uniquely predicted age of acquisition above and beyond word frequency, concreteness, solidity, and countability. Together, the results suggest that shape is a good cue for early noun learning rather than a common one: shape-organized categories are not numerically dominant in early lexicons, but words with a clear shape signal are nonetheless acquired earlier. The mismatch between adult lexical statistics and child developmental biases indicates that the statistical generalization account, in its simplest form, does not by itself explain cross-linguistic variation in the shape bias.
@@ -122,7 +120,7 @@ The reasoning of this explanation is that, solid objects are dominant in the ear
 
 In addition, the shape bias is thought to emerge developmentally during the period in which, on average, these distributional regularities become prominent in young children's early vocabulary [@samuelson1999]. Perhaps when children learn the shape bias, they are learning about this cluster of properties and how much they co-vary.
 
-The statistical generalization hypothesis was also supported by computational models showing that exposure to a lexicon with similar statistical properties can lead to the emergence of a shape bias in simulated learners [@colunga_smith_2005; @perry_samuelson_2011]. A study utilizing Bayesian models further demonstrated that the shape bias can emerge from the statistical structure of the lexicon, specifically the correlations between object properties (solidity, shape) and linguistic properties (count-mass syntax) [@kemp_learning_2007]. Recent work on large language models has also shown that these models can exhibit a shape bias when trained on corpora with similar statistical properties [@blevins_2023].
+The statistical generalization hypothesis was also supported by computational models showing that exposure to a lexicon with similar statistical properties can lead to the emergence of a shape bias in simulated learners [@colunga_smith_2005; @perry_samuelson_2011]. A study utilizing Bayesian models further demonstrated that the shape bias can emerge from the statistical structure of the lexicon, specifically the correlations between object properties (solidity, shape) and linguistic properties (count-mass syntax) [@kemp_learning_2007].
 
 ## Cross-linguistic variation 
 
