@@ -1,0 +1,231 @@
+---
+title: "Reverse causality and omitted variables in the shape-AoA association (Study 4)"
+author: "Lexical statistics project"
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    toc: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(here)
+library(lme4)
+library(lmerTest)
+library(readxl)
+library(janitor)
+```
+
+This document addresses the reverse-causality and omitted-variable concern for
+the Study 4 result (the shape rating predicts earlier AoA): adult raters may
+judge a noun shape-organized partly *because* it is a familiar, early, highly
+imageable word, rather than the lexical statistic driving acquisition. The
+check is to refit the Table 3 model with covariates that index the
+"familiar early word" pathway: adult imageability and familiarity norms
+(Glasgow Norms; Scott et al., 2019), adult English AoA norms (Kuperman,
+Stadthagen-Gonzalez, & Brysbaert, 2012), and the English-anchored item norms
+used in the Wordbank prediction literature (babiness, valence, arousal;
+Braginsky et al., 2019). If the shape coefficient survives these covariates,
+a pure reverse-causality account becomes harder to maintain; if it does not,
+the association cannot be separated from adult lexical familiarity. Because
+Braginsky et al.'s language-specific covariates (MLU, phoneme counts) exist
+for only four of our fourteen languages, we use their English-anchored
+item-level norms, which enter exactly the way concreteness already does in
+the manuscript.
+
+# Data
+
+```{r data-load}
+# Primary Study 4 analysis set (one row per unilemma-by-language observation).
+ratings_aoa <- read_csv(here("data/predictors", "ratings_aoa.csv"),
+                        show_col_types = FALSE)
+
+# Unilemma cleaning for matching against single-word English norms:
+# lowercase, strip disambiguating parentheticals ("chicken (animal)"),
+# and take the first alternative of slash-separated forms ("soda/pop").
+clean_lemma <- function(x) {
+  x %>% str_to_lower() %>%
+    str_remove("\\s*\\(.*\\)\\s*$") %>%
+    str_split_fixed("/", 2) %>% .[, 1] %>%
+    str_trim()
+}
+ratings_aoa <- ratings_aoa %>% mutate(match_word = clean_lemma(uni_lemma))
+
+# Kuperman et al. (2012) adult AoA ratings (downloaded from osf.io/d7x6q).
+kuperman <- read_xlsx(here("data/predictors/external",
+                           "kuperman_aoa_with_pos.xlsx")) %>%
+  clean_names() %>%
+  transmute(match_word = str_to_lower(word),
+            adult_aoa  = as.numeric(rating_mean)) %>%
+  filter(!is.na(adult_aoa)) %>%
+  distinct(match_word, .keep_all = TRUE)
+
+# Glasgow Norms (Scott et al., 2019): imageability and familiarity
+# (downloaded from the JASP data library mirror of the BRM supplement).
+glasgow <- read_csv(here("data/predictors/external", "glasgow_norms.csv"),
+                    show_col_types = FALSE) %>%
+  clean_names() %>%
+  transmute(match_word   = clean_lemma(word),
+            imageability = as.numeric(m_imag),
+            familiarity  = as.numeric(m_fam)) %>%
+  group_by(match_word) %>%
+  summarise(across(c(imageability, familiarity), mean), .groups = "drop")
+
+# Braginsky et al. (2019) English-anchored item norms, extracted from the
+# aoa-prediction pipeline (uni_model_data.RData), English (American) rows.
+braginsky <- read_csv(here("data/predictors/external",
+                           "braginsky_uni_predictors.csv"),
+                      show_col_types = FALSE) %>%
+  filter(language == "English (American)") %>%
+  transmute(match_word = clean_lemma(uni_lemma),
+            babiness, valence, arousal) %>%
+  distinct(match_word, .keep_all = TRUE)
+
+model_df <- ratings_aoa %>%
+  left_join(kuperman,  by = "match_word") %>%
+  left_join(glasgow,   by = "match_word") %>%
+  left_join(braginsky, by = "match_word") %>%
+  distinct(language, uni_lemma, .keep_all = TRUE)
+
+coverage <- tibble(
+  covariate = c("adult AoA (Kuperman)", "imageability (Glasgow)",
+                "familiarity (Glasgow)", "babiness (Braginsky)"),
+  n_unilemmas = c(
+    n_distinct(model_df$uni_lemma[!is.na(model_df$adult_aoa)]),
+    n_distinct(model_df$uni_lemma[!is.na(model_df$imageability)]),
+    n_distinct(model_df$uni_lemma[!is.na(model_df$familiarity)]),
+    n_distinct(model_df$uni_lemma[!is.na(model_df$babiness)])),
+  n_total = n_distinct(model_df$uni_lemma))
+knitr::kable(coverage, caption = "Norm coverage of the Study 4 unilemma set.")
+```
+
+# Models
+
+Each augmented model is compared against the Table 3 baseline refit on the
+same rows (complete cases for that covariate set), so coefficient changes
+reflect the added covariates rather than the changed sample.
+
+```{r models}
+z <- function(x) as.numeric(scale(x))
+
+fit_pair <- function(df, extra_terms, label) {
+  covs <- c("logfreq", "concreteness", "solid", "mean_shape", "count_noun",
+            extra_terms)
+  d <- df %>%
+    select(uni_lemma, aoa, category, language, all_of(covs)) %>%
+    drop_na() %>%
+    mutate(across(all_of(covs), z)) %>%
+    distinct()
+  base_form <- aoa ~ logfreq + concreteness + solid + mean_shape +
+    count_noun + language + (1 | category) + (1 | uni_lemma)
+  aug_form  <- update(base_form,
+                      paste(". ~ . +", paste(extra_terms, collapse = " + ")))
+  fit_b <- lmerTest::lmer(base_form, data = d)
+  fit_a <- lmerTest::lmer(aug_form,  data = d)
+  cb <- coef(summary(fit_b))["mean_shape", ]
+  ca <- coef(summary(fit_a))["mean_shape", ]
+  tibble(
+    model      = label,
+    n_rows     = nrow(d),
+    n_unilemma = n_distinct(d$uni_lemma),
+    shape_b_baseline = cb[["Estimate"]], shape_p_baseline = cb[["Pr(>|t|)"]],
+    shape_b_augmented = ca[["Estimate"]], shape_p_augmented = ca[["Pr(>|t|)"]],
+    extra = list(coef(summary(fit_a))[extra_terms, , drop = FALSE]))
+}
+
+res <- bind_rows(
+  fit_pair(model_df, c("imageability", "familiarity"),
+           "+ imageability + familiarity"),
+  fit_pair(model_df, "adult_aoa", "+ adult English AoA"),
+  fit_pair(model_df, c("babiness", "valence", "arousal"),
+           "+ babiness + valence + arousal"),
+  fit_pair(model_df, c("imageability", "familiarity", "adult_aoa",
+                       "babiness", "valence", "arousal"),
+           "kitchen sink (all six)"))
+
+res %>%
+  select(-extra) %>%
+  mutate(across(where(is.numeric), ~ round(.x, 4))) %>%
+  knitr::kable(caption = paste(
+    "Shape coefficient (months of AoA per SD of shape rating) before and",
+    "after adding the covariates, on identical rows."))
+```
+
+```{r extra-coefs}
+# Coefficients of the added covariates in each augmented model.
+for (i in seq_len(nrow(res))) {
+  cat("\n##", res$model[i], "\n")
+  print(round(res$extra[[i]], 4))
+}
+```
+
+# Range restriction of the adult norms in this item set
+
+```{r range-restriction}
+rr <- bind_rows(
+  tibble(norm = "adult AoA (Kuperman)",
+         sd_our_items = sd(model_df %>% distinct(uni_lemma, adult_aoa) %>%
+                             pull(adult_aoa), na.rm = TRUE),
+         sd_full_norms = sd(kuperman$adult_aoa)),
+  tibble(norm = "imageability (Glasgow)",
+         sd_our_items = sd(model_df %>% distinct(uni_lemma, imageability) %>%
+                             pull(imageability), na.rm = TRUE),
+         sd_full_norms = sd(glasgow$imageability, na.rm = TRUE)),
+  tibble(norm = "familiarity (Glasgow)",
+         sd_our_items = sd(model_df %>% distinct(uni_lemma, familiarity) %>%
+                             pull(familiarity), na.rm = TRUE),
+         sd_full_norms = sd(glasgow$familiarity, na.rm = TRUE))) %>%
+  mutate(sd_ratio = sd_our_items / sd_full_norms,
+         across(where(is.numeric), ~ round(.x, 3)))
+knitr::kable(rr, caption = paste(
+  "Spread of the adult norms among our early nouns relative to the full",
+  "norm sets: early nouns are a restricted slice of the adult lexicon."))
+```
+
+# Results
+
+*(Drafted as manuscript text; update the numbers from the tables above if
+the data change.)*
+
+```{r results-text, echo=FALSE, results="asis"}
+fmt <- function(b, p) sprintf("$B$ = %.2f, $p$ = %.3g", b, p)
+r1 <- res[1, ]; r2 <- res[2, ]; r3 <- res[3, ]; r4 <- res[4, ]
+cat(sprintf(
+  paste(
+    "A remaining concern is reverse causality: adults may rate familiar,",
+    "early, highly imageable words as shape-organized, rather than shape",
+    "organization driving acquisition. We therefore refit the primary model",
+    "adding adult norms that index that pathway. Adding Glasgow imageability",
+    "and familiarity norms (matched for %d unilemmas) left the shape",
+    "coefficient essentially unchanged (%s, against %s in the baseline",
+    "refit on the same rows). Adding adult English AoA (Kuperman et al.,",
+    "2012; %d unilemmas), itself a strong predictor of child AoA, gave %s",
+    "for shape. With all six adult covariates entered together (imageability,",
+    "familiarity, adult AoA, babiness, valence, arousal), the shape",
+    "coefficient was %s. On the smaller subset with babiness coverage",
+    "(%d unilemmas), shape was not reliable with or without the added",
+    "covariates (%s augmented; %s baseline on the same rows), so that null",
+    "reflects the reduced item set rather than the covariates. These fits do",
+    "not identify the causal direction, but they are inconsistent with the",
+    "specific alternative on which the shape rating merely proxies adult",
+    "familiarity or the adult accessibility of early words.\n"),
+  r1$n_unilemma,
+  fmt(r1$shape_b_augmented, r1$shape_p_augmented),
+  fmt(r1$shape_b_baseline,  r1$shape_p_baseline),
+  r2$n_unilemma,
+  fmt(r2$shape_b_augmented, r2$shape_p_augmented),
+  fmt(r4$shape_b_augmented, r4$shape_p_augmented),
+  r3$n_unilemma,
+  fmt(r3$shape_b_augmented, r3$shape_p_augmented),
+  fmt(r3$shape_b_baseline,  r3$shape_p_baseline)))
+```
+
+Two caveats stay open and are worth stating in any response letter. First,
+the norms are English ratings attached to unilemmas, so they are constant
+across languages the way concreteness is; they control the item-level
+pathway, not language-specific familiarity. Second, our nouns are a
+restricted slice of the adult lexicon (see the range-restriction table), so
+the adult covariates enter with less variance than they carry in the full
+norm sets, and their coefficients here should not be compared with estimates
+from unrestricted vocabularies.

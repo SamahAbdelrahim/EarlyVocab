@@ -1,0 +1,11 @@
+design,n_items,true_shape_slope,power
+English (American) only,291,-0.28,0.424
+English (American) only,291,-0.41,0.658
+English (American) only,291,-0.5,0.838
+English (American) only,291,-0.75,0.994
+English (American) only,291,-1,1
+English (American) only,291,-1.5,1
+English-only analytic MDE (80% power),291,-0.477,0.8
+English-only analytic power at pooled slope,291,-0.28,0.376
+Korean-predictor analytic MDE (80% power),175,-0.673,0.8
+Korean-predictor analytic power at pooled slope,175,-0.28,0.214

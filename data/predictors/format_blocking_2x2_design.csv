@@ -1,0 +1,5 @@
+format,blocking,condition_code,n_subj,n_trials,n_words
+Forced choice,Random,fc_random,121,2373,736
+Forced choice,Blocked,fc_blocked,113,2260,734
+Multi-select,Random,ms_random,131,2587,742
+Multi-select,Blocked,ms_blocked,118,2360,733

@@ -1,6 +1,6 @@
 ---
-title: "Supplementary materials: Lexical statistics in early noun vocabularies (shape bias project)"
-author: "Samah Abdelrahim & Michael C. Frank (authorship as in main text)"
+title: "Supplementary materials: Lexical statistics and the shape bias"
+author: "Authors masked for review"
 date: "`r Sys.Date()`"
 output:
   pdf_document:
@@ -31,26 +31,38 @@ library(here)
 library(tidyverse)
 library(papaja)
 library(psych)
-library(ggvenn)
+library(eulerr)
 library(gridExtra)
 library(janitor)
+library(lme4)
 library(lmerTest)
 
 source(here("helper.R"))
+
+euler_fills <- c("grey83", "steelblue4", "firebrick3")
+euler_panel <- function(df, title) {
+  fit <- euler(as.data.frame(df))
+  plot(fit,
+       fills = list(fill = euler_fills, alpha = 0.55),
+       edges = list(col = "grey30", lwd = 0.5),
+       labels = list(fontsize = 4),
+       quantities = list(fontsize = 3.5),
+       adjust_labels = TRUE,
+       main = list(label = title, fontsize = 5))
+}
 ```
 
-This document supplements the main manuscript *Lexical statistics and the shape bias* (same data and code repository). It provides (S1) kernel-density plots of solidity, count, and shape ratings for **all 16** unilemma languages in Study~1A, **split into two page-sized figures**; (S2) 80% cutoff Venn diagrams, likewise split; (S3) the $4 \times 4$ correlation matrix of **word-level shape proportions** across English samples 1--2 and Korean samples 1--2; (S4) the Korean-only age-of-acquisition model reported as a robustness check in the main text; (S5) numeric details of the Study~2B strict- vs. broad-shape coding sensitivity analysis; and (S6) pointers to **browser-ready jsPsych implementations** of the rating tasks (Studies~1A and 2A), described below. **Study~1A Materials coverage** (referenced in the main manuscript): **per-language unilemma counts** and a **semantic-category composition** table and heatmap (linked via `ratings_aoa.csv`); **pairwise Jaccard overlap** between the 16 language-specific noun lists; **participant demographics** from Prolific CSV exports; and **distributions** of per-item rating totals (`totcount`) and response proportions across blocks.
+This document supplements the main manuscript. Contents: (S1) trial wording for the online rating tasks; (S2) Study 1A lexicon composition, item-count reconciliation across studies, demographics, rating distributions, and missing-identifier sensitivity; (S3) full 16-language density and Euler grids; (S4) cross-sample shape correlations; (S5) Korean age-of-acquisition models; (S6) Study 2A strict- vs. broad-shape coding; (S7) pooled English rater counts by procedure; (S8) leave-one-language-out refits of the Study 4 model; (S9) Bayesian posterior and power sensitivity for the shape--AoA coefficient.
 
-# Experiment implementations (Studies 1A and 2A)
+# S1. Trial wording (Studies 1A and 2B)
 
-The repository folder `experiment files/` (at the project root) contains the exact **HTML + JavaScript** tasks used for online collection. They mirror the procedures described in the main text:
+Interactive browser implementations of the rating tasks accompany the Open Materials for this manuscript. The procedures match the main text.
 
-- **Study 1A (English, 16-language unilemma lists):** Open `solidity-ratings.html`, which loads `solidity-ratings.js` (embedded word lists and jsPsych timeline). Participants completed three blocks—solidity, count–mass syntax, and category-organizing feature—in random order (20 nouns per block). On test trials, each *uni_lemma* appears alone as the prompt for solidity and count–mass; the organizing-feature trial asks whether the lemma *belongs to a category that is organized by:* with responses *shape* / *color* / *material* / *none of these*.
-- **Study 2A (Korean):** Open `vocab_comp.html`, which loads `words.js` (defines global `words_array`) then `vocab_comp.js`. Instructions follow the clarified wording used in Study 2A; test-trial structure matches Study 1A for the corresponding blocks.
+**Study 1A.** Participants completed three blocks in random order (solidity, count–mass syntax, category-organizing feature), 20 nouns per block. Solidity and count–mass trials presented a single unilemma as the prompt. The organizing-feature trial asked whether the word *belongs to a category that is organized by* shape, color, material, or none of these (single forced choice). Words were not grouped by semantic category.
 
-Supporting assets include local copies of jsPsych plugins under `experiment files/jspsych/` and shared styling (`solidity.css`). Opening the HTML files directly from disk (`file://`) works with the scripts as checked in (classic scripts; no ES-module imports required). Serving the folder over a local HTTP server is optional for deployment or debugging.
+**Study 2B.** Trial structure matched Study 1A for the corresponding blocks. Instructions used the clarified organizing-feature wording described in the main text.
 
-# Study 1A: Lexicon composition, cross-language overlap, demographics, and rating distributions
+# S2. Study 1A: Lexicon composition, demographics, and rating diagnostics
 
 ```{r load-eng1}
 english_sample1 <- read_csv(here("data/predictors", "english_sample1_props.csv"),
@@ -88,21 +100,93 @@ lang_n_tbl <- english_sample1 %>%
   arrange(language)
 
 papaja::apa_table(lang_n_tbl,
-                  caption = "Study~1A: Number of distinct unilemmas rated per Wordbank language list (English-speaking raters).",
+                  caption = "Study 1A: Number of distinct unilemmas rated per Wordbank language list (English-speaking raters).",
                   placement = "!htb",
                   escape = TRUE,
                   align = c("l", "r"))
 ```
 
-```{r supp-category-heatmap, fig.width = 7.2, fig.height = 5.4, fig.cap = "Semantic category counts per language for Study~1A items (categories taken from \\texttt{ratings\\_aoa.csv}, aligned with AoA regression syntax). Cell value is the number of unilemmas in each category--language cell."}
-cat_counts <- ratings_aoa %>%
+## Item-count reconciliation across studies
+
+```{r supp-item-recon, results="asis"}
+e2_supp <- read_csv(here("data/predictors", "english_sample2_props.csv"),
+                    show_col_types = FALSE) %>% filter(!is.na(response))
+k1_supp <- read_csv(here("data/predictors", "korean_sample1_props.csv"),
+                    show_col_types = FALSE) %>%
+  filter(!is.na(response), !uni_lemma %in% c("fish", "window"))
+k2_supp <- read_csv(here("data/predictors", "korean_sample2_props.csv"),
+                    show_col_types = FALSE) %>%
+  filter(!is.na(response)) %>%
+  mutate(Word = str_to_lower(Word)) %>%
+  select(-uni_lemma) %>%
+  filter(!Word %in% c("fish", "window"))
+kor_map <- read_csv(here("data/ratings", "alllangs.csv"),
+                    show_col_types = FALSE) %>%
+  filter(language == "Korean", !is.na(uni_lemma)) %>%
+  transmute(theword = item_definition, uni_lemma = str_to_lower(uni_lemma)) %>%
+  distinct()
+k2_matched <- merge(k2_supp, kor_map, by = "theword")
+
+nb <- function(df, bl, col = "uni_lemma") df %>%
+  filter(block == bl) %>% summarise(n = n_distinct(.data[[col]])) %>% pull(n)
+
+recon_tbl <- dplyr::bind_rows(
+  tibble::tibble(Sample = "Study 1A (English raters)",
+                 Block = c("Solidity", "Count--mass", "Organizing feature"),
+                 Items = c(nb(english_sample1, "solidity"),
+                           nb(english_sample1, "count_mass"),
+                           nb(english_sample1, "category_organization"))),
+  tibble::tibble(Sample = "Study 1B (English raters)",
+                 Block = "Organizing feature",
+                 Items = nb(e2_supp, "category_organization", "word")),
+  tibble::tibble(Sample = "Study 2A (Korean, in-country)",
+                 Block = c("Solidity", "Count--mass", "Organizing feature"),
+                 Items = c(nb(k2_supp, "solidity", "Word"),
+                           nb(k2_supp, "count_mass", "Word"),
+                           nb(k2_supp, "category_organization", "Word"))),
+  tibble::tibble(Sample = "Study 2A, unilemma-matched",
+                 Block = "All blocks",
+                 Items = n_distinct(k2_matched$uni_lemma)),
+  tibble::tibble(Sample = "Study 2B (Korean, online)",
+                 Block = c("Solidity", "Count--mass", "Organizing feature"),
+                 Items = c(nb(k1_supp, "solidity"),
+                           nb(k1_supp, "count_mass"),
+                           nb(k1_supp, "category_organization")))
+)
+
+papaja::apa_table(
+  recon_tbl,
+  caption = "Item counts by sample and block: distinct items with at least one retained rating.",
+  note = paste0(
+    "Study 1A blocks differ by a few nouns because not every noun retained ",
+    "ratings in every block. The Study 1B word list lacked 40 of the 664 Study 1A nouns ",
+    "(main text, Study 1B Materials). Study 2A items are English glosses of ",
+    "the Korean words (two duplicate-gloss items excluded); the ",
+    "unilemma-matched row counts the glosses matched to Korean CDI unilemmas ",
+    "that enter cross-study analyses. Study 2B counts unilemmas after the ",
+    "same duplicate-gloss exclusion. Pooled English counts in S7 exceed 664 ",
+    "because the Study 1B and Study 3 lists contain nouns absent from Study 1A."
+  ),
+  placement = "!htb",
+  escape = FALSE,
+  align = c("l", "l", "r")
+)
+```
+
+```{r supp-category-heatmap, fig.width = 7.2, fig.height = 5.4, fig.cap = "Semantic-category counts per language for Study 1A items (Wordbank semantic coding), for all 16 rated languages. Cell values are unilemma counts."}
+# Drawn from the full Study 1A sampling frame (alllangs.csv) rather than the
+# AoA analysis set, so Kiswahili and Spanish (Peruvian), which lack Wordbank
+# AoA estimates, are included.
+cat_counts <- read_csv(here("data/ratings", "alllangs.csv"),
+                       show_col_types = FALSE) %>%
+  filter(!is.na(uni_lemma)) %>%
   distinct(language, uni_lemma, category) %>%
   count(language, category, name = "n")
 
 ggplot(cat_counts, aes(x = language, y = category, fill = n)) +
   geom_tile(color = "white", linewidth = 0.15) +
   geom_text(aes(label = n), size = 2.3, color = "grey15") +
-  scale_fill_gradient(low = "#f7f7f7", high = "#8C1515") +
+  scale_fill_gradient(low = "#f7f7f7", high = "#4a6fa5") +
   labs(x = NULL, y = NULL, fill = "Count") +
   theme_minimal(base_size = 9) +
   theme(
@@ -113,20 +197,9 @@ ggplot(cat_counts, aes(x = language, y = category, fill = n)) +
   )
 ```
 
-```{r supp-category-wide-tab, results="asis"}
-cat_wide <- cat_counts %>%
-  pivot_wider(names_from = language, values_from = n, values_fill = 0)
+## Pairwise overlap of language-specific unilemma sets
 
-papaja::apa_table(cat_wide,
-                  caption = "Study~1A: Same semantic-category counts as the heatmap (wide format). Zeros indicate no noun from that category in that language list.",
-                  note  = "Categories follow Wordbank semantic coding linked in predictor construction.",
-                  placement = "!htb",
-                  escape = TRUE)
-```
-
-## Pairwise overlap of language-specific unilemma sets (Jaccard index)
-
-```{r supp-lang-overlap-heatmap, fig.width = 7, fig.height = 6.2, fig.cap = "Pairwise Jaccard similarity $|L_i \\cap L_j| / |L_i \\cup L_j|$ between Study~1A noun lists $L_i$, defined over distinct \\texttt{uni\\_lemma} values per \\texttt{language} in \\texttt{english\\_sample1\\_props.csv}. Diagonal $= 1$."}
+```{r supp-lang-overlap-heatmap, fig.width = 7, fig.height = 6.2, fig.cap = "Pairwise Jaccard similarity between Study 1A noun lists (distinct unilemmas per language). Diagonal $= 1$."}
 lemma_sets_df <- english_sample1 %>%
   distinct(language, uni_lemma) %>%
   group_by(language) %>%
@@ -150,8 +223,8 @@ jac_long <- jac_mat %>%
 
 ggplot(jac_long, aes(x = lang_a, y = lang_b, fill = jaccard)) +
   geom_tile(color = "white", linewidth = 0.08) +
-  scale_fill_gradient2(low = "white", mid = "#c7d4e8", high = "#1c3d5a", midpoint = 0.5,
-                       limits = c(0, 1)) +
+  scale_fill_gradient2(low = "white", mid = "#c7d4e8", high = "#1c3d5a",
+                       midpoint = 0.5, limits = c(0, 1)) +
   labs(x = NULL, y = NULL, fill = expression(Jaccard)) +
   theme_minimal(base_size = 8) +
   theme(
@@ -161,26 +234,41 @@ ggplot(jac_long, aes(x = lang_a, y = lang_b, fill = jaccard)) +
   )
 ```
 
-## Participant demographics (Study 1A; Prolific)
+## Participant demographics (Study 1A)
 
 ```{r supp-demo-1a}
 demo_paths <- list.files(here("data/demographics/first-sample-english"),
                          pattern = "\\.csv$", full.names = TRUE)
 stopifnot(length(demo_paths) > 0)
 
-english_demo_1a <- purrr::map_dfr(demo_paths, function(p) {
+english_demo_1a_all <- purrr::map_dfr(demo_paths, function(p) {
   read_csv(p, show_col_types = FALSE) %>%
     dplyr::mutate(dplyr::across(dplyr::everything(), ~ suppressWarnings(as.character(.x))))
 }) %>%
   janitor::clean_names()
 
-english_demo_1a <- english_demo_1a %>%
+subjects_1a <- read_csv(here("data/predictors", "english_sample1_raw.csv"),
+                        show_col_types = FALSE) %>%
+  filter(!is.na(subject)) %>%
+  distinct(subject) %>%
+  pull(subject)
+
+n_export_rows <- nrow(english_demo_1a_all)
+n_approved    <- sum(english_demo_1a_all$status == "APPROVED", na.rm = TRUE)
+
+english_demo_1a <- english_demo_1a_all %>%
+  filter(participant_id %in% subjects_1a) %>%
+  distinct(participant_id, .keep_all = TRUE) %>%
   mutate(age = suppressWarnings(as.numeric(age)))
 
 demo_sum <- tibble::tibble(
-  Statistic = c("N participants (rows in combined Prolific exports)",
-                 "Mean age (years)", "SD age", "Min age", "Max age"),
+  Statistic = c("Platform submissions (all statuses)",
+                "Approved submissions",
+                "Participants matched to analyzed rating data",
+                "Mean age (years)", "SD age", "Min age", "Max age"),
   Value = c(
+    as.character(n_export_rows),
+    as.character(n_approved),
     as.character(nrow(english_demo_1a)),
     sprintf("%.2f", mean(english_demo_1a$age, na.rm = TRUE)),
     sprintf("%.2f", sd(english_demo_1a$age,   na.rm = TRUE)),
@@ -196,7 +284,7 @@ demo_sex <- english_demo_1a %>%
 
 ```{r supp-demo-1a-tab1, results="asis"}
 papaja::apa_table(demo_sum,
-                  caption = "Study~1A: Demographic summary from merged Prolific export files (\\texttt{data/demographics/first-sample-english/}).",
+                  caption = "Study 1A demographics for participants matched to the analyzed rating data. Platform exports also include returned and timed-out submissions with no analyzed trials. The main-text N (336) counts distinct recorded identifiers in the rating data; one identifier has no matching demographic record, so demographic tables sum to 335. A session-logging error additionally left the identifier missing on a subset of retained trials (main text, Study 1A Participants).",
                   placement = "!htb",
                   escape = TRUE,
                   align = c("l", "r"))
@@ -204,23 +292,23 @@ papaja::apa_table(demo_sum,
 
 ```{r supp-demo-1a-tab2, results="asis"}
 papaja::apa_table(demo_sex,
-                  caption = "Study~1A: Self-reported sex (Prolific).",
+                  caption = "Study 1A: Self-reported sex (analyzed participants). One matched participant has demographic fields marked as consent-revoked in the platform export and contributes no age information.",
                   placement = "!htb",
                   escape = TRUE,
                   align = c("l", "r", "r"))
 ```
 
-## Distributions of rating totals and response proportions (Study 1A)
+## Distributions of rating totals and response proportions
 
-```{r supp-rating-distributions, fig.width = 7.2, fig.height = 4.8, fig.cap = "\\textbf{Left:} Distribution of per-item--language totals (number of participant judgments contributing to each aggregated proportion), by experimental block. \\textbf{Right:} Distribution of aggregated proportions for solidity, count-noun, and shape responses (coded dimension of proportion column)."}
+```{r supp-rating-distributions, fig.width = 7.2, fig.height = 4.8, fig.cap = "\\textbf{Left:} Per-item rating totals by experimental block. \\textbf{Right:} Aggregated item-level proportions for solidity, count-noun, and shape responses."}
 word_tot <- english_sample1 %>%
   distinct(language, uni_lemma, block, totcount)
 
 p_tot <- ggplot(word_tot, aes(x = totcount)) +
   geom_histogram(aes(y = after_stat(density)), bins = 25,
-                 fill = "#8C1515", color = "white", linewidth = 0.2, alpha = 0.85) +
+                 fill = "#4a6fa5", color = "white", linewidth = 0.2, alpha = 0.85) +
   facet_wrap(~block, ncol = 1, scales = "free_y") +
-  labs(x = "totcount (raters contributing to item)", y = "Density") +
+  labs(x = "Number of raters per item", y = "Density") +
   theme_minimal(base_size = 10)
 
 resp_dim <- english_sample1 %>%
@@ -228,19 +316,91 @@ resp_dim <- english_sample1 %>%
 
 p_prop <- ggplot(resp_dim, aes(x = proportion)) +
   geom_histogram(aes(y = after_stat(density)), bins = 30,
-                 fill = "#4a6fa5", color = "white", linewidth = 0.2, alpha = 0.85) +
+                 fill = "#6b8f71", color = "white", linewidth = 0.2, alpha = 0.85) +
   facet_wrap(~matching_response, ncol = 1, scales = "free_y") +
-  labs(x = "Aggregated proportion (per uni_lemma × language)", y = "Density") +
+  labs(x = "Aggregated proportion (per unilemma by language)", y = "Density") +
   theme_minimal(base_size = 10)
 
 gridExtra::grid.arrange(p_tot, p_prop, ncol = 2)
 ```
 
-# Study 1A: Sixteen languages (full grids, two panels per plot type)
+## Missing participant identifiers: sensitivity analysis
 
-<!-- `english_sample1`, `langs_16`, batches, Venns prepped in chunk `load-eng1` above. -->
+```{r missing-id-sensitivity}
+mid_sens <- read_csv(here("data/predictors", "missing_id_sensitivity.csv"),
+                     show_col_types = FALSE)
+mid_shape <- mid_sens %>% filter(stat == "shape")
+mid_resp <- read_csv(here("data/predictors", "missing_id_response_shares.csv"),
+                     show_col_types = FALSE) %>%
+  filter(block == "category_organization", response == "shape")
+mid_share_na <- mid_resp %>% filter(id_status == "missing_id") %>% pull(share)
+mid_share_id <- mid_resp %>% filter(id_status == "with_id") %>% pull(share)
+```
 
-```{r supp-correspondence-16a, fig.width=5.4, fig.height=3, fig.cap="(Part 1 of 2) Kernel density of per-word proportions for solidity, count, and shape responses, Study~1A (eight unilemma languages, alphabetical a--h). See Part~2 for remaining languages."}
+A session-logging error left the participant identifier missing on 13.8% of retained Study 1A trials (main text, Study 1A Participants). All unattributed trials fall in the category-organization block (32.2% of that block); solidity and count–mass proportions are identical under either inclusion rule. Item-level mean shape is `r printnum(mid_shape$mean_with_id, digits = 2)` with identifier-present trials only versus `r printnum(mid_shape$mean_all, digits = 2)` with all trials (item-level $r$ = `r printnum(mid_shape$item_cor, digits = 2)`). Unattributed trials selected shape less often (`r printnum(100 * mid_share_na, digits = 0)`% vs. `r printnum(100 * mid_share_id, digits = 0)`%), so missingness may relate to responses. Under either rule, mean shape remains far below solidity and count-noun proportions (`r printnum(mid_sens$mean_all[mid_sens$stat == "solid"], digits = 2)` and `r printnum(mid_sens$mean_all[mid_sens$stat == "count"], digits = 2)`). Study 1A analyses are item-aggregated; trial-level models with participant random effects appear only in Study 3 on separate samples.
+
+```{r missing-id-table}
+apa_table(
+  mid_sens %>%
+    transmute(
+      Statistic = dplyr::recode(stat, shape = "Shape", solid = "Solid",
+                                count = "Count noun"),
+      `Items` = n_items_all,
+      `Mean (all trials)` = printnum(mean_all, digits = 3),
+      `Mean (ID present)` = printnum(mean_with_id, digits = 3),
+      `Item-level r` = printnum(item_cor, digits = 3),
+      `Max |diff|` = printnum(max_abs_diff, digits = 3)
+    ),
+  caption = "Study 1A item-level proportions from all retained trials versus identifier-present trials only.",
+  note = "Missing identifiers fall only in the category-organization block, so solidity and count-noun rows are identical by construction."
+)
+```
+
+```{r missing-id-reruns}
+# Identifier-present reruns of the downstream analyses that use the Study 1A
+# shape measure: the per-language 80%-criterion shape counts and the primary
+# Study 4 cross-linguistic model.
+raw_1a_supp <- read_csv(here("data/predictors", "english_sample1_raw.csv"),
+                        show_col_types = FALSE)
+id_shape <- raw_1a_supp %>%
+  filter(!is.na(subject), block == "category_organization") %>%
+  group_by(word) %>%
+  summarise(shape_id = mean(response == "shape"), .groups = "drop")
+
+crit_all <- category_english_sample1 %>%
+  group_by(language) %>% summarise(n = sum(shape), .groups = "drop")
+crit_id <- english_sample1 %>%
+  distinct(language, uni_lemma) %>%
+  left_join(id_shape, by = c("uni_lemma" = "word")) %>%
+  mutate(pass = !is.na(shape_id) & shape_id >= threshold) %>%
+  group_by(language) %>% summarise(n = sum(pass), .groups = "drop")
+
+# Same construction as the main-text primary model, with the Study 1A half
+# of the averaged shape measure recomputed from identifier-present trials
+# (nouns absent from Study 1B keep the Study 1A value alone, as in the
+# main text).
+s2_set <- unique(e2_supp$word)
+mid_aoa_df <- ratings_aoa %>%
+  left_join(id_shape, by = c("uni_lemma" = "word")) %>%
+  mutate(mean_shape_id = ifelse(uni_lemma %in% s2_set,
+                                (shape_id + shape_s2) / 2, shape_id)) %>%
+  select(uni_lemma, aoa, logfreq, concreteness, solid, mean_shape_id,
+         count_noun, category, language) %>%
+  mutate(across(c(logfreq, concreteness, solid, mean_shape_id, count_noun),
+                ~ as.numeric(scale(.x)))) %>%
+  distinct()
+mid_fit <- lmerTest::lmer(
+  aoa ~ logfreq + concreteness + solid + mean_shape_id + count_noun +
+        language + (1 | category) + (1 | uni_lemma),
+  data = mid_aoa_df)
+mid_cf <- coef(summary(mid_fit))["mean_shape_id", ]
+```
+
+Two further checks apply the identifier-present rule to the analyses downstream of the Study 1A shape measure. The primary Study 4 cross-linguistic model, refit with the identifier-present shape measure, gives $B$ = `r printnum(mid_cf[["Estimate"]], digits = 2)` ($SE$ = `r printnum(mid_cf[["Std. Error"]], digits = 2)`, $p$ = `r papaja::printp(mid_cf[["Pr(>|t|)"]])`), indistinguishable from the all-trials estimate in the main text. The per-language 80%-criterion shape sets grow under the identifier-present rule (up to `r max(crit_id$n)` nouns per language versus `r max(crit_all$n)` with all trials) because fewer raters per item make an 80% supermajority easier to reach; they remain far smaller than the corresponding solid and count sets.
+
+# S3. Study 1A: Sixteen-language grids
+
+```{r supp-correspondence-16a, fig.width=5.4, fig.height=3, fig.cap="(Part 1 of 2) Kernel density of per-word proportions for solidity, count, and shape, Study 1A (eight languages, alphabetical)."}
 english_sample1 %>%
   filter(matching_response %in% c("solid", "count", "shape"),
          language %in% lang_batch1) %>%
@@ -258,7 +418,7 @@ english_sample1 %>%
   )
 ```
 
-```{r supp-correspondence-16b, fig.width=5.4, fig.height=3, fig.cap="(Part 2 of 2) Same as Part~1 for the remaining eight unilemma languages (alphabetical i--p)."}
+```{r supp-correspondence-16b, fig.width=5.4, fig.height=3, fig.cap="(Part 2 of 2) Same as Part~1 for the remaining eight languages."}
 english_sample1 %>%
   filter(matching_response %in% c("solid", "count", "shape"),
          language %in% lang_batch2) %>%
@@ -276,43 +436,35 @@ english_sample1 %>%
   )
 ```
 
-```{r supp-venn-16a, fig.width=5.4, fig.height=2.85, fig.cap="(Part 1 of 2) Venn diagrams (80\\% cutoff) for solid, count, and shape-organization, Study~1A (eight languages; same ordering as the density figure)."}
+```{r supp-venn-16a, fig.width=5.4, fig.height=2.85, fig.cap="(Part 1 of 2) Area-proportional Euler diagrams (80\\% cutoff) for solid, count, and shape-organization, Study 1A (eight languages; same order as the density figure)."}
 venns16a <- category_english_sample1 %>%
   filter(language %in% lang_batch1) %>%
   mutate(language = forcats::fct_relevel(factor(language), as.character(lang_batch1))) %>%
+  arrange(language) %>%
   group_by(language) %>%
   nest() %>%
-  mutate(plot = map2(data, language, ~ ggvenn(
-    .x, c("count_noun", "solid", "shape"),
-    show_percentage = FALSE, text_size = 1.45, set_name_size = 1.35) +
-    labs(y = .y) +
-    theme(axis.title.y = element_text(angle = 90, size = 4, vjust = 0.5),
-          axis.text.y = element_blank(), axis.ticks.y = element_blank(),
-          axis.line.y = element_blank()))) %>%
+  mutate(plot = map2(data, language, ~ euler_panel(
+    .x %>% select(`count noun` = count_noun, solid, shape), .y))) %>%
   pull(plot)
 
 gridExtra::grid.arrange(grobs = venns16a, ncol = 4)
 ```
 
-```{r supp-venn-16b, fig.width=5.4, fig.height=2.85, fig.cap="(Part 2 of 2) Venn diagrams for the remaining eight languages."}
+```{r supp-venn-16b, fig.width=5.4, fig.height=2.85, fig.cap="(Part 2 of 2) Area-proportional Euler diagrams for the remaining eight languages."}
 venns16b <- category_english_sample1 %>%
   filter(language %in% lang_batch2) %>%
   mutate(language = forcats::fct_relevel(factor(language), as.character(lang_batch2))) %>%
+  arrange(language) %>%
   group_by(language) %>%
   nest() %>%
-  mutate(plot = map2(data, language, ~ ggvenn(
-    .x, c("count_noun", "solid", "shape"),
-    show_percentage = FALSE, text_size = 1.45, set_name_size = 1.35) +
-    labs(y = .y) +
-    theme(axis.title.y = element_text(angle = 90, size = 4, vjust = 0.5),
-          axis.text.y = element_blank(), axis.ticks.y = element_blank(),
-          axis.line.y = element_blank()))) %>%
+  mutate(plot = map2(data, language, ~ euler_panel(
+    .x %>% select(`count noun` = count_noun, solid, shape), .y))) %>%
   pull(plot)
 
 gridExtra::grid.arrange(grobs = venns16b, ncol = 4)
 ```
 
-# Cross-sample shape correlations
+# S4. Cross-sample shape correlations
 
 ```{r shape-4x4}
 all_data_wide <- read_csv(here("data/predictors", "reliability_wide_alldata.csv"),
@@ -321,29 +473,32 @@ all_data_wide <- read_csv(here("data/predictors", "reliability_wide_alldata.csv"
 shape_wide <- all_data_wide %>%
   filter(response_norm == "shape") %>%
   distinct(uni_lemma, .keep_all = TRUE) %>%
-  select(eng1, eng2, kor1, kor2)
+  select(eng1, eng2, kor1, kor2) %>%
+  rename(`Study 1A` = eng1, `Study 1B` = eng2,
+         `Study 2B` = kor1, `Study 2A` = kor2)
 
 cor4 <- cor(shape_wide, use = "pairwise.complete.obs")
-cor4_df <- tibble::rownames_to_column(as.data.frame(cor4), "Sample")
+cor4_df <- tibble::rownames_to_column(as.data.frame(round(cor4, 2)), "Sample")
 ```
 
 ```{r shape-4x4-table, results="asis"}
 papaja::apa_table(cor4_df,
-                  caption = "Pearson correlations of word-level shape-organization proportions across the four norming samples (Study 1A = eng1, Study 1B = eng2, Study 2A = kor1, Study 2B = kor2).",
-                  note  = "Lower triangle matches psych::corr.test output; diagonal is 1.",
+                  caption = "Pearson correlations of word-level shape-organization proportions across the four norming samples (Study 2A = in-country Korean; Study 2B = online Korean).",
                   placement = "!htb",
                   escape = TRUE,
                   align = c("l", rep("r", 4)))
 ```
 
-# Korean-only age-of-acquisition model
+# S5. Korean age-of-acquisition models
+
+On the matched Korean Wordbank AoA item set, two models share the same rows and differ in which lexical-feature ratings enter. The English-predictor model includes Korean corpus log frequency, Brysbaert concreteness, and Study 1A/1B solidity, shape, and count-noun ratings. The Korean-predictor model includes the same Korean corpus log frequency and Korean-averaged solidity, shape, and count-noun ratings (Studies 2A and 2B), omitting concreteness because those norms are English-lemma ratings. Only a category random intercept is identifiable.
 
 ```{r korean-aoa-supp}
 ratings_aoa <- read_csv(here("data/predictors", "ratings_aoa.csv"),
                         show_col_types = FALSE)
 ratings_aoa_korean <- ratings_aoa %>% filter(language == "Korean")
 
-all_data_wide_kor_model <- all_data_wide %>%
+kor_preds <- all_data_wide %>%
   select(uni_lemma, kor1, kor2, response_norm) %>%
   pivot_wider(names_from = response_norm, values_from = c(kor1, kor2),
               values_fill = 0) %>%
@@ -352,113 +507,336 @@ all_data_wide_kor_model <- all_data_wide %>%
     mean_solid_kor = (kor1_solid + kor2_solid) / 2,
     mean_count_kor = (kor1_count + kor2_count) / 2
   ) %>%
-  left_join(ratings_aoa_korean, by = "uni_lemma") %>%
-  select(-ends_with(".y")) %>%
-  rename_with(~ str_remove_all(., "\\.x$"), everything()) %>%
-  filter(!is.na(aoa)) %>%
-  distinct() %>%
-  janitor::clean_names() %>%
-  drop_na() %>%
-  filter(!is.na(freq) & freq > 0) %>%
-  mutate(logfreq = log(freq)) %>%
-  drop_na(concreteness, solid, mean_shape, count_noun) %>%
-  distinct()
+  select(uni_lemma, mean_shape_kor, mean_solid_kor, mean_count_kor)
+
+all_data_wide_kor_model <- ratings_aoa_korean %>%
+  left_join(kor_preds, by = "uni_lemma") %>%
+  # `freq` is already a within-language z-scored log relative frequency
+  # (see analysis/build-ratings-aoa.R), so it is not logged again here.
+  filter(!is.na(aoa), !is.na(freq)) %>%
+  mutate(logfreq = freq) %>%
+  drop_na(concreteness, solid, mean_shape, count_noun,
+          mean_shape_kor, mean_solid_kor, mean_count_kor, category) %>%
+  distinct(uni_lemma, .keep_all = TRUE) %>%
+  mutate(across(
+    c(logfreq, concreteness, solid, mean_shape, count_noun,
+      mean_solid_kor, mean_shape_kor, mean_count_kor),
+    ~ as.numeric(scale(.x))
+  ))
+
+kor_lmer_ctrl <- lmerControl(optimizer = "bobyqa",
+                             optCtrl = list(maxfun = 2e5))
+
+korean_eng_fit <- lmerTest::lmer(
+  aoa ~ logfreq + concreteness + solid + mean_shape + count_noun +
+        (1 | category),
+  data = all_data_wide_kor_model, REML = FALSE, control = kor_lmer_ctrl)
 
 korean_fit <- lmerTest::lmer(
-  aoa ~ logfreq + concreteness + mean_solid_kor + mean_shape_kor + mean_count_kor +
+  aoa ~ logfreq + mean_solid_kor + mean_shape_kor + mean_count_kor +
         (1 | category),
-  data = all_data_wide_kor_model
+  data = all_data_wide_kor_model, REML = FALSE, control = kor_lmer_ctrl)
+
+# Covariate-parity check: drop concreteness (an English-only norm) from the
+# English-predictor model so the two models share the same covariate set.
+korean_eng_fit_noconc <- lmerTest::lmer(
+  aoa ~ logfreq + solid + mean_shape + count_noun + (1 | category),
+  data = all_data_wide_kor_model, REML = FALSE, control = kor_lmer_ctrl)
+
+coef_tbl <- function(fit) {
+  k_tab <- coef(summary(fit))
+  tibble::tibble(
+    Predictor = rownames(k_tab),
+    Estimate  = papaja::printnum(k_tab[, "Estimate"], digits = 2),
+    SE        = papaja::printnum(k_tab[, "Std. Error"], digits = 2),
+    df        = papaja::printnum(k_tab[, "df"], digits = 1),
+    `t`       = papaja::printnum(k_tab[, "t value"], digits = 2),
+    p         = papaja::printp(k_tab[, "Pr(>|t|)"])
+  )
+}
+k_eng_out <- coef_tbl(korean_eng_fit)
+k_out     <- coef_tbl(korean_fit)
+
+korean_aic_supp <- c(
+  eng = AIC(korean_eng_fit),
+  kor = AIC(korean_fit)
 )
-k_tab <- coef(summary(korean_fit))
-k_out <- tibble::tibble(
-  Predictor = rownames(k_tab),
-  Estimate    = papaja::printnum(k_tab[, "Estimate"], digits = 2),
-  SE          = papaja::printnum(k_tab[, "Std. Error"], digits = 2),
-  df          = papaja::printnum(k_tab[, "df"], digits = 1),
-  `t`         = papaja::printnum(k_tab[, "t value"], digits = 2),
-  p           = papaja::printp(k_tab[, "Pr(>|t|)"])
+korean_r2_supp <- if (requireNamespace("MuMIn", quietly = TRUE)) {
+  c(
+    eng = as.numeric(MuMIn::r.squaredGLMM(korean_eng_fit)[1, "R2m"]),
+    kor = as.numeric(MuMIn::r.squaredGLMM(korean_fit)[1, "R2m"])
+  )
+} else {
+  c(eng = NA_real_, kor = NA_real_)
+}
+```
+
+```{r korean-aoa-table-eng, results="asis"}
+papaja::apa_table(
+  k_eng_out,
+  caption = "Fixed effects for the English-predictor model of Korean age of acquisition (months).",
+  note  = sprintf(
+    "Random intercept for semantic category. Predictors are z-scored. N = %d. AIC = %s; marginal R^2 = %s.",
+    nrow(all_data_wide_kor_model),
+    papaja::printnum(korean_aic_supp["eng"], digits = 1),
+    papaja::printnum(korean_r2_supp["eng"], digits = 2)
+  ),
+  placement = "!htb",
+  escape = TRUE
 )
 ```
 
 ```{r korean-aoa-table, results="asis"}
-papaja::apa_table(k_out,
-                  caption = "Fixed effects for the Korean-only model predicting age of acquisition (months) from corpus log-frequency, concreteness, and Korean-averaged solidity, shape, and count-noun ratings.",
-                  note  = "Random intercept for semantic category. Predictors use the same scaling as in the main text where applicable.",
-                  placement = "!htb",
-                  escape = TRUE)
+papaja::apa_table(
+  k_out,
+  caption = "Fixed effects for the Korean-predictor model of Korean age of acquisition (months).",
+  note  = sprintf(
+    "Random intercept for semantic category. Predictors are z-scored. N = %d. AIC = %s; marginal R^2 = %s. English-predictor model on the same items: AIC %s; marginal R^2 %s.",
+    nrow(all_data_wide_kor_model),
+    papaja::printnum(korean_aic_supp["kor"], digits = 1),
+    papaja::printnum(korean_r2_supp["kor"], digits = 2),
+    papaja::printnum(korean_aic_supp["eng"], digits = 1),
+    papaja::printnum(korean_r2_supp["eng"], digits = 2)
+  ),
+  placement = "!htb",
+  escape = TRUE
+)
 ```
 
-# Study 2B: Strict vs. broad shape coding
+Because concreteness enters only the English-predictor model (the norms are English ratings), we also refit that model without it so the two models share the same covariate set; the comparison is unchanged (AIC `r papaja::printnum(AIC(korean_eng_fit_noconc), digits = 1)` vs. `r papaja::printnum(korean_aic_supp["kor"], digits = 1)` for the Korean-predictor model).
 
-The main manuscript reports counts and means for strict (``shape'' as the only selected feature) versus broad (``shape'' selected alone or with another feature) coding. Those values are computed in `manuscript.Rmd` chunk `kor2-sensitivity` from `data/predictors/korean_sample2_props.csv`. For submission, paste the latest inline values from the rendered main text here if the journal requires a static supplement table.
+# S6. Study 2A: Strict vs. broad shape coding
+
+Strict coding counts shape only when it was the sole selected feature; broad coding counts shape whenever it was selected alone or with another feature.
 
 ```{r kor2-supp, results="asis"}
-korean_sample2 <- read_csv(here("data/predictors", "korean_sample2_props.csv"),
-                           show_col_types = FALSE) %>%
-  mutate(Word = stringr::str_to_lower(Word)) %>%
-  filter(!is.na(response)) %>%
-  distinct() %>%
-  filter(!Word %in% c("fish", "window"))
-
-shape_strict_kor2 <- korean_sample2 %>%
-  filter(block == "category_organization", matching_response == "shape") %>%
-  distinct(Word, proportion) %>%
-  rename(prop_strict = proportion)
-
-shape_broad_kor2 <- korean_sample2 %>%
-  filter(block == "category_organization") %>%
-  filter(matching_response == "shape" |
-         (matching_response == "multiple" &
-            stringr::str_detect(cleaned_response, "form"))) %>%
-  group_by(Word) %>%
-  summarise(prop_broad = sum(proportion), .groups = "drop")
-
-shape_kor2_compare <- dplyr::full_join(shape_strict_kor2, shape_broad_kor2,
-                                       by = "Word") %>%
-  mutate(
-    prop_strict = ifelse(is.na(prop_strict), 0, prop_strict),
-    prop_broad  = ifelse(is.na(prop_broad),  prop_strict, prop_broad)
-  )
-
-n_trials_total <- korean_sample2 %>%
-  filter(block == "category_organization") %>%
-  distinct(Word, totcount) %>%
-  summarise(n = sum(totcount, na.rm = TRUE)) %>% pull(n)
-
-n_shape_only <- korean_sample2 %>%
-  filter(block == "category_organization", matching_response == "shape") %>%
-  summarise(n = sum(proportion * totcount, na.rm = TRUE)) %>% pull(n) %>% round()
-
-n_shape_multi <- korean_sample2 %>%
-  filter(block == "category_organization",
-         matching_response == "multiple",
-         stringr::str_detect(cleaned_response, "form")) %>%
-  summarise(n = sum(proportion * totcount, na.rm = TRUE)) %>% pull(n) %>% round()
+kor2_sens <- read_csv(here("data/predictors", "study2a_shape_coding_sensitivity.csv"),
+                      show_col_types = FALSE)
+kor2_v <- function(s) kor2_sens$value[kor2_sens$statistic == s]
 
 sens_tbl <- tibble::tibble(
   Description = c(
-    "Organizing block trials (total, weighted N)",
-    "``Shape only'' (strict)",
-    "Shape + other feature (broad)",
+    "Organizing-block trials (weighted N)",
+    "Shape only (strict)",
+    "Shape + other feature (broad only)",
+    "N items",
     "Mean P(shape), strict",
     "SD, strict",
     "Mean P(shape), broad",
     "SD, broad"
   ),
   Value = c(
-    as.character(prettyNum(n_trials_total, big.mark = ",")),
-    as.character(prettyNum(n_shape_only, big.mark = ",")),
-    as.character(prettyNum(n_shape_multi, big.mark = ",")),
-    sprintf("%.3f", mean(shape_kor2_compare$prop_strict, na.rm = TRUE)),
-    sprintf("%.3f", sd(shape_kor2_compare$prop_strict,   na.rm = TRUE)),
-    sprintf("%.3f", mean(shape_kor2_compare$prop_broad,  na.rm = TRUE)),
-    sprintf("%.3f", sd(shape_kor2_compare$prop_broad,    na.rm = TRUE))
+    prettyNum(kor2_v("organizing_trials_total"), big.mark = ","),
+    prettyNum(kor2_v("shape_only_trials"), big.mark = ","),
+    prettyNum(kor2_v("shape_plus_other_trials"), big.mark = ","),
+    as.character(kor2_v("n_items")),
+    sprintf("%.3f", kor2_v("mean_strict")),
+    sprintf("%.3f", kor2_v("sd_strict")),
+    sprintf("%.3f", kor2_v("mean_broad")),
+    sprintf("%.3f", kor2_v("sd_broad"))
   )
 )
 
 papaja::apa_table(sens_tbl,
-                  caption = "Sensitivity analysis for Study~2B multiple-selection trials (per main text). P(shape) = item-level shape proportion under each coding rule.",
+                  caption = "Study 2A multiple-selection coding. Values match the main text. P(shape) = item-level shape proportion under each coding rule.",
                   placement = "!htb",
-                  escape = TRUE,
+                  escape = FALSE,
                   align = c("l", "r"))
+```
+
+# S7. Pooled English rater counts
+
+Organizing-feature ratings were pooled across English samples that shared a procedure, then re-scored under the 80% rule. Solidity and count–mass criteria remain from Study 1A (the only sample that collected those blocks).
+
+```{r eng-agg-load}
+eng_agg_raters <- read_csv(here("data/predictors", "english_aggregation_rater_summary.csv"),
+                           show_col_types = FALSE)
+eng_agg_crit <- read_csv(here("data/predictors", "english_aggregation_80pct_criterion.csv"),
+                         show_col_types = FALSE)
+eng_agg_sub <- read_csv(here("data/predictors", "english_aggregation_subsample_sensitivity.csv"),
+                        show_col_types = FALSE)
+eng_agg_ms <- read_csv(here("data/predictors", "english_aggregation_ms_blocked_criterion.csv"),
+                       show_col_types = FALSE)
+
+agg_rater_tbl <- eng_agg_raters %>%
+  transmute(
+    Procedure = procedure,
+    Trials = prettyNum(n_trials, big.mark = ","),
+    Words = n_unique_words,
+    `Median raters/word` = med_raters_per_word,
+    `Mean shape` = sprintf("%.2f", mean_shape)
+  )
+
+agg_crit_tbl <- eng_agg_crit %>%
+  filter(language %in% c("English (American)", "Korean",
+                         "Mandarin (Beijing)", "Japanese")) %>%
+  transmute(
+    Pool = dplyr::recode(pool,
+                         `1A_only` = "Study 1A only",
+                         `pooled_FC_random` = "Pooled FC random"),
+    Language = language,
+    `N shape` = n_shape,
+    `N intersect` = n_intersect,
+    `Median raters` = med_raters_shape,
+    `Mean shape` = round(mean_shape, 2)
+  )
+
+agg_sub_tbl <- eng_agg_sub %>%
+  transmute(
+    `Raters per word` = n_raters,
+    `Eligible words` = n_words,
+    `Mean pass rate` = sprintf("%.1f\\%%", 100 * mean_pass_rate),
+    `Words usually passing` = n_usually_pass
+  )
+
+agg_ms_tbl <- eng_agg_ms %>%
+  transmute(
+    Pool = dplyr::recode(pool,
+                         ms_blocked_pilot = "MS grouped pilot",
+                         pooled_ms_blocked = "Pooled MS grouped"),
+    Words = n_words,
+    `Words on 1A set` = n_words_on_1a_set,
+    `Pct shape >= 80` = round(pct_shape_ge_80, 1),
+    `Pct on 1A set` = round(pct_shape_ge_80_on_1a, 1),
+    `Median raters` = med_raters,
+    `Mean broad shape` = round(mean_broad_shape, 2)
+  )
+```
+
+Pooling Studies 1A, 1B, and the forced-choice random cell of Study 3 raised the median number of organizing-feature raters per noun from `r eng_agg_raters %>% filter(procedure == "Study 1A (FC random)") %>% pull(med_raters_per_word)` to `r eng_agg_raters %>% filter(procedure == "Pooled FC random (1A + 1B + 2x2)") %>% pull(med_raters_per_word)`, left mean shape slightly lower, and changed 80% shape counts only marginally. Pooled word counts exceed the 664-noun Study 1A set because the Study 1B and Study 3 lists contain nouns absent from Study 1A; pooled rows count every word with at least one rating in any contributing sample.
+
+```{r eng-agg-raters, results="asis"}
+papaja::apa_table(
+  agg_rater_tbl,
+  caption = "Organizing-feature trials by procedure. FC = forced choice with random word order; MS blocked = multiple selection with semantic grouping.",
+  placement = "!htb",
+  escape = FALSE
+)
+```
+
+```{r eng-agg-crit, results="asis"}
+papaja::apa_table(
+  agg_crit_tbl,
+  caption = "80\\% cutoff counts in four languages: Study 1A shape ratings only versus pooled forced-choice random-order shape ratings. Solid and count criteria are from Study 1A in both rows.",
+  placement = "!htb",
+  escape = FALSE
+)
+```
+
+On the pooled forced-choice trials, $n \in \{7, 9, 11, 13\}$ raters were redrawn per noun. Even at $n = 11$, fewer than 3% of items passed the 80% shape rule on average.
+
+```{r eng-agg-sub, results="asis"}
+papaja::apa_table(
+  agg_sub_tbl,
+  caption = "Subsample sensitivity on pooled forced-choice random-order trials. Mean pass rate = share of 400 resamples per word reaching $\\geq 80\\%$ shape; usually passing = pass rate $\\geq .5$.",
+  placement = "!htb",
+  escape = FALSE
+)
+```
+
+Pooling the grouped multiple-selection pilot and the Study 3 grouped cell yields mean broad shape near the Study 3 cell estimates, but only `r eng_agg_ms %>% filter(pool == "pooled_ms_blocked") %>% pull(pct_shape_ge_80_on_1a) %>% round(1)`% of Study 1A nouns meet an 80% broad-shape cutoff, because most items in the $2 \times 2$ cells have few raters each.
+
+```{r eng-agg-ms, results="asis"}
+papaja::apa_table(
+  agg_ms_tbl,
+  caption = "Multiple-selection grouped samples (broad coding). The on-1A columns restrict to nouns that appear in Study 1A.",
+  placement = "!htb",
+  escape = FALSE
+)
+```
+
+# S8. Leave-one-language-out refits of the Study 4 model
+
+```{r lolo-load}
+lolo_all <- read_csv(here("data/predictors", "aoa_lolo_sensitivity.csv"),
+                     show_col_types = FALSE)
+lolo_pool <- lolo_all %>% filter(dropped_language == "none (pooled model)")
+lolo      <- lolo_all %>% filter(dropped_language != "none (pooled model)")
+
+lolo_tbl_out <- lolo_all %>%
+  transmute(
+    `Language dropped` = dropped_language,
+    `N obs` = prettyNum(n_obs, big.mark = ","),
+    `B (shape)` = printnum(estimate, digits = 2),
+    SE = printnum(se, digits = 2),
+    `95\\% CI` = sprintf("[%s, %s]",
+                         printnum(ci_low, digits = 2),
+                         printnum(ci_high, digits = 2)),
+    p = papaja::printp(p)
+  )
+```
+
+The primary cross-linguistic model of Study 4 was refit `r nrow(lolo)` times, each time dropping all items contributed by one language. The shape coefficient stayed negative in every refit and varied between `r printnum(min(lolo$estimate), digits = 2)` and `r printnum(max(lolo$estimate), digits = 2)`, against a pooled estimate of `r printnum(lolo_pool$estimate, digits = 2)`, and the Wald test fell below .05 in `r sum(lolo$p < .05)` of the `r nrow(lolo)` refits. No single language's item set is necessary for the association, although this check retains nearly all unilemmas on each pass (the shape predictor is unilemma-level), so it speaks to language-specific item sets rather than to the unilemma-level predictor; the more stringent leave-one-category-out refits appear in the main text (Study 4 Results).
+
+```{r lolo-table, results="asis"}
+papaja::apa_table(
+  lolo_tbl_out,
+  caption = "Leave-one-language-out refits of the Study 4 cross-linguistic model. Each row drops one language's item-by-language observations and reports the shape coefficient from the refit (months of age of acquisition per SD of shape rating).",
+  note = "First row is the pooled model reported in the main text. Wald 95\\% confidence intervals. All other model terms, including the language fixed effect and the crossed category and unilemma random intercepts, are as in the main model.",
+  placement = "!htb",
+  escape = FALSE,
+  align = c("l", "r", "r", "r", "r", "r")
+)
+```
+
+# S9. Bayesian refit and power sensitivity for the shape--AoA coefficient
+
+```{r bayes-power-load}
+bp_bayes <- read_csv(here("data/predictors", "aoa_bayes_summary.csv"),
+                     show_col_types = FALSE)
+bp_power <- read_csv(here("data/predictors", "aoa_power_sensitivity.csv"),
+                     show_col_types = FALSE)
+
+bayes_tbl <- bp_bayes %>%
+  transmute(
+    Model = model,
+    `Post. mean` = printnum(post_mean, digits = 2),
+    `Post. SD` = printnum(post_sd, digits = 2),
+    `95\\% CrI` = sprintf("[%s, %s]",
+                          printnum(ci_low, digits = 2),
+                          printnum(ci_high, digits = 2)),
+    `$P(B < 0)$` = printnum(p_negative, digits = 3),
+    `\\% in ROPE` = printnum(100 * pct_in_rope, digits = 1),
+    `\\% below ROPE` = printnum(100 * pct_below_rope, digits = 1),
+    `Max $\\hat{R}$` = printnum(max_rhat_b, digits = 3)
+  )
+
+power_tbl <- bp_power %>%
+  filter(design == "English (American) only") %>%
+  transmute(`True shape slope` = printnum(true_shape_slope, digits = 2),
+            Power = printnum(power, digits = 2))
+pw_n_eng <- bp_power %>% filter(design == "English (American) only") %>%
+  slice(1) %>% pull(n_items)
+
+bp_primary <- bp_bayes %>% filter(model == "cross-linguistic (primary)")
+```
+
+Both models were refit in `brms` with weakly informative normal(0, 5) priors on the regression coefficients, four chains of 4,000 iterations (1,000 warmup), and `adapt_delta` = 0.95. The region of practical equivalence (ROPE) is $\pm 0.1$ SD of age of acquisition, or $\pm$ `r printnum(bp_primary$rope_high, digits = 2)` months. For the primary cross-linguistic model, `r printnum(100 * bp_primary$p_negative, digits = 1)`% of the posterior mass for the shape coefficient lies below zero and `r printnum(100 * bp_primary$pct_below_rope, digits = 1)`% lies below the ROPE. The direction of the effect is therefore well supported while its practical size is not: about `r printnum(100 * bp_primary$pct_in_rope, digits = 0)`% of the posterior is compatible with a negligible effect.
+
+```{r bayes-table, results="asis"}
+papaja::apa_table(
+  bayes_tbl,
+  caption = "Posterior summaries for the shape coefficient in the Bayesian refits of the Study 4 models.",
+  note = "Coefficients are in months of age of acquisition per SD of shape rating. CrI = credible interval; ROPE = region of practical equivalence, $\\pm 0.1$ SD of age of acquisition.",
+  placement = "!htb",
+  escape = FALSE,
+  align = c("l", rep("r", 7))
+)
+```
+
+The single-language design cannot arbitrate the same question. Simulating age of acquisition from the English-only design ($N$ = `r pw_n_eng`) at a range of true slopes, with the fitted category-intercept and residual variances, gives the rejection rates below.
+
+```{r power-table, results="asis"}
+papaja::apa_table(
+  power_tbl,
+  caption = sprintf("Simulated power of the English-only Study 4 design (N = %d items, 500 simulations per row) to detect a shape effect of a given size.", pw_n_eng),
+  note = sprintf(
+    "Slopes are in months per SD of shape rating; the pooled cross-linguistic estimate is %s. The analytic minimal detectable effect at 80\\%% power is %s for the English-only design and %s for the Korean-predictor design.",
+    printnum(lolo_pool$estimate, digits = 2),
+    printnum(abs(bp_power$true_shape_slope[bp_power$design == "English-only analytic MDE (80% power)"]), digits = 2),
+    printnum(abs(bp_power$true_shape_slope[bp_power$design == "Korean-predictor analytic MDE (80% power)"]), digits = 2)),
+  placement = "!htb",
+  escape = FALSE,
+  align = c("r", "r")
+)
 ```

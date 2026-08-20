@@ -1,0 +1,39 @@
+statistic,value,as_of
+1A English shape M (zero-filled),0.292,2026-08-19 16:54 PDT
+1A English shape SD (zero-filled),0.220,2026-08-19 16:54 PDT
+1A English n items (category block),664,2026-08-19 16:54 PDT
+1B English shape M (zero-filled),0.257,2026-08-19 16:54 PDT
+1B English shape SD (zero-filled),0.223,2026-08-19 16:54 PDT
+1B English n items (category block),624,2026-08-19 16:54 PDT
+2A Korean strict (in-country) shape M (zero-filled),0.587,2026-08-19 16:54 PDT
+2A Korean strict (in-country) shape SD (zero-filled),0.158,2026-08-19 16:54 PDT
+2A Korean strict (in-country) n items (category block),242,2026-08-19 16:54 PDT
+2B Korean (online) shape M (zero-filled),0.425,2026-08-19 16:54 PDT
+2B Korean (online) shape SD (zero-filled),0.289,2026-08-19 16:54 PDT
+2B Korean (online) n items (category block),246,2026-08-19 16:54 PDT
+Study 1A solid M,0.81,2026-08-19 16:54 PDT
+Study 1A count M,0.74,2026-08-19 16:54 PDT
+Study 1A shape M,0.29,2026-08-19 16:54 PDT
+Study 2B Korean shape M (online),0.42,2026-08-19 16:54 PDT
+English on Korean list shape M,0.33,2026-08-19 16:54 PDT
+Venn max shape@80% per rep language,6,2026-08-19 16:54 PDT
+1A-1B word-level r,0.650,2026-08-19 16:54 PDT
+1A-1B Spearman-Brown predicted r,0.788,2026-08-19 16:54 PDT
+1A vs 1B lmer study1B B,-0.039,2026-08-19 16:54 PDT
+1A vs 1B lmer study1B p,0.0000,2026-08-19 16:54 PDT
+2A vs 2B lmer study2B B,-0.163,2026-08-19 16:54 PDT
+2A vs 2B lmer study2B p,0.0000,2026-08-19 16:54 PDT
+Eng3 multi-select broad M,0.33,2026-08-19 16:54 PDT
+Eng3 multi-select strict M,0.25,2026-08-19 16:54 PDT
+Eng3 vs 1A/1B single M,0.27,2026-08-19 16:54 PDT
+Eng3 pct multi-select trials,9.3,2026-08-19 16:54 PDT
+Kor2A shape strict M,0.587,2026-08-19 16:54 PDT
+Kor2A shape broad M,0.899,2026-08-19 16:54 PDT
+Kor reliability Spearman-Brown,0.679,2026-08-19 16:54 PDT
+Eng reliability Spearman-Brown,0.788,2026-08-19 16:54 PDT
+Eng-Kor pooled r (all blocks),0.711,2026-08-19 16:54 PDT
+Eng-Kor shape-org r,0.441,2026-08-19 16:54 PDT
+AoA model mean_shape B,-0.280,2026-08-19 16:54 PDT
+AoA model mean_shape p,0.0126,2026-08-19 16:54 PDT
+Freq vs mean_shape r,-0.002,2026-08-19 16:54 PDT
+Korean AoA model N,175,2026-08-19 16:54 PDT

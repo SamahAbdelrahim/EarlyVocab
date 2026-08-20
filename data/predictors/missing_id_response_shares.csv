@@ -1,0 +1,15 @@
+block,id_status,response,n,share
+category_organization,missing_id,color,75,0.034013605442176874
+category_organization,missing_id,material,834,0.3782312925170068
+category_organization,missing_id,none of these,793,0.3596371882086168
+category_organization,missing_id,shape,503,0.22811791383219954
+category_organization,with_id,color,224,0.04816168565899807
+category_organization,with_id,material,1652,0.3551924317351107
+category_organization,with_id,none of these,1309,0.2814448505697699
+category_organization,with_id,shape,1466,0.31520103203612126
+count_mass,with_id,count noun,3130,0.6825119930222416
+count_mass,with_id,mass noun,1074,0.2341910161360663
+count_mass,with_id,unclear/unknown,382,0.0832969908416921
+solidity,with_id,non-solid,914,0.20070267896354854
+solidity,with_id,solid,3280,0.720245937637242
+solidity,with_id,unclear/unknown,360,0.07905138339920949

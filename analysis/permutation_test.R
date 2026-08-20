@@ -32,6 +32,18 @@ get_density_on_grid <- function(x_values, grid_x) {
   approx(d$x, d$y, xout = grid_x, rule = 2)$y
 }
 
+shape_prop_by_item <- function(ratings_df, item_col = "word") {
+  ratings_df %>%
+    filter(block == "category_organization") %>%
+    distinct(.data[[item_col]], matching_response, proportion) %>%
+    group_by(.data[[item_col]]) %>%
+    summarise(
+      shape_prop = proportion[matching_response == "shape"][1],
+      .groups = "drop"
+    ) %>%
+    mutate(shape_prop = replace_na(shape_prop, 0))
+}
+
 compute_observed_densities <- function(df, grid_x) {
   df %>%
     group_by(language) %>%
@@ -53,12 +65,25 @@ run_shape_permutation <- function(ratings_df,
                                   response_label = "shape",
                                   n_perm = 500,
                                   seed = 123,
-                                  grid_n = 100) {
+                                  grid_n = 100,
+                                  item_col = "word",
+                                  all_words = FALSE) {
   set.seed(seed)
-  shape_df <- ratings_df %>%
-    filter(response == response_label) %>%
-    replace_na(list(proportion = 0)) %>%
-    select(uni_lemma, language, proportion)
+  if (all_words) {
+    shape_df <- shape_prop_by_item(ratings_df, item_col = item_col) %>%
+      left_join(
+        ratings_df %>%
+          filter(block == "category_organization") %>%
+          distinct(.data[[item_col]], language),
+        by = item_col
+      ) %>%
+      rename(uni_lemma = .data[[item_col]], proportion = shape_prop)
+  } else {
+    shape_df <- ratings_df %>%
+      filter(response == response_label) %>%
+      replace_na(list(proportion = 0)) %>%
+      select(uni_lemma, language, proportion)
+  }
 
   grid_x <- seq(0, 1, length.out = grid_n)
 

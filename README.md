@@ -14,24 +14,22 @@ The headline findings are: shape-organized categories are **not** numerically do
 
 ```
 .
-├── analysis/         # exploratory and intermediate Rmd scripts
-│                     # (cleaning, pre-processing, reliability, AoA, homonyms)
+├── analysis/permutation_test.R  # sourced by the manuscript at knit time
 ├── data/
-│   ├── ratings/      # raw and cleaned per-sample rating data
-│   ├── predictors/   # processed wide/long files used by the manuscript
-│   ├── demographics/ # participant demographics (gitignored)
+│   ├── ratings/      # word lists and mappings used by the Rmds
+│   ├── predictors/   # processed files used by the manuscript and supplement
+│   ├── demographics/ # participant demographics (local only)
 │   └── figures/      # exported figures (knitr also writes here)
 ├── experiment files/ # jsPsych HTML/JS for Studies 1A & 2A (see Supplement + below)
 ├── writeup/
-│   ├── manuscript.Rmd        # main manuscript (papaja::apa6_pdf)
-│   ├── supplementary_materials.Rmd  # 16-language figures, 4x4 corrs, Korean AoA, experiment pointers
-│   ├── manuscript.pdf        # rendered PDF
-│   ├── lexical_stats_MS_pUBS.Rmd  # earlier draft kept for reference
-│   ├── r-references.bib      # primary bibliography
-│   ├── meta-shapebias.bib    # extra shape-bias references
-│   └── apa6.csl              # APA citation style
-├── helper.R          # shared cleaning helpers and response coding maps
-├── renv.lock         # pinned R package versions
+│   ├── manuscript.Rmd
+│   ├── supplementary_materials.Rmd
+│   ├── manuscript.pdf
+│   ├── r-references.bib
+│   ├── meta-shapebias.bib
+│   └── apa6.csl
+├── helper.R
+├── renv.lock
 └── README.md
 ```
 

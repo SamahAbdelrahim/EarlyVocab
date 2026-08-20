@@ -1,0 +1,9 @@
+statistic,value
+organizing_trials_total,7004
+shape_only_trials,4205
+shape_plus_other_trials,2093
+mean_strict,0.5868603560609831
+sd_strict,0.15895107982079773
+mean_broad,0.899344806476468
+sd_broad,0.16937107415876207
+n_items,242

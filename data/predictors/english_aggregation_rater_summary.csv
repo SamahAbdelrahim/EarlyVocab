@@ -1,0 +1,5 @@
+procedure,n_trials,n_unique_words,med_raters_per_word,mean_shape
+Study 1A (FC random),6856,665,9,0.29189444973822826
+Pooled FC random (1A + 1B + 2x2),16129,749,22,0.2743152269717108
+MS blocked pilot,1399,659,2,0.5689970373581904
+Pooled MS blocked (pilot + 2x2),3759,742,5,0.5712121698307682

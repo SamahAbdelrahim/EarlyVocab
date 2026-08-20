@@ -3,16 +3,41 @@
 .Rhistory
 .RData
 .RDataTmp*
+.RDataTmp*.*
 .Ruserdata
-rsconnect
+*.RData
+.DS_Store
+**/.DS_Store
 
-# Project-specific large or sensitive directories
-data/demographics/
+# Nested renv debris created when knitting from inside writeup/
+# (the repo-root .Rprofile that runs renv/activate.R is tracked)
+writeup/.Rprofile
+writeup/renv/
 
-# Project planning and informal notes (kept locally only)
+# Local AI / agent files and planning notes
+CLAUDE.md
+MEMORY.md
+TODO.md
 PLAN.md
+Claude.md
+Memory.md
+
+# Internal working folders: scratch analysis, old drafts, review/feedback
+writeup/archive/
 writeup/feedback.txt
+writeup/old-layout-manuscript/
+writeup/review-*.md
+writeup/coselection-asymmetry.md
 misc/
+.vscode/
+kemp-learner/
+rsconnect/
+
+# Exploratory analysis scripts stay local. The one file the manuscript
+# sources at knit time is tracked (git does not descend into ignored dirs,
+# so the directory itself is not listed here).
+analysis/*
+!analysis/permutation_test.R
 
 # knitr / R Markdown caches and helper outputs
 *_files
@@ -31,6 +56,7 @@ analysis/reliability_interpretation.pdf
 *.bbl
 *.blg
 *.synctex.gz
+writeup/_render*.log
 
 # knitr PNG outputs dropped in writeup/ root (canonical copies are in data/figures/)
 writeup/*.png
@@ -44,3 +70,41 @@ writeup/data/figures/
 # jsPsych library and images bundled with experiment files (see README for CDN instructions)
 experiment files/jspsych/
 experiment files/images/
+
+# Project-specific large or sensitive directories
+data/demographics/
+
+# Third-party norm files (not redistributed; download sources documented in
+# writeup/reverse-causality.Rmd)
+data/predictors/external/
+
+# Raw exports containing participant identifiers; the derived props/summary
+# CSVs in data/predictors/ are the public versions
+data/third-sample-english-multi-select/
+data/second-sample-korean/jongmin.csv
+data/demographics.zip
+data/predictors/study1a_data.csv
+data/predictors/study1b_data.csv
+data/predictors/format_blocking_2x2_participant_quality.csv
+
+# knitr chunk outputs and script scratch figures (regenerated at knit; the
+# figure inputs the Rmds \includegraphics are tracked individually)
+data/figures/unnamed-chunk-*
+data/figures/supplement-*
+data/figures/*-1.png
+data/figures/*-1.pdf
+data/figures/all_samples_shape.png
+data/figures/format_blocking_2x2.png
+data/figures/multiselect_blocked_gap.png
+data/figures/permu.png
+data/figures/correspoendence_eng_1.png
+data/figures/permutated_dist_eng_2.png
+
+# Letter-only co-selection analysis (not read by manuscript or supplement)
+data/predictors/coselection_*.csv
+data/figures/coselection_*.png
+
+# Analysis-script outputs not read by the manuscript or supplement
+data/predictors/format_blocking_2x2_item_props.csv
+data/predictors/format_blocking_2x2_contrasts.csv
+data/predictors/english_sample3_multiselect_items.csv

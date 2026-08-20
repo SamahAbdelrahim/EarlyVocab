@@ -1,0 +1,3 @@
+pool,n_words,n_words_on_1a_set,pct_shape_ge_80,pct_shape_ge_80_on_1a,med_raters,mean_broad_shape
+ms_blocked_pilot,659,583,39.90895295902883,41.852487135506,2,0.5689970373581904
+pooled_ms_blocked,742,659,28.30188679245283,29.286798179059183,5,0.5712121698307682
