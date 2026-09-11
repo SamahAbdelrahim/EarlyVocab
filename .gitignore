@@ -31,6 +31,7 @@ writeup/coselection-asymmetry.md
 misc/
 .vscode/
 kemp-learner/
+dictionary-definitions/
 rsconnect/
 
 # Exploratory analysis scripts stay local. The one file the manuscript
