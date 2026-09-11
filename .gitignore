@@ -72,21 +72,34 @@ writeup/data/figures/
 experiment files/jspsych/
 experiment files/images/
 
-# Project-specific large or sensitive directories
-data/demographics/
+# Demographic exports. The anonymized CSVs the manuscript and supplement read
+# are tracked: platform identifiers are replaced by surrogate codes and only
+# status, age, and sex are retained. The unused second English export and the
+# stray spreadsheet files in the Chosun folder stay local.
+data/demographics/*
+!data/demographics/first-sample-english/
+!data/demographics/first-sample-korean/
+!data/demographics/second-sample-korean/
+data/demographics/second-sample-korean/*
+!data/demographics/second-sample-korean/1.csv
 
 # Third-party norm files (not redistributed; download sources documented in
 # writeup/reverse-causality.Rmd)
 data/predictors/external/
+!data/predictors/external/glasgow_norms.csv
 
 # Raw exports containing participant identifiers; the derived props/summary
-# CSVs in data/predictors/ are the public versions
-data/third-sample-english-multi-select/
+# CSVs in data/predictors/ are the public versions. The trial-level files the
+# manuscript and supplement read at knit time are tracked with identifiers
+# replaced by surrogate codes (P0001, SESS0001, STUDY0001, ROW0000001).
 data/second-sample-korean/jongmin.csv
 data/demographics.zip
 data/predictors/study1a_data.csv
 data/predictors/study1b_data.csv
-data/predictors/format_blocking_2x2_participant_quality.csv
+
+# Untouched raw exports plus id_map.csv, the only thing that can re-link a
+# surrogate code to a platform identifier. Local only; never commit.
+data/raw_local_backup/
 
 # knitr chunk outputs and script scratch figures (regenerated at knit; the
 # figure inputs the Rmds \includegraphics are tracked individually)

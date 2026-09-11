@@ -181,11 +181,25 @@ emit_table_pair <- function(left, right) {
 }
 
 # Shared style for the area-proportional Euler diagrams (Figures 3 and 6).
-euler_fills <- c("grey83", "steelblue4", "firebrick3")
+# All seven disjoint regions get an explicit fill, in the order eulerr indexes
+# them (eulerr:::bit_indexr), so a region carries the same color in every panel
+# by construction instead of by eulerr's internal Lab mixing of the three set
+# colors. Every panel selects its columns as count noun, solid, shape. The four
+# overlap values are what that mixing currently produces, so the rendered
+# figures are unchanged; retinting one region now means editing one entry.
+euler_fills <- c(
+  "count noun"                 = "grey83",
+  "solid"                      = "steelblue4",
+  "shape"                      = "firebrick3",
+  "count noun & solid"         = "#889AAF",
+  "count noun & shape"         = "#DD8779",
+  "solid & shape"              = "#965159",
+  "count noun & solid & shape" = "#AD7C80"
+)
 euler_panel <- function(df, title) {
   fit <- euler(as.data.frame(df))
   plot(fit,
-       fills = list(fill = euler_fills, alpha = 0.55),
+       fills = list(fill = unname(euler_fills), alpha = 0.55),
        edges = list(col = "grey30", lwd = 0.7),
        labels = list(fontsize = 8),
        quantities = list(fontsize = 7),
