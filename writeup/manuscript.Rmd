@@ -1,5 +1,5 @@
 ---
-title             : "Shape is a good cue when it’s present”: lexical statistics of early nouns in English and Korean"
+title             : "Shape is a good cue when it’s present: lexical statistics of early nouns in English and Korean"
 shorttitle        : "A good cue, not a common one"
 
 author: 
@@ -41,10 +41,10 @@ authornote: |
   All data, experiment materials, and analysis code are publicly available at https://osf.io/6fu8z/ (anonymized review link: https://osf.io/6fu8z/overview?view_only=993576c5a77d463490101b94f23d7ae3).
 
 abstract: |
-  Children's tendency to generalize new words by shape, the shape bias, is well documented in English-speaking children and reportedly weaker in children acquiring typologically different languages such as Korean. A prominent explanation, the statistical generalization account, attributes the bias to the distributional dominance of shape-organized nouns in the early lexicon. Across English and  Korean adult rating samples, most early nouns were rated as solid and countable, but far fewer were organized by shape than the account predicts, and we detected no differences in shape ratings across the English-rated unilemma sets of 16 languages. Yet, mean shape ratings predicted earlier age of acquisition. Furthermore, Korean adults rated more nouns as shape-organized than English adults, the opposite of the developmental pattern reported in word extension tasks with Korean children. Because adult ratings judge the learned lexicon rather than children's perceptual input, we read these results as constraining the lexical-statistics version of the account such that in its simplest form, it does not by itself explain cross-linguistic variation in the shape bias. Across 4 studies, we find a consistent dissociation in the lexical statistics adults attribute to early nouns: shape is a good cue for early noun learning rather than a common one.
+  The shape bias, children's tendency to generalize new words by shape, is well documented in English-speaking children and reportedly weaker in children acquiring typologically different languages such as Korean. One prominent explanation for the shape bias, the statistical generalization account, attributes the bias to the distributional dominance of shape-organized nouns in the early lexicon. We investigated this hypothesis, asking English and Korean adults to rate common nouns. Most early nouns were rated as solid and countable, but far fewer were organized by shape than the account predicts, and we detected no differences in the distribution of shape ratings across the early noun vocaulary of 16 languages. Furthermore, Korean adults rated more nouns as shape-organized than English adults, the opposite of the developmental pattern reported in word extension tasks with Korean children. Despite these results, higher shape ratings predicted earlier average age of acquisition for wards across languages.  These findings suggest that shape is a good cue for early noun learning rather than a common one, and that distributional differences may not be the locus for cross-linguistic variation.
   
 keywords          : "shape bias; early word learning; age of acquisition; lexical statistics; cross-linguistic; Korean"
-wordcount         : "~8246 (papaja count, text body excluding references)"
+wordcount         : "8517"
 
 bibliography      : ["r-references.bib", "meta-shapebias.bib"] 
 
@@ -58,8 +58,8 @@ tablelist         : no
 footnotelist      : no
 
 classoption       : "man"
-output            : papaja::apa6_docx
-#output           : papaja::apa6_pdf
+# output            : papaja::apa6_docx
+output           : papaja::apa6_pdf
 
 always_allow_html: true
 csl: apa6.csl
@@ -216,7 +216,7 @@ The shape bias is the tendency of young children to generalize new words to new 
 
 One prominent explanation of the shape bias is that it is a statistical generalization of the early lexicon composition. The reasoning for this explanation is that solid objects that are referred to by count nouns are dominant in the early English lexicon [@samuelson1999]. These objects are usually organized by shape ("the category of balls are all ball shaped, while the category of water does not have a specific shape"). Several lines of evidence support this statistical generalization perspective on the shape bias. For example, when 17-month-olds were trained on names of objects that shared the exact same shape, but different in all their other dimensions, they developed a second order shape bias, and they showed more rapid acquisition of nouns as measured by parental reports [@smith_object_2002]. Training on close similarity of shape, and the consistency in the input is thought to be driving the bias and helped vocabulary acceleration. On the other hand, @Perry2010_Variability found that variability of the exemplars of the category, for example different shapes of a "chair" instead of the exact same shape, predicts higher rate of acquisition. Nevertheless, both studies linked a higher order shape bias generalization to vocabulary growth. We refer to this account as the “statistical generalization” hypothesis.
 
-The shape bias is thought to emerge developmentally during the period in which, on average, these distributional regularities become prominent in young children's early vocabulary. For example, @samuelson1999 asked 26 English-speaking adults in the US to judge the 312 nouns of the toddler MB-CDI, the parental-report measure of the productive vocabulary of children between 16 and 30 months; 13 adults judged count-mass syntax, and the other 13 judged solidity and category organization. Using an 85% agreement criterion (11 of 13 judges), 232 nouns (74%) were classified as count nouns, 197 (63%) as referring to solid things, and 150 (48%) as naming categories organized by shape similarity, with 110 nouns in the intersection of all three. Thus, perhaps when children learn the shape bias, they are learning about this cluster of properties and how much they co-vary.
+The shape bias is thought to emerge developmentally during the period in which, on average, these distributional regularities become prominent in young children's early vocabulary. @samuelson1999 asked 26 English-speaking adults in the US to judge the 312 nouns of the toddler MB-CDI, the parental-report measure of the productive vocabulary of children between 16 and 30 months; 13 adults judged count-mass syntax, and the other 13 judged solidity and category organization. Using an 85% agreement criterion (11 of 13 judges), 232 nouns (74%) were classified as count nouns, 197 (63%) as referring to solid things, and 150 (48%) as naming categories organized by shape similarity, with 110 nouns in the intersection of all three. Thus, perhaps when children learn the shape bias, they are learning about this cluster of properties and how much they co-vary.
 
 The statistical generalization hypothesis is also supported by computational models showing that exposure to a lexicon with similar statistical properties can lead to the emergence of a shape bias in simulated learners [@colunga_smith_2005; @perry_samuelson_2011]. A study utilizing Bayesian models further demonstrated that the shape bias can emerge from the statistical structure of the lexicon [@kemp_learning_2007], although this schematic model did not engage the precise statistics of the English lexicon.
 
@@ -230,9 +230,9 @@ Some studies have suggested that the shape bias may be less pronounced or absent
 
 ## The current study
 
-We ask whether the relevant lexical statistics for the emergence of the shape bias are in fact dominant, vary across languages in line with the child shape bias, and predict when individual words are learned. An ideal test would require independent, precise measurements of both the lexical statistics for a set of languages and the shape bias estimates of groups of children acquiring those languages. This study design is cost-prohibitive, however. Thus, as an initial step, we used a combination of pre-existing data and new annotations to examine differences in lexical statistics across early-learned nouns in 16 languages.
+We ask whether the relevant lexical statistics for the emergence of the shape bias are in fact dominant, vary across languages in line with the child shape bias, and predict when individual words are learned. An ideal test would require independent, precise measurements of both the lexical statistics for a set of languages and the shape bias estimates of groups of children acquiring those languages. This study design is cost-prohibitive, however. Thus, as proxy, we used a combination of pre-existing data and new annotations to examine differences in lexical statistics across early-learned nouns in 16 languages.
 
-Following the general design of @samuelson1999, in Study 1 we asked English-speaking raters to judge lexical properties of early learned nouns in the chosen languages. Using pre-existing cross-linguistic conceptual mappings "uni-lemmas", we then map these ratings to the early vocabularies of children acquiring these different languages. These ratings then create a proxy for the cluster of noun concepts being learned by children speaking these languages. This strategy has the weakness that cross-linguistic differences may not emerge due to the source of the ratings for all languages being English speakers. If there are conceptual differences that lead to differences in lexical properties for the same item across languages and cultures, then homogeneous ratings would mask those differences. To address this issue, in Study 2 we compare ratings from Korean speakers, an East Asian language that is thought to have a weaker shape bias. In Study 3 we manipulate response format and semantic grouping factorially and identify which factors move the ratings.
+Following the general design of @samuelson1999, in Study 1 we asked English-speaking raters to judge lexical properties of early learned nouns in the chosen languages. Using a set of pre-existing cross-linguistic conceptual mappings [which are referred to as "uni-lemmas"; @kachergis2026measuring] from Wordbank [@frank2017wordbank], we then map these ratings to the early vocabularies of children acquiring these different languages. These ratings then create a proxy for the cluster of noun concepts being learned by children speaking these languages. This strategy has the weakness that cross-linguistic differences may not emerge due to the source of the ratings for all languages being English speakers. If there are conceptual differences that lead to differences in lexical properties for the same item across languages and cultures, then homogeneous ratings would mask those differences. To address this issue, in Study 2 we compare ratings from Korean speakers, an East Asian language that is thought to have a weaker shape bias. In Study 3 we manipulate response format and semantic grouping factorially and identify which factors move the ratings.
 
 We test three predictions of the statistical generalization account, plus one methodological question that the cross-linguistic comparison raises and that must be settled before the predictions can be evaluated:
 
@@ -243,7 +243,7 @@ We test three predictions of the statistical generalization account, plus one me
 3. The statistical-generalization account makes the further prediction that the lexical properties dominant in early vocabulary should also be the ones that predict when individual words are acquired. We use externally derived age of acquisition (AoA) estimates to model AoA, and ask whether shape, solidity, and countability uniquely predict AoA after controlling for word frequency and concreteness. A dissociation between which features are common in the early lexicon and which features predict early acquisition would distinguish a "good-cue" account (shape facilitates learning when it is available) from a pure "exposure" account (shape facilitates learning because it is dominant in the input).
 
 
-# Study 1: Rating lexical properties in English
+# Study 1A: Rating lexical properties in English
 
 ```{r  message=FALSE, warning=FALSE}
 english_demo1 <- read_csv(here("data/demographics/first-sample-english", "1.csv"))
@@ -502,7 +502,7 @@ This study extends @samuelson1999 by collecting ratings on early learned nouns f
 
 ### Participants
 
-`r n_part_1a` English-speaking adults recruited online from the Prolific platform (mean age = 41, SD = 14) were asked to rate nouns on three dimensions: solidity (solid, non-solid, unclear), count and mass noun syntax (count, mass, unclear), and organizing feature (shape, color, material, none of these).^[A session-logging error left the participant identifier missing on `r pct_na_subj_1a`% of retained trials, in a  pseudo-randomly sampled category-organization block to balance item coverage. Those trials are included in the item-level proportions. A sensitivity analysis in the supplementary materials with the unattributed trials excluded left the results unchanged] All participants provided informed consent prior to participation.
+`r n_part_1a` English-speaking adults recruited online from the Prolific platform (mean age = 41, SD = 14) were asked to rate nouns on three dimensions: solidity (solid, non-solid, unclear), count and mass noun syntax (count, mass, unclear), and organizing feature (shape, color, material, none of these).^[A session-logging error left the participant identifier missing on `r pct_na_subj_1a`% of retained trials, in a  pseudo-randomly sampled category-organization block to balance item coverage. Those trials are included in the item-level proportions. A sensitivity analysis in the supplementary materials with the unattributed trials excluded left the results unchanged.] All participants provided informed consent prior to participation.
 
 ### Materials
 
@@ -513,7 +513,7 @@ Across the `r n_lang_rated` languages, the early-noun lists comprised `r prettyN
 
 ### Procedure
 
-The experiment started with familiarization trials in which participants were provided with demonstrations of count and mass nouns, solid objects, and non-solid objects. They were also familiarized with what a category-organizing or characterizing feature means (The organizing feature for pottery is the material used, while for ball is shape of the object for example). Then the test trials followed the same wording and structure. Every dimension (solidity, count-mass syntax, and category organizing feature) constituted a block, and every participant rated 20 nouns per block, so there were 60 test trials per participant in total. Familiarization trials, test blocks, and nouns within a block were all randomized across participants. No information about the semantic category of nouns was given to participants, nor were the nouns grouped by their semantic category. Participants were only allowed to choose one feature in all questions. Full trial wording and interface are documented with browser-ready experiment files in the public repository.
+The experiment started with familiarization trials in which participants were provided with demonstrations of count and mass nouns, solid objects, and non-solid objects. They were also familiarized with what a category-organizing or characterizing feature means; we gave the example that the organizing feature for pottery is the material used, while the organizing feature for ball is the shape of the object. Then the test trials followed the same wording and structure. Every dimension (solidity, count-mass syntax, and category organizing feature) constituted a block, and every participant rated 20 nouns per block, so there were 60 test trials per participant in total. Familiarization trials, test blocks, and nouns within a block were all randomized across participants. No information about the semantic category of nouns was given to participants, nor were the nouns grouped by their semantic category. Participants were only allowed to choose one feature in all questions. Full trial wording and interface are documented with browser-ready experiment files in the public repository.
 
 ```{r trial-schematic, include=FALSE, eval=TRUE}
 # ggplot schematic omitted from main PDF; identical logic lives in repo `experiment files/`
@@ -574,7 +574,8 @@ ggplot(correspondence_eng1_main,
   theme(legend.position = "bottom")
 ```
 
-We calculated the proportion of responses for each feature per noun. For example, if a word was rated by 10 participants in total, and 7 of them rated it as solid, the proportion of solid responses for that word would be 0.7. First, we assessed the correspondence between the three dimensions using Pearson correlation analysis. We then conducted a permutation test by shuffling language labels, comparing each language's distribution of shape-based categorization responses against a null distribution of no cross-linguistic differences. Because the bands are pointwise rather than simultaneous, an observed curve that stays within the envelope indicates an absence of detectable differences rather than a demonstration of equivalence. 
+We calculated the proportion of responses for each feature per noun. For example, if a word was rated by 10 participants in total, and 7 of them rated it as solid, the proportion of solid responses for that word would be 0.7. First, we assessed the correspondence between the three dimensions by computing Pearson correlations. We then conducted a permutation test by shuffling language labels, comparing each language's distribution of shape-based categorization responses against a null distribution of no cross-linguistic differences. 
+<!-- Because the bands are pointwise rather than simultaneous, an observed curve that stays within the envelope indicates an absence of detectable differences rather than a demonstration of equivalence.  -->
 
 Additionally, and similar to @samuelson1999, who classified nouns using an 85% agreement criterion and report similar conclusions under a 60% sensitivity criterion, we categorized the nouns into three categories: solid, count noun, and shape-based using a cutoff of 80%, a slightly less conservative value. A noun rated by at least 80% of the participants as solid is categorized as solid, and likewise for the other dimensions. We then visualized the overlap between these categories using Euler diagrams.
 
@@ -676,7 +677,9 @@ We collected ratings from `r n_part_1a` participants across the three blocks. Af
 
 Word-level inter-rater agreement, computed as the proportion of raters choosing the modal response for each noun and then averaged across nouns, was high for solidity (`r con_e1("solidity")`) and count-mass syntax (`r con_e1("count_mass")`), and lower but well above chance for the organizing-feature block (`r con_e1("category_organization")`), the dimension raters found hardest to articulate. Split-half reliabilities of the item-level proportions (random rater halves, Spearman-Brown corrected, 100 splits) show the same ordering: `r sb_solid_1a` for solidity, `r sb_count_1a` for count-mass syntax, and `r sb_shape_1a` for the organizing feature within this sample alone. This leaves substantial item-level noise that could by itself produce a flat or low shape distribution, and the analyses that build on this measure therefore use item-level proportions averaged across two independent samples. The retest reported below provides a second, test-retest check on the shape measure.
 
-Across languages, the ratings proportions were very consistent, suggesting limited variation in the distributional statistics (Figure \@ref(fig:correspondenceeng1)); Figure \@ref(fig:permutateddisteng1) shows the formal comparison of each language's shape distribution against a permuted-label null envelope. Overall, nouns "uni-lemmas" were predominantly rated as solid (M = `r m_e1("solid")`, SD = `r sd_e1("solid")`) and count (M = `r m_e1("count")`, SD = `r sd_e1("count")`), but were less reliably judged as being organized by shape (M = `r m_e1("shape")`, SD = `r sd_e1("shape")`). Raters spread organizing-feature responses over material (`r osh_1a("material")`%), none of these (`r osh_1a("none of these")`%), shape (`r osh_1a("shape")`%), and color (`r osh_1a("color")`%), so shape accounted for `r committed_shape_1a`% of committed (shape, color, or material) responses. At the item level, the modal organizing feature was material for `r modal_pct_1a("category_organization", "material")`% of nouns, shape for `r modal_pct_1a("category_organization", "shape")`%, and none of these for `r modal_pct_1a("category_organization", "none of these")`%, whereas the modal response was solid for `r modal_pct_1a("solidity", "solid")`% of nouns and count for `r modal_pct_1a("count_mass", "count noun")`%. There was a moderate positive correlation between solidity and count syntax ($r$ = `r r_e1("count noun", "solid")`, `r fmt_p(p_e1("count noun", "solid"))`), a weak positive correlation between count syntax and shape-based categorization ($r$ = `r r_e1("count noun", "shape")`, `r fmt_p(p_e1("count noun", "shape"))`), and a weaker positive correlation between solidity and shape-based categorization ($r$ = `r r_e1("solid", "shape")`, `r fmt_p(p_e1("solid", "shape"))`). Conditional on the `r n_cond80` nouns meeting the 80% criterion for both solidity and count syntax, mean shape rose only to `r m_cond80`, and `r pct_cond80_80`% met the 80% shape criterion, a much sparser intersection than the 110 of 312 nouns @samuelson1999 reported at their 85% criterion.
+Across languages, the ratings proportions were very consistent, suggesting limited variation in the distributional statistics (Figure \@ref(fig:correspondenceeng1)); Figure \@ref(fig:permutateddisteng1) shows the  comparison of each language's shape distribution against a permuted-label null envelope: no language's distribution was outside the permutation null, suggesting substantial distributional similarity across languages.  
+
+Overall, noun "uni-lemmas" were predominantly rated as solid (M = `r m_e1("solid")`, SD = `r sd_e1("solid")`) and count (M = `r m_e1("count")`, SD = `r sd_e1("count")`), but were less reliably judged as being organized by shape (M = `r m_e1("shape")`, SD = `r sd_e1("shape")`). Raters spread organizing-feature responses over material (`r osh_1a("material")`%), none of these (`r osh_1a("none of these")`%), shape (`r osh_1a("shape")`%), and color (`r osh_1a("color")`%), so shape accounted for `r committed_shape_1a`% of committed (shape, color, or material) responses. At the item level, the modal organizing feature was material for `r modal_pct_1a("category_organization", "material")`% of nouns, shape for `r modal_pct_1a("category_organization", "shape")`%, and none of these for `r modal_pct_1a("category_organization", "none of these")`%, whereas the modal response was solid for `r modal_pct_1a("solidity", "solid")`% of nouns and count for `r modal_pct_1a("count_mass", "count noun")`%. There was a moderate positive correlation between solidity and count syntax ($r$ = `r r_e1("count noun", "solid")`, `r fmt_p(p_e1("count noun", "solid"))`), a weak positive correlation between count syntax and shape-based categorization ($r$ = `r r_e1("count noun", "shape")`, `r fmt_p(p_e1("count noun", "shape"))`), and a weaker positive correlation between solidity and shape-based categorization ($r$ = `r r_e1("solid", "shape")`, `r fmt_p(p_e1("solid", "shape"))`). Conditional on the `r n_cond80` nouns meeting the 80% criterion for both solidity and count syntax, mean shape rose only to `r m_cond80`, and `r pct_cond80_80`% met the 80% shape criterion, a much sparser intersection than the 110 of 312 nouns @samuelson1999 reported at their 85% criterion.
 
 The Euler diagram in Figure \@ref(fig:venneng1) shows categories of nouns as solid, count noun, and shape-characterized using the 80% cutoff. The diagram shows that a large number of nouns were consistently rated as solid and count nouns, with large overlap between these two dimensions. However, at most `r max_shape_venn_eng1` nouns per language were rated as referring to objects organized by shape. For comparison, @samuelson1999 classified 150 of their 312 nouns (48%) as naming shape-organized categories under their 85% agreement criterion, with 110 nouns in the intersection of solid, count, and shape.
 
@@ -690,9 +693,10 @@ The Euler diagram in Figure \@ref(fig:venneng1) shows categories of nouns as sol
 
 The permutation test for distributional differences results showed that each set of nouns fell within the null distribution, indicating no significant differences in lexical statistics across languages as rated by English speakers (Figure \ref{fig:permutateddisteng1}).
 
-## Retest ratings for lexical properties
+# Study 1B: Retest ratings for lexical properties
 
-One concern is measurement reliability rather than cross-linguistic patterning. The notion of an "organizing feature" is not one that adults routinely articulate, and our initial instructions were minimal. The low shape-based choices, large standard deviation, and weak shape–solidity correlation could partly reflect measurement error. We address this by re-running the category-organizing-feature block with refined instructions. The idea of the organizing feature of an object category is not an intuitive one, and is not something that people actively think about when recognizing category members i.e. when they are searching for apples, they don't break down the category into features of apple shape, red color, and leaf material and then decide which feature is the most diagnosing of apples. It is possible that the instructions were not clear enough for participants to understand what was being asked. To test the reliability of this measure, we collected a second sample of ratings on the same set of words, with improved instructions and examples. 
+One concern is that our findings are created by the limited measurement reliability of organizing feature judgments. The notion of an "organizing feature" is not one that adults routinely articulate, and our initial instructions were minimal. The low shape-based choices, large standard deviation, and weak shape–solidity correlation could partly reflect measurement error. We address this by re-running the category-organizing-feature block with refined instructions. The idea of the organizing feature of an object category is not an intuitive one, and is not something that people actively think about when recognizing category members i.e. when they are searching for apples, they don't break down the category into features of apple shape, red color, and leaf material and then decide which feature is the most diagnosing of apples. It is possible that the instructions were not clear enough for participants to understand what was being asked. To test the reliability of this measure, we collected a second sample of ratings on the same set of words, with improved instructions and examples. 
+
 ```{r }
 english_sample2 <- read_csv(here("data/predictors","english_sample2_props.csv"))
 english_sample2 <- english_sample2 %>% filter(!is.na(response)) %>% distinct()
@@ -719,7 +723,7 @@ tt_miss_shape <- t.test(shape_prop ~ miss1b, data = props_1a_cmp)
 m_miss <- function(v, g) round(mean(props_1a_cmp[[v]][props_1a_cmp$miss1b == g],
                                     na.rm = TRUE), 2)
 ```
-### Methods
+## Methods
 
 ```{r }
 english_sample2 |>
@@ -871,19 +875,20 @@ ggsave("data/figures/shape_dist_1a_vs_1b.png", width = 3, height = 3, dpi = 300)
 ```
 
 
-#### Participants
+### Participants
 
 `r dplyr::n_distinct(english_sample2_raw$subject)` English-speaking adults recruited online from the Prolific platform rated words on the category-organizing feature.
 
-#### Materials
+### Materials
 
-Only the category-organizing feature block was included in this retest, since it showed the most between subject variability. The retest word list was generated separately with `r length(miss_1b)` of the `r dplyr::n_distinct(english_sample1$word)` Study 1 nouns missing. So the retest analyses cover the `r dplyr::n_distinct(english_sample2$word)` nouns present in both samples (each participant rated a randomized 20-noun subset of the list, plus practice and check items). The absent nouns did not differ detectably from the covered nouns in the initial shape ratings (`r m_miss("shape_prop", TRUE)` vs. `r m_miss("shape_prop", FALSE)`, Welch `r fmt_p(tt_miss_shape$p.value)`); wherever later analyses average the two samples, these nouns carry their initial-sample value alone (Study 4).
+Only the category-organizing feature block was included in this retest, since it showed the most between subject variability. The retest word list was generated separately with `r length(miss_1b)` of the `r dplyr::n_distinct(english_sample1$word)` Study 1 nouns missing. So the retest analyses cover the `r dplyr::n_distinct(english_sample2$word)` nouns present in both samples (each participant rated a randomized 20-noun subset of the list, plus practice and check items). The absent nouns did not differ detectably from the covered nouns in the initial shape ratings (`r m_miss("shape_prop", TRUE)` vs. `r m_miss("shape_prop", FALSE)`, Welch `r fmt_p(tt_miss_shape$p.value)`); wherever later analyses average the two samples, we report the initial-sample value for these nouns (Study 4).
 
-#### Procedure
+### Procedure
 
-The experiment started with familiarization trials of what a category-organizing or characterizing feature means. However, this time the instructions were improved with more examples, adding picture depictions, training questions with feedback and clarifications. Examples involved answers that correspond to all 4 answer options "shape, material, color, none of these" so not to bias subjects into a specific answer, using examples like "Pottery, red traffic light, happiness, and ball". The rest of the study was similar to Study 1. Browser-ready experiment files in the shared files 
+The experiment started with familiarization trials of what a category-organizing or characterizing feature means. However, this time the instructions were improved with more examples, adding picture depictions, training questions with feedback and clarifications. Examples involved answers that correspond to all 4 answer options "shape, material, color, none of these" so not to bias subjects into a specific answer, using examples like "Pottery, red traffic light, happiness, and ball". The rest of the study was similar to Study 1. 
+<!-- Browser-ready experiment files in the shared files  -->
 
-### Results
+## Results
 
 The overall distribution of shape-based categorization responses did not significantly differ from the initial sample and shows a general group-level agreement. Mixed-effects modeling showed that ratings in the retest were slightly but significantly lower than in the initial sample (`r sprintf("$B$ = %s, %s", papaja::printnum(eng_cmp_B, digits = 2), fmt_p(eng_cmp_p))`), suggesting that more scaffolding and instructions led to more conservative shape ratings (Figure \@ref(fig:enggrplevel)).
 
@@ -909,15 +914,214 @@ Some household items received more differentiated shape-based ratings than we ex
 
 ## Discussion
 
-In two samples, we found that the lexical statistics were homogeneous across the 16 languages we sampled. Two interpretations of this cross-linguistic null are available, and the design of Study 1 cannot distinguish them. On a strong reading, the lexical statistics of early lexicons everywhere are dominated by solid, count nouns with a lower degree of shape coherence, and the cross-linguistic variation in the child shape bias is therefore not a downstream consequence of cross-linguistic variation in lexical statistics. On a weaker reading, the Study 1 design is by construction insensitive to such variation, because rater language is held constant and any conceptual differences between language communities are projected onto a single English judgment. Study 2 is designed to distinguish them by replicating the rating task with Korean-speaking adults rating Korean CDI items.
+In two samples, we found that the lexical statistics were homogeneous across the 16 languages we sampled. There are two possible interpretations of this cross-linguistic null that the design of Study 1 cannot distinguish them. On a strong reading, the lexical statistics of early lexicons everywhere are dominated by solid, count nouns with a less degree of shape coherence, and the cross-linguistic variation in the child shape bias is therefore not a downstream consequence of cross-linguistic variation in lexical statistics. On a weaker reading, the Study 1 design is by construction insensitive to such variation, because rater language is held constant and any conceptual differences between language communities are projected onto a single English judgment. Study 2 was thus designed to distinguish them by replicating the rating task with Korean-speaking adults rating Korean CDI items.
+
 Given the reasonable reliability of the organizing-feature measure across the two samples and the strong word-level correlation, we use the mean shape ratings (averaged across the initial and retest samples) in subsequent analyses, and conduct sensitivity analyses that exclude words with the largest between-study differences. Recomputing the conditional analysis on this averaged measure leaves it essentially unchanged: among the `r n_cond80` nouns meeting the 80% solidity and count criteria, mean shape is `r m_cond80_avg` and `r pct_cond80_avg`% meet the 80% shape criterion.
 
-# Study 2: Rating lexical statistics in Korean
+# Study 2A: Re-analysis of Korean lexical statistics ratings
 
-We next assess whether similar patterns would emerge in speakers of typologically different languages. Korean, with its distinct morphological and syntactic structures, offered a test case for the cross-linguistic generalizability of the shape-based categorization tendencies observed in English speakers. Korean was also chosen because previous research has reported a weaker shape bias among Korean-speaking children, as in children learning some other East Asian languages. If the distributional account of the shape bias is correct, we would expect to find a lower proportion of nouns rated as organized by shape in Korean compared to English, along with weaker correlations between shape-based categorization and the other dimensions.
-We first report a Korean sample collected with the same single forced choice and randomized presentation used in Study 1. This sample provides the primary comparison with the English ratings. We then compare it with a reanalysis of an existing in-country dataset collected using a different procedure.
+While the shape-based categorization results from English speakers provided a useful benchmark, we next assess whether similar patterns would emerge in speakers of typologically different languages. Korean, with its distinct morphological and syntactic structures, offered an ideal test case to examine the cross-linguistic generalizability of shape-based categorization tendencies observed in English speakers. Korean language was also chosen because previous research has shown that Korean-speaking children, as well as other East Asian languages, exhibit a lower level of shape bias in early noun learning. If the distributional account of the shape bias is correct, we would expect to find a lower proportion of nouns rated as organized by shape in Korean compared to English, along with weaker correlations between shape-based categorization and the other dimensions.
 
-### Methods
+
+
+```{r }
+words <- read_csv(here("data/ratings", "alllangs.csv")) %>%
+  filter(!is.na(uni_lemma))  %>%
+  mutate(word = uni_lemma) %>%
+  select(word, language, category)
+
+korean_words <- read_csv(here("data/ratings", "alllangs.csv")) %>%
+  filter(!is.na(uni_lemma), language == "Korean")  %>%
+  mutate(word = item_definition, theword = item_definition) %>%
+  select (word, theword, uni_lemma, language, category)
+```
+
+```{r }
+korean_demo_sample2 <- read_csv(here("data/demographics/second-sample-korean", "1.csv")) %>%
+  clean_names() %>%
+  pivot_longer(cols = -id, names_to = "participant_id", values_to = "response") %>%
+  pivot_wider( names_from = id, values_from = response) %>%
+  rename(gender = Gender, age = `Age Group`, education = `Highest Level of Education`)
+age_map <- c(
+  "18-22 years old" = 20,
+  "23-27 years old" = 25,
+  "28-32 years old" = 30,
+  "33-37 years old" = 35,
+  "38-42 years old" = 40,
+  "Over 43 years old" = 45
+)
+
+korean_demo_sample2 <- korean_demo_sample2 %>%
+  mutate(age_numeric = age_map[age])
+
+tidy <- korean_demo_sample2 %>%
+  summarise(
+    min_age = min(age_numeric, na.rm = TRUE),
+    max_age = max(age_numeric, na.rm = TRUE),
+    mean_age = mean(age_numeric, na.rm = TRUE),
+    sd_age = sd(age_numeric, na.rm = TRUE)
+  )
+```
+
+```{r }
+korean_sample_sample2 <- read_csv(here("data/predictors","korean_sample2_props.csv"))
+#korean_sample2 %>% filter( Word == "Fish")
+
+korean_sample2 <- korean_sample_sample2 %>% mutate(Word = stringr::str_to_lower(Word)) %>% filter(!is.na(response)) %>% distinct() %>% select(-uni_lemma) %>%
+  filter(!Word %in% c("fish", "window"))
+```
+
+```{r }
+korean_words <- korean_words %>%
+  mutate(uni_lemma = str_to_lower(uni_lemma))
+
+korean_sample2 <- korean_sample2 %>%
+  mutate(Word = str_to_lower(Word))
+
+korean_words %>% filter(uni_lemma %in% c("boat", "stomach", "tummy"))
+korean_sample2 %>% filter( Word %in% c("boat", "stomach", "tummy"))
+
+merged_data <- korean_sample2 %>%
+  left_join(korean_words, by = c("Word" = "uni_lemma", "theword" = "theword"))
+
+korean_sample2 <- korean_sample2 |> merge(korean_words,
+        by = "theword") |>
+  select(-ends_with(".x")) %>% distinct() %>%
+  rename_with(~ str_remove_all(., "\\.y$"), everything())
+
+korean_sample2 %>% filter(uni_lemma == "boat") %>% distinct()
+```
+
+```{r eng-on-koreanlist}
+# English raters' judgments (Study 1A) of the Korean CDI unilemma set, for the
+# cross-rater comparison reported in this and the following study.
+english_sample1_koreanlist <- english_sample1 %>% filter (language == "Korean")
+
+summary_eng_korlist <- english_sample1_koreanlist %>%
+  filter(matching_response %in% c("solid", "count", "shape")) %>%
+  group_by(matching_response) %>%
+  summarise(mean_prop = mean(proportion, na.rm = TRUE),
+            sd_prop   = sd(proportion, na.rm = TRUE),
+            .groups = "drop")
+
+s_ek_shape <- shape_prop_per_item(english_sample1_koreanlist, "word")
+summary_eng_korlist <- summary_eng_korlist %>%
+  mutate(
+    mean_prop = if_else(matching_response == "shape",
+                        mean(s_ek_shape$shape_prop), mean_prop),
+    sd_prop   = if_else(matching_response == "shape",
+                        sd(s_ek_shape$shape_prop), sd_prop)
+  )
+
+m_ek   <- function(x) round(summary_eng_korlist$mean_prop[summary_eng_korlist$matching_response == x], 2)
+sd_ek  <- function(x) round(summary_eng_korlist$sd_prop  [summary_eng_korlist$matching_response == x], 2)
+
+```
+
+
+A pre-existing dataset addresses these questions: @CHOSUNCITE collected data in South Korea at Chosun University. They recruited a total of `r length(unique(korean_demo_sample2$participant_id))` Korean-speaking adults were recruited through a local platform at Chosun University in South Korea (mean age = `r round(tidy$mean_age,2)`, SD = `r round(tidy$sd_age,2)`). 
+
+## Procedure
+
+The @CHOSUNCITE procedure followed @samuelson1999, which differed from Study 1 in three respects. First, participants rated the full word list within each block, and the blocks appeared in a fixed order (solidity, then countable/uncountable, then category-organizing feature) rather than in a randomized order with word subsets. Countability here is a semantic status not a syntactic one. Second, in the category-organizing block, participants were allowed to select multiple organizing features (shape, color, material, not applicable) per item. Third, items in that block were presented grouped by semantic category (e.g., fruits, vehicles, furniture) rather than randomly intermixed.
+
+To compare the multiple-selection responses in this sample to the single-selection responses in Study 1, we adopted a conservative coding: an item is treated as having "shape" as its organizing feature only when shape was the sole feature selected on that trial. Responses where shape was selected alongside another feature (e.g., "shape and material") were retained in the dataset but classified as "multiple". Below we report the strict-coding results in the main text and a sensitivity analysis using the broader coding scheme ("shape selected, alone or alongside another feature") to quantify how much the coding decision matters.
+
+## Results and discussion
+
+```{r }
+summary_kor_2 <- korean_sample2 %>% group_by(matching_response, block) %>% summarize(mean_prop = mean(proportion), sd_prop= sd(proportion))
+
+korean_sample2 %>% select(block, matching_response, cleaned_response) %>% distinct()
+```
+
+```{r kor2-sensitivity}
+# Sensitivity analysis for Study 2A: strict ("shape only") vs. broad
+# ("shape selected alone or alongside another feature") coding of the
+# category-organizing feature. The strict coding is what is used in the
+# main shape proportion; the broad coding adds the multiple-selection
+# trials whose response string includes "form" (the Korean response label
+# that maps to "shape").
+
+shape_strict_kor2 <- korean_sample2 %>%
+  filter(block == "category_organization", matching_response == "shape") %>%
+  distinct(Word, proportion) %>%
+  rename(prop_strict = proportion)
+
+shape_broad_kor2 <- korean_sample2 %>%
+  filter(block == "category_organization") %>%
+  filter(matching_response == "shape" |
+           (matching_response == "multiple" &
+              stringr::str_detect(cleaned_response, "form"))) %>%
+  group_by(Word) %>%
+  summarise(prop_broad = sum(proportion), .groups = "drop")
+
+all_kor2_words <- korean_sample2 %>%
+  filter(block == "category_organization") %>%
+  distinct(Word)
+
+shape_kor2_compare <- all_kor2_words %>%
+  left_join(shape_strict_kor2, by = "Word") %>%
+  left_join(shape_broad_kor2, by = "Word") %>%
+  mutate(
+    prop_strict = replace_na(prop_strict, 0),
+    prop_broad  = replace_na(prop_broad, 0)
+  )
+
+m_shape_2a <- mean(shape_kor2_compare$prop_strict, na.rm = TRUE)
+sd_shape_2a <- sd(shape_kor2_compare$prop_strict, na.rm = TRUE)
+
+# Counts of trials, weighting per-word proportions by per-word total count
+n_trials_total <- korean_sample2 %>%
+  filter(block == "category_organization") %>%
+  distinct(Word, totcount) %>%
+  summarise(n = sum(totcount, na.rm = TRUE)) %>% pull(n)
+
+n_shape_only <- korean_sample2 %>%
+  filter(block == "category_organization", matching_response == "shape") %>%
+  summarise(n = sum(proportion * totcount, na.rm = TRUE)) %>% pull(n) %>% round()
+
+n_shape_multi <- korean_sample2 %>%
+  filter(block == "category_organization",
+         matching_response == "multiple",
+         stringr::str_detect(cleaned_response, "form")) %>%
+  summarise(n = sum(proportion * totcount, na.rm = TRUE)) %>% pull(n) %>% round()
+
+mean_shape_strict <- mean(shape_kor2_compare$prop_strict, na.rm = TRUE)
+sd_shape_strict   <- sd(shape_kor2_compare$prop_strict,   na.rm = TRUE)
+mean_shape_broad  <- mean(shape_kor2_compare$prop_broad,  na.rm = TRUE)
+sd_shape_broad    <- sd(shape_kor2_compare$prop_broad,    na.rm = TRUE)
+
+# Single source of record for the Study 2A coding-sensitivity numbers: the
+# supplement table reads this CSV, so main text and supplement cannot diverge.
+write_csv(
+  tibble::tibble(
+    statistic = c("organizing_trials_total", "shape_only_trials",
+                  "shape_plus_other_trials", "mean_strict", "sd_strict",
+                  "mean_broad", "sd_broad", "n_items"),
+    value = c(n_trials_total, n_shape_only, n_shape_multi,
+              mean_shape_strict, sd_shape_strict,
+              mean_shape_broad, sd_shape_broad, nrow(shape_kor2_compare))
+  ),
+  here("data/predictors", "study2a_shape_coding_sensitivity.csv"))
+```
+
+We collected a total of `r prettyNum(n_ratings_of(korean_sample2, "uni_lemma"), big.mark = ",")` ratings across `r length(unique(korean_demo_sample2$participant_id))` participants for `r length(unique(korean_sample2$uni_lemma))` nouns in three blocks (solidity, countability, and category-organizing feature). Nouns received an average of `r korean_sample2 %>% dplyr::distinct(uni_lemma, block, totcount) %>% dplyr::summarise(a = mean(totcount, na.rm = TRUE)) %>% dplyr::pull(a) %>% round(2)` ratings per noun per block.
+
+Across participants, nouns were predominantly rated as solid (M = `r round(summary_kor_2$mean_prop[summary_kor_2$matching_response == "solid"],2)`, SD = `r round(summary_kor_2$sd_prop[summary_kor_2$matching_response == "solid"],2)`) and countable (M = `r round(summary_kor_2$mean_prop[summary_kor_2$matching_response == "count"],2)`, SD = `r round(summary_kor_2$sd_prop[summary_kor_2$matching_response == "count"],2)` ), consistent with the English samples. In contrast, shape ratings were different from the English ratings. Under the strict coding, the mean shape proportion was M = `r round(m_shape_2a, 2)` (SD = `r round(sd_shape_2a, 2)`), compared with estimates for the same Korean-CDI items as rated by English speakers (M = `r m_ek("shape")`, SD = `r sd_ek("shape")`).
+
+<!-- **Sensitivity analysis: strict vs. broad coding of shape**  -->
+Of the `r prettyNum(n_trials_total, big.mark = ",")` category-organizing-feature trials in this sample, approximately `r prettyNum(n_shape_only, big.mark = ",")` were "shape only" responses and `r prettyNum(n_shape_multi, big.mark = ",")` selected shape alongside at least one other feature. Under the strict coding used in the main analysis, the mean shape proportion was `r round(mean_shape_strict, 2)` (SD = `r round(sd_shape_strict, 2)`); under the broader coding the mean shape proportion rose to `r round(mean_shape_broad, 2)` (SD = `r round(sd_shape_broad, 2)`). Under either coding, the Korean ratings are higher than the English ratings of the same items.
+
+
+# Study 2B: a matched forced-choice sample
+
+
+Why were Korean shape ratings in the @CHOSUNCITE study different than English ratings? Korean raters might perceive noun categories as more shape-organized than English raters. The difference could also be procedural, however: in Study 2A, participants could select multiple grouping factors; items were presented in semantic groupings;  and blocks were presented in fixed order. Each of these procedural elements differs from Study 1. Study 2B, a matched forced-choice sample, addresses the first and second differences by repeating the rating task with Korean speakers under the exact single-forced-choice procedure of Study 1.
+
+We thus collected a second Korean sample with the procedure held identical to Study 1: the same single forced choice and the same randomized presentation used in Study 1. If the higher shape ratings in the in-country sample were related to this procedural choice, this sample should look like the English samples. If Korean raters judge these categories as more shape-organized regardless of procedure, the ratings should remain elevated.
+
+## Methods
 
 ```{r }
 korean_sample1 <- read_csv(here("data/predictors","korean_sample1_props.csv"))
@@ -1048,19 +1252,19 @@ tidy <- korean_demo_sample2 %>%
   )
 ```
 
-#### Participants
+### Participants
 
 A total of `r length(unique(korean_demo_sample1$participant_id))` Korean-speaking adults were recruited online from the Prolific platform (mean age = `r round(mean(korean_demo_sample1$age), 1)`, SD = `r round(sd(korean_demo_sample1$age), 1)`).
 
-#### Material
+### Material
 
-We used the same subset of Korean CDI words as in Study 1, but presented the Korean nouns rather than the unilemmas.
+We used the same words as Study 2A, the Korean CDI noun vocabulary (also tested in Study 1A and 1B). 
 
-#### Procedure
+### Procedure
 
-The category-organizing block used the improved instructions from the Study 1 retest, translated to Korean by a native speaker and validated by other native speakers who were blinded to the purpose of the study and its theoretical background. Participants made a single forced choice on every trial, rated a randomized subset of 20 nouns per block, and received no semantic-category information.
+The procedure was the same as in Study 1B, translated to Korean by a native speaker, and validated by other native speakers who were blinded to the purpose of the study and its theoretical background. Unlike in the @CHOSUNCITE procedure, participants made a single forced choice on every trial; they rated a randomized subset of 20 nouns per block; and no semantic category information was provided.
 
-### Results and discussion
+## Results and discussion
 
 ```{r }
 correspondence_korean <- korean_sample1 |>
@@ -1597,98 +1801,10 @@ comm_glmm_p <- summary(comm_glmm)$coefficients["raterKorean", "Pr(>|z|)"]
 
 Korean raters in this sample chose the not-applicable option far less often than English raters in Study 1 did none of these (`r round(100 * kor_none_2b)`% vs. `r round(100 * eng_none_kl)`% of organizing-feature trials), and the difference was distributed over both shape (`r ksh_2b("form")`% vs. `r esh_kl("shape")`% of responses) and material (`r ksh_2b("substance")`% vs. `r esh_kl("material")`%), with rare color in both groups (`r ksh_2b("color")`% and `r esh_kl("color")`%). The difference therefore also reflects a greater Korean willingness to commit to a single organizing feature, so the two rater groups differ in how much feature-based structure they attribute to the same items, not merely in response style.
 
-## Reanalysis of an in-country sample
-
-We also reanalyzed an existing dataset collected by Jongmin et al. (manuscript in preparation) with Korean speakers at Chosun University. The dataset included `r length(unique(korean_demo_sample2$participant_id))` Korean-speaking adults recruited through a local platform in South Korea (mean age = `r round(tidy$mean_age, 2)`, SD = `r round(tidy$sd_age, 2)`).
-The procedure for the category-organizing block followed @samuelson1999 and so differed from Study 1 and the procedure-matched Korean sample in more than the raters' language. First, participants rated the full word list within each block, and the blocks appeared in a fixed order (solidity, then countable/uncountable, then category-organizing feature) rather than in a randomized order with word subsets. The countability judgment was semantic rather than syntactic. Second, in the category-organizing block, participants could select multiple organizing features (shape, color, material, not applicable) per item. Third, items in that block were grouped by semantic category (e.g., fruits, vehicles, furniture) rather than randomly intermixed. These procedural differences matter for interpreting the absolute level of the shape ratings, and we return to them in Study 3.
-
-To compare the multiple-selection responses in this dataset to the single-selection responses, we adopted a strict coding: an item is treated as having "shape" as its organizing feature only when shape was the sole feature selected on that trial. Responses where shape was selected alongside another feature (e.g., "shape and material") were retained in the dataset but classified as "multiple". Below we report the strict-coding results in the main text and a sensitivity analysis using the broader coding ("shape selected, alone or alongside another feature") to quantify how much the coding decision matters.
-
-### Results and discussion
-
-```{r }
-summary_kor_2 <- korean_sample2 %>% group_by(matching_response, block) %>% summarize(mean_prop = mean(proportion), sd_prop= sd(proportion))
-
-korean_sample2 %>% select(block, matching_response, cleaned_response) %>% distinct()
-```
-
-```{r kor2-sensitivity}
-# Sensitivity analysis for Study 2A: strict ("shape only") vs. broad
-# ("shape selected alone or alongside another feature") coding of the
-# category-organizing feature. The strict coding is what is used in the
-# main shape proportion; the broad coding adds the multiple-selection
-# trials whose response string includes "form" (the Korean response label
-# that maps to "shape").
-
-shape_strict_kor2 <- korean_sample2 %>%
-  filter(block == "category_organization", matching_response == "shape") %>%
-  distinct(Word, proportion) %>%
-  rename(prop_strict = proportion)
-
-shape_broad_kor2 <- korean_sample2 %>%
-  filter(block == "category_organization") %>%
-  filter(matching_response == "shape" |
-           (matching_response == "multiple" &
-              stringr::str_detect(cleaned_response, "form"))) %>%
-  group_by(Word) %>%
-  summarise(prop_broad = sum(proportion), .groups = "drop")
-
-all_kor2_words <- korean_sample2 %>%
-  filter(block == "category_organization") %>%
-  distinct(Word)
-
-shape_kor2_compare <- all_kor2_words %>%
-  left_join(shape_strict_kor2, by = "Word") %>%
-  left_join(shape_broad_kor2, by = "Word") %>%
-  mutate(
-    prop_strict = replace_na(prop_strict, 0),
-    prop_broad  = replace_na(prop_broad, 0)
-  )
-
-m_shape_2a <- mean(shape_kor2_compare$prop_strict, na.rm = TRUE)
-sd_shape_2a <- sd(shape_kor2_compare$prop_strict, na.rm = TRUE)
-
-# Counts of trials, weighting per-word proportions by per-word total count
-n_trials_total <- korean_sample2 %>%
-  filter(block == "category_organization") %>%
-  distinct(Word, totcount) %>%
-  summarise(n = sum(totcount, na.rm = TRUE)) %>% pull(n)
-
-n_shape_only <- korean_sample2 %>%
-  filter(block == "category_organization", matching_response == "shape") %>%
-  summarise(n = sum(proportion * totcount, na.rm = TRUE)) %>% pull(n) %>% round()
-
-n_shape_multi <- korean_sample2 %>%
-  filter(block == "category_organization",
-         matching_response == "multiple",
-         stringr::str_detect(cleaned_response, "form")) %>%
-  summarise(n = sum(proportion * totcount, na.rm = TRUE)) %>% pull(n) %>% round()
-
-mean_shape_strict <- mean(shape_kor2_compare$prop_strict, na.rm = TRUE)
-sd_shape_strict   <- sd(shape_kor2_compare$prop_strict,   na.rm = TRUE)
-mean_shape_broad  <- mean(shape_kor2_compare$prop_broad,  na.rm = TRUE)
-sd_shape_broad    <- sd(shape_kor2_compare$prop_broad,    na.rm = TRUE)
-
-# Single source of record for the Study 2A coding-sensitivity numbers: the
-# supplement table reads this CSV, so main text and supplement cannot diverge.
-write_csv(
-  tibble::tibble(
-    statistic = c("organizing_trials_total", "shape_only_trials",
-                  "shape_plus_other_trials", "mean_strict", "sd_strict",
-                  "mean_broad", "sd_broad", "n_items"),
-    value = c(n_trials_total, n_shape_only, n_shape_multi,
-              mean_shape_strict, sd_shape_strict,
-              mean_shape_broad, sd_shape_broad, nrow(shape_kor2_compare))
-  ),
-  here("data/predictors", "study2a_shape_coding_sensitivity.csv"))
-```
-
-Across participants, nouns were predominantly rated as solid (M = `r round(summary_kor_2$mean_prop[summary_kor_2$matching_response == "solid"],2)`, SD = `r round(summary_kor_2$sd_prop[summary_kor_2$matching_response == "solid"],2)`) and countable (M = `r round(summary_kor_2$mean_prop[summary_kor_2$matching_response == "count"],2)`, SD = `r round(summary_kor_2$sd_prop[summary_kor_2$matching_response == "count"],2)`), consistent with the English samples. Shape ratings showed a different pattern. Under the strict coding, the mean shape proportion was M = `r round(m_shape_2a, 2)` (SD = `r round(sd_shape_2a, 2)`), higher than the English estimates for the same Korean-CDI items as rated by English speakers (M = `r m_ek("shape")`, SD = `r sd_ek("shape")`).
-
-Of the `r prettyNum(n_trials_total, big.mark = ",")` category-organizing-feature trials in this dataset, approximately `r prettyNum(n_shape_only, big.mark = ",")` were "shape only" responses and `r prettyNum(n_shape_multi, big.mark = ",")` selected shape alongside at least one other feature. Under the strict coding used in the main analysis, the mean shape proportion was `r round(mean_shape_strict, 2)` (SD = `r round(sd_shape_strict, 2)`); under the broader coding the mean shape proportion rose to `r round(mean_shape_broad, 2)` (SD = `r round(sd_shape_broad, 2)`). Under either coding, however, the Korean ratings are higher than the English ratings of the same items.
-
-A mixed-effects model comparing this dataset with our online Korean sample showed that shape ratings in the latter were lower (`r sprintf("$B$ = %s, %s", papaja::printnum(kor_cmp_B, digits = 2), fmt_p(kor_cmp_p))`). This pattern is consistent with part of the Korean higher shape rating being produced by procedure (multiple selection, semantic grouping, fixed presentation) and part reflecting a rater-language difference that survives full procedure matching. Figure \@ref(fig:4-smpls) shows the word-level distributions for all four rating datasets.
+A mixed-effects model comparing the current dataset with the Study 2A in-person Korean sample showed that shape ratings in our online dataset were lower (`r sprintf("$B$ = %s, %s", papaja::printnum(kor_cmp_B, digits = 2), fmt_p(kor_cmp_p))`). This pattern is consistent with part of the Korean higher shape rating being produced by procedure (multiple selection, semantic grouping, fixed presentation) and part reflecting a rater-language difference that survives full procedure matching. Figure \@ref(fig:4-smpls) shows the word-level distributions for all four rating datasets.
 Item-level shape proportions show a correlation of $r$ = `r round(predicted_reliability_within_kor,2)` with Spearman–Brown correction. The two Korean datasets largely agree on which nouns are more shape-organized than others (rank-order consistency), even though their absolute levels differ in the direction just described. Item-level means across English and procedure-matched Korean correlated at $r$ = `r round(r_engkor_shape_bco, 2)` for shape ($N$ = `r n_shape_paired_ek` items with complete pairs); $r$ = `r round(r_engkor_solid, 2)` for solidity and $r$ = `r round(r_engkor_count, 2)` for countability.
+
+Overall, these analyses suggest that procedural differences between Study 2A and Study 2B may have made a substantial difference to the level of shape organization between these two studies. Because participants came from different samples and were not randomly assigned to procedure, this conclusion is not yet warranted. Study 3 addresses this issue.
 
 \begin{figure}[!htbp]
 \centering
@@ -1700,9 +1816,9 @@ Item-level shape proportions show a correlation of $r$ = `r round(predicted_reli
 
 # Study 3: Procedural determinants of shape ratings
 
-Both @samuelson1999 and the Korean in-country reanalysis leaves a methodological question open: raters could select multiple organizing features, and words were grouped by semantic category, so the high shape ratings may be partially a product of procedural choices. Study 3 therefore asks which procedural factors move shape ratings when language is held constant.
+In both @samuelson1999 and the @CHOSUNCITE reanalysis, raters could select multiple organizing features and words were grouped by semantic category. The contrast between results in Study 2A and Study 2B suggest that the high level of shape ratings found in those studies may be partially a product of procedural choices. In Study 3 we asked which procedural factors affected shape ratings in English using a series of individual condition estimates and then an experiment with random assignment.
 
-## The multiple-selection format with random order
+## Preliminary experiments
 
 ```{r eng3-multiselect}
 # English multiple-selection samples on the same organizing-feature block as
@@ -1774,7 +1890,6 @@ m_excl3     <- round(m_excl3_r, 2)
 
 We first collected an English speaking sample (`r n3_subj` adults on Prolific who passed the attention check) that rated the same nouns on the organizing-feature block but recovered the original multiple-selection format, in which raters could endorse any combination of shape, color, material, or none of these. Word order remained fully randomized, so this sample changed only the response format. Raters seldom selected more than one feature on `r pct_multi3`% of trials (mean `r mean_sel3` selections per trial). On the `r n3_matched` nouns shared with Study 1, a broad coded shape count gave a mean shape proportion of `r m_broad3`, barely above the single-forced-choice estimate for the same nouns (`r m_single3`; the Study 1 two-sample average); coding shape only when it was selected alone gave `r m_excl3`.
 
-## Adding semantic grouping
 
 ```{r eng-blocked-pilot}
 # Same multiple-selection task, but words grouped by semantic category as in
@@ -1796,9 +1911,8 @@ m_excl_blkpilot  <- round(mean(eng_blk_item$shape_excl), 2)
 med_raters_blk   <- median(eng_blk_item$n_raters)
 ```
 
-A second English sample (`r n_blk_subj` adults passing the same attention check) completed the same multiple-selection task with the words grouped by semantic category: all members of one category (e.g., fruits) appeared in sequence before the next category began, and participants were told which category they were about to rate. Grouping changed behavior substantially. Raters selected more than one feature on `r pct_multi_blkpilot`% of trials (mean `r mean_sel_blk` selections per trial, against `r pct_multi3`% and `r mean_sel3` with random order), and broad-coded shape rose to `r m_broad_blkpilot` while strict-coded shape stayed at `r m_excl_blkpilot` (a median of `r med_raters_blk` raters per noun, so we treat these as sample-level descriptives). Because these two samples were collected separately rather than assigned at random, we treated this contrast as preliminary and ran a randomized experiment crossing the two factors.
+A second English sample (`r n_blk_subj` adults passing the same attention check) completed the same multiple-selection task with the words grouped by semantic category: all members of one category (e.g., fruits) appeared in sequence before the next category began, and participants were told which category they were about to rate. Grouping changed behavior substantially. Raters selected more than one feature on `r pct_multi_blkpilot`% of trials (mean `r mean_sel_blk` selections per trial, against `r pct_multi3`% and `r mean_sel3` with random order), and broad-coded shape rose to `r m_broad_blkpilot` while strict-coded shape stayed at `r m_excl_blkpilot` (a median of `r med_raters_blk` raters per noun, so we treat these as sample-level descriptives). Because this and the previous sample were collected separately rather than assigned at random, we treated this contrast as preliminary and ran a randomized experiment crossing the two factors.
 
-## A randomized 2 $\times$ 2 experiment
 
 ```{r format-blocking-2x2-load, include=FALSE}
 # Precomputed by analysis/format-blocking-2x2-participant-quality.R,
@@ -1881,11 +1995,11 @@ fb_rate <- function(col, fmt, blk) {
 }
 ```
 
-### Methods
+## Methods
 
 We ran a $2 \times 2$ experiment with random assignment of response format (single forced choice FC vs. multiple selection MS) crossed with item order (random vs. grouped by semantic category). Of `r n_2x2_screened` English speaking participants, `r n_2x2_total` trials retained after excluding participants who failed the attention check ($n$ = `r n_excl_att`), responded implausibly fast (median response time under 1.5 s, or half or more of trials under 1 s; $n$ = `r n_excl_fast`), or matched known invalid session identifiers ($n$ = `r n_excl_id`; flags overlap); retained cell sizes appear in Table \@ref(tab:format-blocking-2x2-table).
 
-### Results
+## Results
 
 On the broad outcome, MS (`r fb_coef_txt("broad", "formatMulti-select")`) and semantic grouping (`r fb_coef_txt("broad", "blockingBlocked")`) each raised shape, with no interaction (`r fb_coef_txt("broad", "formatMulti-select:blockingBlocked")`). On the strict outcome, grouping raised shape under FC (`r fb_coef_txt("fc_blocking", "blockingBlocked")`; cell means `r sprintf("%.2f", m_fc_rand_2x2)` random vs. `r sprintf("%.2f", m_fc_blk_2x2)` grouped) and lowered it under MS (`r fb_coef_txt("ms_strict", "blockingBlocked")`; cell means `r sprintf("%.2f", m_ms_rand_strict)` random vs. `r sprintf("%.2f", m_ms_blk_strict)` grouped), producing a format by grouping interaction (`r fb_coef_txt("strict", "formatMulti-select:blockingBlocked")`). 
 Grouping nearly doubled the rate of co-selection generally (`r sprintf("%.0f", pct_multi_rand)`% of random-order trials vs. `r sprintf("%.0f", pct_multi_blk)`% grouped; `r fb_coef_txt("multi_rate", "blockingBlocked")`), also raising color (selection rate `r sprintf("%.2f", fb_rate("rate_color", "Multi-select", "Random"))` random vs. `r sprintf("%.2f", fb_rate("rate_color", "Multi-select", "Blocked"))` grouped) and material (`r sprintf("%.2f", fb_rate("rate_material", "Multi-select", "Random"))` vs. `r sprintf("%.2f", fb_rate("rate_material", "Multi-select", "Blocked"))`) alongside shape while the rate of "none of these" fell (`r sprintf("%.2f", fb_rate("rate_none", "Multi-select", "Random"))` vs. `r sprintf("%.2f", fb_rate("rate_none", "Multi-select", "Blocked"))`). Figure \@ref(fig:allsamplesfig) shows that shape's broad advantage in MS is inherited from its strict advantage not when it is always selected with other dimensions.
@@ -2036,15 +2150,19 @@ ggsave("data/figures/allsamplesfig.png", p_allsamples,
 \label{fig:allsamplesfig}
 \end{figure}
 
-### Discussion
+## Discussion
 
-Coding proportions strictly or broadly have the largest effect with the response format by itself (MS, FC) doing little. Semantic grouping moves both the FC measure and nearly doubles co-selection under MS resulting in an estimate of shape dominance that partly reflects procedure rather than the structure of the early lexicon. Aggregating every English MS grouped sample (the blocked pilot and the $2 \times 2$ grouped cell) yields the same mean broad shape (`r sprintf("%.2f", eng_agg_ms %>% filter(pool == "pooled_ms_blocked") %>% pull(mean_broad_shape))`) but still leaves only `r agg_ms_pct80_1a`% of Study 1 nouns above an 80% broad-shape cutoff, compared with the previous 48% at 85% agreement (Supplement S7).
+This set of preliminary studies and experiment aimed to understand the effects of procedural choices on proportion shape categorization. We found that coding multiple selections of features either strictly or broadly had the largest effect; strict categorization and forced choice were similar. Surprisingly, semantic grouping of target words had a substantial effect on shape ratings as well. 
+<!-- Aggregating every English MS grouped sample (the blocked pilot and the $2 \times 2$ grouped cell) yields the same mean broad shape (`r sprintf("%.2f", eng_agg_ms %>% filter(pool == "pooled_ms_blocked") %>% pull(mean_broad_shape))`) but still leaves only `r agg_ms_pct80_1a`% of Study 1 nouns above an 80% broad-shape cutoff, compared with the previous 48% at 85% agreement (Supplement S7). -->
 
-Why does semantic grouping inflate the ratings? The selection behavior suggests a change in how raters construe the question rather than a change in what they believe about the categories. Raters endorsed more of everything, not more shape in particular. Presenting members of the same semantic category in sequence invites comparison among them, and comparison makes shared properties more salient [@gentner_markman_1997; @namy_gentner_2002]: when all the fruits arrive together, the rater's implicit comparison class shifts from nouns in general to the neighboring members of one category, and locally recurring properties become easy to endorse. One could defend grouped presentation as ecologically natural, since words might occur in semantically coherent contexts, but the rating task is a metalinguistic judgment by adults, not a word-learning episode, and grouping appears to change the judgment itself rather than bring it closer to a child's input; a word like "apple" is in any case encountered in diverse contexts, not only among other fruits "your shirt has an apple on it". 
+Why does semantic grouping inflate ratings? The selection behavior suggests a change in how raters construe the question rather than a change in what they believe about the categories. Raters endorsed more of everything, not more shape in particular. Presenting members of the same semantic category in sequence invites comparison among them, and comparison makes shared properties more salient [@gentner_markman_1997; @namy_gentner_2002]: when all the fruits arrive together, the rater's implicit comparison class shifts from nouns in general to the neighboring members of one category, and locally recurring properties become easy to endorse. One could defend grouped presentation as ecologically natural, since words might occur in semantically coherent contexts, but the rating task is a metalinguistic judgment by adults, not a word-learning episode, and grouping appears to change the judgment itself rather than bring it closer to a child's input; a word such as "apple" is encountered in diverse contexts, not only among other fruits.
 
-Children's shape-bias tasks are FC extension tasks in which shape must win against a competing feature, so the adult statistic most comparable to the child data is the one produced under the same requirement to prioritize. We therefore use FC with random order (or its strict MS equivalent) as the standard for lexical-statistics claims throughout, and we use the strict coding for the in-country reanalysis wherever it enters later analyses.
+Our view is that forced choice ratings are the most appropriate ratings to consider.
+Children's shape-bias tasks are forced-choice word extension tasks in which shape must win against a competing feature, so the adult statistic most comparable to the child data is the one produced under the same requirement to prioritize
+<!-- . We therefore use FC with random order (or its strict MS equivalent) as the standard for lexical-statistics claims throughout, and we use the strict coding for the in-country reanalysis wherever it enters later analyses. -->
 
-Finally, procedure does not close the cross-linguistic gap. The highest English estimate in any cell, broad-coded shape under grouped MS (`r sprintf("%.2f", m_ms_blk_broad)`), remains far below the in-country reanalysis under the matched broad coding (`r round(mean_shape_broad, 2)`) and does not exceed its strict coding (`r round(mean_shape_strict, 2)`); and the matched FC sample still shows Korean ratings above English ones, partly as the difference in commitment documented there.
+Procedural differences thus plausibly explain a good deal of the difference between Study 2A and 2B: if we assume that the strict coding of study 2A data reflects an estimate similar to a forced choice measure, the remaining difference between 2A and 2B data likely is due to semantic grouping effects. Thus, while there is some remaining cross-linguistic difference between Korean and English, we view the difference in Figure \@ref(fig:vennkorean1) to be a reasonable representation of this difference. 
+<!-- Although procedural factors did modulate shape ratings, some cross-linguistic differences remained. The highest English estimate was still below the Korean result from Study 2A, although much less so for strict compared with broad coding.  -->
 
 # Study 4: Predicting age of acquisition
 
@@ -2077,15 +2195,15 @@ ratings_aoa <- ratings_aoa %>%
 write_csv(ratings_aoa, here("data/predictors", "ratings_aoa.csv"))
 ```
 
-Adult ratings show that shape-organized nouns are not overwhelmingly common among early nouns. In Study 4 we ask whether mean shape ratings still predict age of acquisition after controlling for frequency and related covariates: whether shape is a good cue for learning even when it is not a common one. 
+In Studies 1--3, we found that shape-organized nouns are not overwhelmingly common among early nouns. In Study 4 we ask whether mean shape ratings still predict chilren's age of acquisition for individual words after controlling for frequency and related covariates. In other words, this analysis tests whether shape could be a *good* cue for learning even when if it is not a *ubiquitous* one. 
 
 ## Methods
 
-Our outcome variable is item-level age of acquisition (AoA) in months, derived from Wordbank parental-report data using the logistic-curve fitting procedure of @braginsky_2019. For each language and each CDI word, AoA is defined as the age (in months) at which the proportion of children reported to produce the word reaches 0.5 in cross-sectional production data. We use the publicly available AoA estimates released alongside Wordbank [@frank2021variability] and restrict to the production trajectory throughout. Using our shape-rating measures as a predictor of an independent and precomputed developmental measure data provides a form of external validation. This strategy follows a now-standard family of analyses in the early-noun literature [e.g., @braginsky_2019]. 
+Our outcome variable is item-level age of acquisition (AoA) in months, derived from parental-report from the MacArthur-Bates Communicative Development Inventory, a popular checklist form for measuring children's early vocabulary. Data were downloaded from Wordbank [@frank2017wordbank] and fit using the logistic-curve fitting procedure of @braginsky_2019. For each language and each CDI word, AoA was defined as the age (in months) at which the proportion of children reported to produce the word reaches 0.5 in cross-sectional production data. We use the publicly available AoA estimates released with  @frank2021variability. This strategy follows a now-standard family of analyses in the early-noun literature [e.g., @goodman2008does; @braginsky_2019; @swingley2018quantitative]. 
 
 ### Predictors
 
-We model AoA as a function of five item-level predictors: Mean shape rating of the initial and retest study 1, count-noun and solid proportions from initial study 1, word frequency as the log relative frequency of the unilemma in the CHILDES corpus for that language, standardized within language, as distributed with Wordbank, and concreteness as adult concreteness norms from @brysbaert_etal_2014, which provides ratings for 40,000 English lemmas on a 1–5 scale. All continuous predictors are *z*-scored prior to fitting. AoA estimates were available for `r ratings_aoa %>% distinct(uni_lemma, language) %>% nrow()` item-by-language observations across `r length(unique(ratings_aoa$language))` languages (Wordbank production-AoA estimates were unavailable for Kiswahili and Spanish (Peruvian), so Study 4 covers 14 of the 16 Study 1 languages). Table \@ref(tab:samples-summary-table) summarizes sample sizes and mean shape-organization ratings for the four rating datasets.
+We model AoA as a function of five item-level predictors: Mean shape rating of the initial and retest study 1, count-noun and solid proportions from initial study 1, word frequency as the log relative frequency of the unilemma in the CHILDES corpus for that language, standardized within language [following @frank2021variability], and concreteness as adult concreteness norms from @brysbaert_etal_2014, which provides ratings for 40,000 English lemmas on a 1–5 scale. All continuous predictors are *z*-scored prior to fitting. AoA estimates were available for `r ratings_aoa %>% distinct(uni_lemma, language) %>% nrow()` item-by-language observations across `r length(unique(ratings_aoa$language))` languages (Wordbank production-AoA estimates were unavailable for Kiswahili and Spanish (Peruvian), so Study 4 covers 14 of the 16 Study 1 languages). Table \@ref(tab:samples-summary-table) summarizes sample sizes and mean shape-organization ratings for the four rating datasets.
 
 ### Models
 
@@ -2096,6 +2214,7 @@ $$
 \text{AoA}_i ={} & \beta_0 + \beta_1\,\text{logfreq}_i + \beta_2\,\text{concreteness}_i + \beta_3\,\text{solid}_i +\beta_4\,\text{count}_i + \beta_5\,\text{shape}_i + \beta_6\,\text{language}_i + u_{\text{category}[i]}+ v_{\text{unilemma}[i]}+ \epsilon_i \end{aligned}
 $$
 The shape, solidity, and count-noun predictors are English-rater judgments attached to a unilemma, so the cross-linguistic variation is therefore a variation in which unilemmas each language's early lexicon contains and in the AoA of those unilemmas. We additionally fit a sensitivity model restricted to artifact-leaning categories (excluding animals, body parts, clothing, and outside), since the development of word learning for animate and natural-kind nouns may follow a different trajectory.
+
 We also fit a single-language English AoA model, and compare two Korean AoA models on the same matched item set to ask which rater group's lexical features better predict Korean AoA. The English-predictor model enters the average of Study 1 ratings with Korean unilemma corpus frequency and concreteness. The Korean-predictor model enters the average of the two Korean rating datasets, with the same Korean corpus log frequency, but omits concreteness because those norms are English ratings rather than Korean-specific measures.
 
 ## Results and discussion
@@ -2448,9 +2567,11 @@ korean_r2 <- if (requireNamespace("MuMIn", quietly = TRUE)) {
 ```
 
 In the cross-linguistic unilemma mixed-effects model (Table \@ref(tab:aoa-table)), frequency was the strongest predictor (`r fmt_coef(full_coefs, "logfreq")`), with more frequent words acquired `r papaja::printnum(full_coefs["logfreq", "Estimate"], digits = 2)` months earlier per SD, while concreteness added nothing (`r fmt_coef(full_coefs, "concreteness")`), which is expected to be range-restricted in this item set of early nouns. The mean shape rating remained a significant unique predictor of AoA above and beyond these covariates (`r fmt_coef(full_coefs, "mean_shape")`, 95% Wald CI [`r papaja::printnum(shape_wald_ci[1], digits = 2)`, `r papaja::printnum(shape_wald_ci[2], digits = 2)`]), with higher shape ratings associated with `r papaja::printnum(full_coefs["mean_shape", "Estimate"], digits = 2)` months earlier acquisition per SD, comparable to the range of reliable item-level AoA predictors in this literature [@tan2024predicting]. Solidity (`r fmt_coef(full_coefs, "solid")`) and count-noun status (`r fmt_coef(full_coefs, "count_noun")`) were not reliably different from zero. Adding a per-language random slope left the fixed effect unchanged (`r fmt_coef(slope_coefs, "mean_shape")`). Contrasting the z-scored coefficients directly, shape's coefficient was reliably more negative than solidity's (`r fmt_contrast(shape_vs_solid)`), while its difference from count-noun status was not reliable (`r fmt_contrast(shape_vs_count)`) [@gelman_stern_2006]. Shape thus predicts AoA at least as well as properties that are far more common in the early lexicon. 
-A Bayesian refit of the same model with weakly informative priors (normal(0, 5) on the coefficients) gives a posterior for the shape coefficient with `r papaja::printnum(100 * bayes_primary$p_negative, digits = 1)`% of its mass below zero (mean = `r papaja::printnum(bayes_primary$post_mean, digits = 2)`, 95% CrI [`r papaja::printnum(bayes_primary$ci_low, digits = 2)`, `r papaja::printnum(bayes_primary$ci_high, digits = 2)`]); the full posterior summary is in Supplement S9.  
-Refitting after excluding the most widely shared unilemmas (unilemmas appearing in more than `r excl_decile$thr` of the `r length(unique(predictors_df_few$language))` language sets) preserved the effect (`r fmt_coef(excl_decile$coefs, "mean_shape")`; `r excl_decile$n_uni` unilemmas). Refitting the model `r nrow(lolo_tbl)` times, dropping one language's items on each pass, left the shape coefficient negative and reliable in every one, within a narrow band (`r papaja::printnum(lolo_max_est, digits = 2)` to `r papaja::printnum(lolo_min_est, digits = 2)`, against a pooled estimate of `r papaja::printnum(full_coefs["mean_shape", "Estimate"], digits = 2)`; weakest when `r lolo_worst$dropped_language` was dropped, `r papaja::printnum(lolo_worst$estimate, digits = 2)`, `r fmt_p(lolo_worst$p)`), so no single language carries the association (Supplement S8). 
-The artifact-only sensitivity model, refit after excluding semantic categories (animals, body parts, clothing, outside) whose acquisition trajectories may not be governed by the same processes, preserved the pattern and shape remained a significant predictor (`r fmt_coef(artifact_coefs, "mean_shape")`). Because solidity and count-noun status come from the initial Study 1 sample alone while shape averages two samples, we also refit the model with the initial-sample shape proportion in place of the average, so all three lexical predictors come from a single sample with comparable split-half reliabilities (`r sb_solid_1a`, `r sb_count_1a`, and `r sb_shape_1a`, respectively); shape remained a reliable predictor (`r fmt_coef(s1only_coefs, "shape_s1")`).
+
+<!-- A Bayesian refit of the same model with weakly informative priors (normal(0, 5) on the coefficients) gives a posterior for the shape coefficient with `r papaja::printnum(100 * bayes_primary$p_negative, digits = 1)`% of its mass below zero (mean = `r papaja::printnum(bayes_primary$post_mean, digits = 2)`, 95% CrI [`r papaja::printnum(bayes_primary$ci_low, digits = 2)`, `r papaja::printnum(bayes_primary$ci_high, digits = 2)`]); the full posterior summary is in Supplement S9.   -->
+
+<!-- Refitting after excluding the most widely shared unilemmas (unilemmas appearing in more than `r excl_decile$thr` of the `r length(unique(predictors_df_few$language))` language sets) preserved the effect (`r fmt_coef(excl_decile$coefs, "mean_shape")`; `r excl_decile$n_uni` unilemmas). Refitting the model `r nrow(lolo_tbl)` times, dropping one language's items on each pass, left the shape coefficient negative and reliable in every one, within a narrow band (`r papaja::printnum(lolo_max_est, digits = 2)` to `r papaja::printnum(lolo_min_est, digits = 2)`, against a pooled estimate of `r papaja::printnum(full_coefs["mean_shape", "Estimate"], digits = 2)`; weakest when `r lolo_worst$dropped_language` was dropped, `r papaja::printnum(lolo_worst$estimate, digits = 2)`, `r fmt_p(lolo_worst$p)`), so no single language carries the association (Supplement S8).  -->
+<!-- The artifact-only sensitivity model, refit after excluding semantic categories (animals, body parts, clothing, outside) whose acquisition trajectories may not be governed by the same processes, preserved the pattern and shape remained a significant predictor (`r fmt_coef(artifact_coefs, "mean_shape")`). Because solidity and count-noun status come from the initial Study 1 sample alone while shape averages two samples, we also refit the model with the initial-sample shape proportion in place of the average, so all three lexical predictors come from a single sample with comparable split-half reliabilities (`r sb_solid_1a`, `r sb_count_1a`, and `r sb_shape_1a`, respectively); shape remained a reliable predictor (`r fmt_coef(s1only_coefs, "shape_s1")`). -->
 
 ```{r aoa-table, include=FALSE}
 focal_terms <- c("(Intercept)", "logfreq", "concreteness",
@@ -2472,12 +2593,12 @@ aoa_table_df <- tibble::tibble(
   p           = papaja::printp(full_coefs[focal_terms, "Pr(>|t|)"]))
 ```
 
-A model fit to the English (American) items alone ($N$ = `r nrow(engonly_df)`) reproduced the association (`r fmt_coef(engonly_coefs, "mean_shape")`). On the matched Korean AoA item set ($N$ = `r korean_aoa_n`), the English-predictor model recovered only frequency (`r fmt_coef(korean_eng_coefs, "logfreq")`). In the Korean-predictor model, countability status showed a unique association (`r fmt_coef(korean_coefs, "mean_count_kor")`, more countable-like items acquired earlier), while more solid items acquired later (`r fmt_coef(korean_coefs, "mean_solid_kor")`), and shape was not reliable (`r fmt_coef(korean_coefs, "mean_shape_kor")`). Comparing the two, the Korean-predictor model fits slightly better (AIC `r papaja::printnum(korean_aic["kor"], digits = 1)` vs. `r papaja::printnum(korean_aic["eng"], digits = 1)`; marginal $R^2$ `r papaja::printnum(korean_r2$kor, digits = 2)` vs. `r papaja::printnum(korean_r2$eng, digits = 2)`) and supplies a different signal (countability status).
-Simulating the English-only design at its current size recovers an effect of the pooled magnitude `r papaja::printnum(100 * pw_sim_pooled, digits = 0)`% of the time, and the Korean-predictor model is even smaller. We therefore read the absence of a Korean shape effect as uninformative rather than as contradicting the pooled unilemma fit. 
+<!-- A model fit to the English (American) items alone ($N$ = `r nrow(engonly_df)`) reproduced the association (`r fmt_coef(engonly_coefs, "mean_shape")`). On the matched Korean AoA item set ($N$ = `r korean_aoa_n`), the English-predictor model recovered only frequency (`r fmt_coef(korean_eng_coefs, "logfreq")`). In the Korean-predictor model, countability status showed a unique association (`r fmt_coef(korean_coefs, "mean_count_kor")`, more countable-like items acquired earlier), while more solid items acquired later (`r fmt_coef(korean_coefs, "mean_solid_kor")`), and shape was not reliable (`r fmt_coef(korean_coefs, "mean_shape_kor")`). Comparing the two, the Korean-predictor model fits slightly better (AIC `r papaja::printnum(korean_aic["kor"], digits = 1)` vs. `r papaja::printnum(korean_aic["eng"], digits = 1)`; marginal $R^2$ `r papaja::printnum(korean_r2$kor, digits = 2)` vs. `r papaja::printnum(korean_r2$eng, digits = 2)`) and supplies a different signal (countability status). -->
+<!-- Simulating the English-only design at its current size recovers an effect of the pooled magnitude `r papaja::printnum(100 * pw_sim_pooled, digits = 0)`% of the time, and the Korean-predictor model is even smaller. We therefore read the absence of a Korean shape effect as uninformative rather than as contradicting the pooled unilemma fit.  -->
 
-Since items entered the study because they are early-acquired, it by design truncates the outcome's range, which likely attenuates the slopes relative to what an unrestricted vocabulary would show. The shape-AoA association is therefore established for early-acquired nouns specifically; whether it extends across the full vocabulary is a question this design cannot answer.
+<!-- Since items entered the study because they are early-acquired, it by design truncates the outcome's range, which likely attenuates the slopes relative to what an unrestricted vocabulary would show. The shape-AoA association is therefore established for early-acquired nouns specifically; whether it extends across the full vocabulary is a question this design cannot answer. -->
 
-One possibility could be that frequent words are also more shape-organized, which would imply that the shape effect on AoA is partly redundant with frequency. Across our items, the correlation between log frequency and mean shape rating is essentially zero ($r$ = `r papaja::printnum(freq_shape_cor, digits = 3)`, 95% CI [`r papaja::printnum(freq_shape_ct$conf.int[1], digits = 2)`, `r papaja::printnum(freq_shape_ct$conf.int[2], digits = 2)`], $N$ = `r prettyNum(n_freq_shape, big.mark = ",")` unilemmas; computed at the unilemma level), indicating that frequency and shape-organization carry independent information about which words are acquired early. 
+<!-- One possibility could be that frequent words are also more shape-organized, which would imply that the shape effect on AoA is partly redundant with frequency. Across our items, the correlation between log frequency and mean shape rating is essentially zero ($r$ = `r papaja::printnum(freq_shape_cor, digits = 3)`, 95% CI [`r papaja::printnum(freq_shape_ct$conf.int[1], digits = 2)`, `r papaja::printnum(freq_shape_ct$conf.int[2], digits = 2)`], $N$ = `r prettyNum(n_freq_shape, big.mark = ",")` unilemmas; computed at the unilemma level), indicating that frequency and shape-organization carry independent information about which words are acquired early.  -->
 
 ```{r aoa-reverse-causality, include=FALSE}
 # Reverse-causality check: refit the primary model adding adult norms that
@@ -2535,7 +2656,7 @@ rc_all    <- rc_fit(c("imageability", "familiarity", "adult_aoa",
                       "babiness", "valence", "arousal"))
 ```
 
-A related alternative is that adults may judge familiar, early, highly imageable words to be shape-organized, rather than shape organization tracking acquisition creating a reverse causality. Testing this left the shape coefficient intact: `r fmt_coef(rc_imgfam$coefs, "mean_shape")` with adult imageability and familiarity added [Glasgow Norms, `r rc_imgfam$n_uni` matched unilemmas; @scott2019], `r fmt_coef(rc_adult$coefs, "mean_shape")` with adult English AoA added [`r rc_adult$n_uni` unilemmas; @kuperman2012], and `r fmt_coef(rc_all$coefs, "mean_shape")` with all six adult covariates entered together (adding babiness, valence, and arousal). These fits do not identify the causal direction, but they are inconsistent with the shape rating merely proxying the adult accessibility of early words.
+<!-- A related alternative is that adults may judge familiar, early, highly imageable words to be shape-organized, rather than shape organization tracking acquisition creating a reverse causality. Testing this left the shape coefficient intact: `r fmt_coef(rc_imgfam$coefs, "mean_shape")` with adult imageability and familiarity added [Glasgow Norms, `r rc_imgfam$n_uni` matched unilemmas; @scott2019], `r fmt_coef(rc_adult$coefs, "mean_shape")` with adult English AoA added [`r rc_adult$n_uni` unilemmas; @kuperman2012], and `r fmt_coef(rc_all$coefs, "mean_shape")` with all six adult covariates entered together (adding babiness, valence, and arousal). These fits do not identify the causal direction, but they are inconsistent with the shape rating merely proxying the adult accessibility of early words. -->
 
 ```{r qualitative-dissociation-table, include=FALSE}
 qual_late <- ratings_aoa %>%
@@ -2594,23 +2715,23 @@ writeLines(emit_table_pair(
 ), "tables_pair_b.tex")
 ```
 
-\input{tables_pair_b.tex}
+<!-- \input{tables_pair_b.tex} -->
 
-**Qualitative examples.** Table \@ref(tab:qualitative-dissociation-table) contrasts two profiles of nouns. Nouns rated highly solid but low on shape, such as `r paste(qual_late$uni_lemma[1:3], collapse = ", ")`, are acquired late and are typically larger, more complex, or less canonically shaped artifacts. Nouns with a clear shared shape but lower solidity, such as `r paste(qual_early$uni_lemma[1:3], collapse = ", ")`, are acquired comparatively early despite their less prototypical "object-ness." Being solid is no guarantee that a category has a shared shape, and these cases show that a clear shape signal can scaffold word acquisition even when other lexical correlates are weak.
+<!-- **Qualitative examples.** Table \@ref(tab:qualitative-dissociation-table) contrasts two profiles of nouns. Nouns rated highly solid but low on shape, such as `r paste(qual_late$uni_lemma[1:3], collapse = ", ")`, are acquired late and are typically larger, more complex, or less canonically shaped artifacts. Nouns with a clear shared shape but lower solidity, such as `r paste(qual_early$uni_lemma[1:3], collapse = ", ")`, are acquired comparatively early despite their less prototypical "object-ness." Being solid is no guarantee that a category has a shared shape, and these cases show that a clear shape signal can scaffold word acquisition even when other lexical correlates are weak. -->
 
 # General Discussion
 
-This work tested the statistical generalization account of the shape bias by measuring the distributional dominance of shape in the early lexicon and asking (i) whether those lexical statistics explain cross-linguistic variation in the shape bias, and (ii) whether they predict the age at which individual words are learned. Our results converge on a single framing: shape is a good cue for early noun learning, but it is not ubiquitous i.e. few early nouns name categories that adults judge to be organized by shape, but the nouns that do, are learned earlier. Across five English and Korean samples, shape-organized categories were considerably less dominant in the early lexicon than previously expected, yet, shape predicted age of acquisition. The features that predict early word learning are therefore not the same as the features that are common in early word learning. This dissociation is hard to reconcile with a pure exposure account, on which the shape bias is a downstream consequence of how often shape-organized count nouns appear in the input. It is more easily reconciled with a learnability account, on which the presence of a clear shape signal in a category makes that category easier to learn, when it happens to be there.
+This work tested the statistical generalization account of the shape bias by measuring the distributional dominance of shape in the early lexicon and asking (i) whether those lexical statistics explain cross-linguistic variation in the shape bias, and (ii) whether they predict the age at which individual words are learned. Our results converge on a single framing: shape is a good cue for early noun learning, but it is not ubiquitous i.e. few early nouns name categories that adults judge to be organized by shape, but the nouns that do, are learned earlier. Across English and Korean samples, shape-organized categories were considerably less dominant in the early lexicon than previously expected, yet, shape ratings predicted age of acquisition. The features that predict early word learning are therefore not the same as the features that are common in early word learning. This dissociation is hard to reconcile with a pure exposure account, on which the shape bias is a downstream consequence of how often shape-organized count nouns appear in the input. It is more easily reconciled with a learnability account, on which the presence of a clear shape signal in a category makes that category easier to learn, when it happens to be there.
 
 ## Korean adult ratings exceed English: a puzzle for the simplest statistical account
 
-The Korean data shows a pattern that is opposite of what the simplest version of the statistical-generalization account predicts: if cross-linguistic variation in the child shape bias were a downstream consequence of cross-linguistic variation in the lexical statistics adults perceive, we should have found fewer shape-organized nouns in Korean compared to English. We see at least three candidate explanations:
+The Korean data shows a pattern that is opposite of what the simplest version of the statistical-generalization account predicts: if cross-linguistic variation in the child shape bias were a downstream consequence of cross-linguistic variation in the lexical statistics adults perceive, we should have found *fewer* shape-organized nouns in Korean compared to English, not more. Beyond the methodological issues exposed in Study 3, we still see a slightly higher rate of shape-organized nouns in Korean. We see at least three candidate explanations:
 
 1. The Korean classifier system directs adult attention to shape. Korean lacks the count-mass syntax of English but obligatorily uses numeral classifiers when counting, and choosing one requires the speaker to settle what kind of thing, and in which form, the referent is: "myeong" for people, "mari" for animals, "gae" as the general classifier for inanimate objects, "jaru" for long thin implements such as pens, "jang" for flat sheet-like things such as paper, and "al" for small round things such as eggs [@sohn_1999; see also @allan_1977; @aikhenvald_2000]. A lifetime of this counting may raise the salience of shape and made it highly codable when adults are asked to reflect on it explicitly, especially in ambiguous contexts [@speed2021classifier], without making shape the cue toddlers weight most in the moment extension task. Chinese-speaking adults, whose classifier system encodes shape in a similar way, relied on shape more than English speakers in object classification tasks, grouping a snake with a rope [@kuo_sera_2009], although classifier effects on similarity judgments are reported to be small relative to shared taxonomic and thematic structure [@saalbach_imai_2007]. This account locates the difference in adult linguistic experience rather than in the input available to toddlers, which fits our scoping of adult ratings as an index of the learned lexicon. It also generates a testable prediction that adult speakers of other numeral-classifier languages whose classifiers encode shape should show similarly elevated shape ratings under the matched forced-choice procedure.
 
 2. Adult raters can attend to articulable features ("a knife has a typical shape") that toddlers may not weight in the same way during word learning. The adult lexical-statistics measure is not a direct measure of child input; it is a measure of what adults notice in retrospect.
 
-3. Participants in the reanalyzed in-country dataset were recruited locally, while the online sample may have consisted largely of bilingual Koreans living abroad. The fact that the higher shape rating appears in both datasets argues against a pure language-of-residence effect, but a residual sample-location, cultural, or recruitment confound cannot be ruled out.
+3. Participants in the Study 2A dataset were recruited locally, while the online sample may have consisted largely of bilingual Koreans living abroad. The fact that the higher shape rating appears in both datasets argues against a pure language-of-residence effect, but a residual sample-location, cultural, or recruitment confound cannot be ruled out.
 
 Within each block, English and Korean item-level means were positively correlated. The puzzle is therefore not that Korean and English raters disagree on every dimension, or on which nouns are more shape-organized than others, but about the absolute shape-organization ratings. 
 
@@ -2620,14 +2741,12 @@ The statistical-generalization account could partially be about children's envir
 
 ## Limitations and future directions
 
-First, the shape-AoA result rests on English-rater predictors. It holds in the pooled model and in the English-only fit, but the Korean-rater models are a weaker test: the power analysis in Study 4 indicates that a within-language design of that size detects only slopes about `r papaja::printnum(mde_kor_80 / abs(full_coefs["mean_shape", "Estimate"]), digits = 1)` times our pooled estimate. We report them so the cross-linguistic claim is not mistaken for a within-Korean one, a replication the current Korean item set is underpowered to deliver.
+<!-- First, the shape-AoA result rests on English-rater predictors. It holds in the pooled model and in the English-only fit, but the Korean-rater models are a weaker test: the power analysis in Study 4 indicates that a within-language design of that size detects only slopes about `r papaja::printnum(mde_kor_80 / abs(full_coefs["mean_shape", "Estimate"]), digits = 1)` times our pooled estimate. We report them so the cross-linguistic claim is not mistaken for a within-Korean one, a replication the current Korean item set is underpowered to deliver. -->
 
-Second, our adult-rating approach captures the cumulative version of the shape bias (which features characterize the early lexicon) rather than the in-the-moment version (which features children rely on when extending a novel label). Linking the two will require measuring lexical statistics and children's generalization behavior in the same languages; a direct per-language regression on child effect sizes is not yet possible, since the literature supplies too few non-English language-level estimates [@Abdelrahim_Frank_2026]. 
-Third, our cross-linguistic isolates the conceptual mappings lexicon-side prediction but it cannot detect cases where two language communities conceptualize the same item differently. Study 2 partly addresses this, but extension to typologically diverse non-Indo-European languages is needed. 
+Our adult-rating approach captures the cumulative version of the shape bias (which features characterize the early lexicon) rather than the in-the-moment version (which features children rely on when extending a novel label). Linking the two will require measuring lexical statistics and children's generalization behavior in the same languages; a direct per-language regression on child effect sizes is not yet possible, since the literature supplies too few non-English language-level estimates [@Abdelrahim_Frank_2026].  Further, our cross-linguistic isolates the conceptual mappings lexicon-side prediction but it cannot detect cases where two language communities conceptualize the same item differently. Study 2 partly addresses this issue, but extension to typologically diverse non-Indo-European languages is needed. 
 
-Fourth, our conditional analyses engage the overhypothesis version of the statistical-generalization account [@kemp_learning_2007] only descriptively. On that version, children learn a second-order generalization over solid, count nouns, so the relevant statistic is the coherence of the solid-count-shape cluster rather than the marginal share of shape-organized nouns. That intersection is sparse in our data, which suggests the early lexicon offers this generalization less support than earlier counts implied. A hierarchical model that estimates the strength of the overhypothesis directly from these ratings is a next test, along with within-category visual variability as an additional cue. 
-
-Fifth, we relied on Wordbank-derived AoA estimates as our outcome measure in Study 4; while this is a standard external-validation strategy, it inherits the assumptions of the parental-report instruments used in different languages. Lastly, the procedure-dependence of the shape statistic, documented in Study 3, carries a general methodological lesson for this literature. The randomized experiment showed that the reported level of shape organization is governed first by the analyst's coding rule and second by whether items are grouped by semantic category.
+Our conditional analyses engage the overhypothesis version of the statistical-generalization account [@kemp_learning_2007] only descriptively. On that version, children learn a second-order generalization over solid, count nouns, so the relevant statistic is the coherence of the solid-count-shape cluster rather than the marginal share of shape-organized nouns. That intersection is sparse in our data, which suggests the early lexicon offers this generalization less support than earlier counts implied. A hierarchical model that estimates the strength of the overhypothesis directly from these ratings is a next test, along with within-category visual variability as an additional cue. 
+Finally, we relied on Wordbank-derived AoA estimates as our outcome measure in Study 4; while this is a standard external-validation strategy, it inherits the assumptions of the parental-report instruments used in different languages. Lastly, the procedure-dependence of the shape statistic, documented in Study 3, carries a general methodological lesson for this literature. The randomized experiment showed that the reported level of shape organization is governed first by the analyst's coding rule and second by whether items are grouped by semantic category.
 
 ```{r headline-audit, include=FALSE}
 # One-row-per-stat audit table for diffing against prior PDFs / renders.
